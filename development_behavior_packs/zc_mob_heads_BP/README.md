@@ -26,6 +26,11 @@ Variant selection and the single death listener are in:
 
 `scripts/mobHeadDrops.js`
 
+Special appearance weights, including the rarer armored Wither heads and the
+suffocated Strider head, are also editable at the bottom of:
+
+`scripts/config/mobHeadDropConfig.js`
+
 ## Placed heads
 
 Placed heads intentionally retain small loot tables under

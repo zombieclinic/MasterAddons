@@ -66,7 +66,7 @@ export const MOB_HEAD_DROP_CONFIG = Object.freeze({
   "minecraft:spider": { item: "zombie:spider_mask", chance: 0.01, lootingBonus: 0.001 },
   "minecraft:squid": { item: "zombie:squid_mask", chance: 0.05, lootingBonus: 0.01 },
   "minecraft:stray": { item: "zombie:stray_mask", chance: 0.06, lootingBonus: 0.05 },
-  "minecraft:strider": { item: "zombie:strider_mask", chance: 0.10, lootingBonus: 0.05 },
+  "minecraft:strider": { resolver: "strider", chance: 0.10, lootingBonus: 0.05 },
   "minecraft:tadpole": { item: "zombie:tadpole_mask", chance: 0.10, lootingBonus: 0.01 },
   "minecraft:tropicalfish": { item: "zombie:tropical_fish_mask", chance: 0.10, lootingBonus: 0.01 },
   "minecraft:tropical_fish": { item: "zombie:tropical_fish_mask", chance: 0.10, lootingBonus: 0.01 },
@@ -79,12 +79,24 @@ export const MOB_HEAD_DROP_CONFIG = Object.freeze({
   "minecraft:wandering_trader": { item: "zombie:wandering_trader_mask", chance: 0.01, lootingBonus: 0.001 },
   "minecraft:warden": { item: "zombie:warden_mask", chance: 1.00, lootingBonus: 0.00 },
   "minecraft:witch": { item: "zombie:witch_mask", chance: 0.01, lootingBonus: 0.001 },
-  "minecraft:wither": { item: "zombie:wither_mask", chance: 1.00, lootingBonus: 0.00 },
-  "minecraft:wither_boss": { item: "zombie:wither_mask", chance: 1.00, lootingBonus: 0.00 },
+  "minecraft:wither": { resolver: "wither", chance: 1.00, lootingBonus: 0.00 },
+  "minecraft:wither_boss": { resolver: "wither", chance: 1.00, lootingBonus: 0.00 },
   "minecraft:wolf": { resolver: "wolf", chance: 0.20, lootingBonus: 0.01 },
   "minecraft:zoglin": { item: "zombie:zoglin_mask", chance: 0.20, lootingBonus: 0.05 },
   "minecraft:zombie_pigman": { item: "zombie:zombie_piglin_mask", chance: 0.01, lootingBonus: 0.001 },
   "minecraft:zombified_piglin": { item: "zombie:zombie_piglin_mask", chance: 0.01, lootingBonus: 0.001 },
   "minecraft:zombie_villager": { item: "zombie:zombie_villager_v2_mask", chance: 0.05, lootingBonus: 0.02 },
   "minecraft:zombie_villager_v2": { item: "zombie:zombie_villager_v2_mask", chance: 0.05, lootingBonus: 0.02 }
+});
+
+/*
+ * Special appearance rolls happen only after the mob successfully drops a head.
+ * The Wither values are weights that must total 1.00.
+ */
+export const SPECIAL_HEAD_VARIANT_CHANCES = Object.freeze({
+  striderSuffocated: 0.20,
+  witherNormal: 0.80,
+  witherArmored: 0.15,
+  witherInvulnerable: 0.03,
+  witherArmoredInvulnerable: 0.02
 });
