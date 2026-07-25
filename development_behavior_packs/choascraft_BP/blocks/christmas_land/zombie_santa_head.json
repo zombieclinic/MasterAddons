@@ -36,7 +36,10 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 13
 			},
-			"minecraft:loot": "loot_tables/christmass/zombie_santa_mask.json"
+			"minecraft:loot": "loot_tables/christmass/zombie_santa_mask.json",
+			"minecraft:custom_components": [
+				"zombie:zombie_santa_ritual"
+			]
 		},
 		"permutations": [
 			{

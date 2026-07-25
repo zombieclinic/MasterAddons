@@ -1,0 +1,77 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:demon_lord_head_block",
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": [
+            "minecraft:cardinal_direction"
+          ]
+        }
+      }
+    },
+    "components": {
+      "minecraft:display_name": "Demon Lord Head",
+      "minecraft:geometry": {
+        "identifier": "geometry.demon_lord_block"
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "zombie_demon_lord_head",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:collision_box": {
+        "origin": [-6, 0, -6],
+        "size": [12, 16, 12]
+      },
+      "minecraft:selection_box": {
+        "origin": [-6, 0, -6],
+        "size": [12, 16, 12]
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 13
+      },
+      "minecraft:loot": "loot_tables/blocks/demons/demon_lord_head.json",
+      "minecraft:map_color": "#240008"
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 90, 0]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 180, 0]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, -90, 0]
+          }
+        }
+      }
+    ]
+  }
+}

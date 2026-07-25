@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.100",
+  "format_version": "1.26.30",
   "minecraft:block": {
     "description": {
       "identifier": "zombie:colored_glowing_obsidian_black",
@@ -9,6 +9,9 @@
     },
     "components": {
       "minecraft:display_name": "Black Glowing Obsidian",
+      "minecraft:geometry": {
+        "identifier": "minecraft:geometry.full_block"
+      },
       "minecraft:material_instances": {
         "*": {
           "texture": "zombie_colored_glowing_obsidian_black",
@@ -22,9 +25,6 @@
         "explosion_resistance": 1200
       },
       "minecraft:loot": "loot_tables/blocks/dyeable/colored_glowing_obsidian/black.json",
-      "minecraft:custom_components": [
-        "zombie:dyeable_colored_block"
-      ],
       "minecraft:light_emission": 12
     }
   }

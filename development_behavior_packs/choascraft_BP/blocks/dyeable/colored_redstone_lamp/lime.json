@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.100",
+  "format_version": "1.26.30",
   "minecraft:block": {
     "description": {
       "identifier": "zombie:colored_redstone_lamp_lime",
@@ -15,6 +15,9 @@
     },
     "components": {
       "minecraft:display_name": "Lime Redstone Lamp",
+      "minecraft:geometry": {
+        "identifier": "minecraft:geometry.full_block"
+      },
       "minecraft:material_instances": {
         "*": {
           "texture": "zombie_colored_redstone_lamp_lime",
@@ -27,18 +30,7 @@
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 6
       },
-      "minecraft:loot": "loot_tables/blocks/dyeable/colored_redstone_lamp/lime.json",
-      "minecraft:custom_components": [
-        "zombie:dyeable_colored_block",
-        "zombie:dyeable_redstone_lamp"
-      ],
-      "minecraft:tick": {
-        "interval_range": [
-          20,
-          20
-        ],
-        "looping": true
-      }
+      "minecraft:loot": "loot_tables/blocks/dyeable/colored_redstone_lamp/lime.json"
     },
     "permutations": [
       {

@@ -669,6 +669,9 @@
     "stocking_cookie": {
       "textures": "textures/christmas/particles/christmas/stocking"
     },
+    "demon_lord_head": {
+      "textures": "textures/items/demons/demon_head_icon"
+    },
     "tree_cookie": {
       "textures": "textures/christmas/particles/christmas/tree"
     }

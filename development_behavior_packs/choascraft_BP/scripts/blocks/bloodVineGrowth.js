@@ -1,4 +1,4 @@
-import { BlockPermutation } from "@minecraft/server";
+import { BlockPermutation, system } from "@minecraft/server";
 
 const BLOOD_VINE = "zombie:blood_vine";
 const AIR = "minecraft:air";
@@ -10,6 +10,8 @@ const END = "end";
 const YES = "yes";
 const NO = "no";
 const FACE_STATE = "minecraft:block_face";
+const MAX_VINE_LENGTH = 64;
+const pendingBreaks = new Set();
 
 export class BloodVineGrowthComponent {
 	onPlace(event) {
@@ -19,6 +21,45 @@ export class BloodVineGrowthComponent {
 	onTick(event) {
 		growBloodVine(event.block);
 	}
+
+	onPlayerBreak(event) {
+		breakVinesBelow(event.block, event.brokenBlockPermutation);
+	}
+
+	onBreak(event) {
+		breakVinesBelow(event.block, event.brokenBlockPermutation);
+	}
+}
+
+function breakVinesBelow(block, brokenPermutation) {
+	if (!block || getTypeId(brokenPermutation) !== BLOOD_VINE) return;
+
+	const originKey = getBlockKey(block);
+	if (pendingBreaks.has(originKey)) return;
+	pendingBreaks.add(originKey);
+
+	system.run(() => {
+		const clearedKeys = [];
+
+		try {
+			let current = block.below();
+
+			for (let i = 0; i < MAX_VINE_LENGTH && isBloodVine(current); i++) {
+				const key = getBlockKey(current);
+				const next = current.below();
+				pendingBreaks.add(key);
+				clearedKeys.push(key);
+				current.setType(AIR);
+				current = next;
+			}
+		} catch {
+		} finally {
+			system.run(() => {
+				pendingBreaks.delete(originKey);
+				for (const key of clearedKeys) pendingBreaks.delete(key);
+			});
+		}
+	});
 }
 
 function growBloodVine(block) {
@@ -104,4 +145,13 @@ function getState(block, state) {
 	} catch {
 		return undefined;
 	}
+}
+
+function getTypeId(permutation) {
+	return permutation?.type?.id ?? permutation?.typeId;
+}
+
+function getBlockKey(block) {
+	const { x, y, z } = block.location;
+	return `${block.dimension.id}:${x}:${y}:${z}`;
 }

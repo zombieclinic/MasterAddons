@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.100",
+  "format_version": "1.26.30",
   "minecraft:block": {
     "description": {
       "identifier": "zombie:colored_gilded_blackstone_brown",
@@ -9,6 +9,9 @@
     },
     "components": {
       "minecraft:display_name": "Brown Gilded Blackstone",
+      "minecraft:geometry": {
+        "identifier": "minecraft:geometry.full_block"
+      },
       "minecraft:material_instances": {
         "*": {
           "texture": "zombie_colored_gilded_blackstone_brown",
@@ -21,10 +24,7 @@
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 6
       },
-      "minecraft:loot": "loot_tables/blocks/dyeable/colored_gilded_blackstone/brown.json",
-      "minecraft:custom_components": [
-        "zombie:dyeable_colored_block"
-      ]
+      "minecraft:loot": "loot_tables/blocks/dyeable/colored_gilded_blackstone/brown.json"
     }
   }
 }

@@ -18,6 +18,8 @@
         "run_hit1": "animation.demon_lord_run_hit1",
         "second_stage": "animation.demon_lord_second_stage",
         "thorn_skill": "animation.demon_lord_thorns_skill",
+        "seismic_skill": "animation.demon_lord_seismic_hit",
+        "sword_skill": "animation.demon_lord_sword_hit",
         "minion_skill": "animation.demon_lord_minions_spawn",
         "death": "animation.demon_lord_death",
         "controller": "controller.animation.demon_lord"

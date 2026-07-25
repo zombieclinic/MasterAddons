@@ -12,9 +12,6 @@
           "max": "hard"
         },
         "minecraft:spawns_on_surface": {},
-        "minecraft:spawns_on_block_filter": [
-          "zombie:magicsnow"
-        ],
         "minecraft:brightness_filter": {
           "min": 0,
           "max": 0,

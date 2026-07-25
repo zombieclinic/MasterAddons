@@ -1,5 +1,7 @@
 import { system } from "@minecraft/server";
 import { ChristmasGuideBook, ZombieSantaLoreBook } from "./guideBook.js";
+import { ZombieSantaRitualComponent } from "./zombieSantaRitual.js";
+import "./zombieSantaBoss.js";
 import {
   CandyGrow, Openbox, Open2, ChristmasLights, ColorLights,
   SantaSword, Candycane, Christmas_Cookie, SantaSwordDamage
@@ -10,7 +12,8 @@ const BLOCK_COMPONENTS = [
   ["zombie:open",                       Openbox],
   ["zombie:open2",                      Open2],
   ["zombie:christmas_light",            ChristmasLights],
-  ["zombie:christmas_light_colors",     ColorLights]
+  ["zombie:christmas_light_colors",     ColorLights],
+  ["zombie:zombie_santa_ritual",        ZombieSantaRitualComponent]
   
 ];
 

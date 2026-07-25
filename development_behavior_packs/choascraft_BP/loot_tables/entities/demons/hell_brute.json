@@ -107,6 +107,13 @@
                 "Demon Skull\n\nCraft with Demon Ash, Bone Blocks, and a Demon Heart. Three skulls are required in the Demon Lord ritual.",
                 "Pentagram\n\nCraft with Demon Ash, Redstone, and a Demon Heart. Two pentagrams complete the ritual frame.",
                 "Lord Ritual\n\nBuild a cross with a central Pentagram, another below, and Skulls above and on both sides.",
+                "Exact Ritual\n\nPlace vertically:\n  Skull\nSkull Pentagram Skull\n  Pentagram\n\nThe completed five-block cross is consumed and summons the Demon Lord.",
+                "Ritual Recipes\n\nSkull:\nABA\nBHB\nAAA\n\nPentagram:\nARA\nRHR\nARA\n\nA=Ash B=Bone Block\nH=Heart R=Redstone",
+                "Armor Symbols\n\nI = Demon Steel Ingot\nH = Demon Heart\nX = Corrupted XP Orb\nF = Demon Blood-Flesh Block",
+                "Chaos Boots — Tier III\n\nH.H\nI.I\nFXF\n\nCraft inside a Tier III Demon Altar.",
+                "Chaos Leggings — Tier III\n\nIXI\nIHI\nF.F\n\nCraft inside a Tier III Demon Altar.",
+                "Chaos Chestplate — Tier IV\n\nIHI\nIXI\nIFI\n\nCraft inside a Tier IV Demon Altar.",
+                "Chaos Helmet — Tier V\n\nIHI\nIXI\nF.F\n\nCraft inside a Tier V Demon Altar.",
                 "Chaos Craft\n\nDemon Steel remembers impact. Kael'Vorr uses that memory in weapons that become more dangerous through use.",
                 "Kael'Vorr's Note\n\nElegant? No. Repeatable? Extremely."
               ]

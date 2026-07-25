@@ -15,6 +15,18 @@
         ]
       },
       "properties": {
+        "zombie:animation_state": {
+          "type": "int",
+          "range": [0, 9],
+          "default": 0,
+          "client_sync": true
+        },
+        "zombie:phase": {
+          "type": "int",
+          "range": [0, 1],
+          "default": 0,
+          "client_sync": true
+        },
         "zombie:thorn_skill": {
           "type": "bool",
           "default": false,
@@ -33,12 +45,15 @@
       }
     },
     "component_groups": {
+      "script_locked": {
+        "minecraft:movement": { "value": 0 }
+      },
       "phase_one": {
         "minecraft:variant": { "value": 1 },
         "minecraft:damage_sensor": {
           "triggers": [
             {
-              "deals_damage": "no",
+              "deals_damage": "yes",
               "on_damage": {
                 "filters": [
                   {
@@ -79,7 +94,7 @@
         "minecraft:damage_sensor": {
           "triggers": [
             {
-              "deals_damage": "no",
+              "deals_damage": "yes",
               "on_damage": {
                 "filters": [
                   {
@@ -94,7 +109,7 @@
             }
           ]
         },
-        "minecraft:movement": { "value": 0.34 },
+        "minecraft:movement": { "value": 0.3 },
         "minecraft:movement.basic": {},
         "minecraft:navigation.walk": {
           "is_amphibious": true,
@@ -288,6 +303,16 @@
     },
     "components": {
       "minecraft:health": { "value": 1500, "max": 1500 },
+      "minecraft:boss": {
+        "name": "Demon Lord",
+        "hud_range": 80,
+        "should_darken_sky": true
+      },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 300 : 0"
+      },
+      "minecraft:knockback_resistance": { "value": 0.88 },
+      "minecraft:follow_range": { "value": 56 },
       "minecraft:attack": { "damage": 20 },
       "minecraft:collision_box": { "width": 1.4, "height": 3.4 },
       "minecraft:scale": { "value": 1 },
@@ -319,12 +344,17 @@
           "max_dist": 40
         }]
       },
+      "minecraft:behavior.move_towards_target": {
+        "priority": 3,
+        "speed_multiplier": 1.2,
+        "within_radius": 3
+      },
       "minecraft:behavior.random_stroll": { "priority": 7, "speed_multiplier": 1 },
       "minecraft:behavior.look_at_player": { "priority": 8, "look_distance": 12 },
       "minecraft:behavior.random_look_around": { "priority": 9 }
     },
     "events": {
-      "minecraft:entity_spawned": { "add": { "component_groups": ["phase_one", "melee_mode"] } },
+      "minecraft:entity_spawned": { "add": { "component_groups": ["phase_one"] } },
       "enter_melee_mode": {
         "sequence": [
           {
@@ -371,6 +401,8 @@
         "sequence": [
           {
             "set_property": {
+              "zombie:phase": 1,
+              "zombie:animation_state": 9,
               "zombie:ranged_mode": false,
               "zombie:thorn_skill": false,
               "zombie:minion_skill": false
@@ -385,8 +417,23 @@
         ]
       },
       "enter_fast_mode": {
-        "remove": { "component_groups": ["second_stage"] },
-        "add": { "component_groups": ["fast_mode", "melee_mode"] }
+        "sequence": [
+          {
+            "set_property": { "zombie:animation_state": 0 }
+          },
+          {
+            "remove": { "component_groups": ["second_stage", "script_locked"] }
+          },
+          {
+            "add": { "component_groups": ["fast_mode"] }
+          }
+        ]
+      },
+      "zombie:script_lock": {
+        "add": { "component_groups": ["script_locked"] }
+      },
+      "zombie:script_unlock": {
+        "remove": { "component_groups": ["script_locked"] }
       },
       "begin_death": {
         "sequence": [

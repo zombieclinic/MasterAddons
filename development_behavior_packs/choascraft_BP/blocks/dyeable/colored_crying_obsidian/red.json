@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.100",
+  "format_version": "1.26.30",
   "minecraft:block": {
     "description": {
       "identifier": "zombie:colored_crying_obsidian_red",
@@ -9,6 +9,9 @@
     },
     "components": {
       "minecraft:display_name": "Red Crying Obsidian",
+      "minecraft:geometry": {
+        "identifier": "minecraft:geometry.full_block"
+      },
       "minecraft:material_instances": {
         "*": {
           "texture": "zombie_colored_crying_obsidian_red",
@@ -21,10 +24,7 @@
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 1200
       },
-      "minecraft:loot": "loot_tables/blocks/dyeable/colored_crying_obsidian/red.json",
-      "minecraft:custom_components": [
-        "zombie:dyeable_colored_block"
-      ]
+      "minecraft:loot": "loot_tables/blocks/dyeable/colored_crying_obsidian/red.json"
     }
   }
 }

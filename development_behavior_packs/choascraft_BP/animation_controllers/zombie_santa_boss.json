@@ -1,0 +1,15 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.zombie_santa_boss": {
+      "initial_state": "register",
+      "states": {
+        "register": {
+          "on_entry": [
+            "/scriptevent zombie:zombie_santa_register"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -5,17 +5,16 @@
       "initial_state": "default",
       "states": {
         "default": {
+          "on_entry": [
+            "/scriptevent zombie:demon_lord_register"
+          ],
           "transitions": [
             {
               "state_1": "query.skin_id == 2"
             }
           ]
         },
-        "state_1": {
-          "on_entry": [
-            "/kill @s"
-          ]
-        }
+        "state_1": {}
       }
     }
   }

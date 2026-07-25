@@ -1,0 +1,25 @@
+{
+  "format_version": "1.20.60",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "zombie:demon_lord_head",
+      "materials": {
+        "default": "armor",
+        "enchanted": "armor_enchanted"
+      },
+      "textures": {
+        "default": "textures/demon/lord_demon",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.demon_lord_head"
+      },
+      "scripts": {
+        "parent_setup": "variable.helmet_layer_visible = 0.0;"
+      },
+      "render_controllers": [
+        "controller.render.armor"
+      ]
+    }
+  }
+}

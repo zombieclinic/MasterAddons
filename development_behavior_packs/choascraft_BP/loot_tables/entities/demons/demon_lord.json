@@ -54,6 +54,21 @@
     },
     {
       "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.05
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:demon_lord_head"
+        }
+      ]
+    },
+    {
+      "conditions": [
         { "condition": "random_chance", "chance": 0.05 }
       ],
       "rolls": 1,
@@ -104,7 +119,11 @@
                 "Tier III Arms\n\nTier III unlocks Chaos Boots, Leggings, Scythe, and Hammer.",
                 "Chaos Hammer\n\nPattern:\nIHI\nISI\n.S.\n\nI = Demon Steel\nH = Demon Heart\nS = Stick",
                 "Chaos Scythe\n\nPattern:\nIIH\n..I\n.S.\n\nForged for reach, harvesting, and violence.",
-                "Tier III Armor\n\nBoots and Leggings combine Demon Steel, Demon Hearts, Corrupted XP, and Demon Blood-Flesh Blocks.",
+                "Armor Symbols\n\nI = Demon Steel Ingot\nH = Demon Heart\nX = Corrupted XP Orb\nF = Demon Blood-Flesh Block\n\nCraft armor inside the required Demon Altar tier.",
+                "Chaos Boots — Tier III\n\nPattern:\nH.H\nI.I\nFXF\n\nH = Heart\nI = Steel\nF = Blood-Flesh\nX = Corrupted XP",
+                "Chaos Leggings — Tier III\n\nPattern:\nIXI\nIHI\nF.F\n\nI = Steel\nX = Corrupted XP\nH = Heart\nF = Blood-Flesh",
+                "Chaos Chestplate — Tier IV\n\nPattern:\nIHI\nIXI\nIFI\n\nI = Steel\nH = Heart\nX = Corrupted XP\nF = Blood-Flesh",
+                "Chaos Helmet — Tier V\n\nPattern:\nIHI\nIXI\nF.F\n\nI = Steel\nH = Heart\nX = Corrupted XP\nF = Blood-Flesh",
                 "Tier IV Arms\n\nTier IV unlocks the Demon Sword, Crossbow, Greatsword, Chestplate, Chaos Arrow, and Coffin Backpack.",
                 "Demon Sword\n\nPattern:\nHXH\n.I.\n.S.\n\nX = Corrupted XP Block.",
                 "Chaos Crossbow\n\nPattern:\nIHI\nSXS\n.I.\n\nS = String\nX = Corrupted XP Block",

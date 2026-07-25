@@ -853,6 +853,10 @@
     "textures": "zombie_color_block_white",
     "sound": "stone"
   },
+  "zombie:demon_lord_head_block": {
+    "textures": "zombie_demon_lord_head",
+    "sound": "stone"
+  },
   "zombie:color_block_yellow": {
     "textures": "zombie_color_block_yellow",
     "sound": "stone"

@@ -537,7 +537,7 @@
       "textures": "textures/christmas/blocks/christmas_land/zombie_santa"
     },
     "zombie_santa_head": {
-      "textures": "textures/christmas/blocks/christmas_land/zombie_santa"
+      "textures": "textures/christmas/entity/christmass/zombie_santa"
     },
     "gingerbreadballs": {
       "textures": "textures/christmas/blocks/christmas_land/gingerbreadballs"
@@ -1075,6 +1075,9 @@
     },
     "zombie_color_block_white": {
       "textures": "textures/blocks/color_blocks/white/white_albedo"
+    },
+    "zombie_demon_lord_head": {
+      "textures": "textures/demon/lord_demon"
     },
     "zombie_color_block_yellow": {
       "textures": "textures/blocks/color_blocks/yellow/yellow_albedo"
