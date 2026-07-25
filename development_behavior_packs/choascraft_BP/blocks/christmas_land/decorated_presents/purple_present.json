@@ -5,7 +5,7 @@
 			"identifier": "zombie:decorated_purple_present",
 			"is_experimental": false,
 			"menu_category": {
-				"category": "items"
+				"category": "construction"
 			},
 			"traits": {
 				"minecraft:placement_direction": {

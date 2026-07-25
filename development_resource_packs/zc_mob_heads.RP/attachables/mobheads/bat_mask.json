@@ -1,0 +1,26 @@
+
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "zombie:bat_mask",
+			"materials": {
+				"default": "entity_alphablend",
+				"enchanted": "armor_enchanted"
+			},
+			"textures": {
+				"default": "textures/mobheads/heads/bat",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.zombie_bat"
+			},
+			"render_controllers": [
+				"controller.render.armor"
+			],
+			"scripts": {
+				"parent_setup": "variable.helmet_layer_visible = 0.0;"
+			}
+		}
+	}
+}

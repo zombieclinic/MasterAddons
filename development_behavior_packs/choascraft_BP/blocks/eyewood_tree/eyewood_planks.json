@@ -4,8 +4,7 @@
     "description": {
       "identifier": "zombie:eyewood_planks",
       "menu_category": {
-        "category": "construction",
-        "group": "minecraft:itemGroup.name.planks"
+        "category": "construction"
       }
     },
     "components": {

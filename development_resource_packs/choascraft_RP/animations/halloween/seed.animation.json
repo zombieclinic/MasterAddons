@@ -1,0 +1,24 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.seed_idle": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"all": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					},
+					"position": [0, 1, 0]
+				},
+				"seed": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 0, 360]
+					}
+				}
+			}
+		}
+	}
+}

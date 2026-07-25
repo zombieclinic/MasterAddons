@@ -1,0 +1,331 @@
+## Mob Head Masks - Basic Mobs
+item.zombie:allay_mask.name=Allay Mask
+item.zombie:armadillo_mask.name=Armadillo Mask
+item.zombie:bat_mask.name=Bat Mask
+item.zombie:bee_mask.name=Bee Mask
+item.zombie:bee_angry_mask.name=Angry Bee Mask
+item.zombie:blaze_mask.name=Blaze Mask
+item.zombie:bogged_mask.name=Bogged Mask
+item.zombie:breeze_mask.name=Breeze Mask
+item.zombie:camel1_mask.name=Camel Mask
+item.zombie:cave_spider_mask.name=Cave Spider Mask
+item.zombie:cod_mask.name=Cod Mask
+item.zombie:creaking_mask.name=Creaking Mask
+item.zombie:dolphin_mask.name=Dolphin Mask
+item.zombie:donkey_mask.name=Donkey Mask
+item.zombie:drowned_mask.name=Drowned Mask
+item.zombie:elderguardian_mask.name=Elder Guardian Mask
+item.zombie:enderman_mask.name=Enderman Mask
+item.zombie:endermite_mask.name=Endermite Mask
+item.zombie:ghast_mask.name=Ghast Mask
+item.zombie:glow_squid_mask.name=Glow Squid Mask
+item.zombie:goat_mask.name=Goat Mask
+item.zombie:goat_screamer_mask.name=Screaming Goat Mask
+item.zombie:guardian_mask.name=Guardian Mask
+item.zombie:hog_mask.name=Hoglin Mask
+item.zombie:husk_mask.name=Husk Mask
+item.zombie:illager_mask.name=Illager Mask
+item.zombie:iron_golem_mask.name=Iron Golem Mask
+item.zombie:magma_cube_mask.name=Magma Cube Mask
+item.zombie:mule_mask.name=Mule Mask
+item.zombie:ocelot_mask.name=Ocelot Mask
+item.zombie:phantom_mask.name=Phantom Mask
+item.zombie:piglin_brute_mask.name=Piglin Brute Mask
+item.zombie:pillager_mask.name=Pillager Mask
+item.zombie:polar_bear_mask.name=Polar Bear Mask
+item.zombie:pufferfish_mask.name=Pufferfish Mask
+item.zombie:ravager_mask.name=Ravager Mask
+item.zombie:salmon_mask.name=Salmon Mask
+item.zombie:siliverfish_mask.name=Silverfish Mask
+item.zombie:skeleton_horse_mask.name=Skeleton Horse Mask
+item.zombie:slime_mask.name=Slime Mask
+item.zombie:sniffer_mask.name=Sniffer Mask
+item.zombie:snowman_mask.name=Snow Golem Mask
+item.zombie:spider_mask.name=Spider Mask
+item.zombie:squid_mask.name=Squid Mask
+item.zombie:stray_mask.name=Stray Mask
+item.zombie:strider_mask.name=Strider Mask
+item.zombie:strider_suffocated_mask.name=Cold Strider Mask
+item.zombie:tadpole_mask.name=Tadpole Mask
+item.zombie:tropical_fish_mask.name=Tropical Fish Mask
+item.zombie:turtle_mask.name=Turtle Mask
+item.zombie:vex_mask.name=Vex Mask
+item.zombie:vex_charging_mask.name=Charging Vex Mask
+item.zombie:vindicator_mask.name=Vindicator Mask
+item.zombie:warden_mask.name=Warden Mask
+item.zombie:witch_mask.name=Witch Mask
+item.zombie:zoglin_mask.name=Zoglin Mask
+item.zombie:zombie_piglin_mask.name=Zombie Piglin Mask
+item.zombie:zombie_villager_v2_mask.name=Zombie Villager Mask
+
+## Wither Masks
+item.zombie:wither_mask.name=Wither Mask
+item.zombie:wither_armored_mask.name=Wither Armored Mask
+item.zombie:wither_invulnerable_mask.name=Wither Invulnerable Mask
+item.zombie:wither_armored_invulnerable_mask.name=Wither Armored Invulnerable Mask
+
+## Frog Masks
+item.zombie:coldfrog_mask.name=Cold Frog Mask
+item.zombie:temperate_frog_mask.name=Temperate Frog Mask
+item.zombie:warm_frog_mask.name=Warm Frog Mask
+
+## Cow Masks
+item.zombie:cow_mask.name=Cow Mask
+item.zombie:cow_cold_mask.name=Cold Cow Mask
+item.zombie:cow_warm_mask.name=Warm Cow Mask
+item.zombie:mooshroom_mask.name=Mooshroom Mask
+item.zombie:mooshroom_brown_mask.name=Brown Mooshroom Mask
+
+## Chicken Masks
+item.zombie:chicken_warm_mask.name=Chicken Mask
+
+## Fox Masks
+item.zombie:fox_mask.name=Fox Mask
+item.zombie:arctic_fox_mask.name=Arctic Fox Mask
+
+## Panda Masks
+item.zombie:panda_mask.name=Panda Mask
+item.zombie:panda_aggressive_mask.name=Aggressive Panda Mask
+item.zombie:panda_brown_mask.name=Brown Panda Mask
+item.zombie:panda_lazy_mask.name=Lazy Panda Mask
+item.zombie:panda_playful_mask.name=Playful Panda Mask
+item.zombie:panda_weak_mask.name=Weak Panda Mask
+item.zombie:panda_worried_mask.name=Worried Panda Mask
+
+## Rabbit Masks
+item.zombie:rabbit_black_mask.name=Black Rabbit Mask
+item.zombie:rabbit_brown_mask.name=Brown Rabbit Mask
+item.zombie:rabbit_gold_mask.name=Gold Rabbit Mask
+item.zombie:rabbit_salt_mask.name=Salt Rabbit Mask
+item.zombie:rabbit_white_mask.name=White Rabbit Mask
+item.zombie:rabbit_white_splotched_mask.name=White Splotched Rabbit Mask
+item.zombie:rabbit_toast_mask.name=Toast Rabbit Mask
+
+## Sheep Masks
+item.zombie:sheep_black_mask.name=Black Sheep Mask
+item.zombie:sheep_blue_mask.name=Blue Sheep Mask
+item.zombie:sheep_brown_mask.name=Brown Sheep Mask
+item.zombie:sheep_green_mask.name=Green Sheep Mask
+item.zombie:sheep_lime_mask.name=Lime Sheep Mask
+item.zombie:sheep_magenta_mask.name=Magenta Sheep Mask
+item.zombie:sheep_orange_mask.name=Orange Sheep Mask
+item.zombie:sheep_pink_mask.name=Pink Sheep Mask
+item.zombie:sheep_purple_mask.name=Purple Sheep Mask
+item.zombie:sheep_red_mask.name=Red Sheep Mask
+item.zombie:sheep_white_mask.name=White Sheep Mask
+item.zombie:sheep_yellow_mask.name=Yellow Sheep Mask
+
+## Shulker Masks
+item.zombie:shulker_mask.name=Shulker Mask
+item.zombie:shulker_black_mask.name=Black Shulker Mask
+item.zombie:shulker_blue_mask.name=Blue Shulker Mask
+item.zombie:shulker_brown_mask.name=Brown Shulker Mask
+item.zombie:shulker_cyan_mask.name=Cyan Shulker Mask
+item.zombie:shulker_gray_mask.name=Gray Shulker Mask
+item.zombie:shulker_jeb_mask.name=Jeb Shulker Mask
+item.zombie:shulker_light_blue_mask.name=Light Blue Shulker Mask
+item.zombie:shulker_lime_mask.name=Lime Shulker Mask
+item.zombie:shulker_magenta_mask.name=Magenta Shulker Mask
+item.zombie:shulker_orange_mask.name=Orange Shulker Mask
+item.zombie:shulker_pink_mask.name=Pink Shulker Mask
+item.zombie:shulker_purple_mask.name=Purple Shulker Mask
+item.zombie:shulker_red_mask.name=Red Shulker Mask
+item.zombie:shulker_silver_mask.name=Silver Shulker Mask
+
+## Wolf Masks - Variants
+item.zombie:wolf_wild_mask.name=Wild Wolf Mask
+item.zombie:wolf_angry_mask.name=Angry Wolf Mask
+item.zombie:wolf_tame_mask.name=Tamed Wolf Mask
+item.zombie:wolf_ashen_mask.name=Ashen Wolf Mask
+item.zombie:wolf_ashen_angry_mask.name=Angry Ashen Wolf Mask
+item.zombie:wolf_ashen_tamed_mask.name=Tamed Ashen Wolf Mask
+item.zombie:wolf_black_mask.name=Black Wolf Mask
+item.zombie:wolf_black_angry_mask.name=Angry Black Wolf Mask
+item.zombie:wolf_black_tamed_mask.name=Tamed Black Wolf Mask
+item.zombie:wolf_chestnut_mask.name=Chestnut Wolf Mask
+item.zombie:wolf_chestnut_angry_mask.name=Angry Chestnut Wolf Mask
+item.zombie:wolf_chestnut_tamed_mask.name=Tamed Chestnut Wolf Mask
+item.zombie:wolf_rusty_mask.name=Rusty Wolf Mask
+item.zombie:wolf_rusty_angry_mask.name=Angry Rusty Wolf Mask
+item.zombie:wolf_rusty_tamed_mask.name=Tamed Rusty Wolf Mask
+item.zombie:wolf_spotted_mask.name=Spotted Wolf Mask
+item.zombie:wolf_spotted_angry_mask.name=Angry Spotted Wolf Mask
+item.zombie:wolf_spotted_tamed_mask.name=Tamed Spotted Wolf Mask
+item.zombie:wolf_striped_mask.name=Striped Wolf Mask
+item.zombie:wolf_striped_angry_mask.name=Angry Striped Wolf Mask
+item.zombie:wolf_striped_tamed_mask.name=Tamed Striped Wolf Mask
+item.zombie:wolf_winter_mask.name=Winter Wolf Mask
+item.zombie:wolf_winter_angry_mask.name=Angry Winter Wolf Mask
+
+## Villager Masks - Desert
+item.zombie:villager_desert_armorer_mask.name=Desert Armorer Villager Mask
+item.zombie:villager_desert_butcher_mask.name=Desert Butcher Villager Mask
+item.zombie:villager_v2_desert_armorer_mask.name=Desert Armorer Mask
+item.zombie:villager_v2_desert_butcher_mask.name=Desert Butcher Mask
+item.zombie:villager_v2_desert_cartographer_mask.name=Desert Cartographer Mask
+item.zombie:villager_v2_desert_cleric_mask.name=Desert Cleric Mask
+item.zombie:villager_v2_desert_farmer_mask.name=Desert Farmer Mask
+item.zombie:villager_v2_desert_fisherman_mask.name=Desert Fisherman Mask
+item.zombie:villager_v2_desert_fletcher_mask.name=Desert Fletcher Mask
+item.zombie:villager_v2_desert_leatherworker_mask.name=Desert Leatherworker Mask
+item.zombie:villager_v2_desert_librarian_mask.name=Desert Librarian Mask
+item.zombie:villager_v2_desert_mason_mask.name=Desert Mason Mask
+item.zombie:villager_v2_desert_nitwit_mask.name=Desert Nitwit Mask
+item.zombie:villager_v2_desert_shepherd_mask.name=Desert Shepherd Mask
+item.zombie:villager_v2_desert_toolsmith_mask.name=Desert Toolsmith Mask
+item.zombie:villager_v2_desert_unskilled_mask.name=Desert Unskilled Mask
+item.zombie:villager_v2_desert_weaponsmith_mask.name=Desert Weaponsmith Mask
+
+## Villager Masks - Jungle
+item.zombie:villager_v2_jungle_armorer_mask.name=Jungle Armorer Mask
+item.zombie:villager_v2_jungle_butcher_mask.name=Jungle Butcher Mask
+item.zombie:villager_v2_jungle_cartographer_mask.name=Jungle Cartographer Mask
+item.zombie:villager_v2_jungle_cleric_mask.name=Jungle Cleric Mask
+item.zombie:villager_v2_jungle_farmer_mask.name=Jungle Farmer Mask
+item.zombie:villager_v2_jungle_fisherman_mask.name=Jungle Fisherman Mask
+item.zombie:villager_v2_jungle_fletcher_mask.name=Jungle Fletcher Mask
+item.zombie:villager_v2_jungle_leatherworker_mask.name=Jungle Leatherworker Mask
+item.zombie:villager_v2_jungle_librarian_mask.name=Jungle Librarian Mask
+item.zombie:villager_v2_jungle_mason_mask.name=Jungle Mason Mask
+item.zombie:villager_v2_jungle_nitwit_mask.name=Jungle Nitwit Mask
+item.zombie:villager_v2_jungle_shepherd_mask.name=Jungle Shepherd Mask
+item.zombie:villager_v2_jungle_toolsmith_mask.name=Jungle Toolsmith Mask
+item.zombie:villager_v2_jungle_unskilled_mask.name=Jungle Unskilled Mask
+item.zombie:villager_v2_jungle_weaponsmith_mask.name=Jungle Weaponsmith Mask
+
+## Villager Masks - Plains
+item.zombie:villager_v2_plains_armorer_mask.name=Plains Armorer Mask
+item.zombie:villager_v2_plains_butcher_mask.name=Plains Butcher Mask
+item.zombie:villager_v2_plains_cartographer_mask.name=Plains Cartographer Mask
+item.zombie:villager_v2_plains_cleric_mask.name=Plains Cleric Mask
+item.zombie:villager_v2_plains_farmer_mask.name=Plains Farmer Mask
+item.zombie:villager_v2_plains_fisherman_mask.name=Plains Fisherman Mask
+item.zombie:villager_v2_plains_fletcher_mask.name=Plains Fletcher Mask
+item.zombie:villager_v2_plains_leatherworker_mask.name=Plains Leatherworker Mask
+item.zombie:villager_v2_plains_librarian_mask.name=Plains Librarian Mask
+item.zombie:villager_v2_plains_mason_mask.name=Plains Mason Mask
+item.zombie:villager_v2_plains_nitwit_mask.name=Plains Nitwit Mask
+item.zombie:villager_v2_plains_shepherd_mask.name=Plains Shepherd Mask
+item.zombie:villager_v2_plains_toolsmith_mask.name=Plains Toolsmith Mask
+item.zombie:villager_v2_plains_unskilled_mask.name=Plains Unskilled Mask
+item.zombie:villager_v2_plains_weaponsmith_mask.name=Plains Weaponsmith Mask
+
+## Villager Masks - Savanna
+item.zombie:villager_v2_savanna_armorer_mask.name=Savanna Armorer Mask
+item.zombie:villager_v2_savanna_butcher_mask.name=Savanna Butcher Mask
+item.zombie:villager_v2_savanna_cartographer_mask.name=Savanna Cartographer Mask
+item.zombie:villager_v2_savanna_cleric_mask.name=Savanna Cleric Mask
+item.zombie:villager_v2_savanna_farmer_mask.name=Savanna Farmer Mask
+item.zombie:villager_v2_savanna_fisherman_mask.name=Savanna Fisherman Mask
+item.zombie:villager_v2_savanna_fletcher_mask.name=Savanna Fletcher Mask
+item.zombie:villager_v2_savanna_leatherworker_mask.name=Savanna Leatherworker Mask
+item.zombie:villager_v2_savanna_librarian_mask.name=Savanna Librarian Mask
+item.zombie:villager_v2_savanna_mason_mask.name=Savanna Mason Mask
+item.zombie:villager_v2_savanna_nitwit_mask.name=Savanna Nitwit Mask
+item.zombie:villager_v2_savanna_shepherd_mask.name=Savanna Shepherd Mask
+item.zombie:villager_v2_savanna_toolsmith_mask.name=Savanna Toolsmith Mask
+item.zombie:villager_v2_savanna_unskilled_mask.name=Savanna Unskilled Mask
+item.zombie:villager_v2_savanna_weaponsmith_mask.name=Savanna Weaponsmith Mask
+
+## Villager Masks - Snow
+item.zombie:villager_v2_snow_armorer_mask.name=Snow Armorer Mask
+
+## Villager Masks - Swamp
+item.zombie:villager_v2_swamp_armorer_mask.name=Swamp Armorer Mask
+item.zombie:villager_v2_swamp_butcher_mask.name=Swamp Butcher Mask
+item.zombie:villager_v2_swamp_cartographer_mask.name=Swamp Cartographer Mask
+item.zombie:villager_v2_swamp_cleric_mask.name=Swamp Cleric Mask
+item.zombie:villager_v2_swamp_farmer_mask.name=Swamp Farmer Mask
+item.zombie:villager_v2_swamp_fisherman_mask.name=Swamp Fisherman Mask
+item.zombie:villager_v2_swamp_fletcher_mask.name=Swamp Fletcher Mask
+item.zombie:villager_v2_swamp_leatherworker_mask.name=Swamp Leatherworker Mask
+item.zombie:villager_v2_swamp_librarian_mask.name=Swamp Librarian Mask
+item.zombie:villager_v2_swamp_mason_mask.name=Swamp Mason Mask
+item.zombie:villager_v2_swamp_nitwit_mask.name=Swamp Nitwit Mask
+item.zombie:villager_v2_swamp_shepherd_mask.name=Swamp Shepherd Mask
+item.zombie:villager_v2_swamp_toolsmith_mask.name=Swamp Toolsmith Mask
+item.zombie:villager_v2_swamp_unskilled_mask.name=Swamp Unskilled Mask
+item.zombie:villager_v2_swamp_weaponsmith_mask.name=Swamp Weaponsmith Mask
+
+## Villager Masks - Taiga
+item.zombie:villager_v2_taiga_armorer_mask.name=Taiga Armorer Mask
+item.zombie:villager_v2_taiga_butcher_mask.name=Taiga Butcher Mask
+item.zombie:villager_v2_taiga_cartographer_mask.name=Taiga Cartographer Mask
+item.zombie:villager_v2_taiga_cleric_mask.name=Taiga Cleric Mask
+item.zombie:villager_v2_taiga_farmer_mask.name=Taiga Farmer Mask
+item.zombie:villager_v2_taiga_fisherman_mask.name=Taiga Fisherman Mask
+item.zombie:villager_v2_taiga_fletcher_mask.name=Taiga Fletcher Mask
+item.zombie:villager_v2_taiga_leatherworker_mask.name=Taiga Leatherworker Mask
+item.zombie:villager_v2_taiga_librarian_mask.name=Taiga Librarian Mask
+item.zombie:villager_v2_taiga_mason_mask.name=Taiga Mason Mask
+
+## Blocks
+tile.zombie:allay_mask_block.name=Allay Block
+tile.zombie:armadillo_block.name=Armadillo Block
+tile.zombie:bat_block.name=Bat Block
+tile.zombie:bee_angry_block.name=Angry Bee Block
+tile.zombie:bee_block.name=Bee Block
+tile.zombie:blaze_block.name=Blaze Block
+tile.zombie:bogged_block.name=Bogged Block
+tile.zombie:breeze_mask_block.name=Breeze Block
+tile.zombie:camel1_block.name=Camel Block
+tile.zombie:cavespider_block.name=Cave Spider Block
+tile.zombie:cod_block.name=Cod Block
+tile.zombie:creaking_block.name=Creaking Block
+tile.zombie:dolphin_block.name=Dolphin Block
+tile.zombie:donkey_block.name=Donkey Block
+tile.zombie:drowned_block.name=Drowned Block
+tile.zombie:enderman_block.name=Enderman Block
+tile.zombie:endermite_mask_block.name=Endermite Block
+tile.zombie:fox_arctic_block.name=Arctic Fox Block
+tile.zombie:fox_block.name=Fox Block
+tile.zombie:frog_cold_block.name=Cold Frog Block
+tile.zombie:frog_temperate_block.name=Temperate Frog Block
+tile.zombie:frog_warm_block.name=Warm Frog Block
+tile.zombie:ghast_block.name=Ghast Block
+tile.zombie:glow_squid_mask_block.name=Glow Squid Block
+tile.zombie:goat_block.name=Goat Block
+tile.zombie:goat_screamer_block.name=Screaming Goat Block
+tile.zombie:guardian_block.name=Guardian Block
+tile.zombie:guardian_elder_block.name=Elder Guardian Block
+tile.zombie:hog_mask_block.name=Hoglin Block
+tile.zombie:husk_mask_block.name=Husk Block
+tile.zombie:illager_block.name=Illager Block
+tile.zombie:iron_golem_block.name=Iron Golem Block
+tile.zombie:magma_cube_block.name=Magma Cube Block
+tile.zombie:mooshroom_block.name=Mooshroom Block
+tile.zombie:mooshroom_brown_block.name=Brown Mooshroom Block
+tile.zombie:mule_block.name=Mule Block
+tile.zombie:ocelot_block.name=Ocelot Block
+tile.zombie:phantom_block.name=Phantom Block
+tile.zombie:pig_block.name=Pig Block
+tile.zombie:pig_cold.name=Cold Pig Block
+tile.zombie:pig_warm_block.name=Warm Pig Block
+tile.zombie:piglin_brute_block.name=Piglin Brute Block
+tile.zombie:pillager_block.name=Pillager Block
+tile.zombie:polar_bear_block.name=Polar Bear Block
+tile.zombie:pufferfish_block.name=Pufferfish Block
+tile.zombie:ravager_block.name=Ravager Block
+tile.zombie:salmon_block.name=Salmon Block
+tile.zombie:siliverfish_block.name=Silverfish Block
+tile.zombie:skeleton_horse_block.name=Skeleton Horse Block
+tile.zombie:slime_block.name=Slime Block
+tile.zombie:sniffer_block.name=Sniffer Block
+tile.zombie:snowman_block.name=Snow Golem Block
+tile.zombie:spider_block.name=Spider Block
+tile.zombie:squid_mask_block.name=Squid Block
+tile.zombie:stray_block.name=Stray Block
+tile.zombie:strider_block.name=Strider Block
+tile.zombie:strider_suffocated_block.name=Cold Strider Block
+tile.zombie:tadpole_block.name=Tadpole Block
+tile.zombie:tropical_fish_block.name=Tropical Fish Block
+tile.zombie:turtle_block.name=Turtle Block
+tile.zombie:vex_block.name=Vex Block
+tile.zombie:vex_charging_block.name=Charging Vex Block
+tile.zombie:vindicator_block.name=Vindicator Block
+tile.zombie:wandering_trader_block.name=Wandering Trader Block
+tile.zombie:warden_block.name=Warden Block
+tile.zombie:witch.name=Witch Block
+tile.zombie:wither_block.name=Wither Block
+tile.zombie:zoglin_mask_block.name=Zoglin Block
+tile.zombie:zombie_piglin_mask.name=Zombie Piglin Block

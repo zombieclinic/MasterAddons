@@ -1,0 +1,35 @@
+
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.pumpkin_monster": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"idle": "(1.0)"
+						}
+					],
+					"transitions": [
+						{
+							"walk": "query.ground_speed"
+						}
+					]
+				},
+				"walk": {
+					"animations": [
+						{
+							"walk": "(1.0)"
+						}
+					],
+					"transitions": [
+						{
+							"default": "!query.ground_speed"
+						}
+					]
+				}
+			}
+		}
+	}
+}

@@ -22,8 +22,7 @@
         ]
       },
       "menu_category": {
-        "category": "construction",
-        "group": "minecraft:itemGroup.name.trapdoor"
+        "category": "construction"
       }
     },
     "components": {

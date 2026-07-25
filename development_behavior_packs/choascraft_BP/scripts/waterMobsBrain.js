@@ -47,6 +47,7 @@ import "./items/chaosArmor.js";
 import "./items/echoheartTotem.js";
 import "./entities/demonLordCombat.js";
 import "./christmas/index.js";
+import "./halloween/halloweenevent_index.js";
 import { CoffinBackpackPlacementComponent } from "./items/coffinBackpackPickup.js";
 
 const BLOCK_COMPONENTS = [

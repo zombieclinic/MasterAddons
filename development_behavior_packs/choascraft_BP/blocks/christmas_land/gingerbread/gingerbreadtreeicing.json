@@ -5,7 +5,7 @@
 			"identifier": "zombie:gingerbreadtreeicing",
 			"is_experimental": false,
 			"menu_category": {
-				"category": "items"
+				"category": "construction"
 			},
 			"traits": {
 				"minecraft:placement_direction": {

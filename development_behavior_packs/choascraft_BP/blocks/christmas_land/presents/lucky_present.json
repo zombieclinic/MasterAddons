@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "zombie:lucky_present",
 			"menu_category": {
-				"category": "items"
+				"category": "construction"
 			},
 			"traits": {
 				"minecraft:placement_direction": {

@@ -4,8 +4,7 @@
     "description": {
       "identifier": "zombie:infected_tree_log",
       "menu_category": {
-        "category": "nature",
-        "group": "minecraft:itemGroup.name.log"
+        "category": "construction"
       },
       "traits": {
         "minecraft:placement_position": {

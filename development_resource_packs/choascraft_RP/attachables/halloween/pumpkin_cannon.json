@@ -1,0 +1,35 @@
+
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "zombie:pumpkin_cannon",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/halloween/3ditems/pumpkin_cannon"
+			},
+			"geometry": {
+				"default": "geometry.Pumpkin_cannon"
+			},
+			"animations": {
+				"hold_first_person": "animation.Pumpkin_cannon.first_person",
+				"hold_third_person": "animation.Pumpkin_cannon.thrid"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"hold_third_person": "!c.is_first_person"
+					},
+					{
+						"hold_first_person": "c.is_first_person"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

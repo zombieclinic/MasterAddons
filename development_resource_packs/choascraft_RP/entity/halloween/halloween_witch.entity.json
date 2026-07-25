@@ -1,0 +1,32 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "ninjos:halloween_witch",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/halloween/entity/halloween_witch"
+			},
+			"animations": {
+				"idle": "animation.halloween_witch.idle",
+				"walk": "animation.halloween_witch.walk",
+				"controller": "controller.animation.halloween_witch"
+			},
+			"scripts": {
+				"animate": [
+					"controller"
+				]
+			},
+			"geometry": {
+				"default": "geometry.halloween_witch"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#a1b13e",
+				"overlay_color": "#909639"
+			}
+		}
+	}
+}

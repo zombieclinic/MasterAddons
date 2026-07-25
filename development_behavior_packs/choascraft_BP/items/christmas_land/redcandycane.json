@@ -3,8 +3,7 @@
 	"minecraft:item": {
 		"description": {
 			"menu_category": {
-				"group": "itemGroup.name.miscFood",
-				"category": "nature"
+				"category": "construction"
 			},
 			"identifier": "zombie:redcandycane_item"
 		},

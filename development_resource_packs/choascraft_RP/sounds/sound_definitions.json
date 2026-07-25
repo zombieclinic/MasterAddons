@@ -129,6 +129,18 @@
       "sounds": [
         "sounds/demon/choas_explosion"
       ]
+    },
+    "pumpkin_scream": {
+      "category": "hostile",
+      "sounds": [
+        "sounds/halloween/scream"
+      ]
+    },
+    "pumpkin_hurt": {
+      "category": "hostile",
+      "sounds": [
+        "sounds/halloween/hurt"
+      ]
     }
   }
 }

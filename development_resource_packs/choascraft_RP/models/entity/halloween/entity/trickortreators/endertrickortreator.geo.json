@@ -1,0 +1,90 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.endertrickortreator",
+				"texture_width": 64,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0, 42, 0],
+					"reset": true,
+					"cubes": [
+						{"origin": [-4, 30, -2], "size": [8, 12, 4], "uv": [32, 16]}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [0, 42, 0],
+					"cubes": [
+						{"origin": [-4, 42, -4], "size": [8, 8, 8], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "mask",
+					"parent": "head",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-3.95, 42.925, -5],
+							"size": [7.95, 7.025, 2],
+							"uv": {
+								"north": {"uv": [39, 0], "uv_size": [7, 7]},
+								"east": {"uv": [39.125, 0.3], "uv_size": [0.725, 6.3]},
+								"south": {"uv": [11, 2], "uv_size": [7, 7]},
+								"west": {"uv": [39.125, 0.3], "uv_size": [0.725, 6.3]},
+								"up": {"uv": [39.85, 6.6], "uv_size": [-0.725, -1.6]},
+								"down": {"uv": [39.85, 6.6], "uv_size": [-0.725, -1.15]}
+							}
+						}
+					]
+				},
+				{
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [-5, 40, 0],
+					"reset": true,
+					"cubes": [
+						{"origin": [-6, 12, -1], "size": [2, 30, 2], "uv": [56, 0]}
+					]
+				},
+				{
+					"name": "leftArm",
+					"parent": "body",
+					"pivot": [5, 40, 0],
+					"reset": true,
+					"mirror": true,
+					"cubes": [
+						{"origin": [4, 12, -1], "size": [2, 30, 2], "uv": [56, 0]}
+					]
+				},
+				{
+					"name": "rightLeg",
+					"parent": "body",
+					"pivot": [-2, 30, 0],
+					"reset": true,
+					"cubes": [
+						{"origin": [-3, 0, -1], "size": [2, 30, 2], "uv": [56, 0]}
+					]
+				},
+				{
+					"name": "leftLeg",
+					"parent": "body",
+					"pivot": [2, 30, 0],
+					"reset": true,
+					"mirror": true,
+					"cubes": [
+						{"origin": [1, 0, -1], "size": [2, 30, 2], "uv": [56, 0]}
+					]
+				}
+			]
+		}
+	]
+}

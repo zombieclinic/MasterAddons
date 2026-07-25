@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.shulker_mask.open": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"top": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [0, 0, 0],
+						"1.0": [0, 180, 0]
+					},
+					"position": {
+						"0.0": [0, 2, 0],
+						"0.5": [0, -5, 0],
+						"1.0": [0, 2, 0]
+					}
+				}
+			}
+		}
+	}
+}

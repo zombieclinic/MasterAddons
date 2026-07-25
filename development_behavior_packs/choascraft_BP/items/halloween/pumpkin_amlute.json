@@ -1,0 +1,23 @@
+{
+    "format_version": "1.21.111",
+    "minecraft:item": {
+        "description": {
+            "identifier": "zombie:pumpkin_amulet",
+            "menu_category": {
+                "category": "construction"
+            }
+        },
+        "components": {
+            "minecraft:display_name": {
+                "value": "Pumpkin Amulet"
+            },
+            "minecraft:icon": "pumpkin_amulet",
+            "minecraft:entity_placer": {
+                "entity": "zombie:pumpkin_king",
+                "use_on": [
+                    "zombie:pumpkin_king_block"
+                ]
+            }
+        }
+    }
+}

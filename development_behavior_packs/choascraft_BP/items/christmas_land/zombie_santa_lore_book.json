@@ -4,8 +4,7 @@
     "description": {
       "identifier": "zombie:zombie_santa_lore_book",
       "menu_category": {
-        "category": "equipment",
-        "group": "zombie:itemGroup.name.book"
+        "category": "construction"
       }
     },
     "components": {

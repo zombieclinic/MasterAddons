@@ -4,8 +4,7 @@
 		"description": {
 			"identifier": "zombie:santa_cookie",
 			"menu_category": {
-				"category": "items",
-				"group": "itemGroup.name.cookedFood"
+				"category": "construction"
 			}
 		},
 		"components": {

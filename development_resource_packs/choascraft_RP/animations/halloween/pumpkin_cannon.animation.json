@@ -1,0 +1,27 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.Pumpkin_cannon.first_person": {
+			"loop": true,
+			"bones": {
+				"pumpkin_cannon": {
+					"rotation": [13.5781, 81.21994, -106.41001],
+					"position": [1.725, 9.7, -8.5],
+					"scale": 0.5
+				},
+				"rightItem": {
+					"rotation": [-16.25, 0, 0]
+				}
+			}
+		},
+		"animation.Pumpkin_cannon.thrid": {
+			"loop": true,
+			"bones": {
+				"pumpkin_cannon": {
+					"position": [-4.875, 1.375, -15.125],
+					"scale": 0.5
+				}
+			}
+		}
+	}
+}

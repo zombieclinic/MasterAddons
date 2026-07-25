@@ -1,0 +1,85 @@
+{
+	"resource_pack_name": "zombiecraft re",
+	"texture_name": "atlas.terrain",
+	"padding": 8,
+	"num_mip_levels": 4,
+	"texture_data": {
+		"zombie_horse_block":{
+      "textures": "textures/halloween/horse_zombie"
+		},
+		"pumpkin_face3": {
+      "textures": "textures/halloween/blocks/pumpkin_face3"
+		},
+		"pumpkin_face2": {
+      "textures": "textures/halloween/blocks/pumpkin_face2"
+		},
+		"pumpkin_face1": {
+      "textures": "textures/halloween/blocks/pumpkin_face1"
+		},
+		"pumpkin_heart": {
+      "textures": "textures/halloween/blocks/pumpkin_heart"
+		},
+		"pumpkin_pickaxe": {
+      "textures": "textures/halloween/blocks/pumpkin_pickaxe_lit"
+		},
+		"pumpkin": {
+      "textures": "textures/halloween/blocks/pumpkin"
+		},
+		"clown_tt_bucket": {
+      "textures": "textures/halloween/blocks/clown_tt_bucket"
+		},
+		"frankenstein_tt_bucket": {
+      "textures": "textures/halloween/blocks/frankenstein_tt_bucket"
+		},
+		"ghost_tt_bucket": {
+      "textures": "textures/halloween/blocks/ghost_tt_bucket"
+		},
+		"mummy_tt_bucket": {
+      "textures": "textures/halloween/blocks/mummy_tt_bucket"
+		},
+		"vampire_tt_bucket": {
+      "textures": "textures/halloween/blocks/vampire_tt_bucket"
+		},
+		"pumpkin_tt_bucket": {
+      "textures": "textures/halloween/blocks/pumpkin_tt_bucket"
+		},
+		"skull_tt_bucket": {
+      "textures": "textures/halloween/blocks/skull_tt_bucket"
+		},
+		"creeper_pumpkin_lit": {
+      "textures": "textures/halloween/blocks/creeper_pumpkin_lit"
+		},
+		"zombie_cross_grave": {
+      "textures": "textures/halloween/blocks/cross_grave"
+		},
+		"zombie_endermancat": {
+      "textures": "textures/halloween/blocks/endermancat"
+		},
+		"zombie_ghost": {
+      "textures": "textures/halloween/blocks/ghost"
+		},
+		"zombie_pigcreeper": {
+      "textures": "textures/halloween/blocks/pigcreeper"
+		},
+		"zombie_skeletonsheep": {
+      "textures": "textures/halloween/blocks/skeletonsheep"
+		},
+		"zombie_skull_bones": {
+      "textures": "textures/halloween/blocks/skull_bones"
+		},
+		"zombie_zombie_steve": {
+      "textures": "textures/halloween/blocks/zombie_steve"
+		},
+		"zombie_witchpumpkin_block": {
+      "textures": "textures/halloween/blocks/witchpunking"
+		},
+		"zombie_grave_stone": {
+      "textures": "textures/halloween/blocks/grave_site"
+		},
+		"zombie_pumpkin_king": {
+      "textures": "textures/halloween/pumpkin_boss"
+		}
+
+	}
+}
+	

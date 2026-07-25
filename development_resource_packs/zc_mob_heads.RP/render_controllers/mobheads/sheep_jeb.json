@@ -1,0 +1,37 @@
+
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.jeb_sheep_z": {
+			"geometry": "Geometry.default",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [ "temp.life_time = query.life_time * 8.0; return array.item_frames[temp.life_time];", "texture.enchanted" ],
+			"arrays": {
+				"textures": {
+				  "array.item_frames": [
+						"Texture.white",
+						"Texture.blue",
+						"Texture.purple",
+						"Texture.green",
+						"Texture.black",
+						"Texture.brown",
+						"Texture.cyan",
+						"Texture.gray",
+						"Texture.light_blue",
+						"Texture.light_gray",
+						"Texture.lime",
+						"Texture.magenta",
+						"Texture.orange",
+						"Texture.pink",
+						"Texture.red",
+						"Texture.yellow"
+					]
+				}
+			}
+		}
+	}
+}

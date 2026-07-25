@@ -1,0 +1,57 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.villager_wall",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [0, 4.025, 4],
+					"cubes": [
+						{"origin": [-4, 4.025, 0], "size": [8, 10, 8], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "helmet",
+					"parent": "head",
+					"pivot": [0, 4.025, 4],
+					"cubes": [
+						{
+							"origin": [-4, 4.025, 0],
+							"size": [8, 10, 7.425],
+							"inflate": 0.5,
+							"uv": {
+								"north": {"uv": [40, 8], "uv_size": [8, 10]},
+								"east": {"uv": [33, 8], "uv_size": [7, 10]},
+								"south": {"uv": [55, 8], "uv_size": [8, 10]},
+								"west": {"uv": [48, 8], "uv_size": [7, 10]},
+								"up": {"uv": [40, 1], "uv_size": [8, 7]},
+								"down": {"uv": [48, 8], "uv_size": [8, -7]}
+							}
+						}
+					]
+				},
+				{
+					"name": "brim",
+					"parent": "head",
+					"pivot": [0, 4.025, 4]
+				},
+				{
+					"name": "nose",
+					"parent": "head",
+					"pivot": [0, 6.025, 4],
+					"cubes": [
+						{"origin": [-1, 3.025, -2], "size": [2, 4, 2], "uv": [24, 0]}
+					]
+				}
+			]
+		}
+	]
+}

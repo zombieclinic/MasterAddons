@@ -1,0 +1,64 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.pumpkinammo.run": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"punkin": {
+					"rotation": ["variable.shake_power - query.target_x_rotation", "-query.target_y_rotation", 0]
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "orb",
+					"locator": "particle"
+				},
+				"0.125": {
+					"effect": "orb",
+					"locator": "particle"
+				},
+				"0.2083": {
+					"effect": "orb",
+					"locator": "particle"
+				},
+				"0.2917": {
+					"effect": "orb",
+					"locator": "particle"
+				},
+				"0.3333": {
+					"effect": "orb",
+					"locator": "particle"
+				},
+				"0.4583": {
+					"effect": "orb",
+					"locator": "particle"
+				},
+				"0.5417": {
+					"effect": "orb",
+					"locator": "particle"
+				},
+				"0.625": {
+					"effect": "orb",
+					"locator": "particle"
+				},
+				"0.6667": {
+					"effect": "orb",
+					"locator": "particle"
+				},
+				"0.7917": {
+					"effect": "orb",
+					"locator": "particle"
+				},
+				"0.875": {
+					"effect": "orb",
+					"locator": "particle"
+				},
+				"0.9583": {
+					"effect": "orb",
+					"locator": "particle"
+				}
+			}
+		}
+	}
+}

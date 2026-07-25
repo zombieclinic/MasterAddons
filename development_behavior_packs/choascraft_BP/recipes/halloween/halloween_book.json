@@ -1,0 +1,29 @@
+{
+	"format_version": "1.21.111",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "zombie:halloween_book_reciepe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+       "unlock": [
+			{
+				"item": "minecraft:paper"
+			}
+		],
+		"ingredients": [
+
+			{
+				"item": "minecraft:carved_pumpkin"
+			},
+			{
+				"item": "minecraft:leather"
+			}
+		],
+		"result": {
+			"item": "zombie:halloween_book",
+			"count": 1
+		}
+	}
+}

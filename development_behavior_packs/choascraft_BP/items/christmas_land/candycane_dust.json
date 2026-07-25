@@ -3,7 +3,7 @@
 	"minecraft:item": {
 		"description": {
 			"menu_category": {
-				"category": "nature"
+				"category": "construction"
 			},
 			"identifier": "zombie:candycane_dust"
 		},

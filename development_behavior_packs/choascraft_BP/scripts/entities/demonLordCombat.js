@@ -1,4 +1,5 @@
 import { EntityDamageCause, system, world } from "@minecraft/server";
+import { startDemonClawTrap } from "./demonClawTrap.js";
 
 const BOSS = "zombie:demon_lord";
 const CLAW = "zombie:demon_lord_claw";
@@ -106,6 +107,7 @@ function claw(boss, state, location, firstDamage = 16, secondDamage = 8) {
   prune(state.claws);
   if (state.claws.size >= 12) return;
   const entity = spawnHelper(boss, CLAW, location, state.claws);
+  startDemonClawTrap(entity);
   const bossId = boss.id;
   const clawId = entity.id;
   later(15, () => {

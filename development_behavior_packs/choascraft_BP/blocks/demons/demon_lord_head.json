@@ -3,6 +3,9 @@
   "minecraft:block": {
     "description": {
       "identifier": "zombie:demon_lord_head_block",
+      "menu_category": {
+        "category": "construction"
+      },
       "traits": {
         "minecraft:placement_direction": {
           "enabled_states": [

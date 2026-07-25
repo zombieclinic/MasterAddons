@@ -11,8 +11,7 @@
         }
       },
       "menu_category": {
-        "category": "nature",
-        "group": "minecraft:itemGroup.name.log"
+        "category": "construction"
       }
     },
     "components": {

@@ -1,0 +1,41 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.trickortreatwitch.magic": {
+			"loop": true,
+			"animation_length": 2,
+			"bones": {
+				"punk1": {
+					"rotation": [0, 0, 0],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.75": [0, 8, 0],
+						"1.5": [0, -9, 0],
+						"2.0": [0, 0, 0]
+					},
+					"scale": 1
+				},
+				"punk2": {
+					"rotation": [0, 0, 0],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.75": [0, -9, 0],
+						"1.5": [0, 9, 0],
+						"2.0": [0, 0, 0]
+					},
+					"scale": 1
+				},
+				"punk3": {
+					"rotation": [0, 0, 0],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.75": [0, 8, 0],
+						"1.5": [0, -9, 0],
+						"2.0": [0, 0, 0]
+					},
+					"scale": 1
+				}
+			}
+		}
+	}
+}

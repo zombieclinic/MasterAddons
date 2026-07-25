@@ -4,7 +4,7 @@
     "description": {
       "identifier": "zombie:hell_lamp",
       "menu_category": {
-        "category": "items"
+        "category": "construction"
       },
       "traits": {
         "minecraft:placement_position": {

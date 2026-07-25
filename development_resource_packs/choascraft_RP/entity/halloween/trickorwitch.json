@@ -1,0 +1,43 @@
+
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "zombie:trickorwitch",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"default": "textures/halloween/entity/trickortreat/witchpunking"
+			},
+			"geometry": {
+				"default": "geometry.trickortreatwitch"
+			},
+			"scripts": {
+				"scale": 0.9375
+			},
+			"animations": {
+				"villager_general": "animation.villager.general.v1.0",
+				"look_at_target": "animation.common.look_at_target",
+				"move": "animation.villager.move",
+				"general": "animation.witch.general",
+				"heads": "animation.trickortreatwitch.magic"
+			},
+			"animation_controllers": [
+				{
+					"general": "controller.animation.trickorwitch.general"
+				},
+				{
+					"move": "controller.animation.villager.move"
+				}
+			],
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#000000",
+				"overlay_color": "#ff6702"
+			}
+		}
+	}
+}

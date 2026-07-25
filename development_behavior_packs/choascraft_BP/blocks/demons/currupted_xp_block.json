@@ -4,7 +4,7 @@
     "description": {
       "identifier": "zombie:currupted_xp_block",
       "menu_category": {
-        "category": "items"
+        "category": "construction"
       }
     },
     "components": {

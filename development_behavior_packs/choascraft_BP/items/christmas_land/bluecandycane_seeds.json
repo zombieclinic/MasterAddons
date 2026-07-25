@@ -3,8 +3,7 @@
 	"minecraft:item": {
 		"description": {
 			"menu_category": {
-				"group": "itemGroup.name.crop",
-				"category": "nature"
+				"category": "construction"
 			},
 			"identifier": "zombie:bluecandycane_seeds"
 		},

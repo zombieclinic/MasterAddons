@@ -1,0 +1,41 @@
+//bridge-file-version: #4
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.jeb_shulker_z": {
+			"geometry": "Geometry.default",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"temp.life_time = query.life_time * 2.0; return array.item_frames[temp.life_time];",
+				"texture.enchanted"
+			],
+			"arrays": {
+				"textures": {
+					"array.item_frames": [
+						"Texture.undyed",
+						"Texture.black",
+						"Texture.blue",
+						"Texture.brown",
+						"Texture.cyan",
+						"Texture.gray",
+						"Texture.green",
+						"Texture.light_blue",
+						"Texture.lime",
+						"Texture.magenta",
+						"Texture.orange",
+						"Texture.pink",
+						"Texture.purple",
+						"Texture.red",
+						"Texture.siliver",
+						"Texture.white",
+						"Texture.yellow"
+					]
+				}
+			}
+		}
+	}
+}

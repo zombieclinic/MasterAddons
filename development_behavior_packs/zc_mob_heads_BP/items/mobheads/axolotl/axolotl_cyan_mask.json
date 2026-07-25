@@ -1,0 +1,33 @@
+
+{
+	"format_version": "1.21.90",
+	"minecraft:item": {
+		"description": {
+			"identifier": "zombie:axolotl_cyan_mask",
+			
+			"menu_category": {
+				"group": "minecraft:itemGroup.name.skull",
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:should_despawn": true,
+			"minecraft:display_name": {
+				"value": "Axolotl Cyan Mask"
+			},
+			"minecraft:wearable": {
+				"slot": "slot.armor.head",
+				"hides_player_location": true
+			},
+			"minecraft:enchantable": {
+				"slot": "armor_head",
+				"value": 5
+			},
+			"minecraft:icon": "axolotl_cyan_item",
+			"minecraft:block_placer": {
+				"block": "zombie:axolotl_cyan_block"
+			},
+			"minecraft:skull": {}
+		}
+	}
+}

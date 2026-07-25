@@ -674,6 +674,51 @@
     },
     "tree_cookie": {
       "textures": "textures/christmas/particles/christmas/tree"
+    },
+    "zombie_punkincannon": {
+      "textures": "textures/halloween/3ditems/pumpkin_cannon_icon"
+    },
+    "zombie_charged_pumpk": {
+      "textures": "textures/halloween/3ditems/charged_punkin_icon"
+    },
+    "zombie_candy": {
+      "textures": "textures/halloween/3ditems/candy"
+    },
+    "zombie_halloween_mask_icon": {
+      "textures": "textures/halloween/3ditems/zombie_mask_icon"
+    },
+    "spider_halloween_mask_icon": {
+      "textures": "textures/halloween/3ditems/spider_mask"
+    },
+    "creeper_halloween_mask_icon": {
+      "textures": "textures/halloween/3ditems/creeper_mask_icon"
+    },
+    "skeletion_mask_halloween_icon": {
+      "textures": "textures/halloween/3ditems/skeletion_mask_icon"
+    },
+    "halloween_pop": {
+      "textures": "textures/halloween/candy/pop"
+    },
+    "halloween_green_apple": {
+      "textures": "textures/halloween/candy/green_apple"
+    },
+    "halloween_candycorn": {
+      "textures": "textures/halloween/candy/candycorn"
+    },
+    "halloween_book": {
+      "textures": "textures/halloween/halloween_book"
+    },
+    "pumpkin_scythe": {
+      "textures": "textures/halloween/pumpkin_scythe"
+    },
+    "pumpkin_king_head_icon": {
+      "textures": "textures/halloween/pumpkin_king_head_icon"
+    },
+    "pumpkin_amulet": {
+      "textures": "textures/halloween/pumpkin_amlute"
+    },
+    "zombie_zcoin": {
+      "textures": "textures/items/emerald"
     }
   }
 }

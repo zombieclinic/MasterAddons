@@ -1,0 +1,41 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "firefly_ZC_BP",
+    "description": "update 9.3.25",
+    "uuid": "7451c92e-11fa-4e81-ad74-42e564978898",
+    "version": [1, 0, 1],
+    "min_engine_version": [1, 21, 90]
+  },
+
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "5b4c8174-da1f-4c1d-ac9d-19a7e7b8def8",
+      "version": [1, 0, 1]
+    },
+    {
+      "type": "script",
+      "uuid": "14f6999c-3974-4df5-ae2b-3daaaa9cabbc",
+      "version": [1, 0, 1],
+      "entry": "scripts/firefly_index.js"
+    }
+  ],
+
+
+
+  "dependencies": [
+    {
+      "uuid": "5f502092-1e3d-408a-9d72-4081114028a8",
+      "version": [1, 0, 1]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.1.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "2.0.0"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+	"resource_pack_name": "zombiecraft_2",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"zombie_paint_brush": {
+			"textures": "textures/paintings/paint_brush"
+		},
+		"zombie_canvus": {
+			"textures": "textures/paintings/canvus"
+		},
+		"zombie_paint_palette": {
+			"textures": "textures/paintings/paint_palette2"
+		}
+	}
+}

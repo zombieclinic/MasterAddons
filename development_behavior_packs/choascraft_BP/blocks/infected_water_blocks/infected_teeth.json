@@ -4,8 +4,7 @@
     "description": {
       "identifier": "zombie:infected_teeth",
       "menu_category": {
-        "category": "nature",
-        "group": "minecraft:itemGroup.name.nature"
+        "category": "construction"
       }
     },
     "components": {

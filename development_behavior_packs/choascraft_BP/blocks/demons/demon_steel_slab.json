@@ -17,8 +17,7 @@
         ]
       },
       "menu_category": {
-        "category": "construction",
-        "group": "minecraft:itemGroup.name.slab"
+        "category": "construction"
       }
     },
     "permutations": [

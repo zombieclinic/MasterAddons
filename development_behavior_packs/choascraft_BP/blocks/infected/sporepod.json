@@ -17,8 +17,7 @@
         ]
       },
       "menu_category": {
-        "category": "nature",
-        "group": "minecraft:itemGroup.name.mushroom"
+        "category": "construction"
       }
     },
     "permutations": [

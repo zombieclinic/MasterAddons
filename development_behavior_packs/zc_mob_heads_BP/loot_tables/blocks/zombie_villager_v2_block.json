@@ -1,0 +1,13 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:zombie_villager_v2_mask"
+        }
+      ]
+    }
+  ]
+}

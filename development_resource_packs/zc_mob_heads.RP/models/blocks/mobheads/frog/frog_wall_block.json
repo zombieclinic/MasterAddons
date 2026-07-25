@@ -1,0 +1,47 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.frog_wall_block",
+				"texture_width": 48,
+				"texture_height": 48,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3.25,
+				"visible_bounds_offset": [0, 1.375, 0]
+			},
+			"bones": [
+				{
+					"name": "head2",
+					"pivot": [0, 7, 6],
+					"cubes": [
+						{"origin": [-3.5, 8, -1], "size": [7, 0, 9], "uv": [23, 13]},
+						{"origin": [-3.5, 6, -1], "size": [7, 3, 9], "uv": [0, 13]},
+						{"origin": [-3.5, 4, -1], "size": [7, 3, 9], "uv": [3, 1]}
+					]
+				},
+				{
+					"name": "eyes",
+					"parent": "head2",
+					"pivot": [-0.5, 7, 8]
+				},
+				{
+					"name": "right_eye",
+					"parent": "eyes",
+					"pivot": [-2, 10, 1.5],
+					"cubes": [
+						{"origin": [-3.5, 9, 0], "size": [3, 2, 3], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "left_eye",
+					"parent": "eyes",
+					"pivot": [2, 10, 1.5],
+					"cubes": [
+						{"origin": [0.5, 9, 0], "size": [3, 2, 3], "uv": [0, 5]}
+					]
+				}
+			]
+		}
+	]
+}

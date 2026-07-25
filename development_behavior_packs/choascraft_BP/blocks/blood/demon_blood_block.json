@@ -4,7 +4,7 @@
     "description": {
       "identifier": "zombie:demon_blood_block",
       "menu_category": {
-        "category": "nature"
+        "category": "construction"
       }
     },
     "components": {

@@ -4,8 +4,7 @@
     "description": {
       "identifier": "zombie:infected_stone",
       "menu_category": {
-        "category": "nature",
-        "group": "minecraft:itemGroup.name.stone"
+        "category": "construction"
       }
     },
     "components": {

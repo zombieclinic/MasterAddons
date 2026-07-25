@@ -1,0 +1,47 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.shulker_roof",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-2.875, 6, -2.775],
+							"size": [5.75, 6, 5.675],
+							"uv": {
+								"north": {"uv": [6, 58], "uv_size": [6, 6]},
+								"east": {"uv": [0, 58], "uv_size": [6, 6]},
+								"south": {"uv": [18, 58], "uv_size": [6, 6]},
+								"west": {"uv": [12, 58], "uv_size": [6, 6]},
+								"up": {"uv": [6, 52], "uv_size": [6, 6]},
+								"down": {"uv": [12, 58], "uv_size": [6, -6]}
+							}
+						},
+						{
+							"origin": [-7.875, 4, -7.775],
+							"size": [15.75, 12, 15.675],
+							"uv": {
+								"north": {"uv": [16, 16], "uv_size": [16, 12]},
+								"east": {"uv": [0, 16], "uv_size": [16, 12]},
+								"south": {"uv": [48, 16], "uv_size": [16, 12]},
+								"west": {"uv": [32, 16], "uv_size": [16, 12]},
+								"up": {"uv": [16, 0], "uv_size": [16, 16]},
+								"down": {"uv": [32, 16], "uv_size": [16, -16]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

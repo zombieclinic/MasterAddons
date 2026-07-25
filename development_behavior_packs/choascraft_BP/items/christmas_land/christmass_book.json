@@ -5,7 +5,7 @@
         "description": {
             "identifier": "zombie:christmas_book",
             "menu_category": {
-                "category": "items"
+                "category": "construction"
             }
         },
         "components": {

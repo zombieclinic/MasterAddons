@@ -14,8 +14,7 @@
         ]
       },
       "menu_category": {
-        "category": "nature",
-        "group": "minecraft:itemGroup.name.leaves"
+        "category": "construction"
       }
     },
     "permutations": [

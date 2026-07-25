@@ -4,8 +4,7 @@
     "description": {
       "identifier": "zombie:infected_sporestone",
       "menu_category": {
-        "category": "nature",
-        "group": "minecraft:itemGroup.name.nature"
+        "category": "construction"
       }
     },
     "components": {

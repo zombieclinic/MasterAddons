@@ -4,8 +4,7 @@
     "description": {
       "identifier": "zombie:blood_mushroom",
       "menu_category": {
-        "category": "nature",
-        "group": "minecraft:itemGroup.name.mushroom"
+        "category": "construction"
       }
     },
     "components": {

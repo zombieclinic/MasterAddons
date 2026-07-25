@@ -1,0 +1,29 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.pig_mask",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [-0.00417, 28.59167, -1.51667],
+					"binding": "'head'",
+					"cubes": [
+						{"origin": [-4, 24.5, -5.225], "size": [8, 8, 8], "inflate": 0.5, "uv": [0, 0]},
+						{"origin": [-2.275, 25.05, -6.6], "size": [4.525, 3.45, 1], "uv": [16, 16]}
+					],
+					"locators": {
+						"lead": [0, 30.5, 2.775]
+					}
+				}
+			]
+		}
+	]
+}

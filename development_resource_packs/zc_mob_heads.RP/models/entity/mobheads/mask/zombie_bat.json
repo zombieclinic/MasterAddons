@@ -1,0 +1,27 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.zombie_bat",
+				"texture_width": 32,
+				"texture_height": 12,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [0, 23.025, 0],
+					"binding": "'head'",
+					"cubes": [
+						{"origin": [2, 31.025, -2], "size": [3, 4, 1], "inflate": 0.1, "uv": [24, 0], "mirror": true},
+						{"origin": [-5, 31.025, -2], "size": [3, 4, 1], "inflate": 0.1, "uv": [24, 0]},
+						{"origin": [-3, 25.025, -3], "size": [6, 6, 6], "inflate": 1.1, "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

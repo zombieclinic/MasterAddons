@@ -5,7 +5,7 @@
 			"identifier": "zombie:gingerbread_window1",
 			"is_experimental": false,
 			"menu_category": {
-				"category": "items"
+				"category": "construction"
 			},
 			"traits": {
 				"minecraft:placement_direction": {

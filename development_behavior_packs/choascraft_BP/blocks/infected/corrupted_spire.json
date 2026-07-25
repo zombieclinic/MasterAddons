@@ -16,8 +16,7 @@
         ]
       },
       "menu_category": {
-        "category": "nature",
-        "group": "minecraft:itemGroup.name.crop"
+        "category": "construction"
       }
     },
     "permutations": [

@@ -4,8 +4,7 @@
     "description": {
       "identifier": "zombie:demon_alter_level_2",
       "menu_category": {
-        "category": "construction",
-        "group": "zombie:itemGroup.name.chaos_alter"
+        "category": "construction"
       },
       "traits": {
         "minecraft:placement_direction": {

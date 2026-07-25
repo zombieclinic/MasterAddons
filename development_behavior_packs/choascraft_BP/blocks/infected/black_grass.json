@@ -4,8 +4,7 @@
     "description": {
       "identifier": "zombie:black_grass",
       "menu_category": {
-        "category": "nature",
-        "group": "minecraft:itemGroup.name.grass"
+        "category": "construction"
       }
     },
     "components": {

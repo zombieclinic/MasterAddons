@@ -1,0 +1,21 @@
+{
+    "format_version": "1.21.111",
+    "minecraft:item": {
+        "description": {
+            "identifier": "zombie:skeleton_halloween_mask",
+            "menu_category": {
+                "category": "construction"
+            }
+        },
+        "components": {
+              "minecraft:display_name": {
+                "value": "Skeleton Halloween Mask"
+            },
+            "minecraft:wearable": {
+                "hides_player_location": true,
+                "slot": "slot.armor.head"
+            },
+            "minecraft:icon": "skeletion_mask_halloween_icon"
+        }
+    }
+}

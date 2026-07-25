@@ -1,0 +1,50 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.piglin_wall",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [0, 4.025, 4],
+					"cubes": [
+						{"origin": [-5, 4.025, 0], "size": [10, 8, 8], "uv": [0, 0]},
+						{"origin": [-2, 4.025, -1], "size": [4, 4, 1], "uv": [31, 1]},
+						{"origin": [2, 4.025, -1], "size": [1, 2, 1], "uv": [2, 4]},
+						{"origin": [-3, 4.025, -1], "size": [1, 2, 1], "uv": [2, 0]}
+					]
+				},
+				{
+					"name": "leftear",
+					"parent": "head",
+					"pivot": [5, 10.025, 4],
+					"rotation": [0, 0, -30],
+					"cubes": [
+						{"origin": [4, 5.025, 2], "size": [1, 5, 4], "uv": [51, 6]}
+					]
+				},
+				{
+					"name": "rightear",
+					"parent": "head",
+					"pivot": [-5, 10.025, 4],
+					"rotation": [0, 0, 30],
+					"cubes": [
+						{"origin": [-5, 5.025, 2], "size": [1, 5, 4], "uv": [39, 6]}
+					]
+				},
+				{
+					"name": "hat",
+					"parent": "head",
+					"pivot": [0, 4.025, 4]
+				}
+			]
+		}
+	]
+}

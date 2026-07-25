@@ -1,0 +1,23 @@
+        {
+	"resource_pack_name": "firefly re",
+	"texture_name": "atlas.terrain",
+	"padding": 8,
+	"num_mip_levels": 4,
+	"texture_data": {
+        "zombie:firefly_mask": {
+			"textures": "textures/items/mask/firefly_mask"
+		},
+		"zombie:luciferin_block": {
+			"textures": "textures/blocks/luciferin_block"
+		},
+		"zombie:luciferin_block_fire": {
+			"textures": "textures/blocks/luciferin_block_fire"
+		},
+        "zombie_jar_block": {
+			"textures": "textures/items/fireflys/glass_jar"
+		},
+		"zombie_firefly_jar_1_block": {
+			"textures": "textures/items/jar/firefly_jar2"
+		}
+    }
+}

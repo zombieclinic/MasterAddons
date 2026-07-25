@@ -1,0 +1,36 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.shulker_block",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [0, 0.025, 0],
+					"cubes": [
+						{"origin": [-3, 6.025, -3], "size": [6, 6, 6], "uv": [0, 52]},
+						{
+							"origin": [-7.7, 0.2, -7.65],
+							"size": [15.6, 8, 15.55],
+							"uv": {
+								"north": {"uv": [16, 44], "uv_size": [15, 8]},
+								"east": {"uv": [1, 44], "uv_size": [15, 8]},
+								"south": {"uv": [46, 44], "uv_size": [15, 8]},
+								"west": {"uv": [31, 44], "uv_size": [15, 8]},
+								"up": {"uv": [16, 29], "uv_size": [15, 15]},
+								"down": {"uv": [31, 44], "uv_size": [15, -15]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

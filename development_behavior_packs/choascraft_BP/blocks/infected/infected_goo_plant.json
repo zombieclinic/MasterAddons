@@ -4,8 +4,7 @@
     "description": {
       "identifier": "zombie:infected_goo_plant",
       "menu_category": {
-        "category": "nature",
-        "group": "minecraft:itemGroup.name.grass"
+        "category": "construction"
       }
     },
     "components": {

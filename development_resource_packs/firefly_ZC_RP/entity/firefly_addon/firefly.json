@@ -1,0 +1,45 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "zombie:firefly",
+			"materials": {
+				"default": "entity_alphatest",
+				"light": "enderman"
+			},
+			"textures": {
+				"default": "textures/entity/firefly/firefly",
+				"dark": "textures/entity/firefly/firefly_dark"
+			},
+			"geometry": {
+				"default": "geometry.zombie_firefly"
+			},
+			"animations": {
+				"flying": "animation.zombie_firefly.fly",
+				"flying2": "animation.zombie_firefly.fly2",
+				"controller_flying": "controller.animation.zombie_firefly.new"
+			},
+			"render_controllers": [
+				{
+					"controller.render.firefly": "query.variant==0"
+				},
+				{
+					"controller.render.firefly_dark": "query.variant==1"
+				}
+			],
+			"spawn_egg": {
+				"texture": "firefly_spawn_egg"
+			},
+			"particle_effects": {
+				"firefly": "yyfool:firefly"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"controller_flying": "query.is_alive"
+					}
+				]
+			}
+		}
+	}
+}

@@ -11,8 +11,7 @@
         }
       },
       "menu_category": {
-        "category": "construction",
-        "group": "minecraft:itemGroup.name.fence"
+        "category": "construction"
       }
     },
     "permutations": [

@@ -22,15 +22,523 @@
         "groups": [
           {
             "group_identifier": {
-              "icon": "zombie:demon_alter",
-              "name": "zombie:itemGroup.name.chaos_alter"
+              "icon": "zombie:color_block_white",
+              "name": "zombie:itemGroup.name.color_blocks"
             },
             "items": [
+              "zombie:color_block_aqua",
+              "zombie:color_block_blue",
+              "zombie:color_block_dark_aqua",
+              "zombie:color_block_dark_blue",
+              "zombie:color_block_dark_gray",
+              "zombie:color_block_dark_green",
+              "zombie:color_block_dark_purple",
+              "zombie:color_block_dark_red",
+              "zombie:color_block_gold",
+              "zombie:color_block_gray",
+              "zombie:color_block_green",
+              "zombie:color_block_light_purple",
+              "zombie:color_block_red",
+              "zombie:color_block_true_black",
+              "zombie:color_block_white",
+              "zombie:color_block_yellow"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "zombie:colored_amethyst_purple",
+              "name": "zombie:itemGroup.name.colored_amethyst"
+            },
+            "items": [
+              "zombie:colored_amethyst_black",
+              "zombie:colored_amethyst_blue",
+              "zombie:colored_amethyst_brown",
+              "zombie:colored_amethyst_cyan",
+              "zombie:colored_amethyst_gray",
+              "zombie:colored_amethyst_green",
+              "zombie:colored_amethyst_light_blue",
+              "zombie:colored_amethyst_light_gray",
+              "zombie:colored_amethyst_lime",
+              "zombie:colored_amethyst_magenta",
+              "zombie:colored_amethyst_orange",
+              "zombie:colored_amethyst_pink",
+              "zombie:colored_amethyst_purple",
+              "zombie:colored_amethyst_red",
+              "zombie:colored_amethyst_white",
+              "zombie:colored_amethyst_yellow"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "zombie:colored_crying_obsidian_purple",
+              "name": "zombie:itemGroup.name.colored_crying_obsidian"
+            },
+            "items": [
+              "zombie:colored_crying_obsidian_black",
+              "zombie:colored_crying_obsidian_blue",
+              "zombie:colored_crying_obsidian_brown",
+              "zombie:colored_crying_obsidian_cyan",
+              "zombie:colored_crying_obsidian_gray",
+              "zombie:colored_crying_obsidian_green",
+              "zombie:colored_crying_obsidian_light_blue",
+              "zombie:colored_crying_obsidian_light_gray",
+              "zombie:colored_crying_obsidian_lime",
+              "zombie:colored_crying_obsidian_magenta",
+              "zombie:colored_crying_obsidian_orange",
+              "zombie:colored_crying_obsidian_pink",
+              "zombie:colored_crying_obsidian_purple",
+              "zombie:colored_crying_obsidian_red",
+              "zombie:colored_crying_obsidian_white",
+              "zombie:colored_crying_obsidian_yellow"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "zombie:colored_gilded_blackstone_yellow",
+              "name": "zombie:itemGroup.name.colored_gilded_blackstone"
+            },
+            "items": [
+              "zombie:colored_gilded_blackstone_black",
+              "zombie:colored_gilded_blackstone_blue",
+              "zombie:colored_gilded_blackstone_brown",
+              "zombie:colored_gilded_blackstone_cyan",
+              "zombie:colored_gilded_blackstone_gray",
+              "zombie:colored_gilded_blackstone_green",
+              "zombie:colored_gilded_blackstone_light_blue",
+              "zombie:colored_gilded_blackstone_light_gray",
+              "zombie:colored_gilded_blackstone_lime",
+              "zombie:colored_gilded_blackstone_magenta",
+              "zombie:colored_gilded_blackstone_orange",
+              "zombie:colored_gilded_blackstone_pink",
+              "zombie:colored_gilded_blackstone_purple",
+              "zombie:colored_gilded_blackstone_red",
+              "zombie:colored_gilded_blackstone_white",
+              "zombie:colored_gilded_blackstone_yellow"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "zombie:colored_glowing_obsidian_red",
+              "name": "zombie:itemGroup.name.colored_glowing_obsidian"
+            },
+            "items": [
+              "zombie:colored_glowing_obsidian_black",
+              "zombie:colored_glowing_obsidian_blue",
+              "zombie:colored_glowing_obsidian_brown",
+              "zombie:colored_glowing_obsidian_cyan",
+              "zombie:colored_glowing_obsidian_gray",
+              "zombie:colored_glowing_obsidian_green",
+              "zombie:colored_glowing_obsidian_light_blue",
+              "zombie:colored_glowing_obsidian_light_gray",
+              "zombie:colored_glowing_obsidian_lime",
+              "zombie:colored_glowing_obsidian_magenta",
+              "zombie:colored_glowing_obsidian_orange",
+              "zombie:colored_glowing_obsidian_pink",
+              "zombie:colored_glowing_obsidian_purple",
+              "zombie:colored_glowing_obsidian_red",
+              "zombie:colored_glowing_obsidian_white",
+              "zombie:colored_glowing_obsidian_yellow"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "zombie:colored_obsidian_blue",
+              "name": "zombie:itemGroup.name.colored_obsidian"
+            },
+            "items": [
+              "zombie:colored_obsidian_black",
+              "zombie:colored_obsidian_blue",
+              "zombie:colored_obsidian_brown",
+              "zombie:colored_obsidian_cyan",
+              "zombie:colored_obsidian_gray",
+              "zombie:colored_obsidian_green",
+              "zombie:colored_obsidian_light_blue",
+              "zombie:colored_obsidian_light_gray",
+              "zombie:colored_obsidian_lime",
+              "zombie:colored_obsidian_magenta",
+              "zombie:colored_obsidian_orange",
+              "zombie:colored_obsidian_pink",
+              "zombie:colored_obsidian_purple",
+              "zombie:colored_obsidian_red",
+              "zombie:colored_obsidian_white",
+              "zombie:colored_obsidian_yellow"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "zombie:colored_redstone_lamp_red",
+              "name": "zombie:itemGroup.name.colored_redstone_lamps"
+            },
+            "items": [
+              "zombie:colored_redstone_lamp_black",
+              "zombie:colored_redstone_lamp_blue",
+              "zombie:colored_redstone_lamp_brown",
+              "zombie:colored_redstone_lamp_cyan",
+              "zombie:colored_redstone_lamp_gray",
+              "zombie:colored_redstone_lamp_green",
+              "zombie:colored_redstone_lamp_light_blue",
+              "zombie:colored_redstone_lamp_light_gray",
+              "zombie:colored_redstone_lamp_lime",
+              "zombie:colored_redstone_lamp_magenta",
+              "zombie:colored_redstone_lamp_orange",
+              "zombie:colored_redstone_lamp_pink",
+              "zombie:colored_redstone_lamp_purple",
+              "zombie:colored_redstone_lamp_red",
+              "zombie:colored_redstone_lamp_white",
+              "zombie:colored_redstone_lamp_yellow"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "zombie:colored_sea_lantern_cyan",
+              "name": "zombie:itemGroup.name.colored_sea_lanterns"
+            },
+            "items": [
+              "zombie:colored_sea_lantern_black",
+              "zombie:colored_sea_lantern_blue",
+              "zombie:colored_sea_lantern_brown",
+              "zombie:colored_sea_lantern_cyan",
+              "zombie:colored_sea_lantern_gray",
+              "zombie:colored_sea_lantern_green",
+              "zombie:colored_sea_lantern_light_blue",
+              "zombie:colored_sea_lantern_light_gray",
+              "zombie:colored_sea_lantern_lime",
+              "zombie:colored_sea_lantern_magenta",
+              "zombie:colored_sea_lantern_orange",
+              "zombie:colored_sea_lantern_pink",
+              "zombie:colored_sea_lantern_purple",
+              "zombie:colored_sea_lantern_red",
+              "zombie:colored_sea_lantern_white",
+              "zombie:colored_sea_lantern_yellow"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "zombie:abyss_grass",
+              "name": "zombie:itemGroup.name.abyss_blocks"
+            },
+            "items": [
+              "zombie:abyss_flower",
+              "zombie:abyss_glob_flower",
+              "zombie:abyss_grass",
+              "zombie:abyss_mushroom",
+              "zombie:glow_flower"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "zombie:demon_blood_block",
+              "name": "zombie:itemGroup.name.blood_blocks"
+            },
+            "items": [
+              "zombie:blood_button",
+              "zombie:blood_door",
+              "zombie:blood_fence",
+              "zombie:blood_fence_gate",
+              "zombie:blood_leaves",
+              "zombie:blood_log",
+              "zombie:blood_mushroom",
+              "zombie:blood_planks",
+              "zombie:blood_pressure_plate",
+              "zombie:blood_root",
+              "zombie:blood_sapling",
+              "zombie:blood_slab",
+              "zombie:blood_stairs",
+              "zombie:blood_trapdoor",
+              "zombie:blood_vine",
+              "zombie:demon_blood_block",
+              "zombie:stripped_blood_log"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "zombie:demon_flesh_block",
+              "name": "zombie:itemGroup.name.flesh_blocks"
+            },
+            "items": [
+              "zombie:demon_blood_flesh_block",
+              "zombie:demon_flesh_block",
+              "zombie:flesh_button",
+              "zombie:flesh_door",
+              "zombie:flesh_fence",
+              "zombie:flesh_fence_gate",
+              "zombie:flesh_leaves",
+              "zombie:flesh_log",
+              "zombie:flesh_planks",
+              "zombie:flesh_pressure_plate",
+              "zombie:flesh_sapling",
+              "zombie:flesh_slab",
+              "zombie:flesh_stairs",
+              "zombie:flesh_trapdoor",
+              "zombie:stripped_flesh_log"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "zombie:tumor_planks",
+              "name": "zombie:itemGroup.name.tumor_blocks"
+            },
+            "items": [
+              "zombie:stripped_tumor_log",
+              "zombie:tumor_button",
+              "zombie:tumor_door",
+              "zombie:tumor_fence",
+              "zombie:tumor_fence_gate",
+              "zombie:tumor_leaves",
+              "zombie:tumor_log",
+              "zombie:tumor_planks",
+              "zombie:tumor_pressure_plate",
+              "zombie:tumor_sapling",
+              "zombie:tumor_slab",
+              "zombie:tumor_stairs",
+              "zombie:tumor_trapdoor"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "zombie:demon_alter",
+              "name": "zombie:itemGroup.name.demon_blocks"
+            },
+            "items": [
+              "zombie:chaos_chest",
+              "zombie:corrupted_grass",
+              "zombie:currupted_xp_block",
               "zombie:demon_alter",
               "zombie:demon_alter_level_2",
               "zombie:demon_alter_level_3",
               "zombie:demon_alter_level_4",
-              "zombie:demon_alter_level_5"
+              "zombie:demon_alter_level_5",
+              "zombie:demon_button",
+              "zombie:demon_dirt",
+              "zombie:demon_door",
+              "zombie:demon_fence",
+              "zombie:demon_fire_log",
+              "zombie:demon_fire_log_stripped",
+              "zombie:demon_gate",
+              "zombie:demon_grass_no_tick",
+              "zombie:demon_log",
+              "zombie:demon_log_stripped",
+              "zombie:demon_lord_head_block",
+              "zombie:demon_pentagram",
+              "zombie:demon_planks",
+              "zombie:demon_plank_slab",
+              "zombie:demon_pressure_plate",
+              "zombie:demon_skull",
+              "zombie:demon_stairs",
+              "zombie:demon_steel",
+              "zombie:demon_steel_chiseled",
+              "zombie:demon_steel_ore",
+              "zombie:demon_steel_slab",
+              "zombie:demon_steel_stairs",
+              "zombie:demon_steel_wall",
+              "zombie:demon_stone",
+              "zombie:demon_stone_brick",
+              "zombie:demon_stone_slab",
+              "zombie:demon_trapdoor",
+              "zombie:emberberry",
+              "zombie:hellfire_spike",
+              "zombie:hellfire_trapstone",
+              "zombie:hell_lamp"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "zombie:eyewood_planks",
+              "name": "zombie:itemGroup.name.eyewood_blocks"
+            },
+            "items": [
+              "zombie:eyewood_door",
+              "zombie:eyewood_fence",
+              "zombie:eyewood_fence_gate",
+              "zombie:eyewood_log",
+              "zombie:eyewood_planks",
+              "zombie:eyewood_pressureplate",
+              "zombie:eyewood_slab",
+              "zombie:eyewood_stairs",
+              "zombie:eyewood_trapdoor",
+              "zombie:eyewood_tree_leaves",
+              "zombie:eyewood_tree_sapling",
+              "zombie:stripped_eyewood_log",
+              "zombie:zc_button"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "zombie:infected_block",
+              "name": "zombie:itemGroup.name.infected_blocks"
+            },
+            "items": [
+              "zombie:black_grass",
+              "zombie:corrupted_spire",
+              "zombie:eye_flower",
+              "zombie:infected_block",
+              "zombie:infected_button",
+              "zombie:infected_cobblestone",
+              "zombie:infected_dirt",
+              "zombie:infected_door",
+              "zombie:infected_fence",
+              "zombie:infected_flower",
+              "zombie:infected_gate",
+              "zombie:infected_goo_plant",
+              "zombie:infected_grass_block",
+              "zombie:infected_gravel",
+              "zombie:infected_leaves",
+              "zombie:infected_mushroom",
+              "zombie:infected_planks",
+              "zombie:infected_pressure_plate",
+              "zombie:infected_sand",
+              "zombie:infected_slab",
+              "zombie:infected_sporestone",
+              "zombie:infected_stairs",
+              "zombie:infected_stone",
+              "zombie:infected_teeth",
+              "zombie:infected_trapdoor",
+              "zombie:infected_tree_log",
+              "zombie:infected_tree_log_stripped",
+              "zombie:sporepod"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "zombie:redwood_planks",
+              "name": "zombie:itemGroup.name.redwood_blocks"
+            },
+            "items": [
+              "zombie:redwood_button",
+              "zombie:redwood_door",
+              "zombie:redwood_fence",
+              "zombie:redwood_fence_gate",
+              "zombie:redwood_leaves",
+              "zombie:redwood_log",
+              "zombie:redwood_planks",
+              "zombie:redwood_pressure_plate",
+              "zombie:redwood_sapling",
+              "zombie:redwood_slab",
+              "zombie:redwood_stairs",
+              "zombie:redwood_trapdoor",
+              "zombie:stripped_redwood_log"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "zombie:pengiun_egg_block",
+              "name": "zombie:itemGroup.name.ocean_blocks"
+            },
+            "items": [
+              "zombie:pengiun_egg_block"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "zombie:christmas_book",
+              "name": "zombie:itemGroup.name.christmas"
+            },
+            "items": [
+              "zombie:blue_present",
+              "zombie:candycane_blue",
+              "zombie:candycane_purple",
+              "zombie:candycane_red",
+              "zombie:christmas_light_blue",
+              "zombie:christmas_light_cyan",
+              "zombie:christmas_light_green",
+              "zombie:christmas_light_light_blue",
+              "zombie:christmas_light_magenta",
+              "zombie:christmas_light_multicolor",
+              "zombie:christmas_light_pink",
+              "zombie:christmas_light_purple",
+              "zombie:christmas_light_red",
+              "zombie:christmas_light_yellow",
+              "zombie:christmas_tree",
+              "zombie:christmas_wreath",
+              "zombie:decorated_blue_present",
+              "zombie:decorated_green_present",
+              "zombie:decorated_lucky_present",
+              "zombie:decorated_pink_present",
+              "zombie:decorated_purple_present",
+              "zombie:decorated_red_present",
+              "zombie:gingerbread",
+              "zombie:gingerbreadballs",
+              "zombie:gingerbread_iceing",
+              "zombie:gingerbreadplandot",
+              "zombie:gingerbreadtreeicing",
+              "zombie:gingerbreadtreeplain",
+              "zombie:gingerbread_window",
+              "zombie:gingerbread_window1",
+              "zombie:green_present",
+              "zombie:lucky_present",
+              "zombie:magicsnow",
+              "zombie:mistletoe_cheer_stocking",
+              "zombie:pink_present",
+              "zombie:purple_present",
+              "zombie:red_present",
+              "zombie:santa_carpet",
+              "zombie:santa_sign",
+              "zombie:snowflakes_carpet",
+              "zombie:zombiecraft_carpet",
+              "zombie:zombie_santa_carpet",
+              "zombie:zombie_santa_head",
+              "zombie:bluecandycane_item",
+              "zombie:bluecandycane_seeds",
+              "zombie:candycane_dust",
+              "zombie:christmas_book",
+              "zombie:gingerbread_cookie",
+              "zombie:ortimate_cookie",
+              "zombie:purplecandycane_item",
+              "zombie:purplecandycane_seeds",
+              "zombie:redcandycane_item",
+              "zombie:redcandycane_seeds",
+              "zombie:ribbon_cookie",
+              "zombie:santa_cookie",
+              "zombie:stocking_cookie",
+              "zombie:tree_cookie",
+              "zombie:zombie_santa_lore_book",
+              "zombie:zombie_santa_mask"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "zombie:halloween_book",
+              "name": "zombie:itemGroup.name.halloween"
+            },
+            "items": [
+              "ninjos:clown_tt_bucket",
+              "ninjos:creeper_pumpkin_lit",
+              "ninjos:frankenstein_tt_bucket",
+              "ninjos:ghost_tt_bucket",
+              "ninjos:mummy_tt_bucket",
+              "ninjos:pumpkin",
+              "ninjos:pumpkin_face1",
+              "ninjos:pumpkin_face2",
+              "ninjos:pumpkin_face3",
+              "ninjos:pumpkin_heart",
+              "ninjos:pumpkin_pickaxe",
+              "ninjos:pumpkin_tt_bucket",
+              "ninjos:skull_tt_bucket",
+              "ninjos:vampire_tt_bucket",
+              "zombie:cross_grave",
+              "zombie:ender_cat_block",
+              "zombie:grave_stone",
+              "zombie:pig_creeper_block",
+              "zombie:pumpkin_king_block",
+              "zombie:skeleton_sheep_block",
+              "zombie:witch_pumpkin_block",
+              "zombie:zombie_ghost_block",
+              "zombie:zombie_horse_block",
+              "zombie:zombie_skull_bone",
+              "zombie:zombie_steve_block",
+              "zombie:chargedpunkin",
+              "zombie:creeper_halloween_mask",
+              "zombie:halloween_book",
+              "zombie:halloween_candy",
+              "zombie:halloween_candycorn",
+              "zombie:halloween_green_apple",
+              "zombie:halloween_popsicle",
+              "zombie:pumpkin_amulet",
+              "zombie:pumpkin_king_head",
+              "zombie:skeleton_halloween_mask",
+              "zombie:spider_halloween_mask",
+              "zombie:zcoin",
+              "zombie:zombie_halloween_mask"
             ]
           }
         ]

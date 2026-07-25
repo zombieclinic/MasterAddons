@@ -4,8 +4,7 @@
 		"description": {
 			"identifier": "zombie:tree_cookie",
 			"menu_category": {
-				"category": "items",
-				"group": "itemGroup.name.cookedFood"
+				"category": "construction"
 			}
 		},
 		"components": {

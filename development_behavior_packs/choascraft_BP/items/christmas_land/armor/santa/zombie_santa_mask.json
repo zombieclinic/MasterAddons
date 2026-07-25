@@ -4,8 +4,7 @@
 		"description": {
 			"identifier": "zombie:zombie_santa_mask",
 			"menu_category": {
-				"category": "items",
-				"group": "itemGroup.name.skull"
+				"category": "construction"
 			}
 		},
 		"components": {

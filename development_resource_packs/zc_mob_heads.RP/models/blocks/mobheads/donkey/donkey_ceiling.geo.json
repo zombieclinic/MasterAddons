@@ -1,0 +1,126 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.donkey_ceiling",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [0, 4.3, 2.5],
+					"cubes": [
+						{
+							"origin": [-4, 0.3, -1.5],
+							"size": [8, 8, 8],
+							"uv": {
+								"north": {"uv": [7, 20], "uv_size": [6, 5]},
+								"east": {"uv": [0, 20], "uv_size": [7, 5]},
+								"south": {"uv": [20, 20], "uv_size": [6, 5]},
+								"west": {"uv": [13, 20], "uv_size": [7, 5]},
+								"up": {"uv": [7, 13], "uv_size": [6, 7]},
+								"down": {"uv": [13, 20], "uv_size": [6, -7]}
+							}
+						}
+					]
+				},
+				{
+					"name": "Head2",
+					"parent": "head",
+					"pivot": [0, 28.3, -8.5]
+				},
+				{
+					"name": "Muzzle",
+					"parent": "Head2",
+					"pivot": [0, 28.3, -8.5],
+					"cubes": [
+						{
+							"origin": [-2.65, 0.8, -6.5],
+							"size": [5.475, 5.925, 5],
+							"uv": {
+								"north": {"uv": [5, 30], "uv_size": [4, 5]},
+								"east": {"uv": [0, 30], "uv_size": [5, 5]},
+								"south": {"uv": [14, 30], "uv_size": [4, 5]},
+								"west": {"uv": [9, 30], "uv_size": [5, 5]},
+								"up": {"uv": [5, 25], "uv_size": [4, 5]},
+								"down": {"uv": [9, 30], "uv_size": [4, -5]}
+							}
+						}
+					]
+				},
+				{
+					"name": "EarL",
+					"parent": "Head2",
+					"pivot": [0, 17.3, -5.5],
+					"rotation": [0, 0, 5],
+					"cubes": [
+						{"origin": [2.725, 8.3, 5.49], "size": [2, 3, 1], "uv": [19, 16], "mirror": true}
+					]
+				},
+				{
+					"name": "EarR",
+					"parent": "Head2",
+					"pivot": [0, 17.3, -5.5],
+					"rotation": [0, 0, -5],
+					"cubes": [
+						{"origin": [-4.5, 8.3, 5.49], "size": [2, 3, 1], "uv": [19, 16]}
+					]
+				},
+				{
+					"name": "MuleEarL",
+					"parent": "Head2",
+					"pivot": [0, 17.3, -5.5],
+					"rotation": [0, 0, 15],
+					"cubes": [
+						{"origin": [4.325, 9.85, 5.415], "size": [2, 7, 1], "uv": [0, 12], "mirror": true}
+					]
+				},
+				{
+					"name": "MuleEarR",
+					"parent": "Head2",
+					"pivot": [0, -5.7, -5.5],
+					"rotation": [0, 0, -15],
+					"cubes": [
+						{"origin": [-0.225, 9.3, 5.34], "size": [2, 7, 1], "uv": [0, 12]}
+					]
+				},
+				{
+					"name": "ReinsL",
+					"parent": "Head2",
+					"pivot": [2, 30.8, -11],
+					"rotation": [-35, 0, 0]
+				},
+				{
+					"name": "ReinsR",
+					"parent": "Head2",
+					"pivot": [-3, 30.8, -11],
+					"rotation": [-35, 0, 0]
+				},
+				{
+					"name": "Bridle",
+					"parent": "Head2",
+					"pivot": [0, 17.3, -5.5]
+				},
+				{
+					"name": "BitL",
+					"parent": "Bridle",
+					"pivot": [0, 17.3, -5.5]
+				},
+				{
+					"name": "BitR",
+					"parent": "Bridle",
+					"pivot": [0, 17.3, -5.5]
+				},
+				{
+					"name": "bb_main",
+					"pivot": [0, 0, 0]
+				}
+			]
+		}
+	]
+}

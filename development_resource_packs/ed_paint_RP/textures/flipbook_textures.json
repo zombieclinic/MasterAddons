@@ -1,0 +1,13 @@
+[{"flipbook_texture": "textures/blocks/blue/blu3winqs8",
+    "atlas_tile": "zombie_blu3winqs8",
+    "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+    ],
+    "ticks_per_frame": 2,
+    "blend_frames": true
+}]

@@ -4,8 +4,7 @@
     "description": {
       "identifier": "zombie:pengiun_egg_block",
       "menu_category": {
-        "category": "nature",
-        "group": "minecraft:itemGroup.name.nature"
+        "category": "construction"
       }
     },
     "components": {
