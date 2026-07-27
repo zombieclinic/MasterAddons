@@ -108,7 +108,7 @@ function showMobHeadBookForm(player) {
   const MobHeadBookForm = new ActionFormData()
     .title("§6The Mob Heads Guidebook")
     .body("§8━━━━━━━━━━━━━━━━━━━━━━\n§6§lMOB HEADS COLLECTION§r\n§8━━━━━━━━━━━━━━━━━━━━━━\n\n§7Land the credited killing blow for a chance to collect a mob's head. Looting adds the listed bonus once per enchantment level.\n\n§dVariants match the mob you defeat, including sheep colors, villager outfits, fox coats, and wolf coats/states.\n\n§5Shulker colors are crafted from the undyed mask.\n\n§aChoose a category:")
-    .button("§lBasic Mobs", "textures/mobheads/items/cow")
+    .button("§lBasic Mobs", "textures/mobheads/items/allay")
     .button("§lUndead Mobs", "textures/mobheads/items/husk")
     .button("§lNether Mobs", "textures/mobheads/items/blaze")
     .button("§lEnd Mobs", "textures/mobheads/items/enderman")
@@ -117,7 +117,8 @@ function showMobHeadBookForm(player) {
     .button("§lAnimals", "textures/mobheads/items/cow")
     .button("§lVillagers", "textures/mobheads/items/villager_v2_desert_armorer")
     .button("§lWolf Variants", "textures/mobheads/items/wolf_wild")
-    .button("§lShulker Recipes", "textures/mobheads/items/shulker");
+    .button("§lShulker Recipes", "textures/mobheads/items/shulker")
+    .button("§c§lExit");
 
   MobHeadBookForm.show(player).then(response => {
     if (response.canceled) return;
@@ -132,6 +133,7 @@ function showMobHeadBookForm(player) {
       case 7: showVillagerMenu(player); break;
       case 8: showWolfMenu(player); break;
       case 9: showShulkerRecipes(player); break;
+      case 10: return;
       default: break;
     }
   });
@@ -440,7 +442,7 @@ function showAnimalMobsPage2(player) {
     .button("Pig", "textures/mobheads/items/pig")
     .button("Polar Bear", "textures/mobheads/items/polar_bear")
     .button("Rabbit", "textures/mobheads/items/rabbit_coat_brown")
-    .button("Sheep", "textures/mobheads/items/rabbit_coat_brown")
+    .button("Sheep", "textures/mobheads/items/sheep_white")
     .button("§e← Previous Page")
     .button("§c← Back to Main");
 

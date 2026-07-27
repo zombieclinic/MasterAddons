@@ -3,21 +3,21 @@
   "header": {
     "name": "zc_mobheads_bp",
     "description": "Event-driven mob head drops and guidebook",
-    "uuid": "1867e7b0-e445-4832-93f6-4e11dfa01ca6",
-    "version": [1, 0, 3],
+    "uuid": "0599083c-ec93-420f-91ce-b30201bd7209",
+    "version": [1, 0, 4],
     "min_engine_version": [1, 21, 111]
   },
 
   "modules": [
     {
       "type": "data",
-      "uuid": "2f3a3836-6002-4084-b0d0-b8b1f8ebd341",
-      "version": [1, 0, 3]
+      "uuid": "debc9408-75ab-4b44-afbd-ad1009e88fb5",
+      "version": [1, 0, 4]
     },
     {
       "type": "script",
-      "uuid": "6f30ffbd-9425-402a-9908-b954eb88c7ca",
-      "version": [1, 0, 3],
+      "uuid": "c7c1bb3b-387c-46f2-b73f-50388b04263a",
+      "version": [1, 0, 4],
       "entry": "scripts/index.js"
     }
   ],
@@ -26,16 +26,16 @@
 
   "dependencies": [
     {
-      "uuid": "4cb49055-be9a-4ee3-aa22-7d433e6a2eb4",
-      "version": [1, 0, 3]
+      "uuid": "5f36a6db-0329-4c01-a093-4cd07dff3941",
+      "version": [1, 0, 4]
     },
     {
       "module_name": "@minecraft/server",
-      "version": "2.2.0"
+      "version": "2.8.0"
     },
     {
       "module_name": "@minecraft/server-ui",
-      "version": "2.0.0"
+      "version": "2.1.0"
     }
   ]
 }

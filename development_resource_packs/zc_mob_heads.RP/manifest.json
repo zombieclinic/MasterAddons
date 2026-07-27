@@ -3,11 +3,11 @@
 	"header": {
 		"name": "zc_mobheads_rp",
 		"description": "Mob Heads resources",
-		"uuid": "4cb49055-be9a-4ee3-aa22-7d433e6a2eb4",
+		"uuid": "5f36a6db-0329-4c01-a093-4cd07dff3941",
 		"version": [
 			1,
 			0,
-			3
+			4
 		],
 		"min_engine_version": [
 			1,
@@ -18,11 +18,11 @@
 	"modules": [
 		{
 			"type": "resources",
-			"uuid": "68950822-4892-45fa-8095-ee6bc4cb9292",
+			"uuid": "f526d34d-06bb-42bd-afc6-472e23f99e9b",
 			"version": [
 				1,
 				0,
-				3
+				4
 			]
 		}
 	]
