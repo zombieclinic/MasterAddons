@@ -35,6 +35,9 @@
 		"camel_item": {
 			"textures": "textures/mobheads/items/camel"
 		},
+		"camel_husk_item": {
+			"textures": "textures/entity/camel_husk/camel_husk"
+		},
 		"cat_black_item": {
 			"textures": "textures/mobheads/items/cat_black"
 		},
@@ -172,6 +175,33 @@
 		},
 		"iron_golem_item": {
 			"textures": "textures/mobheads/items/iron_golem"
+		},
+		"copper_golem_item": {
+			"textures": "textures/mobheads/items/copper_golem_icon"
+		},
+		"copper_golem_exposed_item": {
+			"textures": "textures/mobheads/items/copper_golem_exposed_icon"
+		},
+		"copper_golem_weathered_item": {
+			"textures": "textures/mobheads/items/copper_golem_weathered_icon"
+		},
+		"copper_golem_oxidized_item": {
+			"textures": "textures/mobheads/items/copper_golem_oxidized_icon"
+		},
+		"nautilus_item": {
+			"textures": "textures/mobheads/items/nautilus_icon"
+		},
+		"zombie_nautilus_item": {
+			"textures": "textures/mobheads/heads/nautilus_zombie_icon"
+		},
+		"zombie_nautilus_coral_item": {
+			"textures": "textures/mobheads/heads/nautilus_coral_icon"
+		},
+		"parched_item": {
+			"textures": "textures/mobheads/items/parched_icon"
+		},
+		"sulfur_cube_item": {
+			"textures": "textures/mobheads/items/sulfur_icon"
 		},
 		"llama_brown_item": {
 			"textures": "textures/mobheads/items/llama_brown"

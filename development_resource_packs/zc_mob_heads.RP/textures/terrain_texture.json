@@ -175,8 +175,38 @@
 		"zombie_iron_golem_block": {
 			"textures": "textures/entity/iron_golem"
 		},
+		"zombie_copper_golem_block": {
+			"textures": "textures/entity/copper_golem/copper_golem"
+		},
+		"zombie_copper_golem_exposed_block": {
+			"textures": "textures/entity/copper_golem/copper_golem_exposed"
+		},
+		"zombie_copper_golem_weathered_block": {
+			"textures": "textures/entity/copper_golem/copper_golem_weathered"
+		},
+		"zombie_copper_golem_oxidized_block": {
+			"textures": "textures/entity/copper_golem/copper_golem_oxidized"
+		},
+		"zombie_nautilus_block": {
+			"textures": "textures/mobheads/heads/nautilus"
+		},
+		"zombie_zombie_nautilus_block": {
+			"textures": "textures/mobheads/heads/nautilus_zombie"
+		},
+		"zombie_zombie_nautilus_coral_block": {
+			"textures": "textures/mobheads/heads/nautilus_coral"
+		},
+		"zombie_parched_block": {
+			"textures": "textures/entity/parched/parched"
+		},
+		"zombie_sulfur_cube_block": {
+			"textures": "textures/mobheads/heads/sulfur_cube_block"
+		},
 		"zombie_camel_block1": {
 			"textures": "textures/entity/camel/camel"
+		},
+		"zombie_camel_husk_block": {
+			"textures": "textures/entity/camel_husk/camel_husk"
 		},
 		"zombie_lama_brown_block": {
 			"textures": "textures/entity/llama/llama_brown"

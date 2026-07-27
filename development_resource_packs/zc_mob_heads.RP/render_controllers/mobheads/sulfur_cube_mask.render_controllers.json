@@ -1,0 +1,39 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.sulfur_cube_mask": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.tnt"
+        }
+      ],
+      "textures": ["Texture.tnt"],
+      "part_visibility": [
+        {
+          "*": "(variable.sulfur_hidden ?? 0.0) < 0.5 && (variable.sulfur_tnt ?? 0.0) > 0.5"
+        }
+      ],
+      "overlay_color": {
+        "r": "(variable.sulfur_tnt ?? 0.0) > 0.5 && math.mod(math.floor(query.life_time * 5.0), 2.0) == 0.0 ? 1.0 : this",
+        "g": "(variable.sulfur_tnt ?? 0.0) > 0.5 && math.mod(math.floor(query.life_time * 5.0), 2.0) == 0.0 ? 1.0 : this",
+        "b": "(variable.sulfur_tnt ?? 0.0) > 0.5 && math.mod(math.floor(query.life_time * 5.0), 2.0) == 0.0 ? 1.0 : this",
+        "a": "(variable.sulfur_tnt ?? 0.0) > 0.5 && math.mod(math.floor(query.life_time * 5.0), 2.0) == 0.0 ? 0.5 : this"
+      }
+    },
+    "controller.render.sulfur_cube_mask_outer": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.outer"
+        }
+      ],
+      "textures": ["Texture.outer"],
+      "part_visibility": [
+        {
+          "*": "(variable.sulfur_hidden ?? 0.0) < 0.5 && (variable.sulfur_tnt ?? 0.0) < 0.5"
+        }
+      ]
+    }
+  }
+}

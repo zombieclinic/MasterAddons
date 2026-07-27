@@ -9,7 +9,7 @@
 					"*": "Material.default"
 				}
 			],
-			"textures": [ "temp.life_time = query.life_time * 8.0; return array.item_frames[temp.life_time];", "texture.enchanted" ],
+			"textures": [ "return array.item_frames[math.mod(math.floor(query.life_time), 16.0)];", "texture.enchanted" ],
 			"arrays": {
 				"textures": {
 				  "array.item_frames": [

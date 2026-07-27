@@ -71,6 +71,12 @@ const VILLAGER_JOBS = [
   "farmer", "fisherman", "shepherd", "fletcher", "librarian", "cartographer", "cleric",
   "armorer", "weaponsmith", "toolsmith", "butcher", "leatherworker", "mason", "nitwit", "unskilled"
 ];
+const COPPER_GOLEM_HEADS = Object.freeze({
+  unoxidized: "zombie:copper_golem_mask",
+  exposed: "zombie:copper_golem_exposed_mask",
+  weathered: "zombie:copper_golem_weathered_mask",
+  oxidized: "zombie:copper_golem_oxidized_mask"
+});
 
 function componentValue(entity, componentIds, fallback = 0) {
   for (const id of componentIds) {
@@ -90,6 +96,14 @@ function hasComponent(entity, id) {
     return Boolean(entity.getComponent(id));
   } catch {
     return false;
+  }
+}
+
+function entityProperty(entity, id) {
+  try {
+    return entity.getProperty(id);
+  } catch {
+    return undefined;
   }
 }
 
@@ -125,6 +139,18 @@ function resolveHeadItem(entity, resolver) {
         variant,
         context
       );
+    case "copper_golem": {
+      const oxidation = entityProperty(entity, "minecraft:oxidation_level");
+      if (typeof oxidation === "string" && COPPER_GOLEM_HEADS[oxidation]) {
+        return COPPER_GOLEM_HEADS[oxidation];
+      }
+
+      return safeArrayValue(
+        Object.values(COPPER_GOLEM_HEADS),
+        variant,
+        `${context} oxidation`
+      );
+    }
     case "fox":
       return variant === 1 ? "zombie:arctic_fox_mask" : "zombie:fox_mask";
     case "frog":
@@ -180,6 +206,10 @@ function resolveHeadItem(entity, resolver) {
       return resolveWitherHead();
     case "wolf":
       return resolveWolfHead(entity, variant);
+    case "zombie_nautilus":
+      return entityProperty(entity, "minecraft:variant") === "coral" || variant === 1
+        ? "zombie:zombie_nautilus_coral_mask"
+        : "zombie:zombie_nautilus_mask";
     default:
       return undefined;
   }

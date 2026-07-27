@@ -1,0 +1,50 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.nautilus_roof",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [0, 8, 10],
+					"rotation": [90, 0, 180],
+					"binding": "'head'",
+					"cubes": [
+						{"origin": [-5, 8.01, 12.65], "size": [10, 8, 14], "uv": [4, 10]}
+					]
+				},
+				{
+					"name": "mouth_top",
+					"parent": "head",
+					"pivot": [0, 14.01, 23.3],
+					"cubes": [
+						{"origin": [-5, 12.01, 23.3], "size": [10, 4, 4], "uv": [36, 38]}
+					]
+				},
+				{
+					"name": "inner_mouth",
+					"parent": "head",
+					"pivot": [0, 12.01, 23.8],
+					"cubes": [
+						{"origin": [-3, 10.01, 23.3], "size": [6, 4, 4], "uv": [36, 54]}
+					]
+				},
+				{
+					"name": "mouth_bottom",
+					"parent": "head",
+					"pivot": [0, 10.01, 23.3],
+					"cubes": [
+						{"origin": [-5, 7.99, 23.3], "size": [10, 4, 4], "uv": [36, 46]}
+					]
+				}
+			]
+		}
+	]
+}

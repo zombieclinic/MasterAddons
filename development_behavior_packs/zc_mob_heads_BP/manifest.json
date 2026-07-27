@@ -5,7 +5,7 @@
     "description": "Event-driven mob head drops and guidebook",
     "uuid": "1867e7b0-e445-4832-93f6-4e11dfa01ca6",
     "version": [1, 0, 3],
-    "min_engine_version": [1, 21, 90]
+    "min_engine_version": [1, 21, 111]
   },
 
   "modules": [
@@ -17,7 +17,7 @@
     {
       "type": "script",
       "uuid": "6f30ffbd-9425-402a-9908-b954eb88c7ca",
-      "version": [1, 0, 1],
+      "version": [1, 0, 3],
       "entry": "scripts/index.js"
     }
   ],

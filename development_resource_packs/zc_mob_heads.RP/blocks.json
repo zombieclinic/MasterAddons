@@ -160,7 +160,37 @@
 	"zombie:iron_golem_block": {
 		"sound": "bone_block"
 	},
+	"zombie:copper_golem_block": {
+		"sound": "copper"
+	},
+	"zombie:copper_golem_exposed_block": {
+		"sound": "copper"
+	},
+	"zombie:copper_golem_weathered_block": {
+		"sound": "copper"
+	},
+	"zombie:copper_golem_oxidized_block": {
+		"sound": "copper"
+	},
+	"zombie:nautilus_block": {
+		"sound": "bone_block"
+	},
+	"zombie:zombie_nautilus_block": {
+		"sound": "bone_block"
+	},
+	"zombie:zombie_nautilus_coral_block": {
+		"sound": "bone_block"
+	},
+	"zombie:parched_block": {
+		"sound": "bone_block"
+	},
+	"zombie:sulfur_cube_block": {
+		"sound": "slime"
+	},
 	"zombie:camel1_block": {
+		"sound": "bone_block"
+	},
+	"zombie:camel_husk_block": {
 		"sound": "bone_block"
 	},
 	"zombie:lama_brown_block": {
