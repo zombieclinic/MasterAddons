@@ -101,6 +101,7 @@ export const MOB_HEAD_DROP_CONFIG = Object.freeze({
  */
 export const SPECIAL_HEAD_VARIANT_CHANCES = Object.freeze({
   striderSuffocated: 0.20,
+  vexCharging: 0.20,
   witherNormal: 0.80,
   witherArmored: 0.15,
   witherInvulnerable: 0.03,

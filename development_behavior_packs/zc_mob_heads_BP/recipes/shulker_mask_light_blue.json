@@ -1,0 +1,28 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "zombie:shulker_mask_light_blue_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "zombie:shulker_mask"
+      }
+    ],
+    "ingredients": [
+      {
+        "item": "zombie:shulker_mask"
+      },
+      {
+        "item": "minecraft:light_blue_dye"
+      }
+    ],
+    "result": {
+      "item": "zombie:shulker_light_blue_mask",
+      "count": 1
+    }
+  }
+}

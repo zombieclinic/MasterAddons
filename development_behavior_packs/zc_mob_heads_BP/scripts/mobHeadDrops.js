@@ -186,11 +186,15 @@ function resolveHeadItem(entity, resolver) {
         ? "zombie:rabbit_toast_mask"
         : safeArrayValue(RABBIT_HEADS, variant, context);
     case "sheep":
-      return name === "jeb_"
+      return name === "jeb"
         ? "zombie:sheep_jeb_mask"
-        : `zombie:sheep_${safeArrayValue(DYE_COLORS, variant, context)}_mask`;
+        : `zombie:sheep_${safeArrayValue(
+            DYE_COLORS,
+            componentValue(entity, ["minecraft:color", "minecraft:variant"]),
+            context
+          )}_mask`;
     case "shulker":
-      if (name === "jeb_") return "zombie:shulker_jeb_mask";
+      if (name === "jeb") return "zombie:shulker_jeb_mask";
       return variant >= 0 && variant < DYE_COLORS.length
         ? `zombie:shulker_${DYE_COLORS[variant] === "light_gray" ? "silver" : DYE_COLORS[variant]}_mask`
         : "zombie:shulker_mask";
@@ -199,7 +203,9 @@ function resolveHeadItem(entity, resolver) {
         ? "zombie:strider_suffocated_mask"
         : "zombie:strider_mask";
     case "vex":
-      return hasComponent(entity, "minecraft:is_charged") ? "zombie:vex_charging_mask" : "zombie:vex_mask";
+      return Math.random() < SPECIAL_HEAD_VARIANT_CHANCES.vexCharging
+        ? "zombie:vex_charging_mask"
+        : "zombie:vex_mask";
     case "villager":
       return resolveVillagerHead(entity);
     case "wither":
@@ -241,7 +247,7 @@ function resolveVillagerHead(entity) {
 
 function resolveWolfHead(entity, coatIndex) {
   const coat = safeArrayValue(WOLF_COATS, coatIndex, `${entity.typeId} coat`);
-  const state = hasComponent(entity, "minecraft:is_angry")
+  const state = (hasComponent(entity, "minecraft:angry") || hasComponent(entity, "minecraft:is_angry"))
     ? "angry"
     : hasComponent(entity, "minecraft:is_tamed") ? "tamed" : "wild";
   if (!coat) {
