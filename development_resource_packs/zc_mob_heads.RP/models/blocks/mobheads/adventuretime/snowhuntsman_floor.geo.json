@@ -1,0 +1,35 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.snowhuntsman_block",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [0, -1.625, 0],
+					"binding": "'head'",
+					"cubes": [
+						{"origin": [-4, 0.375, -4], "size": [8, 8, 8], "uv": [0, 0]},
+						{"origin": [-4, -1.625, -4], "size": [8, 10, 8], "inflate": 0.1, "uv": [32, 0]}
+					]
+				},
+				{
+					"name": "hatbrim",
+					"parent": "head",
+					"pivot": [0, -0.875, 0],
+					"rotation": [-90, 0, 0],
+					"cubes": [
+						{"origin": [-8, -8.875, -5.6], "size": [16, 16, 1], "uv": [30, 47]}
+					]
+				}
+			]
+		}
+	]
+}

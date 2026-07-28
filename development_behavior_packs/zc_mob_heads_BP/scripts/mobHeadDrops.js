@@ -97,6 +97,7 @@ const NAMED_EASTER_EGG_HEADS = Object.freeze({
   "tj": "zombie:tj_mask",
   "trickledabit": "zombie:trickle_mask",
   "uncle grandpa": "zombie:uncle_mask",
+  "usuriousberry": "zombie:usuriousberry39_mask",
   "usuriousberry39": "zombie:usuriousberry39_mask",
   "zombieclinic": "zombie:zombieclinic_mask",
   "chromgod3329": "zombie:chromgod3329_mask",
@@ -110,12 +111,25 @@ const NAMED_EASTER_EGG_HEADS = Object.freeze({
   "weehannahx0": "zombie:wee_hannahx0_mask",
   "zellabites": "zombie:zella_bites_mask",
   "bazzerk": "zombie:bazzerk_mask",
+  "buzzerk": "zombie:bazzerk_mask",
   "sloth": "zombie:sloth_mask",
   "spartanlex2": "zombie:spartanlex2_mask",
-  "zombieclinic2": "zombie:zombieclinic2_mask",
+  "cassimo": "zombie:zombieclinic2_mask",
   "russbox": "zombie:russbox_mask",
   "universal9gaming": "zombie:universal9gaming_mask",
-  "snow": "zombie:snow_mask"
+  "snow": "zombie:snow_mask",
+  "glamazon518": "zombie:glamazon518_mask",
+  "lionsgirl": "zombie:lionsgirl269981_mask",
+  "lionsgirl269981": "zombie:lionsgirl269981_mask",
+  "lucifire83": "zombie:lucifire83_mask",
+  "sewtotaleye": "zombie:sewtotaleye_mask",
+  "snowhuntsman": "zombie:snowhuntsman_mask",
+  "buzz": "zombie:buzzingsniper38_mask",
+  "buzzingsniper": "zombie:buzzingsniper38_mask",
+  "buzzingsniper38": "zombie:buzzingsniper38_mask",
+  "jerry": "zombie:jerrycrafttv_mask",
+  "jerrytv": "zombie:jerrycrafttv_mask",
+  "jerrycrafttv": "zombie:jerrycrafttv_mask"
 });
 
 function componentValue(entity, componentIds, fallback = 0) {
@@ -356,7 +370,55 @@ world.afterEvents.entityDie.subscribe((event) => {
 
   if (easterEggItem && Math.random() < easterEggChance) {
     try {
-      deadEntity.dimension.spawnItem(new ItemStack(easterEggItem, 1), deadEntity.location);
+      const itemStack = new ItemStack(easterEggItem, 1);
+      if (easterEggItem === "zombie:buzzingsniper38_mask") {
+        itemStack.setLore([
+          "§7Stole ZombieClinic's boat",
+          "§86/5/26 • 9:10 PM Eastern Time"
+        ]);
+      } else if (easterEggItem === "zombie:shark_mask") {
+        itemStack.setLore([
+          "§7Fish Are Friends... Not Food"
+        ]);
+      } else if (easterEggItem === "zombie:zombieclinic2_mask") {
+        itemStack.setLore([
+          "§7aka ZombieClinic2",
+          "§7Loves coke and waffles"
+        ]);
+      } else if (easterEggItem === "zombie:knight_mask") {
+        itemStack.setLore([
+          "§7Traveled from OC3AN ADVENTURE"
+        ]);
+      } else if (easterEggItem === "zombie:the_n1nj4ll0_mask") {
+        itemStack.setLore([
+          "§7Creeps behind the code"
+        ]);
+      } else if (easterEggItem === "zombie:satandragon3233_mask") {
+        itemStack.setLore([
+          "§7Zombie's Spell Check and Proofreader"
+        ]);
+      } else if (easterEggItem === "zombie:bazzerk_mask") {
+        itemStack.setLore([
+          "§7aka the Redstone God"
+        ]);
+      } else if (easterEggItem === "zombie:usuriousberry39_mask") {
+        itemStack.setLore([
+          "§7Lore-driven world architect"
+        ]);
+      } else if (easterEggItem === "zombie:doom_mask") {
+        itemStack.setLore([
+          "§7§lI need a really big gun"
+        ]);
+      } else if (easterEggItem === "zombie:mario_mask") {
+        itemStack.setLore([
+          "§7§lIt's-a-me, Mario!"
+        ]);
+      } else if (easterEggItem === "zombie:eggman_mask") {
+        itemStack.setLore([
+          "§7§lHasta la bye-bye, suckers!"
+        ]);
+      }
+      deadEntity.dimension.spawnItem(itemStack, deadEntity.location);
     } catch (error) {
       console.warn(`[Mob Heads] Could not drop named Easter egg ${easterEggItem}: ${error}`);
     }

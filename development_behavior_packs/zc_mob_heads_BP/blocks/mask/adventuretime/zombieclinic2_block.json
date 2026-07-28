@@ -34,7 +34,7 @@
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 1
       },
-      "minecraft:display_name": "ZombieClinic2 Mask",
+      "minecraft:display_name": "Cassimo Head",
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 13
       },

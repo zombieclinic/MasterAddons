@@ -578,29 +578,56 @@
     "zombie_christmas_light_blue": {
       "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_blue"
     },
+    "zombie_christmas_light_blue_on": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_blue_on"
+    },
     "zombie_christmas_light_cyan": {
       "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_cyan"
+    },
+    "zombie_christmas_light_cyan_on": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_cyan_on"
     },
     "zombie_christmas_light_green": {
       "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_green"
     },
+    "zombie_christmas_light_green_on": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_green_on"
+    },
     "zombie_christmas_light_light_blue": {
       "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_light_blue"
+    },
+    "zombie_christmas_light_light_blue_on": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_light_blue_on"
     },
     "zombie_christmas_light_magenta": {
       "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_magenta"
     },
+    "zombie_christmas_light_magenta_on": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_magenta_on"
+    },
     "zombie_christmas_light_pink": {
       "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_pink"
+    },
+    "zombie_christmas_light_pink_on": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_pink_on"
     },
     "zombie_christmas_light_purple": {
       "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_purple"
     },
+    "zombie_christmas_light_purple_on": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_purple_on"
+    },
     "zombie_christmas_light_red": {
       "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_red"
     },
+    "zombie_christmas_light_red_on": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_red_on"
+    },
     "zombie_christmas_light_yellow": {
       "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_yellow"
+    },
+    "zombie_christmas_light_yellow_on": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_yellow_on"
     },
     "zombie_candycane_blue_1": {
       "textures": "textures/christmas/blocks/christmas_land/candy_cane/blue/candycane_blue_1"
@@ -1165,6 +1192,39 @@
     },
     "zombie_pumpkin_king": {
       "textures": "textures/halloween/pumpkin_boss"
+    },
+    "amaranthine_dirt": {
+      "textures": "textures/end/amaranthine_forest/amaranthine_dirt"
+    },
+    "amaranthine_grass_side": {
+      "textures": "textures/end/amaranthine_forest/amaranthine_grass_side"
+    },
+    "amaranthine_grass_top": {
+      "textures": "textures/end/amaranthine_forest/amaranthine_grass_top"
+    },
+    "amaranthine_log": {
+      "textures": "textures/end/amaranthine_forest/amaranthine_log"
+    },
+    "amaranthine_log_top": {
+      "textures": "textures/end/amaranthine_forest/amaranthine_log_top"
+    },
+    "stripped_amaranthine_log": {
+      "textures": "textures/end/amaranthine_forest/stripped_amaranthine_log"
+    },
+    "amaranthine_leaves": {
+      "textures": "textures/end/amaranthine_forest/amaranthine_leaves"
+    },
+    "amaranthine_planks": {
+      "textures": "textures/end/amaranthine_forest/amaranthine_planks"
+    },
+    "amaranthine_trapdoor": {
+      "textures": "textures/end/amaranthine_forest/amaranthine_trapdoor"
+    },
+    "amaranthine_bloom": {
+      "textures": "textures/end/amaranthine_forest/amaranthine_bloom"
+    },
+    "amaranthine_sprout": {
+      "textures": "textures/end/amaranthine_forest/amaranthine_sprout"
     }
   }
 }

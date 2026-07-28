@@ -1078,6 +1078,27 @@
 		},
 		"zc_eg_snow_item": {
 			"textures": "textures/mobheads/items/adventuretime/snow"
+		},
+		"zc_eg_glamazon518_item": {
+			"textures": "textures/mobheads/items/adventuretime/glamazon518"
+		},
+		"zc_eg_lionsgirl269981_item": {
+			"textures": "textures/mobheads/items/adventuretime/lionsgirl269981"
+		},
+		"zc_eg_lucifire83_item": {
+			"textures": "textures/mobheads/items/adventuretime/lucifire83"
+		},
+		"zc_eg_sewtotaleye_item": {
+			"textures": "textures/mobheads/items/adventuretime/sewtotaleye"
+		},
+		"zc_eg_snowhuntsman_item": {
+			"textures": "textures/mobheads/items/adventuretime/snowhuntsman"
+		},
+		"zc_eg_buzzingsniper38_item": {
+			"textures": "textures/mobheads/items/adventuretime/buzzingsniper38"
+		},
+		"zc_eg_jerrycrafttv_item": {
+			"textures": "textures/mobheads/items/adventuretime/jerrycrafttv"
 		}
     }
 }

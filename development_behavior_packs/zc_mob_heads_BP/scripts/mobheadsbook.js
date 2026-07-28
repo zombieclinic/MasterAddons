@@ -783,11 +783,13 @@ function showEasterEggs(player) {
       "§eLooting bonus §8• §f+1% per level\n\n" +
       "§aNames are case-insensitive. Do not include the word \"Mask.\"\n\n" +
       "§6§lAVAILABLE NAMES§r\n" +
-      "§fZombieClinic, ZombieClinic2, satandragon3233, Nuisance82mc, Herobrine, DoomGuy, Mario, Eggman, " +
+      "§fZombieClinic, Cassimo, satandragon3233, Nuisance82mc, Herobrine, DoomGuy, Mario, Eggman, " +
       "Bedrock City, ArcticShark, Uncle Grandpa, Old Guy, Im a Meme, Trickledabit, Knight2077, " +
-      "ClassSick1, bluewinqs, Tj, usuriousberry39, xXHeadTripXx, ChromGod3329, LizzyAaaa, Robbae03, " +
+      "ClassSick1, bluewinqs, Tj, usuriousberry, usuriousberry39, xXHeadTripXx, ChromGod3329, LizzyAaaa, Robbae03, " +
       "ScreamingEgl, TheN1NJ4LL0, TheOGHoney, ToroLoco, Vegan Chzburger, WeeHannahx0, ZellaBites, " +
-      "bazzerk, sloth, spartanlex2, Russbox, Universal9Gaming, and snow.\n\n" +
+      "bazzerk, Buzzerk, sloth, spartanlex2, Russbox, Universal9Gaming, snow, Glamazon518, LionsGirl, " +
+      "LionsGirl269981, LuciFire83, sewtotaleye, SnowHuntsman, Buzz, BuzzingSniper, BuzzingSniper38, " +
+      "Jerry, JerryTV, and JerrycraftTV.\n\n" +
       "§d§lJEB SECRETS§r\n" +
       "§7Name a sheep or shulker §fjeb§7 to make its successful normal head roll drop the matching rainbow Jeb head."
     )

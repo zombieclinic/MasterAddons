@@ -31,7 +31,8 @@ const STRIPPABLE_BLOCKS = {
 	"zombie:flesh_log": "zombie:stripped_flesh_log",
 	"zombie:tumor_log": "zombie:stripped_tumor_log",
 	"zombie:demon_log": "zombie:demon_log_stripped",
-	"zombie:demon_fire_log": "zombie:demon_fire_log_stripped"
+	"zombie:demon_fire_log": "zombie:demon_fire_log_stripped",
+	"zombie:amaranthine_log": "zombie:stripped_amaranthine_log"
 };
 
 const FACE_NEIGHBORS = {

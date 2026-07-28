@@ -719,6 +719,9 @@
     },
     "zombie_zcoin": {
       "textures": "textures/items/emerald"
+    },
+    "amaranthine_apple": {
+      "textures": "textures/end/amaranthine_forest/amaranthine_apple"
     }
   }
 }

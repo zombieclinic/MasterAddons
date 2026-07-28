@@ -1035,6 +1035,27 @@
 		},
 		"zc_eg_snow_block": {
 			"textures": "textures/mobheads/heads/eg/snow"
+		},
+		"zc_eg_glamazon518_block": {
+			"textures": "textures/mobheads/heads/eg/glamazon518"
+		},
+		"zc_eg_lionsgirl269981_block": {
+			"textures": "textures/mobheads/heads/eg/lionsgirl269981"
+		},
+		"zc_eg_lucifire83_block": {
+			"textures": "textures/mobheads/heads/eg/lucifire83"
+		},
+		"zc_eg_sewtotaleye_block": {
+			"textures": "textures/mobheads/heads/eg/sewtotaleye"
+		},
+		"zc_eg_snowhuntsman_block": {
+			"textures": "textures/mobheads/heads/eg/snowhuntsman"
+		},
+		"zc_eg_buzzingsniper38_block": {
+			"textures": "textures/mobheads/heads/eg/buzzingsniper38"
+		},
+		"zc_eg_jerrycrafttv_block": {
+			"textures": "textures/mobheads/heads/eg/jerrycrafttv"
 		}
   }
 }

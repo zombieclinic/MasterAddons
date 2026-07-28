@@ -1,0 +1,36 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:amaranthine_bloom",
+      "menu_category": { "category": "nature" }
+    },
+    "components": {
+      "minecraft:display_name": "Amaranthine Bloom",
+      "minecraft:collision_box": false,
+      "minecraft:selection_box": { "origin": [-4, 0, -4], "size": [8, 13, 8] },
+      "minecraft:geometry": "geometry.zombie_abysscrossplants",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "amaranthine_bloom",
+          "render_method": "alpha_test",
+          "face_dimming": false,
+          "ambient_occlusion": 0
+        }
+      },
+      "minecraft:destructible_by_mining": { "seconds_to_destroy": 0 },
+      "minecraft:destructible_by_explosion": { "explosion_resistance": 0 },
+      "minecraft:loot": "loot_tables/blocks/amaranthine_bloom.json",
+      "minecraft:placement_filter": {
+        "conditions": [{
+          "allowed_faces": ["up"],
+          "block_filter": ["zombie:amaranthine_grass", "zombie:amaranthine_dirt", "minecraft:end_stone"]
+        }]
+      },
+      "minecraft:replaceable": {},
+      "minecraft:light_dampening": 0,
+      "minecraft:tags": ["plant"],
+      "minecraft:map_color": "#B66ADF"
+    }
+  }
+}

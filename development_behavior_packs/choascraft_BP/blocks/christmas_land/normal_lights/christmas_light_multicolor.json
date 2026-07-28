@@ -62,7 +62,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_pink",
+              "texture": "zombie_christmas_light_pink_on",
               "render_method": "alpha_test"
             }
           },
@@ -106,7 +106,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_purple",
+              "texture": "zombie_christmas_light_purple_on",
               "render_method": "alpha_test"
             }
           },
@@ -150,7 +150,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_magenta",
+              "texture": "zombie_christmas_light_magenta_on",
               "render_method": "alpha_test"
             }
           },
@@ -194,7 +194,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_yellow",
+              "texture": "zombie_christmas_light_yellow_on",
               "render_method": "alpha_test"
             }
           },
@@ -238,7 +238,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_red",
+              "texture": "zombie_christmas_light_red_on",
               "render_method": "alpha_test"
             }
           },
@@ -282,7 +282,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_green",
+              "texture": "zombie_christmas_light_green_on",
               "render_method": "alpha_test"
             }
           },
@@ -326,7 +326,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_cyan",
+              "texture": "zombie_christmas_light_cyan_on",
               "render_method": "alpha_test"
             }
           },
@@ -370,7 +370,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_blue",
+              "texture": "zombie_christmas_light_blue_on",
               "render_method": "alpha_test"
             }
           },
@@ -457,7 +457,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_pink",
+              "texture": "zombie_christmas_light_pink_on",
               "render_method": "alpha_test"
             }
           },
@@ -501,7 +501,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_purple",
+              "texture": "zombie_christmas_light_purple_on",
               "render_method": "alpha_test"
             }
           },
@@ -545,7 +545,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_magenta",
+              "texture": "zombie_christmas_light_magenta_on",
               "render_method": "alpha_test"
             }
           },
@@ -589,7 +589,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_yellow",
+              "texture": "zombie_christmas_light_yellow_on",
               "render_method": "alpha_test"
             }
           },
@@ -633,7 +633,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_red",
+              "texture": "zombie_christmas_light_red_on",
               "render_method": "alpha_test"
             }
           },
@@ -677,7 +677,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_green",
+              "texture": "zombie_christmas_light_green_on",
               "render_method": "alpha_test"
             }
           },
@@ -721,7 +721,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_cyan",
+              "texture": "zombie_christmas_light_cyan_on",
               "render_method": "alpha_test"
             }
           },
@@ -765,7 +765,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_blue",
+              "texture": "zombie_christmas_light_blue_on",
               "render_method": "alpha_test"
             }
           },
@@ -852,7 +852,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_pink",
+              "texture": "zombie_christmas_light_pink_on",
               "render_method": "alpha_test"
             }
           },
@@ -896,7 +896,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_purple",
+              "texture": "zombie_christmas_light_purple_on",
               "render_method": "alpha_test"
             }
           },
@@ -940,7 +940,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_magenta",
+              "texture": "zombie_christmas_light_magenta_on",
               "render_method": "alpha_test"
             }
           },
@@ -984,7 +984,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_yellow",
+              "texture": "zombie_christmas_light_yellow_on",
               "render_method": "alpha_test"
             }
           },
@@ -1028,7 +1028,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_red",
+              "texture": "zombie_christmas_light_red_on",
               "render_method": "alpha_test"
             }
           },
@@ -1072,7 +1072,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_green",
+              "texture": "zombie_christmas_light_green_on",
               "render_method": "alpha_test"
             }
           },
@@ -1116,7 +1116,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_cyan",
+              "texture": "zombie_christmas_light_cyan_on",
               "render_method": "alpha_test"
             }
           },
@@ -1160,7 +1160,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_blue",
+              "texture": "zombie_christmas_light_blue_on",
               "render_method": "alpha_test"
             }
           },
@@ -1247,7 +1247,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_pink",
+              "texture": "zombie_christmas_light_pink_on",
               "render_method": "alpha_test"
             }
           },
@@ -1291,7 +1291,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_purple",
+              "texture": "zombie_christmas_light_purple_on",
               "render_method": "alpha_test"
             }
           },
@@ -1335,7 +1335,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_magenta",
+              "texture": "zombie_christmas_light_magenta_on",
               "render_method": "alpha_test"
             }
           },
@@ -1379,7 +1379,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_yellow",
+              "texture": "zombie_christmas_light_yellow_on",
               "render_method": "alpha_test"
             }
           },
@@ -1423,7 +1423,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_red",
+              "texture": "zombie_christmas_light_red_on",
               "render_method": "alpha_test"
             }
           },
@@ -1467,7 +1467,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_green",
+              "texture": "zombie_christmas_light_green_on",
               "render_method": "alpha_test"
             }
           },
@@ -1511,7 +1511,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_cyan",
+              "texture": "zombie_christmas_light_cyan_on",
               "render_method": "alpha_test"
             }
           },
@@ -1555,7 +1555,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_blue",
+              "texture": "zombie_christmas_light_blue_on",
               "render_method": "alpha_test"
             }
           },
@@ -1642,7 +1642,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_pink",
+              "texture": "zombie_christmas_light_pink_on",
               "render_method": "alpha_test"
             }
           },
@@ -1686,7 +1686,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_purple",
+              "texture": "zombie_christmas_light_purple_on",
               "render_method": "alpha_test"
             }
           },
@@ -1730,7 +1730,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_magenta",
+              "texture": "zombie_christmas_light_magenta_on",
               "render_method": "alpha_test"
             }
           },
@@ -1774,7 +1774,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_yellow",
+              "texture": "zombie_christmas_light_yellow_on",
               "render_method": "alpha_test"
             }
           },
@@ -1818,7 +1818,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_red",
+              "texture": "zombie_christmas_light_red_on",
               "render_method": "alpha_test"
             }
           },
@@ -1862,7 +1862,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_green",
+              "texture": "zombie_christmas_light_green_on",
               "render_method": "alpha_test"
             }
           },
@@ -1906,7 +1906,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_cyan",
+              "texture": "zombie_christmas_light_cyan_on",
               "render_method": "alpha_test"
             }
           },
@@ -1950,7 +1950,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_blue",
+              "texture": "zombie_christmas_light_blue_on",
               "render_method": "alpha_test"
             }
           },
@@ -2037,7 +2037,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_pink",
+              "texture": "zombie_christmas_light_pink_on",
               "render_method": "alpha_test"
             }
           },
@@ -2081,7 +2081,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_purple",
+              "texture": "zombie_christmas_light_purple_on",
               "render_method": "alpha_test"
             }
           },
@@ -2125,7 +2125,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_magenta",
+              "texture": "zombie_christmas_light_magenta_on",
               "render_method": "alpha_test"
             }
           },
@@ -2169,7 +2169,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_yellow",
+              "texture": "zombie_christmas_light_yellow_on",
               "render_method": "alpha_test"
             }
           },
@@ -2213,7 +2213,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_red",
+              "texture": "zombie_christmas_light_red_on",
               "render_method": "alpha_test"
             }
           },
@@ -2257,7 +2257,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_green",
+              "texture": "zombie_christmas_light_green_on",
               "render_method": "alpha_test"
             }
           },
@@ -2301,7 +2301,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_cyan",
+              "texture": "zombie_christmas_light_cyan_on",
               "render_method": "alpha_test"
             }
           },
@@ -2345,7 +2345,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_blue",
+              "texture": "zombie_christmas_light_blue_on",
               "render_method": "alpha_test"
             }
           },
@@ -2432,7 +2432,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_pink",
+              "texture": "zombie_christmas_light_pink_on",
               "render_method": "alpha_test"
             }
           },
@@ -2476,7 +2476,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_purple",
+              "texture": "zombie_christmas_light_purple_on",
               "render_method": "alpha_test"
             }
           },
@@ -2520,7 +2520,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_magenta",
+              "texture": "zombie_christmas_light_magenta_on",
               "render_method": "alpha_test"
             }
           },
@@ -2564,7 +2564,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_yellow",
+              "texture": "zombie_christmas_light_yellow_on",
               "render_method": "alpha_test"
             }
           },
@@ -2608,7 +2608,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_red",
+              "texture": "zombie_christmas_light_red_on",
               "render_method": "alpha_test"
             }
           },
@@ -2652,7 +2652,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_green",
+              "texture": "zombie_christmas_light_green_on",
               "render_method": "alpha_test"
             }
           },
@@ -2696,7 +2696,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_cyan",
+              "texture": "zombie_christmas_light_cyan_on",
               "render_method": "alpha_test"
             }
           },
@@ -2740,7 +2740,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_blue",
+              "texture": "zombie_christmas_light_blue_on",
               "render_method": "alpha_test"
             }
           },
@@ -2827,7 +2827,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_pink",
+              "texture": "zombie_christmas_light_pink_on",
               "render_method": "alpha_test"
             }
           },
@@ -2871,7 +2871,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_purple",
+              "texture": "zombie_christmas_light_purple_on",
               "render_method": "alpha_test"
             }
           },
@@ -2915,7 +2915,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_magenta",
+              "texture": "zombie_christmas_light_magenta_on",
               "render_method": "alpha_test"
             }
           },
@@ -2959,7 +2959,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_yellow",
+              "texture": "zombie_christmas_light_yellow_on",
               "render_method": "alpha_test"
             }
           },
@@ -3003,7 +3003,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_red",
+              "texture": "zombie_christmas_light_red_on",
               "render_method": "alpha_test"
             }
           },
@@ -3047,7 +3047,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_green",
+              "texture": "zombie_christmas_light_green_on",
               "render_method": "alpha_test"
             }
           },
@@ -3091,7 +3091,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_cyan",
+              "texture": "zombie_christmas_light_cyan_on",
               "render_method": "alpha_test"
             }
           },
@@ -3135,7 +3135,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_blue",
+              "texture": "zombie_christmas_light_blue_on",
               "render_method": "alpha_test"
             }
           },
@@ -3222,7 +3222,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_pink",
+              "texture": "zombie_christmas_light_pink_on",
               "render_method": "alpha_test"
             }
           },
@@ -3266,7 +3266,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_purple",
+              "texture": "zombie_christmas_light_purple_on",
               "render_method": "alpha_test"
             }
           },
@@ -3310,7 +3310,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_magenta",
+              "texture": "zombie_christmas_light_magenta_on",
               "render_method": "alpha_test"
             }
           },
@@ -3354,7 +3354,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_yellow",
+              "texture": "zombie_christmas_light_yellow_on",
               "render_method": "alpha_test"
             }
           },
@@ -3398,7 +3398,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_red",
+              "texture": "zombie_christmas_light_red_on",
               "render_method": "alpha_test"
             }
           },
@@ -3442,7 +3442,7 @@
           "minecraft:light_emission": 12,
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_green",
+              "texture": "zombie_christmas_light_green_on",
               "render_method": "alpha_test"
             }
           },
@@ -3485,7 +3485,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_cyan",
+              "texture": "zombie_christmas_light_cyan_on",
               "render_method": "alpha_test"
             }
           },
@@ -3529,7 +3529,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_light_blue",
+              "texture": "zombie_christmas_light_light_blue_on",
               "render_method": "alpha_test"
             }
           },
@@ -3616,7 +3616,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_pink",
+              "texture": "zombie_christmas_light_pink_on",
               "render_method": "alpha_test"
             }
           },
@@ -3660,7 +3660,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_purple",
+              "texture": "zombie_christmas_light_purple_on",
               "render_method": "alpha_test"
             }
           },
@@ -3704,7 +3704,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_magenta",
+              "texture": "zombie_christmas_light_magenta_on",
               "render_method": "alpha_test"
             }
           },
@@ -3748,7 +3748,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_yellow",
+              "texture": "zombie_christmas_light_yellow_on",
               "render_method": "alpha_test"
             }
           },
@@ -3792,7 +3792,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_red",
+              "texture": "zombie_christmas_light_red_on",
               "render_method": "alpha_test"
             }
           },
@@ -3836,7 +3836,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_green",
+              "texture": "zombie_christmas_light_green_on",
               "render_method": "alpha_test"
             }
           },
@@ -3880,7 +3880,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_cyan",
+              "texture": "zombie_christmas_light_cyan_on",
               "render_method": "alpha_test"
             }
           },
@@ -3924,7 +3924,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_blue",
+              "texture": "zombie_christmas_light_blue_on",
               "render_method": "alpha_test"
             }
           },
@@ -4011,7 +4011,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_pink",
+              "texture": "zombie_christmas_light_pink_on",
               "render_method": "alpha_test"
             }
           },
@@ -4055,7 +4055,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_purple",
+              "texture": "zombie_christmas_light_purple_on",
               "render_method": "alpha_test"
             }
           },
@@ -4099,7 +4099,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_magenta",
+              "texture": "zombie_christmas_light_magenta_on",
               "render_method": "alpha_test"
             }
           },
@@ -4143,7 +4143,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_yellow",
+              "texture": "zombie_christmas_light_yellow_on",
               "render_method": "alpha_test"
             }
           },
@@ -4187,7 +4187,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_red",
+              "texture": "zombie_christmas_light_red_on",
               "render_method": "alpha_test"
             }
           },
@@ -4231,7 +4231,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_green",
+              "texture": "zombie_christmas_light_green_on",
               "render_method": "alpha_test"
             }
           },
@@ -4275,7 +4275,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_cyan",
+              "texture": "zombie_christmas_light_cyan_on",
               "render_method": "alpha_test"
             }
           },
@@ -4319,7 +4319,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_light_blue",
+              "texture": "zombie_christmas_light_light_blue_on",
               "render_method": "alpha_test"
             }
           },
@@ -4406,7 +4406,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_pink",
+              "texture": "zombie_christmas_light_pink_on",
               "render_method": "alpha_test"
             }
           },
@@ -4450,7 +4450,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_purple",
+              "texture": "zombie_christmas_light_purple_on",
               "render_method": "alpha_test"
             }
           },
@@ -4494,7 +4494,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_magenta",
+              "texture": "zombie_christmas_light_magenta_on",
               "render_method": "alpha_test"
             }
           },
@@ -4538,7 +4538,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_yellow",
+              "texture": "zombie_christmas_light_yellow_on",
               "render_method": "alpha_test"
             }
           },
@@ -4582,7 +4582,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_red",
+              "texture": "zombie_christmas_light_red_on",
               "render_method": "alpha_test"
             }
           },
@@ -4626,7 +4626,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_green",
+              "texture": "zombie_christmas_light_green_on",
               "render_method": "alpha_test"
             }
           },
@@ -4670,7 +4670,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_cyan",
+              "texture": "zombie_christmas_light_cyan_on",
               "render_method": "alpha_test"
             }
           },
@@ -4714,7 +4714,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "zombie_christmas_light_blue",
+              "texture": "zombie_christmas_light_blue_on",
               "render_method": "alpha_test"
             }
           },

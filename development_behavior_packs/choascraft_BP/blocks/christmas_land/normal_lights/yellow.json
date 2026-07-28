@@ -58,6 +58,12 @@
 			{
 				"condition": "query.block_state('minecraft:block_face') == 'north' && query.block_state('zombie:light') == 1",
 				"components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "zombie_christmas_light_yellow_on",
+                        "render_method": "alpha_test"
+                    }
+                },
 					"minecraft:light_emission": 12,
 					"minecraft:transformation": {
 						"rotation": [
@@ -133,6 +139,12 @@
 			{
 				"condition": "query.block_state('minecraft:block_face') == 'south' && query.block_state('zombie:light') == 1",
 				"components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "zombie_christmas_light_yellow_on",
+                        "render_method": "alpha_test"
+                    }
+                },
 					"minecraft:light_emission": 12,
 					"minecraft:transformation": {
 						"rotation": [
@@ -209,6 +221,12 @@
 			{
 				"condition": "query.block_state('minecraft:block_face') == 'east' && query.block_state('zombie:light') == 1",
 				"components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "zombie_christmas_light_yellow_on",
+                        "render_method": "alpha_test"
+                    }
+                },
 					"minecraft:light_emission": 12,
 					"minecraft:transformation": {
 						"rotation": [
@@ -285,6 +303,12 @@
 			{
 				"condition": "query.block_state('minecraft:block_face') == 'west' && query.block_state('zombie:light') == 1",
 				"components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "zombie_christmas_light_yellow_on",
+                        "render_method": "alpha_test"
+                    }
+                },
 					"minecraft:light_emission": 12,
 					"minecraft:transformation": {
 						"rotation": [
@@ -361,6 +385,12 @@
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'north' && query.block_state('minecraft:block_face') == 'down' && query.block_state('zombie:light') == 1",
 				"components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "zombie_christmas_light_yellow_on",
+                        "render_method": "alpha_test"
+                    }
+                },
 					"minecraft:light_emission": 12,
 					"minecraft:collision_box": {
 						"origin": [
@@ -437,6 +467,12 @@
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'south' && query.block_state('minecraft:block_face') == 'down' && query.block_state('zombie:light') == 1",
 				"components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "zombie_christmas_light_yellow_on",
+                        "render_method": "alpha_test"
+                    }
+                },
 					"minecraft:light_emission": 12,
 					"minecraft:transformation": {
 						"rotation": [
@@ -513,6 +549,12 @@
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'east' && query.block_state('minecraft:block_face') == 'down' && query.block_state('zombie:light') == 1",
 				"components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "zombie_christmas_light_yellow_on",
+                        "render_method": "alpha_test"
+                    }
+                },
 					"minecraft:light_emission": 12,
 					"minecraft:transformation": {
 						"rotation": [
@@ -589,6 +631,12 @@
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'west' && query.block_state('minecraft:block_face') == 'down' && query.block_state('zombie:light') == 1",
 				"components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "zombie_christmas_light_yellow_on",
+                        "render_method": "alpha_test"
+                    }
+                },
 					"minecraft:light_emission": 12,
 					"minecraft:transformation": {
 						"rotation": [
@@ -665,6 +713,12 @@
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'north' && query.block_state('minecraft:block_face') == 'up' && query.block_state('zombie:light') == 1",
 				"components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "zombie_christmas_light_yellow_on",
+                        "render_method": "alpha_test"
+                    }
+                },
 					"minecraft:light_emission": 12,
 					"minecraft:transformation": {
 						"rotation": [
@@ -741,6 +795,12 @@
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'south' && query.block_state('minecraft:block_face') == 'up' && query.block_state('zombie:light') == 1",
 				"components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "zombie_christmas_light_yellow_on",
+                        "render_method": "alpha_test"
+                    }
+                },
 					"minecraft:light_emission": 12,
 					"minecraft:transformation": {
 						"rotation": [
@@ -817,6 +877,12 @@
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'east' && query.block_state('minecraft:block_face') == 'up' && query.block_state('zombie:light') == 1",
 				"components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "zombie_christmas_light_yellow_on",
+                        "render_method": "alpha_test"
+                    }
+                },
 					"minecraft:light_emission": 12,
 					"minecraft:transformation": {
 						"rotation": [
@@ -893,6 +959,12 @@
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'west' && query.block_state('minecraft:block_face') == 'up' && query.block_state('zombie:light') == 1",
 				"components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "zombie_christmas_light_yellow_on",
+                        "render_method": "alpha_test"
+                    }
+                },
 					"minecraft:light_emission": 12,
 					"minecraft:transformation": {
 						"rotation": [

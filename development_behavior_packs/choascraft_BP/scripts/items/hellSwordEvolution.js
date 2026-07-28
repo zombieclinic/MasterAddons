@@ -17,9 +17,11 @@ const CHAOS_GREATSWORD = "zombie:chaos_greatsword";
 const KILL_LORE_PREFIX = "Chaos Kills:";
 const FORM_LORE_PREFIX = "Form:";
 
-const KILLS_FOR_KNIFE = 10;
-const KILLS_FOR_DEMON_SWORD = 20;
-const KILLS_FOR_GREATSWORD = 30;
+const KILLS_FOR_CHAOS_SWORD = 100;
+const KILLS_FOR_DEMON_SWORD = 300;
+const KILLS_FOR_GREATSWORD = 600;
+const KILLS_FOR_ASCENDED = 1200;
+const KILLS_FOR_MAXED = 2400;
 
 const LAST_HIT_EXPIRE_TICKS = 80;
 
@@ -214,7 +216,7 @@ function countKillOnce(deadEntityId, player) {
 function getItemIdForKills(kills) {
 	if (kills >= KILLS_FOR_GREATSWORD) return CHAOS_GREATSWORD;
 	if (kills >= KILLS_FOR_DEMON_SWORD) return CHAOS_DEMON_SWORD;
-	if (kills >= KILLS_FOR_KNIFE) return CHAOS_KNIFE;
+	if (kills >= KILLS_FOR_CHAOS_SWORD) return CHAOS_KNIFE;
 	return HELL_SWORD;
 }
 
@@ -237,9 +239,11 @@ function createEvolvedSwordStack(itemId, source, kills) {
 }
 
 function getFormName(kills) {
+	if (kills >= KILLS_FOR_MAXED) return "Maxed Greatsword";
+	if (kills >= KILLS_FOR_ASCENDED) return "Ascended Greatsword";
 	if (kills >= KILLS_FOR_GREATSWORD) return "Greatsword";
 	if (kills >= KILLS_FOR_DEMON_SWORD) return "Demon Sword";
-	if (kills >= KILLS_FOR_KNIFE) return "Geo Knife";
+	if (kills >= KILLS_FOR_CHAOS_SWORD) return "Chaos Sword";
 	return "Hell Sword";
 }
 

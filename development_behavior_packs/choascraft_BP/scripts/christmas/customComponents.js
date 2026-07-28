@@ -128,6 +128,24 @@ const REDSTONE_NEIGHBOR_OFFSETS = [
   { x: 0, y: 0, z: -1 }
 ];
 
+const CHRISTMAS_LIGHT_PREFIX = "zombie:christmas_light_";
+const MULTICOLOR_LIGHT = "zombie:christmas_light_multicolor";
+const MAX_CONNECTED_LIGHTS = 4096;
+
+// Only lights that actually receive redstone are entered here. Each controller
+// owns a set of connected lights; the reference count prevents one controller
+// from switching off a chain that is still owned by another powered controller.
+const lightControllers = new Map();
+const lightOwners = new Map();
+
+function locationKey(dimension, location) {
+  return `${dimension.id}:${location.x},${location.y},${location.z}`;
+}
+
+function isChristmasLight(block) {
+  return block?.typeId?.startsWith(CHRISTMAS_LIGHT_PREFIX) ?? false;
+}
+
 function blockRedstonePower(block) {
   try {
     return block.getRedstonePower() ?? 0;
@@ -166,27 +184,132 @@ function setLightState(block, state) {
   } catch {}
 }
 
+function findConnectedLights(root) {
+  const connected = new Map();
+  const pending = [root.location];
+
+  while (pending.length > 0 && connected.size < MAX_CONNECTED_LIGHTS) {
+    const location = pending.pop();
+    const key = locationKey(root.dimension, location);
+    if (connected.has(key)) continue;
+
+    let block;
+    try {
+      block = root.dimension.getBlock(location);
+    } catch {
+      continue;
+    }
+    if (!isChristmasLight(block)) continue;
+
+    connected.set(key, { ...location });
+    for (const offset of REDSTONE_NEIGHBOR_OFFSETS) {
+      pending.push({
+        x: location.x + offset.x,
+        y: location.y + offset.y,
+        z: location.z + offset.z
+      });
+    }
+  }
+
+  return connected;
+}
+
+function setOwnedLight(dimension, location, powered, advanceMulticolor = false) {
+  try {
+    const light = dimension.getBlock(location);
+    if (!isChristmasLight(light)) return;
+
+    if (!powered) {
+      setLightState(light, 0);
+      return;
+    }
+
+    const currentState = light.permutation.getState("zombie:light");
+    if (typeof currentState !== "number") return;
+
+    if (light.typeId === MULTICOLOR_LIGHT && advanceMulticolor && currentState > 0) {
+      setLightState(light, currentState >= 8 ? 1 : currentState + 1);
+    } else if (currentState === 0) {
+      setLightState(light, 1);
+    }
+  } catch {}
+}
+
+function releaseController(controllerKey) {
+  const controller = lightControllers.get(controllerKey);
+  if (!controller) return;
+
+  for (const [memberKey, location] of controller.members) {
+    const owners = (lightOwners.get(memberKey) ?? 1) - 1;
+    if (owners <= 0) {
+      lightOwners.delete(memberKey);
+      setOwnedLight(controller.dimension, location, false);
+    } else {
+      lightOwners.set(memberKey, owners);
+    }
+  }
+  lightControllers.delete(controllerKey);
+}
+
+function updateController(root) {
+  const controllerKey = locationKey(root.dimension, root.location);
+
+  if (receivedRedstonePower(root) <= 0) {
+    releaseController(controllerKey);
+    return;
+  }
+
+  const nextMembers = findConnectedLights(root);
+  const previous = lightControllers.get(controllerKey);
+  const advanceMulticolor = previous !== undefined;
+
+  if (previous) {
+    for (const [memberKey, location] of previous.members) {
+      if (nextMembers.has(memberKey)) continue;
+      const owners = (lightOwners.get(memberKey) ?? 1) - 1;
+      if (owners <= 0) {
+        lightOwners.delete(memberKey);
+        setOwnedLight(root.dimension, location, false);
+      } else {
+        lightOwners.set(memberKey, owners);
+      }
+    }
+  }
+
+  for (const [memberKey, location] of nextMembers) {
+    if (!previous?.members.has(memberKey)) {
+      lightOwners.set(memberKey, (lightOwners.get(memberKey) ?? 0) + 1);
+    }
+    // The powered controller is the brain for the whole strand. Once the
+    // strand is on, it advances every connected multicolor member together.
+    setOwnedLight(root.dimension, location, true, advanceMulticolor);
+  }
+
+  lightControllers.set(controllerKey, {
+    dimension: root.dimension,
+    members: nextMembers
+  });
+}
+
 export class ChristmasLights {
   onTick({ block }) {
-    if (!block || block.typeId === "minecraft:air") return;
-    setLightState(block, receivedRedstonePower(block) > 0 ? 1 : 0);
+    if (!isChristmasLight(block)) return;
+
+    const key = locationKey(block.dimension, block.location);
+    // Unpowered chain members do no traversal or redstone work. A remembered
+    // controller gets one final check so it can release its whole chain.
+    if (!lightControllers.has(key) && receivedRedstonePower(block) <= 0) return;
+    updateController(block);
   }
 }
 
 export class ColorLights {
   onTick({ block }) {
-    if (!block || block.typeId === "minecraft:air") return;
+    if (block?.typeId !== MULTICOLOR_LIGHT) return;
 
-    const currentState = block.permutation.getState("zombie:light");
-    if (typeof currentState !== "number") return;
-
-    if (receivedRedstonePower(block) <= 0) {
-      setLightState(block, 0);
-      return;
-    }
-
-    // State 0 is off. Powered lights cycle only through colors 1–8.
-    setLightState(block, currentState >= 8 ? 1 : currentState + 1);
+    const key = locationKey(block.dimension, block.location);
+    if (!lightControllers.has(key) && receivedRedstonePower(block) <= 0) return;
+    updateController(block);
   }
 }
 
