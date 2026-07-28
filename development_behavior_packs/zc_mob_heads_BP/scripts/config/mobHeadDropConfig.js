@@ -9,7 +9,7 @@
 export const MOB_HEAD_DROP_CONFIG = Object.freeze({
   "minecraft:allay": { item: "zombie:allay_mask", chance: 0.30, lootingBonus: 0.00 },
   "minecraft:armadillo": { item: "zombie:armadillo_mask", chance: 0.10, lootingBonus: 0.02 },
-  "minecraft:axolotl": { resolver: "axolotl", chance: 0.10, lootingBonus: 0.01 },
+  "minecraft:axolotl": { resolver: "axolotl", chance: 0.175, lootingBonus: 0.02 },
   "minecraft:bat": { item: "zombie:bat_mask", chance: 0.10, lootingBonus: 0.02 },
   "minecraft:bee": { resolver: "bee", chance: 0.20, lootingBonus: 0.02 },
   "minecraft:blaze": { item: "zombie:blaze_mask", chance: 0.01, lootingBonus: 0.001 },
@@ -88,6 +88,7 @@ export const MOB_HEAD_DROP_CONFIG = Object.freeze({
   "minecraft:wither_boss": { resolver: "wither", chance: 1.00, lootingBonus: 0.00 },
   "minecraft:wolf": { resolver: "wolf", chance: 0.20, lootingBonus: 0.01 },
   "minecraft:zoglin": { item: "zombie:zoglin_mask", chance: 0.20, lootingBonus: 0.05 },
+  "minecraft:zombie_horse": { item: "zombie:zombie_horse_mask", chance: 0.01, lootingBonus: 0.001 },
   "minecraft:zombie_pigman": { item: "zombie:zombie_piglin_mask", chance: 0.01, lootingBonus: 0.001 },
   "minecraft:zombie_nautilus": { resolver: "zombie_nautilus", chance: 0.10, lootingBonus: 0.01 },
   "minecraft:zombified_piglin": { item: "zombie:zombie_piglin_mask", chance: 0.01, lootingBonus: 0.001 },

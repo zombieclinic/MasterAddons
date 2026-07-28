@@ -3,7 +3,9 @@
 const SLAB_TAG = "zombie:slab";
 const DOOR_TAG = "zombie:door";
 const DOUBLE_SLAB_STATE = "zombie:double";
+const UPPER_SLAB_STATE = "zombie:upper";
 const TRAPDOOR_OPEN_STATE = "zombie:open";
+const TRAPDOOR_POWERED_STATE = "zombie:powered";
 const DOOR_OPEN_STATE = "zombie:open";
 const DOOR_UPPER_STATE = "zombie:upper";
 const DOOR_HINGE_STATE = "zombie:hinge";
@@ -54,12 +56,17 @@ export class EyewoodSlabPrePlaceComponent {
 		if (!block || !permutationToPlace) return;
 
 		const typeId = permutationToPlace.type?.id ?? permutationToPlace.typeId;
+		const placementHalf = permutationToPlace.getState("minecraft:vertical_half");
+		event.permutationToPlace = permutationToPlace.withState(
+			UPPER_SLAB_STATE,
+			placementHalf === "top"
+		);
 		const targetBlock = face === "Up" ? block.below() : face === "Down" ? block.above() : undefined;
 
 		if (!targetBlock?.hasTag(SLAB_TAG) || targetBlock.typeId !== typeId) return;
 
 		const isDouble = targetBlock.permutation.getState(DOUBLE_SLAB_STATE);
-		const verticalHalf = targetBlock.permutation.getState("minecraft:vertical_half");
+		const verticalHalf = getSlabVerticalHalf(targetBlock.permutation);
 
 		if (!isDouble && STACKABLE_SLAB_FACE[face]?.(verticalHalf)) {
 			event.cancel = true;
@@ -91,13 +98,16 @@ export class EyewoodTrapdoorToggleComponent {
 		const power = event.powerLevel ?? event.power ?? 0;
 		const params = component?.params ?? {};
 		const openState = params.block_state ?? TRAPDOOR_OPEN_STATE;
-		const shouldBeOpen = power > 0;
-		const current = !!block.permutation.getState(openState);
-		if (current === shouldBeOpen) return;
+		const isPowered = power > 0;
+		const wasPowered = !!block.permutation.getState(TRAPDOOR_POWERED_STATE);
+		if (isPowered === wasPowered) return;
 		try {
-			block.setPermutation(block.permutation.withState(openState, shouldBeOpen));
+			const permutation = block.permutation
+				.withState(TRAPDOOR_POWERED_STATE, isPowered)
+				.withState(openState, isPowered);
+			block.setPermutation(permutation);
 			const dimension = block.dimension;
-			dimension.playSound(shouldBeOpen ? params.enable_sound : params.disable_sound, block.center());
+			dimension.playSound(isPowered ? params.enable_sound : params.disable_sound, block.center());
 		} catch {}
 	}
 }
@@ -246,6 +256,23 @@ world.beforeEvents.playerInteractWithBlock.subscribe(event => {
 	tryStackSlab(event);
 });
 
+world.afterEvents.playerPlaceBlock.subscribe(event => {
+	const block = event.block;
+	if (!block?.hasTag(SLAB_TAG)) return;
+
+	const placementHalf = block.permutation.getState("minecraft:vertical_half");
+	if (placementHalf !== "top" && placementHalf !== "bottom") return;
+
+	system.run(() => {
+		try {
+			if (block.typeId === "minecraft:air") return;
+			block.setPermutation(
+				block.permutation.withState(UPPER_SLAB_STATE, placementHalf === "top")
+			);
+		} catch {}
+	});
+});
+
 function tryStripWood(event) {
 	const { block, itemStack } = event;
 	if (!block || !itemStack?.hasTag("minecraft:is_axe")) return false;
@@ -272,7 +299,7 @@ function tryStackSlab(event) {
 
 	if (block.typeId === itemStack.typeId && block.hasTag(SLAB_TAG) && STACK_FACES.has(face)) {
 		const isDouble = block.permutation.getState(DOUBLE_SLAB_STATE);
-		const verticalHalf = block.permutation.getState("minecraft:vertical_half");
+		const verticalHalf = getSlabVerticalHalf(block.permutation);
 
 		if (!isDouble && STACKABLE_SLAB_FACE[face]?.(verticalHalf)) {
 			event.cancel = true;
@@ -311,6 +338,10 @@ function transformIntoDoubleSlab(block, player) {
 
 function isSlabItem(itemStack) {
 	return itemStack.hasTag(SLAB_TAG) || SLAB_ITEM_IDS.has(itemStack.typeId);
+}
+
+function getSlabVerticalHalf(permutation) {
+	return permutation.getState(UPPER_SLAB_STATE) ? "top" : "bottom";
 }
 
 function getGatePivotDirection(block, player) {
@@ -400,4 +431,3 @@ function isCreative(player) {
 		return false;
 	}
 }
-

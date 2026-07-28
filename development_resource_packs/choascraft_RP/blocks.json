@@ -142,6 +142,33 @@
   "zombie:redwood_trapdoor": {
     "sound": "wood"
   },
+  "zombie:gingerbread_stairs": {
+    "sound": "wood"
+  },
+  "zombie:gingerbread_slab": {
+    "sound": "wood"
+  },
+  "zombie:gingerbread_button": {
+    "sound": "wood"
+  },
+  "zombie:gingerbread_pressure_plate": {
+    "sound": "wood"
+  },
+  "zombie:gingerbread_fence": {
+    "sound": "wood"
+  },
+  "zombie:gingerbread_wall": {
+    "sound": "wood"
+  },
+  "zombie:gingerbread_fence_gate": {
+    "sound": "wood"
+  },
+  "zombie:gingerbread_door": {
+    "sound": "wood"
+  },
+  "zombie:gingerbread_trapdoor": {
+    "sound": "wood"
+  },
   "zombie:stripped_redwood_log": {
     "sound": "wood"
   },

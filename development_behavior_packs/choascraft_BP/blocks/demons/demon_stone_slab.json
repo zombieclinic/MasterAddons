@@ -11,6 +11,10 @@
         }
       },
       "states": {
+        "zombie:upper": [
+          false,
+          true
+        ],
         "zombie:double": [
           false,
           true
@@ -22,7 +26,7 @@
     },
     "permutations": [
       {
-        "condition": "query.block_state('minecraft:vertical_half') == 'bottom' && !query.block_state('zombie:double')",
+        "condition": "!query.block_state('zombie:upper') && !query.block_state('zombie:double')",
         "components": {
           "minecraft:collision_box": {
             "origin": [
@@ -51,7 +55,7 @@
         }
       },
       {
-        "condition": "query.block_state('minecraft:vertical_half') == 'top' && !query.block_state('zombie:double')",
+        "condition": "query.block_state('zombie:upper') && !query.block_state('zombie:double')",
         "components": {
           "minecraft:collision_box": {
             "origin": [
@@ -97,11 +101,11 @@
         "identifier": "geometry.zombie.eyewood_slab",
         "bone_visibility": {
           "bottom_slab": {
-            "expression": "query.block_state('minecraft:vertical_half') == 'bottom'",
+            "expression": "!query.block_state('zombie:upper')",
             "version": 1
           },
           "top_slab": {
-            "expression": "query.block_state('minecraft:vertical_half') == 'top'",
+            "expression": "query.block_state('zombie:upper')",
             "version": 1
           }
         }
@@ -158,4 +162,3 @@
     }
   }
 }
-

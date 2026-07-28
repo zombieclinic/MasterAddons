@@ -19,6 +19,10 @@
         "zombie:open": [
           false,
           true
+        ],
+        "zombie:powered": [
+          false,
+          true
         ]
       },
       "menu_category": {
@@ -315,4 +319,3 @@
     ]
   }
 }
-

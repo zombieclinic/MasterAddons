@@ -77,6 +77,46 @@ const COPPER_GOLEM_HEADS = Object.freeze({
   weathered: "zombie:copper_golem_weathered_mask",
   oxidized: "zombie:copper_golem_oxidized_mask"
 });
+const NAMED_EASTER_EGG_CHANCE = 0.10;
+const NAMED_EASTER_EGG_LOOTING_BONUS = 0.01;
+const NAMED_EASTER_EGG_HEADS = Object.freeze({
+  "bedrock city": "zombie:bedrock_city_mask",
+  "bluewinqs": "zombie:blue_mask",
+  "classsick1": "zombie:class_mask",
+  "nuisance82mc": "zombie:nuisance82mc_mask",
+  "doomguy": "zombie:doom_mask",
+  "eggman": "zombie:eggman_mask",
+  "xxheadtripxx": "zombie:head_mask",
+  "herobrine": "zombie:herbrine_mask",
+  "satandragon3233": "zombie:satandragon3233_mask",
+  "knight2077": "zombie:knight_mask",
+  "im a meme": "zombie:lemon_mask",
+  "mario": "zombie:mario_mask",
+  "old guy": "zombie:oldguy_mask",
+  "arcticshark": "zombie:shark_mask",
+  "tj": "zombie:tj_mask",
+  "trickledabit": "zombie:trickle_mask",
+  "uncle grandpa": "zombie:uncle_mask",
+  "usuriousberry39": "zombie:usuriousberry39_mask",
+  "zombieclinic": "zombie:zombieclinic_mask",
+  "chromgod3329": "zombie:chromgod3329_mask",
+  "lizzyaaaa": "zombie:lizzy_aaaa_mask",
+  "robbae03": "zombie:robbae03_mask",
+  "screamingegl": "zombie:screaming_egl_mask",
+  "then1nj4ll0": "zombie:the_n1nj4ll0_mask",
+  "theoghoney": "zombie:the_og_honey_mask",
+  "toroloco": "zombie:toro_loco_mask",
+  "vegan chzburger": "zombie:vegan_chzburger_mask",
+  "weehannahx0": "zombie:wee_hannahx0_mask",
+  "zellabites": "zombie:zella_bites_mask",
+  "bazzerk": "zombie:bazzerk_mask",
+  "sloth": "zombie:sloth_mask",
+  "spartanlex2": "zombie:spartanlex2_mask",
+  "zombieclinic2": "zombie:zombieclinic2_mask",
+  "russbox": "zombie:russbox_mask",
+  "universal9gaming": "zombie:universal9gaming_mask",
+  "snow": "zombie:snow_mask"
+});
 
 function componentValue(entity, componentIds, fallback = 0) {
   for (const id of componentIds) {
@@ -134,6 +174,18 @@ function resolveHeadItem(entity, resolver) {
         context
       );
     case "cow":
+      {
+        const climateVariant = entityProperty(entity, "minecraft:climate_variant");
+        const climateHeads = {
+          temperate: "zombie:cow_mask",
+          warm: "zombie:cow_warm_mask",
+          cold: "zombie:cow_cold_mask"
+        };
+
+        if (typeof climateVariant === "string" && climateHeads[climateVariant]) {
+          return climateHeads[climateVariant];
+        }
+      }
       return safeArrayValue(
         ["zombie:cow_mask", "zombie:cow_cold_mask", "zombie:cow_warm_mask"],
         variant,
@@ -282,15 +334,39 @@ function getLootingLevel(player) {
   }
 }
 
+function namedEasterEggHead(entity) {
+  const normalizedName = (entity.nameTag ?? "")
+    .replace(/§./g, "")
+    .trim()
+    .toLowerCase();
+  return NAMED_EASTER_EGG_HEADS[normalizedName];
+}
+
 world.afterEvents.entityDie.subscribe((event) => {
   const deadEntity = event.deadEntity;
-  const config = MOB_HEAD_DROP_CONFIG[deadEntity.typeId];
-  if (!config) return;
-
   const player = getPlayerKiller(event.damageSource);
   if (!player) return;
 
-  const chance = Math.min(1, config.chance + getLootingLevel(player) * config.lootingBonus);
+  const lootingLevel = getLootingLevel(player);
+  const easterEggItem = namedEasterEggHead(deadEntity);
+  const easterEggChance = Math.min(
+    1,
+    NAMED_EASTER_EGG_CHANCE + lootingLevel * NAMED_EASTER_EGG_LOOTING_BONUS
+  );
+
+  if (easterEggItem && Math.random() < easterEggChance) {
+    try {
+      deadEntity.dimension.spawnItem(new ItemStack(easterEggItem, 1), deadEntity.location);
+    } catch (error) {
+      console.warn(`[Mob Heads] Could not drop named Easter egg ${easterEggItem}: ${error}`);
+    }
+    return;
+  }
+
+  const config = MOB_HEAD_DROP_CONFIG[deadEntity.typeId];
+  if (!config) return;
+
+  const chance = Math.min(1, config.chance + lootingLevel * config.lootingBonus);
   if (Math.random() >= chance) return;
 
   const itemId = config.item ?? resolveHeadItem(deadEntity, config.resolver);

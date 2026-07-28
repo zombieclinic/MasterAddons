@@ -4,13 +4,16 @@
 	"minecraft:item": {
 		"description": {
 			"identifier": "zombie:wolf_spotted_angry_mask",
-			
+
 			"menu_category": {
 				"group": "minecraft:itemGroup.name.skull",
 				"category": "items"
 			}
 		},
 		"components": {
+			"minecraft:fuel": {
+				"duration": 5.0
+			},
 			"minecraft:should_despawn": true,
 			"minecraft:display_name": {
 				"value": "Wolf Spotted Angry Mask"

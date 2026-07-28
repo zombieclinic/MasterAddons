@@ -481,7 +481,7 @@
 				},
 				{
 					"type": "item",
-					"name": "zombie:zombie_horse_block",
+					"name": "zombie:horse_toy",
 					"weight": 3,
 					"functions": [
 						{

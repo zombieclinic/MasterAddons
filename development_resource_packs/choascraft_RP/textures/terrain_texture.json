@@ -548,6 +548,15 @@
     "gingerbreadnormal": {
       "textures": "textures/christmas/blocks/christmas_land/gingerbreadnormal"
     },
+    "gingerbread_door_bottom": {
+      "textures": "textures/christmas/blocks/christmas_land/bottom_door"
+    },
+    "gingerbread_door_top": {
+      "textures": "textures/christmas/blocks/christmas_land/door_top"
+    },
+    "gingerbread_trapdoor": {
+      "textures": "textures/christmas/blocks/christmas_land/trap_door"
+    },
     "gingerbreadplan": {
       "textures": "textures/christmas/blocks/christmas_land/gingerbreadplan"
     },

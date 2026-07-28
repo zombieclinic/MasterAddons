@@ -2,7 +2,7 @@
   "format_version": 2,
   "header": {
     "name": "zc_mobheads_bp",
-    "description": "Event-driven mob head drops and guidebook",
+    "description": "7.27.26",
     "uuid": "0599083c-ec93-420f-91ce-b30201bd7209",
     "version": [1, 0, 4],
     "min_engine_version": [1, 21, 111]

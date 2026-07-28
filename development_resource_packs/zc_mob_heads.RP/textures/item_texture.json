@@ -36,7 +36,7 @@
 			"textures": "textures/mobheads/items/camel"
 		},
 		"camel_husk_item": {
-			"textures": "textures/entity/camel_husk/camel_husk"
+			"textures": "textures/mobheads/items/camel_husk"
 		},
 		"cat_black_item": {
 			"textures": "textures/mobheads/items/cat_black"
@@ -376,6 +376,9 @@
 		},
 		"skeleton_horse_item": {
 			"textures": "textures/mobheads/items/skeleton_horse"
+		},
+		"zombie_horse_item": {
+			"textures": "textures/mobheads/items/zombie_horse"
 		},
 		"slime_item": {
 			"textures": "textures/mobheads/items/slime"
@@ -855,9 +858,9 @@
 				"textures/mobheads/items/adventuretime/blue" 
 			]
 		},
-		"zombie_nuisance82mc": {
+		"zc_eg_nuisance82mc_item": {
 			"textures": [
-				"textures/mobheads/items/adventuretime/dad"
+				"textures/mobheads/items/adventuretime/nuisance82mc"
 			]
 		},
 		"zombie_class": {
@@ -880,9 +883,9 @@
 				"textures/mobheads/items/adventuretime/herbrine"
 			]
 		},
-		"zombie_kaile": {
+		"zc_eg_satandragon3233": {
 			"textures": [
-				"textures/mobheads/items/adventuretime/kaile"
+				"textures/mobheads/items/adventuretime/satandragon3233"
 			]
 		},
 		"zombie_knight": {
@@ -1024,6 +1027,57 @@
 		},
 		"zombie_mobhead_book_icon": {
 			"textures" : "textures/mobhead_book"
+		},
+		"zc_eg_chromgod3329_item": {
+			"textures": "textures/mobheads/items/adventuretime/chromgod3329"
+		},
+		"zc_eg_lizzy_aaaa_item": {
+			"textures": "textures/mobheads/items/adventuretime/lizzy_aaaa"
+		},
+		"zc_eg_robbae03_item": {
+			"textures": "textures/mobheads/items/adventuretime/robbae03"
+		},
+		"zc_eg_screaming_egl_item": {
+			"textures": "textures/mobheads/items/adventuretime/screaming_egl"
+		},
+		"zc_eg_the_n1nj4ll0_item": {
+			"textures": "textures/mobheads/items/adventuretime/the_n1nj4ll0"
+		},
+		"zc_eg_the_og_honey_item": {
+			"textures": "textures/mobheads/items/adventuretime/the_og_honey"
+		},
+		"zc_eg_toro_loco_item": {
+			"textures": "textures/mobheads/items/adventuretime/toro_loco"
+		},
+		"zc_eg_vegan_chzburger_item": {
+			"textures": "textures/mobheads/items/adventuretime/vegan_chzburger"
+		},
+		"zc_eg_wee_hannahx0_item": {
+			"textures": "textures/mobheads/items/adventuretime/wee_hannahx0"
+		},
+		"zc_eg_zella_bites_item": {
+			"textures": "textures/mobheads/items/adventuretime/zella_bites"
+		},
+		"zc_eg_bazzerk_item": {
+			"textures": "textures/mobheads/items/adventuretime/bazzerk"
+		},
+		"zc_eg_sloth_item": {
+			"textures": "textures/mobheads/items/adventuretime/sloth"
+		},
+		"zc_eg_spartanlex2_item": {
+			"textures": "textures/mobheads/items/adventuretime/spartanlex2"
+		},
+		"zc_eg_zombieclinic2_item": {
+			"textures": "textures/mobheads/items/adventuretime/zombieclinic2"
+		},
+		"zc_eg_russbox_item": {
+			"textures": "textures/mobheads/items/adventuretime/russbox"
+		},
+		"zc_eg_universal9gaming_item": {
+			"textures": "textures/mobheads/items/adventuretime/universal9gaming"
+		},
+		"zc_eg_snow_item": {
+			"textures": "textures/mobheads/items/adventuretime/snow"
 		}
     }
 }

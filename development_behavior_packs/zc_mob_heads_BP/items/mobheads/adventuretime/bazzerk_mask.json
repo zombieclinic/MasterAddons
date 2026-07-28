@@ -1,0 +1,36 @@
+
+{
+	"format_version": "1.21.90",
+	"minecraft:item": {
+		"description": {
+			"identifier": "zombie:bazzerk_mask",
+
+			"menu_category": {
+				"group": "minecraft:itemGroup.name.skull",
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:fuel": {
+				"duration": 5.0
+			},
+			"minecraft:should_despawn": true,
+			"minecraft:display_name": {
+				"value": "bazzerk Mask"
+			},
+			"minecraft:wearable": {
+				"slot": "slot.armor.head",
+				"hides_player_location": true
+			},
+			"minecraft:enchantable": {
+				"slot": "armor_head",
+				"value": 5
+			},
+			"minecraft:icon": "zc_eg_bazzerk_item",
+			"minecraft:block_placer": {
+				"block": "zombie:bazzerk_block"
+			},
+			"minecraft:skull": {}
+		}
+	}
+}

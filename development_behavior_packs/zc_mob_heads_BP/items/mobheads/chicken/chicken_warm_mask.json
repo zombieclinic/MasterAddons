@@ -11,6 +11,9 @@
 			}
 		},
 		"components": {
+			"minecraft:fuel": {
+				"duration": 5.0
+			},
 			"minecraft:should_despawn": true,
 			"minecraft:display_name": {
 				"value": "Chicken Warm Mask"

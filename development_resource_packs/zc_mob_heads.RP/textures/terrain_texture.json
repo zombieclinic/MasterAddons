@@ -438,6 +438,13 @@
 				}
 			]
 		},
+		"zombie_zombie_horse_mask": {
+			"textures": [
+				{
+					"path": "textures/entity/horse2/horse_zombie"
+				}
+			]
+		},
 		"zombie_stray_mask": {
 			"textures": "textures/mobheads/heads/stray"
 		},
@@ -846,8 +853,8 @@
 		"zombie_class": {
 			"textures": "textures/mobheads/heads/eg/class"
 		},
-		"zombie_dad": {
-			"textures": "textures/mobheads/heads/eg/dad"
+		"zc_eg_nuisance82mc_block": {
+			"textures": "textures/mobheads/heads/eg/Nuisance82mc"
 		},
 		"zombie_doomguy": {
 			"textures": "textures/mobheads/heads/eg/doomguy"
@@ -858,11 +865,11 @@
 		"zombie_herobrine": {
 			"textures": "textures/mobheads/heads/eg/herobrine"
 		},
-		"zombie_kaile": {
-			"textures": "textures/mobheads/heads/eg/kaile"
+		"zc_eg_satandragon3233": {
+			"textures": "textures/mobheads/heads/eg/satandragon3233"
 		},
 		"zombie_knight": {
-			"textures": "textures/mobheads/heads/eg/knight"
+			"textures": "textures/mobheads/heads/eg/knight_2077"
 		},
 		"zombie_lemon": {
 			"textures": "textures/mobheads/heads/eg/lemon"
@@ -977,6 +984,57 @@
 		},
 		"zombie_creaking_block": {
 			"textures": "textures/mobheads/heads/creaking_block"
+		},
+		"zc_eg_chromgod3329_block": {
+			"textures": "textures/mobheads/heads/eg/ChromGod3329"
+		},
+		"zc_eg_lizzy_aaaa_block": {
+			"textures": "textures/mobheads/heads/eg/LizzyAaaa"
+		},
+		"zc_eg_robbae03_block": {
+			"textures": "textures/mobheads/heads/eg/Robbae03"
+		},
+		"zc_eg_screaming_egl_block": {
+			"textures": "textures/mobheads/heads/eg/ScreamingEgl"
+		},
+		"zc_eg_the_n1nj4ll0_block": {
+			"textures": "textures/mobheads/heads/eg/TheN1NJ4LL0"
+		},
+		"zc_eg_the_og_honey_block": {
+			"textures": "textures/mobheads/heads/eg/TheOGHoney"
+		},
+		"zc_eg_toro_loco_block": {
+			"textures": "textures/mobheads/heads/eg/ToroLoco"
+		},
+		"zc_eg_vegan_chzburger_block": {
+			"textures": "textures/mobheads/heads/eg/vegan_chzburger"
+		},
+		"zc_eg_wee_hannahx0_block": {
+			"textures": "textures/mobheads/heads/eg/WeeHannahx0"
+		},
+		"zc_eg_zella_bites_block": {
+			"textures": "textures/mobheads/heads/eg/ZellaBites"
+		},
+		"zc_eg_bazzerk_block": {
+			"textures": "textures/mobheads/heads/eg/bazzerk"
+		},
+		"zc_eg_sloth_block": {
+			"textures": "textures/mobheads/heads/eg/sloth"
+		},
+		"zc_eg_spartanlex2_block": {
+			"textures": "textures/mobheads/heads/eg/spartanlex2"
+		},
+		"zc_eg_zombieclinic2_block": {
+			"textures": "textures/mobheads/heads/eg/zombieclinic2"
+		},
+		"zc_eg_russbox_block": {
+			"textures": "textures/mobheads/heads/eg/Russbox"
+		},
+		"zc_eg_universal9gaming_block": {
+			"textures": "textures/mobheads/heads/eg/Universal9Gaming"
+		},
+		"zc_eg_snow_block": {
+			"textures": "textures/mobheads/heads/eg/snow"
 		}
   }
 }

@@ -62,6 +62,7 @@ const MOB_TYPE_BY_NAME = Object.freeze({
   "Shulker": "minecraft:shulker",
   "Silverfish": "minecraft:silverfish",
   "Skeleton Horse": "minecraft:skeleton_horse",
+  "Zombie Horse": "minecraft:zombie_horse",
   "Slime": "minecraft:slime",
   "Sniffer": "minecraft:sniffer",
   "Snow Golem": "minecraft:snow_golem",
@@ -118,6 +119,7 @@ function showMobHeadBookForm(player) {
     .button("§lVillagers", "textures/mobheads/items/villager_v2_desert_armorer")
     .button("§lWolf Variants", "textures/mobheads/items/wolf_wild")
     .button("§lShulker Recipes", "textures/mobheads/items/shulker")
+    .button("§d§lEaster Eggs", "textures/mobheads/items/adventuretime/zombieclinic")
     .button("§c§lExit");
 
   MobHeadBookForm.show(player).then(response => {
@@ -133,7 +135,8 @@ function showMobHeadBookForm(player) {
       case 7: showVillagerMenu(player); break;
       case 8: showWolfMenu(player); break;
       case 9: showShulkerRecipes(player); break;
-      case 10: return;
+      case 10: showEasterEggs(player); break;
+      case 11: return;
       default: break;
     }
   });
@@ -200,6 +203,7 @@ function showUndeadMobs(player) {
     .button("Parched", "textures/mobheads/items/parched_icon")
     .button("Phantom", "textures/mobheads/items/phantom")
     .button("Skeleton Horse", "textures/mobheads/items/skeleton_horse")
+    .button("Zombie Horse", "textures/mobheads/items/zombie_horse")
     .button("Stray", "textures/mobheads/items/stray")
     .button("Zombie Villager", "textures/mobheads/items/zombie_villager_v2")
     .button("§c← Back");
@@ -212,12 +216,13 @@ function showUndeadMobs(player) {
       { name: "Husk", chance: "1%", looting: "+0.1%", biome: "Deserts and variants", facts: "Desert zombie that does not burn in sunlight and inflicts Hunger. Converts to a normal zombie after prolonged submersion." },
       { name: "Parched", biome: "Deserts, often riding camel husks", facts: "A sunlight-immune skeleton variant that attacks with a bow. Parched riders create a mounted daytime threat in desert biomes." },
       { name: "Phantom", chance: "10%", looting: "+2%", biome: "Spawns at night if a player hasn’t slept for 3+ days", facts: "Flying undead that swoops from above; drops phantom membranes used for Slow Falling potions." },
-      { name: "Skeleton Horse", chance: "1%", looting: "+0.1%", biome: "Skeleton-horse traps triggered during thunderstorms", facts: "An undead horse that becomes rideable after its skeleton rider is defeated. It can be ridden underwater without throwing off its rider." },
+      { name: "Skeleton Horse", chance: "10%", looting: "+10%", biome: "Skeleton-horse traps triggered during thunderstorms", facts: "An undead horse that becomes rideable after its skeleton rider is defeated. It can be ridden underwater without throwing off its rider." },
+      { name: "Zombie Horse", chance: "1%", looting: "+0.1%", biome: "Rare undead horse; obtainable through special spawning", facts: "An undead horse variant with decayed green skin." },
       { name: "Stray", chance: "10%", looting: "+2%", biome: "Ice Spikes, Frozen Oceans, and snowy biomes", facts: "Cold-biome skeleton variant that shoots Arrows of Slowness." },
       { name: "Zombie Villager", chance: "1%", looting: "+0.1%", biome: "Any biome; also from villagers killed by zombies", facts: "Can be cured with Splash Weakness + Golden Apple; retains profession attire." }
     ];
 
-    if (response.selection === 8) {
+    if (response.selection === 9) {
       showMobHeadBookForm(player);
     } else if (response.selection < mobData.length) {
       showMobDetail(player, mobData[response.selection], () => showUndeadMobs(player));
@@ -414,7 +419,7 @@ function showAnimalMobs(player) {
       { name: "Frog (Cold)", chance: "1%", looting: "+0.1%", biome: "Tadpoles grown in cold biomes (green)", facts: "Eats small slimes and magma cubes; produces a unique froglight color from magma cubes." },
       { name: "Frog (Temperate)", biome: "Tadpoles grown in temperate biomes (orange)", facts: "The frog variant is chosen by the biome temperature where a tadpole grows up. Temperate frogs create ochre froglights after eating small magma cubes." },
       { name: "Frog (Warm)", chance: "1%", looting: "+0.1%", biome: "Tadpoles grown in warm biomes (white)", facts: "Warm frogs create pearlescent froglights after eating small magma cubes." },
-      { name: "Goat", chance: "10%", looting: "+2%", biome: "Mountain biomes", facts: "Can ram entities; may drop goat horns; screaming goats are rarer." },
+      { name: "Goat", chance: "10%", looting: "+1%", biome: "Mountain biomes", facts: "Can ram entities; may drop goat horns; screaming goats are rarer." },
       { name: "Horse", biome: "Plains and Savannas", facts: "A tameable mount with seven base coat colors and several marking patterns. This pack's head variants follow the horse's base coat color." },
       { name: "Llama", chance: "10%", looting: "+2%", biome: "Savanna and Windswept Hills", facts: "Can be tamed, decorated with carpets, and carry chests; forms caravans when leashed." },
       { name: "Mooshroom", chance: "10%", looting: "+2%", biome: "Mushroom Fields", facts: "Shearing turns it into a cow and drops mushrooms; lightning can swap red/brown variants." },
@@ -758,6 +763,33 @@ function showShulkerRecipes(player) {
       "§dAvailable colors\n§fWhite, Orange, Magenta, Light Blue, Yellow, Lime, Pink, Gray, " +
       "Light Gray, Cyan, Purple, Blue, Brown, Green, Red, and Black.\n\n" +
       "§bSecret variant\n§7Name a living shulker §fjeb§7. If its head-drop roll succeeds, it drops the rainbow mask."
+    )
+    .button("§c← Back");
+
+  form.show(player).then(response => {
+    if (!response.canceled && response.selection === 0) showMobHeadBookForm(player);
+  });
+}
+
+function showEasterEggs(player) {
+  const form = new ActionFormData()
+    .title("§dEaster Egg Heads")
+    .body(
+      "§8━━━━━━━━━━━━━━━━━━━━━━\n" +
+      "§c§lZC §a§lSECRET HEADS§r\n" +
+      "§8━━━━━━━━━━━━━━━━━━━━━━\n\n" +
+      "§7Rename any mob with one of the names below, then land the credited killing blow for a chance to collect that special head.\n\n" +
+      "§eBase chance §8• §f10%\n" +
+      "§eLooting bonus §8• §f+1% per level\n\n" +
+      "§aNames are case-insensitive. Do not include the word \"Mask.\"\n\n" +
+      "§6§lAVAILABLE NAMES§r\n" +
+      "§fZombieClinic, ZombieClinic2, satandragon3233, Nuisance82mc, Herobrine, DoomGuy, Mario, Eggman, " +
+      "Bedrock City, ArcticShark, Uncle Grandpa, Old Guy, Im a Meme, Trickledabit, Knight2077, " +
+      "ClassSick1, bluewinqs, Tj, usuriousberry39, xXHeadTripXx, ChromGod3329, LizzyAaaa, Robbae03, " +
+      "ScreamingEgl, TheN1NJ4LL0, TheOGHoney, ToroLoco, Vegan Chzburger, WeeHannahx0, ZellaBites, " +
+      "bazzerk, sloth, spartanlex2, Russbox, Universal9Gaming, and snow.\n\n" +
+      "§d§lJEB SECRETS§r\n" +
+      "§7Name a sheep or shulker §fjeb§7 to make its successful normal head roll drop the matching rainbow Jeb head."
     )
     .button("§c← Back");
 

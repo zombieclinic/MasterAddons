@@ -413,6 +413,9 @@
 	"zombie:skeleton_horse_block": {
 		"sound": "bone_block"
 	},
+	"zombie:zombie_horse_block": {
+		"sound": "bone_block"
+	},
 	"zombie:stray_block": {
 		"sound": "bone_block"
 	},
@@ -876,6 +879,63 @@
 		"sound": "bone_block"
 	},
 	"zombie:armadillo_block": {
+		"sound": "bone_block"
+	},
+	"zombie:satandragon3233_block": {
+		"sound": "bone_block"
+	},
+	"zombie:nuisance82mc_block": {
+		"sound": "bone_block"
+	},
+	"zombie:chromgod3329_block": {
+		"sound": "bone_block"
+	},
+	"zombie:lizzy_aaaa_block": {
+		"sound": "bone_block"
+	},
+	"zombie:robbae03_block": {
+		"sound": "bone_block"
+	},
+	"zombie:screaming_egl_block": {
+		"sound": "bone_block"
+	},
+	"zombie:the_n1nj4ll0_block": {
+		"sound": "bone_block"
+	},
+	"zombie:the_og_honey_block": {
+		"sound": "bone_block"
+	},
+	"zombie:toro_loco_block": {
+		"sound": "bone_block"
+	},
+	"zombie:vegan_chzburger_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wee_hannahx0_block": {
+		"sound": "bone_block"
+	},
+	"zombie:zella_bites_block": {
+		"sound": "bone_block"
+	},
+	"zombie:bazzerk_block": {
+		"sound": "bone_block"
+	},
+	"zombie:sloth_block": {
+		"sound": "bone_block"
+	},
+	"zombie:spartanlex2_block": {
+		"sound": "bone_block"
+	},
+	"zombie:zombieclinic2_block": {
+		"sound": "bone_block"
+	},
+	"zombie:russbox_block": {
+		"sound": "bone_block"
+	},
+	"zombie:universal9gaming_block": {
+		"sound": "bone_block"
+	},
+	"zombie:snow_block": {
 		"sound": "bone_block"
 	}
 }

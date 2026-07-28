@@ -1,0 +1,33 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:gingerbread_fence"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "#S#",
+      "#S#"
+    ],
+    "key": {
+      "#": {
+        "item": "zombie:gingerbread"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "zombie:gingerbread_fence",
+      "count": 3
+    },
+    "unlock": [
+      {
+        "item": "zombie:gingerbread"
+      }
+    ]
+  }
+}
+
