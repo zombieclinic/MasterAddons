@@ -1099,6 +1099,9 @@
 		},
 		"zc_eg_jerrycrafttv_item": {
 			"textures": "textures/mobheads/items/adventuretime/jerrycrafttv"
+		},
+		"zc_eg_gizellah12_item": {
+			"textures": "textures/mobheads/items/adventuretime/gizellah12"
 		}
     }
 }

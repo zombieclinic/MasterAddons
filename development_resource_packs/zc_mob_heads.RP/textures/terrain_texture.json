@@ -1056,6 +1056,9 @@
 		},
 		"zc_eg_jerrycrafttv_block": {
 			"textures": "textures/mobheads/heads/eg/jerrycrafttv"
+		},
+		"zc_eg_gizellah12_block": {
+			"textures": "textures/mobheads/heads/eg/gizellah12"
 		}
   }
 }

@@ -102,6 +102,7 @@ const NAMED_EASTER_EGG_HEADS = Object.freeze({
   "zombieclinic": "zombie:zombieclinic_mask",
   "chromgod3329": "zombie:chromgod3329_mask",
   "lizzyaaaa": "zombie:lizzy_aaaa_mask",
+  "rabbae": "zombie:robbae03_mask",
   "robbae03": "zombie:robbae03_mask",
   "screamingegl": "zombie:screaming_egl_mask",
   "then1nj4ll0": "zombie:the_n1nj4ll0_mask",
@@ -116,6 +117,7 @@ const NAMED_EASTER_EGG_HEADS = Object.freeze({
   "spartanlex2": "zombie:spartanlex2_mask",
   "cassimo": "zombie:zombieclinic2_mask",
   "russbox": "zombie:russbox_mask",
+  "universal gaming": "zombie:universal9gaming_mask",
   "universal9gaming": "zombie:universal9gaming_mask",
   "snow": "zombie:snow_mask",
   "glamazon518": "zombie:glamazon518_mask",
@@ -129,7 +131,8 @@ const NAMED_EASTER_EGG_HEADS = Object.freeze({
   "buzzingsniper38": "zombie:buzzingsniper38_mask",
   "jerry": "zombie:jerrycrafttv_mask",
   "jerrytv": "zombie:jerrycrafttv_mask",
-  "jerrycrafttv": "zombie:jerrycrafttv_mask"
+  "jerrycrafttv": "zombie:jerrycrafttv_mask",
+  "gizellah12": "zombie:gizellah12_mask"
 });
 
 function componentValue(entity, componentIds, fallback = 0) {
@@ -416,6 +419,38 @@ world.afterEvents.entityDie.subscribe((event) => {
       } else if (easterEggItem === "zombie:eggman_mask") {
         itemStack.setLore([
           "§7§lHasta la bye-bye, suckers!"
+        ]);
+      } else if (easterEggItem === "zombie:nuisance82mc_mask") {
+        itemStack.setLore([
+          "§7The O.G. Dramma Llama"
+        ]);
+      } else if (easterEggItem === "zombie:tj_mask") {
+        itemStack.setLore([
+          "§7For sizzle my nizzzle"
+        ]);
+      } else if (easterEggItem === "zombie:oldguy_mask") {
+        itemStack.setLore([
+          "§7cows are delicious"
+        ]);
+      } else if (easterEggItem === "zombie:robbae03_mask") {
+        itemStack.setLore([
+          "§7Roll for Initiative"
+        ]);
+      } else if (easterEggItem === "zombie:gizellah12_mask") {
+        itemStack.setLore([
+          "§7Fueled by snacks and petty revenge."
+        ]);
+      } else if (easterEggItem === "zombie:lizzy_aaaa_mask") {
+        itemStack.setLore([
+          "§7Bee Kind And Spread Love!"
+        ]);
+      } else if (easterEggItem === "zombie:spartanlex2_mask") {
+        itemStack.setLore([
+          "§7Ladies man"
+        ]);
+      } else if (easterEggItem === "zombie:universal9gaming_mask") {
+        itemStack.setLore([
+          "§7Universal Gaming Network"
         ]);
       }
       deadEntity.dimension.spawnItem(itemStack, deadEntity.location);
