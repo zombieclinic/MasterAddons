@@ -84,14 +84,14 @@
       },
       "minecraft:collision_box": {
         "origin": [
-          -7,
+          -6.5,
           0,
-          -7
+          -6.5
         ],
         "size": [
-          14,
+          13,
           3.1,
-          14
+          13
         ]
       },
       "minecraft:destructible_by_mining": {
@@ -151,14 +151,14 @@
           },
           "minecraft:collision_box": {
             "origin": [
-              -7,
+              -6.5,
               0,
-              -7
+              -6.5
             ],
             "size": [
-              14,
+              13,
               3.1,
-              14
+              13
             ]
           },
           "minecraft:redstone_producer": {
@@ -191,14 +191,14 @@
           },
           "minecraft:collision_box": {
             "origin": [
-              -7,
+              -6.5,
               0,
-              -7
+              -6.5
             ],
             "size": [
-              14,
+              13,
               3.1,
-              14
+              13
             ]
           },
           "minecraft:redstone_producer": {
@@ -231,14 +231,14 @@
           },
           "minecraft:collision_box": {
             "origin": [
-              -7,
+              -6.5,
               0,
-              -7
+              -6.5
             ],
             "size": [
-              14,
+              13,
               3.1,
-              14
+              13
             ]
           },
           "minecraft:redstone_producer": {
@@ -271,14 +271,14 @@
           },
           "minecraft:collision_box": {
             "origin": [
-              -7,
+              -6.5,
               0,
-              -7
+              -6.5
             ],
             "size": [
-              14,
+              13,
               3.1,
-              14
+              13
             ]
           },
           "minecraft:redstone_producer": {

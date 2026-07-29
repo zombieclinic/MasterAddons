@@ -422,7 +422,8 @@ world.afterEvents.entityDie.subscribe((event) => {
       } else if (easterEggItem === "zombie:nuisance82mc_mask") {
         itemStack.setLore([
           "§7The O.G. Dramma Llama",
-          "§7Im the best in town, no teeth"
+          "§7Command Block Wizard",
+          "§7Turning commands into magic."
         ]);
       } else if (easterEggItem === "zombie:tj_mask") {
         itemStack.setLore([
@@ -444,6 +445,10 @@ world.afterEvents.entityDie.subscribe((event) => {
         itemStack.setLore([
           "§7Bee Kind And Spread Love!"
         ]);
+      } else if (easterEggItem === "zombie:snowhuntsman_mask") {
+        itemStack.setLore([
+          "§7Clear your cache and cookies"
+        ]);
       } else if (easterEggItem === "zombie:spartanlex2_mask") {
         itemStack.setLore([
           "§7Ladies man"
@@ -451,6 +456,22 @@ world.afterEvents.entityDie.subscribe((event) => {
       } else if (easterEggItem === "zombie:universal9gaming_mask") {
         itemStack.setLore([
           "§7Universal Gaming Network"
+        ]);
+      } else if (easterEggItem === "zombie:lemon_mask") {
+        itemStack.setLore([
+          "§7Half robin and all chaos"
+        ]);
+      } else if (easterEggItem === "zombie:head_mask") {
+        itemStack.setLore([
+          "§7I have no idea"
+        ]);
+      } else if (easterEggItem === "zombie:the_og_honey_mask") {
+        itemStack.setLore([
+          "§7Sweet Like Honey"
+        ]);
+      } else if (easterEggItem === "zombie:snow_mask") {
+        itemStack.setLore([
+          "§7I have no clue"
         ]);
       }
       deadEntity.dimension.spawnItem(itemStack, deadEntity.location);

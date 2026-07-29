@@ -8,6 +8,7 @@ import { AbyssFlowerCropComponent } from "./blocks/abyssFlowerCrop.js";
 import { InfectedFlowerGrowthComponent, InfectedFlowerTickComponent } from "./blocks/infectedFlowerGrowth.js";
 import { EyeFlowerGrowthComponent, EyeFlowerTickComponent } from "./blocks/eyeFlowerGrowth.js";
 import { AbyssFlowerSeedFoodComponent } from "./items/abyssFlowerSeedFood.js";
+import { AmaranthineAppleFoodComponent } from "./items/amaranthineAppleFood.js";
 import { SporepodGrowthComponent } from "./blocks/sporepodGrowth.js";
 import { CorruptedSpireBreakComponent, CorruptedSpireGrowthComponent } from "./blocks/corruptedSpireGrowth.js";
 import { SporeFoodComponent } from "./items/sporeFood.js";
@@ -88,6 +89,7 @@ const ITEM_COMPONENTS = [
   ["zombie:infected_attack", infectedAttack],
   ["zombie:item_durability", DurabilityHandler],
   ["zombie:abyss_flower_seed_food", AbyssFlowerSeedFoodComponent],
+  ["zombie:amaranthine_apple_food", AmaranthineAppleFoodComponent],
   ["zombie:spore_food", SporeFoodComponent],
   ["zombie:emberberry_stew_food", EmberberryStewFoodComponent],
   ["zombie:hemovial_food", HemovialFoodComponent],
