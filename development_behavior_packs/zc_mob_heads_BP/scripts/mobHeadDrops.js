@@ -112,7 +112,6 @@ const NAMED_EASTER_EGG_HEADS = Object.freeze({
   "weehannahx0": "zombie:wee_hannahx0_mask",
   "zellabites": "zombie:zella_bites_mask",
   "bazzerk": "zombie:bazzerk_mask",
-  "buzzerk": "zombie:bazzerk_mask",
   "sloth": "zombie:sloth_mask",
   "spartanlex2": "zombie:spartanlex2_mask",
   "cassimo": "zombie:zombieclinic2_mask",
@@ -422,7 +421,8 @@ world.afterEvents.entityDie.subscribe((event) => {
         ]);
       } else if (easterEggItem === "zombie:nuisance82mc_mask") {
         itemStack.setLore([
-          "§7The O.G. Dramma Llama"
+          "§7The O.G. Dramma Llama",
+          "§7Im the best in town, no teeth"
         ]);
       } else if (easterEggItem === "zombie:tj_mask") {
         itemStack.setLore([

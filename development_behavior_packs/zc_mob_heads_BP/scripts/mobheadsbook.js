@@ -787,7 +787,7 @@ function showEasterEggs(player) {
       "Bedrock City, ArcticShark, Uncle Grandpa, Old Guy, Im a Meme, Trickledabit, Knight2077, " +
       "ClassSick1, bluewinqs, Tj, usuriousberry, usuriousberry39, xXHeadTripXx, ChromGod3329, LizzyAaaa, Rabbae, Robbae03, " +
       "ScreamingEgl, TheN1NJ4LL0, TheOGHoney, ToroLoco, Vegan Chzburger, WeeHannahx0, ZellaBites, " +
-      "bazzerk, Buzzerk, sloth, spartanlex2, Russbox, Universal Gaming, Universal9Gaming, snow, Glamazon518, LionsGirl, " +
+      "Bazzerk, sloth, spartanlex2, Russbox, Universal Gaming, Universal9Gaming, snow, Glamazon518, LionsGirl, " +
       "LionsGirl269981, LuciFire83, sewtotaleye, SnowHuntsman, Buzz, BuzzingSniper, BuzzingSniper38, " +
       "Jerry, JerryTV, JerrycraftTV, and Gizellah12.\n\n" +
       "§d§lJEB SECRETS§r\n" +

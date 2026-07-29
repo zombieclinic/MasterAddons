@@ -24,12 +24,10 @@
       "leaf_blocks": [["zombie:amaranthine_leaves", 5]]
     },
     "base_block": [
-      "minecraft:end_stone",
       "zombie:amaranthine_grass",
       "zombie:amaranthine_dirt"
     ],
     "may_grow_on": [
-      "minecraft:end_stone",
       "zombie:amaranthine_grass",
       "zombie:amaranthine_dirt"
     ],

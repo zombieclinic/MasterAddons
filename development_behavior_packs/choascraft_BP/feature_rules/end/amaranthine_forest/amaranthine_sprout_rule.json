@@ -3,10 +3,10 @@
   "minecraft:feature_rules": {
     "description": {
       "identifier": "zombie:amaranthine_sprout_rule",
-      "places_feature": "zombie:amaranthine_sprout_floor_feature"
+      "places_feature": "zombie:amaranthine_sprout_feature"
     },
     "conditions": {
-      "placement_pass": "after_surface_pass",
+      "placement_pass": "surface_pass",
       "minecraft:biome_filter": [{
         "test": "has_biome_tag",
         "operator": "==",
@@ -14,11 +14,12 @@
       }]
     },
     "distribution": {
-      "iterations": 18,
+      "iterations": 50,
+      "scatter_chance": 30,
       "coordinate_eval_order": "xzy",
       "x": { "distribution": "uniform", "extent": [0, 15] },
       "z": { "distribution": "uniform", "extent": [0, 15] },
-      "y": "(q.noise(v.worldx / 512, v.worldz / 512) + q.noise(v.worldx, v.worldz) * 0.05 > 0.5 && (math.abs(v.worldx) > 200 || math.abs(v.worldz) > 200)) ? (q.heightmap(v.worldx, v.worldz) - 1) : -256"
+      "y": "q.heightmap(v.worldx, v.worldz)"
     }
   }
 }
