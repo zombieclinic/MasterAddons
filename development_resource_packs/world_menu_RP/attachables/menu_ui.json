@@ -1,0 +1,31 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "zombie:menu_ui",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/items/zcui"
+            },
+            "geometry": {
+                "default": "geometry.zombie_ui"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "animations": {
+                "fpp": "animation.zombie_ui.fpp",
+                "fpp_eat": "animation.zombie_ui.fpp_eat"
+            },
+            "scripts": {
+                "animate": [
+                    {
+                        "fpp": "c.is_first_person"
+                    }
+                ]
+            }
+        }
+    }
+}

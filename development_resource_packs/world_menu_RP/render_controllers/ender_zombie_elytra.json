@@ -1,0 +1,17 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.ender_zombiec_elytra": {
+            "materials": [
+                {
+                    "*": "variable.is_enchanted ? Material.enchanted : Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.ender_zombie",
+                "Texture.enchanted"
+            ],
+            "geometry": "Geometry.default"
+        }
+    }
+}

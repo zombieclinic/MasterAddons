@@ -1,0 +1,11 @@
+{
+	"num_mip_levels": 4,
+	"padding": 8,
+	"resource_pack_name": "ZombieCraft World Menu",
+	"texture_name": "atlas.terrain",
+	"texture_data": {
+		"coins": {
+			"textures": "textures/items/zcoin"
+		}
+	}
+}
