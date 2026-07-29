@@ -1,0 +1,40 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "zombie:breeze_mask_shiny",
+      "materials": {
+        "default": "entity_alphablend",
+        "enchanted": "armor_enchanted"
+      },
+      "textures": {
+        "default": "textures/entity/breeze/breeze",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.breeze.mask"
+      },
+      "render_controllers": [
+        "controller.render.armor"
+      ],
+      "scripts": {
+        "parent_setup": "variable.helmet_layer_visible = 0.0;",
+        "animate": [
+          "idle",
+          {
+            "ground_particles_controller": "query.is_item_name_any('slot.armor.head', 0, 'zombie:breeze_mask')"
+          }
+        ]
+      },
+      "animations": {
+        "idle": "animation.breeze.idle",
+        "idle_ground_particles": "animation.breeze.idle_ground_particles",
+        "slide_ground_particles": "animation.breeze.slide_ground_particles",
+        "ground_particles_controller": "controller.animation.breeze.ground_particles"
+      },
+      "particle_effects": {
+        "ground_particles": "zombie:ground_particle"
+      }
+    }
+  }
+}

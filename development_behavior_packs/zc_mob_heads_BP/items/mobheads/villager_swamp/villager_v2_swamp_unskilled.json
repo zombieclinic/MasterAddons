@@ -1,36 +1,34 @@
-
 {
-	"format_version": "1.21.90",
-	"minecraft:item": {
-		"description": {
-			"identifier": "zombie:villager_v2_swamp_unskilled_mask",
-
-			"menu_category": {
-				"group": "minecraft:itemGroup.name.skull",
-				"category": "items"
-			}
-		},
-		"components": {
-			"minecraft:fuel": {
-				"duration": 5.0
-			},
-			"minecraft:should_despawn": true,
-			"minecraft:display_name": {
-				"value": "Swamp Unskilled Mask"
-			},
-			"minecraft:wearable": {
-				"slot": "slot.armor.head",
-				"hides_player_location": true
-			},
-			"minecraft:enchantable": {
-				"slot": "armor_head",
-				"value": 5
-			},
-			"minecraft:block_placer": {
-				"block": "zombie:villager_v2_swamp_unskilled_block"
-			},
-			"minecraft:icon": "villager_v2_swamp_unskilled_item",
-			"minecraft:skull": {}
-		}
-	}
+  "format_version": "1.26.30",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:villager_v2_swamp_unskilled_mask",
+      "menu_category": {
+        "group": "minecraft:itemGroup.name.skull",
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:fuel": {
+        "duration": 5
+      },
+      "minecraft:should_despawn": true,
+      "minecraft:display_name": {
+        "value": "Swamp Unskilled Mask"
+      },
+      "minecraft:wearable": {
+        "slot": "slot.armor.head",
+        "hides_player_location": true
+      },
+      "minecraft:enchantable": {
+        "slot": "armor_head",
+        "value": 5
+      },
+      "minecraft:block_placer": {
+        "block": "zombie:villager_v2_swamp_unskilled_block"
+      },
+      "minecraft:icon": "villager_v2_swamp_unskilled_item",
+      "minecraft:skull": {}
+    }
+  }
 }

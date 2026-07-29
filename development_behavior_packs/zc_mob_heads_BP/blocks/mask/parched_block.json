@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.90",
+  "format_version": "1.26.30",
   "minecraft:block": {
     "description": {
       "identifier": "zombie:parched_block",
@@ -9,10 +9,14 @@
       },
       "traits": {
         "minecraft:placement_direction": {
-          "enabled_states": ["minecraft:cardinal_direction"]
+          "enabled_states": [
+            "minecraft:cardinal_direction"
+          ]
         },
         "minecraft:placement_position": {
-          "enabled_states": ["minecraft:block_face"]
+          "enabled_states": [
+            "minecraft:block_face"
+          ]
         }
       }
     },
@@ -26,12 +30,38 @@
         }
       },
       "minecraft:map_color": "#c9ae79",
-      "minecraft:destructible_by_mining": { "seconds_to_destroy": 1 },
-      "minecraft:destructible_by_explosion": { "explosion_resistance": 13 },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 13
+      },
       "minecraft:display_name": "Parched Head",
       "minecraft:geometry": "geometry.parched_head_floor",
-      "minecraft:collision_box": { "origin": [-4, 0, -4], "size": [8, 8, 8] },
-      "minecraft:selection_box": { "origin": [-4, 0, -4], "size": [8, 8, 8] },
+      "minecraft:collision_box": {
+        "origin": [
+          -4,
+          0,
+          -4
+        ],
+        "size": [
+          8,
+          8,
+          8
+        ]
+      },
+      "minecraft:selection_box": {
+        "origin": [
+          -4,
+          0,
+          -4
+        ],
+        "size": [
+          8,
+          8,
+          8
+        ]
+      },
       "minecraft:loot": "loot_tables/blocks/parched_block.json"
     },
     "permutations": [
@@ -39,68 +69,244 @@
         "condition": "query.block_state('minecraft:block_face') == 'north'",
         "components": {
           "minecraft:geometry": "geometry.parched_wall",
-          "minecraft:collision_box": { "origin": [-4, 4, 0], "size": [8, 8, 8] },
-          "minecraft:selection_box": { "origin": [-4, 4, 0], "size": [8, 8, 8] }
+          "minecraft:collision_box": {
+            "origin": [
+              -4,
+              4,
+              0
+            ],
+            "size": [
+              8,
+              8,
+              8
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -4,
+              4,
+              0
+            ],
+            "size": [
+              8,
+              8,
+              8
+            ]
+          }
         }
       },
       {
         "condition": "query.block_state('minecraft:block_face') == 'south'",
         "components": {
           "minecraft:geometry": "geometry.parched_wall",
-          "minecraft:transformation": { "rotation": [0, 180, 0] },
-          "minecraft:collision_box": { "origin": [-4, 4, -8], "size": [8, 8, 8] },
-          "minecraft:selection_box": { "origin": [-4, 4, -8], "size": [8, 8, 8] }
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -4,
+              4,
+              -8
+            ],
+            "size": [
+              8,
+              8,
+              8
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -4,
+              4,
+              -8
+            ],
+            "size": [
+              8,
+              8,
+              8
+            ]
+          }
         }
       },
       {
         "condition": "query.block_state('minecraft:block_face') == 'east'",
         "components": {
           "minecraft:geometry": "geometry.parched_wall",
-          "minecraft:transformation": { "rotation": [0, -90, 0] },
-          "minecraft:collision_box": { "origin": [-8, 4, -4], "size": [8, 8, 8] },
-          "minecraft:selection_box": { "origin": [-8, 4, -4], "size": [8, 8, 8] }
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              -90,
+              0
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -8,
+              4,
+              -4
+            ],
+            "size": [
+              8,
+              8,
+              8
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              4,
+              -4
+            ],
+            "size": [
+              8,
+              8,
+              8
+            ]
+          }
         }
       },
       {
         "condition": "query.block_state('minecraft:block_face') == 'west'",
         "components": {
           "minecraft:geometry": "geometry.parched_wall",
-          "minecraft:transformation": { "rotation": [0, 90, 0] },
-          "minecraft:collision_box": { "origin": [0, 4, -4], "size": [8, 8, 8] },
-          "minecraft:selection_box": { "origin": [0, 4, -4], "size": [8, 8, 8] }
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              0,
+              4,
+              -4
+            ],
+            "size": [
+              8,
+              8,
+              8
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              0,
+              4,
+              -4
+            ],
+            "size": [
+              8,
+              8,
+              8
+            ]
+          }
         }
       },
       {
         "condition": "query.block_state('minecraft:block_face') == 'down'",
         "components": {
           "minecraft:geometry": "geometry.parched_roof",
-          "minecraft:collision_box": { "origin": [-4, 8, -4], "size": [8, 8, 8] },
-          "minecraft:selection_box": { "origin": [-4, 8, -4], "size": [8, 8, 8] }
+          "minecraft:collision_box": {
+            "origin": [
+              -4,
+              8,
+              -4
+            ],
+            "size": [
+              8,
+              8,
+              8
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -4,
+              8,
+              -4
+            ],
+            "size": [
+              8,
+              8,
+              8
+            ]
+          }
         }
       },
       {
         "condition": "query.block_state('minecraft:block_face') == 'down' && query.block_state('minecraft:cardinal_direction') == 'north'",
-        "components": { "minecraft:transformation": { "rotation": [0, 180, 0] } }
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          }
+        }
       },
       {
         "condition": "query.block_state('minecraft:block_face') == 'down' && query.block_state('minecraft:cardinal_direction') == 'east'",
-        "components": { "minecraft:transformation": { "rotation": [0, 90, 0] } }
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          }
+        }
       },
       {
         "condition": "query.block_state('minecraft:block_face') == 'down' && query.block_state('minecraft:cardinal_direction') == 'west'",
-        "components": { "minecraft:transformation": { "rotation": [0, 270, 0] } }
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          }
+        }
       },
       {
         "condition": "query.block_state('minecraft:block_face') == 'up' && query.block_state('minecraft:cardinal_direction') == 'north'",
-        "components": { "minecraft:transformation": { "rotation": [0, 180, 0] } }
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          }
+        }
       },
       {
         "condition": "query.block_state('minecraft:block_face') == 'up' && query.block_state('minecraft:cardinal_direction') == 'east'",
-        "components": { "minecraft:transformation": { "rotation": [0, 90, 0] } }
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          }
+        }
       },
       {
         "condition": "query.block_state('minecraft:block_face') == 'up' && query.block_state('minecraft:cardinal_direction') == 'west'",
-        "components": { "minecraft:transformation": { "rotation": [0, 270, 0] } }
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          }
+        }
       }
     ]
   }

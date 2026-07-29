@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.90",
+  "format_version": "1.26.30",
   "minecraft:item": {
     "description": {
       "identifier": "zombie:sulfur_cube_mask",
@@ -9,11 +9,13 @@
       }
     },
     "components": {
-			"minecraft:fuel": {
-				"duration": 5.0
-			},
+      "minecraft:fuel": {
+        "duration": 5
+      },
       "minecraft:should_despawn": true,
-      "minecraft:display_name": { "value": "Sulfur Cube Mask" },
+      "minecraft:display_name": {
+        "value": "Sulfur Cube Mask"
+      },
       "minecraft:wearable": {
         "slot": "slot.armor.head",
         "hides_player_location": true
@@ -23,7 +25,9 @@
         "value": 5
       },
       "minecraft:icon": "sulfur_cube_item",
-      "minecraft:block_placer": { "block": "zombie:sulfur_cube_block" },
+      "minecraft:block_placer": {
+        "block": "zombie:sulfur_cube_block"
+      },
       "minecraft:skull": {}
     }
   }

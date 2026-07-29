@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.90",
+  "format_version": "1.26.30",
   "minecraft:block": {
     "description": {
       "identifier": "zombie:sulfur_cube_block",
@@ -9,10 +9,14 @@
       },
       "traits": {
         "minecraft:placement_direction": {
-          "enabled_states": ["minecraft:cardinal_direction"]
+          "enabled_states": [
+            "minecraft:cardinal_direction"
+          ]
         },
         "minecraft:placement_position": {
-          "enabled_states": ["minecraft:block_face"]
+          "enabled_states": [
+            "minecraft:block_face"
+          ]
         }
       }
     },
@@ -26,56 +30,136 @@
         }
       },
       "minecraft:map_color": "#c9ae79",
-      "minecraft:destructible_by_mining": { "seconds_to_destroy": 1 },
-      "minecraft:destructible_by_explosion": { "explosion_resistance": 13 },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 13
+      },
       "minecraft:display_name": "Sulfur Cube Head",
       "minecraft:geometry": "geometry.sulfur_cube_floor",
-      "minecraft:collision_box": { "origin": [-8, 0, -8], "size": [16, 16, 16] },
-      "minecraft:selection_box": { "origin": [-8, 0, -8], "size": [16, 16, 16] },
+      "minecraft:collision_box": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      },
+      "minecraft:selection_box": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      },
       "minecraft:loot": "loot_tables/blocks/sulfur_cube_block.json"
     },
     "permutations": [
       {
         "condition": "query.block_state('minecraft:block_face') == 'north'",
         "components": {
-          "minecraft:transformation": { "rotation": [90, 0, 0] }
+          "minecraft:transformation": {
+            "rotation": [
+              90,
+              0,
+              0
+            ]
+          }
         }
       },
       {
         "condition": "query.block_state('minecraft:block_face') == 'south'",
         "components": {
-          "minecraft:transformation": { "rotation": [-90, 0, 0] }
+          "minecraft:transformation": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ]
+          }
         }
       },
       {
         "condition": "query.block_state('minecraft:block_face') == 'east'",
         "components": {
-          "minecraft:transformation": { "rotation": [0, 0, -90] }
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              -90
+            ]
+          }
         }
       },
       {
         "condition": "query.block_state('minecraft:block_face') == 'west'",
         "components": {
-          "minecraft:transformation": { "rotation": [0, 0, 90] }
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              90
+            ]
+          }
         }
       },
       {
         "condition": "query.block_state('minecraft:block_face') == 'down'",
         "components": {
-          "minecraft:transformation": { "rotation": [180, 0, 0] }
+          "minecraft:transformation": {
+            "rotation": [
+              180,
+              0,
+              0
+            ]
+          }
         }
       },
       {
         "condition": "query.block_state('minecraft:block_face') == 'up' && query.block_state('minecraft:cardinal_direction') == 'north'",
-        "components": { "minecraft:transformation": { "rotation": [0, 180, 0] } }
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          }
+        }
       },
       {
         "condition": "query.block_state('minecraft:block_face') == 'up' && query.block_state('minecraft:cardinal_direction') == 'east'",
-        "components": { "minecraft:transformation": { "rotation": [0, 90, 0] } }
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          }
+        }
       },
       {
         "condition": "query.block_state('minecraft:block_face') == 'up' && query.block_state('minecraft:cardinal_direction') == 'west'",
-        "components": { "minecraft:transformation": { "rotation": [0, 270, 0] } }
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          }
+        }
       }
     ]
   }

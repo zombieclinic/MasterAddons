@@ -2,17 +2,17 @@
 	"format_version": 2,
 	"header": {
 		"name": "zc_mobheads_rp",
-		"description": "7.27.26",
+		"description": "7.29.26",
 		"uuid": "5f36a6db-0329-4c01-a093-4cd07dff3941",
 		"version": [
 			1,
 			0,
-			4
+			7
 		],
 		"min_engine_version": [
 			1,
-			21,
-			111
+			26,
+			30
 		]
 	},
 	"modules": [
@@ -22,7 +22,7 @@
 			"version": [
 				1,
 				0,
-				4
+				7
 			]
 		}
 	]

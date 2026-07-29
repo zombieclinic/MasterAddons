@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "zombie:skeleton_horse_mask_shiny",
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "armor_enchanted"
+      },
+      "textures": {
+        "enchanted": "textures/misc/enchanted_item_glint",
+        "default": "textures/entity/horse2/horse_skeleton"
+      },
+      "geometry": {
+        "default": "geometry.horse_mask"
+      },
+      "render_controllers": [
+        "controller.render.armor"
+      ]
+    }
+  }
+}

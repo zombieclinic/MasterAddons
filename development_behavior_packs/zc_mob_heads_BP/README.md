@@ -31,6 +31,25 @@ suffocated Strider head, are also editable at the bottom of:
 
 `scripts/config/mobHeadDropConfig.js`
 
+## Shiny heads
+
+Every successful normal or named Easter-egg head drop has an independent
+1-in-4,096 chance to become a true shiny variant. Every normal head has a
+dedicated Shiny item, Shiny placed block, Shiny block loot table, and Shiny
+wearable definition. They reuse the normal texture/model with permanent
+`minecraft:glint`, and remain Shiny after being placed and broken. Looting
+does not increase shiny odds.
+
+Shiny rarity and glint behavior are kept separately in:
+
+`scripts/config/shinyHeadVariants.js`
+
+The generated definitions live in the `items/shiny`, `blocks/shiny`,
+`loot_tables/blocks/shiny`, and resource-pack `attachables/shiny` folders.
+Regenerate all variants after adding a normal head with:
+
+`node tools/generateShinyHeadVariants.mjs`
+
 ## Placed heads
 
 Placed heads intentionally retain small loot tables under

@@ -2,22 +2,22 @@
   "format_version": 2,
   "header": {
     "name": "zc_mobheads_bp",
-    "description": "7.27.26",
+    "description": "7.29.26",
     "uuid": "0599083c-ec93-420f-91ce-b30201bd7209",
-    "version": [1, 0, 4],
-    "min_engine_version": [1, 21, 111]
+    "version": [1, 0, 7],
+    "min_engine_version": [1, 26, 30]
   },
 
   "modules": [
     {
       "type": "data",
       "uuid": "debc9408-75ab-4b44-afbd-ad1009e88fb5",
-      "version": [1, 0, 4]
+      "version": [1, 0, 7]
     },
     {
       "type": "script",
       "uuid": "c7c1bb3b-387c-46f2-b73f-50388b04263a",
-      "version": [1, 0, 4],
+      "version": [1, 0, 7],
       "entry": "scripts/index.js"
     }
   ],
@@ -27,7 +27,7 @@
   "dependencies": [
     {
       "uuid": "5f36a6db-0329-4c01-a093-4cd07dff3941",
-      "version": [1, 0, 4]
+      "version": [1, 0, 7]
     },
     {
       "module_name": "@minecraft/server",

@@ -108,7 +108,7 @@ class MobHeadBook {
 function showMobHeadBookForm(player) {
   const MobHeadBookForm = new ActionFormData()
     .title("§6The Mob Heads Guidebook")
-    .body("§8━━━━━━━━━━━━━━━━━━━━━━\n§6§lMOB HEADS COLLECTION§r\n§8━━━━━━━━━━━━━━━━━━━━━━\n\n§7Land the credited killing blow for a chance to collect a mob's head. Looting adds the listed bonus once per enchantment level.\n\n§dVariants match the mob you defeat, including sheep colors, villager outfits, fox coats, and wolf coats/states.\n\n§5Shulker colors are crafted from the undyed mask.\n\n§aChoose a category:")
+    .body("§8━━━━━━━━━━━━━━━━━━━━━━\n§6§lMOB HEADS COLLECTION§r\n§8━━━━━━━━━━━━━━━━━━━━━━\n\n§7Land the credited killing blow for a chance to collect a mob's head. Looting adds the listed bonus once per enchantment level.\n\n§dVariants match the mob you defeat, including sheep colors, villager outfits, fox coats, and wolf coats/states.\n\n§d§lSHINY HEADS§r\n§7Every successful head drop has a §f1 in 4,096§7 chance to become a named Shiny variant with an enchanted glint. Looting does not improve these odds.\n\n§5Shulker colors are crafted from the undyed mask.\n\n§aChoose a category:")
     .button("§lBasic Mobs", "textures/mobheads/items/allay")
     .button("§lUndead Mobs", "textures/mobheads/items/husk")
     .button("§lNether Mobs", "textures/mobheads/items/blaze")

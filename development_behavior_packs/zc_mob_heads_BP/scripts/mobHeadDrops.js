@@ -1,12 +1,15 @@
 import {
   EquipmentSlot,
-  ItemStack,
   world
 } from "@minecraft/server";
 import {
   MOB_HEAD_DROP_CONFIG,
   SPECIAL_HEAD_VARIANT_CHANCES
 } from "./config/mobHeadDropConfig.js";
+import {
+  addShinyCollectorLore,
+  createHeadDropStack
+} from "./config/shinyHeadVariants.js";
 
 const AXOLOTL_HEADS = [
   "zombie:axolotl_lucy_mask",
@@ -372,7 +375,7 @@ world.afterEvents.entityDie.subscribe((event) => {
 
   if (easterEggItem && Math.random() < easterEggChance) {
     try {
-      const itemStack = new ItemStack(easterEggItem, 1);
+      const itemStack = createHeadDropStack(easterEggItem);
       if (easterEggItem === "zombie:buzzingsniper38_mask") {
         itemStack.setLore([
           "§7Stole ZombieClinic's boat",
@@ -429,6 +432,10 @@ world.afterEvents.entityDie.subscribe((event) => {
         itemStack.setLore([
           "§7For sizzle my nizzzle"
         ]);
+      } else if (easterEggItem === "zombie:trickle_mask") {
+        itemStack.setLore([
+          "§7the aliens are coming! the aliens are coming!"
+        ]);
       } else if (easterEggItem === "zombie:oldguy_mask") {
         itemStack.setLore([
           "§7cows are delicious"
@@ -473,7 +480,16 @@ world.afterEvents.entityDie.subscribe((event) => {
         itemStack.setLore([
           "§7I have no clue"
         ]);
+      } else if (easterEggItem === "zombie:blue_mask") {
+        itemStack.setLore([
+          "§7The myth the legend the one who banned zombieclinic"
+        ]);
+      } else if (easterEggItem === "zombie:bedrock_city_mask") {
+        itemStack.setLore([
+          "§7im not berry"
+        ]);
       }
+      addShinyCollectorLore(itemStack);
       deadEntity.dimension.spawnItem(itemStack, deadEntity.location);
     } catch (error) {
       console.warn(`[Mob Heads] Could not drop named Easter egg ${easterEggItem}: ${error}`);
@@ -491,7 +507,9 @@ world.afterEvents.entityDie.subscribe((event) => {
   if (!itemId) return;
 
   try {
-    deadEntity.dimension.spawnItem(new ItemStack(itemId, 1), deadEntity.location);
+    const itemStack = createHeadDropStack(itemId);
+    addShinyCollectorLore(itemStack);
+    deadEntity.dimension.spawnItem(itemStack, deadEntity.location);
   } catch (error) {
     console.warn(`[Mob Heads] Could not drop ${itemId} for ${deadEntity.typeId}: ${error}`);
   }

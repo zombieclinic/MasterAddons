@@ -1,0 +1,35 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:sheep_green_mask_shiny",
+      "menu_category": {
+        "group": "minecraft:itemGroup.name.skull",
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:fuel": {
+        "duration": 5
+      },
+      "minecraft:should_despawn": true,
+      "minecraft:display_name": {
+        "value": "§dShiny Sheep Green Mask"
+      },
+      "minecraft:wearable": {
+        "slot": "slot.armor.head",
+        "hides_player_location": true
+      },
+      "minecraft:enchantable": {
+        "slot": "armor_head",
+        "value": 5
+      },
+      "minecraft:icon": "sheep_green_item",
+      "minecraft:block_placer": {
+        "block": "zombie:sheep_green_block_shiny"
+      },
+      "minecraft:skull": {},
+      "minecraft:glint": true
+    }
+  }
+}
