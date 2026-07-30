@@ -458,7 +458,8 @@ world.afterEvents.entityDie.subscribe((event) => {
         ]);
       } else if (easterEggItem === "zombie:spartanlex2_mask") {
         itemStack.setLore([
-          "§7Ladies man"
+          "§7Neither warrior nor king, but the scribe",
+          "§7whose creations shaped them both."
         ]);
       } else if (easterEggItem === "zombie:universal9gaming_mask") {
         itemStack.setLore([
@@ -487,6 +488,10 @@ world.afterEvents.entityDie.subscribe((event) => {
       } else if (easterEggItem === "zombie:bedrock_city_mask") {
         itemStack.setLore([
           "§7im not berry"
+        ]);
+      } else if (easterEggItem === "zombie:sloth_mask") {
+        itemStack.setLore([
+          "§7D4rk m4tter666 died by slime"
         ]);
       }
       addShinyCollectorLore(itemStack);

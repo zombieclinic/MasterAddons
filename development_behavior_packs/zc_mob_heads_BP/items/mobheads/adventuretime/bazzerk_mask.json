@@ -1,5 +1,5 @@
 {
-  "format_version": "1.26.30",
+  "format_version": "1.26.20",
   "minecraft:item": {
     "description": {
       "identifier": "zombie:bazzerk_mask",
@@ -27,8 +27,7 @@
       "minecraft:icon": "zc_eg_bazzerk_item",
       "minecraft:block_placer": {
         "block": "zombie:bazzerk_block"
-      },
-      "minecraft:skull": {}
+      }
     }
   }
 }

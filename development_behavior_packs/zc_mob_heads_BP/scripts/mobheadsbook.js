@@ -1,6 +1,10 @@
 import { system } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
 import { MOB_HEAD_DROP_CONFIG } from "./config/mobHeadDropConfig.js";
+import {
+  SHINY_HEAD_CHANCE,
+  SHINY_HEAD_ODDS_TEXT
+} from "./config/shinyHeadVariants.js";
 
 const MOB_TYPE_BY_NAME = Object.freeze({
   "Allay": "minecraft:allay",
@@ -108,7 +112,7 @@ class MobHeadBook {
 function showMobHeadBookForm(player) {
   const MobHeadBookForm = new ActionFormData()
     .title("§6The Mob Heads Guidebook")
-    .body("§8━━━━━━━━━━━━━━━━━━━━━━\n§6§lMOB HEADS COLLECTION§r\n§8━━━━━━━━━━━━━━━━━━━━━━\n\n§7Land the credited killing blow for a chance to collect a mob's head. Looting adds the listed bonus once per enchantment level.\n\n§dVariants match the mob you defeat, including sheep colors, villager outfits, fox coats, and wolf coats/states.\n\n§d§lSHINY HEADS§r\n§7Every successful head drop has a §f1 in 4,096§7 chance to become a named Shiny variant with an enchanted glint. Looting does not improve these odds.\n\n§5Shulker colors are crafted from the undyed mask.\n\n§aChoose a category:")
+    .body("§8━━━━━━━━━━━━━━━━━━━━━━\n§6§lMOB HEADS COLLECTION§r\n§8━━━━━━━━━━━━━━━━━━━━━━\n\n§7Land the credited killing blow for a chance to collect a mob's head. Looting adds the listed bonus once per enchantment level.\n\n§dVariants match the mob you defeat, including sheep colors, villager outfits, fox coats, and wolf coats/states.\n\n§d§lSHINY HEADS§r\n§7Extremely rare collector variants can replace a successful head drop. Open §dShiny Heads§7 below for the complete rules.\n\n§5Shulker colors are crafted from the undyed mask.\n\n§aChoose a category:")
     .button("§lBasic Mobs", "textures/mobheads/items/allay")
     .button("§lUndead Mobs", "textures/mobheads/items/husk")
     .button("§lNether Mobs", "textures/mobheads/items/blaze")
@@ -118,6 +122,7 @@ function showMobHeadBookForm(player) {
     .button("§lAnimals", "textures/mobheads/items/cow")
     .button("§lVillagers", "textures/mobheads/items/villager_v2_desert_armorer")
     .button("§lWolf Variants", "textures/mobheads/items/wolf_wild")
+    .button("§d§lShiny Heads", "textures/mobheads/items/enderman")
     .button("§lShulker Recipes", "textures/mobheads/items/shulker")
     .button("§d§lEaster Eggs", "textures/mobheads/items/adventuretime/zombieclinic")
     .button("§c§lExit");
@@ -134,9 +139,10 @@ function showMobHeadBookForm(player) {
       case 6: showAnimalMobs(player); break;
       case 7: showVillagerMenu(player); break;
       case 8: showWolfMenu(player); break;
-      case 9: showShulkerRecipes(player); break;
-      case 10: showEasterEggs(player); break;
-      case 11: return;
+      case 9: showShinyHeads(player); break;
+      case 10: showShulkerRecipes(player); break;
+      case 11: showEasterEggs(player); break;
+      case 12: return;
       default: break;
     }
   });
@@ -763,6 +769,36 @@ function showShulkerRecipes(player) {
       "§dAvailable colors\n§fWhite, Orange, Magenta, Light Blue, Yellow, Lime, Pink, Gray, " +
       "Light Gray, Cyan, Purple, Blue, Brown, Green, Red, and Black.\n\n" +
       "§bSecret variant\n§7Name a living shulker §fjeb§7. If its head-drop roll succeeds, it drops the rainbow mask."
+    )
+    .button("§c← Back");
+
+  form.show(player).then(response => {
+    if (!response.canceled && response.selection === 0) showMobHeadBookForm(player);
+  });
+}
+
+function showShinyHeads(player) {
+  const shinyPercent = `${Number((SHINY_HEAD_CHANCE * 100).toFixed(4))}%`;
+  const form = new ActionFormData()
+    .title("§d✦ Shiny Heads ✦")
+    .body(
+      "§8━━━━━━━━━━━━━━━━━━━━━━\n" +
+      "§d§lEXTREMELY RARE VARIANTS§r\n" +
+      "§8━━━━━━━━━━━━━━━━━━━━━━\n\n" +
+      "§e§lHOW THE ROLL WORKS§r\n" +
+      "§71. Land the credited killing blow.\n" +
+      "§72. The mob's normal head-drop roll must succeed.\n" +
+      `§73. That successful head drop gets a separate §f${SHINY_HEAD_ODDS_TEXT}§7 Shiny roll.\n\n` +
+      `§dShiny conversion chance §8• §f${shinyPercent} of successful head drops\n\n` +
+      "§6§lLOOTING§r\n" +
+      "§7Looting improves the normal head-drop chance when a mob lists a Looting bonus. " +
+      "It does §cnot§7 change the separate 1-in-4,096 Shiny conversion rate.\n\n" +
+      "§b§lHOW TO RECOGNIZE ONE§r\n" +
+      "§7A Shiny has §dShiny§7 in its name, an enchanted glint, and special collector lore showing its rarity.\n\n" +
+      "§a§lTRUE COLLECTOR VARIANTS§r\n" +
+      "§7Each Shiny is its own item and placeable block. Placing and breaking it returns the same Shiny variant, so its collector form is preserved.\n\n" +
+      "§5Shiny heads are intentionally hidden from the Creative inventory and command suggestions. Hunt mobs to find them!\n\n" +
+      "§dEvery supported regular head and Easter egg head has a matching Shiny variant."
     )
     .button("§c← Back");
 

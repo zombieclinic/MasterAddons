@@ -1,5 +1,5 @@
 {
-  "format_version": "1.26.30",
+  "format_version": "1.26.20",
   "minecraft:item": {
     "description": {
       "identifier": "zombie:villager_v2_swamp_cleric_mask",

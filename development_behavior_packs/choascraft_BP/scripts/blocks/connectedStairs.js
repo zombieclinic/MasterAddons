@@ -1,4 +1,4 @@
-import { Block, system } from "@minecraft/server";
+import { Block, system, world } from "@minecraft/server";
 
 // Shark's Staircase Script 1.2
 // Gives custom stairs vanilla-style inner and outer corner placement.
@@ -12,8 +12,56 @@ const OPPOSITE_DIRECTIONS = {
     south: "north",
     west: "east",
 };
+const PLACEMENT_FACE_DIRECTIONS = {
+    North: "north",
+    East: "east",
+    South: "south",
+    West: "west",
+};
+const VANILLA_STAIR_DIRECTIONS = {
+    0: "east",
+    1: "west",
+    2: "south",
+    3: "north",
+};
+
+// Custom components only receive callbacks for custom blocks. These listeners
+// make adjacent custom stairs recalculate when a vanilla stair changes.
+world.afterEvents.playerPlaceBlock.subscribe(({ block }) => {
+    if (isVanillaStair(block)) {
+        scheduleRefresh(block.dimension, block.location);
+    }
+});
+
+world.afterEvents.playerBreakBlock.subscribe(({ block }) => {
+    scheduleRefresh(block.dimension, block.location);
+});
 
 export class ConnectedStairsComponent {
+    beforeOnPlayerPlace(event) {
+        const placementDirection = PLACEMENT_FACE_DIRECTIONS[event.face];
+        if (!placementDirection || !event.block || !event.permutationToPlace) {
+            return;
+        }
+
+        // When a stair is placed directly against a vertical stair face, make
+        // its back follow the clicked face. This allows both the full back of a
+        // straight stair and the exposed face of a corner stair to produce the
+        // expected continuation without requiring a precise player angle.
+        const supportingStair = getNeighbor(
+            event.block,
+            OPPOSITE_DIRECTIONS[placementDirection]
+        );
+        if (!isStairBlock(supportingStair)) return;
+
+        try {
+            event.permutationToPlace = event.permutationToPlace.withState(
+                "minecraft:cardinal_direction",
+                placementDirection
+            );
+        } catch {}
+    }
+
     onPlace({ block }) {
         try {
             block.setPermutation(
@@ -138,10 +186,23 @@ function getStairInfo(block) {
     if (!isStairBlock(block)) return undefined;
 
     try {
-        const facing = block.permutation.getState(
-            "minecraft:cardinal_direction"
-        );
-        const half = block.permutation.getState("minecraft:vertical_half");
+        let facing;
+        let half;
+
+        if (isVanillaStair(block)) {
+            // Vanilla Bedrock stairs use their legacy states instead of the
+            // placement-trait states used by our custom stairs.
+            const direction = block.permutation.getState("weirdo_direction");
+            const upsideDown = block.permutation.getState("upside_down_bit");
+
+            facing = VANILLA_STAIR_DIRECTIONS[direction];
+            half = upsideDown ? "top" : "bottom";
+        } else {
+            facing = block.permutation.getState(
+                "minecraft:cardinal_direction"
+            );
+            half = block.permutation.getState("minecraft:vertical_half");
+        }
 
         if (!CARDINAL_DIRECTIONS.includes(facing)) return undefined;
         if (half !== "top" && half !== "bottom") return undefined;
