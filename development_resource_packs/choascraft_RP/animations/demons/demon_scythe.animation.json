@@ -1,0 +1,882 @@
+{
+	"format_version": "1.26.20",
+	"animations": {
+		"animation.demon_scythe.fpp_idle": {
+			"loop": true,
+			"bones": {
+				"group": {
+					"rotation": [60.25661, 3.47712, -68.56651],
+					"position": [-3.13602, -25.35875, -3.67222]
+				}
+			}
+		},
+		"animation.scythe.fpp_groundattack": {
+			"animation_length": 0.4333,
+			"override_previous_animation": true,
+			"bones": {
+				"particle": {
+					"rotation": [0, 0, 180],
+					"position": [0, 1.1, 42]
+				},
+				"group": {
+					"rotation": {
+						"0.0": [60.25661, 3.47712, -68.56651],
+						"0.1": [25.2566, 3.4771, -68.5665],
+						"0.2": [137.7566, 3.4771, -68.5665],
+						"0.3": [137.7566, 3.4771, -68.5665],
+						"0.4333": [60.25661, 3.47712, -68.56651]
+					},
+					"position": {
+						"0.0": [-3.13602, -25.35875, -3.67222],
+						"0.1": [-18.47595, -20.71173, -8.16469],
+						"0.2": [6.49044, -28.50443, -7.30924],
+						"0.3": [6.49044, -28.50443, -7.30924],
+						"0.4333": [-3.13602, -25.35875, -3.67222]
+					}
+				}
+			},
+			"particle_effects": {
+				"0.0": [
+					{
+						"effect": "necromancer_scythe_shock_1",
+						"locator": "locator"
+					},
+					{
+						"effect": "necromancer_scythe_shock_2",
+						"locator": "locator"
+					},
+					{
+						"effect": "necromancer_scythe_shock_3",
+						"locator": "locator"
+					}
+				]
+			}
+		},
+"animation.scythe.tpp_groundattack2": {
+	"loop": "hold_on_last_frame",
+	"animation_length": 1,
+	"bones": {
+		"root": {
+			"rotation": {
+				"0.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.1": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:9.75",
+					"v.is_first_person?0:0"
+				],
+				"0.2": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.3": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:-11",
+					"v.is_first_person?0:0"
+				],
+				"0.4333": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:-11",
+					"v.is_first_person?0:0"
+				],
+				"0.6": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:-7.5",
+					"v.is_first_person?0:0"
+				],
+				"0.9": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:-0.62",
+					"v.is_first_person?0:0"
+				],
+				"1.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				]
+			},
+			"position": {
+				"0.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.1": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.2": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:-2.025",
+					"v.is_first_person?0:0"
+				],
+				"0.3": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:-3.77",
+					"v.is_first_person?0:0"
+				],
+				"0.4333": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:-2.97",
+					"v.is_first_person?0:0"
+				],
+				"0.6": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:-3.87",
+					"v.is_first_person?0:0"
+				],
+				"0.9": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:-0.32",
+					"v.is_first_person?0:0"
+				],
+				"1.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				]
+			}
+		},
+
+		"waist": {
+			"rotation": {
+				"0.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.1": [
+					"v.is_first_person?0:-14",
+					"v.is_first_person?0:8.5",
+					"v.is_first_person?0:-2"
+				],
+				"0.2": [
+					"v.is_first_person?0:22.25",
+					"v.is_first_person?0:3.75",
+					"v.is_first_person?0:5.5"
+				],
+				"0.3": [
+					"v.is_first_person?0:42.5",
+					"v.is_first_person?0:-6",
+					"v.is_first_person?0:-0.5"
+				],
+				"0.4333": [
+					"v.is_first_person?0:51",
+					"v.is_first_person?0:-7",
+					"v.is_first_person?0:-3"
+				],
+				"0.6": [
+					"v.is_first_person?0:45",
+					"v.is_first_person?0:-8.75",
+					"v.is_first_person?0:1.5"
+				],
+				"0.9": [
+					"v.is_first_person?0:3.75",
+					"v.is_first_person?0:-0.73",
+					"v.is_first_person?0:0.13"
+				],
+				"1.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				]
+			},
+			"position": {
+				"0.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.1": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.2": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.3": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.4333": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.6": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.9": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"1.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				]
+			}
+		},
+
+		"head": {
+			"rotation": {
+				"0.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.1": [
+					"v.is_first_person?0:10.5",
+					"v.is_first_person?0:-12.75",
+					"v.is_first_person?0:-2.5"
+				],
+				"0.2": [
+					"v.is_first_person?0:-9.5",
+					"v.is_first_person?0:-1.25",
+					"v.is_first_person?0:0.5"
+				],
+				"0.3": [
+					"v.is_first_person?0:-9.5",
+					"v.is_first_person?0:6.75",
+					"v.is_first_person?0:0.5"
+				],
+				"0.4333": [
+					"v.is_first_person?0:-23",
+					"v.is_first_person?0:6.75",
+					"v.is_first_person?0:-2.25"
+				],
+				"0.6": [
+					"v.is_first_person?0:-16.5",
+					"v.is_first_person?0:2",
+					"v.is_first_person?0:-6.5"
+				],
+				"0.9": [
+					"v.is_first_person?0:-1.37",
+					"v.is_first_person?0:0.17",
+					"v.is_first_person?0:-0.54"
+				],
+				"1.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				]
+			}
+		},
+
+		"leftArm": {
+			"rotation": {
+				"0.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.1": [
+					"v.is_first_person?0:-107",
+					"v.is_first_person?0:-12.5",
+					"v.is_first_person?0:2.5"
+				],
+				"0.2": [
+					"v.is_first_person?0:-86.5",
+					"v.is_first_person?0:-12.5",
+					"v.is_first_person?0:2.5"
+				],
+				"0.3": [
+					"v.is_first_person?0:25",
+					"v.is_first_person?0:-12.5",
+					"v.is_first_person?0:-57"
+				],
+				"0.4333": [
+					"v.is_first_person?0:25",
+					"v.is_first_person?0:-12.5",
+					"v.is_first_person?0:-57"
+				],
+				"0.6": [
+					"v.is_first_person?0:33.5",
+					"v.is_first_person?0:-13.25",
+					"v.is_first_person?0:-59"
+				],
+				"0.9": [
+					"v.is_first_person?0:2.79",
+					"v.is_first_person?0:-1.1",
+					"v.is_first_person?0:-4.92"
+				],
+				"1.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				]
+			},
+			"position": {
+				"0.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.1": [
+					"v.is_first_person?0:0.06586",
+					"v.is_first_person?0:-0.43344",
+					"v.is_first_person?0:-2.8279"
+				],
+				"0.2": [
+					"v.is_first_person?0:-0.26514",
+					"v.is_first_person?0:0.40338",
+					"v.is_first_person?0:-1.15574"
+				],
+				"0.3": [
+					"v.is_first_person?0:0.39128",
+					"v.is_first_person?0:-0.67949",
+					"v.is_first_person?0:1.29915"
+				],
+				"0.4333": [
+					"v.is_first_person?0:0.39128",
+					"v.is_first_person?0:-0.67949",
+					"v.is_first_person?0:1.29915"
+				],
+				"0.6": [
+					"v.is_first_person?0:0.39",
+					"v.is_first_person?0:-0.68",
+					"v.is_first_person?0:1.3"
+				],
+				"0.9": [
+					"v.is_first_person?0:0.03",
+					"v.is_first_person?0:-0.06",
+					"v.is_first_person?0:0.11"
+				],
+				"1.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				]
+			}
+		},
+
+		"rightArm": {
+			"rotation": {
+				"0.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.1": [
+					"v.is_first_person?0:-194.5",
+					"v.is_first_person?0:-19.75",
+					"v.is_first_person?0:5.5"
+				],
+				"0.2": [
+					"v.is_first_person?0:-204.5",
+					"v.is_first_person?0:-8.75",
+					"v.is_first_person?0:-0.5"
+				],
+				"0.2667": [
+					"v.is_first_person?0:-184.28152",
+					"v.is_first_person?0:3.28686",
+					"v.is_first_person?0:-0.81049"
+				],
+				"0.3": [
+					"v.is_first_person?0:-68",
+					"v.is_first_person?0:7.25",
+					"v.is_first_person?0:-5.75"
+				],
+				"0.4333": [
+					"v.is_first_person?0:-69.25",
+					"v.is_first_person?0:8.75",
+					"v.is_first_person?0:-5.75"
+				],
+				"0.6": [
+					"v.is_first_person?0:-66.75",
+					"v.is_first_person?0:5.75",
+					"v.is_first_person?0:-8.75"
+				],
+				"0.9": [
+					"v.is_first_person?0:-5.56",
+					"v.is_first_person?0:0.48",
+					"v.is_first_person?0:-0.73"
+				],
+				"1.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				]
+			},
+			"position": {
+				"0.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.1": [
+					"v.is_first_person?0:0.02063",
+					"v.is_first_person?0:3.32192",
+					"v.is_first_person?0:-0.42165"
+				],
+				"0.2": [
+					"v.is_first_person?0:-0.48348",
+					"v.is_first_person?0:3.09212",
+					"v.is_first_person?0:2.86399"
+				],
+				"0.3": [
+					"v.is_first_person?0:0.81737",
+					"v.is_first_person?0:1.0974",
+					"v.is_first_person?0:-0.83196"
+				],
+				"0.4333": [
+					"v.is_first_person?0:0.87269",
+					"v.is_first_person?0:1.83667",
+					"v.is_first_person?0:0.16224"
+				],
+				"0.6": [
+					"v.is_first_person?0:0.81166",
+					"v.is_first_person?0:1.6914",
+					"v.is_first_person?0:-0.31383"
+				],
+				"0.9": [
+					"v.is_first_person?0:0.07",
+					"v.is_first_person?0:0.14",
+					"v.is_first_person?0:-0.03"
+				],
+				"1.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				]
+			}
+		},
+
+		"rightItem": {
+			"rotation": {
+				"0.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.1": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.2": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.3": [
+					"v.is_first_person?0:28.5",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.4333": [
+					"v.is_first_person?0:20.25",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.6": [
+					"v.is_first_person?0:22.25",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.9": [
+					"v.is_first_person?0:1.85",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"1.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				]
+			},
+			"position": {
+				"0.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.1": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.2": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.3": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.4333": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.6": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.9": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"1.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				]
+			}
+		},
+
+		"Weapon": {
+			"rotation": {
+				"0.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.1": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.2": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.3": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.4333": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.6": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.9": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"1.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				]
+			}
+		},
+
+		"bone": {
+			"rotation": {
+				"0.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.1": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.2": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.3": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.4333": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.6": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.9": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"1.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				]
+			},
+			"position": {
+				"0.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.1": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.2": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.3": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.4333": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.6": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.9": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"1.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				]
+			}
+		},
+
+		"rightLeg": {
+			"rotation": {
+				"0.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.1": [
+					"v.is_first_person?0:7.25",
+					"v.is_first_person?0:9.75",
+					"v.is_first_person?0:5.25"
+				],
+				"0.2": [
+					"v.is_first_person?0:25.5",
+					"v.is_first_person?0:0.5",
+					"v.is_first_person?0:7.75"
+				],
+				"0.3": [
+					"v.is_first_person?0:48.5",
+					"v.is_first_person?0:0.5",
+					"v.is_first_person?0:7.75"
+				],
+				"0.4333": [
+					"v.is_first_person?0:44.25",
+					"v.is_first_person?0:0.5",
+					"v.is_first_person?0:7.75"
+				],
+				"0.6": [
+					"v.is_first_person?0:45.25",
+					"v.is_first_person?0:0.5",
+					"v.is_first_person?0:7.75"
+				],
+				"0.9": [
+					"v.is_first_person?0:3.77",
+					"v.is_first_person?0:0.04",
+					"v.is_first_person?0:0.65"
+				],
+				"1.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				]
+			},
+			"position": {
+				"0.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.1": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.2": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.3": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.4333": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.6": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.9": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"1.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				]
+			}
+		},
+
+		"leftLeg": {
+			"rotation": {
+				"0.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.1": [
+					"v.is_first_person?0:-37.75",
+					"v.is_first_person?0:-3",
+					"v.is_first_person?0:-7.25"
+				],
+				"0.2": [
+					"v.is_first_person?0:-37.75",
+					"v.is_first_person?0:-7.25",
+					"v.is_first_person?0:-7.25"
+				],
+				"0.3": [
+					"v.is_first_person?0:-37.75",
+					"v.is_first_person?0:-7.25",
+					"v.is_first_person?0:-7.25"
+				],
+				"0.4333": [
+					"v.is_first_person?0:-34.25",
+					"v.is_first_person?0:-7.25",
+					"v.is_first_person?0:-7.25"
+				],
+				"0.6": [
+					"v.is_first_person?0:-37.5",
+					"v.is_first_person?0:-11.25",
+					"v.is_first_person?0:-8"
+				],
+				"0.9": [
+					"v.is_first_person?0:-3.12",
+					"v.is_first_person?0:-0.94",
+					"v.is_first_person?0:-0.67"
+				],
+				"1.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				]
+			},
+			"position": {
+				"0.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				],
+				"0.1": [
+					"v.is_first_person?0:-0.02173",
+					"v.is_first_person?0:0.36753",
+					"v.is_first_person?0:-0.47376"
+				],
+				"0.2": [
+					"v.is_first_person?0:0.05894",
+					"v.is_first_person?0:-0.09819",
+					"v.is_first_person?0:-0.83683"
+				],
+				"0.3": [
+					"v.is_first_person?0:0.06",
+					"v.is_first_person?0:-0.1",
+					"v.is_first_person?0:-0.84"
+				],
+				"0.4333": [
+					"v.is_first_person?0:0.06",
+					"v.is_first_person?0:-0.1",
+					"v.is_first_person?0:-0.84"
+				],
+				"0.6": [
+					"v.is_first_person?0:-0.18859",
+					"v.is_first_person?0:0.51563",
+					"v.is_first_person?0:-0.23238"
+				],
+				"0.9": [
+					"v.is_first_person?0:-0.02",
+					"v.is_first_person?0:0.04",
+					"v.is_first_person?0:-0.02"
+				],
+				"1.0": [
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0",
+					"v.is_first_person?0:0"
+				]
+			}
+		},
+
+		"particle": {
+			"rotation": [
+				"v.is_first_person?0:0",
+				"v.is_first_person?0:0",
+				"v.is_first_person?0:180"
+			],
+			"position": [
+				"v.is_first_person?0:0",
+				"v.is_first_person?0:1.1",
+				"v.is_first_person?0:42"
+			]
+		}
+	},
+
+	"particle_effects": {
+		"0.2667": [
+			{
+				"effect": "necromancer_scythe_shock_1",
+				"locator": "locator"
+			},
+			{
+				"effect": "necromancer_scythe_shock_2",
+				"locator": "locator"
+			},
+			{
+				"effect": "necromancer_scythe_shock_3",
+				"locator": "locator"
+			}
+		]
+	}
+}
+	}
+}

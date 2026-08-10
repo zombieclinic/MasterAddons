@@ -1,0 +1,1064 @@
+{
+	"resource_pack_name": "zombiecraft re",
+	"texture_name": "atlas.terrain",
+		"padding": 4,
+	"num_mip_levels": 2,
+	"texture_data": {
+		"zombie_allay_mask_block": {
+			"textures": "textures/mobheads/heads/allay"
+		},
+		"zombie_axolotl_blue_mask_block": {
+			"textures": "textures/mobheads/heads/axolotl_blue"
+		},
+		"zombie_axolotl_cyan_block": {
+			"textures": "textures/mobheads/heads/axolotl_cyan"
+		},
+		"zombie_axolotl_gold_block": {
+			"textures": "textures/mobheads/heads/axolotl_gold"
+		},
+		"zombie_axolotl_lucy_block": {
+			"textures": "textures/mobheads/heads/axolotl_lucy"
+		},
+		"zombie_axolotl_wild_block": {
+			"textures": "textures/mobheads/heads/axolotl_wild"
+		},
+		"zombie_bat_block": {
+			"textures": "textures/mobheads/heads/bat"
+		},
+		"zombie_bee_block": {
+			"textures": "textures/mobheads/heads/bee"
+		},
+		"zombie_bee_angry": {
+			"textures": "textures/mobheads/heads/bee_angry"
+		},
+		"zombie_blaze_block": {
+			"textures": "textures/mobheads/heads/blaze"
+		},
+		"zombie_camel_block": {
+			"textures": "textures/entity/llama/llama_creamy"
+		},
+		"zombie_blackcat_block": {
+			"textures": "textures/mobheads/heads/blackcat"
+		},
+		"zombie_catbritish_block": {
+			"textures": "textures/mobheads/heads/catbritish"
+		},
+		"zombie_cat_calico_block": {
+			"textures": "textures/mobheads/heads/cat_calico"
+		},
+		"zombie_cat_jellie_block": {
+			"textures": "textures/mobheads/heads/cat_jellie"
+		},
+		"zombie_cat_persian_block": {
+			"textures": "textures/mobheads/heads/cat_persian"
+		},
+		"zombie_cat_ragdoll_block": {
+			"textures": "textures/mobheads/heads/cat_ragdoll"
+		},
+		"zombie_cat_siamese_block": {
+			"textures": "textures/mobheads/heads/cat_siamese"
+		},
+		"zombie_cat_tabby_block": {
+			"textures": "textures/mobheads/heads/cat_tabby"
+		},
+		"zombie_cat_tuxedo_block": {
+			"textures": "textures/mobheads/heads/cat_tux"
+		},
+		"zombie_cat_white_block": {
+			"textures": "textures/mobheads/heads/cat_white"
+		},
+		"zombie_red_tabby_block": {
+			"textures": "textures/mobheads/heads/cat_redtabby"
+		},
+		"zombie_cave_spider_block": {
+			"textures": "textures/mobheads/heads/cave_spider"
+		},
+		"zombie_chicken_block": {
+			"textures": "textures/mobheads/heads/chicken"
+		},
+		"zombie_chicken_cold_block": {
+			"textures": "textures/mobheads/heads/chicken_cold"
+		},
+		"zombie_chicken_warm_block": {
+			"textures": "textures/mobheads/heads/chicken_warm"
+		},
+		"zombie_cod_block": {
+			"textures": "textures/entity/fish/cod"
+		},
+		"zombie_cow_block": {
+			"textures": "textures/mobheads/heads/cow_v2"
+		},
+		"zombie_cow_cold_block": {
+			"textures": "textures/mobheads/heads/cow_cold"
+		},
+		"zombie_cow_warm_block": {
+			"textures": "textures/mobheads/heads/cow_warm"
+		},
+		"zombie_dolphin_block": {
+			"textures": "textures/entity/dolphin"
+		},
+		"zombie_donkey_block": {
+			"textures": "textures/mobheads/heads/donkey"
+		},
+		"zombie_drowned_block": {
+			"textures": "textures/mobheads/heads/drowned"
+		},
+		"zombie_elderguardian_block": {
+			"textures": "textures/entity/guardian_elder"
+		},
+		"zombie_enderman_block": {
+			"textures": "textures/mobheads/heads/enderman"
+		},
+		"zombie_endermite_block": {
+			"textures": "textures/entity/endermite"
+		},
+		"zombie_illager_block": {
+			"textures": "textures/entity/illager/evoker"
+		},
+		"zombie_fox_block": {
+			"textures": "textures/entity/fox/fox"
+		},
+		"zombie_fox_arctic_block": {
+			"textures": "textures/entity/fox/arctic_fox"
+		},
+		"zombie_temperate_frog_block": {
+			"textures": "textures/entity/frog/temperate_frog"
+		},
+		"zombie_coldfrog_block": {
+			"textures": "textures/entity/frog/cold_frog"
+		},
+		"zombie_warm_frog_block": {
+			"textures": "textures/entity/frog/warm_frog"
+		},
+		"zombie_ghast_block": {
+			"textures": "textures/entity/ghast/ghast"
+		},
+		"zombie_glow_squid_block": {
+			"textures": "textures/mobheads/heads/glow_squid"
+		},
+		"zombie_goat_block": {
+			"textures": "textures/entity/goat/goat"
+		},
+		"zombie_goat_screamer_block": {
+			"textures": "textures/mobheads/heads/goat_screamer"
+		},
+		"zombie_guardian_block": {
+			"textures": "textures/entity/guardian"
+		},
+		"zombie_hog_block": {
+			"textures": "textures/mobheads/heads/hoglin"
+		},
+		"zombie_horse_block": {
+			"textures": "textures/entity/horse2/horse_brown"
+		},
+		"zombie_blackhorse_block": {
+			"textures": "textures/entity/horse2/horse_black"
+		},
+		"zombie_chestnuthorse_mask": {
+			"textures": "textures/entity/horse2/horse_chestnut"
+		},
+		"zombie_creamynuthorse_block": {
+			"textures": "textures/entity/horse2/horse_creamy"
+		},
+		"zombie_darkbrownhorse_block": {
+			"textures": "textures/entity/horse2/horse_darkbrown"
+		},
+		"zombie_grayhorse_block": {
+			"textures": "textures/entity/horse2/horse_gray"
+		},
+		"zombie_whitehorse_block": {
+			"textures": "textures/entity/horse2/horse_white"
+		},
+		"zombie_husk_block": {
+			"textures": "textures/entity/zombie/husk"
+		},
+		"zombie_iron_golem_block": {
+			"textures": "textures/entity/iron_golem"
+		},
+		"zombie_copper_golem_block": {
+			"textures": "textures/entity/copper_golem/copper_golem"
+		},
+		"zombie_copper_golem_exposed_block": {
+			"textures": "textures/entity/copper_golem/copper_golem_exposed"
+		},
+		"zombie_copper_golem_weathered_block": {
+			"textures": "textures/entity/copper_golem/copper_golem_weathered"
+		},
+		"zombie_copper_golem_oxidized_block": {
+			"textures": "textures/entity/copper_golem/copper_golem_oxidized"
+		},
+		"zombie_nautilus_block": {
+			"textures": "textures/mobheads/heads/nautilus"
+		},
+		"zombie_zombie_nautilus_block": {
+			"textures": "textures/mobheads/heads/nautilus_zombie"
+		},
+		"zombie_zombie_nautilus_coral_block": {
+			"textures": "textures/mobheads/heads/nautilus_coral"
+		},
+		"zombie_parched_block": {
+			"textures": "textures/entity/parched/parched"
+		},
+		"zombie_sulfur_cube_block": {
+			"textures": "textures/mobheads/heads/sulfur_cube_block"
+		},
+		"zombie_camel_block1": {
+			"textures": "textures/entity/camel/camel"
+		},
+		"zombie_camel_husk_block": {
+			"textures": "textures/entity/camel_husk/camel_husk"
+		},
+		"zombie_lama_brown_block": {
+			"textures": "textures/entity/llama/llama_brown"
+		},
+		"zombie_lama_gray_block": {
+			"textures": "textures/entity/llama/llama_gray"
+		},
+		"zombie_lama_white_block": {
+			"textures": "textures/entity/llama/llama_white"
+		},
+		"zombie_magma_cube_block": {
+			"textures": "textures/entity/slime/magmacube"
+		},
+		"zombie_brown_mooshroom_block": {
+			"textures": "textures/mobheads/heads/brown_mooshroom_v2"
+		},
+		"zombie_mooshroom_block": {
+			"textures": "textures/mobheads/heads/mooshroom_v2"
+		},
+		"zombie_mule_block": {
+			"textures": "textures/entity/horse2/mule"
+		},
+		"zombie_ocelot_block": {
+			"textures": "textures/mobheads/heads/ocelot"
+		},
+		"zombie_panda_block": {
+			"textures": "textures/entity/panda/panda"
+		},
+		"zombie_panda_lazy_block": {
+			"textures": "textures/entity/panda/panda_lazy"
+		},
+		"zombie_panda_worried_block": {
+			"textures": "textures/entity/panda/panda_worried"
+		},
+		"zombie_panda_playful_block": {
+			"textures": "textures/entity/panda/panda_playful"
+		},
+		"zombie_panda_brown_block": {
+			"textures": "textures/entity/panda/panda_brown"
+		},
+		"zombie_panda_weak_block": {
+			"textures": "textures/entity/panda/panda_sneezy"
+		},
+		"zombie_panda_aggressive_block": {
+			"textures": "textures/entity/panda/panda_aggressive"
+		},
+		"zombie_parrot_blue_block": {
+			"textures": "textures/entity/parrot/parrot_blue"
+		},
+		"zombie_parrot_green_block": {
+			"textures": "textures/entity/parrot/parrot_green"
+		},
+		"zombie_parrot_red_blue_block": {
+			"textures": "textures/entity/parrot/parrot_red_blue"
+		},
+		"zombie_parrot_yellow_blue_block": {
+			"textures": "textures/entity/parrot/parrot_yellow_blue"
+		},
+		"zombie_parrot_gray_block": {
+			"textures": "textures/entity/parrot/parrot_grey"
+		},
+		"zombie_phantom_block": {
+			"textures": "textures/entity/phantom"
+		},
+		"zombie_pig_block": {
+			"textures": "textures/mobheads/heads/pig_v3"
+		},
+		"zombie_pig_cold_block": {
+			"textures": "textures/mobheads/heads/pig_cold"
+		},
+		"zombie_pig_warm_block": {
+			"textures": "textures/mobheads/heads/pig_warm"
+		},
+		"zombie_piglin_block": {
+			"textures": "textures/entity/piglin/piglin"
+		},
+		"zombie_piglin_brute_block": {
+			"textures": "textures/entity/piglin/piglin_brute"
+		},
+		"zombie_pillager_block": {
+			"textures": "textures/entity/pillager"
+		},
+		"zombie_polar_bear_block": {
+			"textures": "textures/entity/polarbear"
+		},
+		"zombie_pufferfish_block": {
+			"textures": "textures/entity/fish/pufferfish"
+		},
+		"zombie_rabbit_brown_block": {
+			"textures": "textures/mobheads/heads/rabbit_brown"
+		},
+		"zombie_rabbit_white_block": {
+			"textures": "textures/mobheads/heads/rabbit_white"
+		},
+		"zombie_rabbit_black_block": {
+			"textures": "textures/mobheads/heads/rabbit_black-1"
+		},
+		"zombie_rabbit_white_splotched": {
+			"textures": "textures/mobheads/heads/rabbit_splotched"
+		},
+		"zombie_rabbit_gold_block": {
+			"textures": "textures/mobheads/heads/rabbit_gold"
+		},
+		"zombie_rabbit_salt_block": {
+			"textures": "textures/mobheads/heads/rabbit_salt"
+		},
+		"zombie_rabbit_toast_block": {
+			"textures": "textures/mobheads/heads/rabbit_toast"
+		},
+		"zombie_ravager_block": {
+			"textures": "textures/entity/illager/ravager"
+		},
+		"zombie_salmon_block": {
+			"textures": "textures/entity/fish/salmon"
+		},
+		"zombie_sheep_white_block": {
+			"textures": "textures/mobheads/heads/sheep_white"
+		},
+		"zombie_sheep_black_block": {
+			"textures": "textures/mobheads/heads/sheep_black"
+		},
+		"zombie_sheep_blue_block": {
+			"textures": "textures/mobheads/heads/sheep_blue"
+		},
+		"zombie_sheep_brown_block": {
+			"textures": "textures/mobheads/heads/sheep_brown"
+		},
+		"zombie_sheep_cyan_block": {
+			"textures": "textures/mobheads/heads/sheep_cyan"
+		},
+		"zombie_sheep_gray_block": {
+			"textures": "textures/mobheads/heads/sheep_gray"
+		},
+		"zombie_sheep_green_block": {
+			"textures": "textures/mobheads/heads/sheep_green"
+		},
+		"zombie_sheep_light_blue_block": {
+			"textures": "textures/mobheads/heads/sheep_light_blue"
+		},
+		"zombie_sheep_light_gray_block": {
+			"textures": "textures/mobheads/heads/sheep_light_gray"
+		},
+		"zombie_sheep_lime_block": {
+			"textures": "textures/mobheads/heads/sheep_lime"
+		},
+		"zombie_sheep_magenta_block": {
+			"textures": "textures/mobheads/heads/sheep_magenta"
+		},
+		"zombie_sheep_orange_block": {
+			"textures": "textures/mobheads/heads/sheep_orange"
+		},
+		"zombie_sheep_pink_block": {
+			"textures": "textures/mobheads/heads/sheep_pink"
+		},
+		"zombie_sheep_purple_block": {
+			"textures": "textures/mobheads/heads/sheep_purple"
+		},
+		"zombie_sheep_red_block": {
+			"textures": "textures/mobheads/heads/sheep_red"
+		},
+		"zombie_sheep_yellow_block": {
+			"textures": "textures/mobheads/heads/sheep_yellow"
+		},
+		"zombie_shulker_block": {
+			"textures": "textures/entity/shulker/shulker_undyed"
+		},
+		"zombie_shulker_white_block": {
+			"textures": "textures/entity/shulker/shulker_white"
+		},
+		"zombie_shulker_orange_block": {
+			"textures": "textures/entity/shulker/shulker_orange"
+		},
+		"zombie_shulker_magenta_block": {
+			"textures": "textures/entity/shulker/shulker_magenta"
+		},
+		"zombie_shulker_light_blue_block": {
+			"textures": "textures/entity/shulker/shulker_light_blue"
+		},
+		"zombie_shulker_yellow_block": {
+			"textures": "textures/entity/shulker/shulker_yellow"
+		},
+		"zombie_shulker_lime_block": {
+			"textures": "textures/entity/shulker/shulker_lime"
+		},
+		"zombie_shulker_pink_block": {
+			"textures": "textures/entity/shulker/shulker_pink"
+		},
+		"zombie_shulker_gray_block": {
+			"textures": "textures/entity/shulker/shulker_gray"
+		},
+		"zombie_shulker_silver_block": {
+			"textures": "textures/entity/shulker/shulker_silver"
+		},
+		"zombie_shulker_cyan_block": {
+			"textures": "textures/entity/shulker/shulker_cyan"
+		},
+		"zombie_shulker_purple_block": {
+			"textures": "textures/entity/shulker/shulker_purple"
+		},
+		"zombie_shulker_blue_block": {
+			"textures": "textures/entity/shulker/shulker_blue"
+		},
+		"zombie_shulker_brown_block": {
+			"textures": "textures/entity/shulker/shulker_brown"
+		},
+		"zombie_shulker_green_block": {
+			"textures": "textures/entity/shulker/shulker_green"
+		},
+		"zombie_shulker_red_block": {
+			"textures": "textures/entity/shulker/shulker_red"
+		},
+		"zombie_shulker_black_block": {
+			"textures": "textures/entity/shulker/shulker_black"
+		},
+		"zombie_silverfish_bock": {
+			"textures": "textures/entity/silverfish"
+		},
+		"zombie_sheep_jeb_block": {
+			"textures": [
+				{
+					"path": "textures/mobheads/heads/sheep_jeb"
+				}
+			]
+		},
+		"zombie_skeleton_horse_mask": {
+			"textures": [
+				{
+					"path": "textures/entity/horse2/horse_skeleton"
+				}
+			]
+		},
+		"zombie_zombie_horse_mask": {
+			"textures": [
+				{
+					"path": "textures/entity/horse2/horse_zombie"
+				}
+			]
+		},
+		"zombie_stray_mask": {
+			"textures": "textures/mobheads/heads/stray"
+		},
+		"zombie_slime_block": {
+			"textures": "textures/entity/slime/slime"
+		},
+		"zombie_sniffer_block": {
+			"textures": "textures/entity/sniffer/sniffer"
+		},
+		"zombie_snowman_block": {
+			"textures": "textures/entity/snow_golem"
+		},
+		"zombie_spider_block": {
+			"textures": "textures/mobheads/heads/spider"
+		},
+		"zombie_squid_block": {
+			"textures": "textures/mobheads/heads/squid"
+		},
+		"zombie_strider_block": {
+			"textures": "textures/entity/strider/strider"
+		},
+		"zombie_strider_suffocated_block": {
+			"textures": "textures/entity/strider/strider_suffocated"
+		},
+		"zombie_tadpole_block": {
+			"textures": "textures/entity/tadpole/tadpole"
+		},
+		"zombie_tropical_fish_block": {
+			"textures": "textures/mobheads/heads/tropicalfish"
+		},
+		"zombie_turtle_block": {
+			"textures": "textures/mobheads/heads/turtle"
+		},
+		"zombie_vex_block": {
+			"textures": "textures/entity/vex/vex"
+		},
+		"zombie_vex_charging_block": {
+			"textures": "textures/entity/vex/vex_charging"
+		},
+		"zombie_villager_desert_armorer_block": {
+			"textures": "textures/mobheads/heads/villager_v2_desert_armorer"
+		},
+		"zombie_villager_desert_butcher_block": {
+			"textures": "textures/mobheads/heads/villager_v2_desert_butcher"
+		},
+		"zombie_villager_v2_desert_cartographer_block": {
+			"textures": "textures/mobheads/heads/villager_v2_desert_cartographer"
+		},
+		"zombie_villager_v2_desert_farmer_block": {
+			"textures": "textures/mobheads/heads/villager_v2_desert_farmer"
+		},
+		"zombie_villager_v2_desert_cleric_block": {
+			"textures": "textures/mobheads/heads/villager_v2_desert_cleric"
+		},
+		"zombie_villager_v2_desert_fisherman_block": {
+			"textures": "textures/mobheads/heads/villager_v2_desert_fisherman"
+		},
+		"zombie_villager_v2_desert_fletcher_block": {
+			"textures": "textures/mobheads/heads/villager_v2_desert_fletcher"
+		},
+		"zombie_villager_v2_desert_librarian_block": {
+			"textures": "textures/mobheads/heads/villager_v2_desert_librarian"
+		},
+		"zombie_villager_v2_desert_leatherworker_block": {
+			"textures": "textures/mobheads/heads/villager_v2_desert_leatherworker"
+		},
+		"zombie_villager_v2_desert_mason_block": {
+			"textures": "textures/mobheads/heads/villager_v2_desert_mason"
+		},
+		"zombie_villager_v2_desert_shepherd_block": {
+			"textures": "textures/mobheads/heads/villager_v2_desert_shepherd"
+		},
+		"zombie_villager_v2_desert_toolsmith_block": {
+			"textures": "textures/mobheads/heads/villager_v2_desert_toolsmith"
+		},
+		"zombie_villager_v2_desert_unskilled_block": {
+			"textures": "textures/mobheads/heads/villager_v2_desert_unskilled"
+		},
+		"zombie_villager_v2_desert_weaponsmith_block": {
+			"textures": "textures/mobheads/heads/villager_v2_desert_weaponsmith"
+		},
+		"zombie_villager_v2_jungle_armorer_block": {
+			"textures": "textures/mobheads/heads/villager_v2_jungle_armorer"
+		},
+		"zombie_villager_v2_jungle_butcher_block": {
+			"textures": "textures/mobheads/heads/villager_v2_jungle_butcher"
+		},
+		"zombie_villager_v2_jungle_cartographer_block": {
+			"textures": "textures/mobheads/heads/villager_v2_jungle_cartographer"
+		},
+		"zombie_villager_v2_jungle_cleric_block": {
+			"textures": "textures/mobheads/heads/villager_v2_jungle_cleric"
+		},
+		"zombie_villager_v2_jungle_farmer_block": {
+			"textures": "textures/mobheads/heads/villager_v2_jungle_farmer"
+		},
+		"zombie_villager_v2_jungle_fisherman_block": {
+			"textures": "textures/mobheads/heads/villager_v2_jungle_fisherman"
+		},
+		"zombie_villager_v2_jungle_fletcher_block": {
+			"textures": "textures/mobheads/heads/villager_v2_jungle_fletcher"
+		},
+		"zombie_villager_v2_jungle_leatherworker_block": {
+			"textures": "textures/mobheads/heads/villager_v2_jungle_leatherworker"
+		},
+		"zombie_villager_v2_jungle_librarian_block": {
+			"textures": "textures/mobheads/heads/villager_v2_jungle_librarian"
+		},
+		"zombie_villager_v2_jungle_mason_block": {
+			"textures": "textures/mobheads/heads/villager_v2_jungle_mason"
+		},
+		"zombie_villager_v2_jungle_nitwit_block": {
+			"textures": "textures/mobheads/heads/villager_v2_jungle_nitwit"
+		},
+		"zombie_villager_v2_jungle_toolsmith_block": {
+			"textures": "textures/mobheads/heads/villager_v2_jungle_toolsmith"
+		},
+		"zombie_villager_v2_jungle_unskilled_block": {
+			"textures": "textures/mobheads/heads/villager_v2_jungle_unskilled"
+		},
+		"zombie_villager_v2_jungle_weaponsmith_block": {
+			"textures": "textures/mobheads/heads/villager_v2_jungle_weaponsmith"
+		},
+		"zombie_villager_v2_jungle_shepherd_block": {
+			"textures": "textures/mobheads/heads/villager_v2_jungle_shepherd"
+		},
+		"zombie_villager_v2_desert_nitwit_block": {
+			"textures": "textures/mobheads/heads/villager_v2_desert_nitwit"
+		},
+		"zombie_villager_v2_plains_armorer_block": {
+			"textures": "textures/mobheads/heads/villager_v2_plains_armorer"
+		},
+		"zombie_villager_v2_plains_butcher_block": {
+			"textures": "textures/mobheads/heads/villager_v2_plains_butcher"
+		},
+		"zombie_villager_v2_plains_cartographer_block": {
+			"textures": "textures/mobheads/heads/villager_v2_plains_cartographer"
+		},
+		"zombie_villager_v2_plains_cleric_block": {
+			"textures": "textures/mobheads/heads/villager_v2_plains_cleric"
+		},
+		"zombie_villager_v2_plains_farmer_block": {
+			"textures": "textures/mobheads/heads/villager_v2_plains_farmer"
+		},
+		"zombie_villager_v2_plains_fisherman_block": {
+			"textures": "textures/mobheads/heads/villager_v2_plains_fisherman"
+		},
+		"zombie_villager_v2_plains_fletcher_block": {
+			"textures": "textures/mobheads/heads/villager_v2_plains_fletcher"
+		},
+		"zombie_villager_v2_plains_leatherworker_block": {
+			"textures": "textures/mobheads/heads/villager_v2_plains_leatherworker"
+		},
+		"zombie_villager_v2_plains_librarian_block": {
+			"textures": "textures/mobheads/heads/villager_v2_plains_librarian"
+		},
+		"zombie_villager_v2_plains_mason_block": {
+			"textures": "textures/mobheads/heads/villager_v2_plains_mason"
+		},
+		"zombie_villager_v2_plains_nitwit_block": {
+			"textures": "textures/mobheads/heads/villager_v2_plains_nitwit"
+		},
+		"zombie_villager_v2_plains_shepherd_block": {
+			"textures": "textures/mobheads/heads/villager_v2_plains_shepherd"
+		},
+		"zombie_villager_v2_plains_toolsmith_block": {
+			"textures": "textures/mobheads/heads/villager_v2_plains_toolsmith"
+		},
+		"zombie_villager_v2_plains_unskilled_block": {
+			"textures": "textures/mobheads/heads/villager_v2_plains_unskilled"
+		},
+		"zombie_villager_v2_plains_weaponsmith_block": {
+			"textures": "textures/mobheads/heads/villager_v2_plains_weaponsmith"
+		},
+		"zombie_villager_v2_savanna_armorer_block": {
+			"textures": "textures/mobheads/heads/villager_v2_savanna_armorer"
+		},
+		"zombie_villager_v2_savanna_cartographer_block": {
+			"textures": "textures/mobheads/heads/villager_v2_savanna_cartographer"
+		},
+		"zombie_villager_v2_savanna_cleric_block": {
+			"textures": "textures/mobheads/heads/villager_v2_savanna_cleric"
+		},
+		"zombie_villager_v2_savanna_farmer_block": {
+			"textures": "textures/mobheads/heads/villager_v2_savanna_farmer"
+		},
+		"zombie_villager_v2_savanna_fisherman_block": {
+			"textures": "textures/mobheads/heads/villager_v2_savanna_fisherman"
+		},
+		"zombie_villager_v2_savanna_fletcher_block": {
+			"textures": "textures/mobheads/heads/villager_v2_savanna_fletcher"
+		},
+		"zombie_villager_v2_savanna_leatherworker_block": {
+			"textures": "textures/mobheads/heads/villager_v2_savanna_leatherworker"
+		},
+		"zombie_villager_v2_savanna_librarian_block": {
+			"textures": "textures/mobheads/heads/villager_v2_savanna_librarian"
+		},
+		"zombie_villager_v2_savanna_mason_block": {
+			"textures": "textures/mobheads/heads/villager_v2_savanna_mason"
+		},
+		"zombie_villager_v2_savanna_nitwit_block": {
+			"textures": "textures/mobheads/heads/villager_v2_savanna_nitwit"
+		},
+		"zombie_villager_v2_savanna_shepherd_block": {
+			"textures": "textures/mobheads/heads/villager_v2_savanna_shepherd"
+		},
+		"zombie_villager_v2_savanna_toolsmith_block": {
+			"textures": "textures/mobheads/heads/villager_v2_savanna_toolsmith"
+		},
+		"zombie_villager_v2_savanna_unskilled_block": {
+			"textures": "textures/mobheads/heads/villager_v2_savanna_unskilled"
+		},
+		"zombie_villager_v2_savanna_weaponsmith_block": {
+			"textures": "textures/mobheads/heads/villager_v2_savanna_weaponsmith"
+		},
+		"zombie_villager_v2_savanna_butcher_block": {
+			"textures": "textures/mobheads/heads/villager_v2_savanna_butcher"
+		},
+		"zombie_villager_v2_snow_armorer_block": {
+			"textures": "textures/mobheads/heads/villager_v2_snow_armorer"
+		},
+		"zombie_villager_v2_snow_butcher_block": {
+			"textures": "textures/mobheads/heads/villager_v2_snow_butcher"
+		},
+		"zombie_villager_v2_snow_cartographer_block": {
+			"textures": "textures/mobheads/heads/villager_v2_snow_cartographer"
+		},
+		"zombie_villager_v2_snow_cleric_block": {
+			"textures": "textures/mobheads/heads/villager_v2_snow_cleric"
+		},
+		"zombie_villager_v2_snow_farmer_block": {
+			"textures": "textures/mobheads/heads/villager_v2_snow_farmer"
+		},
+		"zombie_villager_v2_snow_fisherman_block": {
+			"textures": "textures/mobheads/heads/villager_v2_snow_fisherman"
+		},
+		"zombie_villager_v2_snow_fletcher_block": {
+			"textures": "textures/mobheads/heads/villager_v2_snow_fletcher"
+		},
+		"zombie_villager_v2_snow_leatherworker_block": {
+			"textures": "textures/mobheads/heads/villager_v2_snow_leatherworker"
+		},
+		"zombie_villager_v2_snow_librarian_block": {
+			"textures": "textures/mobheads/heads/villager_v2_snow_librarian"
+		},
+		"zombie_villager_v2_snow_mason_block": {
+			"textures": "textures/mobheads/heads/villager_v2_snow_mason"
+		},
+		"zombie_villager_v2_snow_nitwit_block": {
+			"textures": "textures/mobheads/heads/villager_v2_snow_nitwit"
+		},
+		"zombie_villager_v2_snow_shepherd_block": {
+			"textures": "textures/mobheads/heads/villager_v2_snow_shepherd"
+		},
+		"zombie_villager_v2_snow_toolsmith_block": {
+			"textures": "textures/mobheads/heads/villager_v2_snow_toolsmith"
+		},
+		"zombie_villager_v2_snow_unskilled_block": {
+			"textures": "textures/mobheads/heads/villager_v2_snow_unskilled"
+		},
+		"zombie_villager_v2_snow_weaponsmith_block": {
+			"textures": "textures/mobheads/heads/villager_v2_snow_weaponsmith"
+		},
+		"zombie_villager_v2_swamp_armorer_block": {
+			"textures": "textures/mobheads/heads/villager_v2_swamp_armorer"
+		},
+		"zombie_villager_v2_swamp_butcher_block": {
+			"textures": "textures/mobheads/heads/villager_v2_swamp_butcher"
+		},
+		"zombie_villager_v2_swamp_cartographer_block": {
+			"textures": "textures/mobheads/heads/villager_v2_swamp_cartographer"
+		},
+		"zombie_villager_v2_swamp_cleric_block": {
+			"textures": "textures/mobheads/heads/villager_v2_swamp_cleric"
+		},
+		"zombie_villager_v2_swamp_farmer_block": {
+			"textures": "textures/mobheads/heads/villager_v2_swamp_farmer"
+		},
+		"zombie_villager_v2_swamp_fisherman_block": {
+			"textures": "textures/mobheads/heads/villager_v2_swamp_fisherman"
+		},
+		"zombie_villager_v2_swamp_fletcher_block": {
+			"textures": "textures/mobheads/heads/villager_v2_swamp_fletcher"
+		},
+		"zombie_villager_v2_swamp_leatherworker_block": {
+			"textures": "textures/mobheads/heads/villager_v2_swamp_leatherworker"
+		},
+		"zombie_villager_v2_swamp_librarian_block": {
+			"textures": "textures/mobheads/heads/villager_v2_swamp_librarian"
+		},
+		"zombie_villager_v2_swamp_mason_block": {
+			"textures": "textures/mobheads/heads/villager_v2_swamp_mason"
+		},
+		"zombie_villager_v2_swamp_nitwit_block": {
+			"textures": "textures/mobheads/heads/villager_v2_swamp_nitwit"
+		},
+		"zombie_villager_v2_swamp_shepherd_block": {
+			"textures": "textures/mobheads/heads/villager_v2_swamp_shepherd"
+		},
+		"zombie_villager_v2_swamp_toolsmith_block": {
+			"textures": "textures/mobheads/heads/villager_v2_swamp_toolsmith"
+		},
+		"zombie_villager_v2_swamp_unskilled_block": {
+			"textures": "textures/mobheads/heads/villager_v2_swamp_unskilled"
+		},
+		"zombie_villager_v2_swamp_weaponsmith_block": {
+			"textures": "textures/mobheads/heads/villager_v2_swamp_weaponsmith"
+		},
+		"zombie_villager_v2_taiga_armorer_block": {
+			"textures": "textures/mobheads/heads/villager_v2_taiga_armorer"
+		},
+		"zombie_villager_v2_taiga_butcher_block": {
+			"textures": "textures/mobheads/heads/villager_v2_taiga_butcher"
+		},
+		"zombie_villager_v2_taiga_cartographer_block": {
+			"textures": "textures/mobheads/heads/villager_v2_taiga_cartographer"
+		},
+		"zombie_villager_v2_taiga_cleric_block": {
+			"textures": "textures/mobheads/heads/villager_v2_taiga_cleric"
+		},
+		"zombie_villager_v2_taiga_farmer_block": {
+			"textures": "textures/mobheads/heads/villager_v2_taiga_farmer"
+		},
+		"zombie_villager_v2_taiga_fisherman_block": {
+			"textures": "textures/mobheads/heads/villager_v2_taiga_fisherman"
+		},
+		"zombie_villager_v2_taiga_fletcher_block": {
+			"textures": "textures/mobheads/heads/villager_v2_taiga_fletcher"
+		},
+		"zombie_villager_v2_taiga_leatherworker_block": {
+			"textures": "textures/mobheads/heads/villager_v2_taiga_leatherworker"
+		},
+		"zombie_villager_v2_taiga_librarian_block": {
+			"textures": "textures/mobheads/heads/villager_v2_taiga_librarian"
+		},
+		"zombie_villager_v2_taiga_mason_block": {
+			"textures": "textures/mobheads/heads/villager_v2_taiga_mason"
+		},
+		"zombie_villager_v2_taiga_nitwit_block": {
+			"textures": "textures/mobheads/heads/villager_v2_taiga_nitwit"
+		},
+		"zombie_villager_v2_taiga_shepherd_block": {
+			"textures": "textures/mobheads/heads/villager_v2_taiga_shepherd"
+		},
+		"zombie_villager_v2_taiga_toolsmith_block": {
+			"textures": "textures/mobheads/heads/villager_v2_taiga_toolsmith"
+		},
+		"zombie_villager_v2_taiga_unskilled_block": {
+			"textures": "textures/mobheads/heads/villager_v2_taiga_unskilled"
+		},
+		"zombie_villager_v2_taiga_weaponsmith_block": {
+			"textures": "textures/mobheads/heads/villager_v2_taiga_weaponsmith"
+		},
+		"zombie_vindicator_block": {
+			"textures": "textures/entity/vindicator"
+		},
+		"zombie_wandering_trader_block": {
+			"textures": "textures/mobheads/heads/wandering_trader"
+		},
+		"zombie_warden_block": {
+			"textures": "textures/mobheads/heads/warden"
+		},
+		"zombie_witch_block": {
+			"textures": "textures/mobheads/heads/witch"
+		},
+		"zombie_wither_block": {
+			"textures": "textures/mobheads/heads/wither"
+		},
+		"zombie_wither_armored_block": {
+			"textures": "textures/mobheads/heads/wither_armored"
+		},
+		"zombie_wither_armored_invulnerable_block": {
+			"textures": "textures/mobheads/heads/wither_armored_invulnerable"
+		},
+		"zombie_wither_invulnerable_block": {
+			"textures": "textures/mobheads/heads/wither_invulnerable"
+		},
+		"zombie_wolf_tame_block": {
+			"textures": "textures/mobheads/heads/wolf_tamed"
+		},
+		"zombie_wolf_angry_block": {
+			"textures": "textures/mobheads/heads/wolf_angry"
+		},
+		"zombie_wolf_wild_block": {
+			"textures": "textures/mobheads/heads/wolf_wild"
+		},
+		"zombie_zoglin_block": {
+			"textures": "textures/mobheads/heads/zoglin"
+		},
+		"zombie_zombie_piglin_block": {
+			"textures": "textures/entity/piglin/zombie_piglin"
+		},
+		"zombie_zombie_villager_v2_block": {
+			"textures": "textures/mobheads/heads/zombie_villager_v2"
+		},
+		"zombie_bedrockcity": {
+			"textures": "textures/mobheads/heads/eg/bedrockcity"
+		},
+		"zombie_berry": {
+			"textures": "textures/mobheads/heads/eg/berry"
+		},
+		"zombie_blue": {
+			"textures": "textures/mobheads/heads/eg/blue"
+		},
+		"zombie_class": {
+			"textures": "textures/mobheads/heads/eg/class"
+		},
+		"zc_eg_nuisance82mc_block": {
+			"textures": "textures/mobheads/heads/eg/Nuisance82mc"
+		},
+		"zombie_doomguy": {
+			"textures": "textures/mobheads/heads/eg/doomguy"
+		},
+		"zombie_eggman": {
+			"textures": "textures/mobheads/heads/eg/eggman"
+		},
+		"zombie_herobrine": {
+			"textures": "textures/mobheads/heads/eg/herobrine"
+		},
+		"zc_eg_satandragon3233": {
+			"textures": "textures/mobheads/heads/eg/satandragon3233"
+		},
+		"zombie_knight": {
+			"textures": "textures/mobheads/heads/eg/knight_2077"
+		},
+		"zombie_lemon": {
+			"textures": "textures/mobheads/heads/eg/lemon"
+		},
+		"zombie_mario": {
+			"textures": "textures/mobheads/heads/eg/mario"
+		},
+		"zombie_oldguy": {
+			"textures": "textures/mobheads/heads/eg/oldguy"
+		},
+		"zombie_shark": {
+			"textures": "textures/mobheads/heads/eg/shark"
+		},
+		"zombie_tj": {
+			"textures": "textures/mobheads/heads/eg/tj"
+		},
+		"zombie_trickle": {
+			"textures": "textures/mobheads/heads/eg/trickle"
+		},
+		"zombie_uncle": {
+			"textures": "textures/mobheads/heads/eg/uncle"
+		},
+		"zombie_clinic": {
+			"textures": "textures/mobheads/heads/eg/zombieclinic"
+		},
+		"zombie_shulker_jeb_block": {
+			"textures": "textures/mobheads/heads/shulker_jeb"
+		},
+		"zombie_wolf_ashen": {
+			"textures": "textures/mobheads/heads/wolf_ashen"
+		},
+		"zombie_wolf_ashen_angry": {
+			"textures": "textures/mobheads/heads/wolf_ashen_angry"
+		},
+		"zombie_wolf_ashen_tamed": {
+			"textures": "textures/mobheads/heads/wolf_ashen_tamed"
+		},
+		"zombie_wolf_black": {
+			"textures": "textures/mobheads/heads/wolf_black"
+		},
+		"zombie_wolf_black_angry": {
+			"textures": "textures/mobheads/heads/wolf_black_angry"
+		},
+		"zombie_wolf_black_tamed": {
+			"textures": "textures/mobheads/heads/wolf_black_tamed"
+		},
+		"zombie_wolf_chestnut": {
+			"textures": "textures/mobheads/heads/wolf_chestnut"
+		},
+		"zombie_wolf_chestnut_angry": {
+			"textures": "textures/mobheads/heads/wolf_chestnut_angry"
+		},
+		"zombie_wolf_chestnut_tamed": {
+			"textures": "textures/mobheads/heads/wolf_chestnut_tamed"
+		},
+		"zombie_wolf_rusty": {
+			"textures": "textures/mobheads/heads/wolf_rusty"
+		},
+		"zombie_wolf_rusty_angry": {
+			"textures": "textures/mobheads/heads/wolf_rusty_angry"
+		},
+		"zombie_wolf_rusty_tamed": {
+			"textures": "textures/mobheads/heads/wolf_rusty_tamed"
+		},
+		"zombie_wolf_spotted": {
+			"textures": "textures/mobheads/heads/wolf_spotted"
+		},
+		"zombie_wolf_spotted_angry": {
+			"textures": "textures/mobheads/heads/wolf_spotted_angry"
+		},
+		"zombie_wolf_spotted_tamed": {
+			"textures": "textures/mobheads/heads/wolf_spotted_tamed"
+		},
+		"zombie_wolf_striped": {
+			"textures": "textures/mobheads/heads/wolf_striped"
+		},
+		"zombie_wolf_striped_angry": {
+			"textures": "textures/mobheads/heads/wolf_striped_angry"
+		},
+		"zombie_wolf_striped_tamed": {
+			"textures": "textures/mobheads/heads/wolf_striped_tamed"
+		},
+		"zombie_wolf_winter": {
+			"textures": "textures/mobheads/heads/wolf_winter"
+		},
+		"zombie_wolf_winter_angry": {
+			"textures": "textures/mobheads/heads/wolf_winter_angry"
+		},
+		"zombie_wolf_winter_tamed": {
+			"textures": "textures/mobheads/heads/wolf_winter_tamed"
+		},
+		"zombie_wolf_wood": {
+			"textures": "textures/mobheads/heads/wolf_wood"
+		},
+		"zombie_wolf_wood_angry": {
+			"textures": "textures/mobheads/heads/wolf_wood_angry"
+		},
+		"zombie_wolf_wood_tamed": {
+			"textures": "textures/mobheads/heads/wolf_wood_tamed"
+		},
+		"zombie_armadillo": {
+			"textures": "textures/mobheads/heads/armadillo"
+		},
+		"zombie_headtrip": {
+			"textures": "textures/mobheads/heads/eg/head"
+		},
+		"zombie_breeze_block": {
+			"textures": "textures/entity/breeze/breeze"
+		},
+		"zombie_bogged_block": {
+			"textures": "textures/mobheads/heads/bogged"
+		},
+		"zombie_creaking_block": {
+			"textures": "textures/mobheads/heads/creaking_block"
+		},
+		"zc_eg_chromgod3329_block": {
+			"textures": "textures/mobheads/heads/eg/ChromGod3329"
+		},
+		"zc_eg_lizzy_aaaa_block": {
+			"textures": "textures/mobheads/heads/eg/LizzyAaaa"
+		},
+		"zc_eg_robbae03_block": {
+			"textures": "textures/mobheads/heads/eg/Robbae03"
+		},
+		"zc_eg_screaming_egl_block": {
+			"textures": "textures/mobheads/heads/eg/ScreamingEgl"
+		},
+		"zc_eg_the_n1nj4ll0_block": {
+			"textures": "textures/mobheads/heads/eg/TheN1NJ4LL0"
+		},
+		"zc_eg_the_og_honey_block": {
+			"textures": "textures/mobheads/heads/eg/TheOGHoney"
+		},
+		"zc_eg_toro_loco_block": {
+			"textures": "textures/mobheads/heads/eg/ToroLoco"
+		},
+		"zc_eg_vegan_chzburger_block": {
+			"textures": "textures/mobheads/heads/eg/vegan_chzburger"
+		},
+		"zc_eg_wee_hannahx0_block": {
+			"textures": "textures/mobheads/heads/eg/WeeHannahx0"
+		},
+		"zc_eg_zella_bites_block": {
+			"textures": "textures/mobheads/heads/eg/ZellaBites"
+		},
+		"zc_eg_bazzerk_block": {
+			"textures": "textures/mobheads/heads/eg/bazzerk"
+		},
+		"zc_eg_sloth_block": {
+			"textures": "textures/mobheads/heads/eg/sloth"
+		},
+		"zc_eg_spartanlex2_block": {
+			"textures": "textures/mobheads/heads/eg/spartanlex2"
+		},
+		"zc_eg_zombieclinic2_block": {
+			"textures": "textures/mobheads/heads/eg/zombieclinic2"
+		},
+		"zc_eg_russbox_block": {
+			"textures": "textures/mobheads/heads/eg/Russbox"
+		},
+		"zc_eg_universal9gaming_block": {
+			"textures": "textures/mobheads/heads/eg/Universal9Gaming"
+		},
+		"zc_eg_snow_block": {
+			"textures": "textures/mobheads/heads/eg/snow"
+		},
+		"zc_eg_glamazon518_block": {
+			"textures": "textures/mobheads/heads/eg/glamazon518"
+		},
+		"zc_eg_lionsgirl269981_block": {
+			"textures": "textures/mobheads/heads/eg/lionsgirl269981"
+		},
+		"zc_eg_lucifire83_block": {
+			"textures": "textures/mobheads/heads/eg/lucifire83"
+		},
+		"zc_eg_sewtotaleye_block": {
+			"textures": "textures/mobheads/heads/eg/sewtotaleye"
+		},
+		"zc_eg_snowhuntsman_block": {
+			"textures": "textures/mobheads/heads/eg/snowhuntsman"
+		},
+		"zc_eg_buzzingsniper38_block": {
+			"textures": "textures/mobheads/heads/eg/buzzingsniper38"
+		},
+		"zc_eg_jerrycrafttv_block": {
+			"textures": "textures/mobheads/heads/eg/jerrycrafttv"
+		},
+		"zc_eg_gizellah12_block": {
+			"textures": "textures/mobheads/heads/eg/gizellah12"
+		}
+  }
+}

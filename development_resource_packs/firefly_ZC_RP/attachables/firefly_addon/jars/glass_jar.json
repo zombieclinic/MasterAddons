@@ -1,0 +1,31 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "zombie:glass_jar",
+			"textures": {
+				"default": "textures/items/fireflys/firefly_jar2"
+			},
+			"geometry": {
+				"default": "geometry.glassjar_item",
+				"right_hand": "geometry.glassjar_item_right_hand"
+			},
+			"animations": {
+				"hold_first_person": "animation.firefly_jar_01_item.3rd"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"hold_first_person": "c.is_first_person"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.jar"
+			],
+			"materials": {
+				"default": "entity_alphatest"
+			}
+		}
+	}
+}

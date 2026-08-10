@@ -1,0 +1,36 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:demon_steel_chiseled",
+      "menu_category": {
+        "category": "construction"
+      }
+    },
+    "components": {
+      "minecraft:collision_box": true,
+      "minecraft:destructible_by_explosion": true,
+      "minecraft:display_name": "Demon Steel Chiseled",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "zombie_chiseled_demon_steel_block",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:light_emission": 1,
+      "minecraft:flammable": false,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1
+      },
+      "minecraft:selection_box": true,
+      "minecraft:geometry": {
+        "identifier": "minecraft:geometry.full_block"
+      },
+      "minecraft:tags": [
+        "minecraft:is_pickaxe_item_destructible"
+      ],
+      "minecraft:map_color": "#230E08"
+    }
+  }
+}
+

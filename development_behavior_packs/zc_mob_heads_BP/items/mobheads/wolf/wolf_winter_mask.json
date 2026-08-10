@@ -1,0 +1,33 @@
+{
+  "format_version": "1.26.42",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:wolf_winter_mask",
+      "menu_category": {
+        "group": "minecraft:itemGroup.name.skull",
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:fuel": {
+        "duration": 5
+      },
+      "minecraft:should_despawn": true,
+      "minecraft:display_name": {
+        "value": "item.zombie:wolf_winter_mask.name"
+      },
+      "minecraft:wearable": {
+        "slot": "slot.armor.head",
+        "hides_player_location": true
+      },
+      "minecraft:enchantable": {
+        "slot": "armor_head",
+        "value": 5
+      },
+      "minecraft:icon": "zombie_wolf_winter",
+      "minecraft:block_placer": {
+        "block": "zombie:wolf_winter_block"
+      }
+    }
+  }
+}

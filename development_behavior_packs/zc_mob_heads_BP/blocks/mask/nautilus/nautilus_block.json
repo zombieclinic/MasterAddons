@@ -1,0 +1,456 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:nautilus_block",
+      "menu_category": {
+        "category": "none",
+        "is_hidden_in_commands": true
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": [
+            "minecraft:cardinal_direction"
+          ]
+        },
+        "minecraft:placement_position": {
+          "enabled_states": [
+            "minecraft:block_face"
+          ]
+        }
+      }
+    },
+    "components": {
+      "minecraft:light_dampening": 0,
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "zombie_nautilus_block",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:map_color": "#bd8d67",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 13
+      },
+      "minecraft:display_name": "tile.zombie:nautilus_block.name",
+      "minecraft:geometry": "geometry.nautilus_head_floor",
+      "minecraft:collision_box": {
+        "origin": [
+          -5,
+          0,
+          -7.3
+        ],
+        "size": [
+          10,
+          8.01,
+          14.65
+        ]
+      },
+      "minecraft:selection_box": {
+        "origin": [
+          -5,
+          0,
+          -7.3
+        ],
+        "size": [
+          10,
+          8.01,
+          14.65
+        ]
+      },
+      "minecraft:loot": "loot_tables/blocks/nautilus_block.json"
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'north'",
+        "components": {
+          "minecraft:geometry": "geometry.nautilus_head_wall",
+          "minecraft:collision_box": {
+            "origin": [
+              -5,
+              3.99,
+              -6.725
+            ],
+            "size": [
+              10,
+              8.02,
+              14.65
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -5,
+              3.99,
+              -6.725
+            ],
+            "size": [
+              10,
+              8.02,
+              14.65
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'south'",
+        "components": {
+          "minecraft:geometry": "geometry.nautilus_head_wall",
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -5,
+              3.99,
+              -7.925
+            ],
+            "size": [
+              10,
+              8.02,
+              14.65
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -5,
+              3.99,
+              -7.925
+            ],
+            "size": [
+              10,
+              8.02,
+              14.65
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:geometry": "geometry.nautilus_head_wall",
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              -90,
+              0
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -6.725,
+              3.99,
+              -5
+            ],
+            "size": [
+              14.65,
+              8.02,
+              10
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -6.725,
+              3.99,
+              -5
+            ],
+            "size": [
+              14.65,
+              8.02,
+              10
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:geometry": "geometry.nautilus_head_wall",
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -7.925,
+              3.99,
+              -5
+            ],
+            "size": [
+              14.65,
+              8.02,
+              10
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -7.925,
+              3.99,
+              -5
+            ],
+            "size": [
+              14.65,
+              8.02,
+              10
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'down'",
+        "components": {
+          "minecraft:geometry": "geometry.nautilus_roof",
+          "minecraft:collision_box": {
+            "origin": [
+              -5,
+              8,
+              -7.3
+            ],
+            "size": [
+              10,
+              8,
+              14.65
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -5,
+              8,
+              -7.3
+            ],
+            "size": [
+              10,
+              8,
+              14.65
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'down' && query.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -5,
+              8,
+              -7.35
+            ],
+            "size": [
+              10,
+              8,
+              14.65
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -5,
+              8,
+              -7.35
+            ],
+            "size": [
+              10,
+              8,
+              14.65
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'down' && query.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -7.3,
+              8,
+              -5
+            ],
+            "size": [
+              14.65,
+              8,
+              10
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -7.3,
+              8,
+              -5
+            ],
+            "size": [
+              14.65,
+              8,
+              10
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'down' && query.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -7.35,
+              8,
+              -5
+            ],
+            "size": [
+              14.65,
+              8,
+              10
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -7.35,
+              8,
+              -5
+            ],
+            "size": [
+              14.65,
+              8,
+              10
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'up' && query.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -5,
+              0,
+              -7.35
+            ],
+            "size": [
+              10,
+              8.01,
+              14.65
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -5,
+              0,
+              -7.35
+            ],
+            "size": [
+              10,
+              8.01,
+              14.65
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'up' && query.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -7.3,
+              0,
+              -5
+            ],
+            "size": [
+              14.65,
+              8.01,
+              10
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -7.3,
+              0,
+              -5
+            ],
+            "size": [
+              14.65,
+              8.01,
+              10
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'up' && query.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -7.35,
+              0,
+              -5
+            ],
+            "size": [
+              14.65,
+              8.01,
+              10
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -7.35,
+              0,
+              -5
+            ],
+            "size": [
+              14.65,
+              8.01,
+              10
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

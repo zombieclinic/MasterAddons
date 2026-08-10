@@ -1,0 +1,16 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:ore_feature": {
+    "description": { "identifier": "zombie:lumenroot_rock_patch_feature" },
+    "replace_rules": [
+      {
+        "places_block": "zombie:lumenroot_rock",
+        "may_replace": [
+          { "name": "zombie:lumenroot_grass" },
+          { "name": "zombie:lumenroot_dirt" }
+        ]
+      }
+    ],
+    "count": 10
+  }
+}

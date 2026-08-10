@@ -1,0 +1,219 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.pumpkin_king": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": ["idle"],
+          "blend_transition": 0.05,
+          "transitions": [
+            { "hurt": "query.skin_id == 1" },
+            { "walk": "query.ground_speed >= 0.01" },
+            {"death": "query.skin_id == 5"},
+            {"melee_swing": "variable.attack_time>=0.01"},
+            {"seed_throw": "query.is_charged"},
+            {"knockback_swing": "query.is_roaring"},
+            {"blood_harvest": "query.is_casting"}
+          ]
+        },
+
+        "walk": {
+          "animations": ["walk"],
+          "blend_transition": 0.05,
+          "transitions": [
+            { "hurt": "query.skin_id == 1" },
+            { "default": "query.ground_speed <= 0.01" },
+            {"death": "query.skin_id == 5"},
+            {"melee_swing": "variable.attack_time>=0.01"},
+            {"seed_throw": "query.is_charging"},
+            {"knockback_swing": "query.is_roaring"},            
+            {"blood_harvest": "query.is_casting"}
+          ]
+        },
+
+        "hurt": {
+          "animations": ["hurt" ],
+          "sound_effects": [
+            { "effect": "hurt" }
+          ],
+          "blend_transition": 0.02,
+          "transitions": [
+            { "default": "query.ground_speed <= 0.01 && query.all_animations_finished"},
+            { "walk": "query.ground_speed > 0.01 && query.all_animations_finished" },
+            {"melee_swing": "variable.attack_time>=0.01"},
+            {"knockback_swing": "query.is_roaring"},           
+            {"blood_harvest": "query.is_casting"},
+            {"death": "query.skin_id == 5"}
+          ]
+        },
+        "death": {
+            "animations": ["death"]
+        },
+        "melee_swing": {
+            "on_entry": [
+                "variable.attack_variant = math.random_integer(0, 1);" 
+            
+            ],
+            "animations": [
+                { "boss_attack":   "variable.attack_variant == 0" },
+                { "boss_attack_2": "variable.attack_variant == 1" },
+                "swing_walk"
+            ],
+            "transitions": [
+                {"death": "query.skin_id == 5"},
+                 { "walk": "query.ground_speed >= 0.01 && query.any_animation_finished" },
+                { "default": "query.any_animation_finished" }
+               
+            ]
+        },
+        "seed_throw": {
+            "animations": [
+                "pumpkin_seed"
+            ],
+            "transitions": [
+                {"death": "query.skin_id == 5"},
+                 { "walk": "query.ground_speed >= 0.01 && query.any_animation_finished && !query.is_charged" },
+                { "default": "query.any_animation_finished && !query.is_charged" }
+            ]
+        },
+        "knockback_swing": {
+            "animations": ["rush"],
+            "transitions": [
+                {"default": "query.all_animations_finished"}
+            ]
+        },
+        "blood_harvest": {
+            "animations": [
+                "blood_harvest_start"
+            ],
+            "transitions": [
+                {"blood_harvest_finish": "query.all_animations_finished"}
+            ]
+        },
+        "blood_harvest_finish":{
+          "animations": [
+            "harvest_success"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished"
+            }
+          ]
+        }}
+    },
+    "controller.animation.pumpkin_king_stage_2": {
+          "initial_state": "start",
+      "states": {
+        "start": {
+          "animations": ["true_face"],
+          "sound_effects": [
+            { "effect": "scream" }
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished"
+            }
+          ]
+        },
+        "default": {
+          "animations": ["idle_battle"],
+          "blend_transition": 0.05,
+          "transitions": [
+            { "hurt": "query.skin_id == 1" },
+            { "walk": "query.ground_speed >= 0.01" },
+            {"death": "query.skin_id == 5"},
+            {"melee_swing": "variable.attack_time>=0.01"},
+            {"seed_throw": "query.is_charged"},
+            {"knockback_swing": "query.is_roaring"},
+            {"blood_harvest": "query.is_casting"}
+          ]
+        },
+
+        "walk": {
+          "animations": ["walk_battle"],
+          "blend_transition": 0.05,
+          "transitions": [
+            { "hurt": "query.skin_id == 1" },
+            { "default": "query.ground_speed <= 0.01" },
+            {"death": "query.skin_id == 5"},
+            {"melee_swing": "variable.attack_time>=0.01"},
+            {"seed_throw": "query.is_charging"},
+            {"knockback_swing": "query.is_roaring"},            
+            {"blood_harvest": "query.is_casting"}
+          ]
+        },
+
+        "hurt": {
+          "animations": ["hurt" ],
+          "sound_effects": [
+            { "effect": "hurt" }
+          ],
+          "blend_transition": 0.02,
+          "transitions": [
+            { "default": "query.ground_speed <= 0.01 && query.all_animations_finished"},
+            { "walk": "query.ground_speed > 0.01 && query.all_animations_finished" },
+            {"melee_swing": "variable.attack_time>=0.01"},
+            {"knockback_swing": "query.is_roaring"},           
+            {"blood_harvest": "query.is_casting"},
+            {"death": "query.skin_id == 5"}
+          ]
+        },
+        "death": {
+            "animations": ["death"]
+        },
+        "melee_swing": {
+            "on_entry": [
+                "variable.attack_variant = math.random_integer(0, 1);" 
+            
+            ],
+            "animations": [
+                { "boss_attack":   "variable.attack_variant == 0" },
+                { "boss_attack_2": "variable.attack_variant == 1" },
+                "swing_walk"
+            ],
+            "transitions": [
+                {"death": "query.skin_id == 5"},
+                 { "walk": "query.ground_speed >= 0.01 && query.any_animation_finished" },
+                { "default": "query.any_animation_finished" }
+               
+            ]
+        },
+        "seed_throw": {
+            "animations": [
+                "vines"
+            ],
+            "transitions": [
+                {"death": "query.skin_id == 5"},
+                 { "walk": "query.ground_speed >= 0.01 && query.any_animation_finished && !query.is_charged" },
+                { "default": "query.any_animation_finished && !query.is_charged" }
+            ]
+        },
+        "knockback_swing": {
+            "animations": ["rush"],
+            "transitions": [
+                {"default": "query.all_animations_finished"}
+            ]
+        },
+        "blood_harvest": {
+            "animations": [
+                "blood_harvest_start"
+            ],
+            "transitions": [
+                {"blood_harvest_finish": "query.all_animations_finished"}
+            ]
+        },
+        "blood_harvest_finish":{
+          "animations": [
+            "harvest_success"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

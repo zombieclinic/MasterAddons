@@ -1,0 +1,32 @@
+
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "zombie:pumpkin_scythe_3d",
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/halloween/pumpkin_boss",
+				 "enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.pumpkin_scythe"
+			},
+			"animations": {
+				"fpp": "animation.pumpkin_scythe.fpp"
+			},
+			"scripts": {
+				"animate": [
+					{"fpp": "c.is_first_person"}
+				]
+			},
+			
+			"render_controllers": [
+				"controller.render.item_default"
+			]
+		}
+	}
+}

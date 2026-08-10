@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:hell_sword"
+    },
+    "tags": [
+      "chaos_level_4"
+    ],
+    "pattern": [
+      "D",
+      "D",
+      "S"
+    ],
+    "key": {
+      "D": {
+        "item": "zombie:demon_steel_ingot"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": [
+      {
+        "item": "zombie:hell_sword",
+        "count": 1
+      }
+    ],
+    "unlock": [
+      {
+        "item": "zombie:demon_steel_ingot"
+      }
+    ]
+  }
+}
+

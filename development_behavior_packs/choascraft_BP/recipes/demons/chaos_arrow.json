@@ -1,0 +1,37 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "zombie:chaos_arrow"
+    },
+    "tags": [
+      "chaos_level_4"
+    ],
+    "ingredients": [
+      {
+        "item": "zombie:currupted_xp_block"
+      },
+      {
+        "item": "minecraft:feather"
+      },
+      {
+        "item": "zombie:demon_ash"
+      }
+    ],
+    "result": [
+      {
+        "item": "zombie:chaos_arrow",
+        "count": 4
+      }
+    ],
+    "unlock": [
+      {
+        "item": "zombie:currupted_xp_block"
+      },
+      {
+        "item": "zombie:demon_ash"
+      }
+    ]
+  }
+}
+

@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.endermask": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"texture.default"
+			],
+			"part_visibility": [
+				{
+					"*": false,
+					"head": true,
+					"cape": "!query.is_item_name_any('slot.armor.chest', 0, 'minecraft:elytra')"
+				}
+			]
+		}
+	}
+}

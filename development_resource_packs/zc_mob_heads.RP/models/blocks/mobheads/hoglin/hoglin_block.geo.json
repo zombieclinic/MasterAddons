@@ -1,0 +1,55 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.zoglin_block",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [0, 1.475, 10.675],
+					"cubes": [
+						{
+							"origin": [-7, 0.03431, -7.95522],
+							"size": [14, 8, 16],
+							"uv": {
+								"north": {"uv": [19, 58], "uv_size": [14, 6]},
+								"east": {"uv": [0, 58], "uv_size": [19, 6]},
+								"south": {"uv": [52, 58], "uv_size": [14, 6]},
+								"west": {"uv": [33, 58], "uv_size": [19, 6]},
+								"up": {"uv": [19, 39], "uv_size": [14, 19]},
+								"down": {"uv": [33, 58], "uv_size": [14, -19]}
+							}
+						},
+						{"origin": [-8, 1.14904, -3.05148], "size": [2, 11, 2], "uv": [0, 12]},
+						{"origin": [6, 1.14904, -3.05148], "size": [2, 11, 2], "uv": [0, 12]}
+					]
+				},
+				{
+					"name": "right_ear",
+					"parent": "head",
+					"pivot": [-7, 6.475, 8.675],
+					"rotation": [0, 0, -50],
+					"cubes": [
+						{"origin": [-11.79701, 6.48443, 4.03229], "size": [6, 1, 4], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "left_ear",
+					"parent": "head",
+					"pivot": [7, 6.475, 8.675],
+					"rotation": [0, 0, 50],
+					"cubes": [
+						{"origin": [5.81111, 6.44715, 3.89669], "size": [6, 1, 4], "uv": [0, 5]}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,53 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.hoglin_mask",
+				"texture_width": 128,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [0, 23.7, 0],
+					"binding": "'head'",
+					"cubes": [
+						{
+							"origin": [-4, 23.975, -5.55],
+							"size": [8, 8, 11],
+							"uv": {
+								"north": {"uv": [80, 20], "uv_size": [14, 6]},
+								"east": {"uv": [61, 20], "uv_size": [19, 6]},
+								"south": {"uv": [113, 20], "uv_size": [14, 6]},
+								"west": {"uv": [94, 20], "uv_size": [19, 6]},
+								"up": {"uv": [80, 1], "uv_size": [14, 19]},
+								"down": {"uv": [94, 20], "uv_size": [14, -19]}
+							}
+						},
+						{"origin": [-5.425, 23.7, -3], "size": [2, 11, 2], "uv": [1, 13]},
+						{"origin": [3.4, 23.7, -3], "size": [2, 11, 2], "uv": [1, 13]},
+						{
+							"origin": [0, 27.39818, 2.64364],
+							"size": [0.05, 6, 6],
+							"inflate": 0.02,
+							"pivot": [0, 30.39818, 5.64364],
+							"rotation": [-49.25, 0, 0],
+							"uv": {
+								"north": {"uv": [109, 52], "uv_size": [0, 10]},
+								"east": {"uv": [93.1, 52], "uv_size": [15.9, 10]},
+								"south": {"uv": [128, 52], "uv_size": [0, 10]},
+								"west": {"uv": [109, 52], "uv_size": [19, 10]},
+								"up": {"uv": [109, 33], "uv_size": [0, 19]},
+								"down": {"uv": [109, 52], "uv_size": [0, -19]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

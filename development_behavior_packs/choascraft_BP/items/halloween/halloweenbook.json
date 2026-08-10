@@ -1,0 +1,16 @@
+{
+    "format_version": "1.21.111",
+    "minecraft:item": {
+        "description": {
+            "identifier": "zombie:halloween_book",
+            "menu_category": {
+                "category": "construction"
+            }
+        },
+        "components": {
+
+            "minecraft:icon": "halloween_book",
+            "zc:halloweenguidebook": {}
+        }
+    }
+}

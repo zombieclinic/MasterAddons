@@ -1,0 +1,42 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "zombie:end_golem_spawn_proxy",
+      "population_control": "monster"
+    },
+    "conditions": [
+      {
+        "minecraft:difficulty_filter": {
+          "min": "easy",
+          "max": "hard"
+        },
+        "minecraft:spawns_on_surface": {},
+        "minecraft:brightness_filter": {
+          "min": 0,
+          "max": 1
+        },
+        "minecraft:weight": {
+          "default": 2
+        },
+        "minecraft:herd": {
+          "min_size": 1,
+          "max_size": 1
+        },
+        "minecraft:biome_filter": {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "the_end"
+        },
+        "minecraft:distance_filter": {
+          "min": 24,
+          "max": 128
+        },
+        "minecraft:density_limit": {
+          "surface": 2,
+          "underground": 0
+        }
+      }
+    ]
+  }
+}

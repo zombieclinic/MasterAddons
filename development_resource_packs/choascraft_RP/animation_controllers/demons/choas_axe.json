@@ -1,0 +1,74 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.chaos_axe": {
+      "states": {
+        "default": {
+          "animations": [
+            "fpp_idle"
+          ],
+          "transitions": [
+            {
+              "fpp_swing": "query.is_using_item"
+            }
+          ]
+        },
+
+        "fpp_swing": {
+          "animations": [
+            "fpp_swing"
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "transitions": [
+            {
+              "fpp_swing_to_default": "query.all_animations_finished"
+            }
+          ]
+        },
+
+        "fpp_swing_to_default": {
+          "animations": [
+            "fpp_swing_to_idle"
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "transitions": [
+            {
+              "default": "query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    },
+
+    "controller.animation.chaos_axe_particle": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "tpp_swing": "query.is_using_item"
+            }
+          ]
+        },
+
+        "tpp_swing": {
+          "animations": [
+            "particle"
+          ],
+          "particle_effects": [
+            {
+              "effect": "chaos",
+              "locator": "locator"
+            }
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

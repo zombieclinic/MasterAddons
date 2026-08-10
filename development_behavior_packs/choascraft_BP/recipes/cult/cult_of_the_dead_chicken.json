@@ -1,0 +1,15 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "zombie:cult_of_the_dead_chicken_recipe" },
+    "tags": ["crafting_table"],
+    "pattern": ["FBF", "BCB", "FBF"],
+    "key": {
+      "F": { "item": "minecraft:feather" },
+      "B": { "item": "minecraft:bone" },
+      "C": { "item": "minecraft:chicken" }
+    },
+    "result": [{ "item": "zombie:cult_of_the_dead_chicken", "count": 1 }],
+    "unlock": [{ "item": "minecraft:chicken" }]
+  }
+}

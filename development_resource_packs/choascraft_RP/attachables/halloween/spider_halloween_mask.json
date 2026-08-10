@@ -1,0 +1,22 @@
+
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "zombie:spider_halloween_mask",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/halloween/mask/spider"
+			},
+			"geometry": {
+				"default": "geometry.spider_halloween_mask"
+			},
+			
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

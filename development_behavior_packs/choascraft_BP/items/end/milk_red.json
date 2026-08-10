@@ -1,0 +1,15 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:item": {
+    "description": { "identifier": "zombie:milk_red", "menu_category": { "category": "items" } },
+    "components": {
+      "minecraft:display_name": { "value": "Red End Milk" },
+      "minecraft:icon": "milk_red",
+      "minecraft:max_stack_size": 1,
+      "minecraft:use_animation": "drink",
+      "minecraft:food": { "nutrition": 0, "saturation_modifier": 0, "can_always_eat": true },
+      "minecraft:use_modifiers": { "movement_modifier": 0.35, "use_duration": 1.6 },
+      "zombie:end_milk_healing": {}
+    }
+  }
+}

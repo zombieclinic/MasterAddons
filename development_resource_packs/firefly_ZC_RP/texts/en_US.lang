@@ -1,0 +1,45 @@
+## Entities
+entity.zombie:firefly.name=Firefly
+
+## Spawn Eggs
+item.spawn_egg.entity.zombie:firefly.name=Firefly Spawn Egg
+
+## Items
+item.zombie:firefly_luciferin.name=Firefly Luciferin
+item.zombie:firefly_luciferin_fire.name=Firefly Luciferin Fire
+item.zombie:glass_jar.name=Glass Jar
+item.zombie:stat_book.name=Firefly Stats Book
+item.zombie:firefly_book.name=Firefly Book
+item.zombie:firefly_mask.name=Firefly Mask
+
+## Firefly Jars
+item.zombie:firefly_jar_1.name=Firefly Jar (1 Firefly)
+item.zombie:firefly_jar_2.name=Firefly Jar (2 Fireflies)
+item.zombie:firefly_jar_3.name=Firefly Jar (3 Fireflies)
+item.zombie:firefly_jar_4.name=Firefly Jar (4 Fireflies)
+item.zombie:firefly_jar_5.name=Firefly Jar (5 Fireflies)
+
+## Armor - Emberlight Set (Black)
+item.zombie:emberlight_helmet.name=Emberlight Helmet
+item.zombie:emberlight_chestplate.name=Emberlight Chestplate
+item.zombie:emberlight_leggings.name=Emberlight Leggings
+item.zombie:emberlight_boots.name=Emberlight Boots
+
+## Armor - Aetherlight Set (Green)
+item.zombie:aetherlight_helmet.name=Aetherlight Helmet
+item.zombie:aetherlight_chestplate.name=Aetherlight Chestplate
+item.zombie:aetherlight_leggings.name=Aetherlight Leggings
+item.zombie:aetherlight_boots.name=Aetherlight Boots
+
+## Blocks
+tile.zombie:luciferin_block.name=Luciferin Block
+tile.zombie:luciferin_block_fire.name=Luciferin Block Fire
+tile.zombie:firefly_block.name=Firefly Block
+
+## Jar Blocks
+tile.zombie:empty_jar_block.name=Empty Jar
+tile.zombie:glass_jar_01_block.name=Glass Jar (1 Firefly)
+tile.zombie:glass_jar_02_block.name=Glass Jar (2 Fireflies)
+tile.zombie:glass_jar_03_block.name=Glass Jar (3 Fireflies)
+tile.zombie:glass_jar_04_block.name=Glass Jar (4 Fireflies)
+tile.zombie:glass_jar_05_block.name=Glass Jar (5 Fireflies)

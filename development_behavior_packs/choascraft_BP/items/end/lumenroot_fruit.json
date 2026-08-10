@@ -1,0 +1,24 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:lumenroot_fruit",
+      "menu_category": { "category": "nature" }
+    },
+    "components": {
+      "minecraft:display_name": { "value": "Lumenroot Fruit" },
+      "minecraft:icon": "lumenroot_fruit",
+      "minecraft:use_animation": "eat",
+      "minecraft:food": {
+        "nutrition": 8,
+        "saturation_modifier": 1.2,
+        "can_always_eat": true
+      },
+      "zombie:lumenroot_fruit_food": {},
+      "minecraft:use_modifiers": {
+        "movement_modifier": 0.35,
+        "use_duration": 1.6
+      }
+    }
+  }
+}

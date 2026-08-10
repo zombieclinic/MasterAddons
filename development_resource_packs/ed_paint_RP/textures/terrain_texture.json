@@ -1,0 +1,401 @@
+{
+	"resource_pack_name": "zombiecraft re",
+	"texture_name": "atlas.terrain",
+	"padding": 8,
+	"num_mip_levels": 4,
+	"texture_data": {
+		
+		"zombie_blu3winqs1": {
+			"textures": "textures/blocks/blue/blu3winqs1"
+		},
+		"zombie_blu3winqs2": {
+			"textures": "textures/blocks/blue/blu3winqs2"
+		},
+		"zombie_blu3winqs3": {
+			"textures": "textures/blocks/blue/blu3winqs3"
+		},
+		"zombie_blu3winqs4": {
+			"textures": "textures/blocks/blue/blu3winqs4"
+		},
+		"zombie_blu3winqs5": {
+			"textures": "textures/blocks/blue/blu3winqs5"
+		},
+		"zombie_blu3winqs6": {
+			"textures": "textures/blocks/blue/blu3winqs6"
+		},
+		"zombie_blu3winqs7": {
+			"textures": "textures/blocks/blue/blu3winqs7"
+		},
+		"zombie_sidthemush": {
+			"textures": "textures/blocks/blue/sidthemush"
+		},
+		"zombie_blu3winqs8": {
+			"textures": "textures/blocks/blue/blu3winqs8"
+		},
+		
+		
+		"zombie_mystery_girl_1": {
+			"textures": "textures/paintings/1"
+		},
+		"zombie_mystery_girl_2": {
+			"textures": "textures/paintings/2"
+		},
+		"zombie_mystery_girl_3": {
+			"textures": "textures/paintings/3"
+		},
+		"zombie_mystery_girl_4": {
+			"textures": "textures/paintings/4"
+		},
+		"zombie_mystery_girl_5": {
+			"textures": "textures/paintings/5"
+		},
+		"zombie_mystery_girl_6": {
+			"textures": "textures/paintings/6"
+		},
+		"zombie_mystery_girl_7": {
+			"textures": "textures/paintings/7"
+		},
+		"zombie_mystery_girl_8": {
+			"textures": "textures/paintings/8"
+		},
+		"zombie_mystery_girl_9": {
+			"textures": "textures/paintings/9"
+		},
+		"zombie_mystery_girl_10": {
+			"textures": "textures/paintings/10"
+		},
+		"zombie_mystery_girl_11": {
+			"textures": "textures/paintings/11"
+		},
+		"zombie_mystery_girl_12": {
+			"textures": "textures/paintings/12"
+		},
+		"zombie_mystery_girl_13": {
+			"textures": "textures/paintings/13"
+		},
+		"zombie_mystery_girl_14": {
+			"textures": "textures/paintings/14"
+		},
+		"zombie_night_watch_15": {
+			"textures": "textures/paintings/15"
+		},
+		"zombie_addiction_16": {
+			"textures": "textures/paintings/16"
+		},
+		"zombie_mystery_girl_17": {
+			"textures": "textures/paintings/17"
+		},
+		"zombie_mystery_girl_18": {
+			"textures": "textures/paintings/18"
+		},
+		"zombie_rabbit_hole_19": {
+			"textures": "textures/paintings/19"
+		},
+		"zombie_mystery_girl_20": {
+			"textures": "textures/paintings/20"
+		},
+		"zombie_mystery_girl_21": {
+			"textures": "textures/paintings/21"
+		},
+		"zombie_mystery_girl_22": {
+			"textures": "textures/paintings/22"
+		},
+		"zombie_mystery_girl_23": {
+			"textures": "textures/paintings/23"
+		},
+		"zombie_bandaid_24": {
+			"textures": "textures/paintings/24"
+		},
+		"zombie_mystery_girl_25": {
+			"textures": "textures/paintings/25"
+		},
+		"zombie_mystery_girl_26": {
+			"textures": "textures/paintings/26"
+		},
+		"zombie_mystery_girl_27": {
+			"textures": "textures/paintings/27"
+		},
+		"zombie_haunted_house_28": {
+			"textures": "textures/paintings/28"
+		},
+		"zombie_mystery_girl_29": {
+			"textures": "textures/paintings/29"
+		},
+		"zombie_devil_30": {
+			"textures": "textures/paintings/30"
+		},
+		"zombie_abducted_31": {
+			"textures": "textures/paintings/31"
+		},
+		"zombie_pirate_32": {
+			"textures": "textures/paintings/32"
+		},
+		"zombie_bigfoot_33": {
+			"textures": "textures/paintings/33"
+		},
+		"zombie_harley_quinn_34": {
+			"textures": "textures/paintings/34"
+		},
+		"zombie_feild_trip_35": {
+			"textures": "textures/paintings/35"
+		},
+		"zombie_mystery_girl_36": {
+			"textures": "textures/paintings/36"
+		},
+		"zombie_vacation_37": {
+			"textures": "textures/paintings/37"
+		},
+		"zombie_blink_38": {
+			"textures": "textures/paintings/38"
+		},
+		"zombie_nature_39": {
+			"textures": "textures/paintings/39"
+		},
+		"zombie_lost_40": {
+			"textures": "textures/paintings/40"
+		},
+		"zombie_lighthouse_41": {
+			"textures": "textures/paintings/41"
+		},
+		"zombie_catlady_42": {
+			"textures": "textures/paintings/42"
+		},
+		"zombie_chained_43": {
+			"textures": "textures/paintings/43"
+		},
+		"zombie_cowboy_44": {
+			"textures": "textures/paintings/44"
+		},
+		"zombie_freedom_45": {
+			"textures": "textures/paintings/45"
+		},
+		"zombie_broken_46": {
+			"textures": "textures/paintings/46"
+		},
+		"zombie_darknight_47": {
+			"textures": "textures/paintings/47"
+		},
+		"zombie_dragon_48": {
+			"textures": "textures/paintings/48"
+		},
+		"zombie_eagle_49": {
+			"textures": "textures/paintings/49"
+		},
+		"zombie_angel_50": {
+			"textures": "textures/paintings/50"
+		},
+		"zombie_farm_51": {
+			"textures": "textures/paintings/51"
+		},
+		"zombie_fish_52": {
+			"textures": "textures/paintings/52"
+		},
+		"zombie_forest_53": {
+			"textures": "textures/paintings/53"
+		},
+		"zombie_frankenstein_54": {
+			"textures": "textures/paintings/54"
+		},
+		"zombie_retro_55": {
+			"textures": "textures/paintings/55"
+		},
+		"zombie_cyberpunk_56": {
+			"textures": "textures/paintings/56"
+		},
+		"zombie_ghostbusters_57": {
+			"textures": "textures/paintings/57"
+		},
+		"zombie_lake_58": {
+			"textures": "textures/paintings/58"
+		},
+		"zombie_hungover_59": {
+			"textures": "textures/paintings/59"
+		},
+		"zombie_wind_60": {
+			"textures": "textures/paintings/60"
+		},
+		"zombie_blackhorse_61": {
+			"textures": "textures/paintings/61"
+		},
+		"zombie_country_62": {
+			"textures": "textures/paintings/62"
+		},
+		"zombie_moutainhorse_63": {
+			"textures": "textures/paintings/63"
+		},
+		"zombie_stuck_64": {
+			"textures": "textures/paintings/64"
+		},
+		"zombie_riverview_65": {
+			"textures": "textures/paintings/65"
+		},
+		"zombie_lord_66": {
+			"textures": "textures/paintings/66"
+		},
+		"zombie_heartshape_67": {
+			"textures": "textures/paintings/67"
+		},
+		"zombie_micky_68": {
+			"textures": "textures/paintings/68"
+		},
+		"zombie_moonlight_69": {
+			"textures": "textures/paintings/69"
+		},
+		"zombie_catlady_70": {
+			"textures": "textures/paintings/70"
+		},
+		"zombie_mystery_girl_71": {
+			"textures": "textures/paintings/71"
+		},
+		"zombie_mystery_girl_72": {
+			"textures": "textures/paintings/72"
+		},
+		"zombie_flying_73": {
+			"textures": "textures/paintings/73"
+		},
+		"zombie_mystery_girl_74": {
+			"textures": "textures/paintings/74"
+		},
+		"zombie_mystery_girl_75": {
+			"textures": "textures/paintings/75"
+		},
+		"zombie_mystery_girl_76": {
+			"textures": "textures/paintings/76"
+		},
+		"zombie_mystery_girl_77": {
+			"textures": "textures/paintings/77"
+		},
+		"zombie_mystery_girl_78": {
+			"textures": "textures/paintings/78"
+		},
+		"zombie_mystery_girl_79": {
+			"textures": "textures/paintings/79"
+		},
+		"zombie_mystery_girl_80": {
+			"textures": "textures/paintings/80"
+		},
+		"zombie_fishbowl_81": {
+			"textures": "textures/paintings/81"
+		},
+		"zombie_mystery_girl_82": {
+			"textures": "textures/paintings/82"
+		},
+		"zombie_mystery_girl_83": {
+			"textures": "textures/paintings/83"
+		},
+		"zombie_mystery_girl_84": {
+			"textures": "textures/paintings/84"
+		},
+		"zombie_mystery_girl_85": {
+			"textures": "textures/paintings/85"
+		},
+		"zombie_mystery_girl_86": {
+			"textures": "textures/paintings/86"
+		},
+		"zombie_mystery_girl_87": {
+			"textures": "textures/paintings/87"
+		},
+		"zombie_crow_88": {
+			"textures": "textures/paintings/88"
+		},
+		"zombie_mystery_girl_89": {
+			"textures": "textures/paintings/89"
+		},
+		"zombie_mystery_girl_90": {
+			"textures": "textures/paintings/90"
+		},
+		"zombie_mystery_girl_91": {
+			"textures": "textures/paintings/91"
+		},
+		"zombie_mystery_girl_92": {
+			"textures": "textures/paintings/92"
+		},
+		"zombie_mystery_girl_93": {
+			"textures": "textures/paintings/93"
+		},
+		"zombie_greenskull_94": {
+			"textures": "textures/paintings/94"
+		},
+		"zombie_sunset_95": {
+			"textures": "textures/paintings/95"
+		},
+		"zombie_grim_96": {
+			"textures": "textures/paintings/96"
+		},
+		"zombie_notcrazy_97": {
+			"textures": "textures/paintings/97"
+		},
+		"zombie_rabbithole_98": {
+			"textures": "textures/paintings/98"
+		},
+		"zombie_fishing_99": {
+			"textures": "textures/paintings/99"
+		},
+		"zombie_rose_100": {
+			"textures": "textures/paintings/100"
+		},
+		"zombie_samurai_101": {
+			"textures": "textures/paintings/101"
+		},
+		"zombie_teapot_102": {
+			"textures": "textures/paintings/102"
+		},
+		"zombie_tigar_103": {
+			"textures": "textures/paintings/103"
+		},
+		"zombie_time_104": {
+			"textures": "textures/paintings/104"
+		},
+		"zombie_patchwork_105": {
+			"textures": "textures/paintings/105"
+		},
+		"zombie_tinman_106": {
+			"textures": "textures/paintings/106"
+		},
+		"zombie_tinman_107": {
+			"textures": "textures/paintings/107"
+		},
+		"zombie_living_108": {
+			"textures": "textures/paintings/108"
+		},
+		"zombie_mad_109": {
+			"textures": "textures/paintings/109"
+		},
+		"zombie_mystery_girl_110": {
+			"textures": "textures/paintings/110"
+		},
+		"zombie_einstein_111": {
+			"textures": "textures/paintings/111"
+		},
+		"zombie_mystery_girl_112": {
+			"textures": "textures/paintings/112"
+		},
+		"zombie_mystery_girl_113": {
+			"textures": "textures/paintings/113"
+		},
+		"zombie_one_114": {
+			"textures": "textures/paintings/114"
+		},
+		"zombie_life_115": {
+			"textures": "textures/paintings/115"
+		},
+		"zombie_fallout_116": {
+			"textures": "textures/paintings/116"
+		},
+		"zombie_panda_117": {
+			"textures": "textures/paintings/117"
+		},
+		"zombie_grim_118": {
+			"textures": "textures/paintings/118"
+		},
+		"zombie_grim_119": {
+			"textures": "textures/paintings/119"
+		},
+		"zombie_tree_120": {
+			"textures": "textures/paintings/120"
+		},
+		"zombie_painters": {
+			"textures": "textures/paintings/easel_painting"
+		}
+  }
+}

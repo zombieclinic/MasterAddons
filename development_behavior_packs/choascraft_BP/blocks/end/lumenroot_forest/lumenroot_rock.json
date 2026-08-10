@@ -1,0 +1,21 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:lumenroot_rock",
+      "menu_category": { "category": "nature" }
+    },
+    "components": {
+      "minecraft:display_name": "Lumenroot Rock",
+      "minecraft:destructible_by_mining": { "seconds_to_destroy": 1.5 },
+      "minecraft:destructible_by_explosion": { "explosion_resistance": 6 },
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": {
+        "*": { "texture": "lumenroot_rock", "render_method": "opaque" }
+      },
+      "minecraft:loot": "loot_tables/blocks/lumenroot_rock.json",
+      "minecraft:tags": ["minecraft:is_pickaxe_item_destructible", "stone"],
+      "minecraft:map_color": "#53616A"
+    }
+  }
+}

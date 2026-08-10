@@ -1,0 +1,105 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "zombie:demon_biome"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.0,
+        "snow_accumulation": [
+          0.0,
+          0.0
+        ],
+        "temperature": 2.0
+      },
+      "minecraft:overworld_height": {
+        "noise_type": "default"
+      },
+      "minecraft:map_tints": {
+        "grass": {
+          "type": "tint",
+          "tint": "#4c1010"
+        },
+        "foliage": "#661010"
+      },
+      "minecraft:replace_biomes": {
+        "replacements": [
+          {
+            "dimension": "minecraft:overworld",
+            "targets": [
+              "minecraft:desert",
+              "minecraft:savanna"
+            ],
+            "amount": 0.08,
+            "noise_frequency_scale": 0.55
+          }
+        ]
+      },
+      "minecraft:surface_builder": {
+        "builder": {
+          "type": "minecraft:overworld",
+          "sea_floor_depth": 0,
+          "sea_floor_material": "zombie:demon_stone",
+          "foundation_material": "zombie:demon_stone",
+          "mid_material": "zombie:demon_dirt",
+          "top_material": "zombie:demon_grass_no_tick",
+          "sea_material": "minecraft:water"
+        }
+      },
+      "minecraft:subsurface_builder": {
+        "builder": {
+          "type": "minecraft:noise_gradient",
+          "noise_descriptor": {
+            "name": "zombie:demon_biome_subsurface",
+            "first_octave": -7,
+            "amplitudes": [
+              1.0,
+              0.5,
+              0.25,
+              0.125
+            ]
+          },
+          "non_replaceable_blocks": [
+            "minecraft:air",
+            "minecraft:water",
+            "minecraft:lava",
+            "minecraft:bedrock"
+          ],
+          "noise_block_specifiers": [
+            {
+              "range": {
+                "min": 0.0,
+                "max": 0.55
+              },
+              "block": "zombie:demon_stone"
+            },
+            {
+              "range": {
+                "min": 0.55,
+                "max": 0.8
+              },
+              "block": "zombie:demon_dirt"
+            },
+            {
+              "range": {
+                "min": 0.8,
+                "max": 1.0
+              },
+              "block": "zombie:hellfire_trapstone"
+            }
+          ]
+        }
+      },
+      "minecraft:tags": {
+        "tags": [
+          "demon",
+          "demon_biome",
+          "hell",
+          "forest",
+          "overworld"
+        ]
+      }
+    }
+  }
+}

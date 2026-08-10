@@ -1,0 +1,32 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Ed Capeau ZC_RP",
+		"description": "update 8.24.25",
+		"uuid": "5961771d-05e7-4457-bd39-90779f85b430",
+		"version": [
+			1,
+			0,
+			2
+		],
+		"min_engine_version": [
+			1,
+			21,
+			90
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "8627eb76-e210-426e-b8f3-39d395775af0",
+			"version": [
+				1,
+				0,
+				2
+			]
+		}
+	],
+	"capabilities": [
+    "pbr"
+  ]
+}

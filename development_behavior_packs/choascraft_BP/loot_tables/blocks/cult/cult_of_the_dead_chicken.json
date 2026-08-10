@@ -1,0 +1,6 @@
+{
+  "pools": [{
+    "rolls": 1,
+    "entries": [{ "type": "item", "name": "zombie:cult_of_the_dead_chicken" }]
+  }]
+}

@@ -1,0 +1,25 @@
+
+{
+	"format_version": "1.21.111",
+	"minecraft:item": {
+		"description": {
+			"identifier": "zombie:halloween_candy",
+			"menu_category": {"category": "construction"}
+		},
+		"components": {
+			"minecraft:display_name": {
+				"value": "Halloween Candy"
+			},
+			"minecraft:food": {
+				"nutrition": 1,
+				"saturation_modifier": 0.6
+			},
+			"minecraft:use_modifiers": {
+				"movement_modifier": 0,
+				"use_duration": 1
+			},
+			"minecraft:icon": "zombie_candy",
+			"zc:candy": {}
+		}
+	}
+}

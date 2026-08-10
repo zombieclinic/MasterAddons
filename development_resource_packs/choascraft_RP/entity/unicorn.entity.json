@@ -1,0 +1,65 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "zombie:unicorn",
+      "min_engine_version": "1.17.10",
+      "enable_attachables": true,
+      "materials": {
+        "default": "horse_leather_armor"
+      },
+      "textures": {
+        "base_white": "textures/unicorn/base_white",
+        "base_creamy": "textures/unicorn/base_creamy",
+        "base_chestnut": "textures/unicorn/base_chestnut",
+        "base_brown": "textures/unicorn/base_brown",
+        "base_black": "textures/unicorn/base_black",
+        "base_gray": "textures/unicorn/base_gray",
+        "base_darkbrown": "textures/unicorn/base_darkbrown",
+        "base_rainbow": "textures/unicorn/colors/base_rainbow",
+        "markings_none": "textures/unicorn/markings_none",
+        "markings_white": "textures/unicorn/markings_white",
+        "markings_whitefield": "textures/unicorn/markings_whitefield",
+        "markings_whitedots": "textures/unicorn/markings_whitedots",
+        "markings_blackdots": "textures/unicorn/markings_blackdots",
+        "armor_none": "textures/unicorn/armor_none",
+        "armor_leather": "textures/unicorn/armor_leather",
+        "armor_iron": "textures/unicorn/armor_iron",
+        "armor_gold": "textures/unicorn/armor_gold",
+        "armor_diamond": "textures/unicorn/armor_diamond",
+        "armor_copper": "textures/entity/horse2/armor/horse_armor_copper",
+        "armor_netherite": "textures/entity/horse2/armor/horse_armor_netherite"
+      },
+      "geometry": {
+        "default": "geometry.unicorn"
+      },
+      "animations": {
+        "locomotion": "controller.animation.unicorn.locomotion",
+        "idle": "animation.unicorn.idle",
+        "walk": "animation.unicorn.Walk",
+        "gallop": "animation.unicorn.gallop",
+        "rear": "animation.unicorn.rear",
+        "look": "animation.unicorn.look_at_player",
+        "tail": "animation.unicorn.tail"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.armor_texture_slot = query.is_item_name_any('slot.armor.body', 0, 'minecraft:leather_horse_armor') ? 1 : query.is_item_name_any('slot.armor.body', 0, 'minecraft:iron_horse_armor') ? 2 : query.is_item_name_any('slot.armor.body', 0, 'minecraft:golden_horse_armor') ? 3 : query.is_item_name_any('slot.armor.body', 0, 'minecraft:diamond_horse_armor') ? 4 : query.is_item_name_any('slot.armor.body', 0, 'minecraft:copper_horse_armor') ? 5 : query.is_item_name_any('slot.armor.body', 0, 'minecraft:netherite_horse_armor') ? 6 : query.armor_texture_slot(4);"
+        ],
+        "animate": [
+          "locomotion",
+          "look",
+          "tail"
+        ],
+        "scale": "0.8"
+      },
+      "render_controllers": [
+        "controller.render.unicorn"
+      ],
+      "spawn_egg": {
+        "base_color": "#F3E9FF",
+        "overlay_color": "#8D5CFF"
+      }
+    }
+  }
+}

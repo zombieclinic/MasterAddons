@@ -1,0 +1,78 @@
+{
+  "format_version": "1.21.70",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "zombie:hell_brute_spawn_proxy",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "spawn_target": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "num_to_spawn": 1,
+              "min_wait_time": 0.1,
+              "max_wait_time": 0.1,
+              "single_use": true,
+              "spawn_entity": "zombie:hell_brute",
+              "spawn_event": "minecraft:entity_spawned"
+            }
+          ]
+        },
+        "minecraft:timer": {
+          "time": 0.5,
+          "time_down_event": {
+            "event": "despawn",
+            "target": "self"
+          }
+        }
+      },
+      "despawn": {
+        "minecraft:instant_despawn": {
+          "remove_child_entities": false
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "chaos_spawn_proxy",
+          "monster"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.0,
+        "height": 0.0
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": "no"
+        }
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "spawn_target"
+          ]
+        }
+      },
+      "despawn": {
+        "add": {
+          "component_groups": [
+            "despawn"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "zombie:firefly_jar_5",
+			"textures": {
+				"default": "textures/items/fireflys/firefly_jar2"
+			},
+			"geometry": {
+				"default": "geometry.firefly_jar_05_item",
+				"right_hand": "geometry.firefly_jar_05_right_item"
+			},
+			"render_controllers": [
+				"controller.render.firefly_jar_05"
+			],
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"animations": {
+				"firefly": "animation.firefly_jar_05_item.wings",
+				"first_person": "animation.firefly_jar_01_item.3rd",
+				"player_wings": "animation.firefly_jar_01_item.player_wings_2"
+			},
+			"scripts": {
+				"animate": [
+					"firefly",
+					{
+						"first_person": "c.is_first_person"
+					},
+					{
+						"player_wings": "!c.is_first_person"
+					}
+				]
+			}
+		}
+	}
+}

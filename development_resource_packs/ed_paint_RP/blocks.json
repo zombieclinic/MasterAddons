@@ -1,0 +1,18 @@
+
+{
+	"format_version": [
+		1,
+		1,
+		0
+	],
+		"zombie:blu3winqs_animatedshroom": {
+			"sound": "stone",
+			"textures": "zombie_blu3winqs8"
+	},
+	"zombie:blu3winqs_ghost_shroom": {
+		"sound": "glass"
+	},
+	"zombie:blu3winqs_fire_girl": {
+		"sound": "glass"
+	}
+}

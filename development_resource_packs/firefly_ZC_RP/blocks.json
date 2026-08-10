@@ -1,0 +1,39 @@
+
+	{
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"zombie:empty_jar_block": {
+		"sound": "glass"
+	},
+	"zombie:glass_jar_01_block": {
+		"sound": "glass"
+	},
+	"zombie:glass_jar_02_block": {
+		"sound": "glass"
+	},
+	"zombie:glass_jar_03_block": {
+		"sound": "glass"
+	},
+	"zombie:glass_jar_04_block": {
+		"sound": "glass"
+	},
+	"zombie:glass_jar_05_block": {
+		"sound": "glass"
+	},
+	"zombie:luciferin_block": {
+		"sound": "glass",
+		"brightness_gamma": 6,
+		"textures": "zombie:luciferin_block"
+	},
+	"zombie:luciferin_block_fire": {
+		"sound": "glass",
+		"brightness_gamma": 6,
+		"textures": "zombie:luciferin_block_fire"
+	},
+	"zombie:firefly_block": {
+		"sound": "bone_block"
+	}
+    }

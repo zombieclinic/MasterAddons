@@ -1,0 +1,22 @@
+
+{
+	"format_version": "1.21.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "zombie:chargedpunkin",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"minecraft:projectile": {
+				"minimum_critical_power": 1,
+				"projectile_entity": "zombie:chargedammopumpkin"
+			},
+			"minecraft:display_name": {
+				"value": "zombie_charged_pumpk"
+			},
+			"minecraft:icon": "zombie_charged_pumpk"
+		}
+	}
+}

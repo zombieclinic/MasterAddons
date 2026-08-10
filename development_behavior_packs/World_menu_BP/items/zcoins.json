@@ -1,0 +1,21 @@
+{
+	"format_version": "1.20.40",
+	"minecraft:item": {
+		"description": {
+			"identifier": "zombie:zcoin",
+			"category": "nature"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "coins"
+			},
+			"minecraft:display_name": {
+				"value": "Coin"
+			},
+			"minecraft:hover_text_color": "minecoin_gold",
+			"minecraft:block_placer": {
+				"block": "zombie:zcoin_block"
+			}
+		}
+	}
+}

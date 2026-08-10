@@ -1,0 +1,26 @@
+
+{
+	"format_version": "1.21.111",
+	"minecraft:item": {
+		"description": {
+			"identifier": "zombie:halloween_candycorn",
+			"menu_category": {"category": "construction"}
+		},
+		"components": {
+            "minecraft:display_name": {
+                "value": "halloween Candy Corn"
+            },
+                 "minecraft:use_animation": "eat",
+			"minecraft:food": {
+				"nutrition": 1,
+				"saturation_modifier": 0.6
+			},
+			"minecraft:use_modifiers": {
+				"movement_modifier": 0,
+				"use_duration": 1
+			},
+			"minecraft:icon": "halloween_candycorn",
+            "zc:candy": {}
+		}
+	}
+}

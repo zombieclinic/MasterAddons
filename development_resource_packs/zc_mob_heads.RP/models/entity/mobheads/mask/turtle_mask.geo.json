@@ -1,0 +1,37 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.turtle_mask",
+				"texture_width": 32,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "turtle_mask",
+					"pivot": [0, 18.95, -4],
+					"binding": "'head'",
+					"cubes": [
+						{
+							"origin": [-4, 23.825, -4],
+							"size": [8, 8, 8],
+							"inflate": 0.5,
+							"uv": {
+								"north": {"uv": [8, 7.85], "uv_size": [7.95, 8.15]},
+								"east": {"uv": [0, 8], "uv_size": [7.725, 8]},
+								"south": {"uv": [23.9, 8.05], "uv_size": [8.05, 7.95]},
+								"west": {"uv": [16.075, 8.05], "uv_size": [7.85, 7.95]},
+								"up": {"uv": [8, 0], "uv_size": [7.775, 7.875]},
+								"down": {"uv": [15.95, 8.05], "uv_size": [8.025, -8.05]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

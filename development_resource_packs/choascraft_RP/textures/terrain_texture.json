@@ -1,0 +1,1299 @@
+{
+  "resource_pack_name": "choascraft",
+  "texture_name": "atlas.terrain",
+  "texture_data": {
+    "pengiun_egg": {
+      "textures": "textures/items/water/pengiuns/pengiun_egg"
+    },
+    "eyewood_tree_top": {
+      "textures": "textures/abyss/tree/log_top/eyewood_tree_top"
+    },
+    "eyewood_tree_side": {
+      "textures": "textures/abyss/tree/log_side/eyewood_tree_side"
+    },
+    "eyewood_tree_leaves": {
+      "textures": "textures/abyss/tree/leaves/eyewood_tree_leaves"
+    },
+    "eyewood_tree_sapling": {
+      "textures": "textures/abyss/tree/sapling/eyewood_tree_sapling"
+    },
+    "stripped_eyewood_log": {
+      "textures": "textures/abyss/tree/stripped_side/stripped_abyss_wood"
+    },
+    "eyewood_planks": {
+      "textures": "textures/abyss/blocks/planks/eyewood_planks"
+    },
+    "abyss_trap_door_top": {
+      "textures": "textures/abyss/blocks/trapdoor/abyss_trap_door_top"
+    },
+    "abyss_trap_door_side": {
+      "textures": "textures/abyss/blocks/trapdoor/abyss_trap_door_side"
+    },
+    "abyss_trap_door_bottom": {
+      "textures": "textures/abyss/blocks/trapdoor/abyss_trap_door_bottom"
+    },
+    "abyss_top_door": {
+      "textures": "textures/abyss/blocks/door_top/abyss_top_door"
+    },
+    "abyss_bottom_door": {
+      "textures": "textures/abyss/blocks/door_bottom/abyss_bottom_door"
+    },
+    "glow_flower": {
+      "textures": "textures/abyss/plants/glow_flower/glow_flower"
+    },
+    "infected_stone": {
+      "textures": "textures/abyss/floor/stone/infected_stone"
+    },
+    "infected_gravel": {
+      "textures": "textures/abyss/floor/gravel/infected_gravel"
+    },
+    "infected_sand": {
+      "textures": "textures/abyss/floor/sand/infected_sand"
+    },
+    "abyss_mushroom": {
+      "textures": "textures/abyss/plants/mushroom/abyss_mushroom"
+    },
+    "infected_mushroom": {
+      "textures": "textures/infected/mushroom/mushroom"
+    },
+    "sporepod_bottom": {
+      "textures": "textures/infected/plants/sporepod/bottom"
+    },
+    "sporepod_middle": {
+      "textures": "textures/infected/plants/sporepod/middle"
+    },
+    "sporepod_top": {
+      "textures": "textures/infected/plants/sporepod/top"
+    },
+    "zc_corrupted_spire": {
+      "textures": "textures/zombies/zc_corrupted_spire"
+    },
+    "abyss_grass": {
+      "textures": "textures/abyss/plants/grass/abyss_grass"
+    },
+    "black_grass": {
+      "textures": "textures/infected/blackgrass/blackgrass"
+    },
+    "infected_goo": {
+      "textures": "textures/items/infect_armor/infected_goo"
+    },
+    "abyss_glob_flower": {
+      "textures": "textures/abyss/plants/glob_flower/abyss_glob_flower"
+    },
+    "abyss_flower_0": {
+      "textures": "textures/abyss/flowers/flower_0/abyss_flower_0"
+    },
+    "abyss_flower_1": {
+      "textures": "textures/abyss/flowers/flower_1/abyss_flower_1"
+    },
+    "abyss_flower_2": {
+      "textures": "textures/abyss/flowers/flower_2/abyss_flower_2"
+    },
+    "abyss_flower_3": {
+      "textures": "textures/abyss/flowers/flower_3/abyss_flower_3"
+    },
+    "abyss_flower_4": {
+      "textures": "textures/abyss/flowers/flower_4/abyss_flower_4"
+    },
+    "infected_flower_0": {
+      "textures": "textures/infected/flower/flower0"
+    },
+    "infected_flower_1": {
+      "textures": "textures/infected/flower/flower1"
+    },
+    "infected_flower_2": {
+      "textures": "textures/infected/flower/flower2"
+    },
+    "infected_flower_3": {
+      "textures": "textures/infected/flower/flower3"
+    },
+    "infected_flower_4": {
+      "textures": "textures/infected/flower/flower4"
+    },
+    "infected_flower_top": {
+      "textures": "textures/infected/flower/top"
+    },
+    "eye_flower_0": {
+      "textures": "textures/infected/eyeflower/flower0"
+    },
+    "eye_flower_1": {
+      "textures": "textures/infected/eyeflower/flower1"
+    },
+    "eye_flower_2": {
+      "textures": "textures/infected/eyeflower/flower2"
+    },
+    "eye_flower_3": {
+      "textures": "textures/infected/eyeflower/flower3"
+    },
+    "eye_flower": {
+      "textures": "textures/infected/eyeflower/flower"
+    },
+    "eye_flower_top": {
+      "textures": "textures/infected/eyeflower/top"
+    },
+    "infected_cobblestone": {
+      "textures": "textures/abyss/floor/cobblestone/infected_cobblestone"
+    },
+    "infected_dirt": {
+      "textures": "textures/abyss/floor/dirt/infected_dirt"
+    },
+    "infected_teeth": {
+      "textures": "textures/abyss/floor/teeth/infected_teeth"
+    },
+    "infected_sporestone": {
+      "textures": "textures/abyss/floor/sporestone/sporestone"
+    },
+    "infected_planks": {
+      "textures": "textures/infected/planks/planks"
+    },
+    "infected_top_door": {
+      "textures": "textures/infected/door/top/topdoor"
+    },
+    "infected_bottom_door": {
+      "textures": "textures/infected/door/bottom/bottomdoor"
+    },
+    "infected_block": {
+      "textures": "textures/infected/block/block"
+    },
+    "infected_grass_top": {
+      "textures": "textures/infected/grass/top/top"
+    },
+    "infected_grass_side": {
+      "textures": "textures/infected/grass/side/side"
+    },
+    "zombie_infected_leaves": {
+      "textures": "textures/infected/leaves/leaves"
+    },
+    "infected_tree_log": {
+      "textures": "textures/infected/log/side/side"
+    },
+    "infected_tree_log_top": {
+      "textures": "textures/infected/log/top/top"
+    },
+    "infected_tree_log_stripped": {
+      "textures": "textures/infected/strippedlog/side/side"
+    },
+    "infected_tree_log_stripped_top": {
+      "textures": "textures/infected/strippedlog/top/top"
+    },
+    "redwood_planks": {
+      "textures": "textures/redwood/redwood_planks"
+    },
+    "redwood_log": {
+      "textures": "textures/redwood/redwood_log"
+    },
+    "redwood_log_top": {
+      "textures": "textures/redwood/redwood_log_top"
+    },
+    "stripped_redwood_log": {
+      "textures": "textures/redwood/redwood_stripped_log"
+    },
+    "stripped_redwood_log_top": {
+      "textures": "textures/redwood/redwood_stripped_top"
+    },
+    "redwood_leaf": {
+      "textures": "textures/redwood/redwood_leaf"
+    },
+    "redwood_door_bottom": {
+      "textures": "textures/redwood/redwood_door_bottom"
+    },
+    "redwood_door_top": {
+      "textures": "textures/redwood/redwood_door_top"
+    },
+    "redwood_trapdoor": {
+      "textures": "textures/redwood/redwood_trapdoor"
+    },
+    "red_wood_saplin": {
+      "textures": "textures/redwood/red_wood_saplin"
+    },
+    "eyewood_button": {
+      "textures": "textures/abyss/blocks/eye_wood_button_icon"
+    },
+    "zombie_hell_log": {
+      "textures": "textures/demon/hell_log"
+    },
+    "zombie_hell_log2": {
+      "textures": "textures/demon/hell_log2"
+    },
+    "zombie_demon_log_top": {
+      "textures": "textures/demon/hell_log_top"
+    },
+    "zombie_hell_stripped_1": {
+      "textures": "textures/demon/hell_stripped_1"
+    },
+    "zombie_hell_log_stripped_2": {
+      "textures": "textures/demon/hell_log_stripped_2"
+    },
+    "zombie_hell_plank": {
+      "textures": "textures/demon/plank"
+    },
+    "zombie_demon_trapdoor": {
+      "textures": "textures/demon/trapdoor"
+    },
+    "zombie_demon_door_bottom": {
+      "textures": "textures/demon/demon_door_bottom"
+    },
+    "zombie_demon_door_top": {
+      "textures": "textures/demon/demon_door_top"
+    },
+    "zombie_demon_fence": {
+      "textures": "textures/demon/demon_fence"
+    },
+    "zombie_hellfire_trapstone": {
+      "textures": "textures/demon/hellfire_trapstone"
+    },
+    "zombie_hellfire_spikes": {
+      "textures": "textures/demon/spike"
+    },
+    "zombie_demon_dirt": {
+      "textures": "textures/demon/demon_dirt"
+    },
+    "zombie_demon_grass": {
+      "textures": "textures/demon/demon_grass"
+    },
+    "zombie_demon_grass_top": {
+      "textures": "textures/demon/demon_grass_top"
+    },
+    "zombie_corrupted_grass": {
+      "textures": "textures/demon/grass/corrupted_grass_5"
+    },
+    "zombie_emberberry_0": {
+      "textures": "textures/demon/plants/emberberry_0"
+    },
+    "zombie_emberberry_1": {
+      "textures": "textures/demon/plants/emberberry_1"
+    },
+    "zombie_emberberry_2": {
+      "textures": "textures/demon/plants/emberberry_2"
+    },
+    "zombie_emberberry_3": {
+      "textures": "textures/demon/plants/emberberry_3"
+    },
+    "zombie_emberberry_4": {
+      "textures": "textures/demon/plants/emberberry_4"
+    },
+    "zombie_demon_stone": {
+      "textures": "textures/demon/demon_stone"
+    },
+    "zombie_demon_stone_brick": {
+      "textures": "textures/demon/demon_stone_brick"
+    },
+    "zombie_demon_steel_block": {
+      "textures": "textures/demon/demon_steel_block"
+    },
+    "zombie_currupted_xp_block": {
+      "textures": "textures/demon/drops/currupted_xp_block"
+    },
+    "zombie_chiseled_demon_steel_block": {
+      "textures": "textures/demon/chiseled_demon_steel_block"
+    },
+    "zombie_demon_steel_chiseled": {
+      "textures": "textures/demon/chiseled_demon_steel_block"
+    },
+    "zombie_demon_steel_ore": {
+      "textures": "textures/demon/demon_steel_ore"
+    },
+    "zombie_steel_ore": {
+      "textures": "textures/demon/demon_steel_ore"
+    },
+    "zombie_demon_chest": {
+      "textures": "textures/demon/choas_chest"
+    },
+    "zombie_hell_lamp": {
+      "textures": "textures/demon/hell_lamp"
+    },
+    "zombie_demon_alter": {
+      "textures": "textures/demon/demon_alter_side_1"
+    },
+    "zombie_demon_alter_top": {
+      "textures": "textures/demon/demon_alter_top"
+    },
+    "zombie_demon_alter_top_planstar": {
+      "textures": "textures/demon/demon_alter_top_planstar"
+    },
+    "zombie_demon_alter_level_0": {
+      "textures": "textures/demon/alter_blocks/demon_alter_top_level_0"
+    },
+    "zombie_demon_alter_level_1": {
+      "textures": "textures/demon/alter_blocks/demon_alter_top_level_1"
+    },
+    "zombie_demon_alter_level_2": {
+      "textures": "textures/demon/alter_blocks/demon_alter_top_level_2"
+    },
+    "zombie_demon_alter_level_3": {
+      "textures": "textures/demon/alter_blocks/demon_alter_top_level_3"
+    },
+    "zombie_demon_alter_level_4": {
+      "textures": "textures/demon/alter_blocks/demon_alter_top_level_4"
+    },
+    "zombie_demon_blood_block": {
+      "textures": "textures/demon/alter_blocks/blood_block"
+    },
+    "zombie_demon_flesh_block": {
+      "textures": "textures/demon/alter_blocks/flesh_block"
+    },
+    "zombie_demon_blood_flesh_block": {
+      "textures": "textures/demon/alter_blocks/blood_flesh_block"
+    },
+    "blood_log": {
+      "textures": "textures/blood/blood_log"
+    },
+    "blood_log_top": {
+      "textures": "textures/blood/blood_log_top"
+    },
+    "blood_stripped_log": {
+      "textures": "textures/blood/blood_stripped_log"
+    },
+    "blood_stripped_top_log": {
+      "textures": "textures/blood/blood_stripped_top_log"
+    },
+    "blood_planks": {
+      "textures": "textures/blood/blood_planks"
+    },
+    "blood_leaves": {
+      "textures": "textures/blood/blood_leaves"
+    },
+    "blood_door_bottom": {
+      "textures": "textures/blood/blood_door_bottom"
+    },
+    "blood_door_top": {
+      "textures": "textures/blood/blood_door_top"
+    },
+    "blood_trap_door": {
+      "textures": "textures/blood/blood_trap_door"
+    },
+    "blood_saplin_0": {
+      "textures": "textures/blood/blood_saplin_0"
+    },
+    "blood_saplin_1": {
+      "textures": "textures/blood/blood_saplin_1"
+    },
+    "blood_saplin_2": {
+      "textures": "textures/blood/blood_saplin_2"
+    },
+    "blood_saplin_3": {
+      "textures": "textures/blood/blood_saplin_3"
+    },
+    "blood_saplin_4": {
+      "textures": "textures/blood/blood_saplin_4"
+    },
+    "flesh_tree": {
+      "textures": "textures/blood/flesh_tree"
+    },
+    "flesh_log_top": {
+      "textures": "textures/blood/flesh_log_top"
+    },
+    "flesh_log_stripped": {
+      "textures": "textures/blood/flesh_log_stripped"
+    },
+    "stripped_flesh_log_top": {
+      "textures": "textures/blood/stripped_flesh_log_top"
+    },
+    "flesh_planks": {
+      "textures": "textures/blood/flesh_planks"
+    },
+    "flesh_leaves": {
+      "textures": "textures/blood/flesh_leaves"
+    },
+    "flesh_door_bottom": {
+      "textures": "textures/blood/flesh_door_bottom"
+    },
+    "flesh_door_top": {
+      "textures": "textures/blood/flesh_door_top"
+    },
+    "flesh_trap_door": {
+      "textures": "textures/blood/flesh_trap_door"
+    },
+    "flesh_saplin_0": {
+      "textures": "textures/blood/flesh_saplin_0"
+    },
+    "flesh_saplin_1": {
+      "textures": "textures/blood/flesh_saplin_1"
+    },
+    "flesh_saplin_2": {
+      "textures": "textures/blood/flesh_saplin_2"
+    },
+    "flesh_saplin_3": {
+      "textures": "textures/blood/flesh_saplin_3"
+    },
+    "flesh_saplin_4": {
+      "textures": "textures/blood/flesh_saplin_4"
+    },
+    "tumor_log": {
+      "textures": "textures/blood/tumor_log"
+    },
+    "tumor_log_top": {
+      "textures": "textures/blood/tumor_log_top"
+    },
+    "tumor_log_stripped": {
+      "textures": "textures/blood/tumor_log_stripped"
+    },
+    "tumor_log_stripped_top": {
+      "textures": "textures/blood/tumor_log_stripped_top"
+    },
+    "tumor_planks": {
+      "textures": "textures/blood/tumor_planks"
+    },
+    "tumor_leaves": {
+      "textures": "textures/blood/tumor_leaves"
+    },
+    "tumor_door_bottom": {
+      "textures": "textures/blood/tumor_door_bottom"
+    },
+    "tumor_door_top": {
+      "textures": "textures/blood/tumor_door_top"
+    },
+    "tumor_trap_door": {
+      "textures": "textures/blood/tumor_trap_door"
+    },
+    "tumor_saplin_0": {
+      "textures": "textures/blood/tumor_saplin_0"
+    },
+    "tumor_saplin_1": {
+      "textures": "textures/blood/tumor_saplin_1"
+    },
+    "tumor_saplin_2": {
+      "textures": "textures/blood/tumor_saplin_2"
+    },
+    "tumor_saplin_3": {
+      "textures": "textures/blood/tumor_saplin_3"
+    },
+    "tumor_saplin_4": {
+      "textures": "textures/blood/tumor_saplin_4"
+    },
+    "blood_tree_vines": {
+      "textures": "textures/blood/blood_tree_vines"
+    },
+    "blood_vine_1": {
+      "textures": "textures/blood/blood_vine_1"
+    },
+    "blood_vine_2": {
+      "textures": "textures/blood/blood_vine_2"
+    },
+    "blood_root_0": {
+      "textures": "textures/blood/plants/blood_root_0"
+    },
+    "blood_root_1": {
+      "textures": "textures/blood/plants/blood_root_1"
+    },
+    "blood_root_2": {
+      "textures": "textures/blood/plants/blood_root_2"
+    },
+    "blood_root_3": {
+      "textures": "textures/blood/plants/blood_root_3"
+    },
+    "blood_root_top": {
+      "textures": "textures/blood/plants/blood_root_top"
+    },
+    "blood_mushroom": {
+      "textures": "textures/blood/plants/blood_mushroom"
+    },
+    "zombie_magic_snow": {
+      "textures": "textures/christmas/blocks/christmas_land/magic_snow"
+    },
+    "zombie_snow": {
+      "textures": "textures/blocks/snow"
+    },
+    "zombie_lucky_present": {
+      "textures": "textures/christmas/christmas_blocks/lucky_present"
+    },
+    "blue_present": {
+      "textures": "textures/christmas/christmas_blocks/blue_present"
+    },
+    "green_present": {
+      "textures": "textures/christmas/christmas_blocks/green_present"
+    },
+    "pink_present": {
+      "textures": "textures/christmas/christmas_blocks/pink_present"
+    },
+    "purple_present": {
+      "textures": "textures/christmas/christmas_blocks/purple_present"
+    },
+    "red_present": {
+      "textures": "textures/christmas/christmas_blocks/red_present"
+    },
+    "christmas_tree": {
+      "textures": "textures/christmas/blocks/christmas_land/christmas_tree"
+    },
+    "christmas_wreath": {
+      "textures": "textures/christmas/blocks/christmas_land/wreath"
+    },
+    "zombie_mistletoe_stocking": {
+      "textures": "textures/christmas/blocks/christmas_land/zombie_stocking"
+    },
+    "santa_sign": {
+      "textures": "textures/christmas/blocks/christmas_land/zombiesign"
+    },
+    "santa_carpet": {
+      "textures": "textures/christmas/blocks/christmas_land/santa_carpet"
+    },
+    "snowflakes_carpet": {
+      "textures": "textures/christmas/blocks/christmas_land/snowflakes"
+    },
+    "zombiecraft": {
+      "textures": "textures/christmas/blocks/christmas_land/zombiecraft"
+    },
+    "zombie_santa_carpet": {
+      "textures": "textures/christmas/blocks/christmas_land/zombie_santa"
+    },
+    "zombie_santa_head": {
+      "textures": "textures/christmas/entity/christmass/zombie_santa"
+    },
+    "gingerbreadballs": {
+      "textures": "textures/christmas/blocks/christmas_land/gingerbreadballs"
+    },
+    "gingerbreadicingtop": {
+      "textures": "textures/christmas/blocks/christmas_land/gingertop"
+    },
+    "gingerbreadnormal": {
+      "textures": "textures/christmas/blocks/christmas_land/gingerbreadnormal"
+    },
+    "ginger_brick": {
+      "textures": "textures/christmas/blocks/christmas_land/ginger_brick"
+    },
+    "gingerbread_door_bottom": {
+      "textures": "textures/christmas/blocks/christmas_land/bottom_door"
+    },
+    "gingerbread_door_top": {
+      "textures": "textures/christmas/blocks/christmas_land/door_top"
+    },
+    "gingerbread_trapdoor": {
+      "textures": "textures/christmas/blocks/christmas_land/trap_door"
+    },
+    "gingerbreadplan": {
+      "textures": "textures/christmas/blocks/christmas_land/gingerbreadplan"
+    },
+    "gingerbreadplanball": {
+      "textures": "textures/christmas/blocks/christmas_land/gingerbreadplanball"
+    },
+    "gingerbreadtree": {
+      "textures": "textures/christmas/blocks/christmas_land/gingerbreadtree"
+    },
+    "gingerbreadtreeplan": {
+      "textures": "textures/christmas/blocks/christmas_land/gingerbreadtreeplan"
+    },
+    "gingerbreadwindow": {
+      "textures": "textures/christmas/blocks/christmas_land/gingerbreadwindow"
+    },
+    "gingerbreadwindow1": {
+      "textures": "textures/christmas/blocks/christmas_land/gingerbreadwindow1"
+    },
+    "zombie_christmas_light_blue": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_blue"
+    },
+    "zombie_christmas_light_blue_on": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_blue_on"
+    },
+    "zombie_christmas_light_cyan": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_cyan"
+    },
+    "zombie_christmas_light_cyan_on": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_cyan_on"
+    },
+    "zombie_christmas_light_green": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_green"
+    },
+    "zombie_christmas_light_green_on": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_green_on"
+    },
+    "zombie_christmas_light_light_blue": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_light_blue"
+    },
+    "zombie_christmas_light_light_blue_on": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_light_blue_on"
+    },
+    "zombie_christmas_light_magenta": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_magenta"
+    },
+    "zombie_christmas_light_magenta_on": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_magenta_on"
+    },
+    "zombie_christmas_light_pink": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_pink"
+    },
+    "zombie_christmas_light_pink_on": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_pink_on"
+    },
+    "zombie_christmas_light_purple": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_purple"
+    },
+    "zombie_christmas_light_purple_on": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_purple_on"
+    },
+    "zombie_christmas_light_red": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_red"
+    },
+    "zombie_christmas_light_red_on": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_red_on"
+    },
+    "zombie_christmas_light_yellow": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_yellow"
+    },
+    "zombie_christmas_light_yellow_on": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_yellow_on"
+    },
+    "zombie_candycane_blue_1": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/blue/candycane_blue_1"
+    },
+    "zombie_candycane_blue_2": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/blue/candycane_blue_2"
+    },
+    "zombie_candycane_blue_3": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/blue/candycane_blue_3"
+    },
+    "zombie_candycane_blue_4": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/blue/candycane_blue_4"
+    },
+    "zombie_candycane_blue_5": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/blue/candycane_blue_5"
+    },
+    "zombie_candycane_blue_6": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/blue/candycane_blue_6"
+    },
+    "zombie_candycane_purple_1": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/purple/candycane_purple_1"
+    },
+    "zombie_candycane_purple_2": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/purple/candycane_purple_2"
+    },
+    "zombie_candycane_purple_3": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/purple/candycane_purple_3"
+    },
+    "zombie_candycane_purple_4": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/purple/candycane_purple_4"
+    },
+    "zombie_candycane_purple_5": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/purple/candycane_purple_5"
+    },
+    "zombie_candycane_purple_6": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/purple/candycane_purple_6"
+    },
+    "zombie_candycane_red_1": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/redcandycane/candycane_red_1"
+    },
+    "zombie_candycane_red_2": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/redcandycane/candycane_red_2"
+    },
+    "zombie_candycane_red_3": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/redcandycane/candycane_red_3"
+    },
+    "zombie_candycane_red_4": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/redcandycane/candycane_red_4"
+    },
+    "zombie_candycane_red_5": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/redcandycane/candycane_red_5"
+    },
+    "zombie_candycane_red_6": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/redcandycane/candycane_red_6"
+    },
+    "zombie_colored_amethyst_black": {
+      "textures": "textures/blocks/amethyst_block/black_amethyst_block"
+    },
+    "zombie_colored_amethyst_blue": {
+      "textures": "textures/blocks/amethyst_block/blue_amethyst_block"
+    },
+    "zombie_colored_amethyst_brown": {
+      "textures": "textures/blocks/amethyst_block/brown_amethyst_block"
+    },
+    "zombie_colored_amethyst_cyan": {
+      "textures": "textures/blocks/amethyst_block/cyan_amethyst_block"
+    },
+    "zombie_colored_amethyst_gray": {
+      "textures": "textures/blocks/amethyst_block/gray_amethyst_block"
+    },
+    "zombie_colored_amethyst_green": {
+      "textures": "textures/blocks/amethyst_block/green_amethyst_block"
+    },
+    "zombie_colored_amethyst_light_blue": {
+      "textures": "textures/blocks/amethyst_block/light_blue_amethyst_block"
+    },
+    "zombie_colored_amethyst_light_gray": {
+      "textures": "textures/blocks/amethyst_block/light_gray_amethyst_block"
+    },
+    "zombie_colored_amethyst_lime": {
+      "textures": "textures/blocks/amethyst_block/lime_amethyst_block"
+    },
+    "zombie_colored_amethyst_magenta": {
+      "textures": "textures/blocks/amethyst_block/magenta_amethyst_block"
+    },
+    "zombie_colored_amethyst_orange": {
+      "textures": "textures/blocks/amethyst_block/orange_amethyst_block"
+    },
+    "zombie_colored_amethyst_pink": {
+      "textures": "textures/blocks/amethyst_block/pink_amethyst_block"
+    },
+    "zombie_colored_amethyst_purple": {
+      "textures": "textures/blocks/amethyst_block/magenta_amethyst_block"
+    },
+    "zombie_colored_amethyst_red": {
+      "textures": "textures/blocks/amethyst_block/red_amethyst_block"
+    },
+    "zombie_colored_amethyst_white": {
+      "textures": "textures/blocks/amethyst_block/white_amethyst_block"
+    },
+    "zombie_colored_amethyst_yellow": {
+      "textures": "textures/blocks/amethyst_block/yellow_amethyst_block"
+    },
+    "zombie_colored_crying_obsidian_black": {
+      "textures": "textures/blocks/crying_obsidian/crying_obsidian_black"
+    },
+    "zombie_colored_crying_obsidian_blue": {
+      "textures": "textures/blocks/crying_obsidian/crying_obsidian_blue"
+    },
+    "zombie_colored_crying_obsidian_brown": {
+      "textures": "textures/blocks/crying_obsidian/crying_obsidian_brown"
+    },
+    "zombie_colored_crying_obsidian_cyan": {
+      "textures": "textures/blocks/crying_obsidian/crying_obsidian_cyan"
+    },
+    "zombie_colored_crying_obsidian_gray": {
+      "textures": "textures/blocks/crying_obsidian/crying_obsidian_gray"
+    },
+    "zombie_colored_crying_obsidian_green": {
+      "textures": "textures/blocks/crying_obsidian/crying_obsidian_green"
+    },
+    "zombie_colored_crying_obsidian_light_blue": {
+      "textures": "textures/blocks/crying_obsidian/crying_obsidian_light_blue"
+    },
+    "zombie_colored_crying_obsidian_light_gray": {
+      "textures": "textures/blocks/crying_obsidian/crying_obsidian_light_gray"
+    },
+    "zombie_colored_crying_obsidian_lime": {
+      "textures": "textures/blocks/crying_obsidian/crying_obsidian_lime"
+    },
+    "zombie_colored_crying_obsidian_magenta": {
+      "textures": "textures/blocks/crying_obsidian/crying_obsidian_magenta"
+    },
+    "zombie_colored_crying_obsidian_orange": {
+      "textures": "textures/blocks/crying_obsidian/crying_obsidian_orange"
+    },
+    "zombie_colored_crying_obsidian_pink": {
+      "textures": "textures/blocks/crying_obsidian/crying_obsidian_pink"
+    },
+    "zombie_colored_crying_obsidian_purple": {
+      "textures": "textures/blocks/crying_obsidian/crying_obsidian_purple"
+    },
+    "zombie_colored_crying_obsidian_red": {
+      "textures": "textures/blocks/crying_obsidian/crying_obsidian_red"
+    },
+    "zombie_colored_crying_obsidian_white": {
+      "textures": "textures/blocks/crying_obsidian/crying_obsidian_white"
+    },
+    "zombie_colored_crying_obsidian_yellow": {
+      "textures": "textures/blocks/crying_obsidian/crying_obsidian_yellow"
+    },
+    "zombie_colored_gilded_blackstone_black": {
+      "textures": "textures/blocks/gilded_blackstone/black_gilded_blackstone"
+    },
+    "zombie_colored_gilded_blackstone_blue": {
+      "textures": "textures/blocks/gilded_blackstone/blue_gilded_blackstone"
+    },
+    "zombie_colored_gilded_blackstone_brown": {
+      "textures": "textures/blocks/gilded_blackstone/brown_gilded_blackstone"
+    },
+    "zombie_colored_gilded_blackstone_cyan": {
+      "textures": "textures/blocks/gilded_blackstone/cyan_gilded_blackstone"
+    },
+    "zombie_colored_gilded_blackstone_gray": {
+      "textures": "textures/blocks/gilded_blackstone/gray_gilded_blackstone"
+    },
+    "zombie_colored_gilded_blackstone_green": {
+      "textures": "textures/blocks/gilded_blackstone/green_gilded_blackstone"
+    },
+    "zombie_colored_gilded_blackstone_light_blue": {
+      "textures": "textures/blocks/gilded_blackstone/lightblue_gilded_blackstone"
+    },
+    "zombie_colored_gilded_blackstone_light_gray": {
+      "textures": "textures/blocks/gilded_blackstone/lightgray_gilded_blackstone"
+    },
+    "zombie_colored_gilded_blackstone_lime": {
+      "textures": "textures/blocks/gilded_blackstone/lime_gilded_blackstone"
+    },
+    "zombie_colored_gilded_blackstone_magenta": {
+      "textures": "textures/blocks/gilded_blackstone/magenta_gilded_blackstone"
+    },
+    "zombie_colored_gilded_blackstone_orange": {
+      "textures": "textures/blocks/gilded_blackstone/orange_gilded_blackstone"
+    },
+    "zombie_colored_gilded_blackstone_pink": {
+      "textures": "textures/blocks/gilded_blackstone/pink_gilded_blackstone"
+    },
+    "zombie_colored_gilded_blackstone_purple": {
+      "textures": "textures/blocks/gilded_blackstone/purple_gilded_blackstone"
+    },
+    "zombie_colored_gilded_blackstone_red": {
+      "textures": "textures/blocks/gilded_blackstone/red_gilded_blackstone"
+    },
+    "zombie_colored_gilded_blackstone_white": {
+      "textures": "textures/blocks/gilded_blackstone/white_gilded_blackstone"
+    },
+    "zombie_colored_gilded_blackstone_yellow": {
+      "textures": "textures/blocks/gilded_blackstone/yellow_gilded_blackstone"
+    },
+    "zombie_colored_glowing_obsidian_black": {
+      "textures": "textures/blocks/glowing_obsidian/glowing_obsidian_black"
+    },
+    "zombie_colored_glowing_obsidian_blue": {
+      "textures": "textures/blocks/glowing_obsidian/glowing_obsidian_blue"
+    },
+    "zombie_colored_glowing_obsidian_brown": {
+      "textures": "textures/blocks/glowing_obsidian/glowing_obsidian_brown"
+    },
+    "zombie_colored_glowing_obsidian_cyan": {
+      "textures": "textures/blocks/glowing_obsidian/glowing_obsidian_cyan"
+    },
+    "zombie_colored_glowing_obsidian_gray": {
+      "textures": "textures/blocks/glowing_obsidian/glowing_obsidian_gray"
+    },
+    "zombie_colored_glowing_obsidian_green": {
+      "textures": "textures/blocks/glowing_obsidian/glowing_obsidian_green"
+    },
+    "zombie_colored_glowing_obsidian_light_blue": {
+      "textures": "textures/blocks/glowing_obsidian/glowing_obsidian_light_blue"
+    },
+    "zombie_colored_glowing_obsidian_light_gray": {
+      "textures": "textures/blocks/glowing_obsidian/glowing_obsidian_light_gray"
+    },
+    "zombie_colored_glowing_obsidian_lime": {
+      "textures": "textures/blocks/glowing_obsidian/glowing_obsidian_lime"
+    },
+    "zombie_colored_glowing_obsidian_magenta": {
+      "textures": "textures/blocks/glowing_obsidian/glowing_obsidian_magenta"
+    },
+    "zombie_colored_glowing_obsidian_orange": {
+      "textures": "textures/blocks/glowing_obsidian/glowing_obsidian_orange"
+    },
+    "zombie_colored_glowing_obsidian_pink": {
+      "textures": "textures/blocks/glowing_obsidian/glowing_obsidian_pink"
+    },
+    "zombie_colored_glowing_obsidian_purple": {
+      "textures": "textures/blocks/glowing_obsidian/glowing_obsidian_purple"
+    },
+    "zombie_colored_glowing_obsidian_red": {
+      "textures": "textures/blocks/glowing_obsidian/glowing_obsidian_red"
+    },
+    "zombie_colored_glowing_obsidian_white": {
+      "textures": "textures/blocks/glowing_obsidian/glowing_obsidian_white"
+    },
+    "zombie_colored_glowing_obsidian_yellow": {
+      "textures": "textures/blocks/glowing_obsidian/glowing_obsidian_yellow"
+    },
+    "zombie_colored_obsidian_black": {
+      "textures": "textures/blocks/obby/obsidian_black"
+    },
+    "zombie_colored_obsidian_blue": {
+      "textures": "textures/blocks/obby/obsidian_blue"
+    },
+    "zombie_colored_obsidian_brown": {
+      "textures": "textures/blocks/obby/obsidian_brown"
+    },
+    "zombie_colored_obsidian_cyan": {
+      "textures": "textures/blocks/obby/obsidian_cyan"
+    },
+    "zombie_colored_obsidian_gray": {
+      "textures": "textures/blocks/obby/obsidian_gray"
+    },
+    "zombie_colored_obsidian_green": {
+      "textures": "textures/blocks/obby/obsidian_green"
+    },
+    "zombie_colored_obsidian_light_blue": {
+      "textures": "textures/blocks/obby/obsidian_light_blue"
+    },
+    "zombie_colored_obsidian_light_gray": {
+      "textures": "textures/blocks/obby/obsidian_light_gray"
+    },
+    "zombie_colored_obsidian_lime": {
+      "textures": "textures/blocks/obby/obsidian_lime"
+    },
+    "zombie_colored_obsidian_magenta": {
+      "textures": "textures/blocks/obby/obsidian_magenta"
+    },
+    "zombie_colored_obsidian_orange": {
+      "textures": "textures/blocks/obby/obsidian_orange"
+    },
+    "zombie_colored_obsidian_pink": {
+      "textures": "textures/blocks/obby/obsidian_pink"
+    },
+    "zombie_colored_obsidian_purple": {
+      "textures": "textures/blocks/obby/obsidian_purple"
+    },
+    "zombie_colored_obsidian_red": {
+      "textures": "textures/blocks/obby/obsidian_red"
+    },
+    "zombie_colored_obsidian_white": {
+      "textures": "textures/blocks/obby/obsidian_white"
+    },
+    "zombie_colored_obsidian_yellow": {
+      "textures": "textures/blocks/obby/obsidian_yellow"
+    },
+    "zombie_colored_sea_lantern_black": {
+      "textures": "textures/blocks/sea_lanterns/sea_lantern_black"
+    },
+    "zombie_colored_sea_lantern_blue": {
+      "textures": "textures/blocks/sea_lanterns/sea_lantern_blue"
+    },
+    "zombie_colored_sea_lantern_brown": {
+      "textures": "textures/blocks/sea_lanterns/sea_lantern_brown"
+    },
+    "zombie_colored_sea_lantern_cyan": {
+      "textures": "textures/blocks/sea_lanterns/sea_lantern_cyan"
+    },
+    "zombie_colored_sea_lantern_gray": {
+      "textures": "textures/blocks/sea_lanterns/sea_lantern_gray"
+    },
+    "zombie_colored_sea_lantern_green": {
+      "textures": "textures/blocks/sea_lanterns/sea_lantern_green"
+    },
+    "zombie_colored_sea_lantern_light_blue": {
+      "textures": "textures/blocks/sea_lanterns/sea_lantern_light_blue"
+    },
+    "zombie_colored_sea_lantern_light_gray": {
+      "textures": "textures/blocks/sea_lanterns/sea_lantern_light_gray"
+    },
+    "zombie_colored_sea_lantern_lime": {
+      "textures": "textures/blocks/sea_lanterns/sea_lantern_lime"
+    },
+    "zombie_colored_sea_lantern_magenta": {
+      "textures": "textures/blocks/sea_lanterns/sea_lantern_magenta"
+    },
+    "zombie_colored_sea_lantern_orange": {
+      "textures": "textures/blocks/sea_lanterns/sea_lantern_orange"
+    },
+    "zombie_colored_sea_lantern_pink": {
+      "textures": "textures/blocks/sea_lanterns/sea_lantern_pink"
+    },
+    "zombie_colored_sea_lantern_purple": {
+      "textures": "textures/blocks/sea_lanterns/sea_lantern_purple"
+    },
+    "zombie_colored_sea_lantern_red": {
+      "textures": "textures/blocks/sea_lanterns/sea_lantern_red"
+    },
+    "zombie_colored_sea_lantern_white": {
+      "textures": "textures/blocks/sea_lanterns/sea_lantern_white"
+    },
+    "zombie_colored_sea_lantern_yellow": {
+      "textures": "textures/blocks/sea_lanterns/sea_lantern_yellow"
+    },
+    "zombie_colored_redstone_lamp_black": {
+      "textures": "textures/blocks/redstone_lamps/black_redstone_lamp"
+    },
+    "zombie_colored_redstone_lamp_black_on": {
+      "textures": "textures/blocks/redstone_lamps/black_redstone_lamp_on"
+    },
+    "zombie_colored_redstone_lamp_blue": {
+      "textures": "textures/blocks/redstone_lamps/blue_redstone_lamp"
+    },
+    "zombie_colored_redstone_lamp_blue_on": {
+      "textures": "textures/blocks/redstone_lamps/blue_redstone_lamp_on"
+    },
+    "zombie_colored_redstone_lamp_brown": {
+      "textures": "textures/blocks/redstone_lamps/brown_redstone_lamp"
+    },
+    "zombie_colored_redstone_lamp_brown_on": {
+      "textures": "textures/blocks/redstone_lamps/brown_redstone_lamp_on"
+    },
+    "zombie_colored_redstone_lamp_cyan": {
+      "textures": "textures/blocks/redstone_lamps/cyan_redstone_lamp"
+    },
+    "zombie_colored_redstone_lamp_cyan_on": {
+      "textures": "textures/blocks/redstone_lamps/cyan_redstone_lamp_on"
+    },
+    "zombie_colored_redstone_lamp_gray": {
+      "textures": "textures/blocks/redstone_lamps/gray_redstone_lamp"
+    },
+    "zombie_colored_redstone_lamp_gray_on": {
+      "textures": "textures/blocks/redstone_lamps/gray_redstone_lamp_on"
+    },
+    "zombie_colored_redstone_lamp_green": {
+      "textures": "textures/blocks/redstone_lamps/green_redstone_lamp"
+    },
+    "zombie_colored_redstone_lamp_green_on": {
+      "textures": "textures/blocks/redstone_lamps/green_redstone_lamp_on"
+    },
+    "zombie_colored_redstone_lamp_light_blue": {
+      "textures": "textures/blocks/redstone_lamps/light_blue_redstone_lamp"
+    },
+    "zombie_colored_redstone_lamp_light_blue_on": {
+      "textures": "textures/blocks/redstone_lamps/light_blue_redstone_lamp_on"
+    },
+    "zombie_colored_redstone_lamp_light_gray": {
+      "textures": "textures/blocks/redstone_lamps/light_gray_redstone_lamp"
+    },
+    "zombie_colored_redstone_lamp_light_gray_on": {
+      "textures": "textures/blocks/redstone_lamps/light_gray_redstone_lamp_on"
+    },
+    "zombie_colored_redstone_lamp_lime": {
+      "textures": "textures/blocks/redstone_lamps/lime_redstone_lamp"
+    },
+    "zombie_colored_redstone_lamp_lime_on": {
+      "textures": "textures/blocks/redstone_lamps/lime_redstone_lamp_on"
+    },
+    "zombie_colored_redstone_lamp_magenta": {
+      "textures": "textures/blocks/redstone_lamps/magenta_redstone_lamp"
+    },
+    "zombie_colored_redstone_lamp_magenta_on": {
+      "textures": "textures/blocks/redstone_lamps/magenta_redstone_lamp_on"
+    },
+    "zombie_colored_redstone_lamp_orange": {
+      "textures": "textures/blocks/redstone_lamps/orange_redstone_lamp"
+    },
+    "zombie_colored_redstone_lamp_orange_on": {
+      "textures": "textures/blocks/redstone_lamps/orange_redstone_lamp_on"
+    },
+    "zombie_colored_redstone_lamp_pink": {
+      "textures": "textures/blocks/redstone_lamps/pink_redstone_lamp"
+    },
+    "zombie_colored_redstone_lamp_pink_on": {
+      "textures": "textures/blocks/redstone_lamps/pink_redstone_lamp_on"
+    },
+    "zombie_colored_redstone_lamp_purple": {
+      "textures": "textures/blocks/redstone_lamps/purple_redstone_lamp"
+    },
+    "zombie_colored_redstone_lamp_purple_on": {
+      "textures": "textures/blocks/redstone_lamps/purple_redstone_lamp_on"
+    },
+    "zombie_colored_redstone_lamp_red": {
+      "textures": "textures/blocks/redstone_lamps/red_redstone_lamp"
+    },
+    "zombie_colored_redstone_lamp_red_on": {
+      "textures": "textures/blocks/redstone_lamps/red_redstone_lamp_on"
+    },
+    "zombie_colored_redstone_lamp_white": {
+      "textures": "textures/blocks/redstone_lamps/white_redstone_lamp"
+    },
+    "zombie_colored_redstone_lamp_white_on": {
+      "textures": "textures/blocks/redstone_lamps/white_redstone_lamp_on"
+    },
+    "zombie_colored_redstone_lamp_yellow": {
+      "textures": "textures/blocks/redstone_lamps/yellow_redstone_lamp"
+    },
+    "zombie_colored_redstone_lamp_yellow_on": {
+      "textures": "textures/blocks/redstone_lamps/yellow_redstone_lamp_on"
+    },
+    "zombie_color_block_true_black": {
+      "textures": "textures/blocks/color_blocks/true_black"
+    },
+    "zombie_color_block_aqua": {
+      "textures": "textures/blocks/color_blocks/aqua/aqua_albedo"
+    },
+    "zombie_color_block_blue": {
+      "textures": "textures/blocks/color_blocks/blue/blue_albedo"
+    },
+    "zombie_color_block_dark_aqua": {
+      "textures": "textures/blocks/color_blocks/dark_aqua/dark_aqua_albedo"
+    },
+    "zombie_color_block_dark_blue": {
+      "textures": "textures/blocks/color_blocks/dark_blue/dark_blue_albedo"
+    },
+    "zombie_color_block_dark_gray": {
+      "textures": "textures/blocks/color_blocks/dark_gray/dark_gray_albedo"
+    },
+    "zombie_color_block_dark_green": {
+      "textures": "textures/blocks/color_blocks/dark_green/dark_green_albedo"
+    },
+    "zombie_color_block_dark_purple": {
+      "textures": "textures/blocks/color_blocks/dark_purple/dark_purple_albedo"
+    },
+    "zombie_color_block_dark_red": {
+      "textures": "textures/blocks/color_blocks/dark_red/dark_red_albedo"
+    },
+    "zombie_color_block_gold": {
+      "textures": "textures/blocks/color_blocks/gold/gold_albedo"
+    },
+    "zombie_color_block_gray": {
+      "textures": "textures/blocks/color_blocks/gray/gray_albedo"
+    },
+    "zombie_color_block_green": {
+      "textures": "textures/blocks/color_blocks/green/green_albedo"
+    },
+    "zombie_color_block_light_purple": {
+      "textures": "textures/blocks/color_blocks/light_purple/light_purple_albedo"
+    },
+    "zombie_color_block_red": {
+      "textures": "textures/blocks/color_blocks/red/red_albedo"
+    },
+    "zombie_color_block_white": {
+      "textures": "textures/blocks/color_blocks/white/white_albedo"
+    },
+    "zombie_demon_lord_head": {
+      "textures": "textures/demon/lord_demon"
+    },
+    "zombie_color_block_yellow": {
+      "textures": "textures/blocks/color_blocks/yellow/yellow_albedo"
+    },
+    "zombie_horse_block": {
+      "textures": "textures/halloween/horse_zombie"
+    },
+    "pumpkin_face3": {
+      "textures": "textures/halloween/blocks/pumpkin_face3"
+    },
+    "pumpkin_face2": {
+      "textures": "textures/halloween/blocks/pumpkin_face2"
+    },
+    "pumpkin_face1": {
+      "textures": "textures/halloween/blocks/pumpkin_face1"
+    },
+    "pumpkin_heart": {
+      "textures": "textures/halloween/blocks/pumpkin_heart"
+    },
+    "pumpkin_pickaxe": {
+      "textures": "textures/halloween/blocks/pumpkin_pickaxe_lit"
+    },
+    "pumpkin": {
+      "textures": "textures/halloween/blocks/pumpkin"
+    },
+    "clown_tt_bucket": {
+      "textures": "textures/halloween/blocks/clown_tt_bucket"
+    },
+    "frankenstein_tt_bucket": {
+      "textures": "textures/halloween/blocks/frankenstein_tt_bucket"
+    },
+    "ghost_tt_bucket": {
+      "textures": "textures/halloween/blocks/ghost_tt_bucket"
+    },
+    "mummy_tt_bucket": {
+      "textures": "textures/halloween/blocks/mummy_tt_bucket"
+    },
+    "vampire_tt_bucket": {
+      "textures": "textures/halloween/blocks/vampire_tt_bucket"
+    },
+    "pumpkin_tt_bucket": {
+      "textures": "textures/halloween/blocks/pumpkin_tt_bucket"
+    },
+    "skull_tt_bucket": {
+      "textures": "textures/halloween/blocks/skull_tt_bucket"
+    },
+    "creeper_pumpkin_lit": {
+      "textures": "textures/halloween/blocks/creeper_pumpkin_lit"
+    },
+    "zombie_cross_grave": {
+      "textures": "textures/halloween/blocks/cross_grave"
+    },
+    "zombie_endermancat": {
+      "textures": "textures/halloween/blocks/endermancat"
+    },
+    "zombie_ghost": {
+      "textures": "textures/halloween/blocks/ghost"
+    },
+    "zombie_pigcreeper": {
+      "textures": "textures/halloween/blocks/pigcreeper"
+    },
+    "zombie_skeletonsheep": {
+      "textures": "textures/halloween/blocks/skeletonsheep"
+    },
+    "zombie_skull_bones": {
+      "textures": "textures/halloween/blocks/skull_bones"
+    },
+    "zombie_zombie_steve": {
+      "textures": "textures/halloween/blocks/zombie_steve"
+    },
+    "zombie_witchpumpkin_block": {
+      "textures": "textures/halloween/blocks/witchpunking"
+    },
+    "zombie_grave_stone": {
+      "textures": "textures/halloween/blocks/grave_site"
+    },
+    "zombie_pumpkin_king": {
+      "textures": "textures/halloween/pumpkin_boss"
+    },
+    "amaranthine_dirt": {
+      "textures": "textures/end/amaranthine_forest/amaranthine_dirt"
+    },
+    "amaranthine_grass_side": {
+      "textures": "textures/end/amaranthine_forest/amaranthine_grass_side"
+    },
+    "amaranthine_grass_top": {
+      "textures": "textures/end/amaranthine_forest/amaranthine_grass_top"
+    },
+    "amaranthine_log": {
+      "textures": "textures/end/amaranthine_forest/amaranthine_log"
+    },
+    "amaranthine_log_top": {
+      "textures": "textures/end/amaranthine_forest/amaranthine_log_top"
+    },
+    "stripped_amaranthine_log": {
+      "textures": "textures/end/amaranthine_forest/stripped_amaranthine_log"
+    },
+    "amaranthine_leaves": {
+      "textures": "textures/end/amaranthine_forest/amaranthine_leaves"
+    },
+    "amaranthine_planks": {
+      "textures": "textures/end/amaranthine_forest/amaranthine_planks"
+    },
+    "amaranthine_trapdoor": {
+      "textures": "textures/end/amaranthine_forest/amaranthine_trapdoor"
+    },
+    "amaranthine_bloom": {
+      "textures": "textures/end/amaranthine_forest/amaranthine_bloom"
+    },
+    "amaranthine_sprout": {
+      "textures": "textures/end/amaranthine_forest/amaranthine_sprout"
+    },
+    "amaranthine_sapling": {
+      "textures": "textures/end/amaranthine_forest/amaranthine_saplin"
+    },
+    "lumenroot_dirt": {
+      "textures": "textures/end/lumenroot tree/dirt"
+    },
+    "lumenroot_grass_side": {
+      "textures": "textures/end/lumenroot tree/grass_side"
+    },
+    "lumenroot_grass_top": {
+      "textures": "textures/end/lumenroot tree/grass_top"
+    },
+    "lumenroot_log": {
+      "textures": "textures/end/lumenroot tree/log_side"
+    },
+    "lumenroot_log_top": {
+      "textures": "textures/end/lumenroot tree/log_top"
+    },
+    "stripped_lumenroot_log": {
+      "textures": "textures/end/lumenroot tree/stripped_log_side"
+    },
+    "lumenroot_leaves": {
+      "textures": "textures/end/lumenroot tree/leaf"
+    },
+    "lumenroot_planks": {
+      "textures": "textures/end/lumenroot tree/planks"
+    },
+    "lumenroot_trapdoor": {
+      "textures": "textures/end/lumenroot tree/trapdoor"
+    },
+    "lumenroot_door_bottom": {
+      "textures": "textures/end/lumenroot tree/door_bottom"
+    },
+    "lumenroot_door_top": {
+      "textures": "textures/end/lumenroot tree/door_top"
+    },
+    "lumenroot_fungus": {
+      "textures": "textures/end/lumenroot tree/fungus"
+    },
+    "lumenroot_bio_shroom": {
+      "textures": "textures/end/lumenroot tree/bio_shroom"
+    },
+    "lumenroot_rock": {
+      "textures": "textures/end/lumenroot tree/rock"
+    },
+    "lumenroot_sapling": {
+      "textures": "textures/end/lumenroot tree/lumenroot_saplin"
+    },
+    "zombie_cult_of_the_dead_chicken": {
+      "textures": "textures/blocks/cult/cult_of_the_dead_chicken"
+    },
+    "zombie_cult_of_the_dead_chicken_words": {
+      "textures": "textures/blocks/cult/cult_of_the_dead_chicken_words"
+    },
+    "zombie_colored_sea_lantern_rainbow": {
+      "textures": "textures/blocks/sea_lanterns/sea_lantern_rainbow"
+    },
+    "zombie_skull_block": {
+      "textures": "textures/halloween/blocks/skull_block"
+    },
+    "zombie_skull_shelf": {
+      "textures": "textures/halloween/blocks/skull_shelf"
+    },
+    "zombie_spider_cover_web": {
+      "textures": "textures/halloween/blocks/spider_cover_web"
+    }
+  }
+}

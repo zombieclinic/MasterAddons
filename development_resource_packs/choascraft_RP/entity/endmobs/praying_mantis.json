@@ -1,0 +1,44 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "zombie:praying_mantis",
+      "materials": {
+        "default": "entity_alphablend"
+      },
+      "textures": {
+        "default": "textures/end/end_mobs/matice/praying_mantis_end",
+        "blue": "textures/end/end_mobs/matice/praying_mantis_blue",
+        "overworld": "textures/end/end_mobs/matice/praying_mantis",
+        "orange": "textures/end/end_mobs/matice/praying_mantis_orange",
+        "purple": "textures/end/end_mobs/matice/praying_mantis_purple",
+        "red": "textures/end/end_mobs/matice/praying_mantis_red"
+      },
+      "geometry": {
+        "default": "geometry.praying_mantis"
+      },
+      "render_controllers": [
+        "controller.render.mantis"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 48
+      },
+      "animations": {
+        "idle": "animation.praying_mantis.idle",
+        "walk": "animation.praying_mantis.walk",
+        "lookright": "animation.praying_mantis.lookright",
+        "lookleft": "animation.praying_mantis.lookleft",
+        "attack": "animation.praying_mantis.attack",
+        "controller": "controller.animation.praying_mantis"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "controller": "(1.0)"
+          }
+        ]
+      }
+    }
+  }
+}

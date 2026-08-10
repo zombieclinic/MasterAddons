@@ -1,0 +1,26 @@
+
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "zombie:creaking_mask",
+			"materials": {
+				"default": "entity_alphablend",
+				"enchanted": "armor_enchanted"
+			},
+			"textures": {
+				"default": "textures/entity/creaking/creaking",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.Creaking_mask"
+			},
+			"render_controllers": [
+				"controller.render.armor"
+			],
+			"scripts": {
+				"parent_setup": "variable.head_layer_visible = 0.0;"
+			}
+		}
+	}
+}

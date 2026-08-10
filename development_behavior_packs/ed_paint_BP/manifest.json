@@ -1,0 +1,41 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Ed Capeau ZC_BP",
+    "description": "update 8.24.25 ",
+    "uuid": "2ac490bf-6785-4165-b8a8-7931584240d2",
+    "version": [1, 0, 2],
+    "min_engine_version": [1, 21, 90]
+  },
+
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "e13ed757-ba82-42a5-bf5f-c209b90113a3",
+      "version": [1, 0, 2]
+    },
+    {
+      "type": "script",
+      "uuid": "36538802-33da-4300-85aa-d2a123d9d97d",
+      "version": [1, 0, 2],
+      "entry": "scripts/painter.js"
+    }
+  ],
+
+
+
+  "dependencies": [
+    {
+      "uuid": "5961771d-05e7-4457-bd39-90779f85b430",
+      "version": [1, 0, 2]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.1.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "2.0.0"
+    }
+  ]
+}

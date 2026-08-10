@@ -1,0 +1,1026 @@
+{
+  "format_version": [
+    1,
+    0,
+    0
+  ],
+  "zombie:abyss_flower": {
+    "sound": "grass"
+  },
+  "zombie:abyss_glob_flower": {
+    "sound": "grass"
+  },
+  "zombie:abyss_grass": {
+    "sound": "grass"
+  },
+  "zombie:abyss_mushroom": {
+    "sound": "grass"
+  },
+  "zombie:black_grass": {
+    "sound": "grass"
+  },
+  "zombie:infected_goo_plant": {
+    "sound": "slime"
+  },
+  "zombie:sporepod": {
+    "sound": "grass"
+  },
+  "zombie:corrupted_spire": {
+    "sound": "stone"
+  },
+  "zombie:eyewood_door": {
+    "sound": "wood"
+  },
+  "zombie:eyewood_fence": {
+    "sound": "wood"
+  },
+  "zombie:eyewood_fence_gate": {
+    "sound": "wood"
+  },
+  "zombie:eyewood_log": {
+    "sound": "wood"
+  },
+  "zombie:eyewood_planks": {
+    "sound": "wood"
+  },
+  "zombie:eyewood_pressureplate": {
+    "sound": "wood"
+  },
+  "zombie:eyewood_slab": {
+    "sound": "wood"
+  },
+  "zombie:eyewood_stairs": {
+    "sound": "wood"
+  },
+  "zombie:eyewood_trapdoor": {
+    "sound": "wood"
+  },
+  "zombie:eyewood_tree_leaves": {
+    "sound": "grass"
+  },
+  "zombie:eyewood_tree_sapling": {
+    "sound": "grass"
+  },
+  "zombie:amaranthine_sapling": {
+    "sound": "grass"
+  },
+  "zombie:lumenroot_sapling": {
+    "sound": "grass"
+  },
+  "zombie:amaranthine_leaves": {
+    "sound": "grass"
+  },
+  "zombie:lumenroot_leaves": {
+    "sound": "grass"
+  },
+  "zombie:glow_flower": {
+    "sound": "grass"
+  },
+  "zombie:infected_flower": {
+    "sound": "grass"
+  },
+  "zombie:eye_flower": {
+    "sound": "grass"
+  },
+  "zombie:infected_cobblestone": {
+    "sound": "stone"
+  },
+  "zombie:infected_dirt": {
+    "sound": "gravel"
+  },
+  "zombie:infected_door": {
+    "sound": "wood"
+  },
+  "zombie:infected_gravel": {
+    "sound": "gravel"
+  },
+  "zombie:infected_sand": {
+    "sound": "sand"
+  },
+  "zombie:infected_slab": {
+    "sound": "wood"
+  },
+  "zombie:infected_sporestone": {
+    "sound": "stone"
+  },
+  "zombie:infected_stone": {
+    "sound": "stone"
+  },
+  "zombie:infected_teeth": {
+    "sound": "bone_block"
+  },
+  "zombie:pengiun_egg_block": {
+    "sound": "turtle_egg"
+  },
+  "zombie:stripped_eyewood_log": {
+    "sound": "wood"
+  },
+  "zombie:zc_button": {
+    "sound": "wood"
+  },
+  "zombie:redwood_door": {
+    "sound": "wood"
+  },
+  "zombie:redwood_button": {
+    "sound": "wood"
+  },
+  "zombie:redwood_fence": {
+    "sound": "wood"
+  },
+  "zombie:redwood_fence_gate": {
+    "sound": "wood"
+  },
+  "zombie:redwood_leaves": {
+    "sound": "grass"
+  },
+  "zombie:redwood_log": {
+    "sound": "wood"
+  },
+  "zombie:redwood_planks": {
+    "sound": "wood"
+  },
+  "zombie:redwood_pressure_plate": {
+    "sound": "wood"
+  },
+  "zombie:redwood_sapling": {
+    "sound": "grass"
+  },
+  "zombie:redwood_slab": {
+    "sound": "wood"
+  },
+  "zombie:redwood_stairs": {
+    "sound": "wood"
+  },
+  "zombie:redwood_trapdoor": {
+    "sound": "wood"
+  },
+  "zombie:gingerbread_stairs": {
+    "sound": "wood"
+  },
+  "zombie:ginger_brick": {
+    "sound": "stone"
+  },
+  "zombie:ginger_brick_wall": {
+    "sound": "stone"
+  },
+  "zombie:gingerbread_slab": {
+    "sound": "wood"
+  },
+  "zombie:gingerbread_button": {
+    "sound": "wood"
+  },
+  "zombie:gingerbread_pressure_plate": {
+    "sound": "wood"
+  },
+  "zombie:gingerbread_fence": {
+    "sound": "wood"
+  },
+  "zombie:gingerbread_wall": {
+    "sound": "wood"
+  },
+  "zombie:gingerbread_fence_gate": {
+    "sound": "wood"
+  },
+  "zombie:gingerbread_door": {
+    "sound": "wood"
+  },
+  "zombie:gingerbread_trapdoor": {
+    "sound": "wood"
+  },
+  "zombie:stripped_redwood_log": {
+    "sound": "wood"
+  },
+  "zombie:demon_grass_no_tick": {
+    "textures": {
+      "up": "zombie_demon_grass_top",
+      "down": "zombie_demon_dirt",
+      "side": "zombie_demon_grass"
+    },
+    "brightness_gamma": 4,
+    "sound": "grass"
+  },
+  "zombie:demon_dirt": {
+    "textures": "zombie_demon_dirt",
+    "sound": "gravel"
+  },
+  "zombie:corrupted_grass": {
+    "textures": "zombie_corrupted_grass",
+    "sound": "grass"
+  },
+  "zombie:emberberry": {
+    "textures": "zombie_emberberry_4",
+    "sound": "grass"
+  },
+  "zombie:demon_stone": {
+    "textures": "zombie_demon_stone",
+    "sound": "stone"
+  },
+  "zombie:demon_stone_brick": {
+    "textures": "zombie_demon_stone_brick",
+    "sound": "stone"
+  },
+  "zombie:demon_stone_slab": {
+    "textures": "zombie_demon_stone",
+    "sound": "stone"
+  },
+  "zombie:demon_steel": {
+    "textures": "zombie_demon_steel_block",
+    "sound": "metal"
+  },
+  "zombie:currupted_xp_block": {
+    "textures": "zombie_currupted_xp_block",
+    "sound": "amethyst_block"
+  },
+  "zombie:demon_steel_chiseled": {
+    "textures": "zombie_chiseled_demon_steel_block",
+    "sound": "metal"
+  },
+  "zombie:demon_steel_ore": {
+    "textures": "zombie_demon_steel_ore",
+    "sound": "stone"
+  },
+  "zombie:demon_steel_slab": {
+    "textures": "zombie_demon_steel_block",
+    "sound": "metal"
+  },
+  "zombie:demon_steel_stairs": {
+    "textures": "zombie_demon_steel_block",
+    "sound": "metal"
+  },
+  "zombie:demon_steel_wall": {
+    "textures": "zombie_demon_steel_block",
+    "sound": "metal"
+  },
+  "zombie:hell_lamp": {
+    "textures": "zombie_hell_lamp",
+    "sound": "lantern"
+  },
+  "zombie:demon_log": {
+    "textures": {
+      "up": "zombie_demon_log_top",
+      "down": "zombie_demon_log_top",
+      "side": "zombie_hell_log"
+    },
+    "sound": "wood"
+  },
+  "zombie:demon_fire_log": {
+    "textures": {
+      "up": "zombie_demon_log_top",
+      "down": "zombie_demon_log_top",
+      "side": "zombie_hell_log2"
+    },
+    "sound": "wood"
+  },
+  "zombie:demon_log_stripped": {
+    "textures": {
+      "up": "zombie_demon_log_top",
+      "down": "zombie_demon_log_top",
+      "side": "zombie_hell_stripped_1"
+    },
+    "sound": "wood"
+  },
+  "zombie:demon_fire_log_stripped": {
+    "textures": {
+      "up": "zombie_demon_log_top",
+      "down": "zombie_demon_log_top",
+      "side": "zombie_hell_log_stripped_2"
+    },
+    "sound": "wood"
+  },
+  "zombie:demon_planks": {
+    "textures": "zombie_hell_plank",
+    "sound": "wood"
+  },
+  "zombie:demon_plank_slab": {
+    "textures": "zombie_hell_plank",
+    "sound": "wood"
+  },
+  "zombie:demon_stairs": {
+    "textures": "zombie_hell_plank",
+    "sound": "wood"
+  },
+  "zombie:demon_trapdoor": {
+    "textures": "zombie_demon_trapdoor",
+    "sound": "wood"
+  },
+  "zombie:demon_door": {
+    "textures": "zombie_demon_door_bottom",
+    "sound": "wood"
+  },
+  "zombie:demon_fence": {
+    "textures": "zombie_hell_plank",
+    "sound": "wood"
+  },
+  "zombie:demon_gate": {
+    "textures": "zombie_hell_plank",
+    "sound": "wood"
+  },
+  "zombie:demon_button": {
+    "textures": "zombie_hell_plank",
+    "sound": "wood"
+  },
+  "zombie:demon_pressure_plate": {
+    "textures": "zombie_hell_plank",
+    "sound": "wood"
+  },
+  "zombie:hellfire_trapstone": {
+    "textures": "zombie_hellfire_trapstone",
+    "sound": "stone"
+  },
+  "zombie:hellfire_spike": {
+    "textures": "zombie_hellfire_spikes",
+    "sound": "stone"
+  },
+  "zombie:demon_alter": {
+    "textures": "zombie_demon_alter_level_0",
+    "sound": "stone"
+  },
+  "zombie:demon_alter_level_2": {
+    "textures": "zombie_demon_alter_level_1",
+    "sound": "stone"
+  },
+  "zombie:demon_alter_level_3": {
+    "textures": "zombie_demon_alter_level_2",
+    "sound": "stone"
+  },
+  "zombie:demon_alter_level_4": {
+    "textures": "zombie_demon_alter_level_3",
+    "sound": "stone"
+  },
+  "zombie:demon_alter_level_5": {
+    "textures": "zombie_demon_alter_level_4",
+    "sound": "stone"
+  },
+  "zombie:demon_blood_block": {
+    "textures": "zombie_demon_blood_block",
+    "sound": "stone"
+  },
+  "zombie:demon_flesh_block": {
+    "textures": "zombie_demon_flesh_block",
+    "sound": "stone"
+  },
+  "zombie:demon_blood_flesh_block": {
+    "textures": "zombie_demon_blood_flesh_block",
+    "sound": "stone"
+  },
+  "zombie:demon_skull": {
+    "textures": "zombie_demon_alter",
+    "sound": "stone"
+  },
+  "zombie:demon_pentagram": {
+    "textures": "zombie_demon_alter_top_planstar",
+    "sound": "stone"
+  },
+  "zombie:chaos_chest": {
+    "textures": "zombie_demon_chest",
+    "sound": "wood"
+  },
+  "zombie:blood_root": {
+    "textures": "blood_root_3",
+    "sound": "grass"
+  },
+  "zombie:blood_mushroom": {
+    "sound": "grass"
+  },
+  "zombie:magicsnow": {
+    "textures": {
+      "up": "zombie_snow",
+      "down": "zombie_magic_snow",
+      "side": "zombie_magic_snow"
+    },
+    "sound": "snow"
+  },
+  "zombie:colored_amethyst_black": {
+    "textures": "zombie_colored_amethyst_black",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_blue": {
+    "textures": "zombie_colored_amethyst_blue",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_brown": {
+    "textures": "zombie_colored_amethyst_brown",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_cyan": {
+    "textures": "zombie_colored_amethyst_cyan",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_gray": {
+    "textures": "zombie_colored_amethyst_gray",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_green": {
+    "textures": "zombie_colored_amethyst_green",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_light_blue": {
+    "textures": "zombie_colored_amethyst_light_blue",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_light_gray": {
+    "textures": "zombie_colored_amethyst_light_gray",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_lime": {
+    "textures": "zombie_colored_amethyst_lime",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_magenta": {
+    "textures": "zombie_colored_amethyst_magenta",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_orange": {
+    "textures": "zombie_colored_amethyst_orange",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_pink": {
+    "textures": "zombie_colored_amethyst_pink",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_purple": {
+    "textures": "zombie_colored_amethyst_purple",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_red": {
+    "textures": "zombie_colored_amethyst_red",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_white": {
+    "textures": "zombie_colored_amethyst_white",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_yellow": {
+    "textures": "zombie_colored_amethyst_yellow",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_crying_obsidian_black": {
+    "textures": "zombie_colored_crying_obsidian_black",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_blue": {
+    "textures": "zombie_colored_crying_obsidian_blue",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_brown": {
+    "textures": "zombie_colored_crying_obsidian_brown",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_cyan": {
+    "textures": "zombie_colored_crying_obsidian_cyan",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_gray": {
+    "textures": "zombie_colored_crying_obsidian_gray",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_green": {
+    "textures": "zombie_colored_crying_obsidian_green",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_light_blue": {
+    "textures": "zombie_colored_crying_obsidian_light_blue",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_light_gray": {
+    "textures": "zombie_colored_crying_obsidian_light_gray",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_lime": {
+    "textures": "zombie_colored_crying_obsidian_lime",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_magenta": {
+    "textures": "zombie_colored_crying_obsidian_magenta",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_orange": {
+    "textures": "zombie_colored_crying_obsidian_orange",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_pink": {
+    "textures": "zombie_colored_crying_obsidian_pink",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_purple": {
+    "textures": "zombie_colored_crying_obsidian_purple",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_red": {
+    "textures": "zombie_colored_crying_obsidian_red",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_white": {
+    "textures": "zombie_colored_crying_obsidian_white",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_yellow": {
+    "textures": "zombie_colored_crying_obsidian_yellow",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_black": {
+    "textures": "zombie_colored_gilded_blackstone_black",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_blue": {
+    "textures": "zombie_colored_gilded_blackstone_blue",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_brown": {
+    "textures": "zombie_colored_gilded_blackstone_brown",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_cyan": {
+    "textures": "zombie_colored_gilded_blackstone_cyan",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_gray": {
+    "textures": "zombie_colored_gilded_blackstone_gray",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_green": {
+    "textures": "zombie_colored_gilded_blackstone_green",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_light_blue": {
+    "textures": "zombie_colored_gilded_blackstone_light_blue",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_light_gray": {
+    "textures": "zombie_colored_gilded_blackstone_light_gray",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_lime": {
+    "textures": "zombie_colored_gilded_blackstone_lime",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_magenta": {
+    "textures": "zombie_colored_gilded_blackstone_magenta",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_orange": {
+    "textures": "zombie_colored_gilded_blackstone_orange",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_pink": {
+    "textures": "zombie_colored_gilded_blackstone_pink",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_purple": {
+    "textures": "zombie_colored_gilded_blackstone_purple",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_red": {
+    "textures": "zombie_colored_gilded_blackstone_red",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_white": {
+    "textures": "zombie_colored_gilded_blackstone_white",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_yellow": {
+    "textures": "zombie_colored_gilded_blackstone_yellow",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_black": {
+    "textures": "zombie_colored_glowing_obsidian_black",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_blue": {
+    "textures": "zombie_colored_glowing_obsidian_blue",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_brown": {
+    "textures": "zombie_colored_glowing_obsidian_brown",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_cyan": {
+    "textures": "zombie_colored_glowing_obsidian_cyan",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_gray": {
+    "textures": "zombie_colored_glowing_obsidian_gray",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_green": {
+    "textures": "zombie_colored_glowing_obsidian_green",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_light_blue": {
+    "textures": "zombie_colored_glowing_obsidian_light_blue",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_light_gray": {
+    "textures": "zombie_colored_glowing_obsidian_light_gray",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_lime": {
+    "textures": "zombie_colored_glowing_obsidian_lime",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_magenta": {
+    "textures": "zombie_colored_glowing_obsidian_magenta",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_orange": {
+    "textures": "zombie_colored_glowing_obsidian_orange",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_pink": {
+    "textures": "zombie_colored_glowing_obsidian_pink",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_purple": {
+    "textures": "zombie_colored_glowing_obsidian_purple",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_red": {
+    "textures": "zombie_colored_glowing_obsidian_red",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_white": {
+    "textures": "zombie_colored_glowing_obsidian_white",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_yellow": {
+    "textures": "zombie_colored_glowing_obsidian_yellow",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_black": {
+    "textures": "zombie_colored_obsidian_black",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_blue": {
+    "textures": "zombie_colored_obsidian_blue",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_brown": {
+    "textures": "zombie_colored_obsidian_brown",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_cyan": {
+    "textures": "zombie_colored_obsidian_cyan",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_gray": {
+    "textures": "zombie_colored_obsidian_gray",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_green": {
+    "textures": "zombie_colored_obsidian_green",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_light_blue": {
+    "textures": "zombie_colored_obsidian_light_blue",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_light_gray": {
+    "textures": "zombie_colored_obsidian_light_gray",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_lime": {
+    "textures": "zombie_colored_obsidian_lime",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_magenta": {
+    "textures": "zombie_colored_obsidian_magenta",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_orange": {
+    "textures": "zombie_colored_obsidian_orange",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_pink": {
+    "textures": "zombie_colored_obsidian_pink",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_purple": {
+    "textures": "zombie_colored_obsidian_purple",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_red": {
+    "textures": "zombie_colored_obsidian_red",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_white": {
+    "textures": "zombie_colored_obsidian_white",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_yellow": {
+    "textures": "zombie_colored_obsidian_yellow",
+    "sound": "stone"
+  },
+  "zombie:colored_sea_lantern_black": {
+    "textures": "zombie_colored_sea_lantern_black",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_blue": {
+    "textures": "zombie_colored_sea_lantern_blue",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_brown": {
+    "textures": "zombie_colored_sea_lantern_brown",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_cyan": {
+    "textures": "zombie_colored_sea_lantern_cyan",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_gray": {
+    "textures": "zombie_colored_sea_lantern_gray",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_green": {
+    "textures": "zombie_colored_sea_lantern_green",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_light_blue": {
+    "textures": "zombie_colored_sea_lantern_light_blue",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_light_gray": {
+    "textures": "zombie_colored_sea_lantern_light_gray",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_lime": {
+    "textures": "zombie_colored_sea_lantern_lime",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_magenta": {
+    "textures": "zombie_colored_sea_lantern_magenta",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_orange": {
+    "textures": "zombie_colored_sea_lantern_orange",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_pink": {
+    "textures": "zombie_colored_sea_lantern_pink",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_purple": {
+    "textures": "zombie_colored_sea_lantern_purple",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_red": {
+    "textures": "zombie_colored_sea_lantern_red",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_white": {
+    "textures": "zombie_colored_sea_lantern_white",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_yellow": {
+    "textures": "zombie_colored_sea_lantern_yellow",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_black": {
+    "textures": "zombie_colored_redstone_lamp_black",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_blue": {
+    "textures": "zombie_colored_redstone_lamp_blue",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_brown": {
+    "textures": "zombie_colored_redstone_lamp_brown",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_cyan": {
+    "textures": "zombie_colored_redstone_lamp_cyan",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_gray": {
+    "textures": "zombie_colored_redstone_lamp_gray",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_green": {
+    "textures": "zombie_colored_redstone_lamp_green",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_light_blue": {
+    "textures": "zombie_colored_redstone_lamp_light_blue",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_light_gray": {
+    "textures": "zombie_colored_redstone_lamp_light_gray",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_lime": {
+    "textures": "zombie_colored_redstone_lamp_lime",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_magenta": {
+    "textures": "zombie_colored_redstone_lamp_magenta",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_orange": {
+    "textures": "zombie_colored_redstone_lamp_orange",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_pink": {
+    "textures": "zombie_colored_redstone_lamp_pink",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_purple": {
+    "textures": "zombie_colored_redstone_lamp_purple",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_red": {
+    "textures": "zombie_colored_redstone_lamp_red",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_white": {
+    "textures": "zombie_colored_redstone_lamp_white",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_yellow": {
+    "textures": "zombie_colored_redstone_lamp_yellow",
+    "sound": "glass"
+  },
+  "zombie:color_block_true_black": {
+    "textures": "zombie_color_block_true_black",
+    "sound": "stone"
+  },
+  "zombie:color_block_aqua": {
+    "textures": "zombie_color_block_aqua",
+    "sound": "stone"
+  },
+  "zombie:color_block_blue": {
+    "textures": "zombie_color_block_blue",
+    "sound": "stone"
+  },
+  "zombie:color_block_dark_aqua": {
+    "textures": "zombie_color_block_dark_aqua",
+    "sound": "stone"
+  },
+  "zombie:color_block_dark_blue": {
+    "textures": "zombie_color_block_dark_blue",
+    "sound": "stone"
+  },
+  "zombie:color_block_dark_gray": {
+    "textures": "zombie_color_block_dark_gray",
+    "sound": "stone"
+  },
+  "zombie:color_block_dark_green": {
+    "textures": "zombie_color_block_dark_green",
+    "sound": "stone"
+  },
+  "zombie:color_block_dark_purple": {
+    "textures": "zombie_color_block_dark_purple",
+    "sound": "stone"
+  },
+  "zombie:color_block_dark_red": {
+    "textures": "zombie_color_block_dark_red",
+    "sound": "stone"
+  },
+  "zombie:color_block_gold": {
+    "textures": "zombie_color_block_gold",
+    "sound": "stone"
+  },
+  "zombie:color_block_gray": {
+    "textures": "zombie_color_block_gray",
+    "sound": "stone"
+  },
+  "zombie:color_block_green": {
+    "textures": "zombie_color_block_green",
+    "sound": "stone"
+  },
+  "zombie:color_block_light_purple": {
+    "textures": "zombie_color_block_light_purple",
+    "sound": "stone"
+  },
+  "zombie:color_block_red": {
+    "textures": "zombie_color_block_red",
+    "sound": "stone"
+  },
+  "zombie:color_block_white": {
+    "textures": "zombie_color_block_white",
+    "sound": "stone"
+  },
+  "zombie:demon_lord_head_block": {
+    "textures": "zombie_demon_lord_head",
+    "sound": "stone"
+  },
+  "zombie:color_block_yellow": {
+    "textures": "zombie_color_block_yellow",
+    "sound": "stone"
+  },
+  "zombie:amaranthine_slab": {
+    "sound": "wood"
+  },
+  "zombie:amaranthine_button": {
+    "sound": "wood"
+  },
+  "zombie:amaranthine_pressure_plate": {
+    "sound": "wood"
+  },
+  "zombie:amaranthine_fence": {
+    "sound": "wood"
+  },
+  "zombie:amaranthine_stairs": {
+    "sound": "wood"
+  },
+  "zombie:blood_wood": {
+    "sound": "wood"
+  },
+  "zombie:stripped_blood_wood": {
+    "sound": "wood"
+  },
+  "zombie:flesh_wood": {
+    "sound": "wood"
+  },
+  "zombie:stripped_flesh_wood": {
+    "sound": "wood"
+  },
+  "zombie:tumor_wood": {
+    "sound": "wood"
+  },
+  "zombie:stripped_tumor_wood": {
+    "sound": "wood"
+  },
+  "zombie:demon_fire_wood": {
+    "sound": "wood"
+  },
+  "zombie:stripped_demon_fire_wood": {
+    "sound": "wood"
+  },
+  "zombie:demon_wood": {
+    "sound": "wood"
+  },
+  "zombie:stripped_demon_wood": {
+    "sound": "wood"
+  },
+  "zombie:eyewood_wood": {
+    "sound": "wood"
+  },
+  "zombie:stripped_eyewood_wood": {
+    "sound": "wood"
+  },
+  "zombie:infected_tree_wood": {
+    "sound": "wood"
+  },
+  "zombie:stripped_infected_tree_wood": {
+    "sound": "wood"
+  },
+  "zombie:redwood_wood": {
+    "sound": "wood"
+  },
+  "zombie:stripped_redwood_wood": {
+    "sound": "wood"
+  },
+  "zombie:amaranthine_wood": {
+    "sound": "wood"
+  },
+  "zombie:stripped_amaranthine_wood": {
+    "sound": "wood"
+  },
+  "zombie:lumenroot_slab": {
+    "sound": "wood"
+  },
+  "zombie:lumenroot_button": {
+    "sound": "wood"
+  },
+  "zombie:lumenroot_pressure_plate": {
+    "sound": "wood"
+  },
+  "zombie:lumenroot_fence": {
+    "sound": "wood"
+  },
+  "zombie:lumenroot_fence_gate": {
+    "sound": "wood"
+  },
+  "zombie:lumenroot_door": {
+    "sound": "wood"
+  },
+  "zombie:lumenroot_stairs": {
+    "sound": "wood"
+  },
+  "zombie:lumenroot_wood": {
+    "sound": "wood"
+  },
+  "zombie:stripped_lumenroot_wood": {
+    "sound": "wood"
+  },
+  "zombie:lumenroot_rock": {
+    "sound": "stone"
+  },
+  "zombie:cult_of_the_dead_chicken": {
+    "sound": "stone"
+  },
+  "zombie:cult_of_the_dead_chicken_words": {
+    "sound": "stone"
+  },
+  "zombie:rainbow_sea_lantern": {
+    "sound": "glass"
+  },
+  "zombie:skull_block": {
+    "sound": "stone"
+  },
+  "zombie:skull_shelf": {
+    "sound": "stone"
+  },
+  "zombie:spider_cover_web": {
+    "sound": "cloth"
+  }
+}

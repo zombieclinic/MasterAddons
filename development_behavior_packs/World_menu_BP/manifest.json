@@ -1,0 +1,57 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "ZombieCraft World Menu",
+		"description": "7.29.26",
+		"uuid": "d308415f-feb7-4943-8c0c-d24e80d9cc33",
+		"version": [
+			1,
+			0,
+            0
+		],
+		"min_engine_version": [
+			1,
+			26,
+			18
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "e2385d0a-9190-40d5-9597-bcbe547c4d1e",
+			"version": [
+				1,
+				0,
+      			0
+			]
+		},
+		{
+			"type": "script",
+			"uuid": "e333467c-6d29-49c0-9f01-0a753cdb0322",
+			"version": [
+				1,
+				0,
+     			0
+			],
+			"entry": "scripts/zombiecraft_world_ui.js"
+		}
+	],
+	"dependencies": [
+		{
+			"version": [
+				1,
+				0,
+        		0
+			],
+			"uuid": "50131d6b-e9a7-488b-bfb7-23f707a12040"
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "2.8.0"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "2.1.0"
+		}
+	]
+}

@@ -1,0 +1,32 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "choascraft",
+    "description": "update 8.24.25",
+    "uuid": "a9d65f2b-c372-4582-a334-8abf81f6cefc",
+    "version": [
+      1,
+      0,
+      8
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "9530f198-40dd-4fb6-88fd-5c3fe8b57448",
+      "version": [
+        1,
+        0,
+        8
+      ]
+    }
+  ],
+  "capabilities": [
+    "pbr"
+  ]
+}

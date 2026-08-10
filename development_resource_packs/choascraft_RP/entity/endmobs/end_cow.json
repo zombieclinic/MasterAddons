@@ -1,0 +1,40 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "zombie:end_cow",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/end/end_mobs/cow/end_cow",
+        "blue": "textures/end/end_mobs/cow/end_cow_blue",
+        "red": "textures/end/end_mobs/cow/end_cow_red",
+        "green": "textures/end/end_mobs/cow/end_cow_green"
+      },
+      "geometry": {
+        "default": "geometry.zombie_end_cow"
+      },
+      "animations": {
+        "walk": "animation.quadruped.walk",
+        "look_at_target": "animation.common.look_at_target",
+        "baby_transform": "animation.mooshroom.baby_transform",
+        "move": "controller.animation.mooshroom.move",
+        "baby": "controller.animation.mooshroom.baby"
+      },
+      "scripts": {
+        "animate": [
+          "move",
+          "baby"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.end_cow"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 5
+      }
+    }
+  }
+}

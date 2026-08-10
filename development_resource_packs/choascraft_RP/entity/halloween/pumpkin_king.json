@@ -1,0 +1,56 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "zombie:pumpkin_king",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/halloween/pumpkin_boss"
+            },
+            "geometry": {
+                "default": "geometry.zombie_pumpkin_king"
+            },
+            "animations": {
+                "idle": "animation.pumpkin_boss_idle",
+                "idle_battle": "animation.pumpkin_boss_idle_battle",
+                "walk": "animation.pumpkin_boss_walk",
+                "walk_battle": "animation.pumpkin_boss_walk_battle",
+                "swing_walk": "animation.pumpkin_swing_walk",
+                "boss_attack": "animation.pumpkin_boss_attack",
+                "boss_attack_2": "animation.pumpkin_boss_attack2",
+                "vines": "animation.pumpkin_boss_vines",
+                "pumpkin_seed": "animation.pumpkin_boss_pumpkin_seed",
+                "rush": "animation.pumpkin_boss_rush",
+                "true_face": "animation.pumpkin_boss_true_face",
+                "blood_harvest_start": "animation.pumpkin_boss_blood_harvest_start",
+                "harvest_success": "animation.pumpkin_boss_blood_harvest_success",
+                "harvest_fail": "animation.pumpkin_boss_blood_harvest_fail",
+                "hurt": "animation.pumpkin_boss_hurt",
+                "death": "animation.pumpkin_boss_death",
+                "wild": "animation.pumpkin_boss_animation",
+                "controller": "controller.animation.pumpkin_king",
+                "controller_stage_2": "controller.animation.pumpkin_king_stage_2"
+            },
+            "scripts": {
+                "animate": [
+                   {    "controller": "query.variant == 1" },
+                    {"controller_stage_2":  "query.variant == 2"}
+                ]
+            },
+            "sound_effects": {
+                "scream": "pumpkin_scream",
+                "hurt": "pumpkin_hurt"
+            },
+           
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "spawn_egg": {
+                "base_color": "#f17107",
+                "overlay_color": "#000000"
+            }
+        }
+    }
+}

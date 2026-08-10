@@ -1,0 +1,51 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.end_golem.locomotion": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "blend_transition": 0.15,
+          "transitions": [
+            { "walk": "query.ground_speed > 0.03" }
+          ]
+        },
+        "walk": {
+          "blend_transition": 0.15,
+          "animations": ["walk"],
+          "transitions": [
+            { "idle": "query.ground_speed < 0.015" }
+          ]
+        }
+      }
+    },
+    "controller.animation.end_golem.combat": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "blend_transition": 0.12,
+          "transitions": [
+            { "attack": "variable.attack_time >= 0.01" },
+            { "walk_arms": "query.ground_speed > 0.03" }
+          ]
+        },
+        "walk_arms": {
+          "blend_transition": 0.12,
+          "animations": ["arms"],
+          "transitions": [
+            { "attack": "variable.attack_time >= 0.01" },
+            { "idle": "query.ground_speed < 0.015" }
+          ]
+        },
+        "attack": {
+          "blend_transition": 0.06,
+          "animations": ["attack"],
+          "transitions": [
+            { "walk_arms": "query.all_animations_finished && query.ground_speed > 0.03" },
+            { "idle": "query.all_animations_finished" }
+          ]
+        }
+      }
+    }
+  }
+}

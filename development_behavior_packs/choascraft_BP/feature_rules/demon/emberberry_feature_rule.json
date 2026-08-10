@@ -1,0 +1,52 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "zombie:emberberry_feature_rule",
+      "places_feature": "zombie:emberberry_floor_feature"
+    },
+    "conditions": {
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": {
+        "any_of": [
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "demon_biome"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "blood_biome"
+          }
+        ]
+      }
+    },
+    "distribution": {
+      "iterations": 3,
+      "coordinate_eval_order": "zyx",
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "y": {
+        "distribution": "uniform",
+        "extent": [
+          55,
+          110
+        ]
+      }
+    }
+  }
+}
+

@@ -1,0 +1,490 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:chicken_cold_block_shiny",
+      "menu_category": {
+        "category": "none",
+        "is_hidden_in_commands": true
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": [
+            "minecraft:cardinal_direction"
+          ]
+        },
+        "minecraft:placement_position": {
+          "enabled_states": [
+            "minecraft:block_face"
+          ]
+        }
+      }
+    },
+    "components": {
+      "minecraft:selection_box": true,
+      "minecraft:light_dampening": 0,
+      "minecraft:material_instances": {
+        "*": {
+          "render_method": "opaque",
+          "texture": "zombie_chicken_cold_block"
+        }
+      },
+      "minecraft:map_color": "#b6b5b5",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1
+      },
+      "minecraft:display_name": "tile.zombie:chicken_cold_block_shiny.name",
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 13
+      },
+      "minecraft:geometry": "geometry.chicken_skull_block",
+      "minecraft:loot": "loot_tables/blocks/shiny/chicken_cold_block_shiny.json"
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:geometry": "geometry.chicken_wall",
+          "minecraft:collision_box": {
+            "origin": [
+              -2,
+              5,
+              3
+            ],
+            "size": [
+              4,
+              6,
+              5
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -2,
+              5,
+              3
+            ],
+            "size": [
+              4,
+              6,
+              5
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:geometry": "geometry.chicken_wall",
+          "minecraft:collision_box": {
+            "origin": [
+              -2,
+              5,
+              3
+            ],
+            "size": [
+              4,
+              6,
+              5
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -2,
+              5,
+              3
+            ],
+            "size": [
+              4,
+              6,
+              5
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              -90,
+              0
+            ]
+          },
+          "minecraft:geometry": "geometry.chicken_wall",
+          "minecraft:collision_box": {
+            "origin": [
+              -2,
+              5,
+              3
+            ],
+            "size": [
+              4,
+              6,
+              5
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -2,
+              5,
+              3
+            ],
+            "size": [
+              4,
+              6,
+              5
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -2,
+              5,
+              3
+            ],
+            "size": [
+              4,
+              6,
+              5
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -2,
+              5,
+              3
+            ],
+            "size": [
+              4,
+              6,
+              5
+            ]
+          },
+          "minecraft:geometry": "geometry.chicken_wall"
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && query.block_state('minecraft:block_face') == 'down' ",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:geometry": "geometry.chicken_ceiling",
+          "minecraft:selection_box": {
+            "origin": [
+              -2,
+              10,
+              -3
+            ],
+            "size": [
+              4,
+              6,
+              5
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -2,
+              10,
+              -3
+            ],
+            "size": [
+              4,
+              6,
+              5
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && query.block_state('minecraft:block_face') == 'down' ",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:geometry": "geometry.chicken_ceiling",
+          "minecraft:selection_box": {
+            "origin": [
+              -2,
+              10,
+              -3
+            ],
+            "size": [
+              4,
+              6,
+              5
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -2,
+              10,
+              -3
+            ],
+            "size": [
+              4,
+              6,
+              5
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && query.block_state('minecraft:block_face') == 'down' ",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:geometry": "geometry.chicken_ceiling",
+          "minecraft:selection_box": {
+            "origin": [
+              -2,
+              10,
+              -3
+            ],
+            "size": [
+              4,
+              6,
+              5
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -2,
+              10,
+              -3
+            ],
+            "size": [
+              4,
+              6,
+              5
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && query.block_state('minecraft:block_face') == 'down'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -2,
+              10,
+              -3
+            ],
+            "size": [
+              4,
+              6,
+              5
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -2,
+              10,
+              -3
+            ],
+            "size": [
+              4,
+              6,
+              5
+            ]
+          },
+          "minecraft:geometry": "geometry.chicken_ceiling"
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && query.block_state('minecraft:block_face') == 'up' ",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:geometry": "geometry.chicken_skull_block",
+          "minecraft:collision_box": {
+            "origin": [
+              -2,
+              0,
+              -3
+            ],
+            "size": [
+              4,
+              6,
+              5
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -2,
+              0,
+              -3
+            ],
+            "size": [
+              4,
+              6,
+              5
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && query.block_state('minecraft:block_face') == 'up' ",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:geometry": "geometry.chicken_skull_block",
+          "minecraft:collision_box": {
+            "origin": [
+              -2,
+              0,
+              -3
+            ],
+            "size": [
+              4,
+              6,
+              5
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -2,
+              0,
+              -3
+            ],
+            "size": [
+              4,
+              6,
+              5
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && query.block_state('minecraft:block_face') == 'up' ",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:geometry": "geometry.chicken_skull_block",
+          "minecraft:collision_box": {
+            "origin": [
+              -2,
+              0,
+              -3
+            ],
+            "size": [
+              4,
+              6,
+              5
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -2,
+              0,
+              -3
+            ],
+            "size": [
+              4,
+              6,
+              5
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && query.block_state('minecraft:block_face') == 'up'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -2,
+              0,
+              -3
+            ],
+            "size": [
+              4,
+              6,
+              5
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -2,
+              0,
+              -3
+            ],
+            "size": [
+              4,
+              6,
+              5
+            ]
+          },
+          "minecraft:geometry": "geometry.chicken_skull_block"
+        }
+      }
+    ]
+  }
+}

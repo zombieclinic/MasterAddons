@@ -1,0 +1,107 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.demon_lord": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations": ["idle"],
+          "transitions": [
+            { "death": "query.variant == 10" },
+            { "phase_two": "query.property('zombie:animation_state') == 9" },
+            { "summon": "query.property('zombie:animation_state') == 6" },
+            { "sword": "query.property('zombie:animation_state') == 5" },
+            { "seismic": "query.property('zombie:animation_state') == 4" },
+            { "thorns": "query.property('zombie:animation_state') == 3" },
+            { "attack2": "query.property('zombie:animation_state') == 2" },
+            { "attack1": "query.property('zombie:animation_state') == 1" },
+            { "charge2": "query.property('zombie:animation_state') == 8" },
+            { "charge1": "query.property('zombie:animation_state') == 7" },
+            { "melee_attack": "variable.attack_time >= 0.01" },
+            { "run": "query.variant == 3 && query.ground_speed" },
+            { "walk": "query.variant == 1 && query.ground_speed" }
+          ]
+        },
+        "walk": {
+          "animations": ["walk"],
+          "transitions": [
+            { "idle": "!query.ground_speed" },
+            { "run": "query.variant == 3" },
+            { "scripted": "query.property('zombie:animation_state') > 0 || query.variant == 10" },
+            { "melee_attack": "variable.attack_time >= 0.01" }
+          ]
+        },
+        "run": {
+          "animations": ["run"],
+          "transitions": [
+            { "idle": "!query.ground_speed" },
+            { "scripted": "query.property('zombie:animation_state') > 0 || query.variant == 10" },
+            { "melee_attack": "variable.attack_time >= 0.01" }
+          ]
+        },
+        "scripted": {
+          "transitions": [
+            { "death": "query.variant == 10" },
+            { "phase_two": "query.property('zombie:animation_state') == 9" },
+            { "summon": "query.property('zombie:animation_state') == 6" },
+            { "sword": "query.property('zombie:animation_state') == 5" },
+            { "seismic": "query.property('zombie:animation_state') == 4" },
+            { "thorns": "query.property('zombie:animation_state') == 3" },
+            { "attack2": "query.property('zombie:animation_state') == 2" },
+            { "attack1": "query.property('zombie:animation_state') == 1" },
+            { "charge2": "query.property('zombie:animation_state') == 8" },
+            { "charge1": "query.property('zombie:animation_state') == 7" },
+            { "idle": "1.0" }
+          ]
+        },
+        "attack1": {
+          "animations": ["attack1"],
+          "transitions": [{ "scripted": "query.property('zombie:animation_state') != 1 || query.variant == 10" }]
+        },
+        "attack2": {
+          "animations": ["attack2"],
+          "transitions": [{ "scripted": "query.property('zombie:animation_state') != 2 || query.variant == 10" }]
+        },
+        "melee_attack": {
+          "animations": ["attack1"],
+          "transitions": [
+            { "death": "query.variant == 10" },
+            { "scripted": "query.property('zombie:animation_state') > 0" },
+            { "idle": "query.all_animations_finished" }
+          ]
+        },
+        "thorns": {
+          "animations": ["thorn_skill"],
+          "transitions": [{ "scripted": "query.property('zombie:animation_state') != 3 || query.variant == 10" }]
+        },
+        "seismic": {
+          "animations": ["seismic_skill"],
+          "transitions": [{ "scripted": "query.property('zombie:animation_state') != 4 || query.variant == 10" }]
+        },
+        "sword": {
+          "animations": ["sword_skill"],
+          "transitions": [{ "scripted": "query.property('zombie:animation_state') != 5 || query.variant == 10" }]
+        },
+        "summon": {
+          "animations": ["minion_skill"],
+          "transitions": [{ "scripted": "query.property('zombie:animation_state') != 6 || query.variant == 10" }]
+        },
+        "charge1": {
+          "animations": ["run_hit"],
+          "transitions": [{ "scripted": "query.property('zombie:animation_state') != 7 || query.variant == 10" }]
+        },
+        "charge2": {
+          "animations": ["run_hit1"],
+          "transitions": [{ "scripted": "query.property('zombie:animation_state') != 8 || query.variant == 10" }]
+        },
+        "phase_two": {
+          "animations": ["second_stage"],
+          "transitions": [{ "scripted": "query.property('zombie:animation_state') != 9 || query.variant == 10" }]
+        },
+        "death": {
+          "animations": ["death"]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "choascraft",
+    "description": "update 8.24.25 ",
+    "uuid": "3ba56d14-82cb-495b-8a5c-e421182462dc",
+    "version": [
+      1,
+      0,
+      8
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      13
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "9fa2056c-dcc8-4ed4-bc1f-80bb72f7f09f",
+      "version": [
+        1,
+        0,
+        8
+      ]
+    },
+    {
+      "type": "script",
+      "uuid": "9a24eb1e-745d-45d8-b431-b75e015470b8",
+      "version": [
+        1,
+        0,
+        8
+      ],
+      "entry": "scripts/waterMobsBrain.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "a9d65f2b-c372-4582-a334-8abf81f6cefc",
+      "version": [
+        1,
+        0,
+        8
+      ]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.7.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "2.0.0"
+    }
+  ]
+}

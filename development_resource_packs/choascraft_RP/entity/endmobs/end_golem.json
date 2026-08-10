@@ -1,0 +1,35 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "zombie:end_golem",
+      "materials": {
+        "default": "iron_golem"
+      },
+      "textures": {
+        "default": "textures/end/end_mobs/end_golem"
+      },
+      "geometry": {
+        "default": "geometry.end_golem"
+      },
+      "animations": {
+        "attack": "animation.end_golem.attack",
+        "look_at_target": "animation.common.look_at_target",
+        "walk": "animation.end_golem.walk",
+        "locomotion_controller": "controller.animation.end_golem.locomotion",
+        "combat_controller": "controller.animation.end_golem.combat",
+        "arms": "animation.end_golem.arms"
+      },
+      "scripts": {
+        "animate": [
+          "look_at_target",
+          "locomotion_controller",
+          "combat_controller"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

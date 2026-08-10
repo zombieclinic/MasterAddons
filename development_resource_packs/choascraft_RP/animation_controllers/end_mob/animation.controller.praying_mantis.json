@@ -1,0 +1,55 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.praying_mantis": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"attack": "variable.attack_time > 0.0"
+						},
+						{
+							"walking": "query.ground_speed"
+						}
+					],
+					"animations": [
+						{
+							"idle": "(1.0)"
+						}
+					]
+				},
+				"walking": {
+					"animations": [
+						{
+							"walk": "(1.0)"
+						}
+					],
+					"transitions": [
+						{
+							"default": "!query.ground_speed"
+						},
+						{
+							"attack": "variable.attack_time > 0.0"
+						}
+					]
+				},
+				"attack": {
+					"animations": [
+						{
+							"attack": "query.has_target&&variable.attack_time>=0"
+						}
+					],
+					"transitions": [
+						{
+							"default": "query.any_animation_finished"
+						},
+						{
+							"walking": "query.ground_speed"
+						}
+					]
+				}
+			}
+		}
+	}
+}

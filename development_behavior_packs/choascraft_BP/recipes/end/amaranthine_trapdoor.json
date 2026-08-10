@@ -1,0 +1,11 @@
+{
+  "format_version": "1.21.10",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "zombie:amaranthine_trapdoor_recipe" },
+    "tags": ["crafting_table"],
+    "pattern": ["PPP", "PPP"],
+    "key": { "P": { "item": "zombie:amaranthine_planks" } },
+    "result": { "item": "zombie:amaranthine_trapdoor", "count": 2 },
+    "unlock": [{ "item": "zombie:amaranthine_planks" }]
+  }
+}

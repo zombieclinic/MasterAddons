@@ -1,0 +1,34 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "zombie:cobble_golem",
+      "materials": {
+        "default": "entity_alphablend"
+      },
+      "textures": {
+        "default": "textures/end/end_mobs/cobble_golem"
+      },
+      "geometry": {
+        "default": "geometry.golem_villager"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 48
+      },
+      "animations": {
+        "controller": "controller.animation.golem_cobble",
+        "walk": "animation.stone_golem.walk",
+        "idle": "animation.stone_golem.idle"
+      },
+      "scripts": {
+        "animate": [
+          "controller"
+        ]
+      }
+    }
+  }
+}

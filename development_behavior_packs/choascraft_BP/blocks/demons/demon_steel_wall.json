@@ -1,0 +1,280 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:demon_steel_wall",
+      "traits": {
+        "minecraft:connection": {
+          "enabled_states": [
+            "minecraft:cardinal_connections"
+          ]
+        }
+      },
+      "menu_category": {
+        "category": "construction"
+      }
+    },
+    "permutations": [
+      {
+        "condition": "(query.block_state(\u0027minecraft:connection_north\u0027) || query.block_state(\u0027minecraft:connection_south\u0027)) \u0026\u0026 !query.block_state(\u0027minecraft:connection_east\u0027) \u0026\u0026 !query.block_state(\u0027minecraft:connection_west\u0027)",
+        "components": {
+          "minecraft:collision_box": {
+            "origin": [
+              -4,
+              0,
+              -8
+            ],
+            "size": [
+              8,
+              24,
+              16
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -4,
+              0,
+              -8
+            ],
+            "size": [
+              8,
+              16,
+              16
+            ]
+          }
+        }
+      },
+      {
+        "condition": "!query.block_state(\u0027minecraft:connection_north\u0027) \u0026\u0026 !query.block_state(\u0027minecraft:connection_south\u0027) \u0026\u0026 (query.block_state(\u0027minecraft:connection_east\u0027) || query.block_state(\u0027minecraft:connection_west\u0027))",
+        "components": {
+          "minecraft:collision_box": {
+            "origin": [
+              -8,
+              0,
+              -4
+            ],
+            "size": [
+              16,
+              24,
+              8
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -4
+            ],
+            "size": [
+              16,
+              16,
+              8
+            ]
+          }
+        }
+      },
+      {
+        "condition": "(query.block_state(\u0027minecraft:connection_north\u0027) || query.block_state(\u0027minecraft:connection_south\u0027)) \u0026\u0026 (query.block_state(\u0027minecraft:connection_east\u0027) || query.block_state(\u0027minecraft:connection_west\u0027))",
+        "components": {
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -4,
+                0,
+                -8
+              ],
+              "size": [
+                8,
+                24,
+                16
+              ]
+            },
+            {
+              "origin": [
+                -8,
+                0,
+                -4
+              ],
+              "size": [
+                16,
+                24,
+                8
+              ]
+            }
+          ],
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              16,
+              16
+            ]
+          }
+        }
+      }
+    ],
+    "components": {
+      "minecraft:display_name": "Demon Steel Wall",
+      "minecraft:support": {
+        "shape": "fence"
+      },
+      "minecraft:geometry": {
+        "identifier": "geometry.zombie_demon_steel_wall",
+        "bone_visibility": {
+          "post": {
+            "expression": "true",
+            "version": 1
+          },
+          "north": {
+            "expression": "query.block_state(\u0027minecraft:connection_north\u0027)",
+            "version": 1
+          },
+          "south": {
+            "expression": "query.block_state(\u0027minecraft:connection_south\u0027)",
+            "version": 1
+          },
+          "east": {
+            "expression": "query.block_state(\u0027minecraft:connection_east\u0027)",
+            "version": 1
+          },
+          "west": {
+            "expression": "query.block_state(\u0027minecraft:connection_west\u0027)",
+            "version": 1
+          }
+        }
+      },
+      "minecraft:item_visual": {
+        "geometry": {
+          "identifier": "geometry.zombie_demon_steel_wall",
+          "bone_visibility": {
+            "post": {
+              "expression": "true",
+              "version": 1
+            },
+            "north": {
+              "expression": "true",
+              "version": 1
+            },
+            "south": {
+              "expression": "true",
+              "version": 1
+            },
+            "east": {
+              "expression": "false",
+              "version": 1
+            },
+            "west": {
+              "expression": "false",
+              "version": 1
+            }
+          }
+        },
+        "material_instances": {
+          "*": {
+            "texture": "zombie_demon_steel_block",
+            "render_method": "opaque"
+          },
+          "post": {
+            "texture": "zombie_demon_steel_block",
+            "render_method": "opaque"
+          },
+          "north": {
+            "texture": "zombie_demon_steel_block",
+            "render_method": "opaque"
+          },
+          "south": {
+            "texture": "zombie_demon_steel_block",
+            "render_method": "opaque"
+          },
+          "east": {
+            "texture": "zombie_demon_steel_block",
+            "render_method": "opaque"
+          },
+          "west": {
+            "texture": "zombie_demon_steel_block",
+            "render_method": "opaque"
+          }
+        }
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "zombie_demon_steel_block",
+          "render_method": "opaque",
+          "face_dimming": true,
+          "ambient_occlusion": 1
+        },
+        "post": {
+          "texture": "zombie_demon_steel_block",
+          "render_method": "opaque",
+          "face_dimming": true,
+          "ambient_occlusion": 1
+        },
+        "north": {
+          "texture": "zombie_demon_steel_block",
+          "render_method": "opaque",
+          "face_dimming": true,
+          "ambient_occlusion": 1
+        },
+        "south": {
+          "texture": "zombie_demon_steel_block",
+          "render_method": "opaque",
+          "face_dimming": true,
+          "ambient_occlusion": 1
+        },
+        "east": {
+          "texture": "zombie_demon_steel_block",
+          "render_method": "opaque",
+          "face_dimming": true,
+          "ambient_occlusion": 1
+        },
+        "west": {
+          "texture": "zombie_demon_steel_block",
+          "render_method": "opaque",
+          "face_dimming": true,
+          "ambient_occlusion": 1
+        }
+      },
+      "minecraft:selection_box": {
+        "origin": [
+          -4,
+          0,
+          -4
+        ],
+        "size": [
+          8,
+          16,
+          8
+        ]
+      },
+      "minecraft:collision_box": {
+        "origin": [
+          -4,
+          0,
+          -4
+        ],
+        "size": [
+          8,
+          24,
+          8
+        ]
+      },
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "only_fences"
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1
+      },
+      "minecraft:destructible_by_explosion": true,
+      "minecraft:tags": [
+        "minecraft:has_fence_connections",
+        "minecraft:is_pickaxe_item_destructible"
+      ],
+      "minecraft:map_color": "#2E120A"
+    }
+  }
+}
+

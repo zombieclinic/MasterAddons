@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.illager_ceiling",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 1.5, 0]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [0, 6, 0],
+					"cubes": [
+						{"origin": [-4, 6, -4], "size": [8, 10, 8], "uv": [0, 0]},
+						{"origin": [-1, 5, -6], "size": [2, 4, 2], "inflate": 0.1, "uv": [24, 0]}
+					]
+				}
+			]
+		}
+	]
+}

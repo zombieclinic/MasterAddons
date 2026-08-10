@@ -1,0 +1,32 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "zombie:chaos_book_open",
+      "materials": {
+        "enchanted": "entity_alphatest_glint",
+        "default": "entity_alphatest"
+      },
+      "geometry": {
+        "default": "geometry.chaos_book_open"
+      },
+      "textures": {
+        "default": "textures/demon/book/chaos_book",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "render_controllers": [
+        "controller.render.item_default"
+      ],
+      "animations": {
+        "fpp_open": "animation.chaos_book_open.fpp"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "fpp_open": "c.is_first_person"
+          }
+        ]
+      }
+    }
+  }
+}

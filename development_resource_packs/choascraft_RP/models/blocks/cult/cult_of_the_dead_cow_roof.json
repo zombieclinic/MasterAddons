@@ -1,0 +1,35 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cult_of_the_dead_chicken_roof",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 15.65, -8],
+							"size": [16, 0.35, 16],
+							"uv": {
+								"north": {"uv": [6, 1.25], "uv_size": [3.75, -1.25]},
+								"east": {"uv": [6, 1.25], "uv_size": [3.75, -1.25]},
+								"south": {"uv": [6, 1.25], "uv_size": [3.75, -1.25]},
+								"west": {"uv": [6, 1.25], "uv_size": [3.75, -1.25]},
+								"up": {"uv": [16, 16], "uv_size": [-16, -16]},
+								"down": {"uv": [16, 0], "uv_size": [-16, 16]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

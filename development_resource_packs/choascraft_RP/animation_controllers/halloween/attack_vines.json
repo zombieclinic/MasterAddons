@@ -1,0 +1,25 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.blood_vines": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        "alive"
+                    ],
+                    "transitions": [
+                        {
+                            "state_1": "query.any_animation_finished"
+                        }
+                    ]
+                },
+                "state_1": {
+                    "animations": [
+                        "loop"
+                    ]
+                }
+            }
+        }
+    }
+}

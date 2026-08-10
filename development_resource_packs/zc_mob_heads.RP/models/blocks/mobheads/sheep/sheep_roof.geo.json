@@ -1,0 +1,47 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.sheep_roof",
+				"texture_width": 32,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "head3",
+					"pivot": [-2, 11.425, -0.9],
+					"cubes": [
+						{
+							"origin": [-2.275, 10.775, -3.9],
+							"size": [4.55, 4.025, 1],
+							"uv": {
+								"north": {"uv": [8, 8.225], "uv_size": [8, 7.775]},
+								"east": {"uv": [27.375, 0], "uv_size": [-2.25, 7.875]},
+								"south": {"uv": [11, 2], "uv_size": [3, 1.5]},
+								"west": {"uv": [25.125, 0], "uv_size": [2.25, 7.875]},
+								"up": {"uv": [8, 0], "uv_size": [16, 2]},
+								"down": {"uv": [8, 0], "uv_size": [16, 2]}
+							}
+						},
+						{
+							"origin": [-3, 10, -3],
+							"size": [6, 6, 6],
+							"uv": {
+								"north": {"uv": [8, 8.5], "uv_size": [8, 7.5]},
+								"east": {"uv": [0, 8.5], "uv_size": [7, 7.5]},
+								"south": {"uv": [0, 8.5], "uv_size": [7, 7.5]},
+								"west": {"uv": [0, 8.5], "uv_size": [7, 7.5]},
+								"up": {"uv": [7, 16], "uv_size": [-7, -7.5]},
+								"down": {"uv": [7, 16], "uv_size": [-7, -7.5]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,28 @@
+{
+	"format_version": "1.21.111",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "zombie:chargedpunkin_reciepe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{
+				"item": "minecraft:pumpkin"
+			}
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:carved_pumpkin"
+			},
+			{
+				"item": "minecraft:gunpowder"
+			}
+		],
+		"result": {
+			"item": "zombie:chargedpunkin",
+			"count": 1
+		}
+	}
+}

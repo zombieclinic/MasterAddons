@@ -1,0 +1,47 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:tree_feature": {
+    "description": { "identifier": "zombie:lumenroot_tree_feature" },
+    "acacia_trunk": {
+      "trunk_width": 1,
+      "trunk_height": {
+        "base": 7,
+        "intervals": [2, 2, 2],
+        "min_height_for_canopy": 6
+      },
+      "trunk_block": { "name": "zombie:lumenroot_log" },
+      "trunk_lean": {
+        "allow_diagonal_growth": true,
+        "lean_height": { "range_min": 4, "range_max": 8 },
+        "lean_steps": { "range_min": 1, "range_max": 3 },
+        "lean_length": { "range_min": 1, "range_max": 2 }
+      }
+    },
+    "random_spread_canopy": {
+      "canopy_height": 4,
+      "canopy_radius": 4,
+      "leaf_placement_attempts": 72,
+      "leaf_blocks": [["zombie:lumenroot_leaves", 5]]
+    },
+    "base_block": [
+      "zombie:lumenroot_grass",
+      "zombie:lumenroot_dirt"
+    ],
+    "may_grow_on": [
+      "zombie:lumenroot_grass",
+      "zombie:lumenroot_dirt"
+    ],
+    "may_replace": [
+      "minecraft:air",
+      "zombie:lumenroot_fungus",
+      "zombie:lumenroot_bio_shroom",
+      "zombie:lumenroot_leaves"
+    ],
+    "may_grow_through": [
+      "minecraft:air",
+      "zombie:lumenroot_fungus",
+      "zombie:lumenroot_bio_shroom",
+      "zombie:lumenroot_leaves"
+    ]
+  }
+}

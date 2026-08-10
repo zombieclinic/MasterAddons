@@ -1,0 +1,50 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:colored_redstone_lamp_lime",
+      "menu_category": {
+        "category": "construction"
+      },
+      "states": {
+        "zombie:lit": [
+          0,
+          1
+        ]
+      }
+    },
+    "components": {
+      "minecraft:display_name": "Lime Redstone Lamp",
+      "minecraft:geometry": {
+        "identifier": "minecraft:geometry.full_block"
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "zombie_colored_redstone_lamp_lime",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.3
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 6
+      },
+      "minecraft:loot": "loot_tables/blocks/dyeable/colored_redstone_lamp/lime.json"
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('zombie:lit') == 1",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "zombie_colored_redstone_lamp_lime_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:light_emission": 15
+        }
+      }
+    ]
+  }
+}

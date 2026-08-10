@@ -1,0 +1,151 @@
+{
+  "individual_event_sounds": {
+    "events": {
+      
+    }
+  },
+  "block_sounds": {
+    
+  },
+  "entity_sounds": {
+    "entities": {
+      "zombie:end_golem": {
+        "events": {
+          "death": "mob.irongolem.death",
+          "hurt": "mob.irongolem.hit",
+          "step": {
+            "pitch": 1.0,
+            "sound": "mob.irongolem.walk",
+            "volume": 1.0
+          },
+          "attack": {
+            "pitch": 1.0,
+            "sound": "mob.irongolem.throw",
+            "volume": 1.0
+          },
+          "throw": {
+            "pitch": 1.0,
+            "sound": "mob.irongolem.throw",
+            "volume": 1.0
+          }
+        },
+        "pitch": [0.8, 1.0],
+        "volume": 1.0
+      },
+      "zombie:end_cow": {
+        "events": {
+          "ambient": {
+            "sound": "mob.cow.say",
+            "volume": 1.0
+          },
+          "death": {
+            "pitch": 0.9,
+            "sound": "mob.cow.hurt",
+            "volume": 0.5
+          },
+          "hurt": "mob.cow.hurt",
+          "step": {
+            "pitch": [0.9, 1.1],
+            "sound": "mob.cow.step",
+            "volume": 0.65
+          }
+        },
+        "pitch": [0.8, 1.2],
+        "volume": 1.0
+      },
+      "zombie:orca": {
+        "events": {
+          "hurt": "zombie.orca.hurt",
+          "ambient": "zombie.orca.ambient"
+        },
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "volume": 1
+      },
+      "zombie:walker": {
+        "events": {
+          "hurt": "zombie.walker.hurt",
+          "ambient": "zombie.walker.scream"
+        },
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "volume": 1
+      },
+      "zombie:impaler": {
+        "events": {
+          "hurt": "zombie.walker.hurt",
+          "ambient": "zombie.walker.scream"
+        }
+      },
+      "zombie:crusher": {
+        "events": {
+          "hurt": "zombie.walker.hurt",
+          "ambient": "zombie.walker.scream",
+          "pre_ram": "zombie.crusher.charge",
+          "ram_impact": "zombie.crusher.impact"
+        },
+        "pitch": [
+          0.75,
+          0.95
+        ],
+        "volume": 1.2
+      },
+      "zombie:brown_bear": {
+        "events": {
+          "ambient": "mob.bear.say",
+          "hurt": "mob.bear.hurt",
+          "death": "mob.bear.death",
+          "attack": "mob.bear.attack"
+        },
+        "pitch": [
+          0.85,
+          1.1
+        ],
+        "volume": 1
+      },
+      "zombie:black_bear": {
+        "events": {
+          "ambient": "mob.bear.say",
+          "hurt": "mob.bear.hurt",
+          "death": "mob.bear.death",
+          "attack": "mob.bear.attack"
+        },
+        "pitch": [
+          0.9,
+          1.15
+        ],
+        "volume": 1
+      },
+      "zombie:zombie_brown_bear": {
+        "events": {
+          "ambient": "mob.bear.say",
+          "hurt": "mob.bear.hurt",
+          "death": "mob.bear.death",
+          "attack": "mob.bear.attack"
+        },
+        "pitch": [
+          0.7,
+          0.95
+        ],
+        "volume": 1.1
+      },
+      "zombie:zombie_black_bear": {
+        "events": {
+          "ambient": "mob.bear.say",
+          "hurt": "mob.bear.hurt",
+          "death": "mob.bear.death",
+          "attack": "mob.bear.attack"
+        },
+        "pitch": [
+          0.75,
+          1
+        ],
+        "volume": 1.1
+      }
+    }
+  }
+}

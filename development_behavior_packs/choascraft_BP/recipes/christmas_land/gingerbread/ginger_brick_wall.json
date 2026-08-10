@@ -1,0 +1,10 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": { "identifier": "zombie:ginger_brick_wall_from_stonecutter" },
+    "tags": ["stonecutter"],
+    "ingredients": [{ "item": "zombie:ginger_brick" }],
+    "result": [{ "item": "zombie:ginger_brick_wall", "count": 1 }],
+    "unlock": [{ "item": "zombie:ginger_brick" }]
+  }
+}

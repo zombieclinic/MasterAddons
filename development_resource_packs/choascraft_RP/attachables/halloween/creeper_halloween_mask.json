@@ -1,0 +1,24 @@
+
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "zombie:creeper_halloween_mask",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/halloween/mask/creeper"
+			},
+			"geometry": {
+				"default": "geometry.creeper_halloween_mask"
+			},
+			
+			
+			
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

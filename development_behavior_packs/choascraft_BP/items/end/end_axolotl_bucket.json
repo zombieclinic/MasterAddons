@@ -1,0 +1,20 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:end_axolotl_bucket",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "zombie_end_axolotl_bucket",
+      "minecraft:display_name": {
+        "value": "End Axolotl Bucket"
+      },
+      "minecraft:entity_placer": {
+        "entity": "zombie:end_axolotl"
+      }
+    }
+  }
+}

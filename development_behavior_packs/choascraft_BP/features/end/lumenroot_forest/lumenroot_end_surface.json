@@ -1,0 +1,21 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "zombie:lumenroot_end_surface"
+    },
+    "places_block": "zombie:lumenroot_grass",
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "may_replace": [
+      "minecraft:end_stone",
+      "zombie:lumenroot_dirt"
+    ],
+    "may_attach_to": {
+      "bottom": [
+        "minecraft:end_stone",
+        "zombie:lumenroot_dirt"
+      ]
+    }
+  }
+}

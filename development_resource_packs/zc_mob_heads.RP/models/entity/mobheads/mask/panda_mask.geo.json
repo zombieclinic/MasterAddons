@@ -1,0 +1,31 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.panda_mask",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [0, 36.5, -18.05],
+					"binding": "'head'",
+					"cubes": [
+						{"origin": [-6.5, 24.5, -4.05], "size": [13, 10, 9], "inflate": 0.5, "uv": [0, 6]},
+						{"origin": [-3.5, 24.5, -6.05], "size": [7, 5, 2], "inflate": 0.5, "uv": [45, 16]},
+						{"origin": [-8.5, 33.5, -1.05], "size": [5, 4, 1], "inflate": 0.5, "uv": [52, 25]},
+						{"origin": [3.5, 33.5, -1.05], "size": [5, 4, 1], "inflate": 0.5, "uv": [52, 25]}
+					],
+					"locators": {
+						"lead": [0, 31, 0.95]
+					}
+				}
+			]
+		}
+	]
+}

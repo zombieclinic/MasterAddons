@@ -1,0 +1,28 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "zombie:enderzombie_cape",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/items/ender_zombie"
+            },
+            "geometry": {
+                "default": "geometry.enderzombie_mask"
+            },
+            "render_controllers": [
+                "controller.render.endermask"
+            ],
+            "animations": {
+                "cape": "animation.enderzombie_mask.cape"
+            },
+            "scripts": {
+                "animate": [
+                    "cape"
+                ]
+            }
+        }
+    }
+}

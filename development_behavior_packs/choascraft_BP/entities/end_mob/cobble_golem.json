@@ -1,0 +1,197 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "zombie:cobble_golem",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "run": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "num_to_spawn": 2,
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "should_leash": false,
+              "spawn_entity": "zombie:tree_golem"
+            }
+          ]
+        },
+        "minecraft:timer": {
+          "time": [
+            0.5,
+            0.5
+          ],
+          "time_down_event": {
+            "event": "finished"
+          }
+        }
+      }
+    },
+    "components": {
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:type_family": {
+        "family": [
+          "irongolem",
+          "mob"
+        ]
+      },
+      "minecraft:nameable": {},
+      "minecraft:collision_box": {
+        "width": 1,
+        "height": 1.2
+      },
+      "minecraft:health": {
+        "value": 100,
+        "max": 100
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:movement": {
+        "value": 0.25
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": false,
+        "avoid_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
+      "minecraft:attack": {
+        "damage": {
+          "range_min": 7,
+          "range_max": 21
+        }
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1
+      },
+      "minecraft:leashable": {},
+      "minecraft:behavior.move_towards_target": {
+        "priority": 2,
+        "speed_multiplier": 0.9,
+        "within_radius": 32
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 0.6,
+        "xz_dist": 16
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 6,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      },
+      "minecraft:physics": {
+        "has_collision": true,
+        "has_gravity": true
+      },
+      "minecraft:pushable_by_entity": {},
+      "minecraft:pushable_by_block": {},
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:loot": {
+        "table": "loot_tables/mobs/golem_heart.json"
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {
+              "event": "run",
+              "target": "self"
+            },
+            "cause": "entity_attack"
+          }
+        ]
+      },
+      "minecraft:trade_resupply": {},
+      "minecraft:behavior.look_at_trading_player": {
+        "priority": 4
+      },
+      "minecraft:behavior.trade_interest": {
+        "priority": 3,
+        "within_radius": 6,
+        "interest_time": 45,
+        "remove_item_time": 1,
+        "carried_item_switch_time": 2,
+        "cooldown": 2
+      },
+      "minecraft:behavior.trade_with_player": {
+        "priority": 1,
+        "filters": {
+          "all_of": [
+            {
+              "all_of": [
+                {
+                  "test": "in_water",
+                  "value": false
+                }
+              ]
+            },
+            {
+              "any_of": [
+                {
+                  "test": "on_ground",
+                  "value": true
+                },
+                {
+                  "test": "is_sleeping",
+                  "value": true
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "minecraft:economy_trade_table": {
+        "display_name": "Cobble Golem",
+        "new_screen": true,
+        "show_trade_screen": true,
+        "table": "trading/summon_materal.json",
+        "nearby_cured_discount": 3
+      },
+      "minecraft:despawn": {
+        "despawn_from_distance": {
+          "max_distance": 64,
+          "min_distance": 64
+        },
+        "despawn_from_simulation_edge": true
+      }
+    },
+    "events": {
+      "run": {
+        "add": {
+          "component_groups": [
+            "run"
+          ]
+        }
+      },
+      "finished": {
+        "remove": {
+          "component_groups": [
+            "run"
+          ]
+        }
+      }
+    }
+  }
+}

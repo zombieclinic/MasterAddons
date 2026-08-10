@@ -1,0 +1,33 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:stripped_infected_tree_wood",
+      "menu_category": {
+        "category": "construction"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "Stripped Infected Tree Wood",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 2
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 10
+      },
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "infected_tree_log_stripped",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:tags": [
+        "minecraft:is_axe_item_destructible",
+        "zombie:infected_tree_log",
+        "wood"
+      ],
+      "minecraft:map_color": "#56402C"
+    }
+  }
+}

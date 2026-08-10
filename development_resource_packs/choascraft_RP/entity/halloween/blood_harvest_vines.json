@@ -1,0 +1,32 @@
+
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "zombie:blood_harvest_vines",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/halloween/roots_vfx"
+			},
+			"geometry": {
+				"default": "geometry.zombie_roots"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"alive": "animation.pumpkin_trap",
+				"loop": "animation.trap_loop",
+				"controller": "controller.animation.blood_vines"
+			},
+			"scripts": {
+				
+				"animate": [
+					"controller"
+				]
+			}
+		}
+	}
+}

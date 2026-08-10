@@ -1,0 +1,146 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:spider_cover_web",
+      "menu_category": {
+        "category": "construction"
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": ["minecraft:cardinal_direction"]
+        },
+        "minecraft:placement_position": {
+          "enabled_states": ["minecraft:block_face"]
+        }
+      }
+    },
+    "components": {
+      "minecraft:display_name": "Spider Web Cover",
+      "minecraft:geometry": "geometry.cult_of_the_dead_chicken_floor",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "zombie_spider_cover_web",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:collision_box": {
+        "origin": [-8, 0, -8],
+        "size": [16, 1, 16]
+      },
+      "minecraft:selection_box": {
+        "origin": [-8, 0, -8],
+        "size": [16, 1, 16]
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 6
+      },
+      "minecraft:loot": "loot_tables/blocks/halloween/spider_cover_web.json"
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'north'",
+        "components": {
+          "minecraft:geometry": "geometry.cult_of_the_dead_chicken_wall",
+          "minecraft:transformation": { "rotation": [0, 0, 0] },
+          "minecraft:collision_box": { "origin": [-8, 0, 7], "size": [16, 16, 1] },
+          "minecraft:selection_box": { "origin": [-8, 0, 7], "size": [16, 16, 1] }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'south'",
+        "components": {
+          "minecraft:geometry": "geometry.cult_of_the_dead_chicken_wall",
+          "minecraft:transformation": { "rotation": [0, 180, 0] },
+          "minecraft:collision_box": { "origin": [-8, 0, 7], "size": [16, 16, 1] },
+          "minecraft:selection_box": { "origin": [-8, 0, 7], "size": [16, 16, 1] }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:geometry": "geometry.cult_of_the_dead_chicken_wall",
+          "minecraft:transformation": { "rotation": [0, -90, 0] },
+          "minecraft:collision_box": { "origin": [-8, 0, 7], "size": [16, 16, 1] },
+          "minecraft:selection_box": { "origin": [-8, 0, 7], "size": [16, 16, 1] }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:geometry": "geometry.cult_of_the_dead_chicken_wall",
+          "minecraft:transformation": { "rotation": [0, 90, 0] },
+          "minecraft:collision_box": { "origin": [-8, 0, 7], "size": [16, 16, 1] },
+          "minecraft:selection_box": { "origin": [-8, 0, 7], "size": [16, 16, 1] }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'up' && query.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:geometry": "geometry.cult_of_the_dead_chicken_floor",
+          "minecraft:transformation": { "rotation": [0, 180, 0] }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'up' && query.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:geometry": "geometry.cult_of_the_dead_chicken_floor",
+          "minecraft:transformation": { "rotation": [0, 0, 0] }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'up' && query.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:geometry": "geometry.cult_of_the_dead_chicken_floor",
+          "minecraft:transformation": { "rotation": [0, 90, 0] }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'up' && query.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:geometry": "geometry.cult_of_the_dead_chicken_floor",
+          "minecraft:transformation": { "rotation": [0, 270, 0] }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'down' && query.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:geometry": "geometry.cult_of_the_dead_chicken_roof",
+          "minecraft:transformation": { "rotation": [0, 180, 0] },
+          "minecraft:collision_box": { "origin": [-8, 15, -8], "size": [16, 1, 16] },
+          "minecraft:selection_box": { "origin": [-8, 15, -8], "size": [16, 1, 16] }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'down' && query.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:geometry": "geometry.cult_of_the_dead_chicken_roof",
+          "minecraft:transformation": { "rotation": [0, 0, 0] },
+          "minecraft:collision_box": { "origin": [-8, 15, -8], "size": [16, 1, 16] },
+          "minecraft:selection_box": { "origin": [-8, 15, -8], "size": [16, 1, 16] }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'down' && query.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:geometry": "geometry.cult_of_the_dead_chicken_roof",
+          "minecraft:transformation": { "rotation": [0, 90, 0] },
+          "minecraft:collision_box": { "origin": [-8, 15, -8], "size": [16, 1, 16] },
+          "minecraft:selection_box": { "origin": [-8, 15, -8], "size": [16, 1, 16] }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'down' && query.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:geometry": "geometry.cult_of_the_dead_chicken_roof",
+          "minecraft:transformation": { "rotation": [0, 270, 0] },
+          "minecraft:collision_box": { "origin": [-8, 15, -8], "size": [16, 1, 16] },
+          "minecraft:selection_box": { "origin": [-8, 15, -8], "size": [16, 1, 16] }
+        }
+      }
+    ]
+  }
+}

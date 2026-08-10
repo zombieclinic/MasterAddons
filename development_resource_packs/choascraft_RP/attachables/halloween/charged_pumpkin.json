@@ -1,0 +1,20 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "zombie:chargedpunkin",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/halloween/3ditems/pumpkin_cannon"
+			},
+			"geometry": {
+				"default": "geometry.item_charged_punkin"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

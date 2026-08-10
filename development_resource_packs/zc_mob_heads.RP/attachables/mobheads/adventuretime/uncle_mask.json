@@ -1,0 +1,25 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "zombie:uncle_mask",
+			"materials": {
+				"enchanted": "armor_enchanted",
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"enchanted": "textures/misc/enchanted_item_glint",
+				"default": "textures/mobheads/heads/eg/uncle"
+			},
+			"geometry": {
+				"default": "geometry.zombie_easteregg"
+			},
+			"render_controllers": [
+				"controller.render.armor"
+			],
+			"scripts": {
+				"parent_setup": "variable.helmet_layer_visible = 0.0;"
+			}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "zc_mobheads_bp 2.0",
+    "description": "Hunt, wear, place, and collect scripted mob heads—including ultra-rare Shinies.",
+    "uuid": "310bcbfa-80e9-4fcb-b9c6-a2d630ad6bc4",
+    "version": [1, 0, 2],
+    "min_engine_version": [1, 26, 30]
+  },
+
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "c8829968-cb69-4779-bda0-03bfa4c16ae5",
+      "version": [1, 0, 3]
+    },
+    {
+      "type": "script",
+      "uuid": "bc66a201-c79b-47c2-bf82-0404916fd28b",
+      "version": [1, 0, 3],
+      "entry": "scripts/index.js"
+    }
+  ],
+
+
+
+  "dependencies": [
+    {
+      "uuid": "8daefaae-3779-416a-83ff-67963db79804",
+      "version": [1, 0, 3]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.8.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "2.1.0"
+    }
+  ]
+}

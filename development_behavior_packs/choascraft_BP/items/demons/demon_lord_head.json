@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:demon_lord_head",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.skull"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "Demon Lord Head"
+      },
+      "minecraft:icon": "demon_lord_head",
+      "minecraft:wearable": {
+        "slot": "slot.armor.head"
+      },
+      "minecraft:block_placer": {
+        "block": "zombie:demon_lord_head_block"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:rarity": "epic"
+    }
+  }
+}

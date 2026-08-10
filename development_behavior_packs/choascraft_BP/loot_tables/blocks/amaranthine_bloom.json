@@ -1,0 +1,10 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "item", "name": "zombie:amaranthine_bloom", "weight": 1 }
+      ]
+    }
+  ]
+}

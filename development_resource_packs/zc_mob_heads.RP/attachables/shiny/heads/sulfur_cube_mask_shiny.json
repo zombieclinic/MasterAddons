@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "zombie:sulfur_cube_mask_shiny",
+      "materials": {
+        "tnt": "sulfur_cube",
+        "outer": "sulfur_cube_outer"
+      },
+      "textures": {
+        "tnt": "textures/entity/sulfur_cube/sulfur_cube_tnt",
+        "outer": "textures/entity/sulfur_cube/sulfur_cube_outer"
+      },
+      "geometry": {
+        "default": "geometry.sulfur_cube_head"
+      },
+      "animations": {
+        "random_fuse_controller": "controller.animation.sulfur_cube_mask.random_fuse",
+        "idle": "animation.sulfur_cube_mask.idle",
+        "fuse": "animation.sulfur_cube_mask.fuse",
+        "explode": "animation.sulfur_cube_mask.explode",
+        "hidden_wait": "animation.sulfur_cube_mask.hidden_wait"
+      },
+      "scripts": {
+        "parent_setup": "variable.helmet_layer_visible = 0.0;",
+        "animate": [
+          "random_fuse_controller"
+        ]
+      },
+      "particle_effects": {
+        "sulfur_burst": "zombie:sulfur_mask_burst"
+      },
+      "render_controllers": [
+        "controller.render.sulfur_cube_mask",
+        "controller.render.sulfur_cube_mask_outer"
+      ]
+    }
+  }
+}

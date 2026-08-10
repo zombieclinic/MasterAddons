@@ -1,0 +1,95 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.mule_wall",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "Head",
+					"pivot": [0, -16.65, 2.95],
+					"cubes": [
+						{
+							"origin": [-4, 0.71197, -0.175],
+							"size": [8, 8, 8],
+							"uv": {
+								"north": {"uv": [7, 20], "uv_size": [6, 5]},
+								"east": {"uv": [0, 20], "uv_size": [7, 5]},
+								"south": {"uv": [20, 20], "uv_size": [6, 5]},
+								"west": {"uv": [13, 20], "uv_size": [7, 5]},
+								"up": {"uv": [7, 13], "uv_size": [6, 7]},
+								"down": {"uv": [13, 20], "uv_size": [6, -7]}
+							}
+						}
+					]
+				},
+				{
+					"name": "Muzzle",
+					"parent": "Head",
+					"pivot": [0, -16.65, 2.95],
+					"cubes": [
+						{
+							"origin": [-2.825, 0.71197, -5.05],
+							"size": [5.425, 6.425, 5],
+							"uv": {
+								"north": {"uv": [5, 30], "uv_size": [4, 5]},
+								"east": {"uv": [0, 30], "uv_size": [5, 5]},
+								"south": {"uv": [14, 30], "uv_size": [4, 5]},
+								"west": {"uv": [9, 30], "uv_size": [5, 5]},
+								"up": {"uv": [5, 25], "uv_size": [4, 5]},
+								"down": {"uv": [9, 30], "uv_size": [4, -5]}
+							}
+						}
+					]
+				},
+				{
+					"name": "EarL",
+					"parent": "Head",
+					"pivot": [1, -8.85, 3.45],
+					"rotation": [0, 0, 5],
+					"cubes": [
+						{"origin": [0.27228, 8.75287, 6.44], "size": [2, 3, 1], "uv": [19, 16], "mirror": true}
+					]
+				},
+				{
+					"name": "EarR",
+					"parent": "Head",
+					"pivot": [-1.175, -16.175, 3.425],
+					"rotation": [0, 0, -5],
+					"cubes": [
+						{"origin": [-1.81653, 8.6373, 6.415], "size": [2, 3, 1], "uv": [19, 16]}
+					]
+				},
+				{
+					"name": "Mane",
+					"parent": "Head",
+					"pivot": [0, 0.35, -4.175]
+				},
+				{
+					"name": "MuleEarR",
+					"parent": "Head",
+					"pivot": [0, 17.7, -6.125],
+					"rotation": [0, 0, -15],
+					"cubes": [
+						{"origin": [-6.10386, 9.91025, 6.29], "size": [2, 7, 1], "uv": [0, 12]}
+					]
+				},
+				{
+					"name": "MuleEarL",
+					"parent": "Head",
+					"pivot": [0, 17.7, -6.125],
+					"rotation": [0, 0, 15],
+					"cubes": [
+						{"origin": [3.92121, 9.68013, 6.365], "size": [2, 7, 1], "uv": [0, 12], "mirror": true}
+					]
+				}
+			]
+		}
+	]
+}

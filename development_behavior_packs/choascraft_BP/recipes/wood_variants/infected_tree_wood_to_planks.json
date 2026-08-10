@@ -1,0 +1,27 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "zombie:infected_tree_wood_to_planks"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "zombie:infected_tree_wood"
+      }
+    ],
+    "result": [
+      {
+        "item": "zombie:infected_planks",
+        "count": 4
+      }
+    ],
+    "unlock": [
+      {
+        "item": "zombie:infected_tree_wood"
+      }
+    ]
+  }
+}

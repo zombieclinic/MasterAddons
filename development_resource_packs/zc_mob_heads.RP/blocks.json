@@ -1,0 +1,941 @@
+{
+	"format_version": [
+		1,
+		1,
+		0
+	],
+"zombie:allay_mask_block": {
+		"sound": "bone_block"
+	},
+	"zombie:axolotl_blue_block": {
+		"sound": "bone_block"
+	},
+	"zombie:axolotl_cyan_block": {
+		"sound": "bone_block"
+	},
+	"zombie:axolotl_gold_block": {
+		"sound": "bone_block"
+	},
+	"zombie:axolotl_lucy_block": {
+		"sound": "bone_block"
+	},
+	"zombie:axolotl_wild_block": {
+		"sound": "bone_block"
+	},
+	"zombie:bat_mask_block": {
+		"sound": "bone_block"
+	},
+	"zombie:bee_block": {
+		"sound": "bone_block"
+	},
+	"zombie:bee_angry_block": {
+		"sound": "bone_block"
+	},
+	"zombie:blaze_mask_block": {
+		"sound": "bone_block"
+	},
+	"zombie:camel_mask_block": {
+		"sound": "bone_block"
+	},
+	"zombie:blackcat_block": {
+		"sound": "bone_block"
+	},
+	"zombie:catbritish_block": {
+		"sound": "bone_block"
+	},
+	"zombie:cat_jellie_block": {
+		"sound": "bone_block"
+	},
+	"zombie:cat_persian_block": {
+		"sound": "bone_block"
+	},
+	"zombie:cat_ragdoll_block": {
+		"sound": "bone_block"
+	},
+	"zombie:cat_siamese_block": {
+		"sound": "bone_block"
+	},
+	"zombie:cat_tabby_block": {
+		"sound": "bone_block"
+	},
+	"zombie:cat_tuxedo_block": {
+		"sound": "bone_block"
+	},
+	"zombie:cat_white_block": {
+		"sound": "bone_block"
+	},
+	"zombie:cave_spider_block": {
+		"sound": "bone_block"
+	},
+	"zombie:chicken_block": {
+		"sound": "bone_block"
+	},
+	"zombie:chicken_warm_block": {
+		"sound": "bone_block"
+	},
+	"zombie:chicken_cold_block": {
+		"sound": "bone_block"
+	},
+	"zombie:cod_block": {
+		"sound": "bone_block"
+	},
+	"zombie:cow_block": {
+		"sound": "bone_block"
+	},
+	"zombie:dolphin_block": {
+		"sound": "bone_block"
+	},
+	"zombie:donkey_block": {
+		"sound": "bone_block"
+	},
+	"zombie:elderguardian_block": {
+		"sound": "bone_block"
+	},
+	"zombie:enderman_block": {
+		"sound": "bone_block"
+	},
+	"zombie:endermite_block": {
+		"sound": "bone_block"
+	},
+	"zombie:illager_block": {
+		"sound": "bone_block"
+	},
+	"zombie:fox_block": {
+		"sound": "bone_block"
+	},
+	"zombie:fox_arctic_block": {
+		"sound": "bone_block"
+	},
+	"zombie:temperate_frog_block": {
+		"sound": "bone_block"
+	},
+	"zombie:coldfrog_block": {
+		"sound": "bone_block"
+	},
+	"zombie:warm_frog_block": {
+		"sound": "bone_block"
+	},
+	"zombie:ghast_block": {
+		"sound": "bone_block"
+	},
+	"zombie:glow_squid_block": {
+		"sound": "bone_block"
+	},
+	"zombie:goat_block": {
+		"sound": "bone_block"
+	},
+	"zombie:goat_screamer_block": {
+		"sound": "bone_block"
+	},
+	"zombie:guardian_block": {
+		"sound": "bone_block"
+	},
+	"zombie:hog_block": {
+		"sound": "bone_block"
+	},
+	"zombie:horse_block": {
+		"sound": "bone_block"
+	},
+	"zombie:blackhorse_block": {
+		"sound": "bone_block"
+	},
+	"zombie:chestnuthorse_block": {
+		"sound": "bone_block"
+	},
+	"zombie:creamynuthorse_block": {
+		"sound": "bone_block"
+	},
+	"zombie:darkbrownhorse_block": {
+		"sound": "bone_block"
+	},
+	"zombie:grayhorse_block": {
+		"sound": "bone_block"
+	},
+	"zombie:whitehorse_block": {
+		"sound": "sound"
+	},
+	"zombie:husk_block": {
+		"sound": "bone_block"
+	},
+	"zombie:iron_golem_block": {
+		"sound": "bone_block"
+	},
+	"zombie:copper_golem_block": {
+		"sound": "copper"
+	},
+	"zombie:copper_golem_exposed_block": {
+		"sound": "copper"
+	},
+	"zombie:copper_golem_weathered_block": {
+		"sound": "copper"
+	},
+	"zombie:copper_golem_oxidized_block": {
+		"sound": "copper"
+	},
+	"zombie:nautilus_block": {
+		"sound": "bone_block"
+	},
+	"zombie:zombie_nautilus_block": {
+		"sound": "bone_block"
+	},
+	"zombie:zombie_nautilus_coral_block": {
+		"sound": "bone_block"
+	},
+	"zombie:parched_block": {
+		"sound": "bone_block"
+	},
+	"zombie:sulfur_cube_block": {
+		"sound": "slime"
+	},
+	"zombie:camel1_block": {
+		"sound": "bone_block"
+	},
+	"zombie:camel_husk_block": {
+		"sound": "bone_block"
+	},
+	"zombie:lama_brown_block": {
+		"sound": "bone_block"
+	},
+	"zombie:lama_gray_block": {
+		"sound": "bone_block"
+	},
+	"zombie:lama_white_block": {
+		"sound": "bone_block"
+	},
+	"zombie:magma_cube_block": {
+		"sound": "bone_block"
+	},
+	"zombie:brown_mooshroom_block": {
+		"sound": "bone_block"
+	},
+	"zombie:mooshroom_block": {
+		"sound": "bone_block"
+	},
+	"zombie:mule_block": {
+		"sound": "bone_block"
+	},
+	"zombie:ocelot_block": {
+		"sound": "bone_block"
+	},
+	"zombie:panda_block": {
+		"sound": "bone_block"
+	},
+	"zombie:panda_lazy_block": {
+		"sound": "bone_block"
+	},
+	"zombie:panda_worried_block": {
+		"sound": "bone_block"
+	},
+	"zombie:panda_playful_block": {
+		"sound": "bone_block"
+	},
+	"zombie:panda_brown_block": {
+		"sound": "bone_block"
+	},
+	"zombie:panda_weak_block": {
+		"sound": "bone_block"
+	},
+	"zombie:panda_aggressive_block": {
+		"sound": "bone_block"
+	},
+	"zombie:parrot_blue_block": {
+		"sound": "bone_block"
+	},
+	"zombie:parrot_green_block": {
+		"sound": "bone_block"
+	},
+	"zombie:parrot_red_blue_block": {
+		"sound": "bone_block"
+	},
+	"zombie:parrot_yellow_blue_block": {
+		"sound": "bone_block"
+	},
+	"zombie:parrot_gray_block": {
+		"sound": "bone_block"
+	},
+	"zombie:phantom_block": {
+		"sound": "bone_block"
+	},
+	"zombie:pig_block": {
+		"sound": "bone_block"
+	},
+	"zombie:pig_warm_block": {
+		"sound": "bone_block"
+	},
+	"zombie:pig_cold_block": {
+		"sound": "bone_block"
+	},
+	
+	"zombie:piglin_brute_block": {
+		"sound": "bone_block"
+	},
+	"zombie:pillager_block": {
+		"sound": "bone_block"
+	},
+	"zombie:polar_bear_block": {
+		"sound": "bone_block"
+	},
+	"zombie:pufferfish_block": {
+		"sound": "bone_block"
+	},
+	"zombie:rabbit_brown_block": {
+		"sound": "bone_block"
+	},
+	"zombie:rabbit_white_block": {
+		"sound": "bone_block"
+	},
+	"zombie:rabbit_black_block": {
+		"sound": "bone_block"
+	},
+	"zombie:rabbit_splotched_block": {
+		"sound": "bone_block"
+	},
+	"zombie:rabbit_gold_block": {
+		"sound": "bone_block"
+	},
+	"zombie:rabbit_salt_block": {
+		"sound": "bone_block"
+	},
+	"zombie:rabbit_toast_block": {
+		"sound": "bone_block"
+	},
+	"zombie:ravager_block": {
+		"sound": "bone_block"
+	},
+	"zombie:salmon_block": {
+		"sound": "bone_block"
+	},
+	"zombie:sheep_white_block": {
+		"sound": "bone_block"
+	},
+	"zombie:sheep_black_block": {
+		"sound": "bone_block"
+	},
+	"zombie:sheep_blue_block": {
+		"sound": "bone_block"
+	},
+	"zombie:sheep_brown_block": {
+		"sound": "bone_block"
+	},
+	"zombie:sheep_cyan_block": {
+		"sound": "bone_block"
+	},
+	"zombie:sheep_gray_block": {
+		"sound": "bone_block"
+	},
+	"zombie:sheep_green_block": {
+		"sound": "bone_block"
+	},
+	"zombie:sheep_light_blue_block": {
+		"sound": "bone_block"
+	},
+	"zombie:sheep_light_gray_block": {
+		"sound": "bone_block"
+	},
+	"zombie:sheep_lime_block": {
+		"sound": "bone_block"
+	},
+	"zombie:sheep_magenta_block": {
+		"sound": "bone_block"
+	},
+	"zombie:sheep_orange_block": {
+		"sound": "bone_block"
+	},
+	"zombie:sheep_pink_block": {
+		"sound": "bone_block"
+	},
+	"zombie:sheep_purple_block": {
+		"sound": "bone_block"
+	},
+	"zombie:sheep_red_block": {
+		"sound": "bone_block"
+	},
+	"zombie:sheep_yellow_block": {
+		"sound": "bone_block"
+	},
+	"zombie:shulker_block": {
+		"sound": "bone_block"
+	},
+	"zombie:shulker_white_block": {
+		"sound": "bone_block"
+	},
+	"zombie:shulker_orange_block": {
+		"sound": "bone_block"
+	},
+	"zombie:shulker_magenta_block": {
+		"sound": "bone_block"
+	},
+	"zombie:shulker_light_blue_block": {
+		"sound": "bone_block"
+	},
+	"zombie:shulker_yellow_block": {
+		"sound": "bone_block"
+	},
+	"zombie:shulker_lime_block": {
+		"sound": "bone_block"
+	},
+	"zombie:shulker_pink_block": {
+		"sound": "bone_block"
+	},
+	"zombie:shulker_gray_block": {
+		"sound": "bone_block"
+	},
+	"zombie:shulker_silver_block": {
+		"sound": "bone_block"
+	},
+	"zombie:shulker_cyan_block": {
+		"sound": "bone_block"
+	},
+	"zombie:shulker_purple_block": {
+		"sound": "bone_block"
+	},
+	"zombie:shulker_blue_block": {
+		"sound": "bone_block"
+	},
+	"zombie:shulker_brown_block": {
+		"sound": "bone_block"
+	},
+	"zombie:shulker_green_block": {
+		"sound": "bone_block"
+	},
+	"zombie:shulker_red_block": {
+		"sound": "bone_block"
+	},
+	"zombie:shulker_black_block": {
+		"sound": "bone_block"
+	},
+	"zombie:siliverfish_block": {
+		"sound": "bone_block"
+	},
+	"zombie:sheep_jeb_block": {
+		"sound": "bone_block"
+	},
+	"zombie:skeleton_horse_block": {
+		"sound": "bone_block"
+	},
+	"zombie:zombie_horse_block": {
+		"sound": "bone_block"
+	},
+	"zombie:stray_block": {
+		"sound": "bone_block"
+	},
+	"zombie:slime_block": {
+		"sound": "bone_block"
+	},
+	"zombie:sniffer_block": {
+		"sound": "bone_block"
+	},
+	"zombie:snowman_block": {
+		"sound": "bone_block"
+	},
+	"zombie:spider_block": {
+		"sound": "bone_block"
+	},
+	"zombie:squid_block": {
+		"sound": "bone_block"
+	},
+	"zombie:strider_block": {
+		"sound": "bone_block"
+	},
+	"zombie:strider_suffocated_block": {
+		"sound": "bone_block"
+	},
+	"zombie:tadpole_block": {
+		"sound": "bone_block"
+	},
+	"zombie:tropical_fish_block": {
+		"sound": "bone_block"
+	},
+	"zombie:turtle_block": {
+		"sound": "bone_block"
+	},
+	"zombie:vex_block": {
+		"sound": "bone_block"
+	},
+	"zombie:vex_charging_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_desert_armorer_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_desert_butcher_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_desert_cartographer_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_desert_farmer_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_desert_cleric_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_desert_fisherman_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_desert_fletcher_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_desert_librarian_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_desert_leatherworker_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_desert_mason_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_desert_shepherd_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_desert_toolsmith_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_desert_unskilled_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_desert_weaponsmith_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_jungle_armorer_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_jungle_butcher_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_jungle_cartographer_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_jungle_cleric_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_jungle_farmer_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_jungle_fisherman_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_jungle_fletcher_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_jungle_librarian_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_jungle_mason_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_jungle_nitwit_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_jungle_toolsmith_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_jungle_unskilled_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_jungle_weaponsmith_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_jungle_shepherd_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_desert_nitwit_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_plains_armorer_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_plains_butcher_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_plains_cartographer_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_plains_cleric_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_plains_farmer_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_plains_fisherman_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_plains_leatherworker_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_plains_librarian_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_plains_mason_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_plains_nitwit_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_plains_shepherd_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_plains_toolsmith_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_plains_unskilled_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_plains_weaponsmith_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_plains_fletcher_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_savanna_armorer_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_savanna_butcher_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_savanna_cartographer_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_savanna_cleric_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_savanna_farmer_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_savanna_fisherman_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_savanna_fletcher_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_savanna_leatherworker_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_savanna_librarian_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_savanna_mason_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_savanna_shepherd_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_savanna_nitwit_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_savanna_toolsmith_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_savanna_unskilled_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_savanna_weaponsmith_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_snow_armorer_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_snow_butcher_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_snow_cartographer_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_snow_cleric_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_snow_farmer_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_snow_fisherman_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_snow_fletcher_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_snow_leatherworker_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_snow_librarian_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_snow_mason_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_snow_nitwit_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_snow_shepherd_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_snow_toolsmith_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_snow_unskilled_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_snow_weaponsmith_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_swamp_armorer_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_swamp_butcher_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_swamp_cartographer_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_swamp_cleric_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_swamp_farmer_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_swamp_fisherman_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_swamp_fletcher_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_swamp_leatherworker_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_swamp_librarian_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_swamp_mason_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_swamp_nitwit_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_swamp_shepherd_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_swamp_toolsmith_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_swamp_unskilled_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_swamp_weaponsmith_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_taiga_armorer_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_taiga_butcher_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_taiga_cartographer_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_taiga_cleric_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_taiga_farmer_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_taiga_fisherman_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_taiga_fletcher_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_taiga_leatherworker_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_taiga_librarian_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_taiga_mason_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_taiga_nitwit_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_taiga_shepherd_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_taiga_toolsmith_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_taiga_unskilled_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wandering_trader_block": {
+		"sound": "bone_block"
+	},
+	"zombie:vindicator_block": {
+		"sound": "bone_block"
+	},
+	"zombie:villager_v2_taiga_weaponsmith_block": {
+		"sound": "bone_block"
+	},
+	"zombie:warden_block": {
+		"sound": "bone_block"
+	},
+	"zombie:witch_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wither_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wither_armored_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wither_armored_invulnerable_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wither_invulnerable_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wolf_wild_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wolf_angry_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wolf_tame_block": {
+		"sound": "bone_block"
+	},
+	"zombie:zoglin_block": {
+		"sound": "bone_block"
+	},
+	"zombie:zombie_piglin_block": {
+		"sound": "bone_block"
+	},
+	"zombie:zombie_villager_v2_block": {
+		"sound": "bone_block"
+	},
+	"zombie:shulker_jeb_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wolf_ashen_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wolf_ashen_angry_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wolf_ashen_tamed_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wolf_chestnut_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wolf_chestnut_angry_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wolf_chestnut_tamed_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wolf_rusty_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wolf_rusty_angry_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wolf_rusty_tamed_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wolf_spotted_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wolf_spotted_angry_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wolf_spotted_tamed_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wolf_striped_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wolf_striped_angry_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wolf_striped_tamed_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wolf_winter_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wolf_winter_angry_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wolf_winter_tamed_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wolf_wood_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wolf_wood_angry_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wolf_wood_tamed_block": {
+		"sound": "bone_block"
+	},
+	"zombie:head_block": {
+		"sound": "bone_block"
+	},
+	"zombie:armadillo_block": {
+		"sound": "bone_block"
+	},
+	"zombie:satandragon3233_block": {
+		"sound": "bone_block"
+	},
+	"zombie:nuisance82mc_block": {
+		"sound": "bone_block"
+	},
+	"zombie:chromgod3329_block": {
+		"sound": "bone_block"
+	},
+	"zombie:lizzy_aaaa_block": {
+		"sound": "bone_block"
+	},
+	"zombie:robbae03_block": {
+		"sound": "bone_block"
+	},
+	"zombie:screaming_egl_block": {
+		"sound": "bone_block"
+	},
+	"zombie:the_n1nj4ll0_block": {
+		"sound": "bone_block"
+	},
+	"zombie:the_og_honey_block": {
+		"sound": "bone_block"
+	},
+	"zombie:toro_loco_block": {
+		"sound": "bone_block"
+	},
+	"zombie:vegan_chzburger_block": {
+		"sound": "bone_block"
+	},
+	"zombie:wee_hannahx0_block": {
+		"sound": "bone_block"
+	},
+	"zombie:zella_bites_block": {
+		"sound": "bone_block"
+	},
+	"zombie:bazzerk_block": {
+		"sound": "bone_block"
+	},
+	"zombie:sloth_block": {
+		"sound": "bone_block"
+	},
+	"zombie:spartanlex2_block": {
+		"sound": "bone_block"
+	},
+	"zombie:zombieclinic2_block": {
+		"sound": "bone_block"
+	},
+	"zombie:russbox_block": {
+		"sound": "bone_block"
+	},
+	"zombie:universal9gaming_block": {
+		"sound": "bone_block"
+	},
+	"zombie:snow_block": {
+		"sound": "bone_block"
+	}
+}

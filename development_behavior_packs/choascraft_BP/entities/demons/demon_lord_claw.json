@@ -1,0 +1,121 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "zombie:demon_lord_claw",
+      "spawn_category": "misc",
+      "is_spawnable": false,
+      "is_summonable": true
+    },
+    "component_groups": {
+      "trap_wait": {
+        "minecraft:mob_effect": {
+          "mob_effect": "slowness",
+          "effect_range": 1.5,
+          "effect_time": 2,
+          "cooldown_time": 1,
+          "entity_filter": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "player"
+          }
+        },
+        "minecraft:timer": {
+          "time": 1,
+          "looping": false,
+          "time_down_event": {
+            "event": "damage_pulse",
+            "target": "self"
+          }
+        }
+      },
+      "damage_pulse": {
+        "minecraft:mob_effect": {
+          "mob_effect": "slowness",
+          "effect_range": 1.5,
+          "effect_time": 2,
+          "cooldown_time": 1,
+          "entity_filter": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "player"
+          }
+        },
+        "minecraft:area_attack": {
+          "damage_range": 1.5,
+          "damage_per_tick": 1,
+          "cause": "magic",
+          "entity_filter": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "player"
+          }
+        },
+        "minecraft:timer": {
+          "time": 0.05,
+          "looping": false,
+          "time_down_event": {
+            "event": "finish_damage_pulse",
+            "target": "self"
+          }
+        }
+      },
+      "lifetime": {
+        "minecraft:ageable": {
+          "duration": 6.5,
+          "grow_up": {
+            "event": "despawn",
+            "target": "self"
+          }
+        }
+      },
+      "despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": ["demon_lord_claw", "demon", "mob"]
+      },
+      "minecraft:health": {
+        "value": 20,
+        "max": 20
+      },
+      "minecraft:collision_box": {
+        "width": 1,
+        "height": 2
+      },
+      "minecraft:physics": {
+        "has_gravity": false,
+        "has_collision": true
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": ["lifetime", "trap_wait"]
+        }
+      },
+      "damage_pulse": {
+        "sequence": [
+          { "remove": { "component_groups": ["trap_wait"] } },
+          { "add": { "component_groups": ["damage_pulse"] } }
+        ]
+      },
+      "finish_damage_pulse": {
+        "sequence": [
+          { "remove": { "component_groups": ["damage_pulse"] } },
+          { "add": { "component_groups": ["trap_wait"] } }
+        ]
+      },
+      "despawn": {
+        "add": {
+          "component_groups": ["despawn"]
+        }
+      }
+    }
+  }
+}

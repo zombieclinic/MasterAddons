@@ -1,0 +1,32 @@
+{
+	"format_version": 2,
+	"header": {
+    "name": "ZombieCraft World Menu Resources",
+    "description": "Resources for the modern ZombieCraft World Menu",
+		"uuid": "4a73717c-ffbf-4c29-9be7-1314718657eb",
+		"version": [
+			1,
+			0,
+      27
+		],
+    "min_engine_version": [
+      1,
+      26,
+      27
+    ]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "9e52c62f-91cd-4386-9e88-42b825ce7310",
+			"version": [
+				1,
+				0,
+      27
+			]
+		}
+	],
+	"capabilities": [
+    "pbr"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.sulfur_cube_mask.random_fuse": {
+      "initial_state": "normal",
+      "states": {
+        "normal": {
+          "on_entry": [
+            "variable.sulfur_tnt = 0.0;",
+            "variable.sulfur_hidden = 0.0;"
+          ],
+          "animations": ["idle"],
+          "transitions": [
+            {
+              "fusing": "math.random(0.0, 1.0) < 0.001"
+            }
+          ]
+        },
+        "fusing": {
+          "on_entry": [
+            "variable.sulfur_tnt = 1.0;"
+          ],
+          "animations": ["fuse"],
+          "transitions": [
+            {
+              "explode": "query.any_animation_finished"
+            }
+          ]
+        },
+        "explode": {
+          "on_entry": [
+            "variable.sulfur_tnt = 1.0;",
+            "variable.sulfur_hidden = 0.0;"
+          ],
+          "animations": ["explode"],
+          "transitions": [
+            {
+              "hidden": "query.any_animation_finished"
+            }
+          ]
+        },
+        "hidden": {
+          "on_entry": [
+            "variable.sulfur_tnt = 0.0;",
+            "variable.sulfur_hidden = 1.0;"
+          ],
+          "animations": ["hidden_wait"],
+          "transitions": [
+            {
+              "normal": "query.any_animation_finished"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

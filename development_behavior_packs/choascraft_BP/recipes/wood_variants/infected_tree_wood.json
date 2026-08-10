@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:infected_tree_wood"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "LL",
+      "LL"
+    ],
+    "key": {
+      "L": {
+        "item": "zombie:infected_tree_log"
+      }
+    },
+    "result": {
+      "item": "zombie:infected_tree_wood",
+      "count": 3
+    },
+    "unlock": [
+      {
+        "item": "zombie:infected_tree_log"
+      }
+    ]
+  }
+}

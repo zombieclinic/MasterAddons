@@ -1,0 +1,14 @@
+{
+  "version": "0.3.0",
+  "configurations": [
+    {
+      "type": "minecraft-js",
+      "request": "attach",
+      "name": "Debug Giant Pack",
+      "mode": "listen",
+      "localRoot": "${workspaceFolder}/",
+      "targetModuleUuid": "9a24eb1e-745d-45d8-b431-b75e015470b8",
+      "port": 19144
+    }
+  ]
+}

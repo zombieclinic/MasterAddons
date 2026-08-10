@@ -1,0 +1,40 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:emberberrys",
+      "menu_category": {
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.crop"
+      }
+    },
+    "components": {
+      "minecraft:max_stack_size": 64,
+      "minecraft:display_name": {
+        "value": "item.zombie:emberberrys.name"
+      },
+      "minecraft:icon": "zombie_emberberry_4",
+      "minecraft:block_placer": {
+        "block": "zombie:emberberry",
+        "use_on": [
+          "zombie:demon_grass_no_tick",
+          "zombie:demon_dirt",
+          "zombie:demon_blood_flesh_block",
+          "zombie:demon_blood_block",
+          "zombie:demon_flesh_block"
+        ]
+      },
+      "minecraft:food": {
+        "can_always_eat": false,
+        "nutrition": 2,
+        "saturation_modifier": 0.2
+      },
+      "minecraft:use_animation": "eat",
+      "minecraft:use_modifiers": {
+        "movement_modifier": 0,
+        "use_duration": 1
+      }
+    }
+  }
+}
+

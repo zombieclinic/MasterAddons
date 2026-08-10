@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.firefly": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				},
+				{
+					"light*": "material.light"
+				}
+			],
+			"textures": [
+				"texture.default"
+			],
+			"light_color_multiplier": "math.clamp(query.modified_move_speed*4,0.5,5)",
+			"ignore_lighting": true
+		},
+		"controller.render.firefly_dark": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				},
+				{
+					"light*": "material.light"
+				}
+			],
+			"textures": [
+				"texture.dark"
+			]
+		}
+	}
+}

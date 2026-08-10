@@ -1,0 +1,1051 @@
+
+{
+	"format_version": "1.21.111",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "zombie:pumpkin_king",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+			"default": "controller.animation.pumpkin_boss"
+			},
+			"scripts": {
+			"animate": ["default"]
+			}
+		},
+		"component_groups": {
+			"is_in_boat": {
+				"minecraft:skin_id": {
+					"value": 10
+				}
+			},
+			"not_in_water": {
+				"minecraft:environment_sensor": {
+					"triggers": [
+						{
+						"event": "is_in_water",
+						"target": "self",
+						"filters": {
+							"any_of": [
+							{ "test": "in_water", "subject": "self", "operator": "==", "value": true },
+							{ "test": "is_underwater", "subject": "self", "operator": "==", "value": true }
+							]
+						}
+						}
+					]
+					}
+			},
+			"is_in_water": {
+				"minecraft:teleport": {
+					"dark_teleport_chance": 1,
+					"light_teleport_chance": 1,
+					"max_random_teleport_time": 20,
+					"min_random_teleport_time": 0,
+					"random_teleport_cube": [10,10,10],
+					"random_teleports": true,
+					"target_distance": 16,
+					"target_teleport_chance": 1
+				},
+				"minecraft:environment_sensor": {
+					"triggers": [
+						{
+						"event": "not_in_water",
+						"target": "self",
+						"filters": {
+							"any_of": [
+							{ "test": "in_water", "subject": "self", "operator": "==", "value": false },
+							{ "test": "is_underwater", "subject": "self", "operator": "==", "value": false }
+							]
+						}
+						}
+					]
+					}
+			},
+			"final_death": {
+				"minecraft:skin_id": {
+					"value": 6
+				}
+			},
+			"death": {
+				"minecraft:skin_id": {
+					"value": 5
+				},
+				"minecraft:movement": {
+					"value": 0
+				},
+				"minecraft:knockback_resistance": {
+					"value": 1
+				},
+				"minecraft:timer": {
+					"time": 3,
+					"looping": false,
+					"time_down_event": {
+						"event": "final_death",
+						"target": "self"
+					}
+				}
+			},
+			"hurt":{
+				"minecraft:skin_id": {
+					"value": 1
+				}
+			},
+			"not_hurt":{
+				"minecraft:skin_id": {
+					"value": 0
+				}
+			},
+			"stage_1": {
+			"minecraft:attack": {
+				"damage": 25
+			},
+				"minecraft:variant": {
+					"value": 1
+				},
+				"minecraft:damage_sensor": {
+					
+           		 "triggers": [
+              {
+				"cause": "all",
+				"deals_damage": "yes",
+                "on_damage": {
+					"target": "self",
+                  "filters": [
+                    {
+                      "test": "actor_health",
+                      "value": 350,
+                      "subject": "self",
+                      "operator": "<="
+                    }
+                  ],
+                  "event": "stage_2"
+                }
+              },
+			  {
+							"cause": "all",
+							"deals_damage": "yes",
+							"on_damage": {
+								"target": "self",
+								"event": "hurt"
+							}
+						}
+            ]
+          },
+				"minecraft:movement": {
+				"value": 0.3
+			}
+			},
+			"stage_2": {
+				"minecraft:damage_sensor": {
+           		 "triggers": [
+              {
+				"cause": "all",
+				"deals_damage": "yes",
+                "on_damage": {
+                  "filters": [
+                    {
+                      "test": "actor_health",
+                      "value": 40,
+                      "subject": "self",
+                      "operator": "<="
+                    }
+                  ],
+                  "event": "death"
+                }
+              },
+			  {
+							"cause": "all",
+							"deals_damage": "yes",
+							"on_damage": {
+								"target": "self",
+								"event": "hurt"
+							}
+						}
+            ]
+          },
+				"minecraft:variant": {
+					"value": 2
+				},
+				"minecraft:attack": {
+				"damage": 30
+			},
+			"minecraft:movement": {
+				"value": 0.24
+			}
+			},
+			"zombie:summon": {
+				"minecraft:behavior.nearest_attackable_target": {
+					"priority": 2,
+					"entity_types": [
+						{
+							"filters": {
+								"any_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							},
+							"max_dist": 30
+						}
+					],
+					"must_see": false,
+					"reselect_targets": true,
+					"within_radius": 30,
+					"persist_time": 20,
+					"scan_interval": 10
+				},
+				"minecraft:behavior.move_towards_target": {
+					"priority": 3,
+					"speed_multiplier": 1,
+					"within_radius": 2
+				},
+				"minecraft:behavior.summon_entity": {
+					"priority": 0,
+					"summon_choices": [
+						{
+							"weight": 1,
+							"do_casting": true,
+							"cooldown_time": 5,
+							"cast_duration": 2.29,
+							"sequence": [
+								{
+									"shape": "circle",
+									"target": "self",
+									"base_delay": 1,
+									"num_entities_spawned": 4,
+									"entity_type": "zombie:trick_orzombie",
+									"summon_cap": 6,
+									"summon_cap_radius": 32,
+									"size": 1,
+									"sound_event": "prepare.summon"
+								}
+							]
+						}
+					]
+				},
+				
+				"minecraft:entity_sensor": {
+					"subsensors": [
+						{
+						"event": "zombie:end_summon",
+						"range": [20, 20],
+						"minimum_count": 1,
+						"maximum_count": 10,
+						"event_filters": {
+							"any_of": [
+							{ "test": "is_family", "subject": "other", "value": "trick_or_treaters" }
+							]
+						}
+						},
+						    {
+						"event": "zombie:killboat",
+						"range": [1, 1],
+						"minimum_count": 1,
+						"event_filters": {
+							"all_of": [
+							{ "test": "is_riding", "subject": "self", "operator": "==", "value": true }
+							]
+						}
+						}
+  
+						
+					]
+				},
+				"minecraft:target_nearby_sensor": {
+					"outside_range": 10,
+					"on_outside_range": { "event": "zombie:end_summon", "target": "self" }
+					}
+			},
+			"zombie:throw": {
+				
+				"minecraft:behavior.move_towards_target": {
+					"priority": 2,
+					"speed_multiplier": 1,
+					"within_radius": 5
+				},
+				"minecraft:behavior.nearest_attackable_target": {
+					"priority": 2,
+					"entity_types": [
+						{
+							"filters": {
+								"any_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							},
+							"max_dist": 30
+						}
+					],
+					"must_see": false,
+					"reselect_targets": true,
+					"within_radius": 30,
+					"persist_time": 20,
+					"scan_interval": 10
+				},
+				"minecraft:behavior.ranged_attack": {
+					"priority": 0,
+					"attack_radius": 15,
+					"charge_charged_trigger": 0.0,  
+					"charge_shoot_trigger": 3.2,   
+					"burst_shots": 1,
+					"attack_interval_min": 3.2,     
+					"attack_interval_max": 3.2,
+					"swing": true
+					},
+				 "minecraft:shooter": {
+            "def": "zombie:pumpkin_seed"
+          },
+			"minecraft:entity_sensor": {
+					"subsensors": [
+						{
+						"event": "zombie:attack",
+						"range": [4, 4],
+						"minimum_count": 1,
+						"maximum_count": 1,
+						"event_filters": {
+							"any_of": [
+							{ "test": "is_family", "subject": "other", "value": "player" }
+							]
+						}
+						},
+						 {
+						"event": "zombie:killboat",
+						"range": [1, 1],
+						"minimum_count": 1,
+						"event_filters": {
+							"all_of": [
+							{ "test": "is_riding", "subject": "self", "operator": "==", "value": true }
+							]
+						}
+						}
+					]
+					},
+					"minecraft:target_nearby_sensor": {
+					"inside_range": 4,
+					"on_inside_range": { "event": "zombie:attack", "target": "self" }
+					}
+				},
+			"zombie:attack": {
+				"minecraft:behavior.melee_attack": {
+					"priority": 1,
+					"reach_multiplier": 2,
+					"speed_multiplier": 1.15,
+					"cooldown_time": 1,
+					"track_target": true
+			},
+				
+				"minecraft:behavior.nearest_attackable_target": {
+					"priority": 2,
+					"entity_types": [
+						{
+							"filters": {
+								"any_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							},
+							"max_dist": 30
+						}
+					],
+					"must_see": false,
+					"reselect_targets": true,
+					"within_radius": 3,
+					"persist_time": 20,
+					"scan_interval": 10
+				},
+				"minecraft:behavior.move_towards_target": {
+					"priority": 3,
+					"speed_multiplier": 1,
+					"within_radius": 3
+				},
+				"minecraft:timer": {
+					"time": 10,
+					"looping": false,
+					"time_down_event": {
+						"event": "zombie:_attack_switch",
+						"target": "self"
+					}
+				}
+			},
+			"zombie:attack_end": {
+				"minecraft:behavior.knockback_roar": {
+					"priority": 0,
+					"duration": 3.7,
+					"attack_time": 3.5,
+					"cooldown_time": 0,
+					"knockback_damage": 20,
+					"knockback_horizontal_strength": 4,
+					"knockback_vertical_strength": 4,
+					"knockback_filters": {
+						"any_of": [
+							{
+								"test": "is_family",
+								"subject": "other",
+								"value": "player"
+							}
+						]
+					},
+					"damage_filters": {
+						"any_of": [
+							{
+								"test": "is_family",
+								"subject": "other",
+								"value": "player"
+							},
+							{
+								"any_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "zombie_custom"
+									}
+								]
+							}
+						]
+					},
+					"knockback_range": 3,
+					"on_roar_end": {
+						"event": "zombie:attack_end"
+					}
+				}
+			},
+			"zombie:summon_stage_2": {
+				"minecraft:behavior.nearest_attackable_target": {
+					"priority": 2,
+					"entity_types": [
+						{
+							"filters": {
+								"any_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							},
+							"max_dist": 30
+						}
+					],
+					"must_see": false,
+					"reselect_targets": true,
+					"within_radius": 30,
+					"persist_time": 20,
+					"scan_interval": 10
+				},
+				"minecraft:behavior.move_towards_target": {
+					"priority": 3,
+					"speed_multiplier": 1,
+					"within_radius": 2
+				},
+				"minecraft:behavior.summon_entity": {
+					"priority": 0,
+					"summon_choices": [
+						{
+							"weight": 1,
+							"do_casting": true,
+							"cooldown_time": 5,
+							"cast_duration": 2.29,
+							"sequence": [
+								{
+									"shape": "circle",
+									"target": "target",
+									"base_delay": 1,
+									"num_entities_spawned": 3,
+									"entity_type": "zombie:blood_harvest_vines",
+									"summon_cap": 6,
+									"summon_cap_radius": 32,
+									"size": 1,
+									"sound_event": "prepare.summon"
+								}
+							]
+						}
+					]
+				},
+				
+				"minecraft:entity_sensor": {
+					"subsensors": [
+						{
+						"event": "zombie:summon_stage_2_end",
+						"range": [20, 20],
+						"minimum_count": 2,
+						"maximum_count": 10,
+						"event_filters": {
+							"any_of": [
+							{ "test": "is_family", "subject": "other", "value": "blood_harvest_vines" }
+							]
+						}
+						},
+						 {
+						"event": "zombie:killboat",
+						"range": [1, 1],
+						"minimum_count": 1,
+						"event_filters": {
+							"all_of": [
+							{ "test": "is_riding", "subject": "self", "operator": "==", "value": true }
+							]
+						}
+						}
+					]
+				},
+				"minecraft:target_nearby_sensor": {
+					"outside_range": 10,
+					"on_outside_range": { "event": "zombie:summon_stage_2_end", "target": "self" }
+					}
+			},
+			"zombie:attack_stage_2": {
+				"minecraft:behavior.melee_attack": {
+					"priority": 1,
+					"reach_multiplier": 2.2,
+					"speed_multiplier": 1.25,
+					"cooldown_time": 0.8,
+					"track_target": true
+			},
+				"minecraft:attack": {
+				"damage": 20
+			},
+					"minecraft:behavior.nearest_attackable_target": {
+					"priority": 2,
+					"entity_types": [
+						{
+							"filters": {
+								"any_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							},
+							"max_dist": 30
+						}
+					],
+					"must_see": false,
+					"reselect_targets": true,
+					"within_radius": 3,
+					"persist_time": 20,
+					"scan_interval": 10
+				},
+				"minecraft:behavior.move_towards_target": {
+					"priority": 3,
+					"speed_multiplier": 1,
+					"within_radius": 3
+				},
+				"minecraft:timer": {
+					"time": 10,
+					"looping": false,
+					"time_down_event": {
+						"event": "zombie:attack_stage_2_end",
+						"target": "self"
+					}
+				},
+				"minecraft:target_nearby_sensor": {
+					"outside_range": 5,
+					"on_outside_range": { "event": "zombie:stage2_vine_switch", "target": "self" }
+					}
+			},
+			"zombie:attack_stage_2_end": {
+				"minecraft:behavior.knockback_roar": {
+					"priority": 0,
+					"duration": 3.7,
+					"attack_time": 3.5,
+					"cooldown_time": 0,
+					"knockback_damage": 25,
+					"knockback_horizontal_strength": 6,
+					"knockback_vertical_strength": 6,
+					"knockback_filters": {
+						"any_of": [
+							{
+								"test": "is_family",
+								"subject": "other",
+								"value": "player"
+							}
+						]
+					},		
+					"damage_filters": {
+						"any_of": [
+							{
+								"test": "is_family",
+								"subject": "other",
+								"value": "player"
+							},
+							{
+								"any_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "zombie_custom"
+									}
+								]
+							}
+						]
+					},
+					"knockback_range": 5,
+					"on_roar_end": {
+						"event": "zombie:summon_stage_2_start"
+					}
+				}
+			},
+			"zombie:vine_attack": {
+				"minecraft:timer": {
+					"time": 10,
+					"looping": false,
+					"time_down_event": {
+						"event": "vines_to_summon",
+						"target": "self"
+					}
+				},
+				"minecraft:behavior.move_towards_target": {
+					"priority": 2,
+					"speed_multiplier": 1,
+					"within_radius": 5
+				},
+				"minecraft:behavior.nearest_attackable_target": {
+					"priority": 2,
+					"entity_types": [
+						{
+							"filters": {
+								"any_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							},
+							"max_dist": 30
+						}
+					],
+					"must_see": false,
+					"reselect_targets": true,
+					"within_radius": 30,
+					"persist_time": 20,
+					"scan_interval": 10
+				},
+				"minecraft:behavior.ranged_attack": {
+					"priority": 0,
+					"attack_radius": 15,
+					"charge_charged_trigger": 0.0,  
+					"charge_shoot_trigger": 2.5,   
+					"burst_shots": 1,
+					"attack_interval_min": 2.5,     
+					"attack_interval_max": 3.5,
+					"swing": true
+					},
+				 "minecraft:shooter": {
+            "def": "zombie:pumpkin_vine_attack"
+          },
+			"minecraft:entity_sensor": {
+					"subsensors": [
+						{
+						"event": "zombie:attack_stage_2_event",
+						"range": [4, 4],
+						"minimum_count": 1,
+						"maximum_count": 1,
+						"event_filters": {
+							"any_of": [
+							{ "test": "is_family", "subject": "other", "value": "player" }
+							]
+						}
+						},
+						 {
+						"event": "zombie:killboat",
+						"range": [1, 1],
+						"minimum_count": 1,
+						"event_filters": {
+							"all_of": [
+							{ "test": "is_riding", "subject": "self", "operator": "==", "value": true }
+							]
+						}
+						}
+					]
+					},
+					"minecraft:target_nearby_sensor": {
+					"inside_range": 4,
+					"on_inside_range": { "event": "zombie:attack_stage_2_event", "target": "self" }
+					}
+				}
+		},
+		"components": {
+			"minecraft:loot": {
+				"table": "loot_tables/halloween/pumpkin_king.json"
+			},
+			"minecraft:type_family": {
+				"family": [
+					"zombie_custom",
+					"undead",
+					"pumpkin_king",
+					"monster"
+				]
+			},
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": 0
+			},
+			"minecraft:boss": {
+				"hud_range": 30,
+				"name": "Pumpkin King",
+				"should_darken_sky": true
+			},
+			"minecraft:health": {
+				"value": 750,
+				"max": 750
+			},
+			"minecraft:persistent": {},
+			"minecraft:follow_range": {
+				"value": 40
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 1,
+				"height": 3
+			},
+			
+			"minecraft:navigation.walk": {
+				"can_path_over_water": true,
+				"can_pass_doors": true,
+				"can_open_doors": true,
+				"avoid_water": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:behavior.random_stroll": {
+				"priority": 5,
+				"speed_multiplier": 0.6
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 9,
+				"look_distance": 3,
+				"probability": 1
+			},
+			"minecraft:behavior.look_at_entity": {
+				"priority": 10,
+				"look_distance": 8,
+				"filters": {
+					"test": "is_family",
+					"subject": "other",
+					"value": "mob"
+				}
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:knockback_resistance": {
+				"value": 0.7,
+				"max": 0.7
+			},
+			
+			"minecraft:experience_reward": {
+				"on_death": "(5000.0)"
+			},
+			
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:nameable": {
+				"always_show": true,
+				"allow_name_tag_renaming": true
+			}
+		},
+		"events": {	
+			"zombie:throw_switch": {
+				"remove": {
+					"component_groups": [
+						"zombie:attack"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"zombie:throw"
+					]
+				}
+			},
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"zombie:summon",
+						"stage_1",
+						"not_in_water"
+					]
+				}
+			},
+			"zombie:summon": {
+				"remove": {
+					"component_groups": [
+						"zombie:throw"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"zombie:summon"
+					]
+				}
+			},
+			"zombie:end_summon": {
+				"remove": {
+					"component_groups": [
+						"zombie:summon"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"zombie:throw"
+					]
+				}
+			},
+			"zombie:attack": {
+				"remove": {
+					"component_groups": [
+						"zombie:throw"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"zombie:attack"
+					]
+				}
+			},
+			"zombie:_attack_switch": {
+				"remove": {
+					"component_groups": [
+						"zombie:attack"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"zombie:attack_end"
+					]
+				}
+			},
+			"zombie:attack_end": {
+				"remove": {
+					"component_groups": [
+						"zombie:attack_end"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"zombie:summon"
+					]
+				}
+			},
+			"zombie:stage2_vine_switch": {
+				"remove": {
+					"component_groups": [
+						"zombie:attack_stage_2"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"zombie:vine_attack"
+					]
+				}
+			},
+			"zombie:summon_stage_2_end": {
+				"remove": {
+					"component_groups": [
+						"zombie:summon_stage_2"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"zombie:vine_attack"
+					]
+				}
+			},
+			"zombie:attack_stage_2_event": {
+					"remove": {
+					"component_groups": [
+						"zombie:vine_attack"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"zombie:attack_stage_2"
+					]
+				}
+			},
+			"zombie:attack_stage_2_end": {
+				"remove": {
+					"component_groups": [
+						"zombie:attack_stage_2"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"zombie:attack_stage_2_end"
+					]
+				}
+			},
+			"zombie:summon_stage_2_start": {
+				"remove": {
+					"component_groups": [
+						"zombie:attack_stage_2_end"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"zombie:summon_stage_2"
+					]
+				}
+			},
+			"stage_2": {
+				"remove": {
+					"component_groups": [
+						"stage_1",
+						"zombie:summon",
+						"zombie:throw",
+						"zombie:attack",
+						"zombie:attack_end"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"stage_2",
+						"zombie:summon_stage_2",
+						"not_in_water"
+					]
+				}
+			},
+			"vines_to_summon":{
+				"add": {
+					"component_groups": [
+						"zombie:summon_stage_2"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"zombie:vine_attack"
+					]
+				}
+			},
+			"hurt": {
+				"add": {
+					"component_groups": [
+						"hurt"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"not_hurt"
+					]
+				}
+			},
+			"not_hurt":{
+				"add": {
+					"component_groups": [
+						"not_hurt"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"hurt"
+					]
+				}
+			},
+			"death":{
+				"remove": {
+					"component_groups": [
+						"not_hurt",
+						"hurt",
+						"stage_1",
+						"stage_2",
+						"zombie:summon",
+						"zombie:throw",
+						"zombie:attack",
+						"zombie:attack_end",
+						"zombie:summon_stage_2",
+						"zombie:vine_attack",
+						"zombie:attack_stage_2_end"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"death"
+					]
+				}
+			},
+			"final_death": {
+				"add": {
+					"component_groups": [
+						"final_death"
+					]
+				}
+			},
+			"zombie:killboat":{
+				"add": {
+					"component_groups": [
+						"is_in_boat"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"not_hurt"
+					]
+				}
+			},
+			"boat_killed":{
+				"add": {
+					"component_groups": [
+						"not_hurt"
+					]
+				},
+				"remove": {
+					"component_groups":[
+						"is_in_boat"
+					]
+						
+				}
+			},
+			"is_in_water": {
+				"remove": {
+					"component_groups": [
+						"not_in_water"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"is_in_water"
+					]
+				}
+			},
+			"not_in_water": {
+				"remove": {
+					"component_groups": [
+						"is_in_water"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"not_in_water"
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,10 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "item", "name": "zombie:lumenroot_bio_shroom", "weight": 1 }
+      ]
+    }
+  ]
+}

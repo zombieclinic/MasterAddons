@@ -1,0 +1,25 @@
+{
+    "format_version": "1.21.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "zombie:menu_ui",
+            "menu_category": {
+                "category": "items"
+            }
+        },
+        "components": {
+            "minecraft:hand_equipped": true,
+            "minecraft:display_name": {
+                "value": "World Menu"
+            },
+            "minecraft:hover_text_color": "green",
+            "minecraft:icon": "zombie_menu_ui",
+            "minecraft:allow_off_hand": true,
+            "minecraft:keep_on_death": {},
+            "minecraft:use_animation": "drink",
+            "minecraft:custom_components": [
+                "zombie:menu"
+            ]
+        }
+    }
+}

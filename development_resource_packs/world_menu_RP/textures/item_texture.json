@@ -1,0 +1,18 @@
+{
+	"resource_pack_name": "ZombieCraft World Menu",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"zombie_menu_ui": {
+			"textures": "textures/items/zcui"
+		},
+		"coins": {
+			"textures": "textures/items/zcoin"
+		},
+    "enderzombie": {
+      "textures": "textures/items/ender_zombie_icon"
+    },
+    "worldmenuhowto": {
+      "textures": "textures/items/worldmenuhowto"
+    }
+  }
+}

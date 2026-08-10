@@ -1,0 +1,26 @@
+
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "zombie:pig_mask",
+			"materials": {
+				"default": "entity",
+				"enchanted": "armor_enchanted"
+			},
+			"textures": {
+				"default": "textures/mobheads/heads/pig_v3",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.pig_mask"
+			},
+			"render_controllers": [
+				"controller.render.armor"
+			],
+			"scripts": {
+				"parent_setup": "variable.helmet_layer_visible = 0.0;"
+			}
+		}
+	}
+}

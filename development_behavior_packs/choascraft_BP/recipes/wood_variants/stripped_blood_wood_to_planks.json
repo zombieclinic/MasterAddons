@@ -1,0 +1,27 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "zombie:stripped_blood_wood_to_planks"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "zombie:stripped_blood_wood"
+      }
+    ],
+    "result": [
+      {
+        "item": "zombie:blood_planks",
+        "count": 4
+      }
+    ],
+    "unlock": [
+      {
+        "item": "zombie:stripped_blood_wood"
+      }
+    ]
+  }
+}

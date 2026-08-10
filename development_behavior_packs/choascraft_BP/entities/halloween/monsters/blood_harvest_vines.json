@@ -1,0 +1,83 @@
+{"format_version": "1.21.60",
+"minecraft:entity":
+    {
+        "description": {
+            "identifier": "zombie:blood_harvest_vines",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "spawn_category": "monster",
+            "animations": {
+                "script_events": "controller.animation.blood_harvest_vines_events"
+            },
+            "scripts": {
+                "animate": [
+                    "script_events"
+                ]
+            }
+        },
+        "component_groups": {
+            "timer": {
+                "minecraft:timer": {
+                    "time": 10,
+                    "looping": true,
+                    "time_down_event": {
+                        "event": "death",
+                        "target": "self"
+                    }
+                }
+            },
+            "despawn": {
+                "minecraft:instant_despawn": {
+                    "remove_child_entities": false
+                }
+            }
+
+        },
+        "components": {
+            "minecraft:mob_effect": {
+                "mob_effect": "slowness",
+                "effect_range": 1,
+                "effect_time": 10
+            },
+            "minecraft:mob_effect_immunity": {
+                "mob_effects": [
+                    "slowness"
+                ]
+            },
+            "minecraft:physics": {
+                "has_collision": true,
+                "has_gravity": true
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "blood_harvest_vines"
+                ]
+            },
+            "minecraft:health": {
+                "value": 30,
+                "max": 30
+            },
+          
+            "minecraft:collision_box": {
+                "height": 1,
+                "width": 1
+            }
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "add": {
+                    "component_groups": [
+                        "timer"
+                    ]
+                }
+            },
+            "death": {
+                "add": {
+                    "component_groups": [
+                        "despawn"
+                    ]
+                }
+            }
+        }
+    }
+}

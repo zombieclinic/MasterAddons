@@ -1,0 +1,25 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.unicorn.locomotion": {
+			"initial_state": "idle",
+			"states": {
+				"idle": {
+					"animations": ["idle"],
+					"transitions": [{ "walk": "query.ground_speed > 0.03" }],
+					"blend_transition": 0.15
+				},
+				"walk": {
+					"animations": ["walk"],
+					"transitions": [{ "gallop": "query.ground_speed > 0.28" }, { "idle": "query.ground_speed <= 0.03" }],
+					"blend_transition": 0.12
+				},
+				"gallop": {
+					"animations": ["gallop"],
+					"transitions": [{ "walk": "query.ground_speed <= 0.28" }],
+					"blend_transition": 0.1
+				}
+			}
+		}
+	}
+}

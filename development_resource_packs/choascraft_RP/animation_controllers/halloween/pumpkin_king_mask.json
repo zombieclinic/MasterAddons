@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.pumpkin_king_mask": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations": ["idle"],
+          "transitions": [
+            {
+              "true_face": "math.mod(math.floor(query.life_time / 30.0), 2.0) == 0.0 && math.mod(query.life_time, 30.0) < 2.5"
+            },
+            {
+              "boss_animation": "math.mod(math.floor(query.life_time / 30.0), 2.0) == 1.0 && math.mod(query.life_time, 30.0) < 3.0"
+            }
+          ]
+        },
+
+        "true_face": {
+          "animations": ["true_face"],
+          "transitions": [
+            { "idle": "math.mod(query.life_time, 30.0) >= 2.5" }
+          ]
+        },
+
+        "boss_animation": {
+          "animations": ["boss_animation"],
+          "transitions": [
+            { "idle": "math.mod(query.life_time, 30.0) >= 3.0" }
+          ]
+        }
+      }
+    }
+  }
+}

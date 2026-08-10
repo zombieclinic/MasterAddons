@@ -1,0 +1,21 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.blood_harvest_vines_events": {
+      "initial_state": "activate",
+      "states": {
+        "activate": {
+          "on_entry": [
+            "/scriptevent zc:vines"
+          ],
+          "transitions": [
+            {
+              "idle": "query.state_time > 0.0"
+            }
+          ]
+        },
+        "idle": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:demon_ash",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "killed_by_player"
+        },
+        {
+          "condition": "random_chance_with_looting",
+          "chance": 0.08,
+          "looting_multiplier": 0.04
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:demon_heart",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "killed_by_player"
+        },
+        {
+          "condition": "random_chance_with_looting",
+          "chance": 0.14,
+          "looting_multiplier": 0.05
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:currupted_xp_orb",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "killed_by_player"
+        },
+        {
+          "condition": "random_chance_with_looting",
+          "chance": 0.035,
+          "looting_multiplier": 0.015
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:chaos_key",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "conditions": [
+        { "condition": "killed_by_player" },
+        { "condition": "random_chance", "chance": 0.05 }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_book_contents",
+              "author": "Kael'Vorr",
+              "title": "Anatomy of a Brute",
+              "pages": [
+                "Anatomy of a Brute\n\nA practical guide to the infernal siege creature called the Hell Brute.",
+                "Origin\n\nHell Brutes guarded fortresses in a realm where walls grew back. Their answer was to become stronger than regeneration.",
+                "Selection\n\nKael'Vorr chose them because they solve problems without changing methods. He considers this limitation scientifically useful.",
+                "Body\n\nDense flesh surrounds a furnace-hot core. Demon steel fragments grow through the body like a second skeleton.",
+                "Temperament\n\nA Brute is not mindless. It simply considers subtlety an inefficient distance between itself and a target.",
+                "Combat\n\nKeep space, use terrain, and never assume one stagger has ended its charge. A Brute's momentum is part of the weapon.",
+                "Demon Ash\n\nBrutes shed more ash than Emberstalkers. Their constant internal heat consumes tissue even while they fight.",
+                "Demon Hearts\n\nTheir hearts are rare, durable catalysts used throughout demon crafting and Chaos Altar recipes.",
+                "Corrupted XP\n\nThe Brute can drop Corrupted XP Orbs. A powered Demon Altar can also make them from sacrifices.",
+                "Demon Skull\n\nCraft with Demon Ash, Bone Blocks, and a Demon Heart. Three skulls are required in the Demon Lord ritual.",
+                "Pentagram\n\nCraft with Demon Ash, Redstone, and a Demon Heart. Two pentagrams complete the ritual frame.",
+                "Lord Ritual\n\nBuild a cross with a central Pentagram, another below, and Skulls above and on both sides.",
+                "Exact Ritual\n\nPlace vertically:\n  Skull\nSkull Pentagram Skull\n  Pentagram\n\nThe completed five-block cross is consumed and summons the Demon Lord.",
+                "Ritual Recipes\n\nSkull:\nABA\nBHB\nAAA\n\nPentagram:\nARA\nRHR\nARA\n\nA=Ash B=Bone Block\nH=Heart R=Redstone",
+                "Armor Symbols\n\nI = Demon Steel Ingot\nH = Demon Heart\nX = Corrupted XP Orb\nF = Demon Blood-Flesh Block",
+                "Chaos Boots — Tier III\n\nH.H\nI.I\nFXF\n\nCraft inside a Tier III Demon Altar.",
+                "Chaos Leggings — Tier III\n\nIXI\nIHI\nF.F\n\nCraft inside a Tier III Demon Altar.",
+                "Chaos Chestplate — Tier IV\n\nIHI\nIXI\nIFI\n\nCraft inside a Tier IV Demon Altar.",
+                "Chaos Helmet — Tier V\n\nIHI\nIXI\nF.F\n\nCraft inside a Tier V Demon Altar.",
+                "Chaos Craft\n\nDemon Steel remembers impact. Kael'Vorr uses that memory in weapons that become more dangerous through use.",
+                "Kael'Vorr's Note\n\nElegant? No. Repeatable? Extremely."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

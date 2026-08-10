@@ -1,0 +1,35 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.zombie_firefly.new": {
+			"states": {
+				"default": {
+					"animations": [
+						"flying"
+					],
+					"transitions": [
+						{
+							"flying_particle": "query.variant==0"
+						}
+					]
+				},
+				"flying_particle": {
+					"animations": [
+						"flying2"
+					],
+					"transitions": [
+						{
+							"default": "query.variant==1"
+						}
+					],
+					"particle_effects": [
+						{
+							"effect": "firefly",
+							"locator": "particle"
+						}
+					]
+				}
+			}
+		}
+	}
+}

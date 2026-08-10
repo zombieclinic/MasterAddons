@@ -1,0 +1,63 @@
+{
+	"resource_pack_name": "firefly",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"firefly_book": {
+			"textures": "textures/firefly_book"
+		},
+        "glass_jar": {
+			"textures": "textures/items/fireflys/glass_jar"
+		},
+		"firefly_jar_1": {
+			"textures": "textures/items/fireflys/firefly_jar_1"
+		},
+		"firefly_jar_2": {
+			"textures": "textures/items/fireflys/firefly_jar_2"
+		},
+		"firefly_jar_3": {
+			"textures": "textures/items/fireflys/firefly_jar_3"
+		},
+		"firefly_jar_4": {
+			"textures": "textures/items/fireflys/firefly_jar_4"
+		},
+		"firefly_jar_5": {
+			"textures": "textures/items/fireflys/firefly_jar_5"
+		},
+		"firefly_spawn_egg": {
+			"textures": "textures/items/fireflys/firefly"
+		},
+		"firefly_helmet": {
+			"textures": "textures/armor/green/firefly_helmet_icon"
+		},
+		"firefly_chestplate": {
+			"textures": "textures/armor/green/firefly_chestplate_icon"
+		},
+		"firefly_leggings": {
+			"textures": "textures/armor/green/fireflys_leggings_icon"
+		},
+		"firefly_boots": {
+			"textures": "textures/armor/green/firefly_boots_icon"
+		},
+		"dark_firefly_boots": {
+			"textures": "textures/armor/dark/firefly_black_boots_icon"
+		},
+		"dark_firefly_chestplate": {
+			"textures": "textures/armor/dark/firefly_black_chestplate_icon"
+		},
+		"dark_firefly_leggings": {
+			"textures": "textures/armor/dark/fireflys_black_leggings_icon"
+		},
+		"dark_firefly_helmet": {
+			"textures": "textures/armor/dark/firefly_dark_helmet_icon"
+		},
+		"firefly_mask": {
+			"textures": "textures/items/mask/firefly_mask_icon"
+		},
+		"firefly_luciferin": {
+			"textures": "textures/items/fireflys/luciferin_item"
+		},
+		"firefly_luciferin_fire": {
+			"textures": "textures/items/fireflys/luciferin_fire"
+		}
+    }
+}

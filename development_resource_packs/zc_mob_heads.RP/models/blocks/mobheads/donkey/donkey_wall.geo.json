@@ -1,0 +1,127 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.donkey_wall",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bb_main",
+					"pivot": [0, -0.45, 0.475]
+				},
+				{
+					"name": "head",
+					"parent": "bb_main",
+					"pivot": [0, 4.175, 3.475],
+					"cubes": [
+						{
+							"origin": [-4, 4.025, -0.05],
+							"size": [8, 8, 8],
+							"uv": {
+								"north": {"uv": [7, 20], "uv_size": [6, 5]},
+								"east": {"uv": [0, 20], "uv_size": [7, 5]},
+								"south": {"uv": [20, 20], "uv_size": [6, 5]},
+								"west": {"uv": [13, 20], "uv_size": [7, 5]},
+								"up": {"uv": [7, 13], "uv_size": [6, 7]},
+								"down": {"uv": [13, 20], "uv_size": [6, -7]}
+							}
+						}
+					]
+				},
+				{
+					"name": "Head2",
+					"parent": "head",
+					"pivot": [0, 28.175, -7.525]
+				},
+				{
+					"name": "Muzzle",
+					"parent": "Head2",
+					"pivot": [0, 28.175, -7.525],
+					"cubes": [
+						{
+							"origin": [-2.65, 4.075, -5.05],
+							"size": [5.275, 6.35, 5],
+							"uv": {
+								"north": {"uv": [5, 30], "uv_size": [4, 5]},
+								"east": {"uv": [0, 30], "uv_size": [5, 5]},
+								"south": {"uv": [14, 30], "uv_size": [4, 5]},
+								"west": {"uv": [9, 30], "uv_size": [5, 5]},
+								"up": {"uv": [5, 25], "uv_size": [4, 5]},
+								"down": {"uv": [9, 30], "uv_size": [4, -5]}
+							}
+						}
+					]
+				},
+				{
+					"name": "EarL",
+					"parent": "Head2",
+					"pivot": [0, 17.175, -4.525],
+					"rotation": [0, 0, 5],
+					"cubes": [
+						{"origin": [2.38945, 12.01035, 6.94], "size": [2, 3, 1], "uv": [19, 16], "mirror": true}
+					]
+				},
+				{
+					"name": "EarR",
+					"parent": "Head2",
+					"pivot": [0, 17.175, -4.525],
+					"rotation": [0, 0, -5],
+					"cubes": [
+						{"origin": [-4.16445, 12.01035, 6.94], "size": [2, 3, 1], "uv": [19, 16]}
+					]
+				},
+				{
+					"name": "MuleEarL",
+					"parent": "Head2",
+					"pivot": [0, 17.175, -4.525],
+					"rotation": [0, 0, 15],
+					"cubes": [
+						{"origin": [3.32855, 13.44381, 6.79], "size": [2, 7, 1], "uv": [0, 12], "mirror": true}
+					]
+				},
+				{
+					"name": "MuleEarR",
+					"parent": "Head2",
+					"pivot": [0, -5.825, -4.525],
+					"rotation": [0, 0, -15],
+					"cubes": [
+						{"origin": [0.77145, 12.89381, 6.79], "size": [2, 7, 1], "uv": [0, 12]}
+					]
+				},
+				{
+					"name": "ReinsL",
+					"parent": "Head2",
+					"pivot": [2, 30.675, -10.025],
+					"rotation": [-35, 0, 0]
+				},
+				{
+					"name": "ReinsR",
+					"parent": "Head2",
+					"pivot": [-3, 30.675, -10.025],
+					"rotation": [-35, 0, 0]
+				},
+				{
+					"name": "Bridle",
+					"parent": "Head2",
+					"pivot": [0, 17.175, -4.525]
+				},
+				{
+					"name": "BitL",
+					"parent": "Bridle",
+					"pivot": [0, 17.175, -4.525]
+				},
+				{
+					"name": "BitR",
+					"parent": "Bridle",
+					"pivot": [0, 17.175, -4.525]
+				}
+			]
+		}
+	]
+}

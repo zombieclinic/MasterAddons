@@ -1,0 +1,134 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.firefly_mob_head",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [
+					0,
+					1.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "firefly_mask",
+					"pivot": [
+						0,
+						4,
+						4
+					],
+					"binding": "'head'",
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								4,
+								0
+							],
+							"size": [
+								8,
+								8,
+								8
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "ant1",
+					"parent": "firefly_mask",
+					"pivot": [
+						-0.6,
+						-20.3,
+						3.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								0.2,
+								13.475,
+								-6.5
+							],
+							"size": [
+								1,
+								2,
+								3
+							],
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								0.2,
+								11.475,
+								-3.5
+							],
+							"size": [
+								1,
+								2,
+								3
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "ant2",
+					"parent": "firefly_mask",
+					"pivot": [
+						-2.925,
+						-20.3,
+						3.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								-2.125,
+								13.475,
+								-6.5
+							],
+							"size": [
+								1,
+								2,
+								3
+							],
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								-2.125,
+								11.475,
+								-3.5
+							],
+							"size": [
+								1,
+								2,
+								3
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,35 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.panda_roof",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 5,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [0, 15, -18.5],
+					"cubes": [
+						{"origin": [-6.5, 3, -4.5], "size": [13, 10, 9], "uv": [0, 6]},
+						{"origin": [-3.5, 3, -6.5], "size": [7, 5, 2], "uv": [45, 16]},
+						{"origin": [-7.5, 12, -1.5], "size": [4, 4, 1], "uv": [52, 25]},
+						{"origin": [3.5, 12, -1.5], "size": [4, 4, 1], "uv": [52, 25]}
+					],
+					"locators": {
+						"lead": [0, 9.5, 0.5]
+					}
+				},
+				{
+					"name": "bone",
+					"parent": "head",
+					"pivot": [0, 0.475, -0.45]
+				}
+			]
+		}
+	]
+}

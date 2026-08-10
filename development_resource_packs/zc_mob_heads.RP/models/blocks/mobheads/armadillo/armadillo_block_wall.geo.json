@@ -1,0 +1,76 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.armadillo_block_wall",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [0, 8, 7],
+					"rotation": [22.5, 0, 0],
+					"cubes": [
+						{
+							"origin": [-1.5, 4, 6],
+							"size": [3, 5, 2],
+							"pivot": [0, 8, 7],
+							"rotation": [-22.5, 0, 0],
+							"uv": {
+								"north": {"uv": [2.08605, 6.985], "uv_size": [2.92579, 4.99]},
+								"east": {"uv": [0, 7.035], "uv_size": [2.00237, 4.915]},
+								"south": {"uv": [8.08158, 7.02], "uv_size": [1.94211, 4.98]},
+								"west": {"uv": [5.06184, 7], "uv_size": [2.96938, 5]},
+								"up": {"uv": [2.06974, 4.99375], "uv_size": [2.90009, 1.98625]},
+								"down": {"uv": [5.08684, 6.93], "uv_size": [2.90877, -1.94917]}
+							}
+						},
+						{
+							"origin": [-3.5, 7, 6.375],
+							"size": [2, 5, 0.025],
+							"pivot": [-1.5, 9, 6.4],
+							"rotation": [10.80524, -22.13991, -4.11405],
+							"uv": {
+								"north": {"uv": [5.96789, 0], "uv_size": [-1.97842, 4.01]},
+								"east": {"uv": [8.36842, 1], "uv_size": [1, 5]},
+								"south": {"uv": [3.98947, 0], "uv_size": [1.97842, 4.01]},
+								"west": {"uv": [9.05263, 1], "uv_size": [1, 5]},
+								"up": {"uv": [8.36842, 3], "uv_size": [1.68421, -1]},
+								"down": {"uv": [8.05263, 4], "uv_size": [1.68421, -1]}
+							}
+						},
+						{
+							"origin": [1.5, 7, 6.375],
+							"size": [2, 5, 0.025],
+							"pivot": [1.5, 9, 6.4],
+							"rotation": [10.80524, 22.13991, 4.11405],
+							"uv": {
+								"north": {"uv": [1.95237, 0], "uv_size": [-1.95237, 3.98]},
+								"east": {"uv": [9, 0], "uv_size": [1, 5]},
+								"south": {"uv": [0, 0], "uv_size": [1.95237, 3.98]},
+								"west": {"uv": [9.20921, 0], "uv_size": [1.075, 5]},
+								"up": {"uv": [8, 3], "uv_size": [1.68421, -1]},
+								"down": {"uv": [8.68421, 3], "uv_size": [1.68421, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "right_ear",
+					"parent": "head",
+					"pivot": [-1, 9, 7]
+				},
+				{
+					"name": "left_ear",
+					"parent": "head",
+					"pivot": [1, 10, 7]
+				}
+			]
+		}
+	]
+}

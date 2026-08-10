@@ -1,0 +1,40 @@
+{
+	"format_version": "1.20.40",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "zombie:sheep_jeb_mask",
+			"materials": {
+				"default": "entity",
+				"enchanted": "armor_enchanted"
+			},
+			"textures": {
+				"white": "textures/mobheads/heads/sheep_white",
+				"blue": "textures/mobheads/heads/sheep_blue",
+				"purple": "textures/mobheads/heads/sheep_purple",
+				"green": "textures/mobheads/heads/sheep_green",
+				"black": "textures/mobheads/heads/sheep_black",
+				"brown": "textures/mobheads/heads/sheep_brown",
+				"cyan": "textures/mobheads/heads/sheep_cyan",
+				"gray": "textures/mobheads/heads/sheep_gray",
+				"light_blue": "textures/mobheads/heads/sheep_light_blue",
+				"light_gray": "textures/mobheads/heads/sheep_light_gray",
+				"lime": "textures/mobheads/heads/sheep_lime",
+				"magenta": "textures/mobheads/heads/sheep_magenta",
+				"orange": "textures/mobheads/heads/sheep_orange",
+				"pink": "textures/mobheads/heads/sheep_pink",
+				"red": "textures/mobheads/heads/sheep_red",
+				"yellow": "textures/mobheads/heads/sheep_yellow",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.sheep_mask"
+			},
+			"render_controllers": [
+				"controller.render.jeb_sheep_z"
+			],
+			"scripts": {
+				"parent_setup": "variable.helmet_layer_visible = 0.0;"
+			}
+		}
+	}
+}

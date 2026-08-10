@@ -1,0 +1,32 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "ZC Mob Heads 2.0",
+		"description": "Hunt, wear, place, and collect scripted mob heads—including ultra-rare Shinies.",
+		"uuid": "8daefaae-3779-416a-83ff-67963db79804",
+		"version": [
+			1,
+			0,
+			3
+		],
+		"min_engine_version": [
+			1,
+			26,
+			30
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "c64a2199-151e-43ca-8a2a-ba7228590fb2",
+			"version": [
+				1,
+				0,
+				3
+			]
+		}
+	],
+  "capabilities": [
+    "pbr"
+  ]
+}

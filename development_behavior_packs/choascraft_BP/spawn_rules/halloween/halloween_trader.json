@@ -1,0 +1,47 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "ninjos:halloween_witch",
+      "population_control": "animal"
+    },
+    "conditions": [
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:weight": {
+          "default": 1
+        },
+        "minecraft:herd": {
+          "min_size": 1,
+          "max_size": 1
+        },
+        "minecraft:biome_filter": {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "forest"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "plains"
+            }
+          ]
+        },
+        "minecraft:distance_filter": {
+          "min": 24,
+          "max": 128
+        },
+        "minecraft:density_limit": {
+          "surface": 1,
+          "underground": 1
+        },
+        "minecraft:height_filter": {
+          "min": 55,
+          "max": 320
+        }
+      }
+    ]
+  }
+}
