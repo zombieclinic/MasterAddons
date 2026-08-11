@@ -1,0 +1,95 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:demon_ash",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": { "min": 1, "max": 2 }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [
+        { "condition": "killed_by_player" },
+        {
+          "condition": "random_chance_with_looting",
+          "chance": 0.03,
+          "looting_multiplier": 0.02
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        { "type": "item", "name": "zombie:demon_heart" }
+      ]
+    },
+    {
+      "conditions": [
+        { "condition": "killed_by_player" },
+        {
+          "condition": "random_chance_with_looting",
+          "chance": 0.06,
+          "looting_multiplier": 0.03
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        { "type": "item", "name": "zombie:currupted_xp_orb" }
+      ]
+    },
+    {
+      "conditions": [
+        { "condition": "killed_by_player" },
+        {
+          "condition": "random_chance_with_looting",
+          "chance": 0.01,
+          "looting_multiplier": 0.005
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        { "type": "item", "name": "zombie:chaos_key" }
+      ]
+    },
+    {
+      "conditions": [
+        { "condition": "killed_by_player" },
+        { "condition": "random_chance", "chance": 0.05 }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_book_contents",
+              "author": "Kael'Vorr",
+              "title": "The Lesser Flame",
+              "pages": [
+                "The Lesser Flame\n\nField notes on Imps: small demons whose size has never limited their appetite for trouble.",
+                "Origin\n\nImps nested in the vents beneath infernal citadels. They survived larger demons through speed, numbers, and knowing every escape route.",
+                "The Collection\n\nKael'Vorr found an entire colony dismantling one of his instruments. He admired their curiosity before noticing they had stolen the screws.",
+                "Behavior\n\nAn Imp attacks whatever it sees as vulnerable. Once one gives chase, its wings and claws make losing it difficult.",
+                "Stronghold Nests\n\nDemon Strongholds use enchanted cages to replenish their Imp population. Libraries, guarded doors, and treasure chambers are common nesting sites.",
+                "Combat\n\nImps are tougher and stronger than common zombies. Fight them before a spawner fills the room, and do not let their size hide their reach.",
+                "Fire\n\nInfernal heat does not harm them. Fire and lava are shelter to an Imp, not obstacles.",
+                "Demon Ash\n\nTheir bodies leave small quantities of useful Demon Ash. Rare specimens preserve a Demon Heart or Corrupted XP Orb.",
+                "Chaos Keys\n\nAn Imp may carry a Chaos Key stolen from somewhere more important. This is rare, but theft makes them surprisingly effective couriers.",
+                "Lord Ritual\n\nPlace vertically:\n  Skull\nSkull Pentagram Skull\n  Pentagram\n\nCompleting the cross summons the Demon Lord.",
+                "Field Advice\n\nBreak the cage, control the doorway, then count the wings. If the number seems too low, look above you.",
+                "Kael'Vorr's Note\n\nNever underestimate a creature simply because you can pick it up. It may be holding your keys."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

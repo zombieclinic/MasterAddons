@@ -1,0 +1,21 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "zombie:imp",
+      "materials": { "default": "entity_alphatest" },
+      "textures": { "default": "textures/demon/item_mob/imp" },
+      "geometry": { "default": "geometry.chaos_imp" },
+      "animations": {
+        "idle": "animation.imp.idle",
+        "walk": "animation.imp.walk",
+        "attack": "animation.imp.attack",
+        "fly": "animation.imp.fly",
+        "controller": "controller.animation.imp"
+      },
+      "scripts": { "animate": ["controller"] },
+      "render_controllers": ["controller.render.default"],
+      "spawn_egg": { "base_color": "#6b1717", "overlay_color": "#e3a22b" }
+    }
+  }
+}

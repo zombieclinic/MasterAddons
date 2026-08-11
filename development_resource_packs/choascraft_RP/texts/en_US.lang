@@ -579,3 +579,5 @@ itemGroup.name.redwood_blocks=Redwood Blocks
 zombie:itemGroup.name.redwood_blocks=Redwood Blocks
 itemGroup.name.ocean_blocks=Ocean Blocks
 zombie:itemGroup.name.ocean_blocks=Ocean Blocks
+entity.zombie:imp.name=Imp
+item.spawn_egg.entity.zombie:imp.name=Imp Spawn Egg
