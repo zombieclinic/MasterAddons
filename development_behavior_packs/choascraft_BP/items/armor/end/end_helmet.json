@@ -1,0 +1,25 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:end_helmet",
+      "menu_category": { "category": "equipment", "group": "minecraft:itemGroup.name.helmet" }
+    },
+    "components": {
+      "minecraft:display_name": { "value": "End Helmet" },
+      "minecraft:max_stack_size": 1,
+      "minecraft:icon": "zombie_end_helmet",
+      "minecraft:wearable": { "slot": "slot.armor.head", "protection": 4 },
+      "minecraft:enchantable": { "slot": "armor_head", "value": 15 },
+      "minecraft:durability": { "max_durability": 2500 },
+      "minecraft:hover_text_color": "light_purple",
+      "minecraft:tags": { "tags": ["minecraft:transformable_items", "minecraft:is_armor"] },
+      "minecraft:repairable": {
+        "repair_items": [
+          { "items": ["minecraft:ender_pearl"], "repair_amount": 250 },
+          { "items": ["minecraft:netherite_ingot"], "repair_amount": 625 }
+        ]
+      }
+    }
+  }
+}

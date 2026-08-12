@@ -196,9 +196,13 @@ function decorateVines(dimension, origin, decoration) {
 						const target = face.target(leaf);
 						if (!target?.isAir) continue;
 
-						target.setPermutation(BlockPermutation.resolve(decoration.block, {
-							"minecraft:block_face": face.state
-						}));
+						try {
+							target.setPermutation(BlockPermutation.resolve(decoration.block, {
+								"minecraft:block_face": face.state
+							}));
+						} catch {
+							target.setPermutation(BlockPermutation.resolve(decoration.block));
+						}
 						break;
 					}
 				} catch {}
@@ -268,5 +272,4 @@ function isCreative(player) {
 		return false;
 	}
 }
-
 

@@ -1,0 +1,25 @@
+{
+    "format_version": "1.20.40",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "zombie:brown_netherite_bear_helmet",
+            "materials": {
+                "default": "armor",
+                "enchanted": "armor_enchanted"
+            },
+            "geometry": {
+                "default": "geometry.bear_helmet"
+            },
+            "textures": {
+        "default": "textures/items/bear_armor/bear_neather_helment",
+                "enchanted": "textures/misc/enchanted_item_glint"
+            },
+            "render_controllers": [
+                "controller.render.armor"
+            ],
+            "scripts": {
+                "parent_setup": "variable.helmet_layer_visible = 0.0;"
+            }
+        }
+    }
+}

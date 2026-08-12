@@ -80,18 +80,7 @@
       {
         "condition": "query.block_state('zombie:open') && !query.block_state('zombie:hinge')",
         "components": {
-          "minecraft:collision_box": {
-            "origin": [
-              5,
-              0,
-              -8
-            ],
-            "size": [
-              3,
-              16,
-              16
-            ]
-          },
+          "minecraft:collision_box": false,
           "minecraft:selection_box": {
             "origin": [
               5,
@@ -109,18 +98,7 @@
       {
         "condition": "query.block_state('zombie:open') && query.block_state('zombie:hinge')",
         "components": {
-          "minecraft:collision_box": {
-            "origin": [
-              -8,
-              0,
-              -8
-            ],
-            "size": [
-              3,
-              16,
-              16
-            ]
-          },
+          "minecraft:collision_box": false,
           "minecraft:selection_box": {
             "origin": [
               -8,
@@ -312,4 +290,3 @@
     }
   }
 }
-

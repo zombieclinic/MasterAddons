@@ -1,0 +1,42 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:lumenbloom_pod",
+      "menu_category": { "category": "nature" }
+    },
+    "components": {
+      "minecraft:display_name": "Lumenbloom Pod",
+      "minecraft:geometry": "geometry.zombie_abysscrossplants",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "lumenbloom_pod",
+          "render_method": "alpha_test",
+          "face_dimming": false,
+          "ambient_occlusion": 0
+        }
+      },
+      "minecraft:item_visual": {
+        "geometry": "geometry.zombie_abysscrossplants",
+        "material_instances": {
+          "*": { "texture": "lumenbloom_pod", "render_method": "alpha_test" }
+        }
+      },
+      "minecraft:collision_box": false,
+      "minecraft:selection_box": { "origin": [-5, 0, -5], "size": [10, 13, 10] },
+      "minecraft:destructible_by_mining": { "seconds_to_destroy": 0 },
+      "minecraft:destructible_by_explosion": { "explosion_resistance": 0 },
+      "minecraft:placement_filter": {
+        "conditions": [{
+          "allowed_faces": ["up"],
+          "block_filter": ["zombie:lumenbloom_grass", "zombie:lumenbloom_dirt"]
+        }]
+      },
+      "minecraft:replaceable": {},
+      "minecraft:light_emission": 3,
+      "minecraft:light_dampening": 0,
+      "minecraft:tags": ["plant"],
+      "minecraft:map_color": "#B888D0"
+    }
+  }
+}

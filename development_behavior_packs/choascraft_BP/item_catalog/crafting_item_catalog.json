@@ -619,6 +619,85 @@
             ]
           }
         ]
+      },
+      {
+        "category_name": "items",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "minecraft:command_block",
+              "name": "OP: Command-Only Items"
+            },
+            "items": [
+              "minecraft:command_block",
+              "minecraft:repeating_command_block",
+              "minecraft:chain_command_block",
+              "minecraft:command_block_minecart",
+              "minecraft:barrier",
+              "minecraft:border_block",
+              "minecraft:jigsaw",
+              "minecraft:structure_block",
+              "minecraft:structure_void",
+              "minecraft:allow",
+              "minecraft:deny",
+              "minecraft:light_block_0",
+              "minecraft:light_block_1",
+              "minecraft:light_block_2",
+              "minecraft:light_block_3",
+              "minecraft:light_block_4",
+              "minecraft:light_block_5",
+              "minecraft:light_block_6",
+              "minecraft:light_block_7",
+              "minecraft:light_block_8",
+              "minecraft:light_block_9",
+              "minecraft:light_block_10",
+              "minecraft:light_block_11",
+              "minecraft:light_block_12",
+              "minecraft:light_block_13",
+              "minecraft:light_block_14",
+              "minecraft:light_block_15",
+              "minecraft:lodestone_compass",
+              "minecraft:enchanted_book",
+              "minecraft:written_book",
+              "minecraft:petrified_oak_slab",
+              "minecraft:petrified_oak_double_slab",
+              "minecraft:deprecated_purpur_block_1",
+              "minecraft:deprecated_purpur_block_2",
+              "minecraft:wither_spawn_egg",
+              "minecraft:ender_dragon_spawn_egg",
+              "minecraft:npc_spawn_egg"
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "items",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "minecraft:stonecutter",
+              "name": "OP: Unobtainable Items"
+            },
+            "items": [
+              "minecraft:stonecutter",
+              "minecraft:portal",
+              "minecraft:end_gateway",
+              "minecraft:end_portal",
+              "minecraft:water",
+              "minecraft:lava",
+              "minecraft:fire",
+              "minecraft:netherreactor",
+              "minecraft:glowingobsidian",
+              "minecraft:invisible_bedrock",
+              "minecraft:client_request_placeholder_block",
+              "minecraft:unknown",
+              "minecraft:reserved6",
+              "minecraft:info_update",
+              "minecraft:info_update2",
+              "minecraft:deprecated_anvil"
+            ]
+          }
+        ]
       }
     ]
   }

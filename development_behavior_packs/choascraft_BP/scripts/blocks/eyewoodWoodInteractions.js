@@ -11,6 +11,10 @@ const DOOR_UPPER_STATE = "zombie:upper";
 const DOOR_HINGE_STATE = "zombie:hinge";
 const EYEWOOD_DOOR_ID = "zombie:eyewood_door";
 const WOOD_USE_SOUND = "use.wood";
+const VILLAGER_DOOR_SCAN_INTERVAL = 10;
+const VILLAGER_DOOR_SCAN_RADIUS = 10;
+const VILLAGER_DOOR_CLOSE_DELAY = 60;
+const AUTO_OPENED_DOORS = new Map();
 const SLAB_ITEM_IDS = new Set([
 	"zombie:eyewood_slab",
 	"zombie:infected_slab",
@@ -286,6 +290,110 @@ world.afterEvents.playerPlaceBlock.subscribe(event => {
 		} catch {}
 	});
 });
+
+// Custom blocks are not classified as vanilla doors by Bedrock's pathfinder.
+// Open tagged doors as villagers approach so their next path calculation sees
+// a passable opening. Only doors opened here are eligible for automatic close.
+system.runInterval(updateVillagerDoors, VILLAGER_DOOR_SCAN_INTERVAL);
+
+function updateVillagerDoors() {
+	const currentTick = system.currentTick;
+
+	for (const dimensionId of ["overworld", "nether", "the_end"]) {
+		let dimension;
+		let villagers;
+
+		try {
+			dimension = world.getDimension(dimensionId);
+			villagers = dimension.getEntities({ families: ["villager"] });
+		} catch {
+			continue;
+		}
+
+		for (const villager of villagers) {
+			openNearbyDoorsForVillager(dimension, villager.location, currentTick);
+		}
+	}
+
+	for (const [key, trackedDoor] of AUTO_OPENED_DOORS) {
+		if (currentTick - trackedDoor.lastSeenTick < VILLAGER_DOOR_CLOSE_DELAY) continue;
+
+		try {
+			const dimension = world.getDimension(trackedDoor.dimensionId);
+			const lowerBlock = dimension.getBlock(trackedDoor.location);
+			const upperBlock = lowerBlock?.above();
+
+			if (
+				lowerBlock?.typeId === trackedDoor.typeId &&
+				upperBlock?.typeId === trackedDoor.typeId &&
+				lowerBlock.permutation.getState(DOOR_OPEN_STATE)
+			) {
+				const lowerPower = lowerBlock.getRedstonePower?.() ?? 0;
+				const upperPower = upperBlock.getRedstonePower?.() ?? 0;
+
+				if (lowerPower <= 0 && upperPower <= 0) {
+					setDoorOpen(lowerBlock, upperBlock, false);
+					dimension.playSound("close.wooden_door", lowerBlock.center());
+				}
+			}
+		} catch {}
+
+		AUTO_OPENED_DOORS.delete(key);
+	}
+}
+
+function openNearbyDoorsForVillager(dimension, location, currentTick) {
+	const centerX = Math.floor(location.x);
+	const centerY = Math.floor(location.y);
+	const centerZ = Math.floor(location.z);
+	const seen = new Set();
+
+	for (let x = centerX - VILLAGER_DOOR_SCAN_RADIUS; x <= centerX + VILLAGER_DOOR_SCAN_RADIUS; x++) {
+		for (let z = centerZ - VILLAGER_DOOR_SCAN_RADIUS; z <= centerZ + VILLAGER_DOOR_SCAN_RADIUS; z++) {
+			for (let y = centerY - 1; y <= centerY + 2; y++) {
+				let block;
+				try {
+					block = dimension.getBlock({ x, y, z });
+				} catch {
+					continue;
+				}
+
+				if (!block?.hasTag(DOOR_TAG)) continue;
+				const lowerBlock = getLowerDoorBlock(block);
+				const upperBlock = lowerBlock?.above();
+				if (!lowerBlock || upperBlock?.typeId !== lowerBlock.typeId) continue;
+
+				const doorKey = `${dimension.id}:${lowerBlock.location.x},${lowerBlock.location.y},${lowerBlock.location.z}`;
+				if (seen.has(doorKey)) continue;
+				seen.add(doorKey);
+
+				const trackedDoor = AUTO_OPENED_DOORS.get(doorKey);
+				if (trackedDoor) {
+					trackedDoor.lastSeenTick = currentTick;
+					continue;
+				}
+
+				if (lowerBlock.permutation.getState(DOOR_OPEN_STATE)) continue;
+
+				try {
+					setDoorOpen(lowerBlock, upperBlock, true);
+					dimension.playSound("open.wooden_door", lowerBlock.center());
+					AUTO_OPENED_DOORS.set(doorKey, {
+						dimensionId: dimension.id,
+						location: { ...lowerBlock.location },
+						typeId: lowerBlock.typeId,
+						lastSeenTick: currentTick
+					});
+				} catch {}
+			}
+		}
+	}
+}
+
+function setDoorOpen(lowerBlock, upperBlock, isOpen) {
+	lowerBlock.setPermutation(lowerBlock.permutation.withState(DOOR_OPEN_STATE, isOpen));
+	upperBlock.setPermutation(upperBlock.permutation.withState(DOOR_OPEN_STATE, isOpen));
+}
 
 function tryStripWood(event) {
 	const { block, itemStack } = event;

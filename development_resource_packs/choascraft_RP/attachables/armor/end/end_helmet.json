@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "zombie:end_helmet",
+      "materials": { "default": "armor", "enchanted": "armor_enchanted" },
+      "textures": { "default": "textures/armor/end/end_helmet", "enchanted": "textures/misc/enchanted_item_glint" },
+      "geometry": { "default": "geometry.end_helmet" },
+      "render_controllers": ["controller.render.armor"],
+      "scripts": { "parent_setup": "variable.helmet_layer_visible = 0.0;" }
+    }
+  }
+}

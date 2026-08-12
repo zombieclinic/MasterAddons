@@ -10,6 +10,7 @@ import { EyeFlowerGrowthComponent, EyeFlowerTickComponent } from "./blocks/eyeFl
 import { AbyssFlowerSeedFoodComponent } from "./items/abyssFlowerSeedFood.js";
 import { AmaranthineAppleFoodComponent } from "./items/amaranthineAppleFood.js";
 import { LumenrootFruitFoodComponent } from "./items/lumenrootFruitFood.js";
+import { AmberBulbFoodComponent } from "./items/amberBulbFood.js";
 import { SporepodGrowthComponent } from "./blocks/sporepodGrowth.js";
 import { CorruptedSpireBreakComponent, CorruptedSpireGrowthComponent } from "./blocks/corruptedSpireGrowth.js";
 import { SporeFoodComponent } from "./items/sporeFood.js";
@@ -32,6 +33,8 @@ import { DemonAlterComponent } from "./blocks/demonAlter.js";
 import { DemonLordRitualComponent } from "./blocks/demonLordRitual.js";
 import { CorruptedGrassDropComponent } from "./blocks/corruptedGrassDrops.js";
 import { BloodVineGrowthComponent } from "./blocks/bloodVineGrowth.js";
+import { LumenbloomVineGrowthComponent } from "./blocks/lumenbloomVineGrowth.js";
+import { LumenbloomTallPlantComponent } from "./blocks/lumenbloomTallPlant.js";
 import { BloodRootGrowthComponent, BloodRootTickComponent } from "./blocks/bloodRootGrowth.js";
 import { MushroomSpreadComponent } from "./blocks/mushroomSpread.js";
 import { ChaosChestComponent } from "./blocks/chaosChest.js";
@@ -79,6 +82,8 @@ const BLOCK_COMPONENTS = [
   ["zombie:demon_lord_ritual", DemonLordRitualComponent],
   ["zombie:corrupted_grass_drop", CorruptedGrassDropComponent],
   ["zombie:blood_vine_growth", BloodVineGrowthComponent],
+  ["zombie:lumenbloom_vine_growth", LumenbloomVineGrowthComponent],
+  ["zombie:lumenbloom_tall_plant", LumenbloomTallPlantComponent],
   ["zombie:blood_root_growth", BloodRootGrowthComponent],
   ["zombie:blood_root_tick", BloodRootTickComponent],
   ["zombie:mushroom_spread", MushroomSpreadComponent],
@@ -93,6 +98,7 @@ const ITEM_COMPONENTS = [
   ["zombie:abyss_flower_seed_food", AbyssFlowerSeedFoodComponent],
   ["zombie:amaranthine_apple_food", AmaranthineAppleFoodComponent],
   ["zombie:lumenroot_fruit_food", LumenrootFruitFoodComponent],
+  ["zombie:amber_bulb_food", AmberBulbFoodComponent],
   ["zombie:spore_food", SporeFoodComponent],
   ["zombie:emberberry_stew_food", EmberberryStewFoodComponent],
   ["zombie:hemovial_food", HemovialFoodComponent],

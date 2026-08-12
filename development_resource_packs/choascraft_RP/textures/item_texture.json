@@ -740,6 +740,21 @@
     },
     "milk_green": {
       "textures": "textures/end/items/milk_green"
+    },
+    "zombie_amber_bulb": {
+      "textures": "textures/end/lumenbloom/amber_bolb"
+    },
+    "zombie_end_helmet": {
+      "textures": "textures/armor/end/end_helmet"
+    },
+    "zombie_end_chestplate": {
+      "textures": "textures/armor/end/end_chestplate"
+    },
+    "zombie_end_leggings": {
+      "textures": "textures/armor/end/end_leggings"
+    },
+    "zombie_end_boots": {
+      "textures": "textures/armor/end/end_boots"
     }
   }
 }

@@ -26,7 +26,7 @@
         "distribution": "fixed_grid",
         "extent": [0, 15]
       },
-      "y": "((q.noise(v.worldx / 512, v.worldz / 512) + q.noise(v.worldx, v.worldz) * 0.05) >= -0.25 && (q.noise(v.worldx / 512, v.worldz / 512) + q.noise(v.worldx, v.worldz) * 0.05) <= 0.25 && (math.abs(v.worldx) > 200 || math.abs(v.worldz) > 200)) ? (q.heightmap(v.worldx, v.worldz) - 1) : -1"
+      "y": "(q.noise(v.worldx / 768, v.worldz / 768) <= -0.58 && (math.abs(v.worldx) > 200 || math.abs(v.worldz) > 200)) ? (q.heightmap(v.worldx, v.worldz) - 1) : -1"
     }
   }
 }

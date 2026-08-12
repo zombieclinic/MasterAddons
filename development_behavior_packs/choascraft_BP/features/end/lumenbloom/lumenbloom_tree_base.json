@@ -1,0 +1,12 @@
+{
+  "format_version":"1.13.0",
+  "minecraft:tree_feature":{
+    "description":{"identifier":"zombie:lumenbloom_tree_base"},
+    "acacia_trunk":{"trunk_width":1,"trunk_height":{"base":8,"intervals":[2,2,3],"min_height_for_canopy":6},"trunk_block":{"name":"zombie:lumenbloom_log"},"trunk_lean":{"allow_diagonal_growth":true,"lean_height":{"range_min":4,"range_max":8},"lean_steps":{"range_min":1,"range_max":3},"lean_length":{"range_min":1,"range_max":2}}},
+    "random_spread_canopy":{"canopy_height":5,"canopy_radius":4,"leaf_placement_attempts":90,"leaf_blocks":[["zombie:lumenbloom_leaves",5]]},
+    "base_block":["zombie:lumenbloom_grass","zombie:lumenbloom_dirt"],
+    "may_grow_on":["zombie:lumenbloom_grass","zombie:lumenbloom_dirt"],
+    "may_replace":["minecraft:air","zombie:lumenbloom_star_plant","zombie:lumenbloom_leaves"],
+    "may_grow_through":["minecraft:air","zombie:lumenbloom_star_plant","zombie:lumenbloom_leaves"]
+  }
+}

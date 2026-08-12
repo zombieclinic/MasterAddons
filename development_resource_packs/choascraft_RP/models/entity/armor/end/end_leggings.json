@@ -1,0 +1,53 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.end_leggings",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "leftLeg",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-2.01, -8.94, -2.36], "size": [4.72, 10.98, 4.72], "uv": [0, 18], "mirror": true}
+					]
+				},
+				{
+					"name": "bone",
+					"parent": "leftLeg",
+					"pivot": [0, 6.82, -2.565],
+					"cubes": [
+						{"origin": [-1.42, -3.63562, -3.41235], "size": [3.54, 5.9, 1.18], "pivot": [0, 6.81438, -2.82235], "rotation": [2.5, 0, 0], "uv": [4, 6], "mirror": true}
+					]
+				},
+				{
+					"name": "rightLeg",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-2.68, -8.94, -2.36], "size": [4.72, 10.98, 4.72], "uv": [0, 16]}
+					]
+				},
+				{
+					"name": "bone2",
+					"parent": "rightLeg",
+					"pivot": [1.18, 6.82, -2.065],
+					"cubes": [
+						{"origin": [-2.09, -3.63562, -3.41235], "size": [3.54, 5.9, 1.18], "pivot": [1.18, 6.81438, -2.32235], "rotation": [2.5, 0, 0], "uv": [4, 5]}
+					]
+				}
+			]
+		}
+	]
+}
