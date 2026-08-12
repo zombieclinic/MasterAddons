@@ -4,7 +4,7 @@
     "description": {
       "identifier": "zombie:praying_mantis",
       "materials": {
-        "default": "entity_alphablend"
+        "default": "entity_alphatest"
       },
       "textures": {
         "default": "textures/end/end_mobs/matice/praying_mantis_end",

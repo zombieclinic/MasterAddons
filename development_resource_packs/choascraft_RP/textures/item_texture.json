@@ -745,16 +745,16 @@
       "textures": "textures/end/lumenbloom/amber_bolb"
     },
     "zombie_end_helmet": {
-      "textures": "textures/armor/end/end_helmet"
+      "textures": "textures/armor/end/end_helmet_icon"
     },
     "zombie_end_chestplate": {
-      "textures": "textures/armor/end/end_chestplate"
+      "textures": "textures/armor/end/end_chestplate_icon"
     },
     "zombie_end_leggings": {
-      "textures": "textures/armor/end/end_leggings"
+      "textures": "textures/armor/end/end_legging_icon"
     },
     "zombie_end_boots": {
-      "textures": "textures/armor/end/end_boots"
+      "textures": "textures/armor/end/end_boot_icon"
     }
   }
 }

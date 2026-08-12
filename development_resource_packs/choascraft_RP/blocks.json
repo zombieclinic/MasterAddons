@@ -163,6 +163,12 @@
   "zombie:ginger_brick_wall": {
     "sound": "stone"
   },
+  "zombie:ginger_brick_slab": {
+    "sound": "stone"
+  },
+  "zombie:ginger_brick_stairs": {
+    "sound": "stone"
+  },
   "zombie:gingerbread_slab": {
     "sound": "wood"
   },

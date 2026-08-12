@@ -5,12 +5,13 @@
 			"initial_state": "default",
 			"states": {
 				"default": {
+					"blend_transition": 0.2,
 					"transitions": [
 						{
 							"attack": "variable.attack_time > 0.0"
 						},
 						{
-							"walking": "query.ground_speed"
+							"walking": "query.ground_speed > 0.02"
 						}
 					],
 					"animations": [
@@ -20,6 +21,7 @@
 					]
 				},
 				"walking": {
+					"blend_transition": 0.2,
 					"animations": [
 						{
 							"walk": "(1.0)"
@@ -27,7 +29,7 @@
 					],
 					"transitions": [
 						{
-							"default": "!query.ground_speed"
+							"default": "query.ground_speed <= 0.02"
 						},
 						{
 							"attack": "variable.attack_time > 0.0"
@@ -35,6 +37,7 @@
 					]
 				},
 				"attack": {
+					"blend_transition": 0.12,
 					"animations": [
 						{
 							"attack": "query.has_target&&variable.attack_time>=0"
@@ -45,7 +48,7 @@
 							"default": "query.any_animation_finished"
 						},
 						{
-							"walking": "query.ground_speed"
+							"walking": "query.ground_speed > 0.02"
 						}
 					]
 				}

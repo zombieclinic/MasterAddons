@@ -19,17 +19,14 @@
 			},
 			"minecraft:food": {
 				"can_always_eat": false,
-				"nutrition": 6,
-				"saturation_modifier": 10
+				"nutrition": 3,
+				"saturation_modifier": 0.6
 			},
 			"minecraft:use_animation": "eat",
 			"minecraft:use_modifiers": {
 				"movement_modifier": 1,
 				"use_duration": 1
-			},
-			"minecraft:custom_components": [
-				"zombie:cookie"
-			]
+			}
 		}
 	}
 }

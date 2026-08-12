@@ -459,6 +459,8 @@
               "zombie:gingerbread",
               "zombie:ginger_brick",
               "zombie:ginger_brick_wall",
+              "zombie:ginger_brick_stairs",
+              "zombie:ginger_brick_slab",
               "zombie:gingerbread_stairs",
               "zombie:gingerbread_slab",
               "zombie:gingerbread_button",

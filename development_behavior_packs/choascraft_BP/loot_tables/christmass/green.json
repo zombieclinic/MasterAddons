@@ -486,6 +486,300 @@
 							}
 						}
 					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:candycane_blue",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 4,
+								"max": 12
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:candycane_purple",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 4,
+								"max": 12
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:candycane_red",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 4,
+								"max": 12
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:christmas_wreath",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 4,
+								"max": 12
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:ginger_brick",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 4,
+								"max": 12
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:ginger_brick_wall",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 4,
+								"max": 12
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:ginger_brick_slab",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 4,
+								"max": 12
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:ginger_brick_stairs",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 4,
+								"max": 12
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:gingerbread_button",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 4,
+								"max": 12
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:gingerbread_door",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 4,
+								"max": 12
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:gingerbread_fence",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 4,
+								"max": 12
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:gingerbread_fence_gate",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 4,
+								"max": 12
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:gingerbread_pressure_plate",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 4,
+								"max": 12
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:gingerbread_slab",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 4,
+								"max": 12
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:gingerbread_stairs",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 4,
+								"max": 12
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:gingerbread_trapdoor",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 4,
+								"max": 12
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:gingerbread_wall",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 4,
+								"max": 12
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:santa_carpet",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 4,
+								"max": 12
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:snowflakes_carpet",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 4,
+								"max": 12
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:zombie_santa_carpet",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 4,
+								"max": 12
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:zombiecraft_carpet",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 4,
+								"max": 12
+							}
+						}
+					]
 				}
 			]
 		}

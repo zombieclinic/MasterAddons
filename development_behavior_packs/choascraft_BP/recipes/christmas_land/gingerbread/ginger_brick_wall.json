@@ -5,6 +5,6 @@
     "tags": ["stonecutter"],
     "ingredients": [{ "item": "zombie:ginger_brick" }],
     "result": [{ "item": "zombie:ginger_brick_wall", "count": 1 }],
-    "unlock": [{ "item": "zombie:ginger_brick" }]
+    "unlock": [{ "item": "zombie:gingerbread" }]
   }
 }

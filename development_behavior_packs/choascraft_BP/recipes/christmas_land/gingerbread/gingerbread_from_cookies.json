@@ -1,0 +1,11 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "zombie:gingerbread_from_cookies" },
+    "tags": ["crafting_table"],
+    "pattern": ["###", "###", "###"],
+    "key": { "#": { "item": "zombie:gingerbread_cookie" } },
+    "result": [{ "item": "zombie:gingerbread", "count": 1 }],
+    "unlock": [{ "item": "zombie:gingerbread" }]
+  }
+}
