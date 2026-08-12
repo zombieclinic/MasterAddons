@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:lumenbloom_fence"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "#S#",
+      "#S#"
+    ],
+    "key": {
+      "#": {
+        "item": "zombie:lumenbloom_planks"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "zombie:lumenbloom_fence",
+      "count": 3
+    },
+    "unlock": [
+      {
+        "item": "zombie:lumenbloom_planks"
+      }
+    ]
+  }
+}

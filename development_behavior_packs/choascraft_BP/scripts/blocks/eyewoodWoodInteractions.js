@@ -40,6 +40,7 @@ const STRIPPABLE_BLOCKS = {
 	"zombie:demon_fire_log": "zombie:demon_fire_log_stripped",
 	"zombie:amaranthine_log": "zombie:stripped_amaranthine_log",
 	"zombie:lumenroot_log": "zombie:stripped_lumenroot_log",
+	"zombie:lumenbloom_log": "zombie:stripped_lumenbloom_log",
 	"zombie:blood_wood": "zombie:stripped_blood_wood",
 	"zombie:flesh_wood": "zombie:stripped_flesh_wood",
 	"zombie:tumor_wood": "zombie:stripped_tumor_wood",
@@ -49,7 +50,8 @@ const STRIPPABLE_BLOCKS = {
 	"zombie:infected_tree_wood": "zombie:stripped_infected_tree_wood",
 	"zombie:redwood_wood": "zombie:stripped_redwood_wood",
 	"zombie:amaranthine_wood": "zombie:stripped_amaranthine_wood",
-	"zombie:lumenroot_wood": "zombie:stripped_lumenroot_wood"
+	"zombie:lumenroot_wood": "zombie:stripped_lumenroot_wood",
+	"zombie:lumenbloom_wood": "zombie:stripped_lumenbloom_wood"
 };
 
 const FACE_NEIGHBORS = {
