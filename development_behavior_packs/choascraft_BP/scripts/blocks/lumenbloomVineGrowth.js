@@ -7,7 +7,6 @@ const MAX_LENGTH = 64;
 const pendingBreaks = new Set();
 
 export class LumenbloomVineGrowthComponent {
-  onPlace(event) { grow(event.block); }
   onTick(event) { grow(event.block); }
   onPlayerBreak(event) { breakBelow(event.block, event.brokenBlockPermutation); }
   onBreak(event) { breakBelow(event.block, event.brokenBlockPermutation); }

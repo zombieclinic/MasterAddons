@@ -26,7 +26,10 @@ const SLAB_ITEM_IDS = new Set([
 	"zombie:demon_stone_slab",
 	"zombie:demon_steel_slab",
 	"zombie:amaranthine_slab",
-	"zombie:lumenroot_slab"
+	"zombie:lumenroot_slab",
+	"zombie:gingerbread_slab",
+	"zombie:gingerbread_icing_slab",
+	"zombie:ginger_brick_slab"
 ]);
 
 const STRIPPABLE_BLOCKS = {

@@ -2,7 +2,7 @@
   "format_version": "1.26.20",
   "minecraft:block": {
     "description": {
-      "identifier": "zombie:gingerbread_slab",
+      "identifier": "zombie:gingerbread_icing_slab",
       "traits": {
         "minecraft:placement_position": {
           "enabled_states": [
@@ -87,6 +87,20 @@
         "condition": "query.block_state(\u0027zombie:double\u0027)",
         "components": {
           "minecraft:geometry": "minecraft:geometry.full_block",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "gingerbreadnormal",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "gingerbreadicingtop",
+              "render_method": "opaque"
+            },
+            "down": {
+              "texture": "gingerbreadplan",
+              "render_method": "opaque"
+            }
+          },
           "minecraft:light_dampening": 15,
           "minecraft:collision_box": {
             "origin": [
@@ -115,12 +129,12 @@
           "minecraft:redstone_conductivity": {
             "redstone_conductor": true
           },
-          "minecraft:loot": "loot_tables/blocks/double_gingerbread_slab.json"
+          "minecraft:loot": "loot_tables/blocks/double_gingerbread_icing_slab.json"
         }
       }
     ],
     "components": {
-      "minecraft:display_name": "Plain Gingerbread Slab",
+      "minecraft:display_name": "Iced Gingerbread Slab",
       "minecraft:geometry": {
         "identifier": "geometry.zombie.gingerbread_slab",
         "bone_visibility": {
@@ -150,11 +164,11 @@
         },
         "material_instances": {
           "*": {
-            "texture": "gingerbreadplan",
+            "texture": "gingerbreadnormal",
             "render_method": "opaque"
           },
           "top": {
-            "texture": "gingerbreadplan",
+            "texture": "gingerbreadicingtop",
             "render_method": "opaque"
           },
           "bottom": {
@@ -165,11 +179,11 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "gingerbreadplan",
+          "texture": "gingerbreadnormal",
           "render_method": "opaque"
         },
         "top": {
-          "texture": "gingerbreadplan",
+          "texture": "gingerbreadicingtop",
           "render_method": "opaque"
         },
         "bottom": {

@@ -94,7 +94,8 @@
                   "uv_size": [
                     -16,
                     -16
-                  ]
+                  ],
+                  "material_instance": "bottom"
                 }
               }
             }
@@ -179,7 +180,8 @@
                   "uv_size": [
                     -16,
                     -16
-                  ]
+                  ],
+                  "material_instance": "bottom"
                 }
               }
             }
@@ -189,4 +191,3 @@
     }
   ]
 }
-

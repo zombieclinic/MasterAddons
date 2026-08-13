@@ -1,0 +1,45 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:processor_list": {
+    "description": {
+      "identifier": "zombie:trader_hut_loot"
+    },
+    "processors": [
+      {
+        "processor_type": "minecraft:block_ignore",
+        "blocks": [
+          "minecraft:air"
+        ]
+      },
+      {
+        "processor_type": "minecraft:rule",
+        "rules": [
+          {
+            "input_predicate": {
+              "predicate_type": "minecraft:random_block_match",
+              "block": "minecraft:chest",
+              "probability": 0.3
+            },
+            "output_state": "minecraft:chest",
+            "block_entity_modifier": {
+              "type": "minecraft:append_loot",
+              "loot_table": "loot_tables/chests/trader_hut.json"
+            }
+          },
+          {
+            "input_predicate": {
+              "predicate_type": "minecraft:random_block_match",
+              "block": "minecraft:barrel",
+              "probability": 0.3
+            },
+            "output_state": "minecraft:barrel",
+            "block_entity_modifier": {
+              "type": "minecraft:append_loot",
+              "loot_table": "loot_tables/chests/trader_hut.json"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -172,6 +172,9 @@
   "zombie:gingerbread_slab": {
     "sound": "wood"
   },
+  "zombie:gingerbread_icing_slab": {
+    "sound": "wood"
+  },
   "zombie:gingerbread_button": {
     "sound": "wood"
   },
