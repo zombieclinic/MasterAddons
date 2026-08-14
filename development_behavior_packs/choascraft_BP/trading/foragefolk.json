@@ -1,0 +1,1047 @@
+{
+	"tiers": [
+		{
+			"total_exp_required": 0,
+			"groups": [
+				{
+					"num_to_select": 2,
+					"trades": [
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 8
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:abyss_flower_seed",
+									"quantity": {
+										"min": 2,
+										"max": 4
+									}
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 12
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:bear_rotten_meat",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 8
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:bluecandycane_seeds",
+									"quantity": {
+										"min": 2,
+										"max": 4
+									}
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 12
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:emberberry_stew",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 12
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:halloween_candycorn",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 12
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:infected_eye",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 12
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:milk_purple",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 12
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:peeper_fillet",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 12
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:peeper_steak_cooked",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 12
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:redcandycane_item",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 12
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:shark_fin_cooked",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 12
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:stocking_cookie",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"total_exp_required": 10,
+			"groups": [
+				{
+					"num_to_select": 2,
+					"trades": [
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 9
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:amaranthine_apple",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 9
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:blood_meat",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 9
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:candycane_dust",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 9
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:emberberrys",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 9
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:halloween_green_apple",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 9
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:jellyfish_jelly_jelly",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 9
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:milk_red",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 9
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:peeper_fillet_cooked",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 9
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:pengiun_meat",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 6
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:redcandycane_seeds",
+									"quantity": {
+										"min": 2,
+										"max": 4
+									}
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 9
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:shark_meat",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 9
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:tree_cookie",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"total_exp_required": 70,
+			"groups": [
+				{
+					"num_to_select": 1,
+					"trades": [
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 7
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:amber_bulb",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 7
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:blood_meat_cooked",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 7
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:crab_claw",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:eye_flower_seed",
+									"quantity": {
+										"min": 2,
+										"max": 4
+									}
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 7
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:halloween_popsicle",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 7
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:lumenroot_fruit",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 7
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:orca_meat",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 7
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:peeper_meat",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 7
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:pengiun_meat_cooked",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 7
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:ribbon_cookie",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 7
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:shark_meat_cooked",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"total_exp_required": 150,
+			"groups": [
+				{
+					"num_to_select": 1,
+					"trades": [
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 5
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:bear_cooked_meat",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 3
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:blood_root_seed",
+									"quantity": {
+										"min": 2,
+										"max": 4
+									}
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 5
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:crab_eyes",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 5
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:gingerbread_cookie",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 3
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:hell_grass_seeds",
+									"quantity": {
+										"min": 2,
+										"max": 4
+									}
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 5
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:milk_blue",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 5
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:orca_meat_cooked",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 5
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:peeper_meat_cooked",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 5
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:purplecandycane_item",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 5
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:santa_cookie",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 3
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:spore",
+									"quantity": {
+										"min": 2,
+										"max": 4
+									}
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"total_exp_required": 250,
+			"groups": [
+				{
+					"num_to_select": 1,
+					"trades": [
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 3
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:bear_raw_meat",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 3
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:bluecandycane_item",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 3
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:crab_leg",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 3
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:halloween_candy",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 3
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:hemovial",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 3
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:milk_green",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 3
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:ortimate_cookie",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 3
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:peeper_steak",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 2
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:purplecandycane_seeds",
+									"quantity": {
+										"min": 2,
+										"max": 4
+									}
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 3
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:shark_eye",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 3
+								}
+							],
+							"gives": [
+								{
+									"item": "zombie:steamed_crab_leg",
+									"quantity": 1
+								}
+							],
+							"max_uses": 12,
+							"reward_exp": true,
+							"trader_exp": 1
+						}
+					]
+				}
+			]
+		}
+	]
+}

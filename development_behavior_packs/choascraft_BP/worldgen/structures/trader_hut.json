@@ -21,6 +21,11 @@
             "test": "has_biome_tag",
             "operator": "==",
             "value": "meadow"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "forest"
           }
         ]
       }
@@ -29,11 +34,11 @@
     "terrain_adaptation": "beard_box",
     "start_pool": "zombie:trader_hut_start",
     "start_jigsaw_name": "zombie:traderhut",
-    "max_depth": 1,
+    "max_depth": 2,
     "start_height": {
       "type": "constant",
       "value": {
-        "absolute": -2
+        "absolute": -1
       }
     },
     "heightmap_projection": "ocean_floor",

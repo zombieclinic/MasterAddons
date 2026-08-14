@@ -2,7 +2,7 @@
   "format_version": "1.21.100",
   "minecraft:processor_list": {
     "description": {
-      "identifier": "zombie:trader_hut_loot"
+      "identifier": "zombie:trader_hut_underground"
     },
     "processors": [
       {

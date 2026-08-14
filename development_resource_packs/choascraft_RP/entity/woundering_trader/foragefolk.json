@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "zombie:foragefolk",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/woundering_traders/foragefolks"
+			},
+			"geometry": {
+				"default": "geometry.foragefolk"
+			},
+			"animations": {
+				"walking": "animation.villager.move",
+				"lookatplayer": "animation.common.look_at_target"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"walking": "query.modified_move_speed>=0.01"
+					},
+					"lookatplayer"
+				]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#0A3612",
+				"overlay_color": "#CFA011"
+			}
+		}
+	}
+}

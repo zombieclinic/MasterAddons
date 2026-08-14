@@ -1295,28 +1295,128 @@
     "zombie_spider_cover_web": {
       "textures": "textures/halloween/blocks/spider_cover_web"
     },
-    "lumenbloom_dirt": { "textures": "textures/end/lumenbloom/dirt" },
-    "lumenbloom_grass_side": { "textures": "textures/end/lumenbloom/grass_side" },
-    "lumenbloom_grass_top": { "textures": "textures/end/lumenbloom/grass_top" },
-    "lumenbloom_log": { "textures": "textures/end/lumenbloom/lumenbloom_grove_log" },
-    "lumenbloom_log_top": { "textures": "textures/end/lumenbloom/log_top" },
-    "stripped_lumenbloom_log": { "textures": "textures/end/lumenbloom/stripped" },
-    "stripped_lumenbloom_log_top": { "textures": "textures/end/lumenbloom/stripped_top" },
-    "lumenbloom_leaves": { "textures": "textures/end/lumenbloom/leaves" },
-    "lumenbloom_sapling": { "textures": "textures/end/lumenbloom/saplin" },
-    "lumenbloom_planks": { "textures": "textures/end/lumenbloom/planks" },
-    "lumenbloom_trapdoor": { "textures": "textures/end/lumenbloom/trapdoor" },
-    "lumenbloom_door_bottom": { "textures": "textures/end/lumenbloom/door_bottom" },
-    "lumenbloom_door_top": { "textures": "textures/end/lumenbloom/door_top" },
-    "lumenbloom_amber_pod": { "textures": "textures/end/lumenbloom/pod" },
-    "lumenbloom_pod": { "textures": "textures/end/lumenbloom/pod" },
-    "lumenbloom_amber_pod_top": { "textures": "textures/end/lumenbloom/amber_pod_top" },
-    "lumenbloom_amber_pod_bottom": { "textures": "textures/end/lumenbloom/amber_pod_bottom" },
-    "lumenbloom_flower_top": { "textures": "textures/end/lumenbloom/flower_top" },
-    "lumenbloom_flower_bottom": { "textures": "textures/end/lumenbloom/bottom_flower" },
-    "lumenbloom_star_plant": { "textures": "textures/end/lumenbloom/star_plant" },
-    "lumenbloom_vine_top": { "textures": "textures/end/lumenbloom/vine_top" },
-    "lumenbloom_vine_middle": { "textures": "textures/end/lumenbloom/vine_middle" },
-    "lumenbloom_vine_bottom": { "textures": "textures/end/lumenbloom/vine_bottom" }
+    "lumenbloom_dirt": {
+      "textures": "textures/end/lumenbloom/dirt"
+    },
+    "lumenbloom_grass_side": {
+      "textures": "textures/end/lumenbloom/grass_side"
+    },
+    "lumenbloom_grass_top": {
+      "textures": "textures/end/lumenbloom/grass_top"
+    },
+    "lumenbloom_log": {
+      "textures": "textures/end/lumenbloom/lumenbloom_grove_log"
+    },
+    "lumenbloom_log_top": {
+      "textures": "textures/end/lumenbloom/log_top"
+    },
+    "stripped_lumenbloom_log": {
+      "textures": "textures/end/lumenbloom/stripped"
+    },
+    "stripped_lumenbloom_log_top": {
+      "textures": "textures/end/lumenbloom/stripped_top"
+    },
+    "lumenbloom_leaves": {
+      "textures": "textures/end/lumenbloom/leaves"
+    },
+    "lumenbloom_sapling": {
+      "textures": "textures/end/lumenbloom/saplin"
+    },
+    "lumenbloom_planks": {
+      "textures": "textures/end/lumenbloom/planks"
+    },
+    "lumenbloom_trapdoor": {
+      "textures": "textures/end/lumenbloom/trapdoor"
+    },
+    "lumenbloom_door_bottom": {
+      "textures": "textures/end/lumenbloom/door_bottom"
+    },
+    "lumenbloom_door_top": {
+      "textures": "textures/end/lumenbloom/door_top"
+    },
+    "lumenbloom_amber_pod": {
+      "textures": "textures/end/lumenbloom/pod"
+    },
+    "lumenbloom_pod": {
+      "textures": "textures/end/lumenbloom/pod"
+    },
+    "lumenbloom_amber_pod_top": {
+      "textures": "textures/end/lumenbloom/amber_pod_top"
+    },
+    "lumenbloom_amber_pod_bottom": {
+      "textures": "textures/end/lumenbloom/amber_pod_bottom"
+    },
+    "lumenbloom_flower_top": {
+      "textures": "textures/end/lumenbloom/flower_top"
+    },
+    "lumenbloom_flower_bottom": {
+      "textures": "textures/end/lumenbloom/bottom_flower"
+    },
+    "lumenbloom_star_plant": {
+      "textures": "textures/end/lumenbloom/star_plant"
+    },
+    "lumenbloom_vine_top": {
+      "textures": "textures/end/lumenbloom/vine_top"
+    },
+    "lumenbloom_vine_middle": {
+      "textures": "textures/end/lumenbloom/vine_middle"
+    },
+    "lumenbloom_vine_bottom": {
+      "textures": "textures/end/lumenbloom/vine_bottom"
+    },
+    "zombie_cracked_glass": {
+      "textures": "textures/blocks/glass/glass"
+    },
+    "zombie_cracked_black_stained_glass": {
+      "textures": "textures/blocks/glass/glass_black"
+    },
+    "zombie_cracked_blue_stained_glass": {
+      "textures": "textures/blocks/glass/glass_blue"
+    },
+    "zombie_cracked_brown_stained_glass": {
+      "textures": "textures/blocks/glass/glass_brown"
+    },
+    "zombie_cracked_cyan_stained_glass": {
+      "textures": "textures/blocks/glass/glass_cyan"
+    },
+    "zombie_cracked_gray_stained_glass": {
+      "textures": "textures/blocks/glass/glass_gray"
+    },
+    "zombie_cracked_green_stained_glass": {
+      "textures": "textures/blocks/glass/glass_green"
+    },
+    "zombie_cracked_light_blue_stained_glass": {
+      "textures": "textures/blocks/glass/glass_light_blue"
+    },
+    "zombie_cracked_lime_stained_glass": {
+      "textures": "textures/blocks/glass/glass_lime"
+    },
+    "zombie_cracked_magenta_stained_glass": {
+      "textures": "textures/blocks/glass/glass_magenta"
+    },
+    "zombie_cracked_orange_stained_glass": {
+      "textures": "textures/blocks/glass/glass_orange"
+    },
+    "zombie_cracked_pink_stained_glass": {
+      "textures": "textures/blocks/glass/glass_pink"
+    },
+    "zombie_cracked_purple_stained_glass": {
+      "textures": "textures/blocks/glass/glass_purple"
+    },
+    "zombie_cracked_red_stained_glass": {
+      "textures": "textures/blocks/glass/glass_red"
+    },
+    "zombie_cracked_light_gray_stained_glass": {
+      "textures": "textures/blocks/glass/glass_silver"
+    },
+    "zombie_cracked_white_stained_glass": {
+      "textures": "textures/blocks/glass/glass_white"
+    },
+    "zombie_cracked_yellow_stained_glass": {
+      "textures": "textures/blocks/glass/glass_yellow"
+    },
+    "zombie_cracked_tinted_glass": {
+      "textures": "textures/blocks/glass/tinted_glass"
+    }
   }
 }
