@@ -135,7 +135,7 @@
       },
       "minecraft:conditional_bandwidth_optimization": {},
       "minecraft:loot": {
-        "table": "loot_tables/mobs/golem_heart.json"
+        "table": "loot_tables/mobs/end_golem.json"
       }
     },
     "events": {}

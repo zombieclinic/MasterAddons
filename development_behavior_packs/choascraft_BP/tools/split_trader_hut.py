@@ -209,6 +209,35 @@ def preserve_exterior_padding(root):
                     primary[index] = -1
 
 
+def add_item_to_container(root, x, y, z, identifier, slot=0, count=1):
+    """Place an item in a container at a local structure position."""
+    data = root[2]
+    size_x, size_y, size_z = val(data, "size")[1]
+    if not (0 <= x < size_x and 0 <= y < size_y and 0 <= z < size_z):
+        raise RuntimeError(f"Container position {(x, y, z)} is outside {(size_x, size_y, size_z)}")
+
+    structure = val(data, "structure")
+    palette = val(val(structure, "palette"), "default")
+    positions = val(palette, "block_position_data")
+    index = str(block_index(x, y, z, size_y, size_z))
+    if index not in positions:
+        raise RuntimeError(f"No block entity exists at container position {(x, y, z)}")
+
+    entry = positions[index][1]
+    block_entity = val(entry, "block_entity_data")
+    if val(block_entity, "id") not in ("Barrel", "Chest"):
+        raise RuntimeError(f"Block entity at {(x, y, z)} is not a container")
+
+    item = {
+        "Count": (BYTE, count),
+        "Damage": (SHORT, 0),
+        "Name": (STRING, identifier),
+        "Slot": (BYTE, slot),
+        "WasPickedUp": (BYTE, 0),
+    }
+    block_entity["Items"] = (LIST, (COMPOUND, [item]))
+
+
 def add_entity(root, identifier, x, y, z, yaw=0.0):
     """Add a persistent entity at a local position in the structure."""
     data = root[2]
@@ -238,6 +267,10 @@ def add_entity(root, identifier, x, y, z, yaw=0.0):
 pack = Path(__file__).resolve().parents[1]
 source = pack / "structures/traders_buildings/traderhut.mcstructure"
 parsed = NBT(source.read_bytes()).root()
+
+# The barrel beneath the cake, beside the red beds and painting displays.
+add_item_to_container(parsed, 24, 2, 39, "zombie:paint_brush")
+
 upper = slice_structure(parsed, 5, 15)
 lower = slice_structure(parsed, 0, 5)
 
@@ -249,11 +282,15 @@ configure_jigsaw(lower, 21, 4, 1, 1, "zombie:trader_hut_lower", "minecraft:empty
 preserve_exterior_padding(upper)
 preserve_exterior_padding(lower)
 
-# Three resident merchants are spaced through the hut's main room. These are
-# stored in the upper template so both surface and forest variants receive them.
-add_entity(upper, "zombie:foragefolk", 21.5, 1.0, 30.5, 180.0)
-add_entity(upper, "zombie:foragefolk", 22.5, 1.0, 30.5, 180.0)
-add_entity(upper, "zombie:foragefolk", 23.5, 1.0, 30.5, 180.0)
+# Six residents are spaced in two rows through the hut's main room: four
+# vanilla villagers and two Foragefolk. These are stored in the upper template
+# so every generated hut receives the old/new population mix.
+add_entity(upper, "minecraft:villager_v2", 20.5, 1.0, 29.5, 180.0)
+add_entity(upper, "zombie:foragefolk", 22.5, 1.0, 29.5, 180.0)
+add_entity(upper, "minecraft:villager_v2", 24.5, 1.0, 29.5, 180.0)
+add_entity(upper, "minecraft:villager_v2", 20.5, 1.0, 31.5, 180.0)
+add_entity(upper, "zombie:foragefolk", 22.5, 1.0, 31.5, 180.0)
+add_entity(upper, "minecraft:villager_v2", 24.5, 1.0, 31.5, 180.0)
 
 write_root(pack / "structures/traders_buildings/traderhut_upper.mcstructure", upper)
 write_root(pack / "structures/traders_buildings/traderhut_lower.mcstructure", lower)

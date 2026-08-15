@@ -1,0 +1,1 @@
+{"format_version":"1.26.20","minecraft:item":{"description":{"identifier":"zombie:end_nugget","menu_category":{"category":"items"}},"components":{"minecraft:display_name":{"value":"item.zombie:end_nugget.name"},"minecraft:icon":"end_nugget","minecraft:max_stack_size":64}}}

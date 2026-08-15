@@ -7,7 +7,7 @@
         "zombie:growth_stage": {
           "values": {
             "min": 0,
-            "max": 2
+            "max": 4
           }
         },
         "zombie:sporepod_part": [
@@ -21,6 +21,36 @@
       }
     },
     "permutations": [
+      {
+        "condition": "query.block_state('zombie:sporepod_part') == 'bottom' && query.block_state('zombie:growth_stage') < 4",
+        "components": {
+          "minecraft:tick": {
+            "looping": true,
+            "interval_range": [600, 1200]
+          },
+          "zombie:sporepod_growth": {}
+        }
+      },
+      {
+        "condition": "query.block_state('zombie:sporepod_part') == 'bottom' && query.block_state('zombie:growth_stage') == 0",
+        "components": { "minecraft:geometry": "geometry.zombie_sporepod_growth_0" }
+      },
+      {
+        "condition": "query.block_state('zombie:sporepod_part') == 'bottom' && query.block_state('zombie:growth_stage') == 1",
+        "components": { "minecraft:geometry": "geometry.zombie_sporepod_growth_1" }
+      },
+      {
+        "condition": "query.block_state('zombie:sporepod_part') == 'bottom' && query.block_state('zombie:growth_stage') == 2",
+        "components": { "minecraft:geometry": "geometry.zombie_sporepod_growth_2" }
+      },
+      {
+        "condition": "query.block_state('zombie:sporepod_part') == 'bottom' && query.block_state('zombie:growth_stage') == 3",
+        "components": { "minecraft:geometry": "geometry.zombie_sporepod_growth_3" }
+      },
+      {
+        "condition": "query.block_state('zombie:sporepod_part') == 'bottom' && query.block_state('zombie:growth_stage') == 4",
+        "components": { "minecraft:geometry": "geometry.zombie_sporepod_growth_4" }
+      },
       {
         "condition": "query.block_state('zombie:sporepod_part') == 'bottom'",
         "components": {
@@ -141,18 +171,8 @@
         "plant",
         "minecraft:crop"
       ],
-      "minecraft:tick": {
-        "looping": true,
-        "interval_range": [
-          600,
-          1200
-        ]
-      },
-      "zombie:sporepod_growth": {
-        
-      },
+      "zombie:sporepod_lifecycle": {},
       "minecraft:map_color": "#25132C"
     }
   }
 }
-

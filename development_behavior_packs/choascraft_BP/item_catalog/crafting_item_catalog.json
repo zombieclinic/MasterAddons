@@ -369,6 +369,7 @@
             },
             "items": [
               "zombie:black_grass",
+              "zombie:active_infected_teeth",
               "zombie:corrupted_spire",
               "zombie:eye_flower",
               "zombie:infected_block",
@@ -383,6 +384,8 @@
               "zombie:infected_grass_block",
               "zombie:infected_gravel",
               "zombie:infected_leaves",
+              "zombie:infected_sapling",
+              "zombie:infected_slime",
               "zombie:infected_mushroom",
               "zombie:infected_planks",
               "zombie:infected_pressure_plate",

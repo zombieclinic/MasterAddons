@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"zombie:end_helmet_from_enderlume"},"tags":["crafting_table"],"pattern":["III","I I"],"key":{"I":{"item":"zombie:end_ingot"}},"result":{"item":"zombie:end_helmet","count":1},"unlock":[{"item":"zombie:end_ingot"}]}}

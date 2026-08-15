@@ -11,7 +11,7 @@ import { AbyssFlowerSeedFoodComponent } from "./items/abyssFlowerSeedFood.js";
 import { AmaranthineAppleFoodComponent } from "./items/amaranthineAppleFood.js";
 import { LumenrootFruitFoodComponent } from "./items/lumenrootFruitFood.js";
 import { AmberBulbFoodComponent } from "./items/amberBulbFood.js";
-import { SporepodGrowthComponent } from "./blocks/sporepodGrowth.js";
+import { SporepodGrowthComponent, SporepodLifecycleComponent } from "./blocks/sporepodGrowth.js";
 import { CorruptedSpireBreakComponent, CorruptedSpireGrowthComponent } from "./blocks/corruptedSpireGrowth.js";
 import { SporeFoodComponent } from "./items/sporeFood.js";
 import { EmberberryStewFoodComponent } from "./items/emberberryStewFood.js";
@@ -27,6 +27,7 @@ import {
 } from "./blocks/eyewoodWoodInteractions.js";
 import { ZcButtonComponent, ZcButtonReleaseTickComponent } from "./blocks/buttonInteractions.js";
 import { ZcPressurePlateComponent, ZcPressurePlateReleaseTickComponent } from "./blocks/pressurePlate.js";
+import { ActiveInfectedTeethComponent } from "./blocks/activeInfectedTeeth.js";
 import { ConnectedStairsComponent } from "./blocks/connectedStairs.js";
 import { HellfireTrapstoneComponent } from "./blocks/hellfireTrapstone.js";
 import { DemonAlterComponent } from "./blocks/demonAlter.js";
@@ -67,6 +68,7 @@ const BLOCK_COMPONENTS = [
   ["zombie:eye_flower_growth", EyeFlowerGrowthComponent],
   ["zombie:eye_flower_tick", EyeFlowerTickComponent],
   ["zombie:sporepod_growth", SporepodGrowthComponent],
+  ["zombie:sporepod_lifecycle", SporepodLifecycleComponent],
   ["zombie:corrupted_spire_growth", CorruptedSpireGrowthComponent],
   ["zombie:corrupted_spire_break", CorruptedSpireBreakComponent],
   ["zombie:slab_pre_place", EyewoodSlabPrePlaceComponent],
@@ -77,6 +79,7 @@ const BLOCK_COMPONENTS = [
   ["zombie:button_release_tick", ZcButtonReleaseTickComponent],
   ["zc:pressureplate", ZcPressurePlateComponent],
   ["zc:pressureplate_release_tick", ZcPressurePlateReleaseTickComponent],
+  ["zombie:active_infected_teeth", ActiveInfectedTeethComponent],
   ["zombie:hellfire_trapstone", HellfireTrapstoneComponent],
   ["zombie:demon_alter", DemonAlterComponent],
   ["zombie:demon_lord_ritual", DemonLordRitualComponent],

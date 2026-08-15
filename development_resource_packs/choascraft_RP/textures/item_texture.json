@@ -753,6 +753,9 @@
     "zombie_end_leggings": {
       "textures": "textures/armor/end/end_legging_icon"
     },
+    "raw_end_ore": { "textures": "textures/end/ores/raw_end_ore" },
+    "end_nugget": { "textures": "textures/end/ores/end_nugget" },
+    "end_ingot": { "textures": "textures/end/ores/end_ingot" },
     "zombie_end_boots": {
       "textures": "textures/armor/end/end_boot_icon"
     }

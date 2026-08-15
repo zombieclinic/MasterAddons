@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:aggregate_feature": {
+    "description": {
+      "identifier": "zombie:active_infected_teeth_slime_pair_feature"
+    },
+    "features": [
+      "zombie:active_infected_teeth_buried_feature",
+      "zombie:infected_slime_feature"
+    ],
+    "early_out": "none"
+  }
+}

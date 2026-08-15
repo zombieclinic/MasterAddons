@@ -2,7 +2,7 @@
   "format_version": "1.13.0",
   "minecraft:single_block_feature": {
     "description": {
-      "identifier": "zombie:infected_flower_feature"
+      "identifier": "zombie:infected_flower_bottom_feature"
     },
     "places_block": {
       "name": "zombie:infected_flower",
@@ -37,4 +37,3 @@
     }
   }
 }
-

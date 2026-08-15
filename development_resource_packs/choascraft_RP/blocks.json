@@ -109,6 +109,9 @@
   "zombie:infected_teeth": {
     "sound": "bone_block"
   },
+  "zombie:active_infected_teeth": {
+    "sound": "bone_block"
+  },
   "zombie:pengiun_egg_block": {
     "sound": "turtle_egg"
   },
@@ -1029,6 +1032,10 @@
   "zombie:skull_shelf": {
     "sound": "stone"
   },
+  "zombie:amaranthine_end_ore": { "sound": "stone" },
+  "zombie:lumenbloom_end_ore": { "sound": "stone" },
+  "zombie:lumenroot_end_ore": { "sound": "stone" },
+  "zombie:end_ore_block": { "sound": "metal" },
   "zombie:spider_cover_web": {
     "sound": "cloth"
   }

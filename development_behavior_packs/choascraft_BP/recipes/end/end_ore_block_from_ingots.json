@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"zombie:end_ore_block_from_ingots"},"tags":["crafting_table"],"pattern":["###","###","###"],"key":{"#":{"item":"zombie:end_ingot"}},"result":{"item":"zombie:end_ore_block","count":1},"unlock":[{"item":"zombie:end_ingot"}]}}

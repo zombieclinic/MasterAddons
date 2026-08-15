@@ -16,6 +16,7 @@
       "minecraft:tags": { "tags": ["minecraft:transformable_items", "minecraft:is_armor"] },
       "minecraft:repairable": {
         "repair_items": [
+          { "items": ["zombie:end_ingot"], "repair_amount": 625 },
           { "items": ["minecraft:ender_pearl"], "repair_amount": 250 },
           { "items": ["minecraft:netherite_ingot"], "repair_amount": 625 }
         ]

@@ -9,6 +9,7 @@ const PART_STATE = "zombie:sporepod_part";
 const BOTTOM = "bottom";
 const MIDDLE = "middle";
 const TOP = "top";
+const MAX_STAGE = 4;
 const GROWTH_PARTICLE = "minecraft:crop_growth_emitter";
 const BONE_MEAL_SOUND = "item.bone_meal.use";
 const activeCleanups = new Set();
@@ -20,8 +21,7 @@ export class SporepodGrowthComponent {
 
 		const above = block.above();
 		const twoAbove = above?.above();
-
-		if (!canReplace(above) || !canReplace(twoAbove)) {
+		if (!isValidBase(block.below()) || !canReplace(above) || !canReplace(twoAbove)) {
 			event.cancel = true;
 		}
 	}
@@ -29,10 +29,6 @@ export class SporepodGrowthComponent {
 	onTick(event) {
 		if (syncSporepodStack(event.block)) return;
 		growSporepod(event.block);
-	}
-
-	onPlace(event) {
-		syncSporepodStack(event.block);
 	}
 
 	onPlayerInteract(event) {
@@ -50,6 +46,13 @@ export class SporepodGrowthComponent {
 		}
 	}
 
+}
+
+export class SporepodLifecycleComponent {
+	onPlace(event) {
+		syncSporepodStack(event.block);
+	}
+
 	onPlayerBreak(event) {
 		cleanupSporepod(event.block, event.brokenBlockPermutation, event.player);
 	}
@@ -64,24 +67,27 @@ function growSporepod(block, playEffects = false) {
 	if (!isValidBase(block.below())) return false;
 
 	const stage = getStage(block);
-	if (stage === undefined || stage >= 2) return false;
+	if (stage === undefined || stage >= MAX_STAGE) return false;
 
-	const target = stage === 0 ? block.above() : block.above()?.above();
-	const nextPart = stage === 0 ? MIDDLE : TOP;
+	const nextStage = stage + 1;
+	const target = nextStage === 3 ? block.above() : nextStage === MAX_STAGE ? block.above()?.above() : undefined;
+	const nextPart = nextStage === 3 ? MIDDLE : TOP;
 
-	if (!canReplace(target)) return false;
+	if (target && !canReplace(target)) return false;
 
 	try {
-		target.setPermutation(BlockPermutation.resolve(SPOREPOD, {
-			[STAGE_STATE]: 0,
-			[PART_STATE]: nextPart
-		}));
-		block.setPermutation(block.permutation.withState(STAGE_STATE, stage + 1));
+		if (target) {
+			target.setPermutation(BlockPermutation.resolve(SPOREPOD, {
+				[STAGE_STATE]: MAX_STAGE,
+				[PART_STATE]: nextPart
+			}));
+		}
+		block.setPermutation(block.permutation.withState(STAGE_STATE, nextStage));
 
 		if (playEffects) {
-			const location = target.center();
-			target.dimension.spawnParticle(GROWTH_PARTICLE, location);
-			target.dimension.playSound(BONE_MEAL_SOUND, location);
+			const location = (target ?? block).center();
+			block.dimension.spawnParticle(GROWTH_PARTICLE, location);
+			block.dimension.playSound(BONE_MEAL_SOUND, location);
 		}
 
 		return true;
@@ -98,11 +104,11 @@ function syncSporepodStack(block) {
 	if (stage === undefined || stage <= 0) return false;
 
 	let changed = false;
-	if (stage >= 1) {
+	if (stage >= 3) {
 		changed = setSporepodPart(block.above(), MIDDLE) || changed;
 	}
 
-	if (stage >= 2) {
+	if (stage >= 4) {
 		changed = setSporepodPart(block.above()?.above(), TOP) || changed;
 	}
 
@@ -116,7 +122,7 @@ function setSporepodPart(block, part) {
 
 	try {
 		block.setPermutation(BlockPermutation.resolve(SPOREPOD, {
-			[STAGE_STATE]: 0,
+			[STAGE_STATE]: MAX_STAGE,
 			[PART_STATE]: part
 		}));
 		return true;
