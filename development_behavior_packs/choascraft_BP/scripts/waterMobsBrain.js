@@ -52,7 +52,6 @@ import { bearArmorChanceEffect } from "./items/bearattack.js";
 import "./items/chaosHelmetSight.js";
 import "./items/chaosArmor.js";
 import "./items/echoheartTotem.js";
-import "./entities/endGolemBiomeGuardian.js";
 import "./christmas/index.js";
 import "./halloween/halloweenevent_index.js";
 import { CoffinBackpackPlacementComponent } from "./items/coffinBackpackPickup.js";

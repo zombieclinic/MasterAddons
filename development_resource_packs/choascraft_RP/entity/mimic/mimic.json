@@ -1,0 +1,114 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "zombie:mimic",
+      "materials": {
+        "default": "entity_alphatest",
+        "cow": "cow",
+        "sheep": "sheep",
+        "pig": "pig_v3",
+        "horse": "entity_alphatest",
+        "villager": "villager_v2",
+        "villager_masked": "villager_v2_masked"
+      },
+      "textures": {
+        "chest": "textures/mimic/mimic",
+        "cow": "textures/entity/cow/cow_v2",
+        "sheep": "textures/entity/sheep/sheep",
+        "pig": "textures/entity/pig/pig_v3",
+        "horse_brown": "textures/entity/horse2/horse_brown",
+        "horse_white": "textures/entity/horse2/horse_white",
+        "horse_creamy": "textures/entity/horse2/horse_creamy",
+        "horse_chestnut": "textures/entity/horse2/horse_chestnut",
+        "horse_black": "textures/entity/horse2/horse_black",
+        "horse_gray": "textures/entity/horse2/horse_gray",
+        "horse_darkbrown": "textures/entity/horse2/horse_darkbrown",
+        "villager": "textures/entity/villager2/villager",
+        "villager_plains": "textures/entity/villager2/biomes/biome_plains",
+        "villager_farmer": "textures/entity/villager2/professions/farmer",
+        "steve": "textures/entity/steve"
+      },
+      "geometry": {
+        "chest": "geometry.zombie_mimic",
+        "cow": "geometry.mimic.cow.v2",
+        "sheep": "geometry.mimic.sheep",
+        "pig": "geometry.mimic.pig.v3",
+        "horse": "geometry.mimic.horse.v3",
+        "villager": "geometry.mimic.villager_v2",
+        "steve": "geometry.mimic.humanoid.custom"
+      },
+      "animations": {
+        "idle": "animation.mimic.idle",
+        "walk": "animation.mimic.walk",
+        "attack": "animation.mimic.attack",
+        "death": "animation.mimic.death",
+        "controller": "controller.animation.zombie_mimic",
+        "cow_look": "animation.mimic.disguise.look",
+        "cow_walk": "animation.quadruped.walk",
+        "cow_controller": "controller.animation.mimic.cow",
+        "pig_setup": "animation.pig.setup",
+        "pig_controller": "controller.animation.mimic.pig",
+        "sheep_head_setup": "animation.mimic.sheep.head_setup",
+        "sheep_grazing": "animation.mimic.sheep.grazing",
+        "sheep_walk": "animation.quadruped.walk",
+        "sheep_move_controller": "controller.animation.mimic.sheep.move",
+        "quadruped_walk": "animation.quadruped.walk",
+        "look_at_target": "animation.mimic.disguise.look",
+        "steve_look": "animation.common.look_at_target",
+        "villager_general": "animation.villager.general",
+        "villager_move": "animation.villager.move",
+        "villager_general_controller": "controller.animation.mimic.villager.general",
+        "villager_move_controller": "controller.animation.mimic.villager.move",
+        "steve_base": "animation.humanoid.base_pose",
+        "steve_move_arms": "animation.player.move.arms",
+        "steve_move_legs": "animation.player.move.legs",
+        "horse_walk": "animation.horse.v3.walk",
+        "horse_look": "animation.horse.v3.look_at_player",
+        "horse_tail": "animation.horse.v3.tail",
+        "horse_controller": "controller.animation.mimic.horse",
+        "steve_controller": "controller.animation.mimic.steve"
+      },
+      "scripts": {
+        "scale": "(query.property('zombie:mimic_form') == 'villager' || query.property('zombie:mimic_form') == 'steve') ? 0.9375 : 1.0",
+        "initialize": [
+          "variable.stand_anim = 0.0;",
+          "variable.eat_anim = 0.0;",
+          "variable.gliding_speed_value = 1.0;",
+          "variable.shake_tail = 0.0;"
+        ],
+        "pre_animation": [
+          "variable.head_x_rot = query.target_x_rotation + (query.modified_move_speed > 0.2 ? (math.cos(query.modified_distance_moved * 11.46) * 11.46 * query.modified_move_speed + query.modified_move_speed * 11.46) : 0.0);",
+          "variable.inverse_max_stand_eat = 1.0;",
+          "variable.leg_stand_factor = math.cos((query.modified_distance_moved * 38.38) + 180.0);",
+          "variable.leg_x_rot_anim = variable.leg_stand_factor * 45.8 * query.modified_move_speed;",
+          "variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+          "variable.shake_tail = math.mod(query.life_time, 6.0) < 0.35;"
+        ],
+        "animate": [
+          { "controller": "query.property('zombie:mimic_form') == 'chest' || query.property('zombie:mimic_form') == 'attack'" },
+          { "cow_controller": "query.property('zombie:mimic_form') == 'cow'" },
+          { "pig_controller": "query.property('zombie:mimic_form') == 'pig'" },
+          { "sheep_head_setup": "query.property('zombie:mimic_form') == 'sheep'" },
+          { "sheep_move_controller": "query.property('zombie:mimic_form') == 'sheep'" },
+          { "look_at_target": "query.property('zombie:mimic_form') == 'sheep'" },
+          { "horse_controller": "query.property('zombie:mimic_form') == 'horse'" },
+          { "villager_general_controller": "query.property('zombie:mimic_form') == 'villager'" },
+          { "villager_move_controller": "query.property('zombie:mimic_form') == 'villager'" },
+          { "steve_controller": "query.property('zombie:mimic_form') == 'steve'" }
+        ]
+      },
+      "render_controllers": [
+        { "controller.render.mimic.chest": "query.property('zombie:mimic_form') == 'chest' || query.property('zombie:mimic_form') == 'attack'" },
+        { "controller.render.mimic.cow": "query.property('zombie:mimic_form') == 'cow'" },
+        { "controller.render.mimic.sheep": "query.property('zombie:mimic_form') == 'sheep'" },
+        { "controller.render.mimic.pig": "query.property('zombie:mimic_form') == 'pig'" },
+        { "controller.render.mimic.horse": "query.property('zombie:mimic_form') == 'horse'" },
+        { "controller.render.mimic.villager": "query.property('zombie:mimic_form') == 'villager'" },
+        { "controller.render.mimic.villager_farmer_layers": "query.property('zombie:mimic_form') == 'villager'" },
+        { "controller.render.mimic.steve": "query.property('zombie:mimic_form') == 'steve'" }
+      ],
+      "spawn_egg": { "overlay_color": "#8A6E0B", "base_color": "#412111" }
+    }
+  }
+}

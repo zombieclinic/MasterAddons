@@ -7,7 +7,37 @@
       "is_summonable": true,
       "is_experimental": false
     },
-    "component_groups": {},
+    "component_groups": {
+      "zombie:protecting_end_biome": {
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "must_see": false,
+          "reselect_targets": true,
+          "within_radius": 24,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+              },
+              "max_dist": 24
+            }
+          ]
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": [
+            20,
+            30
+          ],
+          "time_down_event": {
+            "event": "zombie:calm_down",
+            "target": "self"
+          }
+        }
+      }
+    },
     "components": {
       "minecraft:is_hidden_when_invisible": {},
       "minecraft:type_family": {
@@ -18,6 +48,40 @@
         ]
       },
       "minecraft:nameable": {},
+      "minecraft:block_sensor": {
+        "sensor_radius": 24,
+        "sources": [
+          {
+            "test": "is_family",
+            "subject": "other",
+            "value": "player"
+          }
+        ],
+        "on_break": [
+          {
+            "block_list": [
+              "zombie:amaranthine_bloom",
+              "zombie:amaranthine_dirt",
+              "zombie:amaranthine_end_ore",
+              "zombie:amaranthine_grass",
+              "zombie:amaranthine_leaves",
+              "zombie:amaranthine_log",
+              "zombie:amaranthine_sapling",
+              "zombie:amaranthine_sprout",
+              "zombie:lumenroot_bio_shroom",
+              "zombie:lumenroot_dirt",
+              "zombie:lumenroot_end_ore",
+              "zombie:lumenroot_fungus",
+              "zombie:lumenroot_grass",
+              "zombie:lumenroot_leaves",
+              "zombie:lumenroot_log",
+              "zombie:lumenroot_rock",
+              "zombie:lumenroot_sapling"
+            ],
+            "on_block_broken": "zombie:protect_end_biome"
+          }
+        ]
+      },
       "minecraft:collision_box": {
         "width": 1.8,
         "height": 2.3
@@ -91,11 +155,11 @@
         ]
       },
       "minecraft:behavior.melee_attack": {
-        "priority": 1,
+        "priority": 2,
         "track_target": true
       },
       "minecraft:behavior.move_towards_target": {
-        "priority": 2,
+        "priority": 3,
         "speed_multiplier": 0.9,
         "within_radius": 32
       },
@@ -116,7 +180,7 @@
         "priority": 8
       },
       "minecraft:behavior.hurt_by_target": {
-        "priority": 2,
+        "priority": 1,
         "entity_types": {
           "filters": {
             "test": "is_family",
@@ -138,6 +202,27 @@
         "table": "loot_tables/mobs/end_golem.json"
       }
     },
-    "events": {}
+    "events": {
+      "zombie:protect_end_biome": {
+        "remove": {
+          "component_groups": [
+            "zombie:protecting_end_biome"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "zombie:protecting_end_biome"
+          ]
+        }
+      },
+      "zombie:calm_down": {
+        "remove": {
+          "component_groups": [
+            "zombie:protecting_end_biome"
+          ]
+        },
+        "reset_target": {}
+      }
+    }
   }
 }

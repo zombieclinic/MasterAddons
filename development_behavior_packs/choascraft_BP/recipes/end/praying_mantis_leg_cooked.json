@@ -1,0 +1,21 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "zombie:praying_mantis_leg_cooked_recipe"
+    },
+    "unlock": [
+      {
+        "item": "zombie:praying_mantis_leg_raw"
+      }
+    ],
+    "tags": [
+      "furnace",
+      "smoker",
+      "campfire",
+      "soul_campfire"
+    ],
+    "input": "zombie:praying_mantis_leg_raw",
+    "output": "zombie:praying_mantis_leg_cooked"
+  }
+}

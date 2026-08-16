@@ -45,7 +45,7 @@
       },
       {
         "condition": "query.block_state('zombie:sporepod_part') == 'bottom' && query.block_state('zombie:growth_stage') == 3",
-        "components": { "minecraft:geometry": "geometry.zombie_sporepod_growth_3" }
+        "components": { "minecraft:geometry": "geometry.zombie_sporepod_growth_4" }
       },
       {
         "condition": "query.block_state('zombie:sporepod_part') == 'bottom' && query.block_state('zombie:growth_stage') == 4",

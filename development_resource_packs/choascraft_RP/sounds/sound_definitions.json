@@ -121,7 +121,7 @@
     "zombie.mimic.open": {
       "category": "hostile",
       "sounds": [
-        "sounds/mimic/mimic"
+        "sounds/monsters/mimic/mimic"
       ]
     },
     "choas_explosion": {

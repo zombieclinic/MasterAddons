@@ -1,5 +1,5 @@
 {
-	"format_version": "1.19.0",
+	"format_version": "1.21.110",
 	"minecraft:geometry": [
 		{
 			"description": {
@@ -33,7 +33,7 @@
 							}
 						},
 						{
-							"origin": [-6.5, 8, -6.5],
+							"origin": [-6.5, 7.775, -6.5],
 							"size": [13, 3, 13],
 							"uv": {
 								"north": {"uv": [3, 0], "uv_size": [3.25, 0.75]},

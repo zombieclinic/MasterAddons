@@ -758,6 +758,12 @@
     "end_ingot": { "textures": "textures/end/ores/end_ingot" },
     "zombie_end_boots": {
       "textures": "textures/armor/end/end_boot_icon"
+    },
+    "praying_mantis_leg_raw": {
+      "textures": "textures/end/items/praying_mantis_leg_raw"
+    },
+    "praying_mantis_leg_cooked": {
+      "textures": "textures/end/items/praying_mantis_leg_cooked"
     }
   }
 }

@@ -4,9 +4,6 @@
       
     }
   },
-  "block_sounds": {
-    
-  },
   "entity_sounds": {
     "entities": {
       "zombie:end_golem": {

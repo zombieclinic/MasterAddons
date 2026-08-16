@@ -1,0 +1,61 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.mimic.chest": {
+      "geometry": "Geometry.chest",
+      "materials": [{ "*": "Material.default" }],
+      "textures": ["Texture.chest"]
+    },
+    "controller.render.mimic.cow": {
+      "geometry": "Geometry.cow",
+      "materials": [{ "*": "Material.cow" }],
+      "textures": ["Texture.cow"]
+    },
+    "controller.render.mimic.sheep": {
+      "geometry": "Geometry.sheep",
+      "materials": [{ "*": "Material.sheep" }],
+      "textures": ["Texture.sheep"]
+    },
+    "controller.render.mimic.pig": {
+      "geometry": "Geometry.pig",
+      "materials": [{ "*": "Material.pig" }],
+      "textures": ["Texture.pig"]
+    },
+    "controller.render.mimic.horse": {
+      "arrays": {
+        "textures": {
+          "Array.horse_colors": [
+            "Texture.horse_brown",
+            "Texture.horse_white",
+            "Texture.horse_creamy",
+            "Texture.horse_chestnut",
+            "Texture.horse_black",
+            "Texture.horse_gray",
+            "Texture.horse_darkbrown"
+          ]
+        }
+      },
+      "geometry": "Geometry.horse",
+      "materials": [{ "*": "Material.horse" }],
+      "textures": ["Array.horse_colors[query.property('zombie:mimic_horse_color')]" ]
+    },
+    "controller.render.mimic.villager": {
+      "geometry": "Geometry.villager",
+      "materials": [{ "*": "Material.villager" }],
+      "textures": ["Texture.villager"]
+    },
+    "controller.render.mimic.villager_farmer_layers": {
+      "geometry": "Geometry.villager",
+      "materials": [{ "*": "Material.villager_masked" }],
+      "textures": [
+        "Texture.villager_plains",
+        "Texture.villager_farmer"
+      ]
+    },
+    "controller.render.mimic.steve": {
+      "geometry": "Geometry.steve",
+      "materials": [{ "*": "Material.default" }],
+      "textures": ["Texture.steve"]
+    }
+  }
+}

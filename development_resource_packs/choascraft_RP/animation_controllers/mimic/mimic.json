@@ -1,0 +1,46 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.zombie_mimic": {
+            "initial_state": "idle",
+            "states": {
+                "idle": {
+                    "animations": [
+                        "idle"
+                    ],
+                    "transitions": [
+                    {
+                        "walk": "query.modified_move_speed>=0.01"
+                    },
+                    {
+                        "attack": "variable.attack_time>=0.01"
+                    }
+            ]
+                },
+                "walk": {
+                    "animations": ["walk"],
+                    "transitions": [
+                    {
+                        "idle" : "!query.ground_speed"
+                    },
+                    {
+                        "attack": "variable.attack_time>=0.01"
+                    }
+                ]
+                },
+                "attack": {
+                    "animations": ["attack"
+                ],
+                    "transitions": [
+                        {
+                            "idle": "query.all_animations_finished"
+                        },
+                        {
+                            "walk": "query.ground_speed && query.all_animations_finished"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

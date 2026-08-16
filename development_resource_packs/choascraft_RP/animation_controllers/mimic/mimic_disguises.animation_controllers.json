@@ -1,0 +1,101 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.mimic.cow": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations": ["cow_look"],
+          "transitions": [{ "moving": "query.modified_move_speed > 0.01" }]
+        },
+        "moving": {
+          "animations": ["cow_look", { "cow_walk": "query.modified_move_speed" }],
+          "transitions": [{ "idle": "query.modified_move_speed <= 0.01" }],
+          "blend_transition": 0.15
+        }
+      }
+    },
+    "controller.animation.mimic.pig": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations": ["pig_setup", "look_at_target"],
+          "transitions": [{ "moving": "query.modified_move_speed > 0.01" }]
+        },
+        "moving": {
+          "animations": ["pig_setup", "look_at_target", "quadruped_walk"],
+          "transitions": [{ "idle": "query.modified_move_speed <= 0.01" }],
+          "blend_transition": 0.15
+        }
+      }
+    },
+    "controller.animation.mimic.sheep.move": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            { "sheep_walk": "query.modified_move_speed" }
+          ],
+          "transitions": [
+            { "grazing": "query.is_grazing" }
+          ]
+        },
+        "grazing": {
+          "animations": ["sheep_grazing"],
+          "transitions": [
+            { "default": "query.all_animations_finished" }
+          ]
+        }
+      }
+    },
+    "controller.animation.mimic.villager.general": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": ["villager_general", "look_at_target"]
+        }
+      }
+    },
+    "controller.animation.mimic.villager.move": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "transitions": [{ "moving": "query.modified_move_speed > 0.01" }]
+        },
+        "moving": {
+          "animations": ["villager_move"],
+          "transitions": [{ "idle": "query.modified_move_speed <= 0.01" }],
+          "blend_transition": 0.15
+        }
+      }
+    },
+    "controller.animation.mimic.horse": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations": [{ "horse_tail": "variable.shake_tail" }],
+          "transitions": [{ "moving": "query.modified_move_speed > 0.01" }]
+        },
+        "moving": {
+          "animations": ["horse_walk", { "horse_tail": "variable.shake_tail" }],
+          "transitions": [{ "idle": "query.modified_move_speed <= 0.01" }],
+          "blend_transition": 0.15
+        }
+      }
+    },
+    "controller.animation.mimic.steve": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations": ["steve_base", "steve_look"],
+          "transitions": [{ "moving": "query.modified_move_speed > 0.01" }]
+        },
+        "moving": {
+          "animations": ["steve_base", "steve_look", "steve_move_arms", "steve_move_legs"],
+          "transitions": [{ "idle": "query.modified_move_speed <= 0.01" }],
+          "blend_transition": 0.15
+        }
+      }
+    }
+  }
+}

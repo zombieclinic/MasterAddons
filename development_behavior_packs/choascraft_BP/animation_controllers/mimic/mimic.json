@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.mimic.functions": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"attackmode": "query.property('zombie:mimic_form') == 'attack'"
+						}
+					]
+				},
+				"attackmode": {
+					"on_entry": [
+						"/playsound zombie.mimic.open @a[r=64]"
+					]
+				}
+			}
+		}
+	}
+}
