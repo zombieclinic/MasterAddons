@@ -1421,12 +1421,413 @@
     "zombie_cracked_yellow_stained_glass": {
       "textures": "textures/blocks/glass/glass_yellow"
     },
-    "amaranthine_end_ore": { "textures": "textures/end/ores/amaranthine_end_ore" },
-    "lumenbloom_end_ore": { "textures": "textures/end/ores/lumenbloom_end_ore" },
-    "lumenroot_end_ore": { "textures": "textures/end/ores/lumenroot_end_ore" },
-    "end_ore_block": { "textures": "textures/end/ores/end_ore_block" },
+    "amaranthine_end_ore": {
+      "textures": "textures/end/ores/amaranthine_end_ore"
+    },
+    "lumenbloom_end_ore": {
+      "textures": "textures/end/ores/lumenbloom_end_ore"
+    },
+    "lumenroot_end_ore": {
+      "textures": "textures/end/ores/lumenroot_end_ore"
+    },
+    "end_ore_block": {
+      "textures": "textures/end/ores/end_ore_block"
+    },
     "zombie_cracked_tinted_glass": {
       "textures": "textures/blocks/glass/tinted_glass"
+    },
+    "zombie_quartz_block": {
+      "textures": "textures/blocks/quartz_block_side"
+    },
+    "zombie_quartz_bricks": {
+      "textures": "textures/blocks/quartz_bricks"
+    },
+    "zombie_black_atlantis_solid": {
+      "textures": "textures/blocks/atlantis/solid/atlantis_solid_black"
+    },
+    "zombie_black_atlantis_transparent": {
+      "textures": "textures/blocks/atlantis/transparent/atlantis_transparent_black"
+    },
+    "zombie_blue_atlantis_solid": {
+      "textures": "textures/blocks/atlantis/solid/atlantis_solid_blue"
+    },
+    "zombie_blue_atlantis_transparent": {
+      "textures": "textures/blocks/atlantis/transparent/atlantis_transparent_blue"
+    },
+    "zombie_brown_atlantis_solid": {
+      "textures": "textures/blocks/atlantis/solid/atlantis_solid_brown"
+    },
+    "zombie_brown_atlantis_transparent": {
+      "textures": "textures/blocks/atlantis/transparent/atlantis_transparent_brown"
+    },
+    "zombie_cyan_atlantis_solid": {
+      "textures": "textures/blocks/atlantis/solid/atlantis_solid_cyan"
+    },
+    "zombie_cyan_atlantis_transparent": {
+      "textures": "textures/blocks/atlantis/transparent/atlantis_transparent_cyan"
+    },
+    "zombie_green_atlantis_solid": {
+      "textures": "textures/blocks/atlantis/solid/altantis_solid_green"
+    },
+    "zombie_green_atlantis_transparent": {
+      "textures": "textures/blocks/atlantis/transparent/atlantis_transparent_green"
+    },
+    "zombie_magenta_atlantis_solid": {
+      "textures": "textures/blocks/atlantis/solid/atlantis_solid_magenta"
+    },
+    "zombie_magenta_atlantis_transparent": {
+      "textures": "textures/blocks/atlantis/transparent/atlantis_transparent_magenta"
+    },
+    "zombie_orange_atlantis_solid": {
+      "textures": "textures/blocks/atlantis/solid/atlantis_solid_orange"
+    },
+    "zombie_orange_atlantis_transparent": {
+      "textures": "textures/blocks/atlantis/transparent/atlantis_transparent_orange"
+    },
+    "zombie_pink_atlantis_solid": {
+      "textures": "textures/blocks/atlantis/solid/atlantis_solid_pink"
+    },
+    "zombie_pink_atlantis_transparent": {
+      "textures": "textures/blocks/atlantis/transparent/atlantis_transparent_pink"
+    },
+    "zombie_purple_atlantis_solid": {
+      "textures": "textures/blocks/atlantis/solid/altantis_solid_purple"
+    },
+    "zombie_purple_atlantis_transparent": {
+      "textures": "textures/blocks/atlantis/transparent/atlantis_transparent_purple"
+    },
+    "zombie_red_atlantis_solid": {
+      "textures": "textures/blocks/atlantis/solid/atlantis_solid_red"
+    },
+    "zombie_red_atlantis_transparent": {
+      "textures": "textures/blocks/atlantis/transparent/atlantis_transparent_red"
+    },
+    "zombie_white_atlantis_solid": {
+      "textures": "textures/blocks/atlantis/solid/atlantis_solid_white"
+    },
+    "zombie_white_atlantis_transparent": {
+      "textures": "textures/blocks/atlantis/transparent/atlantis_transparent_white"
+    },
+    "zombie_yellow_atlantis_solid": {
+      "textures": "textures/blocks/atlantis/solid/atlantis_solid_yellow"
+    },
+    "zombie_yellow_atlantis_transparent": {
+      "textures": "textures/blocks/atlantis/transparent/atlantis_transparent_yellow"
+    },
+    "zombie_magma_black": {
+      "textures": "textures/blocks/magma/black_magma"
+    },
+    "zombie_magma_blue": {
+      "textures": "textures/blocks/magma/blue_magma"
+    },
+    "zombie_magma_brown": {
+      "textures": "textures/blocks/magma/brown_magma"
+    },
+    "zombie_magma_cyan": {
+      "textures": "textures/blocks/magma/cyan_magma"
+    },
+    "zombie_magma_gray": {
+      "textures": "textures/blocks/magma/gray_magma"
+    },
+    "zombie_magma_green": {
+      "textures": "textures/blocks/magma/green_magma"
+    },
+    "zombie_magma_lightblue": {
+      "textures": "textures/blocks/magma/lightblue_magma"
+    },
+    "zombie_magma_lightgray": {
+      "textures": "textures/blocks/magma/lightgray_magma"
+    },
+    "zombie_magma_lime": {
+      "textures": "textures/blocks/magma/lime_magma"
+    },
+    "zombie_magma_magenta": {
+      "textures": "textures/blocks/magma/magenta_magma"
+    },
+    "zombie_magma_pink": {
+      "textures": "textures/blocks/magma/pink_magma"
+    },
+    "zombie_magma_purple": {
+      "textures": "textures/blocks/magma/purple_magma"
+    },
+    "zombie_magma_red": {
+      "textures": "textures/blocks/magma/red_magma"
+    },
+    "zombie_magma_white": {
+      "textures": "textures/blocks/magma/white_magma"
+    },
+    "zombie_magma_yellow": {
+      "textures": "textures/blocks/magma/yellow_magma"
+    },
+    "shroomlight_black": {
+      "textures": "textures/blocks/shroom_light/shroomlight_black"
+    },
+    "shroomlight_blue": {
+      "textures": "textures/blocks/shroom_light/shroomlight_blue"
+    },
+    "shroomlight_brown": {
+      "textures": "textures/blocks/shroom_light/shroomlight_brown"
+    },
+    "shroomlight_cyan": {
+      "textures": "textures/blocks/shroom_light/shroomlight_cyan"
+    },
+    "shroomlight_gray": {
+      "textures": "textures/blocks/shroom_light/shroomlight_gray"
+    },
+    "shroomlight_green": {
+      "textures": "textures/blocks/shroom_light/shroomlight_green"
+    },
+    "shroomlight_light_blue": {
+      "textures": "textures/blocks/shroom_light/shroomlight_light_blue"
+    },
+    "shroomlight_light_gray": {
+      "textures": "textures/blocks/shroom_light/shroomlight_light_gray"
+    },
+    "shroomlight_lime": {
+      "textures": "textures/blocks/shroom_light/shroomlight_lime"
+    },
+    "shroomlight_magenta": {
+      "textures": "textures/blocks/shroom_light/shroomlight_magenta"
+    },
+    "shroomlight_orange": {
+      "textures": "textures/blocks/shroom_light/shroomlight_orange"
+    },
+    "shroomlight_pink": {
+      "textures": "textures/blocks/shroom_light/shroomlight_pink"
+    },
+    "shroomlight_purple": {
+      "textures": "textures/blocks/shroom_light/shroomlight_purple"
+    },
+    "shroomlight_red": {
+      "textures": "textures/blocks/shroom_light/shroomlight_red"
+    },
+    "shroomlight_white": {
+      "textures": "textures/blocks/shroom_light/shroomlight_white"
+    },
+    "shroomlight_yellow": {
+      "textures": "textures/blocks/shroom_light/shroomlight_yellow"
+    },
+    "zombie_hatchet_man_white": {
+      "textures": "textures/blocks/ninja/hatchet_man_white"
+    },
+    "zombie_hatchet_man_red": {
+      "textures": "textures/blocks/ninja/hatchet_man_red"
+    },
+    "zombie_mario_square_rock": {
+      "textures": "textures/blocks/mario/square_rock"
+    },
+    "zombie_mario_yellow_question_mark": {
+      "textures": "textures/blocks/mario/yellow_question_mark"
+    },
+    "zombie_mario_tan_brick": {
+      "textures": "textures/blocks/mario/tan_brick"
+    },
+    "zombie_mario_brown_brick": {
+      "textures": "textures/blocks/mario/brown_brick"
+    },
+    "zombie_mario_dungeon_brick": {
+      "textures": "textures/blocks/mario/dungeon_brick"
+    },
+    "zombie_mario_sand_brick": {
+      "textures": "textures/blocks/mario/sand_brick"
+    },
+    "zombie_mario_question_block": {
+      "textures": "textures/blocks/mario/question_block"
+    },
+    "zombie_mario_exclamation_block": {
+      "textures": "textures/blocks/mario/exclamation_block"
+    },
+    "zombie_mario_pow_block": {
+      "textures": "textures/blocks/mario/pow_block"
+    },
+    "zombie_mario_dungeon": {
+      "textures": "textures/blocks/mario/dungeon"
+    },
+    "zombie_mario_red_brick": {
+      "textures": "textures/blocks/mario/red_brick"
+    },
+    "zombie_mario_sand": {
+      "textures": "textures/blocks/mario/sand"
+    },
+    "zombie_mario_rock": {
+      "textures": "textures/blocks/mario/rock"
+    },
+    "zombie_mario_blue_cracked_block": {
+      "textures": "textures/blocks/mario/blue_cracked_block"
+    },
+    "zombie_mario_blue_square_rock": {
+      "textures": "textures/blocks/mario/blue_square_rock"
+    },
+    "zombie_mario_blue_brick": {
+      "textures": "textures/blocks/mario/blue_brick"
+    },
+    "zombie_mario_blue_rock": {
+      "textures": "textures/blocks/mario/blue_rock"
+    },
+    "zombie_mario_green_rock": {
+      "textures": "textures/blocks/mario/green_rock"
+    },
+    "zombie_mario_green_brick": {
+      "textures": "textures/blocks/mario/green_brick"
+    },
+    "zombie_mario_green_stone": {
+      "textures": "textures/blocks/mario/green_stone"
+    },
+    "zombie_mario_red_square": {
+      "textures": "textures/blocks/mario/red_square"
+    },
+    "zombie_mario_blue_square": {
+      "textures": "textures/blocks/mario/blue_square"
+    },
+    "zombie_mario_green_square": {
+      "textures": "textures/blocks/mario/green_square"
+    },
+    "zombie_mario_white_rock": {
+      "textures": "textures/blocks/mario/white_rock"
+    },
+    "zombie_mario_white_brick": {
+      "textures": "textures/blocks/mario/white_brick"
+    },
+    "zombie_mario_white_block": {
+      "textures": "textures/blocks/mario/white_block"
+    },
+    "zombie_mario_stone": {
+      "textures": "textures/blocks/mario/stone"
+    },
+    "zombie_mario_stone_brick": {
+      "textures": "textures/blocks/mario/stone_brick"
+    },
+    "zombie_mario_white_stone": {
+      "textures": "textures/blocks/mario/white_stone"
+    },
+    "zombie_mario_spruce_wood": {
+      "textures": "textures/blocks/mario/spruce_wood"
+    },
+    "zombie_mario_oak_wood": {
+      "textures": "textures/blocks/mario/oak_wood"
+    },
+    "zombie_mario_spruce_window": {
+      "textures": "textures/blocks/mario/spruce_window"
+    },
+    "zombie_mario_oak_window": {
+      "textures": "textures/blocks/mario/oak_window"
+    },
+    "zombie_mario_orange_cracked_block": {
+      "textures": "textures/blocks/mario/orange_cracked_block"
+    },
+    "zombie_mario_fools_gold": {
+      "textures": "textures/blocks/mario/fools_gold"
+    },
+    "zombie_dirty_notes": {
+      "textures": "textures/blocks/mario/dirty_notes"
+    },
+    "zombie_mario_gold_brick": {
+      "textures": "textures/blocks/mario/gold_brick"
+    },
+    "zombie_mario_light_blue_brick": {
+      "textures": "textures/blocks/mario/lightblue_brick"
+    },
+    "zombie_music_note": {
+      "textures": "textures/blocks/mario/music_note"
+    },
+    "zombie_mario_oak_top": {
+      "textures": "textures/blocks/mario/oak_top"
+    },
+    "zombie_lucky_block_top": {
+      "textures": "textures/blocks/mario/lucky_block_top"
+    },
+    "zombie_lucky_block_side_1": {
+      "textures": "textures/blocks/mario/lucky_block_side_1"
+    },
+    "zombie_lucky_block_side_2": {
+      "textures": "textures/blocks/mario/lucky_block_side_2"
+    },
+    "zombie_lucky_block_side_3": {
+      "textures": "textures/blocks/mario/lucky_block_side_3"
+    },
+    "zombie_lucky_block_side_4": {
+      "textures": "textures/blocks/mario/lucky_block_side_4"
+    },
+    "zombie_mario_pipe_body": {
+      "textures": "textures/blocks/mario/pipe_body"
+    },
+    "zombie_mario_pipe_opening": {
+      "textures": "textures/blocks/mario/pipe_opening"
+    },
+    "zombie_mario_pipe_rim": {
+      "textures": "textures/blocks/mario/pipe_body"
+    },
+    "zombie_sonic_gold_rock": {
+      "textures": "textures/blocks/sonic/gold_rock"
+    },
+    "zombie_sonic_grass": {
+      "textures": "textures/blocks/sonic/grass"
+    },
+    "zombie_sonic_gold_brick": {
+      "textures": "textures/blocks/sonic/gold_brick"
+    },
+    "zombie_sonic_rock": {
+      "textures": "textures/blocks/sonic/rock"
+    },
+    "zombie_sonic_chiseled_gold_block": {
+      "textures": "textures/blocks/sonic/chiseled_gold_block"
+    },
+    "zombie_sonic_dark_rock": {
+      "textures": "textures/blocks/sonic/dark_rock"
+    },
+    "zombie_sonic_stone_dirt": {
+      "textures": "textures/blocks/sonic/stone_dirt"
+    },
+    "zombie_sonic_grass_dirt": {
+      "textures": "textures/blocks/sonic/grass_dirt"
+    },
+    "zombie_sonic_gold_block": {
+      "textures": "textures/blocks/sonic/gold_block"
+    },
+    "zombie_sonic_gold_pillar": {
+      "textures": "textures/blocks/sonic/gold_pillar"
+    },
+    "zombie_sonic_construction": {
+      "textures": "textures/blocks/sonic/construction"
+    },
+    "zombie_sonic_stone": {
+      "textures": "textures/blocks/sonic/stone"
+    },
+    "zombie_sonic_dirt": {
+      "textures": "textures/blocks/sonic/dirt"
+    },
+    "zombie_sonic_long_grass": {
+      "textures": "textures/blocks/sonic/long_grass"
+    },
+    "zombie_sonic_purple_dirt": {
+      "textures": "textures/blocks/sonic/purple_dirt"
+    },
+    "zombie_sonic_metal": {
+      "textures": "textures/blocks/sonic/metal"
+    },
+    "zombie_sonic_light_metal": {
+      "textures": "textures/blocks/sonic/light_metal"
+    },
+    "zombie_sonic_shade_dirt": {
+      "textures": "textures/blocks/sonic/shade_dirt"
+    },
+    "zombie_sonic_purple_grass": {
+      "textures": "textures/blocks/sonic/purple_grass"
+    },
+    "zombie_sonic_chiseled_metal": {
+      "textures": "textures/blocks/sonic/chiseled_metal"
+    },
+    "zombie_sonic_construction_stripes": {
+      "textures": "textures/blocks/sonic/construction_stripes"
+    },
+    "zombie_sonic_bird_pillar": {
+      "textures": "textures/blocks/sonic/bird_pillar"
+    },
+    "zombie_sonic_turtle_gold_block": {
+      "textures": "textures/blocks/sonic/turtle_gold_block"
+    },
+    "zombie_sonic_construction_top": {
+      "textures": "textures/blocks/sonic/construction_top"
     }
   }
 }

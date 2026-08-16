@@ -1,0 +1,33 @@
+{
+  "format_version": "1.26.40",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:mario_oak_window",
+      "menu_category": { "category": "construction" },
+      "traits": { "minecraft:placement_position": { "enabled_states": ["minecraft:block_face"] } }
+    },
+    "components": {
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:destructible_by_mining": { "seconds_to_destroy": 1 },
+      "minecraft:map_color": "#868686",
+      "minecraft:destructible_by_explosion": { "explosion_resistance": 200 },
+      "minecraft:display_name": "Mario oak window",
+      "minecraft:material_instances": {
+        "*": { "texture": "zombie_mario_oak_window", "render_method": "blend_to_opaque" },
+        "up": { "texture": "zombie_mario_oak_wood", "render_method": "blend_to_opaque" },
+        "down": { "texture": "zombie_mario_oak_wood", "render_method": "blend_to_opaque" }
+      },
+      "minecraft:tags": ["minecraft:is_pickaxe_item_destructible", "stone"]
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'north' || query.block_state('minecraft:block_face') == 'south'",
+        "components": { "minecraft:transformation": { "rotation": [90, 0, 0] } }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'east' || query.block_state('minecraft:block_face') == 'west'",
+        "components": { "minecraft:transformation": { "rotation": [0, 0, 90] } }
+      }
+    ]
+  }
+}

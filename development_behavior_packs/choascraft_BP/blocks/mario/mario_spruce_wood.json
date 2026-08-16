@@ -1,0 +1,33 @@
+{
+  "format_version": "1.26.40",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:mario_spruce_wood",
+      "menu_category": { "category": "construction" },
+      "traits": { "minecraft:placement_position": { "enabled_states": ["minecraft:block_face"] } }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": { "seconds_to_destroy": 1 },
+      "minecraft:map_color": "#868686",
+      "minecraft:destructible_by_explosion": { "explosion_resistance": 200 },
+      "minecraft:display_name": "Mario Spruce wood",
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": {
+        "*": { "texture": "zombie_mario_spruce_wood" },
+        "up": { "texture": "stripped_spruce_log_top" },
+        "down": { "texture": "stripped_spruce_log_top" }
+      },
+      "minecraft:tags": ["minecraft:is_axe_item_destructible", "wood"]
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'north' || query.block_state('minecraft:block_face') == 'south'",
+        "components": { "minecraft:transformation": { "rotation": [90, 0, 0] } }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'east' || query.block_state('minecraft:block_face') == 'west'",
+        "components": { "minecraft:transformation": { "rotation": [0, 0, 90] } }
+      }
+    ]
+  }
+}

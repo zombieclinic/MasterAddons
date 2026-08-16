@@ -1,0 +1,34 @@
+{
+  "format_version": "1.26.40",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:sonic_gold_pillar",
+      "menu_category": {
+        "category": "construction"
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1
+      },
+      "minecraft:map_color": "#FC4700",
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 200
+      },
+      "minecraft:display_name": "Sonic Gold Pillar",
+      "minecraft:tags": [
+        "minecraft:is_pickaxe_item_destructible",
+        "stone"
+      ],
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "zombie_sonic_gold_pillar",
+          "render_method": "opaque",
+          "face_dimming": true,
+          "ambient_occlusion": 1
+        }
+      }
+    }
+  }
+}

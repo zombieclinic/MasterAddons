@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:quartz_wall_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "###",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:quartz_block"
+      }
+    },
+    "result": {
+      "item": "zombie:quartz_wall",
+      "count": 6
+    },
+    "unlock": [
+      {
+        "item": "minecraft:quartz_block"
+      }
+    ]
+  }
+}

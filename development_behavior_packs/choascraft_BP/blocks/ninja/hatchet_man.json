@@ -1,0 +1,38 @@
+{
+  "format_version": "1.26.40",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:hatchet_man_white",
+      "menu_category": {
+        "category": "construction"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "Hatchet Man White",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 1200
+      },
+      "minecraft:map_color": "#1A1A1E",
+      "minecraft:redstone_conductivity": {
+        "allows_wire_to_step_down": true,
+        "redstone_conductor": true
+      },
+      "minecraft:tags": [
+        "minecraft:is_pickaxe_item_destructible",
+        "stone"
+      ],
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "zombie_hatchet_man_white",
+          "render_method": "opaque",
+          "face_dimming": true,
+          "ambient_occlusion": 1
+        }
+      }
+    }
+  }
+}

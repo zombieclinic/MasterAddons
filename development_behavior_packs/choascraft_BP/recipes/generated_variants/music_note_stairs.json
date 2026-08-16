@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:music_note_stairs_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "#  ",
+      "## ",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "zombie:music_note"
+      }
+    },
+    "result": {
+      "item": "zombie:music_note_stairs",
+      "count": 4
+    },
+    "unlock": [
+      {
+        "item": "zombie:music_note"
+      }
+    ]
+  }
+}

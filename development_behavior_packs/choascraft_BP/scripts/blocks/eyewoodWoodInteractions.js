@@ -29,7 +29,8 @@ const SLAB_ITEM_IDS = new Set([
 	"zombie:lumenroot_slab",
 	"zombie:gingerbread_slab",
 	"zombie:gingerbread_icing_slab",
-	"zombie:ginger_brick_slab"
+	"zombie:ginger_brick_slab",
+	"zombie:quartz_brick_slab"
 ]);
 
 const STRIPPABLE_BLOCKS = {
@@ -464,7 +465,9 @@ function transformIntoDoubleSlab(block, player) {
 }
 
 function isSlabItem(itemStack) {
-	return itemStack.hasTag(SLAB_TAG) || SLAB_ITEM_IDS.has(itemStack.typeId);
+	return itemStack.hasTag(SLAB_TAG) ||
+		SLAB_ITEM_IDS.has(itemStack.typeId) ||
+		(itemStack.typeId.startsWith("zombie:") && itemStack.typeId.endsWith("_slab"));
 }
 
 function getSlabVerticalHalf(permutation) {

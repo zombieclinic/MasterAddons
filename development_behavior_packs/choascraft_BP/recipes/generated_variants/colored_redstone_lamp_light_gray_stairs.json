@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:colored_redstone_lamp_light_gray_stairs_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "#  ",
+      "## ",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "zombie:colored_redstone_lamp_light_gray"
+      }
+    },
+    "result": {
+      "item": "zombie:colored_redstone_lamp_light_gray_stairs",
+      "count": 4
+    },
+    "unlock": [
+      {
+        "item": "zombie:colored_redstone_lamp_light_gray"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "format_version": "1.26.40",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:atlantis_solid_white",
+      "menu_category": {
+        "category": "construction"
+      },
+      "states": {
+        "zombie:transparent": [
+          0,
+          1
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.5
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 3000
+      },
+      "minecraft:tick": {
+        "interval_range": [
+          5,
+          5
+        ],
+        "looping": true
+      },
+      "minecraft:map_color": "#000000",
+      "minecraft:light_dampening": 1,
+      "minecraft:display_name": "Atlantis Solid White",
+      "zombie:atlantis": {},
+      "minecraft:tags": [
+        "minecraft:is_pickaxe_item_destructible",
+        "stone"
+      ]
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('zombie:transparent') == 0",
+        "components": {
+          "minecraft:geometry": "minecraft:geometry.full_block",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "zombie_white_atlantis_solid",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('zombie:transparent') == 1",
+        "components": {
+          "minecraft:collision_box": false,
+          "minecraft:geometry": "minecraft:geometry.full_block",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "zombie_white_atlantis_transparent",
+              "render_method": "blend"
+            }
+          },
+          "minecraft:light_dampening": 0
+        }
+      }
+    ]
+  }
+}

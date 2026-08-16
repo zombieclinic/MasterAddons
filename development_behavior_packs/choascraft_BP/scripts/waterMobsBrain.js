@@ -30,6 +30,8 @@ import { ZcPressurePlateComponent, ZcPressurePlateReleaseTickComponent } from ".
 import { ActiveInfectedTeethComponent } from "./blocks/activeInfectedTeeth.js";
 import { ConnectedStairsComponent } from "./blocks/connectedStairs.js";
 import { HellfireTrapstoneComponent } from "./blocks/hellfireTrapstone.js";
+import { AtlantisPowerToggle } from "./blocks/atlantisPowerToggle.js";
+import { DyeableRedstoneLampComponent } from "./blocks/dyeableColoredBlocks.js";
 import { DemonAlterComponent } from "./blocks/demonAlter.js";
 import { DemonLordRitualComponent } from "./blocks/demonLordRitual.js";
 import { CorruptedGrassDropComponent } from "./blocks/corruptedGrassDrops.js";
@@ -80,6 +82,8 @@ const BLOCK_COMPONENTS = [
   ["zc:pressureplate_release_tick", ZcPressurePlateReleaseTickComponent],
   ["zombie:active_infected_teeth", ActiveInfectedTeethComponent],
   ["zombie:hellfire_trapstone", HellfireTrapstoneComponent],
+  ["zombie:atlantis", AtlantisPowerToggle],
+  ["zombie:dyeable_redstone_lamp", DyeableRedstoneLampComponent],
   ["zombie:demon_alter", DemonAlterComponent],
   ["zombie:demon_lord_ritual", DemonLordRitualComponent],
   ["zombie:corrupted_grass_drop", CorruptedGrassDropComponent],

@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:quartz_fence_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "#Q#",
+      "#Q#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:quartz_block"
+      },
+      "Q": {
+        "item": "minecraft:quartz"
+      }
+    },
+    "result": {
+      "item": "zombie:quartz_fence",
+      "count": 3
+    },
+    "unlock": [
+      {
+        "item": "minecraft:quartz_block"
+      }
+    ]
+  }
+}

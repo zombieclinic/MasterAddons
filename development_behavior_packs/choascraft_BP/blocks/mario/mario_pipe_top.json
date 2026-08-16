@@ -1,0 +1,510 @@
+{
+  "format_version": "1.26.40",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:mario_pipe_top",
+      "menu_category": {
+        "category": "construction"
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": [
+            "minecraft:cardinal_direction"
+          ]
+        },
+        "minecraft:placement_position": {
+          "enabled_states": [
+            "minecraft:block_face"
+          ]
+        }
+      }
+    },
+    "components": {
+      "minecraft:geometry": "geometry.mariopipe_floor",
+      "minecraft:collision_box": true,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 200
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "zombie_mario_pipe_rim",
+          "render_method": "opaque"
+        },
+        "up": {
+          "texture": "zombie_mario_pipe_opening",
+          "render_method": "opaque"
+        },
+        "down": {
+          "texture": "zombie_mario_pipe_opening",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:map_color": "#2d2d28",
+      "minecraft:light_emission": 0,
+      "minecraft:flammable": {
+        "catch_chance_modifier": 0,
+        "destroy_chance_modifier": 0
+      },
+      "minecraft:display_name": "Mario Pipe Top",
+      "minecraft:crafting_table": {
+        "crafting_tags": [
+          "crafting_table"
+        ],
+        "table_name": "Mario Pipe"
+      },
+      "minecraft:tags": [
+        "minecraft:is_pickaxe_item_destructible",
+        "stone"
+      ]
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -6,
+              0,
+              -8
+            ],
+            "size": [
+              12,
+              12,
+              16
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -6,
+              0,
+              -8
+            ],
+            "size": [
+              12,
+              12,
+              16
+            ]
+          },
+          "minecraft:geometry": "geometry.mariopipe_top_wall"
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -6,
+              0,
+              -8
+            ],
+            "size": [
+              12,
+              12,
+              16
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -6,
+              0,
+              -8
+            ],
+            "size": [
+              12,
+              12,
+              16
+            ]
+          },
+          "minecraft:geometry": "geometry.mariopipe_top_wall"
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              -90,
+              0
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -6,
+              0,
+              -8
+            ],
+            "size": [
+              12,
+              12,
+              16
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -6,
+              0,
+              -8
+            ],
+            "size": [
+              12,
+              12,
+              16
+            ]
+          },
+          "minecraft:geometry": "geometry.mariopipe_top_wall"
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -6,
+              0,
+              -8
+            ],
+            "size": [
+              12,
+              12,
+              16
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -6,
+              0,
+              -8
+            ],
+            "size": [
+              12,
+              12,
+              16
+            ]
+          },
+          "minecraft:geometry": "geometry.mariopipe_top_wall"
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && query.block_state('minecraft:block_face') == 'down' ",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:geometry": "geometry.mariopipe_top_roof",
+          "minecraft:selection_box": {
+            "origin": [
+              -6,
+              0,
+              -6
+            ],
+            "size": [
+              12,
+              16,
+              12
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -6,
+              0,
+              -6
+            ],
+            "size": [
+              12,
+              16,
+              12
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && query.block_state('minecraft:block_face') == 'down' ",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:geometry": "geometry.mariopipe_top_roof",
+          "minecraft:selection_box": {
+            "origin": [
+              -6,
+              0,
+              -6
+            ],
+            "size": [
+              12,
+              16,
+              12
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -6,
+              0,
+              -6
+            ],
+            "size": [
+              12,
+              16,
+              12
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && query.block_state('minecraft:block_face') == 'down' ",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:geometry": "geometry.mariopipe_top_roof",
+          "minecraft:selection_box": {
+            "origin": [
+              -6,
+              0,
+              -6
+            ],
+            "size": [
+              12,
+              16,
+              12
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -6,
+              0,
+              -6
+            ],
+            "size": [
+              12,
+              16,
+              12
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && query.block_state('minecraft:block_face') == 'down'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -6,
+              0,
+              -6
+            ],
+            "size": [
+              12,
+              16,
+              12
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -6,
+              0,
+              -6
+            ],
+            "size": [
+              12,
+              16,
+              12
+            ]
+          },
+          "minecraft:geometry": "geometry.mariopipe_top_roof"
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && query.block_state('minecraft:block_face') == 'up' ",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:geometry": "geometry.mariopipe_floor",
+          "minecraft:selection_box": {
+            "origin": [
+              -6,
+              0,
+              -6
+            ],
+            "size": [
+              12,
+              16,
+              12
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -6,
+              0,
+              -6
+            ],
+            "size": [
+              12,
+              16,
+              12
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && query.block_state('minecraft:block_face') == 'up' ",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:geometry": "geometry.mariopipe_floor",
+          "minecraft:selection_box": {
+            "origin": [
+              -6,
+              0,
+              -6
+            ],
+            "size": [
+              12,
+              16,
+              12
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -6,
+              0,
+              -6
+            ],
+            "size": [
+              12,
+              16,
+              12
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && query.block_state('minecraft:block_face') == 'up' ",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:geometry": "geometry.mariopipe_floor",
+          "minecraft:selection_box": {
+            "origin": [
+              -6,
+              0,
+              -6
+            ],
+            "size": [
+              12,
+              16,
+              12
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -6,
+              0,
+              -6
+            ],
+            "size": [
+              12,
+              16,
+              12
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && query.block_state('minecraft:block_face') == 'up'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -6,
+              0,
+              -6
+            ],
+            "size": [
+              12,
+              16,
+              12
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -6,
+              0,
+              -6
+            ],
+            "size": [
+              12,
+              16,
+              12
+            ]
+          },
+          "minecraft:geometry": "geometry.mariopipe_floor"
+        }
+      }
+    ]
+  }
+}

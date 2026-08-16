@@ -1,0 +1,140 @@
+[
+  {
+    "flipbook_texture": "textures/blocks/magma/black_magma",
+    "atlas_tile": "zombie_magma_black",
+    "ticks_per_frame": 8,
+    "blend_frames": false
+  },
+  {
+    "flipbook_texture": "textures/blocks/magma/blue_magma",
+    "atlas_tile": "zombie_magma_blue",
+    "ticks_per_frame": 8,
+    "blend_frames": false
+  },
+  {
+    "flipbook_texture": "textures/blocks/magma/brown_magma",
+    "atlas_tile": "zombie_magma_brown",
+    "ticks_per_frame": 8,
+    "blend_frames": false
+  },
+  {
+    "flipbook_texture": "textures/blocks/magma/cyan_magma",
+    "atlas_tile": "zombie_magma_cyan",
+    "ticks_per_frame": 8,
+    "blend_frames": false
+  },
+  {
+    "flipbook_texture": "textures/blocks/magma/gray_magma",
+    "atlas_tile": "zombie_magma_gray",
+    "ticks_per_frame": 8,
+    "blend_frames": false
+  },
+  {
+    "flipbook_texture": "textures/blocks/magma/green_magma",
+    "atlas_tile": "zombie_magma_green",
+    "ticks_per_frame": 8,
+    "blend_frames": false
+  },
+  {
+    "flipbook_texture": "textures/blocks/magma/lightblue_magma",
+    "atlas_tile": "zombie_magma_lightblue",
+    "ticks_per_frame": 8,
+    "blend_frames": false
+  },
+  {
+    "flipbook_texture": "textures/blocks/magma/lightgray_magma",
+    "atlas_tile": "zombie_magma_lightgray",
+    "ticks_per_frame": 8,
+    "blend_frames": false
+  },
+  {
+    "flipbook_texture": "textures/blocks/magma/lime_magma",
+    "atlas_tile": "zombie_magma_lime",
+    "ticks_per_frame": 8,
+    "blend_frames": false
+  },
+  {
+    "flipbook_texture": "textures/blocks/magma/magenta_magma",
+    "atlas_tile": "zombie_magma_magenta",
+    "ticks_per_frame": 8,
+    "blend_frames": false
+  },
+  {
+    "flipbook_texture": "textures/blocks/magma/pink_magma",
+    "atlas_tile": "zombie_magma_pink",
+    "ticks_per_frame": 8,
+    "blend_frames": false
+  },
+  {
+    "flipbook_texture": "textures/blocks/magma/purple_magma",
+    "atlas_tile": "zombie_magma_purple",
+    "ticks_per_frame": 8,
+    "blend_frames": false
+  },
+  {
+    "flipbook_texture": "textures/blocks/magma/red_magma",
+    "atlas_tile": "zombie_magma_red",
+    "ticks_per_frame": 8,
+    "blend_frames": false
+  },
+  {
+    "flipbook_texture": "textures/blocks/magma/white_magma",
+    "atlas_tile": "zombie_magma_white",
+    "ticks_per_frame": 8,
+    "blend_frames": false
+  },
+  {
+    "flipbook_texture": "textures/blocks/magma/yellow_magma",
+    "atlas_tile": "zombie_magma_yellow",
+    "ticks_per_frame": 8,
+    "blend_frames": false
+  },
+  {
+    "flipbook_texture": "textures/blocks/mario/dirty_notes",
+    "atlas_tile": "zombie_dirty_notes",
+    "ticks_per_frame": 6,
+    "blend_frames": false
+  },
+  {
+    "flipbook_texture": "textures/blocks/mario/gold_brick",
+    "atlas_tile": "zombie_mario_gold_brick",
+    "ticks_per_frame": 6,
+    "blend_frames": false
+  },
+  {
+    "flipbook_texture": "textures/blocks/mario/lightblue_brick",
+    "atlas_tile": "zombie_mario_light_blue_brick",
+    "ticks_per_frame": 6,
+    "blend_frames": false
+  },
+  {
+    "flipbook_texture": "textures/blocks/mario/music_note",
+    "atlas_tile": "zombie_music_note",
+    "ticks_per_frame": 6,
+    "blend_frames": false
+  },
+  {
+    "flipbook_texture": "textures/blocks/mario/lucky_block_side_1",
+    "atlas_tile": "zombie_lucky_block_side_1",
+    "ticks_per_frame": 6,
+    "blend_frames": false
+  },
+  {
+    "flipbook_texture": "textures/blocks/mario/lucky_block_side_2",
+    "atlas_tile": "zombie_lucky_block_side_2",
+    "ticks_per_frame": 6,
+    "blend_frames": false
+  },
+  {
+    "flipbook_texture": "textures/blocks/mario/lucky_block_side_3",
+    "atlas_tile": "zombie_lucky_block_side_3",
+    "ticks_per_frame": 6,
+    "blend_frames": false
+  },
+  {
+    "flipbook_texture": "textures/blocks/mario/lucky_block_side_4",
+    "atlas_tile": "zombie_lucky_block_side_4",
+    "ticks_per_frame": 6,
+    "blend_frames": false
+  }
+]

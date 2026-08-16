@@ -1,0 +1,37 @@
+{
+  "format_version": "1.26.40",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:sonic_long_grass",
+      "menu_category": {
+        "category": "construction"
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1
+      },
+      "minecraft:map_color": "#873308",
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 1
+      },
+      "minecraft:display_name": "Sonic Long Grass",
+      "minecraft:flammable": {
+        "catch_chance_modifier": 5,
+        "destroy_chance_modifier": 20
+      },
+      "minecraft:tags": [
+        "minecraft:is_shovel_item_destructible"
+      ],
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "zombie_sonic_long_grass",
+          "render_method": "opaque",
+          "face_dimming": true,
+          "ambient_occlusion": 1
+        }
+      }
+    }
+  }
+}

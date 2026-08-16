@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:music_note_slab_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "zombie:music_note"
+      }
+    },
+    "result": {
+      "item": "zombie:music_note_slab",
+      "count": 6
+    },
+    "unlock": [
+      {
+        "item": "zombie:music_note"
+      }
+    ]
+  }
+}

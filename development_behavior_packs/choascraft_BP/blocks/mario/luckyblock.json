@@ -1,0 +1,56 @@
+{
+  "format_version": "1.26.40",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:luckyblock",
+      "menu_category": {
+        "category": "construction"
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1
+      },
+      "minecraft:map_color": "#F3D50D",
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 200
+      },
+      "minecraft:display_name": "Lucky Block",
+      "minecraft:tags": [
+        "minecraft:is_pickaxe_item_destructible",
+        "stone"
+      ],
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "zombie_lucky_block_side_1",
+          "render_method": "opaque"
+        },
+        "up": {
+          "texture": "zombie_lucky_block_top",
+          "render_method": "opaque"
+        },
+        "down": {
+          "texture": "zombie_lucky_block_top",
+          "render_method": "opaque"
+        },
+        "north": {
+          "texture": "zombie_lucky_block_side_1",
+          "render_method": "opaque"
+        },
+        "east": {
+          "texture": "zombie_lucky_block_side_2",
+          "render_method": "opaque"
+        },
+        "south": {
+          "texture": "zombie_lucky_block_side_3",
+          "render_method": "opaque"
+        },
+        "west": {
+          "texture": "zombie_lucky_block_side_4",
+          "render_method": "opaque"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:magma_blue_slab_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "zombie:magma_blue"
+      }
+    },
+    "result": {
+      "item": "zombie:magma_blue_slab",
+      "count": 6
+    },
+    "unlock": [
+      {
+        "item": "zombie:magma_blue"
+      }
+    ]
+  }
+}

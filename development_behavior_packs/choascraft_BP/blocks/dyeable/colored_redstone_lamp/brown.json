@@ -30,7 +30,15 @@
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 6
       },
-      "minecraft:loot": "loot_tables/blocks/dyeable/colored_redstone_lamp/brown.json"
+      "minecraft:loot": "loot_tables/blocks/dyeable/colored_redstone_lamp/brown.json",
+      "minecraft:tick": {
+        "interval_range": [
+          1,
+          2
+        ],
+        "looping": true
+      },
+      "zombie:dyeable_redstone_lamp": {}
     },
     "permutations": [
       {
