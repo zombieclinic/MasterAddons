@@ -12,11 +12,17 @@
       },
       "menu_category": {
         "category": "construction"
+      },
+      "states": {
+        "zombie:stacked": [
+          false,
+          true
+        ]
       }
     },
     "permutations": [
       {
-        "condition": "(query.block_state(\u0027minecraft:connection_north\u0027) || query.block_state(\u0027minecraft:connection_south\u0027)) \u0026\u0026 !query.block_state(\u0027minecraft:connection_east\u0027) \u0026\u0026 !query.block_state(\u0027minecraft:connection_west\u0027)",
+        "condition": "(query.block_state('minecraft:connection_north') || query.block_state('minecraft:connection_south')) && !query.block_state('minecraft:connection_east') && !query.block_state('minecraft:connection_west')",
         "components": {
           "minecraft:collision_box": {
             "origin": [
@@ -45,7 +51,7 @@
         }
       },
       {
-        "condition": "!query.block_state(\u0027minecraft:connection_north\u0027) \u0026\u0026 !query.block_state(\u0027minecraft:connection_south\u0027) \u0026\u0026 (query.block_state(\u0027minecraft:connection_east\u0027) || query.block_state(\u0027minecraft:connection_west\u0027))",
+        "condition": "!query.block_state('minecraft:connection_north') && !query.block_state('minecraft:connection_south') && (query.block_state('minecraft:connection_east') || query.block_state('minecraft:connection_west'))",
         "components": {
           "minecraft:collision_box": {
             "origin": [
@@ -74,7 +80,7 @@
         }
       },
       {
-        "condition": "(query.block_state(\u0027minecraft:connection_north\u0027) || query.block_state(\u0027minecraft:connection_south\u0027)) \u0026\u0026 (query.block_state(\u0027minecraft:connection_east\u0027) || query.block_state(\u0027minecraft:connection_west\u0027))",
+        "condition": "(query.block_state('minecraft:connection_north') || query.block_state('minecraft:connection_south')) && (query.block_state('minecraft:connection_east') || query.block_state('minecraft:connection_west'))",
         "components": {
           "minecraft:collision_box": [
             {
@@ -126,23 +132,43 @@
         "identifier": "geometry.zombie_demon_steel_wall",
         "bone_visibility": {
           "post": {
-            "expression": "true",
+            "expression": "(query.block_state('zombie:stacked')) || !((query.block_state('minecraft:connection_north') && query.block_state('minecraft:connection_south') && !query.block_state('minecraft:connection_east') && !query.block_state('minecraft:connection_west')) || (!query.block_state('minecraft:connection_north') && !query.block_state('minecraft:connection_south') && query.block_state('minecraft:connection_east') && query.block_state('minecraft:connection_west')))",
             "version": 1
           },
           "north": {
-            "expression": "query.block_state(\u0027minecraft:connection_north\u0027)",
+            "expression": "(query.block_state('minecraft:connection_north')) && !(query.block_state('zombie:stacked'))",
             "version": 1
           },
           "south": {
-            "expression": "query.block_state(\u0027minecraft:connection_south\u0027)",
+            "expression": "(query.block_state('minecraft:connection_south')) && !(query.block_state('zombie:stacked'))",
             "version": 1
           },
           "east": {
-            "expression": "query.block_state(\u0027minecraft:connection_east\u0027)",
+            "expression": "(query.block_state('minecraft:connection_east')) && !(query.block_state('zombie:stacked'))",
             "version": 1
           },
           "west": {
-            "expression": "query.block_state(\u0027minecraft:connection_west\u0027)",
+            "expression": "(query.block_state('minecraft:connection_west')) && !(query.block_state('zombie:stacked'))",
+            "version": 1
+          },
+          "center": {
+            "expression": "!(query.block_state('zombie:stacked')) && ((query.block_state('minecraft:connection_north') && query.block_state('minecraft:connection_south') && !query.block_state('minecraft:connection_east') && !query.block_state('minecraft:connection_west')) || (!query.block_state('minecraft:connection_north') && !query.block_state('minecraft:connection_south') && query.block_state('minecraft:connection_east') && query.block_state('minecraft:connection_west')))",
+            "version": 1
+          },
+          "north_full": {
+            "expression": "(query.block_state('minecraft:connection_north')) && (query.block_state('zombie:stacked'))",
+            "version": 1
+          },
+          "south_full": {
+            "expression": "(query.block_state('minecraft:connection_south')) && (query.block_state('zombie:stacked'))",
+            "version": 1
+          },
+          "east_full": {
+            "expression": "(query.block_state('minecraft:connection_east')) && (query.block_state('zombie:stacked'))",
+            "version": 1
+          },
+          "west_full": {
+            "expression": "(query.block_state('minecraft:connection_west')) && (query.block_state('zombie:stacked'))",
             "version": 1
           }
         }
@@ -263,7 +289,7 @@
         ]
       },
       "minecraft:connection_rule": {
-        "accepts_connections_from": "only_fences"
+        "accepts_connections_from": "all"
       },
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 1
@@ -271,10 +297,11 @@
       "minecraft:destructible_by_explosion": true,
       "minecraft:tags": [
         "minecraft:has_fence_connections",
-        "minecraft:is_pickaxe_item_destructible"
+        "minecraft:is_pickaxe_item_destructible",
+        "zombie:wall"
       ],
-      "minecraft:map_color": "#2E120A"
+      "minecraft:map_color": "#2E120A",
+      "zombie:wall_stacking": {}
     }
   }
 }
-

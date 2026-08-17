@@ -29,6 +29,7 @@ import { ZcButtonComponent, ZcButtonReleaseTickComponent } from "./blocks/button
 import { ZcPressurePlateComponent, ZcPressurePlateReleaseTickComponent } from "./blocks/pressurePlate.js";
 import { ActiveInfectedTeethComponent } from "./blocks/activeInfectedTeeth.js";
 import { ConnectedStairsComponent } from "./blocks/connectedStairs.js";
+import { WallStackingComponent } from "./blocks/wallStacking.js";
 import { HellfireTrapstoneComponent } from "./blocks/hellfireTrapstone.js";
 import { AtlantisPowerToggle } from "./blocks/atlantisPowerToggle.js";
 import { DyeableRedstoneLampComponent } from "./blocks/dyeableColoredBlocks.js";
@@ -94,7 +95,8 @@ const BLOCK_COMPONENTS = [
   ["zombie:blood_root_tick", BloodRootTickComponent],
   ["zombie:mushroom_spread", MushroomSpreadComponent],
   ["zombie:chaos_chest", ChaosChestComponent],
-  ["zombie:connected_stairs", ConnectedStairsComponent]
+  ["zombie:connected_stairs", ConnectedStairsComponent],
+  ["zombie:wall_stacking", WallStackingComponent]
 ];
 
 const ITEM_COMPONENTS = [
