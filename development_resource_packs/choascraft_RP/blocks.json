@@ -2603,5 +2603,245 @@
   },
   "zombie:amethyst_block_wall": {
     "sound": "amethyst_block"
+  },
+  "zombie:colored_glowing_obsidian_black_slab": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_black_stairs": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_black_fence": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_black_fence_gate": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_black_wall": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_blue_slab": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_blue_stairs": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_blue_fence": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_blue_fence_gate": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_blue_wall": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_brown_slab": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_brown_stairs": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_brown_fence": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_brown_fence_gate": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_brown_wall": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_cyan_slab": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_cyan_stairs": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_cyan_fence": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_cyan_fence_gate": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_cyan_wall": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_gray_slab": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_gray_stairs": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_gray_fence": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_gray_fence_gate": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_gray_wall": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_green_slab": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_green_stairs": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_green_fence": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_green_fence_gate": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_green_wall": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_light_blue_slab": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_light_blue_stairs": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_light_blue_fence": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_light_blue_fence_gate": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_light_blue_wall": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_light_gray_slab": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_light_gray_stairs": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_light_gray_fence": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_light_gray_fence_gate": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_light_gray_wall": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_lime_slab": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_lime_stairs": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_lime_fence": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_lime_fence_gate": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_lime_wall": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_magenta_slab": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_magenta_stairs": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_magenta_fence": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_magenta_fence_gate": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_magenta_wall": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_orange_slab": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_orange_stairs": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_orange_fence": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_orange_fence_gate": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_orange_wall": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_pink_slab": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_pink_stairs": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_pink_fence": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_pink_fence_gate": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_pink_wall": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_purple_slab": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_purple_stairs": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_purple_fence": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_purple_fence_gate": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_purple_wall": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_red_slab": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_red_stairs": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_red_fence": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_red_fence_gate": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_red_wall": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_white_slab": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_white_stairs": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_white_fence": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_white_fence_gate": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_white_wall": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_yellow_slab": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_yellow_stairs": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_yellow_fence": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_yellow_fence_gate": {
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_yellow_wall": {
+    "sound": "stone"
   }
 }

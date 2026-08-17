@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:colored_glowing_obsidian_light_gray_fence_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "#I#",
+      "#I#"
+    ],
+    "key": {
+      "#": {
+        "item": "zombie:colored_glowing_obsidian_light_gray"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "result": {
+      "item": "zombie:colored_glowing_obsidian_light_gray_fence",
+      "count": 3
+    },
+    "unlock": [
+      {
+        "item": "zombie:colored_glowing_obsidian_light_gray"
+      }
+    ]
+  }
+}

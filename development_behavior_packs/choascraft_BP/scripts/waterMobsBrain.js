@@ -26,7 +26,7 @@ import {
   EyewoodTrapdoorToggleComponent
 } from "./blocks/eyewoodWoodInteractions.js";
 import { ZcButtonComponent, ZcButtonReleaseTickComponent } from "./blocks/buttonInteractions.js";
-import { ZcPressurePlateComponent, ZcPressurePlateReleaseTickComponent } from "./blocks/pressurePlate.js";
+import { ZcPressurePlateComponent } from "./blocks/pressurePlate.js";
 import { ActiveInfectedTeethComponent } from "./blocks/activeInfectedTeeth.js";
 import { ConnectedStairsComponent } from "./blocks/connectedStairs.js";
 import { WallStackingComponent } from "./blocks/wallStacking.js";
@@ -80,7 +80,6 @@ const BLOCK_COMPONENTS = [
   ["zombie:button_press", ZcButtonComponent],
   ["zombie:button_release_tick", ZcButtonReleaseTickComponent],
   ["zc:pressureplate", ZcPressurePlateComponent],
-  ["zc:pressureplate_release_tick", ZcPressurePlateReleaseTickComponent],
   ["zombie:active_infected_teeth", ActiveInfectedTeethComponent],
   ["zombie:hellfire_trapstone", HellfireTrapstoneComponent],
   ["zombie:atlantis", AtlantisPowerToggle],

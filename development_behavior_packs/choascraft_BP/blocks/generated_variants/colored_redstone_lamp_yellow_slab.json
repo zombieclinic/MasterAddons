@@ -180,8 +180,8 @@
       "minecraft:map_color": "#B02E26",
       "minecraft:tick": {
         "interval_range": [
-          1,
-          2
+          20,
+          20
         ],
         "looping": true
       },

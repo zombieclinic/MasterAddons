@@ -2,7 +2,7 @@
   "format_version": "1.13.0",
   "minecraft:feature_rules": {
     "description": {
-      "identifier": "zombie:corrupted_spire_feature_rule",
+      "identifier": "zombie:infected_land_corrupted_spire_feature_rule",
       "places_feature": "zombie:corrupted_spire_floor_feature"
     },
     "conditions": {
@@ -42,4 +42,3 @@
     }
   }
 }
-

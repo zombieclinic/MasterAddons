@@ -295,16 +295,6 @@
           "minecraft:redstone_producer": {
             "power": 15,
             "strongly_powered_face": "down"
-          },
-          "zc:pressureplate_release_tick": {
-            "block_state": "zombie:powered"
-          },
-          "minecraft:tick": {
-            "interval_range": [
-              2,
-              3
-            ],
-            "looping": true
           }
         }
       },
@@ -334,16 +324,6 @@
           "minecraft:redstone_producer": {
             "power": 15,
             "strongly_powered_face": "down"
-          },
-          "zc:pressureplate_release_tick": {
-            "block_state": "zombie:powered"
-          },
-          "minecraft:tick": {
-            "interval_range": [
-              2,
-              3
-            ],
-            "looping": true
           }
         }
       },
@@ -373,16 +353,6 @@
           "minecraft:redstone_producer": {
             "power": 15,
             "strongly_powered_face": "down"
-          },
-          "zc:pressureplate_release_tick": {
-            "block_state": "zombie:powered"
-          },
-          "minecraft:tick": {
-            "interval_range": [
-              2,
-              3
-            ],
-            "looping": true
           }
         }
       },
@@ -412,20 +382,9 @@
           "minecraft:redstone_producer": {
             "power": 15,
             "strongly_powered_face": "down"
-          },
-          "zc:pressureplate_release_tick": {
-            "block_state": "zombie:powered"
-          },
-          "minecraft:tick": {
-            "interval_range": [
-              2,
-              3
-            ],
-            "looping": true
           }
         }
       }
     ]
   }
 }
-

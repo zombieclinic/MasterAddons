@@ -1,3 +1,5 @@
+import { system } from "@minecraft/server";
+
 const DEFAULT_POWERED_STATE = "zombie:powered";
 
 export class ZcPressurePlateComponent {
@@ -14,16 +16,15 @@ export class ZcPressurePlateComponent {
 	onEntityFallOn(event, component) {
 		pressPlate(event, component);
 	}
-}
 
-export class ZcPressurePlateReleaseTickComponent {
-	onTick(event, component) {
+	onStepOff(event, component) {
 		const block = event.block;
 		if (!block) return;
-
 		const poweredState = component?.params?.block_state ?? DEFAULT_POWERED_STATE;
-
-		setPowered(block, poweredState, hasEntityOnPlate(block));
+		system.run(() => {
+			if (block.typeId === "minecraft:air") return;
+			setPowered(block, poweredState, hasEntityOnPlate(block));
+		});
 	}
 }
 

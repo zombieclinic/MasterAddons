@@ -99,16 +99,6 @@
       "zc:pressureplate": {
         "block_state": "zombie:powered"
       },
-      "zc:pressureplate_release_tick": {
-        "block_state": "zombie:powered"
-      },
-      "minecraft:tick": {
-        "interval_range": [
-          1,
-          1
-        ],
-        "looping": true
-      },
       "minecraft:tags": [
         "minecraft:is_axe_item_destructible",
         "wood"
@@ -305,16 +295,6 @@
           "minecraft:redstone_producer": {
             "power": 15,
             "strongly_powered_face": "down"
-          },
-          "zc:pressureplate_release_tick": {
-            "block_state": "zombie:powered"
-          },
-          "minecraft:tick": {
-            "interval_range": [
-              2,
-              3
-            ],
-            "looping": true
           }
         }
       },
@@ -344,16 +324,6 @@
           "minecraft:redstone_producer": {
             "power": 15,
             "strongly_powered_face": "down"
-          },
-          "zc:pressureplate_release_tick": {
-            "block_state": "zombie:powered"
-          },
-          "minecraft:tick": {
-            "interval_range": [
-              2,
-              3
-            ],
-            "looping": true
           }
         }
       },
@@ -383,16 +353,6 @@
           "minecraft:redstone_producer": {
             "power": 15,
             "strongly_powered_face": "down"
-          },
-          "zc:pressureplate_release_tick": {
-            "block_state": "zombie:powered"
-          },
-          "minecraft:tick": {
-            "interval_range": [
-              2,
-              3
-            ],
-            "looping": true
           }
         }
       },
@@ -422,16 +382,6 @@
           "minecraft:redstone_producer": {
             "power": 15,
             "strongly_powered_face": "down"
-          },
-          "zc:pressureplate_release_tick": {
-            "block_state": "zombie:powered"
-          },
-          "minecraft:tick": {
-            "interval_range": [
-              2,
-              3
-            ],
-            "looping": true
           }
         }
       }
