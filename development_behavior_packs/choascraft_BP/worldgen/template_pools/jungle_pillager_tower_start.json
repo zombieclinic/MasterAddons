@@ -1,0 +1,19 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "zombie:jungle_pillager_tower_start"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "tower/tower",
+          "processors": "zombie:jungle_pillager_tower_loot",
+          "projection": "rigid"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.firewizard.get_in_bed": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"position": [
+						0.0,
+						-23.0,
+						-31.0
+					],
+					"rotation": [
+						-90.0,
+						0.0,
+						0.0
+					]
+				}
+			}
+		}
+	}
+}

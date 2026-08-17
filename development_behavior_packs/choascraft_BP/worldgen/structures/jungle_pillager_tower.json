@@ -1,0 +1,39 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:jigsaw": {
+    "description": {
+      "identifier": "zombie:jungle_pillager_tower"
+    },
+    "biome_filters": [
+      {
+        "test": "has_biome_tag",
+        "operator": "==",
+        "value": "overworld"
+      },
+      {
+        "test": "has_biome_tag",
+        "operator": "==",
+        "value": "jungle"
+      }
+    ],
+    "step": "surface_structures",
+    "terrain_adaptation": "beard_box",
+    "start_pool": "zombie:jungle_pillager_tower_start",
+    "max_depth": 1,
+    "start_height": {
+      "type": "constant",
+      "value": {
+        "absolute": -1
+      }
+    },
+    "heightmap_projection": "world_surface",
+    "dimension_padding": {
+      "bottom": 5,
+      "top": 5
+    },
+    "max_distance_from_center": {
+      "horizontal": 48,
+      "vertical": 96
+    }
+  }
+}

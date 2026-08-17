@@ -18,11 +18,21 @@ const OVERCAST_TAG = "zc:chaos_overcast";
 const BOOK_MENU_OPEN_TAG = "zc:chaos_book_menu_open";
 const SPELL_CHAOS_BLAST = "chaos_blast";
 const SPELL_LIFE_STEAL = "life_steal";
+const SPELL_FIREBALL = "fireball";
+const SPELL_POISON = "poison";
+const SPELL_FREEZE = "freeze";
 
 const CHAOS_BALL_PARTICLE = "zombie:chaos_ball";
 const LIFE_STEAL_PARTICLE = "zombie:chaos_life_steal_ball";
+const FIREBALL_PARTICLE = "zombieclinic:fireorb_trail";
+const POISON_PARTICLE = "zombieclinic:poison_spell_trail";
+const FREEZE_PARTICLE = "zombieclinic:freeze_spell_trail";
+const FIRE_MAGIC_CIRCLE = "zombieclinic:fire_magic_circle";
 const CHAOS_BLAST_ENTITY = "zombie:chaos_blast_spell";
 const LIFE_STEAL_ENTITY = "zombie:life_steal_spell";
+const FIREBALL_ENTITY = "zombie:fireball_spell";
+const POISON_ENTITY = "zombie:poison_spell";
+const FREEZE_ENTITY = "zombie:freeze_spell";
 
 const MIN_CAST_XP = 1;
 const MAX_CAST_XP = 50;
@@ -57,6 +67,41 @@ const SPELLS = [
 		baseDamage: 1,
 		damagePerXp: 5,
 		lifeSteal: true
+	},
+	{
+		id: SPELL_FIREBALL,
+		name: "Fireball",
+		particle: FIREBALL_PARTICLE,
+		entityType: FIREBALL_ENTITY,
+		baseDamage: 2,
+		damagePerXp: 5,
+		lifeSteal: false
+	},
+	{
+		id: SPELL_POISON,
+		name: "Poison Soul",
+		particle: POISON_PARTICLE,
+		entityType: POISON_ENTITY,
+		baseDamage: 2,
+		damagePerXp: 5,
+		lifeSteal: false,
+		effect: "poison",
+		effectDurationBase: 40,
+		effectDurationPerXp: 4,
+		effectAmplifier: 0
+	},
+	{
+		id: SPELL_FREEZE,
+		name: "Frozen Soul",
+		particle: FREEZE_PARTICLE,
+		entityType: FREEZE_ENTITY,
+		baseDamage: 2,
+		damagePerXp: 5,
+		lifeSteal: false,
+		effect: "slowness",
+		effectDurationBase: 20,
+		effectDurationPerXp: 2,
+		effectAmplifier: 4
 	}
 ];
 
@@ -212,6 +257,7 @@ function hitTarget(owner, projectile, directTarget, spell, location) {
 		const healthBefore = getCurrentHealth(target);
 		if (damageTarget(target, spell.damage, owner, projectile)) {
 			damagedMobCount++;
+			applySpellEffect(target, spell);
 			if (spell.lifeSteal) {
 				const healthAfter = getCurrentHealth(target);
 				stolenHealth += Math.max(0, Math.min(spell.damage, healthBefore - healthAfter));
@@ -224,6 +270,17 @@ function hitTarget(owner, projectile, directTarget, spell, location) {
 
 	spawnParticle(owner.dimension, spell.particle, location);
 	playImpactFeedback(owner, location);
+}
+
+function applySpellEffect(target, spell) {
+	if (!spell.effect) return;
+	const duration = Math.max(1, spell.effectDurationBase + spell.effectDurationPerXp * spell.castXp);
+	try {
+		target.addEffect(spell.effect, duration, {
+			amplifier: spell.effectAmplifier ?? 0,
+			showParticles: true
+		});
+	} catch {}
 }
 
 function getHitTarget(owner, projectile, location) {
@@ -439,6 +496,7 @@ async function showSpellBook(player) {
 			`§fCost: §d${castXp} levels §7(available: ${getXpLevels(player)})`,
 			`§fDamage: §6${preview.damage}`,
 			activeSpell.lifeSteal ? `§fLife stolen per mob: §a${preview.healHearts} hearts` : "",
+			activeSpell.effect ? `§f${activeSpell.name} effect: §b${preview.effectSeconds} seconds` : "",
 			`§fOvercast: ${overcast ? "§aON" : "§cOFF"}`
 		].filter(Boolean).join("\n"));
 
@@ -521,7 +579,7 @@ async function showStrengthForm(player, spell) {
 		setSelectedSpell(player, spell.id);
 		setCastStrength(player, castXp);
 		const preview = getSpellPreview(player, spell, castXp);
-		player.sendMessage(`§aBound ${spell.name}: §d${castXp} XP levels §7| §6${preview.damage} damage${preview.healHearts > 0 ? ` §7| §a${preview.healHearts} hearts healed on hit` : ""}`);
+		player.sendMessage(`§aBound ${spell.name}: §d${castXp} XP levels §7| §6${preview.damage} damage${preview.healHearts > 0 ? ` §7| §a${preview.healHearts} hearts healed on hit` : ""}${preview.effectSeconds > 0 ? ` §7| §b${preview.effectSeconds}s effect` : ""}`);
 	} catch {}
 }
 
@@ -537,16 +595,22 @@ function getBookExplanation(player, activeSpell, castXp) {
 		"§cWith Overcast OFF, insufficient levels cancel without taking XP or health.",
 		"§cAn enabled Overcast still casts at full power, and costs apply even on misses.",
 		"§aLife Steal heals only when at least one mob is damaged.",
+		"§2Poison Soul applies Poison I for 2 base seconds plus 0.2 second per XP level.",
+		"§bFrozen Soul applies Slowness V for 1 base second plus 0.1 second per XP level.",
 		"§6Damage rises from 1.00x at full health to almost 2.00x near death.",
 		"",
 		`§fActive: §b${activeSpell.name}`,
 		`§fXP levels per cast: §d${castXp} §7(you have ${getXpLevels(player)})`,
 		`§fDamage after cost: §6${preview.damage} §7(${preview.multiplier.toFixed(2)}x)`,
 		preview.healHearts > 0 ? `§fHealing on hit: §d${preview.healHearts} hearts` : "§fHealing: §7none",
+		preview.effectSeconds > 0 ? `§fStatus duration: §b${preview.effectSeconds} seconds` : "",
 		"",
 		"§bChaos Blast: §f2 base damage + 5 per XP level.",
-		"§dLife Steal: §f1 base damage + 5 per XP level; heals exactly the damage successfully dealt."
-	].join("\n");
+		"§dLife Steal: §f1 base damage + 5 per XP level; heals exactly the damage successfully dealt.",
+		"§cFireball: §f2 base damage + 5 per XP level.",
+		"§2Poison Soul: §f2 base damage + 5 per XP level; applies Poison I.",
+		"§bFrozen Soul: §f2 base damage + 5 per XP level; applies Slowness V."
+	].filter(Boolean).join("\n");
 }
 
 function getSpellExplanation(player, spell, castXp) {
@@ -554,9 +618,10 @@ function getSpellExplanation(player, spell, castXp) {
 	return [
 		`XP levels per cast (currently ${castXp}; available ${getXpLevels(player)})`,
 		`Preview: ${preview.damage} damage at ${preview.multiplier.toFixed(2)}x low-health power.`,
-		preview.healHearts > 0 ? `Life stolen: ${preview.healHearts} hearts from each successfully damaged mob.` : "Chaos Blast does not heal.",
+		preview.healHearts > 0 ? `Life stolen: ${preview.healHearts} hearts from each successfully damaged mob.` : `${spell.name} does not heal.`,
+		preview.effectSeconds > 0 ? `${spell.name} status duration: ${preview.effectSeconds} seconds.` : "",
 		`Overcast is ${isOvercastEnabled(player) ? "ON: shortages use health and cast unless you already have only 1 heart" : "OFF: shortages cancel the cast"}. Each unpaid level deals 2 self-damage and adds 1 second of a random level-0 effect. At 1 heart, it backfires without hitting mobs.`
-	].join("\n");
+	].filter(Boolean).join("\n");
 }
 
 function getSpellPreview(player, spell, castXp) {
@@ -569,6 +634,7 @@ function getSpellPreview(player, spell, castXp) {
 	return {
 		damage: Math.max(1, Math.round((spell.baseDamage + spell.damagePerXp * castXp) * multiplier)),
 		healHearts: spell.lifeSteal ? Math.round(Math.max(1, (spell.baseDamage + spell.damagePerXp * castXp) * multiplier) * 10) / 20 : 0,
+		effectSeconds: spell.effect ? Math.round((spell.effectDurationBase + spell.effectDurationPerXp * castXp) / 2) / 10 : 0,
 		multiplier
 	};
 }
@@ -666,10 +732,17 @@ function startCooldown(player) {
 }
 
 function playCastFeedback(player, spell) {
+	if (spell.id === SPELL_FIREBALL) {
+		spawnParticle(player.dimension, FIRE_MAGIC_CIRCLE, {
+			x: player.location.x,
+			y: player.location.y + 2,
+			z: player.location.z
+		});
+	}
 	try {
 		player.playSound("random.bow", {
 			volume: 0.8,
-			pitch: spell.id === SPELL_LIFE_STEAL ? 1.25 : 0.8
+			pitch: spell.id === SPELL_LIFE_STEAL ? 1.25 : spell.id === SPELL_FIREBALL ? 0.65 : 0.8
 		});
 	} catch {}
 }

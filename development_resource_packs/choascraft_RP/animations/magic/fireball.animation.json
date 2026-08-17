@@ -1,0 +1,77 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.fireorb.run": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"root": {
+					"scale": [
+						0,
+						0,
+						-0.3
+					]
+				}
+			},
+			"particle_effects": {
+				"0.0833": {
+					"effect": "orb",
+					"locator": "locator"
+				},
+				"0.2083": {
+					"effect": "orb",
+					"locator": "locator"
+				},
+				"0.2917": {
+					"effect": "orb",
+					"locator": "locator"
+				},
+				"0.375": {
+					"effect": "orb",
+					"locator": "locator"
+				},
+				"0.4167": {
+					"effect": "orb",
+					"locator": "locator"
+				},
+				"0.5417": {
+					"effect": "orb",
+					"locator": "locator"
+				},
+				"0.625": {
+					"effect": "orb",
+					"locator": "locator"
+				},
+				"0.7083": {
+					"effect": "orb",
+					"locator": "locator"
+				},
+				"0.75": {
+					"effect": "orb",
+					"locator": "locator"
+				},
+				"0.875": {
+					"effect": "orb",
+					"locator": "locator"
+				},
+				"0.9583": {
+					"effect": "orb",
+					"locator": "locator"
+				},
+				"1.0417": {
+					"effect": "orb",
+					"locator": "locator"
+				}
+			}
+		},
+		"animation.fireorb.summon_circle": {
+			"loop": false,
+			"animation_length": 0.5,
+			"particle_effects": {
+				"0.0": {
+					"effect": "summon_circle"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "zombie:sonic_construction_mario_pipe_recipe"
+    },
+    "tags": [
+      "mario_pipe"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:yellow_concrete"
+      },
+      {
+        "item": "minecraft:black_dye"
+      }
+    ],
+    "result": [
+      {
+        "item": "zombie:sonic_construction",
+        "count": 2
+      }
+    ],
+    "unlock": [
+      {
+        "item": "zombie:mario_pipe_top"
+      }
+    ]
+  }
+}

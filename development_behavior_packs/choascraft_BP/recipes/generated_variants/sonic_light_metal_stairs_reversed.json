@@ -5,7 +5,7 @@
       "identifier": "zombie:sonic_light_metal_stairs_reversed_recipe"
     },
     "tags": [
-      "crafting_table"
+      "mario_pipe"
     ],
     "pattern": [
       "  #",
@@ -23,7 +23,7 @@
     },
     "unlock": [
       {
-        "item": "zombie:sonic_light_metal"
+        "item": "zombie:mario_pipe_top"
       }
     ]
   }

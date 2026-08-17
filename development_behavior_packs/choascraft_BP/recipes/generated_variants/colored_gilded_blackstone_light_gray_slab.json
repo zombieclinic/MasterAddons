@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:colored_gilded_blackstone_light_gray_slab_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "BBB"
+    ],
+    "key": {
+      "B": {
+        "item": "zombie:colored_gilded_blackstone_light_gray"
+      }
+    },
+    "result": [
+      {
+        "item": "zombie:colored_gilded_blackstone_light_gray_slab",
+        "count": 6
+      }
+    ],
+    "unlock": [
+      {
+        "item": "zombie:colored_gilded_blackstone_light_gray"
+      }
+    ]
+  }
+}

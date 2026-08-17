@@ -5,7 +5,7 @@
       "identifier": "zombie:sonic_grass_stairs_reversed_recipe"
     },
     "tags": [
-      "crafting_table"
+      "mario_pipe"
     ],
     "pattern": [
       "  #",
@@ -23,7 +23,7 @@
     },
     "unlock": [
       {
-        "item": "zombie:sonic_grass"
+        "item": "zombie:mario_pipe_top"
       }
     ]
   }

@@ -5,7 +5,7 @@
       "identifier": "zombie:sonic_construction_stairs_recipe"
     },
     "tags": [
-      "crafting_table"
+      "mario_pipe"
     ],
     "pattern": [
       "#  ",
@@ -23,7 +23,7 @@
     },
     "unlock": [
       {
-        "item": "zombie:sonic_construction"
+        "item": "zombie:mario_pipe_top"
       }
     ]
   }

@@ -1,0 +1,234 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:colored_amethyst_red_wall",
+      "traits": {
+        "minecraft:connection": {
+          "enabled_states": [
+            "minecraft:cardinal_connections"
+          ]
+        }
+      },
+      "menu_category": {
+        "category": "construction"
+      }
+    },
+    "permutations": [
+      {
+        "condition": "(query.block_state('minecraft:connection_north') || query.block_state('minecraft:connection_south')) && !query.block_state('minecraft:connection_east') && !query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:collision_box": {
+            "origin": [
+              -4,
+              0,
+              -8
+            ],
+            "size": [
+              8,
+              24,
+              16
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -4,
+              0,
+              -8
+            ],
+            "size": [
+              8,
+              16,
+              16
+            ]
+          }
+        }
+      },
+      {
+        "condition": "!query.block_state('minecraft:connection_north') && !query.block_state('minecraft:connection_south') && (query.block_state('minecraft:connection_east') || query.block_state('minecraft:connection_west'))",
+        "components": {
+          "minecraft:collision_box": {
+            "origin": [
+              -8,
+              0,
+              -4
+            ],
+            "size": [
+              16,
+              24,
+              8
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -4
+            ],
+            "size": [
+              16,
+              16,
+              8
+            ]
+          }
+        }
+      },
+      {
+        "condition": "(query.block_state('minecraft:connection_north') || query.block_state('minecraft:connection_south')) && (query.block_state('minecraft:connection_east') || query.block_state('minecraft:connection_west'))",
+        "components": {
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -4,
+                0,
+                -8
+              ],
+              "size": [
+                8,
+                24,
+                16
+              ]
+            },
+            {
+              "origin": [
+                -8,
+                0,
+                -4
+              ],
+              "size": [
+                16,
+                24,
+                8
+              ]
+            }
+          ],
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              16,
+              16
+            ]
+          }
+        }
+      }
+    ],
+    "components": {
+      "minecraft:display_name": "Red Amethyst Wall",
+      "minecraft:support": {
+        "shape": "fence"
+      },
+      "minecraft:geometry": {
+        "identifier": "geometry.zombie_demon_steel_wall",
+        "bone_visibility": {
+          "post": {
+            "expression": "true",
+            "version": 1
+          },
+          "north": {
+            "expression": "query.block_state('minecraft:connection_north')",
+            "version": 1
+          },
+          "south": {
+            "expression": "query.block_state('minecraft:connection_south')",
+            "version": 1
+          },
+          "east": {
+            "expression": "query.block_state('minecraft:connection_east')",
+            "version": 1
+          },
+          "west": {
+            "expression": "query.block_state('minecraft:connection_west')",
+            "version": 1
+          }
+        }
+      },
+      "minecraft:item_visual": {
+        "geometry": {
+          "identifier": "geometry.zombie_demon_steel_wall",
+          "bone_visibility": {
+            "post": {
+              "expression": "true",
+              "version": 1
+            },
+            "north": {
+              "expression": "true",
+              "version": 1
+            },
+            "south": {
+              "expression": "true",
+              "version": 1
+            },
+            "east": {
+              "expression": "false",
+              "version": 1
+            },
+            "west": {
+              "expression": "false",
+              "version": 1
+            }
+          }
+        },
+        "material_instances": {
+          "*": {
+            "texture": "zombie_colored_amethyst_red",
+            "render_method": "opaque",
+            "face_dimming": true,
+            "ambient_occlusion": 1
+          }
+        }
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "zombie_colored_amethyst_red",
+          "render_method": "opaque",
+          "face_dimming": true,
+          "ambient_occlusion": 1
+        }
+      },
+      "minecraft:selection_box": {
+        "origin": [
+          -4,
+          0,
+          -4
+        ],
+        "size": [
+          8,
+          16,
+          8
+        ]
+      },
+      "minecraft:collision_box": {
+        "origin": [
+          -4,
+          0,
+          -4
+        ],
+        "size": [
+          8,
+          24,
+          8
+        ]
+      },
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "only_fences"
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1.5
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 6
+      },
+      "minecraft:tags": [
+        "minecraft:has_fence_connections",
+        "minecraft:is_pickaxe_item_destructible",
+        "stone"
+      ],
+      "minecraft:map_color": "#B02E26"
+    }
+  }
+}

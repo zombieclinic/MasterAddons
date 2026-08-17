@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "zombie:mario_yellow_question_mark_mario_pipe_recipe"
+    },
+    "tags": [
+      "mario_pipe"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:gold_block"
+      },
+      {
+        "item": "minecraft:glowstone_dust"
+      }
+    ],
+    "result": [
+      {
+        "item": "zombie:mario_yellow_question_mark",
+        "count": 2
+      }
+    ],
+    "unlock": [
+      {
+        "item": "zombie:mario_pipe_top"
+      }
+    ]
+  }
+}

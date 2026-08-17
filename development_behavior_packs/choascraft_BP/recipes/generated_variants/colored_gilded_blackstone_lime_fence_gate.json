@@ -1,0 +1,34 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:colored_gilded_blackstone_lime_fence_gate_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "SBS",
+      "SBS"
+    ],
+    "key": {
+      "B": {
+        "item": "zombie:colored_gilded_blackstone_lime"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": [
+      {
+        "item": "zombie:colored_gilded_blackstone_lime_fence_gate",
+        "count": 1
+      }
+    ],
+    "unlock": [
+      {
+        "item": "zombie:colored_gilded_blackstone_lime"
+      }
+    ]
+  }
+}

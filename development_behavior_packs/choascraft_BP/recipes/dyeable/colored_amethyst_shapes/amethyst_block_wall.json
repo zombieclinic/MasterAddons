@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:amethyst_block_wall_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "###",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:amethyst_block"
+      }
+    },
+    "result": {
+      "item": "zombie:amethyst_block_wall",
+      "count": 6
+    },
+    "unlock": [
+      {
+        "item": "minecraft:amethyst_block"
+      }
+    ]
+  }
+}

@@ -1,0 +1,222 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "zombieclinic:fireorb",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:snowball"
+		},
+		"component_groups": {
+			"zombieclinic:burn": {
+				"minecraft:area_attack": {
+					"damage_range": 1,
+					"damage_per_tick": 4,
+					"cause": "fire_tick",
+					"entity_filter": {
+						"all_of": [
+							{
+								"test": "is_family",
+								"value": "monster",
+								"subject": "other"
+							}
+						]
+					}
+				},
+				"minecraft:timer": {
+					"time": [
+						0.1,
+						0.1
+					],
+					"time_down_event": {
+						"event": "fire_effect",
+						"target": "self"
+					}
+				}
+			},
+			"zombieclinic:burn_effect": {
+				"minecraft:area_attack": {
+					"damage_range": 2,
+					"damage_per_tick": 2,
+					"cause": "fire_tick",
+					"entity_filter": {
+						"all_of": [
+							{
+								"test": "is_family",
+								"value": "monster",
+								"subject": "other"
+							}
+						]
+					}
+				},
+				"minecraft:timer": {
+					"time": [
+						0.1,
+						0.1
+					],
+					"time_down_event": {
+						"event": "fire_effect_two",
+						"target": "self"
+					}
+				}
+			},
+			"zombieclinic:expire": {
+				"minecraft:instant_despawn": {}
+			},
+			"zombieclinic:aoe": {
+				"minecraft:timer": {
+					"time": [
+						2,
+						2
+					],
+					"time_down_event": {
+						"event": "expire",
+						"target": "self"
+					}
+				}
+			},
+			"check": {
+				"minecraft:skin_id": {
+					"value": 1
+				}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 0.25
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"impact_damage": {
+						"damage": 8,
+						"knockback": false
+					},
+					"particle_on_hit": {
+						"particle_type": "flame",
+						"num_particles": 6,
+						"on_entity_hit": true,
+						"on_other_hit": true
+					},
+					"stick_in_ground": {
+						"shake_time": 0
+					},
+					"definition_event": {
+						"event_trigger": {
+							"event": "active",
+							"target": "self"
+						}
+					}
+				},
+				"anchor": 0,
+				"power": 1.25,
+				"gravity": 0.02,
+				"angle_offset": 0,
+				"offset": [
+					0,
+					2,
+					0
+				],
+				"catch_fire": true
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:conditional_bandwidth_optimization": {
+				"default_values": {
+					"max_optimized_distance": 100,
+					"max_dropped_ticks": 7,
+					"use_motion_prediction_hints": true
+				}
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "entity_explosion",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_underwater",
+									"subject": "self",
+									"value": true
+								}
+							]
+						},
+						"event": "expire"
+					}
+				]
+			}
+		},
+		"events": {
+			"active": {
+				"sequence": [
+					{
+						"add": {
+							"component_groups": [
+								"zombieclinic:burn"
+							]
+						}
+					}
+				]
+			},
+			"fire_effect": {
+				"sequence": [
+					{
+						"add": {
+							"component_groups": [
+								"zombieclinic:burn_effect"
+							]
+						}
+					}
+				]
+			},
+			"fire_effect_two": {
+				"sequence": [
+					{
+						"add": {
+							"component_groups": [
+								"zombieclinic:aoe"
+							]
+						}
+					}
+				]
+			},
+			"expire": {
+				"sequence": [
+					{
+						"add": {
+							"component_groups": [
+								"zombieclinic:expire"
+							]
+						}
+					}
+				]
+			},
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"zombieclinic:burn",
+						"check"
+					]
+				}
+			},
+			"minecraft:entity_born": {
+				"add": {
+					"component_groups": [
+						"check"
+					]
+				}
+			}
+		}
+	}
+}

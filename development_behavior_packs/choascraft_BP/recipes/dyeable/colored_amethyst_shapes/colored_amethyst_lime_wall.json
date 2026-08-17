@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:colored_amethyst_lime_wall_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "###",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "zombie:colored_amethyst_lime"
+      }
+    },
+    "result": {
+      "item": "zombie:colored_amethyst_lime_wall",
+      "count": 6
+    },
+    "unlock": [
+      {
+        "item": "zombie:colored_amethyst_lime"
+      }
+    ]
+  }
+}

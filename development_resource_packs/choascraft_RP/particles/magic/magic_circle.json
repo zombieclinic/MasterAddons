@@ -1,0 +1,65 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "zombieclinic:fire_magic_circle",
+			"basic_render_parameters": {
+				"material": "particles_blend",
+				"texture": "textures/magic/fire_magic_circle"
+			}
+		},
+		"components": {
+			"minecraft:emitter_rate_instant": {
+				"num_particles": 1
+			},
+			"minecraft:emitter_lifetime_once": {
+				"active_time": 0.1
+			},
+			"minecraft:emitter_shape_point": {
+				"offset": [
+					0,
+					-2,
+					0
+				]
+			},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": 0.65
+			},
+			"minecraft:particle_initial_spin": {
+				"rotation": "math.random(0, 360)",
+				"rotation_rate": 35
+			},
+			"minecraft:particle_initial_speed": 0,
+			"minecraft:particle_motion_dynamic": {
+				"rotation_acceleration": 50
+			},
+			"minecraft:particle_appearance_tinting": {
+				"color": [
+					1,
+					1,
+					1,
+					"1.0 - (variable.particle_age / variable.particle_lifetime)"
+				]
+			},
+			"minecraft:particle_appearance_billboard": {
+				"size": [
+					1.6,
+					1.6
+				],
+				"facing_camera_mode": "emitter_transform_xz",
+				"uv": {
+					"texture_width": 64,
+					"texture_height": 64,
+					"uv": [
+						0,
+						0
+					],
+					"uv_size": [
+						64,
+						64
+					]
+				}
+			}
+		}
+	}
+}

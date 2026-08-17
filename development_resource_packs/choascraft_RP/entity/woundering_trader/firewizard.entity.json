@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "zombie:firewizard",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"default": "textures/woundering_traders/firewizard"
+			},
+			"geometry": {
+				"default": "geometry.firewizard"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#F50C20",
+				"overlay_color": "#1778D2"
+			},
+			"animations": {
+				"walking": "animation.villager.move",
+				"sleeping": "animation.firewizard.get_in_bed"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"walking": "query.modified_move_speed >= 0.01 && !query.is_sleeping"
+					},
+					{
+						"sleeping": "query.is_sleeping"
+					}
+				]
+			}
+		}
+	}
+}

@@ -55,6 +55,22 @@ const REDSTONE_OFFSETS = [
   { x: 0, y: 0, z: 1 }, { x: 0, y: 0, z: -1 }
 ];
 
+// A powered colored lamp also lights colored lamp blocks within three blocks.
+// Only a lamp receiving real redstone power acts as a source, so the effect
+// cannot chain forever through a long row of lamps.
+const LAMP_RELAY_RANGE = 3;
+const LAMP_PREFIX = "zombie:colored_redstone_lamp_";
+const LAMP_RELAY_OFFSETS = [];
+for (let x = -LAMP_RELAY_RANGE; x <= LAMP_RELAY_RANGE; x++) {
+  for (let y = -LAMP_RELAY_RANGE; y <= LAMP_RELAY_RANGE; y++) {
+    for (let z = -LAMP_RELAY_RANGE; z <= LAMP_RELAY_RANGE; z++) {
+      if (x === 0 && y === 0 && z === 0) continue;
+      if ((x * x) + (y * y) + (z * z) > LAMP_RELAY_RANGE * LAMP_RELAY_RANGE) continue;
+      LAMP_RELAY_OFFSETS.push({ x, y, z });
+    }
+  }
+}
+
 function heldItem(player) {
   return player.getComponent("minecraft:equippable")?.getEquipment(EquipmentSlot.Mainhand);
 }
@@ -96,7 +112,7 @@ export class DyeableColoredBlockComponent {
   }
 }
 
-function powerAt(block) {
+function directPowerAt(block) {
   try {
     const direct = block.getRedstonePower() ?? 0;
     if (direct > 0) return direct;
@@ -112,11 +128,27 @@ function powerAt(block) {
   return 0;
 }
 
+function poweredLampInRange(block) {
+  const { x, y, z } = block.location;
+  for (const offset of LAMP_RELAY_OFFSETS) {
+    try {
+      const nearby = block.dimension.getBlock({
+        x: x + offset.x,
+        y: y + offset.y,
+        z: z + offset.z
+      });
+      if (!nearby?.typeId.startsWith(LAMP_PREFIX)) continue;
+      if (directPowerAt(nearby) > 0) return true;
+    } catch {}
+  }
+  return false;
+}
+
 export class DyeableRedstoneLampComponent {
   onTick({ block }) {
     if (!block) return;
     const current = block.permutation.getState("zombie:lit");
-    const desired = powerAt(block) > 0 ? 1 : 0;
+    const desired = directPowerAt(block) > 0 || poweredLampInRange(block) ? 1 : 0;
     if (current === desired) return;
     try {
       block.setPermutation(block.permutation.withState("zombie:lit", desired));

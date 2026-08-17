@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "zombie:jungle_pillager_tower_set"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 42873119,
+      "separation": 24,
+      "spacing": 64,
+      "spread_type": "linear"
+    },
+    "structures": [
+      {
+        "structure": "zombie:jungle_pillager_tower",
+        "weight": 1
+      }
+    ]
+  }
+}

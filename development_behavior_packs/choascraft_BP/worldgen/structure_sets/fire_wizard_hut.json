@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "zombie:fire_wizard_hut_set"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 73194627,
+      "separation": 28,
+      "spacing": 72,
+      "spread_type": "linear"
+    },
+    "structures": [
+      {
+        "structure": "zombie:fire_wizard_hut",
+        "weight": 1
+      }
+    ]
+  }
+}

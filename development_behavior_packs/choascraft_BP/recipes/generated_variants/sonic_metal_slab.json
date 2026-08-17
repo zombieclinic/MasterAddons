@@ -5,7 +5,7 @@
       "identifier": "zombie:sonic_metal_slab_recipe"
     },
     "tags": [
-      "crafting_table"
+      "mario_pipe"
     ],
     "pattern": [
       "###"
@@ -21,7 +21,7 @@
     },
     "unlock": [
       {
-        "item": "zombie:sonic_metal"
+        "item": "zombie:mario_pipe_top"
       }
     ]
   }

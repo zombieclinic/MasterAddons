@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "zombie:fire_wizard_hut_start"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "traders_buildings/wizard_hut",
+          "projection": "rigid"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

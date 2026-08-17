@@ -14,14 +14,20 @@
 			},
 			"animations": {
 				"walking": "animation.villager.move",
-				"lookatplayer": "animation.common.look_at_target"
+				"lookatplayer": "animation.common.look_at_target",
+				"sleeping": "animation.villager.get_in_bed"
 			},
 			"scripts": {
 				"animate": [
 					{
-						"walking": "query.modified_move_speed>=0.01"
+						"walking": "query.modified_move_speed >= 0.01 && !query.is_sleeping"
 					},
-					"lookatplayer"
+					{
+						"lookatplayer": "!query.is_sleeping"
+					},
+					{
+						"sleeping": "query.is_sleeping"
+					}
 				]
 			},
 			"render_controllers": [

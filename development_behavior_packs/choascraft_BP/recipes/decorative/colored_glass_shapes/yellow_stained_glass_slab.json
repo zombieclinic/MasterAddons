@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:yellow_stained_glass_slab_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:yellow_stained_glass"
+      }
+    },
+    "result": {
+      "item": "zombie:yellow_stained_glass_slab",
+      "count": 6
+    },
+    "unlock": [
+      {
+        "item": "minecraft:yellow_stained_glass"
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "zombie:shroomlight_black_recipe"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      { "item": "minecraft:shroomlight" },
+      { "item": "minecraft:black_dye" }
+    ],
+    "result": [
+      { "item": "zombie:shroomlight_black", "count": 1 }
+    ],
+    "unlock": [
+      { "item": "minecraft:shroomlight" },
+      { "item": "minecraft:black_dye" }
+    ]
+  }
+}

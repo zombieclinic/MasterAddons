@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "zombie:music_note_mario_pipe_recipe"
+    },
+    "tags": [
+      "mario_pipe"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:noteblock"
+      },
+      {
+        "item": "minecraft:redstone"
+      }
+    ],
+    "result": [
+      {
+        "item": "zombie:music_note",
+        "count": 2
+      }
+    ],
+    "unlock": [
+      {
+        "item": "zombie:mario_pipe_top"
+      }
+    ]
+  }
+}

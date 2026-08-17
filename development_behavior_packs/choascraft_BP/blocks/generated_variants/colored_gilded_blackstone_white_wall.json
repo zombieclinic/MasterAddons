@@ -1,0 +1,127 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:colored_gilded_blackstone_white_wall",
+      "menu_category": {
+        "category": "construction"
+      },
+      "traits": {
+        "minecraft:connection": {
+          "enabled_states": [
+            "minecraft:cardinal_connections"
+          ]
+        }
+      }
+    },
+    "components": {
+      "minecraft:display_name": "White Gilded Blackstone Wall",
+      "minecraft:support": {
+        "shape": "fence"
+      },
+      "minecraft:geometry": {
+        "identifier": "geometry.zombie.gingerbread_wall",
+        "bone_visibility": {
+          "post": {
+            "expression": "true",
+            "version": 1
+          },
+          "north": {
+            "expression": "query.block_state('minecraft:connection_north')",
+            "version": 1
+          },
+          "south": {
+            "expression": "query.block_state('minecraft:connection_south')",
+            "version": 1
+          },
+          "east": {
+            "expression": "query.block_state('minecraft:connection_east')",
+            "version": 1
+          },
+          "west": {
+            "expression": "query.block_state('minecraft:connection_west')",
+            "version": 1
+          }
+        }
+      },
+      "minecraft:item_visual": {
+        "geometry": {
+          "identifier": "geometry.zombie.gingerbread_wall",
+          "bone_visibility": {
+            "post": {
+              "expression": "true",
+              "version": 1
+            },
+            "north": {
+              "expression": "true",
+              "version": 1
+            },
+            "south": {
+              "expression": "true",
+              "version": 1
+            },
+            "east": {
+              "expression": "false",
+              "version": 1
+            },
+            "west": {
+              "expression": "false",
+              "version": 1
+            }
+          }
+        },
+        "material_instances": {
+          "*": {
+            "texture": "zombie_colored_gilded_blackstone_white",
+            "render_method": "opaque"
+          }
+        }
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "zombie_colored_gilded_blackstone_white",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:selection_box": {
+        "origin": [
+          -4,
+          0,
+          -4
+        ],
+        "size": [
+          8,
+          16,
+          8
+        ]
+      },
+      "minecraft:collision_box": {
+        "origin": [
+          -4,
+          0,
+          -4
+        ],
+        "size": [
+          8,
+          24,
+          8
+        ]
+      },
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "only_fences"
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1.5
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 6
+      },
+      "minecraft:map_color": "#A94F2B",
+      "minecraft:tags": [
+        "minecraft:has_fence_connections",
+        "minecraft:is_pickaxe_item_destructible",
+        "stone"
+      ]
+    }
+  }
+}

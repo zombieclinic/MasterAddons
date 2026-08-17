@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:lumenroot_rock_wall_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "BBB",
+      "BBB"
+    ],
+    "key": {
+      "B": {
+        "item": "zombie:lumenroot_rock"
+      }
+    },
+    "result": [
+      {
+        "item": "zombie:lumenroot_rock_wall",
+        "count": 6
+      }
+    ],
+    "unlock": [
+      {
+        "item": "zombie:lumenroot_rock"
+      }
+    ]
+  }
+}

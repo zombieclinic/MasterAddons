@@ -1032,6 +1032,92 @@
     ]
   },
 
+  "mario_crafting_input_grid": {
+    "type": "grid",
+    "size": [54, 54],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "grid_dimensions": [3, 3],
+    "collection_name": "crafting_input_items",
+    "controls": [
+      { "mario_slot_0@crafting.crafting_input_grid_item": { "grid_position": [0, 0], "$focus_id_binding_type": "none", "$focus_id": "mario_slot_0" } },
+      { "mario_slot_1@crafting.crafting_input_grid_item": { "grid_position": [1, 0], "$focus_id_binding_type": "none", "$focus_id": "mario_slot_1" } },
+      { "mario_slot_2@crafting.crafting_input_grid_item": { "grid_position": [2, 0], "$focus_id_binding_type": "none", "$focus_id": "mario_slot_2" } },
+      { "mario_slot_3@crafting.crafting_input_grid_item": { "grid_position": [0, 1], "$focus_id_binding_type": "none", "$focus_id": "mario_slot_3" } },
+      { "mario_slot_4@crafting.crafting_input_grid_item": { "grid_position": [1, 1], "$focus_id_binding_type": "none", "$focus_id": "mario_slot_4" } },
+      { "mario_slot_5@crafting.crafting_input_grid_item": { "grid_position": [2, 1], "$focus_id_binding_type": "none", "$focus_id": "mario_slot_5" } },
+      { "mario_slot_6@crafting.crafting_input_grid_item": { "grid_position": [0, 2], "$focus_id_binding_type": "none", "$focus_id": "mario_slot_6" } },
+      { "mario_slot_7@crafting.crafting_input_grid_item": { "grid_position": [1, 2], "$focus_id_binding_type": "none", "$focus_id": "mario_slot_7" } },
+      {
+        "mario_slot_8@crafting.crafting_input_grid_item": {
+          "grid_position": [2, 2],
+          "$focus_id_binding_type": "none",
+          "$focus_id": "mario_slot_8",
+          "$focus_override_right_binding_type": "none",
+          "$focus_override_right": "crafting_output_item"
+        }
+      }
+    ]
+  },
+
+  "mario_crafting_panel_top_half": {
+    "type": "panel",
+    "size": [
+      176,
+      96
+    ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      {
+        "mario_crafting_background": {
+          "type": "image",
+          "size": [
+            176,
+            96
+          ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "texture": "textures/ui/mario/mario_crafting_table",
+          "layer": 0
+        }
+      },
+      {
+        "mario_crafting_inputs@crafting.mario_crafting_input_grid": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [
+            30,
+            24
+          ],
+          "layer": 1
+        }
+      },
+      {
+        "mario_crafting_arrow@crafting.crafting_arrow_large": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [
+            88,
+            42
+          ],
+          "layer": 1
+        }
+      },
+      {
+        "mario_crafting_output@crafting.chaos_output_grid": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [
+            124,
+            35
+          ],
+          "layer": 1
+        }
+      }
+    ]
+  },
+
   "normal_or_chaos_crafter_screen": {
     "type": "panel",
     "controls": [
@@ -1044,7 +1130,7 @@
             },
             {
               "binding_type": "view",
-              "source_property_name": "(not (#text = 'Chaos Crafter'))",
+              "source_property_name": "((not (#text = 'Chaos Crafter')) and (not (#text = 'Mario Pipe')))",
               "target_property_name": "#visible"
             }
           ]
@@ -1060,6 +1146,22 @@
             {
               "binding_type": "view",
               "source_property_name": "(#text = 'Chaos Crafter')",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "mario_pipe@crafting.recipe_inventory_screen": {
+          "$top_half_variant": "crafting.mario_crafting_panel_top_half",
+          "bindings": [
+            {
+              "binding_name": "#crafting_label_text",
+              "binding_name_override": "#text"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(#text = 'Mario Pipe')",
               "target_property_name": "#visible"
             }
           ]

@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:white_stained_glass_stairs_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "#  ",
+      "## ",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:white_stained_glass"
+      }
+    },
+    "result": {
+      "item": "zombie:white_stained_glass_stairs",
+      "count": 4
+    },
+    "unlock": [
+      {
+        "item": "minecraft:white_stained_glass"
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:jigsaw": {
+    "description": {
+      "identifier": "zombie:fire_wizard_hut"
+    },
+    "biome_filters": [
+      {
+        "test": "has_biome_tag",
+        "operator": "==",
+        "value": "overworld"
+      },
+      {
+        "any_of": [
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "desert"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "savanna"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "mesa"
+          }
+        ]
+      }
+    ],
+    "step": "surface_structures",
+    "terrain_adaptation": "beard_box",
+    "start_pool": "zombie:fire_wizard_hut_start",
+    "max_depth": 1,
+    "start_height": {
+      "type": "constant",
+      "value": {
+        "absolute": -1
+      }
+    },
+    "heightmap_projection": "world_surface",
+    "dimension_padding": {
+      "bottom": 5,
+      "top": 5
+    },
+    "max_distance_from_center": {
+      "horizontal": 48,
+      "vertical": 48
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:amethyst_block_fence_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "#A#",
+      "#A#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:amethyst_block"
+      },
+      "A": {
+        "item": "minecraft:amethyst_shard"
+      }
+    },
+    "result": {
+      "item": "zombie:amethyst_block_fence",
+      "count": 3
+    },
+    "unlock": [
+      {
+        "item": "minecraft:amethyst_block"
+      }
+    ]
+  }
+}

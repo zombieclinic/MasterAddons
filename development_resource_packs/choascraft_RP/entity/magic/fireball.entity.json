@@ -1,0 +1,40 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "zombieclinic:fireorb",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/magic/fireball"
+			},
+			"geometry": {
+				"default": "geometry.fireball"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#748cee",
+				"overlay_color": "#ff8e59"
+			},
+			"animations": {
+				"run": "animation.fireorb.run",
+				"summon_circle": "animation.fireorb.summon_circle"
+			},
+			"scripts": {
+				"animate": [
+					"summon_circle",
+					{
+						"run": "query.is_alive"
+					}
+				]
+			},
+			"particle_effects": {
+				"orb": "zombieclinic:fireorb_trail",
+				"summon_circle": "zombieclinic:fire_magic_circle"
+			}
+		}
+	}
+}

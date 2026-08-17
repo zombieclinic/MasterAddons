@@ -51,7 +51,7 @@
       "minecraft:display_name": "Mario Pipe Top",
       "minecraft:crafting_table": {
         "crafting_tags": [
-          "crafting_table"
+          "mario_pipe"
         ],
         "table_name": "Mario Pipe"
       },
