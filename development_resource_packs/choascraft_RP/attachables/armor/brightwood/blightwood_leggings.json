@@ -1,0 +1,16 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "zombie:blightwood_leggings",
+      "materials": { "default": "armor", "enchanted": "armor_enchanted" },
+      "textures": {
+        "default": "textures/blightwood/armor/brightwood_leggings",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": { "default": "geometry.brightwood" },
+      "render_controllers": ["controller.render.armor"],
+      "scripts": { "parent_setup": "variable.leg_layer_visible = 0.0;" }
+    }
+  }
+}

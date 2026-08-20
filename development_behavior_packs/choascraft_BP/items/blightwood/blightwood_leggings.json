@@ -1,0 +1,25 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:blightwood_leggings",
+      "menu_category": { "category": "equipment", "group": "minecraft:itemGroup.name.leggings" }
+    },
+    "components": {
+      "minecraft:display_name": { "value": "Blightwood Legguards" },
+      "minecraft:max_stack_size": 1,
+      "minecraft:icon": "blightwood_leggings",
+      "minecraft:wearable": { "slot": "slot.armor.legs", "protection": 7 },
+      "minecraft:enchantable": { "slot": "armor_legs", "value": 15 },
+      "minecraft:durability": { "max_durability": 2100 },
+      "minecraft:hover_text_color": "dark_green",
+      "minecraft:tags": { "tags": ["minecraft:transformable_items", "minecraft:is_armor"] },
+      "minecraft:repairable": {
+        "repair_items": [
+          { "items": ["zombie:blightwood_spore_pod"], "repair_amount": 500 },
+          { "items": ["zombie:blightwood_planks"], "repair_amount": 200 }
+        ]
+      }
+    }
+  }
+}

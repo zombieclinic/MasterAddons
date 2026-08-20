@@ -6,6 +6,36 @@
   },
   "entity_sounds": {
     "entities": {
+      "zombie:bloater": {
+        "events": {
+          "ambient": "mob.bloater.say",
+          "hurt": "mob.bloater.hurt",
+          "death": "mob.bloater.death",
+          "step": { "sound": "mob.bloater.step", "volume": 0.45, "pitch": 1.0 }
+        },
+        "pitch": [0.8, 1.2],
+        "volume": 1.0
+      },
+      "zombie:puker": {
+        "events": {
+          "ambient": "mob.puker.say",
+          "hurt": "mob.puker.hurt",
+          "death": "mob.puker.death",
+          "step": { "sound": "mob.puker.step", "volume": 0.45, "pitch": 1.0 }
+        },
+        "pitch": [0.8, 1.2],
+        "volume": 1.0
+      },
+      "zombie:zombie_boss": {
+        "events": {
+          "ambient": "mob.zomboss.say",
+          "hurt": "mob.zomboss.hurt",
+          "death": "mob.zomboss.death",
+          "step": { "sound": "mob.zomboss.step", "volume": 0.55, "pitch": 1.0 }
+        },
+        "pitch": [0.85, 1.05],
+        "volume": 1.0
+      },
       "zombie:end_golem": {
         "events": {
           "death": "mob.irongolem.death",

@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:aggregate_feature": {
+    "description": {
+      "identifier": "zombie:blightwood_tree_feature"
+    },
+    "features": [
+      "zombie:blightwood_tree_base_feature",
+      "zombie:blightwood_tree_spores_feature"
+    ],
+    "early_out": "none"
+  }
+}

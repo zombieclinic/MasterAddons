@@ -2,6 +2,18 @@
   "resource_pack_name": "choascraft",
   "texture_name": "atlas.terrain",
   "texture_data": {
+    "blightwood_log": { "textures": "textures/blightwood/infected_log" },
+    "blightwood_log_top": { "textures": "textures/blightwood/infected_log_top" },
+    "stripped_blightwood_log": { "textures": "textures/blightwood/blightwood_strippeds" },
+    "stripped_blightwood_log_top": { "textures": "textures/blightwood/blightwood_strippeds_top" },
+    "blightwood_planks": { "textures": "textures/blightwood/blightwood_planks" },
+    "blightwood_leaves": { "textures": "textures/blightwood/blightwood_leaves" },
+    "blightwood_dirt": { "textures": "textures/blightwood/dirt" },
+    "blightwood_grass_side": { "textures": "textures/blightwood/grass_side" },
+    "blightwood_grass_top": { "textures": "textures/blightwood/grass_top" },
+    "blightwood_sapling": { "textures": "textures/blightwood/saplin" },
+    "blightwood_tree_spore": { "textures": "textures/blightwood/tree_spore" },
+    "blightwood_ground_growth": { "textures": "textures/blightwood/grass" },
     "pengiun_egg": {
       "textures": "textures/items/water/pengiuns/pengiun_egg"
     },

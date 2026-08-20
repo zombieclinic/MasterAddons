@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "zombie:blightwood_tree_spores_feature"
+    },
+    "places_feature": "zombie:blightwood_hanging_spore_feature",
+    "iterations": 30,
+    "scatter_chance": 45,
+    "coordinate_eval_order": "xzy",
+    "x": { "distribution": "uniform", "extent": [-4, 4] },
+    "z": { "distribution": "uniform", "extent": [-4, 4] },
+    "y": { "distribution": "uniform", "extent": [5, 13] }
+  }
+}

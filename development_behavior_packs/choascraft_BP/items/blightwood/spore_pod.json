@@ -1,0 +1,29 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:blightwood_spore_pod",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "zombie:mature_blightspore_effect": {},
+      "minecraft:display_name": {
+        "value": "Mature Blightspore Pod"
+      },
+      "minecraft:icon": "blightwood_spore_pod",
+      "minecraft:use_animation": "eat",
+      "minecraft:food": {
+        "nutrition": 5,
+        "saturation_modifier": 0.6,
+        "can_always_eat": true
+      },
+      "minecraft:use_modifiers": {
+        "use_duration": 1.6,
+        "movement_modifier": 0.35
+      },
+      "minecraft:max_stack_size": 64
+    }
+  }
+}

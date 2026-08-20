@@ -1,0 +1,361 @@
+
+{
+	"format_version": "1.26.40",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "zombie:zombie_boss",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"zombie:summon": {
+				"minecraft:skin_id": { "value": 1 },
+				"minecraft:behavior.nearest_attackable_target": {
+					"priority": 2,
+					"entity_types": [
+						{
+							"filters": {
+								"any_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							},
+							"max_dist": 30
+						}
+					],
+					"must_see": true,
+					"reselect_targets": true,
+					"within_radius": 30
+				},
+				"minecraft:behavior.move_towards_target": {
+					"priority": 3,
+					"speed_multiplier": 1,
+					"within_radius": 2
+				},
+				"minecraft:behavior.summon_entity": {
+					"priority": 0,
+					"summon_choices": [
+						{
+							"weight": 1,
+							"do_casting": true,
+							"cooldown_time": 5,
+							"cast_duration": 2.29,
+							"sequence": [
+								{
+									"shape": "circle",
+									"target": "self",
+									"base_delay": 1,
+									"num_entities_spawned": 5,
+									"entity_type": "zombie:zombie_mutated_spawn",
+									"summon_cap": 10,
+									"summon_cap_radius": 100,
+									"size": 1,
+									"sound_event": "prepare.summon"
+								}
+							]
+						}
+					]
+				},
+				"minecraft:timer": {
+					"looping": false,
+					"time": 6,
+					"time_down_event": {
+						"event": "zombie:end_summon",
+						"target": "self"
+					}
+				},
+				"minecraft:target_nearby_sensor": {
+					"outside_range": 10,
+					"on_outside_range": {
+						"event": "zombie:end_summon",
+						"target": "self"
+					}
+				}
+			},
+			"zombie:throw": {
+				"minecraft:skin_id": { "value": 2 },
+				"minecraft:behavior.move_towards_target": {
+					"priority": 2,
+					"speed_multiplier": 1,
+					"within_radius": 5
+				},
+				"minecraft:behavior.nearest_attackable_target": {
+					"priority": 2,
+					"entity_types": [
+						{
+							"filters": {
+								"any_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							},
+							"max_dist": 30
+						}
+					],
+					"must_see": true,
+					"reselect_targets": true,
+					"within_radius": 30
+				},
+				"minecraft:behavior.ranged_attack": {
+					"priority": 0,
+					"charge_charged_trigger": 0.1,
+					"charge_shoot_trigger": 2.39,
+					"attack_interval": {
+						"min": 1,
+						"max": 5
+					},
+					"attack_radius": 15
+				},
+				 "minecraft:shooter": {
+            "def": "zombie:pumpkin_seed"
+          },
+				"minecraft:target_nearby_sensor": {
+					"inside_range": 4,
+					"on_inside_range": {
+						"event": "zombie:attack",
+						"target": "self"
+					}
+				}
+			},
+			"zombie:attack": {
+				"minecraft:skin_id": { "value": 3 },
+				"minecraft:is_sheared": {},
+				"minecraft:behavior.nearest_attackable_target": {
+					"priority": 2,
+					"entity_types": [
+						{
+							"filters": {
+								"any_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							},
+							"max_dist": 30
+						}
+					],
+					"must_see": true,
+					"reselect_targets": true,
+					"within_radius": 3
+				},
+				"minecraft:behavior.move_towards_target": {
+					"priority": 3,
+					"speed_multiplier": 1,
+					"within_radius": 3
+				},
+				"minecraft:behavior.knockback_roar": {
+					"priority": 0,
+					"duration": 1,
+					"attack_time": 0.5,
+					"cooldown_time": 0,
+					"knockback_damage": 20,
+					"knockback_horizontal_strength": 5,
+					"knockback_vertical_strength": 2,
+					"knockback_filters": {
+						"any_of": [
+							{
+								"test": "is_family",
+								"subject": "other",
+								"value": "player"
+							}
+						]
+					},
+					"damage_filters": {
+						"any_of": [
+							{
+								"test": "is_family",
+								"subject": "other",
+								"value": "player"
+							},
+							{
+								"any_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "zombie_custom"
+									}
+								]
+							}
+						]
+					},
+					"knockback_range": 3,
+					"on_roar_end": {
+						"event": "zombie:attack_end"
+					}
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"zombie_custom",
+					"undead",
+					"mutated",
+					"monster"
+				]
+			},
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": 0
+			},
+			"minecraft:boss": {
+				"hud_range": 30,
+				"name": "Subject 413",
+				"should_darken_sky": true
+			},
+			"minecraft:health": {
+				"value": 3500,
+				"max": 3500
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 2.8,
+				"height": 3
+			},
+			"minecraft:movement": {
+				"value": 0.5
+			},
+			"minecraft:navigation.walk": {
+				"can_path_over_water": true,
+				"can_pass_doors": true,
+				"can_open_doors": true,
+				"avoid_water": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:behavior.random_stroll": {
+				"priority": 5,
+				"speed_multiplier": 0.6
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 9,
+				"look_distance": 3,
+				"probability": 1
+			},
+			"minecraft:behavior.look_at_entity": {
+				"priority": 10,
+				"look_distance": 8,
+				"filters": {
+					"test": "is_family",
+					"subject": "other",
+					"value": "mob"
+				}
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:persistent": {},
+			"minecraft:physics": {},
+			"minecraft:knockback_resistance": {
+				"value": 0.7,
+				"max": 0.7
+			},
+			"minecraft:behavior.melee_attack": {
+				"priority": 1,
+				"reach_multiplier": 2
+			},
+			"minecraft:attack": {
+				"damage": 30
+			},
+			"minecraft:behavior.move_towards_target": {
+				"priority": 2,
+				"speed_multiplier": 1.2,
+				"within_radius": 30
+			},
+			"minecraft:experience_reward": {
+				"on_death": "(5000.0)"
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/brightwood/brightwood_monster.json"
+			},
+			"minecraft:despawn": {
+				"despawn_from_simulation_edge": true,
+				"despawn_from_distance": {}
+			},
+			"minecraft:nameable": {
+				"always_show": true,
+				"allow_name_tag_renaming": true
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"zombie:summon"
+					]
+				}
+			},
+			"zombie:summon": {
+				"remove": {
+					"component_groups": [
+						"zombie:throw"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"zombie:summon"
+					]
+				}
+			},
+			"zombie:end_summon": {
+				"remove": {
+					"component_groups": [
+						"zombie:summon"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"zombie:throw"
+					]
+				}
+			},
+			"zombie:attack": {
+				"remove": {
+					"component_groups": [
+						"zombie:throw"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"zombie:attack"
+					]
+				}
+			},
+			"zombie:attack_end": {
+				"remove": {
+					"component_groups": [
+						"zombie:attack"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"zombie:summon"
+					]
+				}
+			}
+		}
+	}
+}

@@ -141,6 +141,66 @@
       "sounds": [
         "sounds/halloween/hurt"
       ]
+    },
+    "mob.bloater.say": {
+      "category": "hostile",
+      "sounds": ["sounds/bloater/say1", "sounds/bloater/say2", "sounds/bloater/say3"]
+    },
+    "mob.bloater.hurt": {
+      "category": "hostile",
+      "sounds": ["sounds/bloater/hurt1", "sounds/bloater/hurt2", "sounds/bloater/hurt3", "sounds/bloater/hurt4"]
+    },
+    "mob.bloater.death": {
+      "category": "hostile",
+      "sounds": ["sounds/bloater/death1", "sounds/bloater/death2", "sounds/bloater/death3", "sounds/bloater/death4"]
+    },
+    "mob.bloater.step": {
+      "category": "hostile",
+      "sounds": ["sounds/bloater/step1", "sounds/bloater/step2", "sounds/bloater/step3"]
+    },
+    "mob.bloater.charge": {
+      "category": "hostile",
+      "sounds": ["sounds/bloater/bloater_charge"]
+    },
+    "mob.puker.say": {
+      "category": "hostile",
+      "sounds": ["sounds/puker/say1", "sounds/puker/say2", "sounds/puker/say3"]
+    },
+    "mob.puker.hurt": {
+      "category": "hostile",
+      "sounds": ["sounds/puker/hurt1", "sounds/puker/hurt2", "sounds/puker/hurt3", "sounds/puker/hurt4"]
+    },
+    "mob.puker.death": {
+      "category": "hostile",
+      "sounds": ["sounds/puker/death1", "sounds/puker/death2", "sounds/puker/death3"]
+    },
+    "mob.puker.step": {
+      "category": "hostile",
+      "sounds": ["sounds/puker/step1", "sounds/puker/step2", "sounds/puker/step3"]
+    },
+    "mob.zomboss.say": {
+      "category": "hostile",
+      "sounds": ["sounds/zomboss/say1", "sounds/zomboss/say2", "sounds/zomboss/say3", "sounds/zomboss/say4", "sounds/zomboss/say5", "sounds/zomboss/say6"]
+    },
+    "mob.zomboss.hurt": {
+      "category": "hostile",
+      "sounds": ["sounds/zomboss/hurt1", "sounds/zomboss/hurt2", "sounds/zomboss/hurt3", "sounds/zomboss/hurt4", "sounds/zomboss/hurt5"]
+    },
+    "mob.zomboss.death": {
+      "category": "hostile",
+      "sounds": ["sounds/zomboss/death1", "sounds/zomboss/death2"]
+    },
+    "mob.zomboss.step": {
+      "category": "hostile",
+      "sounds": ["sounds/zomboss/step1", "sounds/zomboss/step2", "sounds/zomboss/step3"]
+    },
+    "mob.zomboss.throw": {
+      "category": "hostile",
+      "sounds": ["sounds/zomboss/throw_attack"]
+    },
+    "mob.zomboss.spin": {
+      "category": "hostile",
+      "sounds": ["sounds/zomboss/spin_attack"]
     }
   }
 }

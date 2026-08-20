@@ -1,0 +1,25 @@
+
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "zombie:zombie_mutated_spawn",
+			"materials": {
+				"default": "agent"
+			},
+			"textures": {
+				"default": "textures/blightwood/monsters/mutated_spawn"
+			},
+			"geometry": {
+				"default": "geometry.mutated_spawn"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#3D250D",
+				"overlay_color": "#000000"
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "zombie:blightwood_leggings_recipe" },
+    "tags": ["crafting_table"],
+    "pattern": ["PPP", "P P", "P P"],
+    "key": { "P": { "item": "zombie:blightwood_spore_pod" } },
+    "result": { "item": "zombie:blightwood_leggings", "count": 1 },
+    "unlock": [{ "item": "zombie:blightwood_spore_pod" }]
+  }
+}

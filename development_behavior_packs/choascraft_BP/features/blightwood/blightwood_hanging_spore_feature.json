@@ -1,0 +1,21 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "zombie:blightwood_hanging_spore_feature"
+    },
+    "places_block": {
+      "name": "zombie:blightwood_spore_crop"
+    },
+    "enforce_survivability_rules": true,
+    "enforce_placement_rules": false,
+    "may_replace": [
+      "minecraft:air"
+    ],
+    "may_attach_to": {
+      "top": [
+        "zombie:blightwood_leaves"
+      ]
+    }
+  }
+}

@@ -1,0 +1,238 @@
+
+{
+	"format_version": "1.26.40",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "zombie:zombie_mutated_spawn",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"waiting": {
+				"minecraft:timer": {
+					"looping": false,
+					"time": [0.25, 0.25],
+					"time_down_event": {
+						"event": "spawn_mob",
+						"target": "self"
+					}
+				}
+			},
+			"spawnzombie": {
+				"minecraft:spawn_entity": {
+					"entities": [
+						{
+							"num_to_spawn": 1,
+							"min_wait_time": 0.1,
+							"max_wait_time": 0.1,
+							"single_use": true,
+							"spawn_entity": "zombie:mutated_zombie",
+							"spawn_event": "minecraft:entity_spawned"
+						}
+					]
+				},
+				"minecraft:timer": {
+					"time": [
+						10,
+						10
+					],
+					"time_down_event": {
+						"event": "despawn"
+					}
+				}
+			},
+			"despawn": {
+				"minecraft:instant_despawn": {}
+			},
+			"spawndrowned": {
+				"minecraft:spawn_entity": {
+					"entities": [
+						{
+							"num_to_spawn": 1,
+							"min_wait_time": 0.1,
+							"max_wait_time": 0.1,
+							"single_use": true,
+							"spawn_entity": "zombie:mutated_drowned",
+							"spawn_event": "minecraft:entity_spawned"
+						}
+					]
+				},
+				"minecraft:timer": {
+					"time": [
+						10,
+						10
+					],
+					"time_down_event": {
+						"event": "despawn"
+					}
+				}
+			},
+			"spawnbloater": {
+				"minecraft:spawn_entity": {
+					"entities": [
+						{
+							"num_to_spawn": 1,
+							"min_wait_time": 0.1,
+							"max_wait_time": 0.1,
+							"single_use": true,
+							"spawn_entity": "zombie:bloater",
+							"spawn_event": "minecraft:entity_spawned"
+						}
+					]
+				},
+				"minecraft:timer": {
+					"time": [
+						10,
+						10
+					],
+					"time_down_event": {
+						"event": "despawn"
+					}
+				}
+			},
+			"spawncharged": {
+				"minecraft:spawn_entity": {
+					"entities": [
+						{
+							"num_to_spawn": 1,
+							"min_wait_time": 0.1,
+							"max_wait_time": 0.1,
+							"single_use": true,
+							"spawn_entity": "zombie:charged_zombie",
+							"spawn_event": "minecraft:entity_spawned"
+						}
+					]
+				},
+				"minecraft:timer": {
+					"time": [
+						10,
+						10
+					],
+					"time_down_event": {
+						"event": "despawn"
+					}
+				}
+			},
+			"spawnpuker": {
+				"minecraft:spawn_entity": {
+					"entities": [
+						{
+							"num_to_spawn": 1,
+							"min_wait_time": 0.1,
+							"max_wait_time": 0.1,
+							"single_use": true,
+							"spawn_entity": "zombie:puker",
+							"spawn_event": "minecraft:entity_spawned"
+						}
+					]
+				},
+				"minecraft:timer": {
+					"time": [
+						10,
+						10
+					],
+					"time_down_event": {
+						"event": "despawn"
+					}
+				}
+			}
+			
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"jfc",
+					"berry",
+					"mutated",
+					"monster"
+				]
+			},
+			"minecraft:health": {
+				"value": 100,
+				"max": 100
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "all",
+					"deals_damage": "no"
+				}
+			},
+			"minecraft:knockback_resistance": {
+				"value": 100,
+				"max": 100
+			},
+			"minecraft:push_through": {
+				"value": 1
+			},
+			"minecraft:scale": {
+				"value": 1.5
+			},
+			"minecraft:collision_box": {
+				"width": 0,
+				"height": 0
+			},
+			"minecraft:physics": {},
+			"minecraft:despawn": {}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": ["waiting"]
+				}
+			},
+			"spawn_mob": {
+				"randomize": [
+					{
+						"add": {
+							"component_groups": [
+								"spawnzombie"
+							]
+						},
+						"weight": 1
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"spawndrowned"
+							]
+						}
+					},
+						{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"spawnbloater"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"spawncharged"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"spawnpuker"
+							]
+						}
+					}
+				]
+			},
+			"despawn": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			},
+			"minecraft:entity_born": {}
+		}
+	}
+}

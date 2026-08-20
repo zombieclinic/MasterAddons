@@ -1,5 +1,18 @@
 {
   "texture_data": {
+    "blightwood_spore_seeds": { "textures": "textures/blightwood/spore" },
+    "blightwood_spore_pod": { "textures": "textures/blightwood/spore pod" },
+    "blightwood_tree_spore_drop": { "textures": "textures/blightwood/treespore_drop" },
+    "mutated_flesh": { "textures": "textures/blightwood/mutated_flesh" },
+    "blightwood_sword": { "textures": "textures/blightwood/mutated_sword" },
+    "blightwood_axe": { "textures": "textures/blightwood/axe" },
+    "blightwood_pickaxe": { "textures": "textures/blightwood/pick_axe" },
+    "blightwood_shovel": { "textures": "textures/blightwood/shovel" },
+    "blightwood_hoe": { "textures": "textures/blightwood/hoe" },
+    "blightwood_helmet": { "textures": "textures/blightwood/armor/helmet_icon" },
+    "blightwood_chestplate": { "textures": "textures/blightwood/armor/chestplate_icon" },
+    "blightwood_leggings": { "textures": "textures/blightwood/armor/birghtwood_leggings_icon" },
+    "blightwood_boots": { "textures": "textures/blightwood/armor/brightwood_boot_icon" },
     "orca_boots": {
       "textures": "textures/armor/orca/boots/orca_boots_icon"
     },

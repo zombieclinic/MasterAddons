@@ -51,7 +51,8 @@ const STRIPPABLE_BLOCKS = {
 	"zombie:redwood_wood": "zombie:stripped_redwood_wood",
 	"zombie:amaranthine_wood": "zombie:stripped_amaranthine_wood",
 	"zombie:lumenroot_wood": "zombie:stripped_lumenroot_wood",
-	"zombie:lumenbloom_wood": "zombie:stripped_lumenbloom_wood"
+	"zombie:lumenbloom_wood": "zombie:stripped_lumenbloom_wood",
+	"zombie:blightwood_log": "zombie:stripped_blightwood_log"
 };
 
 const FACE_NEIGHBORS = {

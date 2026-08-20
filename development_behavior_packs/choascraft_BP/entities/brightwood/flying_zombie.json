@@ -1,0 +1,77 @@
+{
+	"format_version": "1.26.40",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "zombie:flying_zombie",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:arrow"
+		},
+		"components": {
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:collision_box": {
+				"width": 0.6,
+				"height": 1.9
+			},
+			"minecraft:knockback_resistance": {
+				"value": 500,
+				"max": 500
+			},
+			"minecraft:physics": {
+				"has_collision": true,
+				"has_gravity": true
+			},
+			"minecraft:despawn": {
+				"filters": {
+					"test": "on_ground",
+					"subject": "self",
+					"value": true
+				},
+				"despawn_from_inactivity": true,
+				"despawn_from_simulation_edge": true,
+				"despawn_from_distance": {}
+			},
+			"minecraft:projectile": {
+				"destroy_on_hit": true,
+				"power": 0.5,
+				"gravity": 0.01,
+				"inertia": 1,
+				"liquid_inertia": 1,
+				"uncertainty_base": 0,
+				"uncertainty_multiplier": 0,
+				"offset": [
+					0,
+					2.5,
+					0
+				],
+				"multiple_targets": false,
+				"reflect_on_hurt": false,
+				"shoot_target": true,
+				"homing": false,
+				"on_hit": {
+					"spawn_chance": {
+					"first_spawn_chance": 1.0,
+						"first_spawn_count": 1,
+						"spawn_definition": "zombie:mutated_zombie",
+						"spawn_baby": false
+					},
+					"remove_on_hit": true,
+					"impact_damage": {
+						"damage": 6,
+						"knockback": true,
+						"destroy_on_hit_requires_damage": false,
+						"destroy_on_hit": true
+					}
+				}
+			},
+			"minecraft:type_family": {
+				"family": [
+					"monster"
+				]
+			}
+		},
+		"events": {},
+		"component_groups": {}
+	}
+}

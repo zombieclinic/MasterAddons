@@ -1,0 +1,46 @@
+
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "zombie:mutated_drowned",
+			"materials": {
+				"default": "zombie"
+			},
+			"textures": {
+				"default": "textures/blightwood/monsters/zombie/drowned"
+			},
+			"geometry": {
+				"default": "geometry.mutated.drowned"
+			},
+			"animations": {
+				"look_at_target_default": "animation.humanoid.look_at_target.default",
+				"move": "animation.zombie.move",
+				"spawn": "animation.zombie.spawn",
+				"controller": "controller.animation.mutated_zombie",
+				"idle": "animation.mutated_zombie.idle",
+				"boom": "animation.mutated_zombie.boom"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+				],
+				"animate": [
+					{
+						"controller": "(1.0)"
+					},
+					{
+						"look_at_target_default": "(1.0)"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#EED96D",
+				"overlay_color": "#1778D2"
+			}
+		}
+	}
+}

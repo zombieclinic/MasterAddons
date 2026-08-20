@@ -1,0 +1,29 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:blightwood_tree_spore",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "zombie:raw_blightspore_effect": {},
+      "minecraft:display_name": {
+        "value": "Raw Blightspore"
+      },
+      "minecraft:icon": "blightwood_tree_spore_drop",
+      "minecraft:use_animation": "eat",
+      "minecraft:food": {
+        "nutrition": 2,
+        "saturation_modifier": 0.2,
+        "can_always_eat": true
+      },
+      "minecraft:use_modifiers": {
+        "use_duration": 1.2,
+        "movement_modifier": 0.5
+      },
+      "minecraft:max_stack_size": 64
+    }
+  }
+}

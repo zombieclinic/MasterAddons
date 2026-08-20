@@ -1,0 +1,63 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "zombie:blightwood_decay"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.9,
+        "snow_accumulation": [
+          0,
+          0
+        ],
+        "temperature": 0.62
+      },
+      "minecraft:overworld_height": {
+        "noise_type": "default"
+      },
+      "minecraft:map_tints": {
+        "grass": {
+          "type": "tint",
+          "tint": "#394326"
+        },
+        "foliage": "#252D18"
+      },
+      "minecraft:replace_biomes": {
+        "replacements": [
+          {
+            "dimension": "minecraft:overworld",
+            "targets": [
+              "minecraft:roofed_forest",
+              "minecraft:swampland",
+              "minecraft:forest",
+              "minecraft:birch_forest",
+              "minecraft:plains"
+            ],
+            "amount": 0.1,
+            "noise_frequency_scale": 0.30
+          }
+        ]
+      },
+      "minecraft:surface_builder": {
+        "builder": {
+          "type": "minecraft:overworld",
+          "sea_floor_depth": 3,
+          "sea_floor_material": "zombie:blightwood_dirt",
+          "foundation_material": "minecraft:stone",
+          "mid_material": "zombie:blightwood_dirt",
+          "top_material": "zombie:blightwood_grass",
+          "sea_material": "minecraft:water"
+        }
+      },
+      "minecraft:tags": {
+        "tags": [
+          "forest",
+          "monster",
+          "overworld",
+          "blightwood"
+        ]
+      }
+    }
+  }
+}

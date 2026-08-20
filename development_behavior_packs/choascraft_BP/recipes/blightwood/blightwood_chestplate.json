@@ -1,0 +1,11 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "zombie:blightwood_chestplate_recipe" },
+    "tags": ["crafting_table"],
+    "pattern": ["P P", "PPP", "PPP"],
+    "key": { "P": { "item": "zombie:blightwood_spore_pod" } },
+    "result": { "item": "zombie:blightwood_chestplate", "count": 1 },
+    "unlock": [{ "item": "zombie:blightwood_spore_pod" }]
+  }
+}

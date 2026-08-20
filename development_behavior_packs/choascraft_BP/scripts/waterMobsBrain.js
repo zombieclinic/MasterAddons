@@ -58,6 +58,8 @@ import "./items/echoheartTotem.js";
 import "./christmas/index.js";
 import "./halloween/halloweenevent_index.js";
 import { CoffinBackpackPlacementComponent } from "./items/coffinBackpackPickup.js";
+import { BlightwoodSporeCropComponent } from "./blocks/blightwoodGrowth.js";
+import { MatureBlightsporeFoodComponent, RawBlightsporeFoodComponent } from "./items/blightsporeFood.js";
 
 const BLOCK_COMPONENTS = [
   ["zombie:pengiun_egg_hatch", EggHatchTickingComponent],
@@ -95,7 +97,8 @@ const BLOCK_COMPONENTS = [
   ["zombie:mushroom_spread", MushroomSpreadComponent],
   ["zombie:chaos_chest", ChaosChestComponent],
   ["zombie:connected_stairs", ConnectedStairsComponent],
-  ["zombie:wall_stacking", WallStackingComponent]
+  ["zombie:wall_stacking", WallStackingComponent],
+  ["zombie:blightwood_spore_crop", BlightwoodSporeCropComponent]
 ];
 
 const ITEM_COMPONENTS = [
@@ -114,6 +117,8 @@ const ITEM_COMPONENTS = [
   ["zombie:end_milk_healing", class extends EndCowMilkComponent { constructor() { super("healing"); } }],
   ["zombie:end_milk_resistance", class extends EndCowMilkComponent { constructor() { super("resistance"); } }],
   ["zombie:raw_food_sickness", RawFoodSicknessComponent],
+  ["zombie:raw_blightspore_effect", RawBlightsporeFoodComponent],
+  ["zombie:mature_blightspore_effect", MatureBlightsporeFoodComponent],
   ["zombie:chaos_fishing_rod", ChaosFishingRodComponent],
   ["zombie:bfc_bow_hold", BfcBowHoldComponent],
   ["zombie:chaos_axe", ChaosAxeComponent],

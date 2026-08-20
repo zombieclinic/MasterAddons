@@ -1,0 +1,68 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:stripped_blightwood_log",
+      "menu_category": {
+        "category": "construction"
+      },
+      "traits": {
+        "minecraft:placement_position": {
+          "enabled_states": [
+            "minecraft:block_face"
+          ]
+        }
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'north' || query.block_state('minecraft:block_face') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              90,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'east' || query.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              -90
+            ]
+          }
+        }
+      }
+    ],
+    "components": {
+      "minecraft:display_name": "Stripped Blightwood Log",
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 2
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "stripped_blightwood_log"
+        },
+        "up": {
+          "texture": "stripped_blightwood_log_top"
+        },
+        "down": {
+          "texture": "stripped_blightwood_log_top"
+        }
+      },
+      "minecraft:tags": [
+        "minecraft:is_axe_item_destructible",
+        "zombie:custom_log",
+        "log",
+        "wood"
+      ]
+    }
+  }
+}

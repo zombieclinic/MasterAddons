@@ -1,0 +1,43 @@
+
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "zombie:flying_zombie",
+			"materials": {
+				"default": "arrow"
+			},
+			"textures": {
+				"default": "textures/blightwood/monsters/zombie/variant0"
+			},
+			"geometry": {
+				"default": "geometry.mutated_zombie"
+			},
+			"animations": {
+				"active": "animation.zombie.fly",
+				"launch": "animation.zombie.launch"
+			},
+			"scripts": {
+				"initialize": [
+					"v.dirx=0;",
+					"v.dirz=0;",
+					"v.xstart=query.position(0);",
+					"v.zstart=query.position(2);",
+					"v.rot=0;"
+				],
+				"pre_animation": [
+					"v.dirx=query.position(0)-v.xstart;",
+					"v.dirz=query.position(2)-v.zstart;",
+					"v.rot=math.atan2(v.dirz,v.dirx)-95;"
+				],
+				"animate": [
+					"active",
+					"launch"
+				]
+			},
+			"render_controllers": [
+				"controller.render.arrow"
+			]
+		}
+	}
+}

@@ -1,0 +1,47 @@
+
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "zombie:spit",
+			"materials": {
+				"default": "arrow"
+			},
+			"textures": {
+				"default": "textures/blightwood/monsters/spit"
+			},
+			"geometry": {
+				"default": "geometry.spit"
+			},
+			"animations": {
+				"active": "animation.spit.move",
+				"melt": "animation.spit.melt"
+			},
+			"scripts": {
+				"initialize": [
+					"v.dirx=0;",
+					"v.dirz=0;",
+					"v.xstart=query.position(0);",
+					"v.zstart=query.position(2);",
+					"v.rot=0;"
+				],
+				"pre_animation": [
+					"v.dirx=query.position(0)-v.xstart;",
+					"v.dirz=query.position(2)-v.zstart;",
+					"v.rot=math.atan2(v.dirz,v.dirx)-95;"
+				],
+				"animate": [
+					{
+						"active": "!query.is_on_ground"
+					},
+					{
+						"melt": "query.is_on_ground"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.arrow"
+			]
+		}
+	}
+}

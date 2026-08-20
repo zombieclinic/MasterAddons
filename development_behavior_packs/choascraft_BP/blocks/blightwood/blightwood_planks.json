@@ -1,0 +1,31 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:blightwood_planks",
+      "menu_category": {
+        "category": "construction"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "Rotten Blightwood Planks",
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1.5
+      },
+      "minecraft:flammable": {
+        "catch_chance_modifier": 8,
+        "destroy_chance_modifier": 25
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "blightwood_planks"
+        }
+      },
+      "minecraft:tags": [
+        "minecraft:is_axe_item_destructible",
+        "wood"
+      ]
+    }
+  }
+}

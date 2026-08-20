@@ -1,0 +1,134 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.mutated_zombie": {
+      "initial_state": "spawn",
+      "states": {
+        "spawn": {
+          "animations": ["spawn"],
+          "transitions": [{ "idle": "query.all_animations_finished" }],
+          "blend_transition": 0.15
+        },
+        "idle": {
+          "animations": ["idle"],
+          "transitions": [{ "walk": "query.modified_move_speed > 0.05" }],
+          "blend_transition": 0.2
+        },
+        "walk": {
+          "animations": ["move"],
+          "transitions": [{ "idle": "query.modified_move_speed <= 0.05" }],
+          "blend_transition": 0.2
+        }
+      }
+    },
+    "controller.animation.bloated_mutated": {
+      "initial_state": "spawn",
+      "states": {
+        "spawn": {
+          "animations": ["spawn"],
+          "transitions": [{ "idle": "query.all_animations_finished" }],
+          "blend_transition": 0.15
+        },
+        "idle": {
+          "animations": ["idle"],
+          "transitions": [
+            { "explode": "query.is_ignited" },
+            { "walk": "query.modified_move_speed > 0.05" }
+          ],
+          "blend_transition": 0.2
+        },
+        "walk": {
+          "animations": ["move"],
+          "transitions": [
+            { "explode": "query.is_ignited" },
+            { "idle": "query.modified_move_speed <= 0.05" }
+          ],
+          "blend_transition": 0.2
+        },
+        "explode": {
+          "animations": ["explode"]
+        }
+      }
+    },
+    "controller.animation.puker": {
+      "initial_state": "spawn",
+      "states": {
+        "spawn": {
+          "animations": ["spawn"],
+          "transitions": [{ "idle": "query.all_animations_finished" }],
+          "blend_transition": 0.15
+        },
+        "idle": {
+          "animations": ["idle"],
+          "transitions": [
+            { "spit": "query.is_using_item" },
+            { "walk": "query.modified_move_speed > 0.05" }
+          ],
+          "blend_transition": 0.2
+        },
+        "walk": {
+          "animations": ["move"],
+          "transitions": [
+            { "spit": "query.is_using_item" },
+            { "idle": "query.modified_move_speed <= 0.05" }
+          ],
+          "blend_transition": 0.2
+        },
+        "spit": {
+          "animations": ["spit"],
+          "transitions": [{ "idle": "query.all_animations_finished" }],
+          "blend_transition": 0.1
+        }
+      }
+    },
+    "controller.animation.zombie_boss": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations": ["idle"],
+          "transitions": [
+            { "summon": "query.skin_id == 1" },
+            { "throw": "query.skin_id == 2" },
+            { "smack": "query.skin_id == 3" },
+            { "walk": "query.modified_move_speed > 0.04" }
+          ],
+          "blend_transition": 0.25
+        },
+        "walk": {
+          "animations": ["move"],
+          "transitions": [
+            { "summon": "query.skin_id == 1" },
+            { "throw": "query.skin_id == 2" },
+            { "smack": "query.skin_id == 3" },
+            { "idle": "query.modified_move_speed <= 0.04" }
+          ],
+          "blend_transition": 0.25
+        },
+        "summon": {
+          "animations": ["summoning"],
+          "transitions": [
+            { "walk": "query.skin_id != 1 && query.modified_move_speed > 0.04" },
+            { "idle": "query.skin_id != 1" }
+          ],
+          "blend_transition": 0.2
+        },
+        "throw": {
+          "animations": ["throw"],
+          "transitions": [
+            { "walk": "query.skin_id != 2 && query.modified_move_speed > 0.04" },
+            { "idle": "query.skin_id != 2" }
+          ],
+          "blend_transition": 0.2
+        },
+        "smack": {
+          "animations": ["spin"],
+          "transitions": [
+            { "walk": "query.skin_id != 3 && query.modified_move_speed > 0.04" },
+            { "idle": "query.skin_id != 3" }
+          ],
+          "blend_transition": 0.15
+        }
+      }
+    }
+  }
+}

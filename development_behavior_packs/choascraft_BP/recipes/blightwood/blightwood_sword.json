@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"zombie:blightwood_sword_recipe"},"tags":["crafting_table"],"pattern":[" P "," P "," S "],"key":{"P":{"item":"zombie:blightwood_spore_pod"},"S":{"item":"minecraft:stick"}},"result":{"item":"zombie:blightwood_sword"},"unlock":[{"item":"zombie:blightwood_spore_pod"}]}}
