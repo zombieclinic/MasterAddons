@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "zombie:christmas_santa_road"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "christmas/path_straight_santa",
+          "projection": "rigid"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

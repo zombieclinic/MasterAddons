@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.120",
 	"minecraft:block": {
 		"description": {
 			"identifier": "zombie:candycane_purple_Crop",
@@ -172,7 +172,10 @@
 			}
 		],
 		"components": {
-			"minecraft:geometry": "geometry.candycane",
+			"minecraft:precipitation_interactions": {
+				"precipitation_behavior": "none"
+			},
+"minecraft:geometry": "geometry.candycane",
 			"minecraft:material_instances": {
 						"*": {
 							"texture": "zombie_candycane_purple_1",

@@ -20,15 +20,12 @@
         "slot": "slot.armor.head",
         "hides_player_location": true
       },
-      "minecraft:enchantable": {
-        "slot": "armor_head",
-        "value": 5
-      },
       "minecraft:block_placer": {
         "block": "zombie:villager_v2_snow_cleric_block_shiny"
       },
       "minecraft:icon": "villager_v2_snow_cleric_item",
-      "minecraft:glint": true
+      "minecraft:glint": true,
+      "minecraft:max_stack_size": 64
     }
   }
 }

@@ -1,0 +1,264 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:colored_glowing_obsidian_red_wall",
+      "traits": {
+        "minecraft:connection": {
+          "enabled_states": [
+            "minecraft:cardinal_connections"
+          ]
+        }
+      },
+      "menu_category": {
+        "category": "construction",
+        "group": "minecraft:itemGroup.name.walls"
+      },
+      "states": {
+        "zombie:stacked": [
+          false,
+          true
+        ]
+      }
+    },
+    "permutations": [
+      {
+        "condition": "(query.block_state('minecraft:connection_north') || query.block_state('minecraft:connection_south')) && !query.block_state('minecraft:connection_east') && !query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:collision_box": {
+            "origin": [
+              -4,
+              0,
+              -8
+            ],
+            "size": [
+              8,
+              24,
+              16
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -4,
+              0,
+              -8
+            ],
+            "size": [
+              8,
+              16,
+              16
+            ]
+          }
+        }
+      },
+      {
+        "condition": "!query.block_state('minecraft:connection_north') && !query.block_state('minecraft:connection_south') && (query.block_state('minecraft:connection_east') || query.block_state('minecraft:connection_west'))",
+        "components": {
+          "minecraft:collision_box": {
+            "origin": [
+              -8,
+              0,
+              -4
+            ],
+            "size": [
+              16,
+              24,
+              8
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -4
+            ],
+            "size": [
+              16,
+              16,
+              8
+            ]
+          }
+        }
+      },
+      {
+        "condition": "(query.block_state('minecraft:connection_north') || query.block_state('minecraft:connection_south')) && (query.block_state('minecraft:connection_east') || query.block_state('minecraft:connection_west'))",
+        "components": {
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -4,
+                0,
+                -8
+              ],
+              "size": [
+                8,
+                24,
+                16
+              ]
+            },
+            {
+              "origin": [
+                -8,
+                0,
+                -4
+              ],
+              "size": [
+                16,
+                24,
+                8
+              ]
+            }
+          ],
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              16,
+              16
+            ]
+          }
+        }
+      }
+    ],
+    "components": {
+      "minecraft:display_name": "Red Glowing Obsidian Wall",
+      "minecraft:support": {
+        "shape": "fence"
+      },
+      "minecraft:geometry": {
+        "identifier": "geometry.zombie_demon_steel_wall",
+        "bone_visibility": {
+          "post": {
+            "expression": "(query.block_state('zombie:stacked')) || !((query.block_state('minecraft:connection_north') && query.block_state('minecraft:connection_south') && !query.block_state('minecraft:connection_east') && !query.block_state('minecraft:connection_west')) || (!query.block_state('minecraft:connection_north') && !query.block_state('minecraft:connection_south') && query.block_state('minecraft:connection_east') && query.block_state('minecraft:connection_west')))",
+            "version": 1
+          },
+          "north": {
+            "expression": "(query.block_state('minecraft:connection_north')) && !(query.block_state('zombie:stacked'))",
+            "version": 1
+          },
+          "south": {
+            "expression": "(query.block_state('minecraft:connection_south')) && !(query.block_state('zombie:stacked'))",
+            "version": 1
+          },
+          "east": {
+            "expression": "(query.block_state('minecraft:connection_east')) && !(query.block_state('zombie:stacked'))",
+            "version": 1
+          },
+          "west": {
+            "expression": "(query.block_state('minecraft:connection_west')) && !(query.block_state('zombie:stacked'))",
+            "version": 1
+          },
+          "center": {
+            "expression": "!(query.block_state('zombie:stacked')) && ((query.block_state('minecraft:connection_north') && query.block_state('minecraft:connection_south') && !query.block_state('minecraft:connection_east') && !query.block_state('minecraft:connection_west')) || (!query.block_state('minecraft:connection_north') && !query.block_state('minecraft:connection_south') && query.block_state('minecraft:connection_east') && query.block_state('minecraft:connection_west')))",
+            "version": 1
+          },
+          "north_full": {
+            "expression": "(query.block_state('minecraft:connection_north')) && (query.block_state('zombie:stacked'))",
+            "version": 1
+          },
+          "south_full": {
+            "expression": "(query.block_state('minecraft:connection_south')) && (query.block_state('zombie:stacked'))",
+            "version": 1
+          },
+          "east_full": {
+            "expression": "(query.block_state('minecraft:connection_east')) && (query.block_state('zombie:stacked'))",
+            "version": 1
+          },
+          "west_full": {
+            "expression": "(query.block_state('minecraft:connection_west')) && (query.block_state('zombie:stacked'))",
+            "version": 1
+          }
+        }
+      },
+      "minecraft:item_visual": {
+        "geometry": {
+          "identifier": "geometry.zombie_demon_steel_wall",
+          "bone_visibility": {
+            "post": {
+              "expression": "true",
+              "version": 1
+            },
+            "north": {
+              "expression": "true",
+              "version": 1
+            },
+            "south": {
+              "expression": "true",
+              "version": 1
+            },
+            "east": {
+              "expression": "false",
+              "version": 1
+            },
+            "west": {
+              "expression": "false",
+              "version": 1
+            }
+          }
+        },
+        "material_instances": {
+          "*": {
+            "texture": "zombie_colored_glowing_obsidian_red",
+            "render_method": "opaque",
+            "face_dimming": false,
+            "ambient_occlusion": 0
+          }
+        }
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "zombie_colored_glowing_obsidian_red",
+          "render_method": "opaque",
+          "face_dimming": false,
+          "ambient_occlusion": 0
+        }
+      },
+      "minecraft:selection_box": {
+        "origin": [
+          -4,
+          0,
+          -4
+        ],
+        "size": [
+          8,
+          16,
+          8
+        ]
+      },
+      "minecraft:collision_box": {
+        "origin": [
+          -4,
+          0,
+          -4
+        ],
+        "size": [
+          8,
+          24,
+          8
+        ]
+      },
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "all"
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 25
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 1200
+      },
+      "minecraft:tags": [
+        "minecraft:has_fence_connections",
+        "minecraft:is_pickaxe_item_destructible",
+        "zombie:wall",
+        "stone"
+      ],
+      "minecraft:map_color": "#B02E26",
+      "zombie:wall_stacking": {},
+      "minecraft:light_emission": 12
+    }
+  }
+}

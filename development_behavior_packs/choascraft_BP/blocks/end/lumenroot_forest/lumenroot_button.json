@@ -4,7 +4,8 @@
     "description": {
       "identifier": "zombie:lumenroot_button",
       "menu_category": {
-        "category": "construction"
+        "category": "construction",
+        "group": "minecraft:itemGroup.name.buttons"
       },
       "traits": {
         "minecraft:placement_direction": {

@@ -98,7 +98,7 @@
 			},
 			"stage_1": {
 			"minecraft:attack": {
-				"damage": 25
+				"damage": 28
 			},
 				"minecraft:variant": {
 					"value": 1
@@ -114,7 +114,7 @@
                   "filters": [
                     {
                       "test": "actor_health",
-                      "value": 350,
+					  "value": 450,
                       "subject": "self",
                       "operator": "<="
                     }
@@ -168,10 +168,10 @@
 					"value": 2
 				},
 				"minecraft:attack": {
-				"damage": 30
+				"damage": 34
 			},
 			"minecraft:movement": {
-				"value": 0.24
+				"value": 0.29
 			}
 			},
 			"zombie:summon": {
@@ -292,10 +292,10 @@
 					"priority": 0,
 					"attack_radius": 15,
 					"charge_charged_trigger": 0.0,  
-					"charge_shoot_trigger": 3.2,   
+					"charge_shoot_trigger": 2.8,
 					"burst_shots": 1,
-					"attack_interval_min": 3.2,     
-					"attack_interval_max": 3.2,
+					"attack_interval_min": 2.8,
+					"attack_interval_max": 2.8,
 					"swing": true
 					},
 				 "minecraft:shooter": {
@@ -510,7 +510,7 @@
 					"track_target": true
 			},
 				"minecraft:attack": {
-				"damage": 20
+				"damage": 24
 			},
 					"minecraft:behavior.nearest_attackable_target": {
 					"priority": 2,
@@ -634,10 +634,10 @@
 					"priority": 0,
 					"attack_radius": 15,
 					"charge_charged_trigger": 0.0,  
-					"charge_shoot_trigger": 2.5,   
+					"charge_shoot_trigger": 2.2,
 					"burst_shots": 1,
-					"attack_interval_min": 2.5,     
-					"attack_interval_max": 3.5,
+					"attack_interval_min": 2.2,
+					"attack_interval_max": 3.0,
 					"swing": true
 					},
 				 "minecraft:shooter": {
@@ -696,8 +696,8 @@
 				"should_darken_sky": true
 			},
 			"minecraft:health": {
-				"value": 750,
-				"max": 750
+				"value": 900,
+				"max": 900
 			},
 			"minecraft:persistent": {},
 			"minecraft:follow_range": {
@@ -758,8 +758,8 @@
 				"is_pushable_by_piston": false
 			},
 			"minecraft:knockback_resistance": {
-				"value": 0.7,
-				"max": 0.7
+				"value": 0.8,
+				"max": 0.8
 			},
 			
 			"minecraft:experience_reward": {

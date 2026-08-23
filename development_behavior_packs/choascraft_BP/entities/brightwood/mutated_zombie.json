@@ -7,7 +7,64 @@
 			"is_spawnable": false,
 			"is_experimental": false
 		},
-		"component_groups": {},
+		"component_groups": {
+			"zombie:can_become_boss": {
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "zombie:zombie_vial"
+										}
+									]
+								},
+								"event": "zombie:start_preboss",
+								"target": "self"
+							},
+							"use_item": true,
+							"interact_text": "Use Zombie Virus"
+						}
+					]
+				}
+			},
+			"zombie:preboss": {
+				"minecraft:skin_id": {
+					"value": 1
+				},
+				"minecraft:movement": {
+					"value": 0
+				},
+				"minecraft:timer": {
+					"looping": false,
+					"time": 27.75,
+					"time_down_event": {
+						"event": "zombie:finish_preboss",
+						"target": "self"
+					}
+				}
+			},
+			"zombie:become_boss": {
+				"minecraft:transformation": {
+					"into": "zombie:subject_413",
+					"drop_equipment": false,
+					"keep_level": true,
+					"keep_owner": true,
+					"delay": {
+						"value": 0
+					}
+				}
+			}
+		},
 		"components": {
 			"minecraft:is_hidden_when_invisible": {},
 			"minecraft:nameable": {},
@@ -175,6 +232,33 @@
 				"table": "loot_tables/entities/brightwood/brightwood_monster.json"
 			}
 		},
-		"events": {}
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"zombie:can_become_boss"
+					]
+				}
+			},
+			"zombie:start_preboss": {
+				"remove": {
+					"component_groups": [
+						"zombie:can_become_boss"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"zombie:preboss"
+					]
+				}
+			},
+			"zombie:finish_preboss": {
+				"add": {
+					"component_groups": [
+						"zombie:become_boss"
+					]
+				}
+			}
+		}
 	}
 }

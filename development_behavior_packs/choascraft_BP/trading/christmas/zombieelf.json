@@ -1,0 +1,1458 @@
+{
+  "tiers": [
+    {
+      "total_exp_required": 0,
+      "groups": [
+        {
+          "num_to_select": 16,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:blue_present",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 2
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:candycane_purple",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 2
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:christmas_light_green",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 2
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:christmas_light_purple",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 2
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:decorated_blue_present",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 2
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:decorated_red_present",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 2
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:gingerbread",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 2
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:gingerbread_fence_gate",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 2
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:gingerbread_stairs",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 2
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:gingerbreadballs",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 2
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:lucky_present",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 4,
+              "reward_exp": true,
+              "trader_exp": 2
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:purple_present",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 2
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:redcandycane_seeds",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 2
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:santa_cookie",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 4,
+              "reward_exp": true,
+              "trader_exp": 2
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:snowflakes_carpet",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 2
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:zombie_santa_lore_book",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 4,
+              "reward_exp": true,
+              "trader_exp": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "total_exp_required": 10,
+      "groups": [
+        {
+          "num_to_select": 16,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 2,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:bluecandycane_item",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 5
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 2,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:candycane_red",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 5
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 2,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:christmas_light_light_blue",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 5
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 2,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:christmas_light_red",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 5
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 2,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:decorated_green_present",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 5
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 2,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:ginger_brick",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 5
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 2,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:gingerbread_button",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 5
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 2,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:gingerbread_iceing",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 5
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 2,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:gingerbread_trapdoor",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 5
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 2,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:gingerbreadplandot",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 5
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 2,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:magicsnow",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 5
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 2,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:purplecandycane_item",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 5
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 2,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:ribbon_cookie",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 5
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 6,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:santa_helmet",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 4,
+              "reward_exp": true,
+              "trader_exp": 5
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 2,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:stocking_cookie",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 5
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 6,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:zombie_santa_mask",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 4,
+              "reward_exp": true,
+              "trader_exp": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "total_exp_required": 70,
+      "groups": [
+        {
+          "num_to_select": 16,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:bluecandycane_seeds",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 8
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:christmas_book",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 8
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:christmas_light_magenta",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 8
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:christmas_light_yellow",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 8
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 7,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:decorated_lucky_present",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 4,
+              "reward_exp": true,
+              "trader_exp": 8
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:ginger_brick_slab",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 8
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:gingerbread_cookie",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 8
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:gingerbread_icing_slab",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 8
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:gingerbread_wall",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 8
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:gingerbreadtreeicing",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 8
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:mistletoe_cheer_stocking",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 8
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:purplecandycane_seeds",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 8
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 7,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:santa_boots",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 4,
+              "reward_exp": true,
+              "trader_exp": 8
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 7,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:santa_leggins",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 4,
+              "reward_exp": true,
+              "trader_exp": 8
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:tree_cookie",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 8
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:zombiecraft_carpet",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "total_exp_required": 150,
+      "groups": [
+        {
+          "num_to_select": 15,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 4,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:candycane_blue",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 11
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 4,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:christmas_light_blue",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 11
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 4,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:christmas_light_multicolor",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 11
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 8,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:christmas_tree",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 4,
+              "reward_exp": true,
+              "trader_exp": 11
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 4,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:decorated_pink_present",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 11
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 4,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:ginger_brick_stairs",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 11
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 4,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:gingerbread_door",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 11
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 4,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:gingerbread_pressure_plate",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 11
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 4,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:gingerbread_window",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 11
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 4,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:gingerbreadtreeplain",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 11
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 4,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:ortimate_cookie",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 11
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 4,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:red_present",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 11
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 8,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:santa_carpet",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 4,
+              "reward_exp": true,
+              "trader_exp": 11
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 8,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:santa_sign",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 4,
+              "reward_exp": true,
+              "trader_exp": 11
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 8,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:zombie_santa_carpet",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 4,
+              "reward_exp": true,
+              "trader_exp": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "total_exp_required": 250,
+      "groups": [
+        {
+          "num_to_select": 15,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:candycane_dust",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 14
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:christmas_light_cyan",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 14
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:christmas_light_pink",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 14
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:christmas_wreath",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 14
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:decorated_purple_present",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 14
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:ginger_brick_wall",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 14
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:gingerbread_fence",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 14
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:gingerbread_slab",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 14
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:gingerbread_window1",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 14
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:green_present",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 14
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:pink_present",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 14
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:redcandycane_item",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 14
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 9,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:santa_chest",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 4,
+              "reward_exp": true,
+              "trader_exp": 14
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 9,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:santa_sword",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 4,
+              "reward_exp": true,
+              "trader_exp": 14
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 9,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:zombie_santa_head",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 4,
+              "reward_exp": true,
+              "trader_exp": 14
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

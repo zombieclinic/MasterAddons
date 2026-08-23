@@ -6,18 +6,31 @@
       "states": {
         "spawn": {
           "animations": ["spawn"],
-          "transitions": [{ "idle": "query.all_animations_finished" }],
+          "transitions": [
+            { "preboss": "query.skin_id == 1" },
+            { "idle": "query.all_animations_finished" }
+          ],
           "blend_transition": 0.15
         },
         "idle": {
           "animations": ["idle"],
-          "transitions": [{ "walk": "query.modified_move_speed > 0.05" }],
+          "transitions": [
+            { "preboss": "query.skin_id == 1" },
+            { "walk": "query.modified_move_speed > 0.05" }
+          ],
           "blend_transition": 0.2
         },
         "walk": {
           "animations": ["move"],
-          "transitions": [{ "idle": "query.modified_move_speed <= 0.05" }],
+          "transitions": [
+            { "preboss": "query.skin_id == 1" },
+            { "idle": "query.modified_move_speed <= 0.05" }
+          ],
           "blend_transition": 0.2
+        },
+        "preboss": {
+          "animations": ["boom"],
+          "blend_transition": 0.1
         }
       }
     },

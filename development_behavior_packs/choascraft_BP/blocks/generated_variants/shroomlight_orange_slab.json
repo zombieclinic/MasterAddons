@@ -21,7 +21,8 @@
         ]
       },
       "menu_category": {
-        "category": "construction"
+        "category": "construction",
+        "group": "minecraft:itemGroup.name.slab"
       }
     },
     "permutations": [
@@ -96,7 +97,10 @@
       }
     ],
     "components": {
-      "minecraft:display_name": "Shroomlight Orange Slab",
+        "minecraft:precipitation_interactions": {
+            "precipitation_behavior": "none"
+        },
+"minecraft:display_name": "Shroomlight Orange Slab",
       "minecraft:geometry": {
         "identifier": "geometry.zombie.eyewood_slab",
         "bone_visibility": {

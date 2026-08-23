@@ -4,7 +4,8 @@
     "description": {
       "identifier": "zombie:sonic_grass_stairs",
       "menu_category": {
-        "category": "construction"
+        "category": "construction",
+        "group": "minecraft:itemGroup.name.stairs"
       },
       "traits": {
         "minecraft:placement_position": {
@@ -29,7 +30,10 @@
       }
     },
     "components": {
-      "minecraft:display_name": "Sonic Grass Stairs",
+        "minecraft:precipitation_interactions": {
+            "precipitation_behavior": "none"
+        },
+"minecraft:display_name": "Sonic Grass Stairs",
       "minecraft:material_instances": {
         "*": {
           "texture": "zombie_sonic_grass",

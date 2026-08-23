@@ -4,7 +4,7 @@
     "description": {
       "identifier": "zombie:zombiesanta_easy",
       "spawn_category": "monster",
-      "is_spawnable": false,
+      "is_spawnable": true,
       "is_summonable": true,
       "animations": {
         "boss_events": "controller.animation.zombie_santa_boss"
@@ -13,19 +13,85 @@
         "animate": ["boss_events"]
       }
     },
+    "component_groups": {
+      "zombie:santa_passive": {
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "cause": "fall",
+              "deals_damage": "no"
+            },
+            {
+              "cause": "entity_attack",
+              "on_damage": {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                "event": "zombie:activate_santa_boss",
+                "target": "self"
+              }
+            }
+          ]
+        }
+      },
+      "zombie:santa_boss": {
+        "minecraft:persistent": {},
+        "minecraft:boss": {
+          "hud_range": 64,
+          "name": "§2Zombie Santa §a— Easy Form",
+          "should_darken_sky": true
+        },
+        "minecraft:attack": {
+          "damage": 7,
+          "effect_name": "slowness",
+          "effect_duration": 2
+        },
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "cause": "fall",
+              "deals_damage": "no"
+            }
+          ]
+        },
+        "minecraft:behavior.hurt_by_target": { "priority": 1 },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 2,
+          "must_see": false,
+          "reselect_targets": true,
+          "within_radius": 40,
+          "persist_time": 15,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+                  { "test": "is_family", "subject": "other", "value": "player" },
+                  { "test": "is_family", "subject": "other", "value": "villager" },
+                  { "test": "is_family", "subject": "other", "value": "irongolem" }
+                ]
+              },
+              "max_dist": 40,
+              "must_see": false
+            }
+          ]
+        },
+        "minecraft:behavior.melee_attack": {
+          "priority": 3,
+          "cooldown_time": 1.2,
+          "speed_multiplier": 1.1,
+          "reach_multiplier": 1.6,
+          "track_target": true
+        }
+      }
+    },
     "components": {
-      "minecraft:persistent": {},
       "minecraft:nameable": {},
       "minecraft:type_family": {
         "family": ["zombie_santa", "zombie_santa_easy", "zombie", "undead", "monster", "mob", "christmas"]
       },
-      "minecraft:boss": {
-        "hud_range": 64,
-        "name": "§2Zombie Santa §a— Easy Form",
-        "should_darken_sky": true
-      },
       "minecraft:health": {"value": 300, "max": 300},
-      "minecraft:attack": {"damage": 7, "effect_name": "slowness", "effect_duration": 2},
       "minecraft:movement": {"value": 0.26},
       "minecraft:movement.basic": {},
       "minecraft:navigation.walk": {
@@ -39,42 +105,28 @@
       "minecraft:collision_box": {"width": 0.6, "height": 1.9},
       "minecraft:knockback_resistance": {"value": 0.45},
       "minecraft:follow_range": {"value": 40},
-      "minecraft:damage_sensor": {"triggers": {"cause": "fall", "deals_damage": "no"}},
       "minecraft:experience_reward": {"on_death": "query.last_hit_by_player ? 50 : 0"},
       "minecraft:behavior.float": {"priority": 0},
-      "minecraft:behavior.hurt_by_target": {"priority": 1},
-      "minecraft:behavior.nearest_attackable_target": {
-        "priority": 2,
-        "must_see": false,
-        "reselect_targets": true,
-        "within_radius": 40,
-        "persist_time": 15,
-        "entity_types": [
-          {
-            "filters": {
-              "any_of": [
-                {"test": "is_family", "subject": "other", "value": "player"},
-                {"test": "is_family", "subject": "other", "value": "villager"},
-                {"test": "is_family", "subject": "other", "value": "irongolem"}
-              ]
-            },
-            "max_dist": 40,
-            "must_see": false
-          }
-        ]
-      },
-      "minecraft:behavior.melee_attack": {
-        "priority": 3,
-        "cooldown_time": 1.2,
-        "speed_multiplier": 1.1,
-        "reach_multiplier": 1.6,
-        "track_target": true
-      },
       "minecraft:behavior.random_stroll": {"priority": 7, "speed_multiplier": 0.65},
       "minecraft:behavior.look_at_player": {"priority": 8, "look_distance": 16},
       "minecraft:behavior.random_look_around": {"priority": 9},
       "minecraft:pushable_by_entity": {},
       "minecraft:conditional_bandwidth_optimization": {}
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": ["zombie:santa_passive"]
+        }
+      },
+      "zombie:activate_santa_boss": {
+        "remove": {
+          "component_groups": ["zombie:santa_passive"]
+        },
+        "add": {
+          "component_groups": ["zombie:santa_boss"]
+        }
+      }
     }
   }
 }

@@ -201,6 +201,10 @@
     "mob.zomboss.spin": {
       "category": "hostile",
       "sounds": ["sounds/zomboss/spin_attack"]
+    },
+    "pre_boss": {
+      "category": "hostile",
+      "sounds": ["sounds/zomboss/preboss"]
     }
   }
 }

@@ -65,6 +65,49 @@
           "name": "zombie:blightwood_tree_spore"
         }
       ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance_with_looting",
+          "chance": 0.08,
+          "looting_multiplier": 0.02
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_book_contents",
+              "author": "The Blightwood Project",
+              "title": "Blightwood Field Journal",
+              "pages": [
+                "Blightwood Field Journal\n\nRecovered notes on the forest, its mutations, Subject 413, and equipment grown from mature spores.",
+                "Origin\n\nAn unknown researcher found spores inside the oldest trees. They restarted dead tissue by replacing damaged flesh with aggressive fungal growth.",
+                "The Escape\n\nThe experiments escaped containment. Infection entered the soil and roots until the forest became one enormous living organism.",
+                "Mutated Zombie\n\nThe most stable experiment. Human tissue and spores remain balanced. It alone can survive another concentrated dose of Zombie Virus.",
+                "Mutated Drowned\n\nMutations that fled into water adapted to breathe above and below it. Away from water, they may begin returning to a land form.",
+                "Puker\n\nIts organs are pressurized chambers of poisonous spores. It spits infected matter at living creatures to spread Blightwood sickness.",
+                "Bloater\n\nA failed spore-storage vessel swollen with gas and decay. It explodes when threatened. Lightning makes the reaction far stronger.",
+                "Charged Zombie\n\nLightning struck during mutation. The fungal network trapped its energy, creating a faster and stronger infected creature.",
+                "Flying Zombie\n\nNot a natural mutation. Subject 413 tears small bodies from the network and throws them as living weapons.",
+                "Subject 413\n\nThe final controlled specimen was meant to command the entire infection. It never awakened because it lacked one final virus dose.",
+                "Awakening 413\n\nFind a Mutated Zombie. Use a Zombie Vial directly on it. The vessel becomes helpless during its roughly 28-second transformation.",
+                "Recovered Voice\n\nYou found the vessel. You carried my virus into the heart of the Blightwood. You have completed my work.",
+                "Final Recording\n\nSubject 413 is awake.\n\nAnd Subject 413 is hungry.",
+                "Mature Spore Pod\n\nShapeless: Iron Ingot + Rotten Flesh + Mutated Flesh + Raw Blightspore. This pod is the core material for Blightwood gear.",
+                "Armor Recipes\n\nUse Mature Spore Pods in normal helmet, chestplate, leggings, and boots patterns at a crafting table.",
+                "Tool Recipes\n\nUse Mature Spore Pods with sticks in normal sword, pickaxe, axe, shovel, and hoe patterns.",
+                "Seeds and Timber\n\nOne Raw Blightspore makes 2 Blightspore Seeds. One Blightwood Log or Stripped Log makes 4 Blightwood Planks.",
+                "Project Warning\n\nSubject 413 commands nearby mutations and can call more from the forest. Do not allow the network to gather around it."
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

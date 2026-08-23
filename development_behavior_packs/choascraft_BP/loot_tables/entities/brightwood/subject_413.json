@@ -1,0 +1,71 @@
+{
+  "pools": [
+    {
+      "rolls": { "min": 3, "max": 6 },
+      "entries": [
+        { "type": "item", "name": "zombie:mutated_flesh", "weight": 14, "functions": [{ "function": "set_count", "count": { "min": 1, "max": 4 } }] },
+        { "type": "item", "name": "zombie:blightwood_tree_spore", "weight": 12, "functions": [{ "function": "set_count", "count": { "min": 1, "max": 3 } }] },
+        { "type": "item", "name": "zombie:blightwood_spore_pod", "weight": 8, "functions": [{ "function": "set_count", "count": { "min": 1, "max": 2 } }] },
+        { "type": "item", "name": "zombie:blightwood_spore_seeds", "weight": 8, "functions": [{ "function": "set_count", "count": { "min": 1, "max": 4 } }] },
+        { "type": "item", "name": "zombie:blightwood_log", "weight": 8, "functions": [{ "function": "set_count", "count": { "min": 2, "max": 8 } }] },
+        { "type": "item", "name": "zombie:stripped_blightwood_log", "weight": 5, "functions": [{ "function": "set_count", "count": { "min": 2, "max": 6 } }] },
+        { "type": "item", "name": "zombie:blightwood_planks", "weight": 8, "functions": [{ "function": "set_count", "count": { "min": 4, "max": 12 } }] },
+        { "type": "item", "name": "zombie:blightwood_leaves", "weight": 5, "functions": [{ "function": "set_count", "count": { "min": 2, "max": 8 } }] },
+        { "type": "item", "name": "zombie:blightwood_sapling", "weight": 5, "functions": [{ "function": "set_count", "count": { "min": 1, "max": 2 } }] },
+        { "type": "item", "name": "zombie:blightwood_grass", "weight": 4, "functions": [{ "function": "set_count", "count": { "min": 1, "max": 4 } }] },
+        { "type": "item", "name": "zombie:blightwood_dirt", "weight": 4, "functions": [{ "function": "set_count", "count": { "min": 1, "max": 4 } }] },
+        { "type": "item", "name": "zombie:blightwood_ground_growth", "weight": 4, "functions": [{ "function": "set_count", "count": { "min": 1, "max": 3 } }] }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_book_contents",
+              "author": "Unknown Researcher",
+              "title": "Subject 413 Report",
+              "pages": [
+                "SUBJECT 413\n\nFinal Blightwood Project report. The vessel can command every mutation connected to the forest network.",
+                "Activation\n\nFind a Mutated Zombie and interact with it using a Zombie Vial. The vial supplies the final concentrated virus dose.",
+                "Transformation\n\nThe vessel remains immobile for roughly 28 seconds while its body is rewritten. When the sequence ends, Subject 413 awakens.",
+                "Observed Ability\n\nSubject 413 summons Blightwood mutations and weaponizes smaller infected bodies. Reduce nearby mutations before it calls more.",
+                "Equipment\n\nRecovered armor and tools are fragments of Experiment 413. Boss-marked pieces remain property of the Blightwood Project.",
+                "Crafting\n\nCombine Iron, Rotten Flesh, Mutated Flesh, and Raw Blightspore to make a Mature Spore Pod. Use pods in standard armor and tool patterns."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [{ "condition": "random_chance", "chance": 0.25 }],
+      "rolls": 1,
+      "entries": [
+        { "type": "item", "name": "zombie:blightwood_helmet", "weight": 1, "functions": [{ "function": "set_lore", "lore": ["Once fused to Subject 413's skull.", "The spores still whisper commands.", "A fragment of Experiment 413.", "Property of the Blightwood Project."] }] },
+        { "type": "item", "name": "zombie:blightwood_chestplate", "weight": 1, "functions": [{ "function": "set_lore", "lore": ["Grown around the heart of Subject 413.", "It pulses when danger draws near.", "A fragment of Experiment 413.", "Property of the Blightwood Project."] }] },
+        { "type": "item", "name": "zombie:blightwood_leggings", "weight": 1, "functions": [{ "function": "set_lore", "lore": ["Twisted roots strengthen every step.", "The forest remembers its master.", "A fragment of Experiment 413.", "Property of the Blightwood Project."] }] },
+        { "type": "item", "name": "zombie:blightwood_boots", "weight": 1, "functions": [{ "function": "set_lore", "lore": ["Wherever Subject 413 walked,", "the Blightwood followed.", "A fragment of Experiment 413.", "Property of the Blightwood Project."] }] },
+        { "type": "item", "name": "zombie:blightwood_sword", "weight": 1, "functions": [{ "function": "set_lore", "lore": ["Grown from Subject 413's sharpened bone.", "Its wounds carry the forest's hunger.", "A fragment of Experiment 413.", "Property of the Blightwood Project."] }] },
+        { "type": "item", "name": "zombie:blightwood_axe", "weight": 1, "functions": [{ "function": "set_lore", "lore": ["Used to cut away failed growths.", "It now hungers for living wood.", "A fragment of Experiment 413.", "Property of the Blightwood Project."] }] },
+        { "type": "item", "name": "zombie:blightwood_pickaxe", "weight": 1, "functions": [{ "function": "set_lore", "lore": ["Its veins twitch beneath the handle.", "Something inside is still digging.", "A fragment of Experiment 413.", "Property of the Blightwood Project."] }] },
+        { "type": "item", "name": "zombie:blightwood_shovel", "weight": 1, "functions": [{ "function": "set_lore", "lore": ["Once used to bury failed subjects.", "Some of them were still moving.", "A fragment of Experiment 413.", "Property of the Blightwood Project."] }] },
+        { "type": "item", "name": "zombie:blightwood_hoe", "weight": 1, "functions": [{ "function": "set_lore", "lore": ["Wherever its blade breaks the soil,", "the spores wait beneath.", "A fragment of Experiment 413.", "Property of the Blightwood Project."] }] }
+      ]
+    },
+    {
+      "conditions": [{ "condition": "random_chance", "chance": 0.02 }],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:luckyblockreal",
+          "functions": [{ "function": "set_lore", "lore": ["A true Lucky Block recovered from Subject 413.", "Property of the Blightwood Project."] }]
+        }
+      ]
+    }
+  ]
+}

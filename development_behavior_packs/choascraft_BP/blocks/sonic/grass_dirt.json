@@ -26,6 +26,18 @@
           "render_method": "opaque",
           "face_dimming": true,
           "ambient_occlusion": 1
+        },
+        "up": {
+          "texture": "zombie_sonic_grass",
+          "render_method": "opaque",
+          "face_dimming": false,
+          "ambient_occlusion": 0
+        },
+        "down": {
+          "texture": "zombie_sonic_dirt",
+          "render_method": "opaque",
+          "face_dimming": true,
+          "ambient_occlusion": 1
         }
       }
     }

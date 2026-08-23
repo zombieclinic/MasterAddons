@@ -3,7 +3,7 @@
 	"animations": {
 		"animation.z_boss.move": {
 			"loop": true,
-			"anim_time_update": "query.modified_distance_moved * 1.8",
+			"anim_time_update": "query.modified_distance_moved * 0.75",
 			"animation_length": 1,
 			"bones": {
 				"full_body": {

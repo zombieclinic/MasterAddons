@@ -55,7 +55,7 @@
 				"overlay_color": "#3413aa"
 			},
 			"sound_effects": {
-				"charge": "bloater_charge"
+				"charge": "mob.bloater.charge"
 			}
 		}
 	}

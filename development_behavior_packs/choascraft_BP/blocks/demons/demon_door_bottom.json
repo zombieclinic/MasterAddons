@@ -5,6 +5,7 @@
       "identifier": "zombie:demon_door_bottom",
       "menu_category": {
         "category": "none",
+        "group": "minecraft:itemGroup.name.door",
         "is_hidden_in_commands": true
       },
       "states": {

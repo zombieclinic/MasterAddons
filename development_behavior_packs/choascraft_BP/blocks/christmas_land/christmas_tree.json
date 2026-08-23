@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.120",
 	"minecraft:block": {
 		"description": {
 			"identifier": "zombie:christmas_tree",
@@ -21,7 +21,10 @@
 			}
 		},
 		"components": {
-			"minecraft:collision_box": {
+			"minecraft:precipitation_interactions": {
+				"precipitation_behavior": "none"
+			},
+"minecraft:collision_box": {
 				"origin": [
 					-5,
 					0,

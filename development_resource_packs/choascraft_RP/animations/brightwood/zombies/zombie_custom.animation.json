@@ -627,7 +627,7 @@
 			}
 		},
 		"animation.mutated_zombie.boom": {
-			"loop": true,
+			"loop": false,
 			"animation_length": 27.75,
 			"bones": {
 				"waist": {
@@ -882,7 +882,7 @@
 			},
 			"sound_effects": {
 				"0.0": {
-					"effect": "preboss"
+					"effect": "boss"
 				}
 			}
 		}

@@ -3,7 +3,7 @@
 	"format_version": "1.26.40",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "zombie:zombie_boss",
+			"identifier": "zombie:subject_413",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
@@ -60,17 +60,26 @@
 						}
 					]
 				},
+				"minecraft:entity_sensor": {
+					"relative_range": false,
+					"subsensors": [
+						{
+							"range": [32, 32],
+							"minimum_count": 3,
+							"maximum_count": 100,
+							"event_filters": {
+								"test": "is_family",
+								"subject": "other",
+								"value": "mutated"
+							},
+							"event": "zombie:end_summon"
+						}
+					]
+				},
 				"minecraft:timer": {
 					"looping": false,
-					"time": 6,
+					"time": 2.3,
 					"time_down_event": {
-						"event": "zombie:end_summon",
-						"target": "self"
-					}
-				},
-				"minecraft:target_nearby_sensor": {
-					"outside_range": 10,
-					"on_outside_range": {
 						"event": "zombie:end_summon",
 						"target": "self"
 					}
@@ -109,12 +118,20 @@
 					"charge_shoot_trigger": 2.39,
 					"attack_interval": {
 						"min": 1,
-						"max": 5
+						"max": 2
 					},
 					"attack_radius": 15
 				},
+				"minecraft:timer": {
+					"looping": false,
+					"time": 4.16,
+					"time_down_event": {
+						"event": "zombie:end_throw",
+						"target": "self"
+					}
+				},
 				 "minecraft:shooter": {
-            "def": "zombie:pumpkin_seed"
+            "def": "zombie:flying_zombie"
           },
 				"minecraft:target_nearby_sensor": {
 					"inside_range": 4,
@@ -273,23 +290,14 @@
 				"value": 0.7,
 				"max": 0.7
 			},
-			"minecraft:behavior.melee_attack": {
-				"priority": 1,
-				"reach_multiplier": 2
-			},
 			"minecraft:attack": {
 				"damage": 30
-			},
-			"minecraft:behavior.move_towards_target": {
-				"priority": 2,
-				"speed_multiplier": 1.2,
-				"within_radius": 30
 			},
 			"minecraft:experience_reward": {
 				"on_death": "(5000.0)"
 			},
 			"minecraft:loot": {
-				"table": "loot_tables/entities/brightwood/brightwood_monster.json"
+				"table": "loot_tables/entities/brightwood/subject_413.json"
 			},
 			"minecraft:despawn": {
 				"despawn_from_simulation_edge": true,
@@ -341,6 +349,18 @@
 				"add": {
 					"component_groups": [
 						"zombie:attack"
+					]
+				}
+			},
+			"zombie:end_throw": {
+				"remove": {
+					"component_groups": [
+						"zombie:throw"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"zombie:summon"
 					]
 				}
 			},

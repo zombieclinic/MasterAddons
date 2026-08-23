@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "zombie:christmas_santa_house"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "christmas/christmas_house15",
+          "projection": "rigid"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

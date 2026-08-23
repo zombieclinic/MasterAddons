@@ -20,11 +20,8 @@
         "slot": "slot.armor.head",
         "hides_player_location": true
       },
-      "minecraft:enchantable": {
-        "slot": "armor_head",
-        "value": 5
-      },
-      "minecraft:icon": "zombie_cultofthedeadchicken"
+      "minecraft:icon": "zombie_cultofthedeadchicken",
+      "minecraft:max_stack_size": 64
     }
   }
 }
