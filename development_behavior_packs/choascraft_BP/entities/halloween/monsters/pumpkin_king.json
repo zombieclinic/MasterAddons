@@ -4,7 +4,7 @@
 	"minecraft:entity": {
 		"description": {
 			"identifier": "zombie:pumpkin_king",
-			"is_spawnable": true,
+			"is_spawnable": false,
 			"is_summonable": true,
 			"is_experimental": false,
 			"animations": {

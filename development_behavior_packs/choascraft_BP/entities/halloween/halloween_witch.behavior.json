@@ -3,7 +3,7 @@
   "minecraft:entity": {
     "description": {
       "identifier": "ninjos:halloween_witch",
-      "is_spawnable": true,
+      "is_spawnable": false,
       "is_summonable": true,
       "is_experimental": false
     },

@@ -3,7 +3,7 @@
   "minecraft:entity": {
     "description": {
       "identifier": "zombie:chaos_blast_spell",
-      "is_spawnable": true,
+      "is_spawnable": false,
       "is_summonable": true
     },
     "components": {

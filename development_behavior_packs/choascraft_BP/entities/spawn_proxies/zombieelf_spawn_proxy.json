@@ -3,7 +3,7 @@
   "minecraft:entity": {
     "description": {
       "identifier": "zombie:zombieelf_spawn_proxy",
-      "is_spawnable": true,
+      "is_spawnable": false,
       "is_summonable": true,
       "is_experimental": false
     },

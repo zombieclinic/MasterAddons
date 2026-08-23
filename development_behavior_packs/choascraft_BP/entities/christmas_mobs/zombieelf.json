@@ -4,7 +4,7 @@
     "description": {
       "identifier": "zombie:zombieelf",
       "spawn_category": "monster",
-      "is_spawnable": true,
+      "is_spawnable": false,
       "is_summonable": true
     },
     "component_groups": {

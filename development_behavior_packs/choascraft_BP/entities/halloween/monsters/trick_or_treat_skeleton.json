@@ -3,7 +3,7 @@
   "minecraft:entity": {
     "description": {
       "identifier": "zombie:trick_or_treat_skeleton",
-      "is_spawnable": true,
+      "is_spawnable": false,
       "is_summonable": true,
       "runtime_identifier": "minecraft:skeleton"
     },

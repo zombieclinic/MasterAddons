@@ -4,7 +4,7 @@
     "description": {
       "identifier": "zombie:demon_arrow",
       "is_summonable": true,
-      "is_spawnable": true,
+      "is_spawnable": false,
       "animations": {
         "burn": "controller.animation.zombie_demon_arrow"
       },

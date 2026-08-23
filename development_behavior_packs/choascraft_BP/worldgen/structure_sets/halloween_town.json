@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:structure_set": {
+    "description": { "identifier": "zombie:halloween_town_set" },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 31102026,
+      "separation": 48,
+      "spacing": 96,
+      "spread_type": "linear"
+    },
+    "structures": [
+      { "structure": "zombie:halloween_town", "weight": 1 }
+    ]
+  }
+}

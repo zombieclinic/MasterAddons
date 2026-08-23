@@ -4,7 +4,7 @@
     "description": {
       "identifier": "zombie:zombieelf_villager",
       "spawn_category": "creature",
-      "is_spawnable": true,
+      "is_spawnable": false,
       "is_summonable": true,
       "is_experimental": false
     },

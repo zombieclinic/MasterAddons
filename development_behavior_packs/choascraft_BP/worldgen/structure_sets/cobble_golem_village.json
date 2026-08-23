@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:structure_set": {
+    "description": { "identifier": "zombie:cobble_golem_village_set" },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 27182818,
+      "separation": 48,
+      "spacing": 96,
+      "spread_type": "linear"
+    },
+    "structures": [
+      { "structure": "zombie:cobble_golem_village", "weight": 1 }
+    ]
+  }
+}

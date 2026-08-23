@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": { "identifier": "zombie:end_amethyst_ball_feature" },
+    "features": [
+      ["zombie:end_amethyst_ball_purple_feature", 1],
+      ["zombie:end_amethyst_ball_blue_feature", 1],
+      ["zombie:end_amethyst_ball_cyan_feature", 1],
+      ["zombie:end_amethyst_ball_green_feature", 1],
+      ["zombie:end_amethyst_ball_red_feature", 1],
+      ["zombie:end_amethyst_ball_pink_feature", 1]
+    ]
+  }
+}

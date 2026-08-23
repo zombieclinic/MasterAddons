@@ -4,7 +4,7 @@
     "description": {
       "identifier": "zombie:demon_lord",
       "spawn_category": "monster",
-      "is_spawnable": true,
+      "is_spawnable": false,
       "is_summonable": true,
       "properties": {
         "zombie:animation_state": {

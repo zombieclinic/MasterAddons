@@ -3,7 +3,7 @@
 	"minecraft:entity": {
 	  "description": {
 		"identifier": "zombie:trick_or_treator_spawn",
-		"is_spawnable": true,
+		"is_spawnable": false,
 		"is_summonable": true
 	  },
 	  "component_groups": {

@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:template_pool": {
+    "description": { "identifier": "zombie:cobble_golem_village_start" },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "golems",
+          "projection": "rigid"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

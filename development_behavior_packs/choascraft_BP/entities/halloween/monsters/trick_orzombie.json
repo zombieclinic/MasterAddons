@@ -3,7 +3,7 @@
   "minecraft:entity": {
     "description": {
       "identifier": "zombie:trick_orzombie",
-      "is_spawnable": true,
+      "is_spawnable": false,
       "is_summonable": true,
       "runtime_identifier": "minecraft:zombie"
     },

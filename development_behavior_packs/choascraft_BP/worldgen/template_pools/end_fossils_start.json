@@ -1,0 +1,24 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:template_pool": {
+    "description": { "identifier": "zombie:end_fossils_start" },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "fossel1",
+          "projection": "rigid"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "fossel2",
+          "projection": "rigid"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

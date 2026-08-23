@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:structure_set": {
+    "description": { "identifier": "zombie:end_fossils_set" },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 41302026,
+      "separation": 16,
+      "spacing": 40,
+      "spread_type": "linear"
+    },
+    "structures": [
+      { "structure": "zombie:end_fossils", "weight": 1 }
+    ]
+  }
+}

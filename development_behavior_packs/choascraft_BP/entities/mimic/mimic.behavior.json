@@ -3,6 +3,7 @@
   "minecraft:entity": {
     "description": {
       "identifier": "zombie:mimic",
+      "spawn_category": "monster",
       "is_spawnable": true,
       "is_summonable": true,
       "properties": {
@@ -131,7 +132,7 @@
         "minecraft:attack": { "damage": 10 },
         "minecraft:collision_box": { "width": 1.0, "height": 1.0 },
         "minecraft:pushable": { "is_pushable": true, "is_pushable_by_piston": true },
-        "minecraft:loot": { "table": "loot_tables/luckyblock_weighted.json" },
+        "minecraft:loot": { "table": "loot_tables/luckyblock.json" },
         "minecraft:knockback_resistance": { "value": 0.5 },
         "minecraft:boss": { "should_darken_sky": true, "hud_range": 20, "name": "Mimic Chest" }
       }
