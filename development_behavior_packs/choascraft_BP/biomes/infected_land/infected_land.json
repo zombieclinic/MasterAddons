@@ -33,7 +33,7 @@
               "minecraft:roofed_forest",
               "minecraft:taiga"
             ],
-            "amount": 0.2,
+            "amount": 0.1,
             "noise_frequency_scale": 0.30
           }
         ]

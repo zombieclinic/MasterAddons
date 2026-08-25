@@ -34,6 +34,9 @@
       "minecraft:annotation.break_door": {},
       "minecraft:jump.static": {},
       "minecraft:can_climb": {},
+      "minecraft:home": {
+        "restriction_radius": 24
+      },
       "minecraft:health": {
         "value": 20,
         "max": 20
@@ -280,6 +283,10 @@
         "pickup_based_on_chance": true,
         "can_pickup_any_item": true
       },
+      "minecraft:behavior.move_towards_home_restriction": {
+        "priority": 6,
+        "speed_multiplier": 1
+      },
       "minecraft:behavior.random_stroll": {
         "priority": 7,
         "speed_multiplier": 1
@@ -326,7 +333,9 @@
         "display_name": "Halloween Villager",
         "new_screen": true,
         "table": "trading/halloween/halloween_villagers.json",
-        "show_trade_screen": true
+        "show_trade_screen": true,
+        "persist_trades": true,
+        "convert_trades_economy": true
       },
       "minecraft:trade_resupply": {},
       "minecraft:behavior.trade_with_player": {

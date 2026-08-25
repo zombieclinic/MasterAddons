@@ -1,0 +1,24 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:template_pool": {
+    "description": { "identifier": "zombie:halloween_random_straight_roads" },
+    "elements": [
+      {
+        "element": { "element_type": "minecraft:single_pool_element", "location": "halloween/path_straight", "projection": "rigid" },
+        "weight": 6
+      },
+      {
+        "element": { "element_type": "minecraft:single_pool_element", "location": "halloween/path_straight_church", "projection": "rigid" },
+        "weight": 1
+      },
+      {
+        "element": { "element_type": "minecraft:single_pool_element", "location": "halloween/path_straight_grave", "projection": "rigid" },
+        "weight": 1
+      },
+      {
+        "element": { "element_type": "minecraft:single_pool_element", "location": "halloween/path_straight_windmill", "projection": "rigid" },
+        "weight": 1
+      }
+    ]
+  }
+}

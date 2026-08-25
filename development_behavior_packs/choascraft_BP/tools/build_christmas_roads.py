@@ -106,10 +106,17 @@ def jigsaw_entity(x, y, z, name, target, pool, final_state="minecraft:grass_path
     })
 
 
-def make_road(kind, art_street=False, santa_street=False):
+def make_road(kind, art_street=False, santa_street=False,
+              road_pool="zombie:christmas_roads",
+              building_pool="zombie:christmas_buildings",
+              building_target="zombie:christmas_connector",
+              clear_corridor=False, terminate_with_buildings=False,
+              first_side_pool=None, second_side_pool=None,
+              terminal_building_pools=None, road_length=8,
+              extra_side_pair=False):
     # The path occupies y=0. The volume extends to y=2 so building connectors can
     # meet the exported house connectors without pulling each house underground.
-    sx, sy, sz = 8, 3, 8
+    sx, sy, sz = 8, 3, road_length
     palette = [palette_block("minecraft:air"), palette_block("minecraft:grass_path")]
     directions = {2: {"facing_direction": 2, "rotation": 0}, 3: {"facing_direction": 3, "rotation": 0},
                   4: {"facing_direction": 4, "rotation": 0}, 5: {"facing_direction": 5, "rotation": 0}}
@@ -131,22 +138,62 @@ def make_road(kind, art_street=False, santa_street=False):
     if kind == "cross":
         for x in range(sx):
             for z in (3, 4): path(x, z)
-
-    # Road continuation connectors at each open end.
-    jig(3, 0, 0, 2, "zombie:road_connector", "zombie:road_connector", "zombie:christmas_roads")
-    jig(4, 0, 7, 3, "zombie:road_connector", "zombie:road_connector", "zombie:christmas_roads")
-    if kind == "cross":
-        jig(0, 0, 4, 4, "zombie:road_connector", "zombie:road_connector", "zombie:christmas_roads")
-        jig(7, 0, 3, 5, "zombie:road_connector", "zombie:road_connector", "zombie:christmas_roads")
     else:
+        # One-block door aprons join the lane to the adjacent building sockets.
+        path(2, 3)
+        path(5, 4)
+        if extra_side_pair:
+            path(2, sz - 5)
+            path(5, sz - 4)
+
+    # Forest towns need real air (rather than structure void) over the road and
+    # one-block shoulders, otherwise trunks and leaves conceal the network.
+    if clear_corridor:
+        corridor = {(x, z) for x in range(2, 6) for z in range(sz)}
+        if kind == "cross":
+            corridor |= {(x, z) for x in range(sx) for z in range(2, 6)}
+        for x, z in corridor:
+            for y in (1, 2):
+                blocks[index(x, y, z)] = 0
+
+    # The Christmas network continues through roads. Halloween streets instead
+    # use the same connector names for attachment to the hub, but every unused
+    # endpoint terminates at a building so paths cannot wander into empty land.
+    end_target = "minecraft:empty" if terminate_with_buildings else "zombie:road_connector"
+    end_pool = "minecraft:empty" if terminate_with_buildings else road_pool
+    end_state = "minecraft:grass_path"
+    jig(3, 0, 0, 2, "zombie:road_connector", end_target, end_pool, end_state)
+    jig(4, 0, sz - 1, 3, "zombie:road_connector", end_target, end_pool, end_state)
+    if kind == "cross":
+        jig(0, 0, 4, 4, "zombie:road_connector", end_target, end_pool, end_state)
+        jig(7, 0, 3, 5, "zombie:road_connector", end_target, end_pool, end_state)
+    if terminate_with_buildings:
+        # Separate elevated sockets keep building floors at Y=0. The socket at
+        # the road end consumed by the center fails harmlessly on collision;
+        # every exposed end receives a terminal building.
+        terminal_pools = terminal_building_pools or [building_pool] * 4
+        jig(3, 2, 0, 2, "zombie:road_end_house_connector", building_target, terminal_pools[0], "minecraft:air")
+        jig(4, 2, sz - 1, 3, "zombie:road_end_house_connector", building_target, terminal_pools[1], "minecraft:air")
+        if kind == "cross":
+            jig(0, 2, 4, 4, "zombie:road_end_house_connector", building_target, terminal_pools[2], "minecraft:air")
+            jig(7, 2, 3, 5, "zombie:road_end_house_connector", building_target, terminal_pools[3], "minecraft:air")
+    if kind != "cross":
         # House connectors are two blocks above the path. This raises every
         # building by two blocks compared with the original y=0 road connector.
-        side_pool = "zombie:christmas_art" if art_street else "zombie:christmas_buildings"
+        side_pool = "zombie:christmas_art" if art_street else building_pool
         connector_name = "zombie:road_art_connector" if art_street else "zombie:road_house_connector"
-        first_pool = "zombie:christmas_santa_house" if santa_street else side_pool
+        first_pool = "zombie:christmas_santa_house" if santa_street else (first_side_pool or side_pool)
+        second_pool = second_side_pool or side_pool
         first_name = "zombie:road_santa_connector" if santa_street else connector_name
-        jig(0, 2, 3, 4, first_name, "zombie:christmas_connector", first_pool, "minecraft:air")
-        jig(7, 2, 4, 5, connector_name, "zombie:christmas_connector", side_pool, "minecraft:air")
+        # Building sockets must be on the structure boundary. Moving them into
+        # the road volume makes an attached building overlap its parent piece,
+        # so Bedrock's jigsaw collision check rejects every building candidate.
+        # These are the original, proven Christmas-town socket coordinates.
+        jig(0, 2, 3, 4, first_name, building_target, first_pool, "minecraft:air")
+        jig(7, 2, 4, 5, connector_name, building_target, second_pool, "minecraft:air")
+        if extra_side_pair:
+            jig(7, 2, sz - 5, 5, connector_name, building_target, first_pool, "minecraft:air")
+            jig(0, 2, sz - 4, 4, connector_name, building_target, second_pool, "minecraft:air")
 
     root = compound({
         "format_version": integer(1), "size": list_tag(3, [integer(sx), integer(sy), integer(sz)]),
@@ -160,7 +207,9 @@ def make_road(kind, art_street=False, santa_street=False):
     return root
 
 
-def make_town_center(source):
+def make_town_center(source, road_pool="zombie:christmas_roads",
+                     special_road_pool="zombie:christmas_santa_road",
+                     road_pools=None):
     """Convert the original decorated hub into a ground-level road start piece."""
     root = Reader(source.read_bytes()).root()
     value = root.value
@@ -193,8 +242,11 @@ def make_town_center(source):
         be["y"] = integer(be["y"].value - old_y)
         be["name"] = string("zombie:center_road_connector")
         be["target"] = string("zombie:road_connector")
-        # Exactly one center exit starts the guaranteed Santa-house street.
-        pool = "zombie:christmas_santa_road" if connector_number == 0 else "zombie:christmas_roads"
+        # Christmas uses one special Santa street; other towns can omit it.
+        if road_pools:
+            pool = road_pools[connector_number % len(road_pools)]
+        else:
+            pool = special_road_pool if connector_number == 0 and special_road_pool else road_pool
         be["target_pool"] = string(pool)
         be["final_state"] = string("minecraft:grass_path")
         connector_number += 1
@@ -208,6 +260,73 @@ write_root(structures / "path_straight_art.mcstructure", make_road("straight", a
 write_root(structures / "path_straight_santa.mcstructure", make_road("straight", santa_street=True))
 write_root(structures / "path_cross.mcstructure", make_road("cross"))
 write_root(structures / "town_center.mcstructure", make_town_center(structures / "tree.mcstructure"))
+
+# Halloween uses three guaranteed landmark streets plus one bounded neighborhood
+# branch. Each landmark street places houses along its sides and its unique large
+# building at the far end. Keep these pools here so rebuilding the generated
+# center cannot silently restore the old recursive road graph.
+halloween_structures = root_dir / "structures" / "halloween"
+write_root(halloween_structures / "path_straight.mcstructure", make_road(
+    "straight", road_pool="zombie:halloween_roads",
+    building_pool="zombie:halloween_town",
+    building_target="zombie:halloween_town_connector", clear_corridor=True
+))
+write_root(halloween_structures / "path_cross.mcstructure", make_road(
+    "cross", road_pool="zombie:halloween_roads",
+    building_pool="zombie:halloween_town",
+    building_target="zombie:halloween_town_connector", clear_corridor=True
+))
+write_root(halloween_structures / "path_inner_straight.mcstructure", make_road(
+    "straight", road_pool="zombie:halloween_outer_roads",
+    building_pool="zombie:halloween_houses",
+    building_target="zombie:halloween_town_connector", clear_corridor=True,
+    first_side_pool="zombie:halloween_house_1",
+    second_side_pool="zombie:halloween_house_2"
+))
+write_root(halloween_structures / "path_inner_cross.mcstructure", make_road(
+    "cross", road_pool="zombie:halloween_outer_roads",
+    building_target="zombie:halloween_town_connector", clear_corridor=True
+))
+
+def write_halloween_terminal_road(filename, terminal_pool, road_length=8,
+                                  extra_side_pair=False):
+    write_root(halloween_structures / filename, make_road(
+        "straight", building_pool="zombie:halloween_houses",
+        building_target="zombie:halloween_town_connector", clear_corridor=True,
+        terminate_with_buildings=True,
+        first_side_pool="zombie:halloween_house_1",
+        second_side_pool="zombie:halloween_house_2",
+        terminal_building_pools=[terminal_pool] * 4,
+        road_length=road_length, extra_side_pair=extra_side_pair
+    ))
+
+
+write_halloween_terminal_road("path_outer_house.mcstructure", "zombie:halloween_houses")
+write_halloween_terminal_road("path_outer_church.mcstructure", "zombie:halloween_church")
+write_halloween_terminal_road("path_outer_grave.mcstructure", "zombie:halloween_grave")
+write_halloween_terminal_road("path_outer_windmill.mcstructure", "zombie:halloween_windmill")
+# Long arms give the landmark footprints room beyond the centerpiece. The
+# second pair of side sockets places ordinary houses before the landmark, so
+# the windmill/church/graveyard reads as sitting behind the neighborhood.
+write_halloween_terminal_road(
+    "path_straight_church.mcstructure", "zombie:halloween_church", 40, True
+)
+write_halloween_terminal_road(
+    "path_straight_grave.mcstructure", "zombie:halloween_grave", 40, True
+)
+write_halloween_terminal_road(
+    "path_straight_windmill.mcstructure", "zombie:halloween_windmill", 40, True
+)
+write_root(halloween_structures / "town_center.mcstructure", make_town_center(
+    halloween_structures / "halloweenjack.mcstructure",
+    special_road_pool=None,
+    road_pools=[
+        "zombie:halloween_church_road",
+        "zombie:halloween_grave_road",
+        "zombie:halloween_windmill_road",
+        "zombie:halloween_inner_cross_roads"
+    ]
+))
 
 # A placed building must terminate instead of immediately growing another building.
 # NBT strings carry their own lengths, so these targeted replacements preserve every

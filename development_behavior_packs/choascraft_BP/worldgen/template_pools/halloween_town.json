@@ -17,14 +17,18 @@
       },
       {
         "element": { "element_type": "minecraft:single_pool_element", "location": "halloween/halloween_house_1", "projection": "rigid" },
-        "weight": 2
+        "weight": 8
       },
       {
         "element": { "element_type": "minecraft:single_pool_element", "location": "halloween/halloween_house_2", "projection": "rigid" },
-        "weight": 2
+        "weight": 8
       },
       {
         "element": { "element_type": "minecraft:single_pool_element", "location": "halloween/windmill", "projection": "rigid" },
+        "weight": 1
+      },
+      {
+        "element": { "element_type": "minecraft:single_pool_element", "location": "halloween/halloweenjack", "projection": "rigid" },
         "weight": 1
       }
     ]

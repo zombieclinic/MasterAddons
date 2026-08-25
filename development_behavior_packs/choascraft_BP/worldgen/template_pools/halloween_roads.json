@@ -1,0 +1,32 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "zombie:halloween_roads"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "halloween/path_straight",
+          "projection": "rigid"
+        },
+        "weight": 10
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "halloween/path_cross",
+          "projection": "rigid"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:empty_pool_element"
+        },
+        "weight": 5
+      }
+    ]
+  }
+}

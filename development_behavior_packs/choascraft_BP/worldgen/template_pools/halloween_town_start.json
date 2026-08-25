@@ -6,7 +6,7 @@
       {
         "element": {
           "element_type": "minecraft:single_pool_element",
-          "location": "halloween/halloweenjack",
+          "location": "halloween/town_center",
           "projection": "rigid"
         },
         "weight": 1

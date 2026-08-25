@@ -4,51 +4,822 @@
       "total_exp_required": 0,
       "groups": [
         {
-          "num_to_select": 43,
+          "num_to_select": 4,
           "trades": [
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 2 }], "gives": [{ "item": "ninjos:clown_tt_bucket", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 2 }], "gives": [{ "item": "ninjos:creeper_pumpkin_lit", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 2 }], "gives": [{ "item": "ninjos:frankenstein_tt_bucket", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 2 }], "gives": [{ "item": "ninjos:ghost_tt_bucket", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 2 }], "gives": [{ "item": "ninjos:mummy_tt_bucket", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 1 }], "gives": [{ "item": "ninjos:pumpkin", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 2 }], "gives": [{ "item": "ninjos:pumpkin_face1", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 2 }], "gives": [{ "item": "ninjos:pumpkin_face2", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 2 }], "gives": [{ "item": "ninjos:pumpkin_face3", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 5 }], "gives": [{ "item": "ninjos:pumpkin_heart", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 2 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 10 }], "gives": [{ "item": "ninjos:pumpkin_pickaxe", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 3 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 2 }], "gives": [{ "item": "ninjos:pumpkin_tt_bucket", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 2 }], "gives": [{ "item": "ninjos:skull_tt_bucket", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 2 }], "gives": [{ "item": "ninjos:vampire_tt_bucket", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 4 }], "gives": [{ "item": "zombie:chargedpunkin", "quantity": 8 }], "max_uses": 999, "reward_exp": true, "trader_exp": 2 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 5 }], "gives": [{ "item": "zombie:creeper_halloween_mask", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 2 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 2 }], "gives": [{ "item": "zombie:cross_grave", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 3 }], "gives": [{ "item": "zombie:ender_cat_block", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 2 }], "gives": [{ "item": "zombie:grave_stone", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 4 }], "gives": [{ "item": "zombie:halloween_book", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 2 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 1 }], "gives": [{ "item": "zombie:halloween_candycorn", "quantity": 4 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 1 }], "gives": [{ "item": "zombie:halloween_green_apple", "quantity": 2 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 1 }], "gives": [{ "item": "zombie:halloween_popsicle", "quantity": 2 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 3 }], "gives": [{ "item": "zombie:horse_toy", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 3 }], "gives": [{ "item": "zombie:pig_creeper_block", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 8 }], "gives": [{ "item": "zombie:pumpkin_amulet", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 3 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 12 }], "gives": [{ "item": "zombie:pumpkin_cannon", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 4 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 4 }], "gives": [{ "item": "zombie:pumpkin_king_block", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 2 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 8 }], "gives": [{ "item": "zombie:pumpkin_king_head", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 3 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 16 }], "gives": [{ "item": "zombie:pumpkin_scythe_3d", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 5 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 14 }], "gives": [{ "item": "zombie:pumpkin_scythe", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 5 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 5 }], "gives": [{ "item": "zombie:skeleton_halloween_mask", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 2 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 3 }], "gives": [{ "item": "zombie:skeleton_sheep_block", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 2 }], "gives": [{ "item": "zombie:skull_block", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 3 }], "gives": [{ "item": "zombie:skull_shelf", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 1 }], "gives": [{ "item": "zombie:spider_cover_web", "quantity": 2 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 5 }], "gives": [{ "item": "zombie:spider_halloween_mask", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 2 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 3 }], "gives": [{ "item": "zombie:witch_pumpkin_block", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 4 }], "gives": [{ "item": "zombie:zcoin", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 2 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 3 }], "gives": [{ "item": "zombie:zombie_ghost_block", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 5 }], "gives": [{ "item": "zombie:zombie_halloween_mask", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 2 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 2 }], "gives": [{ "item": "zombie:zombie_skull_bone", "quantity": 2 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 },
-            { "wants": [{ "item": "zombie:halloween_candy", "quantity": 3 }], "gives": [{ "item": "zombie:zombie_steve_block", "quantity": 1 }], "max_uses": 999, "reward_exp": true, "trader_exp": 1 }
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "ninjos:pumpkin",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 3
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 2,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "ninjos:clown_tt_bucket",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 3
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 2,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "ninjos:pumpkin_face1",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 3
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 2,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "ninjos:vampire_tt_bucket",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 3
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:ender_cat_block",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 3
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:witch_pumpkin_block",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 3
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 4,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:pumpkin_king_block",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 3
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:spider_halloween_mask",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 3
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 12,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:pumpkin_cannon",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "total_exp_required": 12,
+      "groups": [
+        {
+          "num_to_select": 4,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 1,
+                  "price_multiplier": 0.04
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:halloween_candycorn",
+                  "quantity": 4
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 5
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 2,
+                  "price_multiplier": 0.04
+                }
+              ],
+              "gives": [
+                {
+                  "item": "ninjos:creeper_pumpkin_lit",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 5
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 2,
+                  "price_multiplier": 0.04
+                }
+              ],
+              "gives": [
+                {
+                  "item": "ninjos:pumpkin_face2",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 5
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 2,
+                  "price_multiplier": 0.04
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:cross_grave",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 5
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 2,
+                  "price_multiplier": 0.04
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:horse_toy",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 5
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 2,
+                  "price_multiplier": 0.04
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:zombie_ghost_block",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 5
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 3,
+                  "price_multiplier": 0.04
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:zcoin",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 5
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 4,
+                  "price_multiplier": 0.04
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:zombie_halloween_mask",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 5
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 10,
+                  "price_multiplier": 0.04
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:pumpkin_scythe",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "total_exp_required": 36,
+      "groups": [
+        {
+          "num_to_select": 4,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 1,
+                  "price_multiplier": 0.03
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:halloween_green_apple",
+                  "quantity": 2
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 8
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 1,
+                  "price_multiplier": 0.03
+                }
+              ],
+              "gives": [
+                {
+                  "item": "ninjos:frankenstein_tt_bucket",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 8
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 1,
+                  "price_multiplier": 0.03
+                }
+              ],
+              "gives": [
+                {
+                  "item": "ninjos:pumpkin_face3",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 8
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 1,
+                  "price_multiplier": 0.03
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:grave_stone",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 8
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 2,
+                  "price_multiplier": 0.03
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:pig_creeper_block",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 8
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 2,
+                  "price_multiplier": 0.03
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:zombie_steve_block",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 8
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 3,
+                  "price_multiplier": 0.03
+                }
+              ],
+              "gives": [
+                {
+                  "item": "ninjos:pumpkin_heart",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 8
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 4,
+                  "price_multiplier": 0.03
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:pumpkin_amulet",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 8
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 9,
+                  "price_multiplier": 0.03
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:pumpkin_scythe_3d",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "total_exp_required": 72,
+      "groups": [
+        {
+          "num_to_select": 4,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 1,
+                  "price_multiplier": 0.02
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:halloween_popsicle",
+                  "quantity": 2
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 12
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 1,
+                  "price_multiplier": 0.02
+                }
+              ],
+              "gives": [
+                {
+                  "item": "ninjos:ghost_tt_bucket",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 12
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 1,
+                  "price_multiplier": 0.02
+                }
+              ],
+              "gives": [
+                {
+                  "item": "ninjos:pumpkin_tt_bucket",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 12
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 1,
+                  "price_multiplier": 0.02
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:skull_block",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 12
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 1,
+                  "price_multiplier": 0.02
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:skeleton_sheep_block",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 12
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 2,
+                  "price_multiplier": 0.02
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:chargedpunkin",
+                  "quantity": 8
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 12
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 2,
+                  "price_multiplier": 0.02
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:creeper_halloween_mask",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 12
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 3,
+                  "price_multiplier": 0.02
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:pumpkin_king_head",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "total_exp_required": 120,
+      "groups": [
+        {
+          "num_to_select": 4,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 1,
+                  "price_multiplier": 0.01
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:spider_cover_web",
+                  "quantity": 2
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 16
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 1,
+                  "price_multiplier": 0.01
+                }
+              ],
+              "gives": [
+                {
+                  "item": "ninjos:mummy_tt_bucket",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 16
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 1,
+                  "price_multiplier": 0.01
+                }
+              ],
+              "gives": [
+                {
+                  "item": "ninjos:skull_tt_bucket",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 16
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 1,
+                  "price_multiplier": 0.01
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:zombie_skull_bone",
+                  "quantity": 2
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 16
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 1,
+                  "price_multiplier": 0.01
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:skull_shelf",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 16
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 1,
+                  "price_multiplier": 0.01
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:halloween_book",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 16
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 1,
+                  "price_multiplier": 0.01
+                }
+              ],
+              "gives": [
+                {
+                  "item": "zombie:skeleton_halloween_mask",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 16
+            },
+            {
+              "wants": [
+                {
+                  "item": "zombie:halloween_candy",
+                  "quantity": 1,
+                  "price_multiplier": 0.01
+                }
+              ],
+              "gives": [
+                {
+                  "item": "ninjos:pumpkin_pickaxe",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": 16,
+              "reward_exp": true,
+              "trader_exp": 16
+            }
           ]
         }
       ]

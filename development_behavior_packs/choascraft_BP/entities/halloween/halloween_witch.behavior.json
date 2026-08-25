@@ -20,11 +20,14 @@
       },
       "minecraft:is_hidden_when_invisible": {},
       "minecraft:economy_trade_table": {
-        "display_name": "Halloween Villager",
+        "display_name": "Halloween Witch",
         "new_screen": true,
-        "table": "trading/halloween/halloween_villagers.json",
-        "show_trade_screen": true
+        "table": "trading/halloween/halloween_witch.json",
+        "show_trade_screen": true,
+        "persist_trades": true,
+        "convert_trades_economy": true
       },
+      "minecraft:trade_resupply": {},
       "minecraft:breathable": {
         "total_supply": 15,
         "suffocate_time": 0

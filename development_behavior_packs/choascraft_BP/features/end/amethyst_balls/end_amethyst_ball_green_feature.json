@@ -2,7 +2,7 @@
   "format_version": "1.20.30",
   "minecraft:structure_template_feature": {
     "description": { "identifier": "zombie:end_amethyst_ball_green_feature" },
-    "structure_name": "zombie:end/amethyst_balls/end_amethyst_ball_green",
-    "facing_direction": "random", "adjustment_radius": 0, "ground_level": 0, "rotate_around_center": true
+    "structure_name": "zombie:end_amethyst_ball_green",
+    "facing_direction": "random", "adjustment_radius": 0, "ground_level": 0, "rotate_around_center": true, "constraints": {}
   }
 }

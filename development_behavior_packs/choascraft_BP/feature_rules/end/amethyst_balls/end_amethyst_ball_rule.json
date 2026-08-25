@@ -18,7 +18,7 @@
       "scatter_chance": 2,
       "coordinate_eval_order": "xzy",
       "x": { "distribution": "uniform", "extent": [0, 15] },
-      "y": "q.heightmap(v.worldx, v.worldz) - math.random_integer(8, 24)",
+      "y": 43,
       "z": { "distribution": "uniform", "extent": [0, 15] }
     }
   }

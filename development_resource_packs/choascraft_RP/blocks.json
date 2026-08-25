@@ -4,15 +4,6 @@
     0,
     0
   ],
-  "zombie:blightwood_log": { "sound": "wood" },
-  "zombie:stripped_blightwood_log": { "sound": "wood" },
-  "zombie:blightwood_planks": { "sound": "wood" },
-  "zombie:blightwood_leaves": { "sound": "grass" },
-  "zombie:blightwood_sapling": { "sound": "grass" },
-  "zombie:blightwood_spore_crop": { "sound": "grass" },
-  "zombie:blightwood_dirt": { "sound": "gravel" },
-  "zombie:blightwood_grass": { "sound": "grass" },
-  "zombie:blightwood_ground_growth": { "sound": "grass" },
   "zombie:abyss_flower": {
     "sound": "grass"
   },

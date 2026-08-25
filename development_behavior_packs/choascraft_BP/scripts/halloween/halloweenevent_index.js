@@ -97,7 +97,31 @@ system.afterEvents.scriptEventReceive.subscribe(({ id, sourceEntity }) => {
 // Component registration
 // ─────────────────────────────────────────────────────────────────────────────-
 const BLOCK_COMPONENTS = [
-  // ["your:block_component_id", YourBlockComponentClass],
+  ["zombie:halloween_trader_spawn_marker", class {
+    onTick({ block }) {
+      const traders = [
+        "zombie:trickcreeper",
+        "zombie:trickendermen",
+        "zombie:trick_or_treat_skeleton",
+        "zombie:trickorwitch",
+        "zombie:trick_orzombie"
+      ];
+      const type = Number(block.permutation.getState("zombie:trader_type")) || 0;
+      const dimension = block.dimension;
+      const location = {
+        x: block.location.x + 0.5,
+        y: block.location.y,
+        z: block.location.z + 0.5
+      };
+
+      // Consume the marker first, making this exactly-once even if spawning
+      // throws or the chunk unloads immediately afterward.
+      block.setType("minecraft:air");
+      system.run(() => safeRun("halloween:spawn_trader", () => {
+        dimension.spawnEntity(traders[type] ?? traders[0], location);
+      }));
+    }
+  }],
 ];
 
 const ITEM_COMPONENTS = [

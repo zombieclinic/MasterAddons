@@ -1,0 +1,12 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:template_pool": {
+    "description": { "identifier": "zombie:halloween_church_road" },
+    "elements": [
+      {
+        "element": { "element_type": "minecraft:single_pool_element", "location": "halloween/path_straight_church", "projection": "rigid" },
+        "weight": 1
+      }
+    ]
+  }
+}

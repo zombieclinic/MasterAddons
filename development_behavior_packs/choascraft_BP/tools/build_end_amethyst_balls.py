@@ -29,8 +29,33 @@ original = Reader(source.read_bytes()).root()
 # removed from the pack. Replace those palette slots while retaining the chest,
 # spawner, End stone, and vanilla amethyst decoration.
 colors = ("purple", "blue", "cyan", "green", "red", "pink")
-output_dir = structures / "end" / "amethyst_balls"
+output_dir = structures / "zombie"
 output_dir.mkdir(parents=True, exist_ok=True)
+end_loot_table = "loot_tables/chests/end_structures.json"
+
+
+def add_random_container_loot(root):
+    structure = root.value["structure"].value
+    default = structure["palette"].value["default"].value
+    palette = default["block_palette"].value
+    indices = structure["block_indices"].value[0].value
+    count = 0
+    for position_key, position in default["block_position_data"].value.items():
+        block_entity = position.value.get("block_entity_data")
+        if not block_entity:
+            continue
+        palette_index = indices[int(position_key)].value
+        if palette_index < 0:
+            continue
+        block_name = palette[palette_index].value["name"].value
+        if "chest" not in block_name and block_name != "minecraft:barrel":
+            continue
+        data = block_entity.value
+        data.pop("Items", None)
+        data["LootTable"] = string(end_loot_table)
+        data["LootTableSeed"] = Tag(4, 0)
+        count += 1
+    return count
 
 
 def recolored_root(color):
@@ -40,6 +65,7 @@ def recolored_root(color):
     for index, entry in enumerate(palette):
         if not entry.value["name"].value.startswith("minecraft:"):
             palette[index] = replacement
+    add_random_container_loot(root)
     return root
 
 
@@ -64,6 +90,7 @@ retired_outpost_blocks = {
 for index, entry in enumerate(outpost_palette):
     if entry.value["name"].value in retired_outpost_blocks:
         outpost_palette[index] = palette_block("zombie:lumenroot_planks")
+add_random_container_loot(outpost_root)
 write_root(outpost_path, outpost_root)
 
 
