@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:glow_spider_item",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "item.zombie:glow_spider_item.name"
+      },
+      "minecraft:icon": "zombie_glow_spider",
+      "minecraft:max_stack_size": 16,
+      "minecraft:block_placer": {
+        "block": "zombie:glow_spider_jar"
+      }
+    }
+  }
+}

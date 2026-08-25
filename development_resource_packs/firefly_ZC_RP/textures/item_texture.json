@@ -76,6 +76,9 @@
 		},
 		"zombie_shroomling_jar_icon": {
 			"textures": "textures/items/shroomling_jar_icon"
+		},
+		"zombie_glow_spider": {
+			"textures": "textures/items/glow_spider_icon"
 		}
     }
 }

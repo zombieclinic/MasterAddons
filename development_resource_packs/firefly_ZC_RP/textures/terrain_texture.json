@@ -36,6 +36,9 @@
 		},
 		"zombie_yellow_butterfly_block": {
 			"textures": "textures/butterfly/yellow_butterfly"
+		},
+		"zombie_glowing_spiders": {
+			"textures": "textures/glowspiders/glowing_spider"
 		}
     }
 }

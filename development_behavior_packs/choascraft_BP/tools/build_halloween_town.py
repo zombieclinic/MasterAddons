@@ -260,4 +260,27 @@ for structure_name in sorted(structure_traders):
 
     write_root(path, root)
 
-print(f"Halloween town normalized with trader residents in all 7 buildings and {loot_containers} random-loot containers")
+foundation_blocks_removed = 0
+for path in sorted(folder.glob("*.mcstructure")):
+    root = Reader(path.read_bytes()).root()
+    sx, sy, sz = [item.value for item in root.value["size"].value]
+    structure = root.value["structure"].value
+    default = structure["palette"].value["default"].value
+    primary_indices = structure["block_indices"].value[0].value
+    foundation_names = {"minecraft:dirt", "minecraft:coarse_dirt"}
+    removed_from_structure = 0
+    for x in range(sx):
+        for z in range(sz):
+            block_index = index_of(x, 0, z, sy, sz)
+            if block_name(default, primary_indices[block_index].value) in foundation_names:
+                primary_indices[block_index] = integer(-1)
+                removed_from_structure += 1
+    if removed_from_structure:
+        write_root(path, root)
+        foundation_blocks_removed += removed_from_structure
+
+print(
+    "Halloween town normalized with trader residents in all 7 buildings, "
+    f"{loot_containers} random-loot containers, and {foundation_blocks_removed} "
+    "bottom dirt blocks removed"
+)

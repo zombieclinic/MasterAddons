@@ -15,6 +15,7 @@ item.zombie:firefly_mask.name=Firefly Mask
 ## Creature Jars
 item.zombie:cricket_jar_item.name=Cricket Jar
 item.zombie:shroomling_jar_item.name=Shroomling Jar
+item.zombie:glow_spider_item.name=Glow Spider Jar
 item.zombie:butterfly_jar_blue_item.name=Blue Butterfly Jar
 item.zombie:butterfly_jar_lunar_item.name=Lunar Butterfly Jar
 item.zombie:butterfly_jar_red_item.name=Red Butterfly Jar

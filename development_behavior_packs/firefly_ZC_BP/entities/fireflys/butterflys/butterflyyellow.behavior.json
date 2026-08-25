@@ -3,7 +3,7 @@
 	"minecraft:entity": {
 		"description": {
 			"identifier": "zombie:butterflyyellow",
-			"is_spawnable": false,
+			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
 		},
@@ -205,7 +205,7 @@
 							"event": "despawn"
 						},
 						"use_item": true,
-						"transform_to_item": "zombie:butterfly_jar_yellow_item"
+						"transform_to_item": "zombie:butterfly_jar_lunar_item"
 					}
 				]
 			}

@@ -2,12 +2,12 @@
 	"format_version": "1.16.0",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "zombie:butterflyred",
-			"is_spawnable": false,
+			"identifier": "zombie:blue_butterfly",
+			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
 		},
-		"component_groups": {
+			"component_groups": {
 			"despawn": {
 				"minecraft:instant_despawn": {
 					"remove_child_entities": false
@@ -73,8 +73,8 @@
 				"minecraft:breedable": {
 					"require_tame": false,
 					"breeds_with": {
-						"mate_type": "zombie:butterflyred",
-						"baby_type": "zombie:butterflyred",
+						"mate_type": "zombie:blue_butterfly",
+						"baby_type": "zombie:blue_butterfly",
 						"breed_event": {
 							"event": "minecraft:entity_born",
 							"target": "baby"
@@ -205,7 +205,7 @@
 							"event": "despawn"
 						},
 						"use_item": true,
-						"transform_to_item": "zombie:butterfly_jar_red_item"
+						"transform_to_item": "zombie:butterfly_jar_lunar_item"
 					}
 				]
 			}
