@@ -1,0 +1,21 @@
+{
+	"format_version": "1.16.0",
+	"sound_definitions": {
+	
+		"cricket": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/cricket/cricket",
+				"sounds/cricket/cricket2",
+				"sounds/cricket/cricket3"
+			]
+		},
+		"shroomy_attack": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/shroomy/shroomie"
+			]
+		}
+  }
+}
+

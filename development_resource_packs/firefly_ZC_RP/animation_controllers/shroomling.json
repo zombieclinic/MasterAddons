@@ -1,0 +1,88 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.shroomling": {
+            "initial_state": "start_idle",
+			"states": {
+				"start_idle": {
+					"animations": ["start_idle"],
+					"transitions": [
+						{
+                            "idle": "query.all_animations_finished"
+                        }
+					]
+				},
+                "idle": {
+                    "animations": ["idle"],
+                    "transitions": [
+						{
+							"idle_to_walk": "query.ground_speed"
+						},
+                        {
+                            "sit": "query.is_sitting"
+                        }			
+					]
+				},
+				"walk": {
+					"animations": [
+						"walk"
+					],
+					"transitions": [
+						{
+							"start_idle": "!query.ground_speed"
+						},
+                        {
+                            "sit": "query.is_sitting"
+                        }
+					]
+				},
+                "idle_to_walk": {
+                    "animations": ["idle_to_walk"],
+                    "transitions": [
+                        {
+                            "walk": "query.all_animations_finished"
+                        }
+                    ]
+                },
+                "sit": {
+                    "animations": [
+                        "sit"
+                    ],
+                    "transitions":
+                        [
+                            {
+                                "start_idle": "!query.is_sitting"
+                            }
+                        ]
+                }
+			}
+		},
+        "controller.animation.shroomling_particle": {
+            "initial_state": "prime",
+            "states": {
+                "prime":{
+                    "transitions": [
+                        {
+                            "attack": "query.skin_id== 1"
+                        }
+                    ]
+                },
+                "attack": {
+                    "transitions": [
+                        {
+                            "prime": "query.skin_id==0"
+                        }
+                    ],
+                    "particle_effects": [
+                        {"effect": "posion_cloud"}
+                    ],
+                    "sound_effects": [
+                        {
+                            "effect": "attack"
+                        }
+                    ]
+                }
+            }
+        }
+	}
+}

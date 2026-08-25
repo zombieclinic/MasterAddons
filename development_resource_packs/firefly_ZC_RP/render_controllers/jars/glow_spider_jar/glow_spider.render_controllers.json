@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.glow_spider": {
+			"materials": [
+				{
+					"*": "Material.default"
+				},
+				{
+					"spider*": "Material.spider"
+				},
+				{
+					"leg*": "Material.spider"
+				},
+				{
+					"head*": "Material.spider"
+				},
+				{
+					"body*": "Material.spider"
+				}
+			],
+			"textures": [
+				"Texture.default"
+			],
+			"geometry": "Array.skins_geo[query.is_item_name_any('slot.weapon.mainhand', 0, 'zombie:glow_spider_item')]",
+			"arrays": {
+				"geometries": {
+					"Array.skins_geo": [
+						"Geometry.left_hand",
+						"Geometry.right_hand"
+					]
+				}
+			}
+		}
+	}
+}

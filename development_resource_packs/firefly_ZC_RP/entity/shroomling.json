@@ -1,0 +1,47 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "zombie:shroomling",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "spider",
+				"invisible": "spider_invisible"
+			},
+			"textures": {
+				"default": "textures/mushmushroom"
+			},
+			"geometry": {
+				"default": "geometry.mushmushroom"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#ffffff",
+				"overlay_color": "#080908"
+			},
+			"particle_effects": {
+				"posion_cloud": "zombie:mushroom"
+			},
+			"sound_effects": {
+				"attack": "shroomy_attack"
+			},
+			"animations": {
+				"start_idle": "animation.shroomling.start_idle",
+				"idle": "animation.shroomling.idle",
+				"walk": "animation.shroomling.walk",
+				"idle_to_walk": "animation.shroomling.start_to_walk",
+				"sit": "animation.shroomling.sit",
+				"controller": "controller.animation.shroomling",
+				"particle": "controller.animation.shroomling_particle"
+			},
+			"scripts": {
+				"animate": [
+					"controller",
+					"particle"
+				]
+			}
+		}
+	}
+}

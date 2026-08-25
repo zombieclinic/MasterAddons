@@ -12,6 +12,28 @@ item.zombie:stat_book.name=Firefly Stats Book
 item.zombie:firefly_book.name=Firefly Book
 item.zombie:firefly_mask.name=Firefly Mask
 
+## Creature Jars
+item.zombie:cricket_jar_item.name=Cricket Jar
+item.zombie:shroomling_jar_item.name=Shroomling Jar
+item.zombie:butterfly_jar_blue_item.name=Blue Butterfly Jar
+item.zombie:butterfly_jar_lunar_item.name=Lunar Butterfly Jar
+item.zombie:butterfly_jar_red_item.name=Red Butterfly Jar
+item.zombie:butterfly_jar_yellow_item.name=Yellow Butterfly Jar
+
+## New Creatures
+entity.zombie:feildcricket.name=Field Cricket
+entity.zombie:shroomling.name=Shroomling
+entity.zombie:blue_butterfly.name=Blue Butterfly
+entity.zombie:butterflylunar.name=Lunar Butterfly
+entity.zombie:butterflyred.name=Red Butterfly
+entity.zombie:butterflyyellow.name=Yellow Butterfly
+item.spawn_egg.entity.zombie:feildcricket.name=Field Cricket Spawn Egg
+item.spawn_egg.entity.zombie:shroomling.name=Shroomling Spawn Egg
+item.spawn_egg.entity.zombie:blue_butterfly.name=Blue Butterfly Spawn Egg
+item.spawn_egg.entity.zombie:butterflylunar.name=Lunar Butterfly Spawn Egg
+item.spawn_egg.entity.zombie:butterflyred.name=Red Butterfly Spawn Egg
+item.spawn_egg.entity.zombie:butterflyyellow.name=Yellow Butterfly Spawn Egg
+
 ## Firefly Jars
 item.zombie:firefly_jar_1.name=Firefly Jar (1 Firefly)
 item.zombie:firefly_jar_2.name=Firefly Jar (2 Fireflies)

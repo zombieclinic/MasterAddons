@@ -58,6 +58,24 @@
 		},
 		"firefly_luciferin_fire": {
 			"textures": "textures/items/fireflys/luciferin_fire"
+		},
+		"zombie_cricket_jar": {
+			"textures": "textures/items/cricket_jar"
+		},
+		"zombie_butterfly_jar_blue": {
+			"textures": "textures/items/blue_icon"
+		},
+		"zombie_butterfly_jar_lunar": {
+			"textures": "textures/items/lunar_icon"
+		},
+		"zombie_butterfly_jar_yellow": {
+			"textures": "textures/items/yellow_icon"
+		},
+		"zombie_butterfly_jar_red": {
+			"textures": "textures/items/red_icon"
+		},
+		"zombie_shroomling_jar_icon": {
+			"textures": "textures/items/shroomling_jar_icon"
 		}
     }
 }

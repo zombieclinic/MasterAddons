@@ -35,5 +35,23 @@
 	},
 	"zombie:firefly_block": {
 		"sound": "bone_block"
+	},
+	"zombie:cricket_jar_block": {
+		"sound": "glass"
+	},
+	"zombie:shroomling_jar": {
+		"sound": "glass"
+	},
+	"zombie:blue_butterfly_block": {
+		"sound": "glass"
+	},
+	"zombie:lunar_butterfly_block": {
+		"sound": "glass"
+	},
+	"zombie:red_butterfly_block": {
+		"sound": "glass"
+	},
+	"zombie:yellow_butterfly_block": {
+		"sound": "glass"
 	}
     }

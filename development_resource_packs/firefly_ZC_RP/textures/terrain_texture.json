@@ -18,6 +18,24 @@
 		},
 		"zombie_firefly_jar_1_block": {
 			"textures": "textures/items/jar/firefly_jar2"
+		},
+		"zombie_cricket_jar": {
+			"textures": "textures/cricket/black"
+		},
+		"zombie_shroom_jar": {
+			"textures": "textures/mushmushroom"
+		},
+		"zombie_blue_butterfly_block": {
+			"textures": "textures/butterfly/blue_butterfly"
+		},
+		"zombie_lunar_butterfly_block": {
+			"textures": "textures/butterfly/lunar_butterfly"
+		},
+		"zombie_red_butterfly_block": {
+			"textures": "textures/butterfly/red_butterfly"
+		},
+		"zombie_yellow_butterfly_block": {
+			"textures": "textures/butterfly/yellow_butterfly"
 		}
     }
 }

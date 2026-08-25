@@ -6,7 +6,7 @@
       "places_feature": "zombie:end_amethyst_ball_feature"
     },
     "conditions": {
-      "placement_pass": "underground_pass",
+      "placement_pass": "surface_pass",
       "minecraft:biome_filter": {
         "test": "has_biome_tag",
         "operator": "==",
@@ -14,11 +14,11 @@
       }
     },
     "distribution": {
-      "iterations": 1,
-      "scatter_chance": 2,
+      "iterations": 2,
+      "scatter_chance": 5,
       "coordinate_eval_order": "xzy",
       "x": { "distribution": "uniform", "extent": [0, 15] },
-      "y": 43,
+      "y": 44,
       "z": { "distribution": "uniform", "extent": [0, 15] }
     }
   }

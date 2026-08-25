@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "zombie:blue_butterfly",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/butterfly/blue_butterfly"
+			},
+			"geometry": {
+				"default": "geometry.red_butterfly4"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#04335F"
+			},
+			"animations": {
+				"walk": "animation.red_butterfly4.walk"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"walk": "query.is_alive"
+					}
+				]
+			}
+		}
+	}
+}

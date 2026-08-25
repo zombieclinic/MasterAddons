@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "zombie:feildcricket",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/cricket/black"
+			},
+			"geometry": {
+				"default": "geometry.feildcricket"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#96cf3d",
+				"overlay_color": "#702653"
+			},
+			"animations": {
+				"walk": "animation.feildcricket.animation",
+				"idle": "animation.feildcricket.idle",
+				"contoller": "controller.animation.cricket.move",
+				"jump": "animation.feildcricket.jump"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"contoller": "(1.0)"
+					}
+				]
+			}
+		}
+	}
+}

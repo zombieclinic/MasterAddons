@@ -1,0 +1,310 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "zombie:smilodon",
+      "is_summonable": true,
+      "is_spawnable": true,
+      "spawn_category": "creature"
+    },
+    "component_groups": {
+      "white": { "minecraft:variant": { "value": 0 } },
+      "tan":   { "minecraft:variant": { "value": 1 } },
+
+      "is_sitting": {
+        
+      },
+      "is_not_sitting": {
+          "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:navigation.walk": {
+        "avoid_water": true,
+        "can_path_over_water": false,
+        "avoid_damage_blocks": true
+      }
+      },
+
+      "wild": {
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 2,
+          "must_see": true,
+          "reselect_targets": true,
+          "within_radius": 25.0,
+          "must_see_forget_duration": 17.0,
+          "entity_types": [
+            {
+              "filters": { "any_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "test": "is_family", "subject": "other", "value": "snowgolem" },
+                { "test": "is_family", "subject": "other", "value": "irongolem" }
+              ]},
+              "max_dist": 35
+            }
+          ]
+        },
+        "minecraft:behavior.melee_attack": { "priority": 3, "speed_multiplier": 1.1 },
+        "minecraft:behavior.random_stroll": { "priority": 7, "speed_multiplier": 0.8 },
+        "minecraft:behavior.look_at_player": { "priority": 8, "look_distance": 12, "probability": 0.02 }
+      },
+
+      "tamed": {
+        "minecraft:is_tamed": {},
+        "minecraft:sittable": {
+          "sit_event": {
+            "event": "is_sitting",
+            "target": "self"
+           },
+           "stand_event": {
+            "event": "is_not_sitting",
+            "target": "self"
+           }
+      },
+        "minecraft:behavior.owner_hurt_by_target": { "priority": 1 },
+        "minecraft:behavior.owner_hurt_target":    { "priority": 2 },
+        "minecraft:behavior.follow_owner": { "priority": 0, "start_distance": 10, "stop_distance": 2, "speed_multiplier": 1.1 },
+        "minecraft:behavior.melee_attack": { "priority": 4, "speed_multiplier": 1.1 }
+      },
+
+      "baby": {
+        
+        "minecraft:movement": {
+          "value": 0.24,
+          "max": 1
+        },
+        "minecraft:tameable": {
+          "probability": 1,
+          "tame_items":[
+            "minecraft:beef","minecraft:chicken","minecraft:porkchop","minecraft:mutton","minecraft:rabbit","minecraft:salmon","minecraft:cod"
+          ],
+          "tame_event": {
+            "event": "tameable",
+            "target": "self"
+          }
+        },
+        "minecraft:attack": { "damage": 2 },
+        "minecraft:scale_by_age": {
+          "end_scale": 1.2,
+          "start_scale": 0.25
+        },
+        "minecraft:ageable": {
+          
+          "duration": 1200,
+          "feed_items": ["minecraft:beef","minecraft:chicken","minecraft:porkchop","minecraft:mutton","minecraft:rabbit","minecraft:salmon","minecraft:cod"],
+          "grow_up": { "event": "growup", "target": "self" }
+        },
+        "minecraft:behavior.follow_parent": { "priority": 1, "speed_multiplier": 1 },
+        "minecraft:health": { "value": 16, "max": 16 }
+      },
+
+      "adult": {
+        "minecraft:breedable": {
+          "allow_sitting": false,
+          "breed_cooldown": 60,
+          "inherit_tamed": false,
+          "require_full_health": false,
+          "require_tame": false,
+          "breed_items": ["minecraft:beef","minecraft:chicken","minecraft:porkchop","minecraft:mutton","minecraft:rabbit","minecraft:salmon","minecraft:cod"],
+          "breeds_with":[{
+            "baby_type": "zombie:smilodon",
+                          "mate_type": "zombie:smilodon",
+                          "breed_event": {
+                            "event": "minecraft:entity_born",
+                            "target": "baby"
+                          }
+          }
+          ]
+        },
+        "minecraft:behavior.breed": {"priority": 1},
+        "minecraft:scale": { "value": 1.2 },
+        "minecraft:health": { "value": 30, "max": 30 },
+        "minecraft:attack": { "damage": 5 },
+        "minecraft:behavior.tempt": {
+          "items": ["minecraft:beef","minecraft:chicken","minecraft:porkchop","minecraft:mutton","minecraft:rabbit","minecraft:salmon","minecraft:cod"],
+          "within_radius": 12,
+          "speed_multiplier": 1.1,
+          "can_get_scared": false,
+          "can_tempt_vertically": true,
+          "can_tempt_while_ridden": true,
+          "priority": 2
+        }
+      }
+    },
+
+    "components": {
+     "minecraft:ambient_sound_interval": {
+      "event_name": "ambient",
+      "range": 60,
+      "value": 8
+     },
+   "minecraft:leashable": {
+  "presets": [
+    {
+      "soft_distance": 4,
+      "hard_distance": 6,
+      "max_distance": 10,
+      "spring_type": "dampened"
+    }
+  ]
+},
+      "minecraft:physics": { "has_gravity": true, "has_collision": true },
+      "minecraft:pushable": { "is_pushable": true, "is_pushable_by_piston": true },
+      "minecraft:push_through": { "value": 1 },
+      "minecraft:movement": { "value": 0.25 },
+      
+      "minecraft:despawn": { "despawn_from_distance": {} },
+      "minecraft:nameable": { "allow_name_tag_renaming": true },
+      "minecraft:type_family": { "family": ["smilodon","animal","mob", "monster"] },
+      "minecraft:breathable": { "total_supply": 15, "suffocate_time": 0 },
+      "minecraft:health": { "value": 10, "max": 10 },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      }
+    },
+
+    "events": {
+      "is_sitting": {
+        "add": {
+          "component_groups": [
+            "is_sitting"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "is_not_sitting"
+          ]
+        }
+      },
+       "is_not_sitting": {
+        "add": {
+          "component_groups": [
+            "is_not_sitting"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "is_sitting"
+          ]
+        }
+      },
+
+      "growup": {
+        "remove": { "component_groups": ["baby"] },
+        "add":    { "component_groups": ["adult"] }
+      },
+
+      "minecraft:entity_born": {
+  "sequence": [
+    {
+      "filters": { "test": "has_component", "subject": "self", "value": "minecraft:is_tamed" },
+      "add": { "component_groups": ["baby", "tamed", "is_not_sitting"] }
+    },
+    {
+      "filters": { "test": "has_component", "subject": "self", "operator": "!=", "value": "minecraft:is_tamed" },
+      "add": { "component_groups": ["baby", "wild", "is_not_sitting"] }
+    }
+  ]
+},
+
+      "minecraft:entity_spawned": {
+        
+  "randomize": [
+
+    {
+      "weight": 3,
+      "filters": {
+        "any_of": [
+          { "test": "has_biome_tag", "operator": "==", "value": "cold" },
+          { "test": "has_biome_tag", "operator": "==", "value": "frozen" },
+          { "test": "has_biome_tag", "operator": "==", "value": "snowy_slopes" },
+          { "test": "has_biome_tag", "operator": "==", "value": "frozen_peaks" },
+          { "test": "has_biome_tag", "operator": "==", "value": "jagged_peaks" },
+          { "test": "has_biome_tag", "operator": "==", "value": "grove" },
+          { "test": "has_biome_tag", "operator": "==", "value": "ice" },
+          { "test": "has_biome_tag", "operator": "==", "value": "ice_plains" },
+          { "test": "has_biome_tag", "operator": "==", "value": "mountain" },
+          { "test": "has_biome_tag", "operator": "==", "value": "taiga" },
+          { "test": "has_biome_tag", "operator": "==", "value": "extreme_hills" }
+        ]
+      },
+      "add": { "component_groups": ["adult","wild","white","is_not_sitting"] }
+    },
+    {
+      "weight": 1,
+      "filters": {
+        "any_of": [
+          { "test": "has_biome_tag", "operator": "==", "value": "cold" },
+          { "test": "has_biome_tag", "operator": "==", "value": "frozen" },
+          { "test": "has_biome_tag", "operator": "==", "value": "snowy_slopes" },
+          { "test": "has_biome_tag", "operator": "==", "value": "frozen_peaks" },
+          { "test": "has_biome_tag", "operator": "==", "value": "jagged_peaks" },
+          { "test": "has_biome_tag", "operator": "==", "value": "grove" },
+          { "test": "has_biome_tag", "operator": "==", "value": "ice" },
+          { "test": "has_biome_tag", "operator": "==", "value": "ice_plains" },
+          { "test": "has_biome_tag", "operator": "==", "value": "mountain" },
+          { "test": "has_biome_tag", "operator": "==", "value": "taiga" },
+          { "test": "has_biome_tag", "operator": "==", "value": "extreme_hills" }
+        ]
+      },
+      "add": { "component_groups": ["baby","wild","white","is_not_sitting"] }
+    },
+
+
+    {
+      "weight": 3,
+      "filters": {
+        "any_of": [
+          { "test": "has_biome_tag", "operator": "==", "value": "warm"    },
+          { "test": "has_biome_tag", "operator": "==", "value": "savanna" },
+          { "test": "has_biome_tag", "operator": "==", "value": "plains"  },
+          { "test": "has_biome_tag", "operator": "==", "value": "forest"  },
+          { "test": "has_biome_tag", "operator": "==", "value": "jungle"  },
+          { "test": "has_biome_tag", "operator": "==", "value": "mesa"    },
+          { "test": "has_biome_tag", "operator": "==", "value": "desert"  }
+        ]
+      },
+      "add": { "component_groups": ["adult","wild","tan","is_not_sitting"] }
+    },
+    {
+      "weight": 1,
+      "filters": {
+        "any_of": [
+          { "test": "has_biome_tag", "operator": "==", "value": "warm"    },
+          { "test": "has_biome_tag", "operator": "==", "value": "savanna" },
+          { "test": "has_biome_tag", "operator": "==", "value": "plains"  },
+          { "test": "has_biome_tag", "operator": "==", "value": "forest"  },
+          { "test": "has_biome_tag", "operator": "==", "value": "jungle"  },
+          { "test": "has_biome_tag", "operator": "==", "value": "mesa"    },
+          { "test": "has_biome_tag", "operator": "==", "value": "desert"  }
+        ]
+      },
+      "add": { "component_groups": ["baby","wild","tan", "is_not_sitting"] }
+    },
+
+
+    {
+      "weight": 1,
+      "add": { "component_groups": ["adult","wild","tan","is_not_sitting"] }
+    }
+  ]
+
+
+          
+        
+      },
+
+      "tameable": {
+        "remove": { "component_groups": ["wild"] },
+        "add":    { "component_groups": ["tamed", "is_not_sitting", "is_not_sitting"] }
+      },
+
+      "white": { "add": { "component_groups": ["white", "is_not_sitting" ] } },
+      "tan":   { "add": { "component_groups": ["tan", "is_not_sitting"] } }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.glow_spider.move": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"default_leg_pose",
+						"look_at_target",
+						"walk"
+					],
+					"transitions": [
+						{
+							"idle": "!query.ground_speed"
+						}
+					]
+				},
+				"idle": {
+					"animations": [
+						"default_leg_pose",
+						"look_at_target"
+					],
+					"particle_effects": [
+						{
+							"effect": "glowing_spider"
+						}
+					],
+					"transitions": [
+						{
+							"default": "query.ground_speed"
+						}
+					]
+				}
+			}
+		}
+	}
+}

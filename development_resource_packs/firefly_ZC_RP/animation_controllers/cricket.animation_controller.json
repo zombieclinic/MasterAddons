@@ -1,0 +1,52 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.cricket.move": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"idle": "(1.0)"
+						}
+					],
+					"transitions": [
+						{
+							"move": "query.ground_speed"
+						},
+						{
+							"jump": "query.is_jump_goal_jumping"
+						}
+					]
+				},
+				"move": {
+					"animations": [
+						{
+							"walk": "(1.0)"
+						}
+					],
+					"transitions": [
+						{
+							"default": "!query.ground_speed"
+						},
+						{
+							"jump": "query.is_jumping"
+						}
+					]
+				},
+				"jump": {
+					"animations": [
+						{
+							"jump": "query.is_jump_goal_jumping"
+						}
+					],
+					"transitions": [
+						{
+							"default": "!query.is_in_water && !query.is_jump_goal_jumping"
+						}
+					]
+				}
+			}
+		}
+	}
+}
